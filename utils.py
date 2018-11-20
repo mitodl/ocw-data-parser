@@ -213,20 +213,22 @@ def dump_dict(destination, name, data):
         json.dump(data, f)
 
 
-def safe_get_value(jsons, index, key, path_of_course):
+def safe_get_value(jsons, index, key, path_of_course, print_error_message=False):
     if jsons[index].get(key):
         return jsons[index].get(key)
     else:
-        message = "key \x1b[0;37;40m" + key + "\x1b[0m not found in: " + path_of_course + str(index+1) + ".json"
-        print_error(message)
+        if print_error_message:
+            message = "key \x1b[0;37;40m" + key + "\x1b[0m not found in: " + path_of_course + str(index+1) + ".json"
+            print_error(message)
 
 
-def _safe_get(json, key, json_file_name, path_of_course):
+def _safe_get(json, key, json_file_name, path_of_course, print_error_message=False):
     if json.get(key):
         return json[key]
     else:
-        print("\x1b[0;31;40m Error: " + key + "\x1b[0m key not found in: " +
-              path_of_course + json_file_name + ".json")
+        if print_error_message:
+            print("\x1b[0;31;40m Error: " + key + "\x1b[0m key not found in: " +
+                  path_of_course + json_file_name + ".json")
 
 
 def print_error(message):
@@ -237,10 +239,8 @@ def print_success(message):
     print("\x1b[0;32;40m Success:\x1b[0m " + message)
 
 
-
 #################################################################################
 #################################################################################
-
 
 
 def course_base_dict():
@@ -277,23 +277,26 @@ def course_base_dict():
 
 
 def get_course_sub_page_dict(json, json_file_name, path_of_course):
+    url_data = _safe_get(json, "technical_location", json_file_name, path_of_course)
+    if url_data:
+        url_data = url_data.split("ocw.mit.edu")[1]
     return {
         "uid": _safe_get(json, "_uid", json_file_name, path_of_course),
         "parent_uid": _safe_get(json, "parent_uid", json_file_name, path_of_course),
         "title": _safe_get(json, "title", json_file_name, path_of_course),
         "text": _safe_get(json, "text", json_file_name, path_of_course),
-        "url": _safe_get(json, "technical_location", json_file_name, path_of_course).split("ocw.mit.edu")[1],
+        "url": url_data,
         "short_url": _safe_get(json, "id", json_file_name, path_of_course),
-        "aggregation_level": _safe_get(json, "aggregationlevel", json_file_name, path_of_course),
         "subject_keywords": _safe_get(json, "subject", json_file_name, path_of_course),
-        "publisher": _safe_get(json, "publisher", json_file_name, path_of_course),
         "language": _safe_get(json, "language", json_file_name, path_of_course),
-        "license": _safe_get(json, "license", json_file_name, path_of_course),
-        "rights": _safe_get(json, "rights", json_file_name, path_of_course),
         "description": _safe_get(json, "description", json_file_name, path_of_course),
         "type": _safe_get(json, "_type", json_file_name, path_of_course),
         "location": _safe_get(json, "location", json_file_name, path_of_course),
-        "content_type": _safe_get(json, "_content_type", json_file_name, path_of_course)
+        # "aggregation_level": _safe_get(json, "aggregationlevel", json_file_name, path_of_course),
+        # "publisher": _safe_get(json, "publisher", json_file_name, path_of_course),
+        # "license": _safe_get(json, "license", json_file_name, path_of_course),
+        # "rights": _safe_get(json, "rights", json_file_name, path_of_course),
+        # "content_type": _safe_get(json, "_content_type", json_file_name, path_of_course)
     }
 
 
@@ -307,16 +310,16 @@ def get_media_dict(json, json_file_name, path_of_course):
         "section_identifier": _safe_get(json, "section_identifier", json_file_name, path_of_course),
         "creation_date": _safe_get(json, "creation_date", json_file_name, path_of_course),
         "language": _safe_get(json, "language", json_file_name, path_of_course),
-        "rights": _safe_get(json, "rights", json_file_name, path_of_course),
         "caption": _safe_get(json, "caption", json_file_name, path_of_course),
         "content_type": _safe_get(json, "_content_type", json_file_name, path_of_course),
         "description": _safe_get(json, "description", json_file_name, path_of_course),
         "alternate_text": _safe_get(json, "alternate_text", json_file_name, path_of_course),
         "credit": _safe_get(json, "credit", json_file_name, path_of_course),
         "other_platform_requirements": _safe_get(json, "other_platform_requirements", json_file_name, path_of_course),
-        "license": _safe_get(json, "license", json_file_name, path_of_course),
         "modification_date": _safe_get(json, "modification_date", json_file_name, path_of_course),
-        "aggregation_level": _safe_get(json, "aggregationlevel", json_file_name, path_of_course)
+        # "rights": _safe_get(json, "rights", json_file_name, path_of_course),
+        # "license": _safe_get(json, "license", json_file_name, path_of_course),
+        # "aggregation_level": _safe_get(json, "aggregationlevel", json_file_name, path_of_course)
     }
 
 
