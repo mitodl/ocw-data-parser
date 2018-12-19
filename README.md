@@ -29,6 +29,6 @@ your_parser.a.upload_all_media_to_s3()
 
 To generate static HTML site for OCW course:
 ```python
-from static_html_generator import generate_html_for_course
+from ocw_data_parser import generate_html_for_course
 generate_html_for_course("path/to/master.json", "path/to/output/destination/")
 ```
