@@ -20,7 +20,8 @@ your_parser.extract_media_locally()  # To extract the media files locally inside
 your_parser.extract_foreign_media_locally()  # To extract media files hosted on the Akamai cloud
 
 # To upload all media to your S3 Bucket
-# First, setup your s3 info
+# First make sure your AWS credentials are setup in your local environment
+# Second, setup your s3 info
 your_parser.setup_s3_uploading("your_bucket_name", "optional_containing_folder")
 # Then, call upload all media to s3
 your_parser.a.upload_all_media_to_s3()
