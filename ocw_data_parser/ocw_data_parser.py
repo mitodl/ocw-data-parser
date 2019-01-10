@@ -6,6 +6,8 @@ import boto3
 from .utils import update_file_location, get_binary_data, is_json, get_correct_path, load_json_file, print_error,\
     print_success, safe_get, find_all_values_for_key
 import json
+from datetime import datetime
+import pytz
 
 
 class CustomHTMLParser(HTMLParser):
@@ -30,7 +32,8 @@ class OCWParser(object):
         self.s3_target_folder = s3_target_folder
         self.media_jsons = []
         self.large_media_links = []
-        
+        self.course_image_s3_link = ""
+        self.course_image_alt_text = ""
         # Preload raw jsons
         self.jsons = self.load_raw_jsons()
         self.master_json = None
@@ -74,6 +77,17 @@ class OCWParser(object):
     
     def get_master_json(self):
         """ Generates master JSON file for the course """
+        def _format_date(date_str):
+            """ Coverts date from 2016/02/02 20:28:06 US/Eastern to 2016-02-02 20:28:06-05:00"""
+            if date_str and date_str is not "None":
+                date_pieces = date_str.split(" ")  # e.g. 2016/02/02 20:28:06 US/Eastern
+                date_pieces[0] = date_pieces[0].replace("/", "-")
+                timezone = pytz.timezone(date_pieces.pop(2))
+                tz_stripped_date = datetime.strptime(" ".join(date_pieces), "%Y-%m-%d %H:%M:%S")
+                tz_aware_date = timezone.localize(tz_stripped_date)
+                return str(tz_aware_date)
+            return "null"
+
         if not self.jsons:
             self.jsons = self.load_raw_jsons()
         
@@ -94,6 +108,10 @@ class OCWParser(object):
         new_json["course_level"] = safe_get(self.jsons[0], "course_level")
         new_json["url"] = safe_get(self.jsons[0], "technical_location").split("ocw.mit.edu")[1]
         new_json["short_url"] = safe_get(self.jsons[0], "id")
+        new_json["effective_date"] = _format_date(safe_get(self.jsons[0], "effectiveDate"))
+        new_json["expiration_date"] = _format_date(safe_get(self.jsons[0], "expirationDate"))
+        new_json["image_src"] = self.course_image_s3_link
+        new_json["image_description"] = self.course_image_alt_text
         tags_strings = safe_get(self.jsons[0], "subject")
         tags = list()
         for tag in tags_strings:
@@ -257,8 +275,8 @@ class OCWParser(object):
         self.export_master_json()
     
     def export_master_json(self):
-        if not self.master_json:
-            print_error("Please generate master json first!")
+        # Get the most updated master json before exporting it
+        self.master_json = self.get_master_json()
         
         os.makedirs(self.destination_dir, exist_ok=True)
         with open(self.destination_dir + "master.json", "w") as file:
@@ -289,6 +307,14 @@ class OCWParser(object):
                 s3_bucket.put_object(Key=self.s3_target_folder + filename, Body=d, ACL="public-read")
                 update_file_location(self.master_json, bucket_base_url + filename, uid)
                 print_success(f"Uploaded {filename}")
+                
+                # If current media file is course image, then update course_image_s3_link and alt_text
+                cn_peices = self.master_json["short_url"].split("-")
+                thumbnail_name = "%s_%s-%s.jpg" % \
+                                 (uid, cn_peices[0], cn_peices[1] + cn_peices[-2][0] + cn_peices[-1][2:])
+                if filename == thumbnail_name:
+                    self.course_image_s3_link = bucket_base_url + filename
+                    self.course_image_alt_text = safe_get(file, "description")
             else:
                 print_error(f"Could NOT upload {filename}")
         
