@@ -82,7 +82,8 @@ class OCWParser(object):
             if date_str and date_str is not "None":
                 date_pieces = date_str.split(" ")  # e.g. 2016/02/02 20:28:06 US/Eastern
                 date_pieces[0] = date_pieces[0].replace("/", "-")
-                timezone = pytz.timezone(date_pieces.pop(2))
+                tz = date_pieces.pop(2)
+                timezone = pytz.timezone(tz) if "GMT" not in tz else pytz.timezone("Etc/" + tz)
                 tz_stripped_date = datetime.strptime(" ".join(date_pieces), "%Y-%m-%d %H:%M:%S")
                 tz_aware_date = timezone.localize(tz_stripped_date)
                 return str(tz_aware_date)
