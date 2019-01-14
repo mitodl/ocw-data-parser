@@ -79,7 +79,7 @@ class OCWParser(object):
         """ Generates master JSON file for the course """
         def _format_date(date_str):
             """ Coverts date from 2016/02/02 20:28:06 US/Eastern to 2016-02-02 20:28:06-05:00"""
-            if date_str and date_str is not "None":
+            if date_str and date_str != "None":
                 date_pieces = date_str.split(" ")  # e.g. 2016/02/02 20:28:06 US/Eastern
                 date_pieces[0] = date_pieces[0].replace("/", "-")
                 tz = date_pieces.pop(2)
