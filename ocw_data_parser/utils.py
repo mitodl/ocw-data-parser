@@ -30,6 +30,8 @@ def is_json(path_to_file):
 
 
 def get_correct_path(directory):
+    if not directory:
+        return ""
     return directory if directory[-1] == "/" else directory + "/"
 
 

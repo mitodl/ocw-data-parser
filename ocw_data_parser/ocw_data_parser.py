@@ -24,26 +24,43 @@ class CustomHTMLParser(HTMLParser):
 
 
 class OCWParser(object):
-    def __init__(self, course_dir, destination_dir, upload_to_s3=False, s3_bucket_name="", s3_target_folder=""):
+    def __init__(self,
+                 course_dir="",
+                 destination_dir="",
+                 loaded_jsons=list(),
+                 upload_to_s3=False,
+                 s3_bucket_name="",
+                 s3_bucket_access_key="",
+                 s3_bucket_secret_access_key="",
+                 s3_target_folder=""):
+        if not (course_dir and destination_dir) and not loaded_jsons:
+            raise Exception("Message")
         self.course_dir = get_correct_path(course_dir)
         self.destination_dir = get_correct_path(destination_dir)
         self.upload_to_s3 = upload_to_s3
         self.s3_bucket_name = s3_bucket_name
+        self.s3_bucket_access_key = s3_bucket_access_key
+        self.s3_bucket_secret_access_key = s3_bucket_secret_access_key
         self.s3_target_folder = s3_target_folder
         self.media_jsons = []
         self.large_media_links = []
         self.course_image_s3_link = ""
         self.course_image_alt_text = ""
-        # Preload raw jsons
-        self.jsons = self.load_raw_jsons()
         self.master_json = None
+        if course_dir and destination_dir:
+            # Preload raw jsons
+            self.jsons = self.load_raw_jsons()
+        else:
+            self.jsons = loaded_jsons
         if self.jsons:
             self.master_json = self.get_master_json()
             self.destination_dir += safe_get(self.jsons[0], "id") + "/"
     
-    def setup_s3_uploading(self, s3_bucket_name, folder=""):
+    def setup_s3_uploading(self, s3_bucket_name, s3_bucket_access_key, s3_bucket_secret_access_key, folder=""):
         self.upload_to_s3 = True
         self.s3_bucket_name = s3_bucket_name
+        self.s3_bucket_access_key = s3_bucket_access_key
+        self.s3_bucket_secret_access_key = s3_bucket_secret_access_key
         self.s3_target_folder = folder
     
     def load_raw_jsons(self):
@@ -288,17 +305,23 @@ class OCWParser(object):
         if not self.s3_bucket_name:
             print_error("Please set your s3 bucket name")
             return
-        
-        bucket_info = boto3.client("s3").get_bucket_location(Bucket=self.s3_bucket_name)
+
+        client = boto3.client("s3",
+                              aws_access_key_id=self.s3_bucket_access_key,
+                              aws_secret_access_key=self.s3_bucket_secret_access_key
+                              )
+        bucket_info = client.get_bucket_location(Bucket=self.s3_bucket_name)
         bucket_region = bucket_info["LocationConstraint"]
         bucket_base_url = f"https://s3.{bucket_region}.amazonaws.com/{self.s3_bucket_name}/"
         if self.s3_target_folder:
             if self.s3_target_folder[-1] != "/":
                 self.s3_target_folder += "/"
             bucket_base_url += self.s3_target_folder
-        
-        s3_bucket = boto3.resource("s3").Bucket(self.s3_bucket_name)
-        
+
+        s3_bucket = boto3.resource("s3",
+                                   aws_access_key_id=self.s3_bucket_access_key,
+                                   aws_secret_access_key=self.s3_bucket_secret_access_key
+                                   ).Bucket(self.s3_bucket_name)
         # Upload static files first
         for file in self.media_jsons:
             uid = safe_get(file, "_uid")
