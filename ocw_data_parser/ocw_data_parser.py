@@ -355,5 +355,3 @@ class OCWParser(object):
                 print_success(f"Uploaded {filename}")
             else:
                 print_error(f"Could NOT upload {filename}")
-        self.export_master_json()
-
