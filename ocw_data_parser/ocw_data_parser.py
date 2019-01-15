@@ -35,8 +35,8 @@ class OCWParser(object):
                  s3_target_folder=""):
         if not (course_dir and destination_dir) and not loaded_jsons:
             raise Exception("Message")
-        self.course_dir = get_correct_path(course_dir)
-        self.destination_dir = get_correct_path(destination_dir)
+        self.course_dir = get_correct_path(course_dir) if course_dir else course_dir
+        self.destination_dir = get_correct_path(destination_dir) if destination_dir else destination_dir
         self.upload_to_s3 = upload_to_s3
         self.s3_bucket_name = s3_bucket_name
         self.s3_bucket_access_key = s3_bucket_access_key
