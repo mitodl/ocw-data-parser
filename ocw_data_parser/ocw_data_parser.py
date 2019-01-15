@@ -53,9 +53,12 @@ class OCWParser(object):
         else:
             self.jsons = loaded_jsons
         if self.jsons:
-            self.master_json = self.get_master_json()
+            self.master_json = self.generate_master_json()
             self.destination_dir += safe_get(self.jsons[0], "id") + "/"
-    
+
+    def get_master_json(self):
+        return self.master_json
+
     def setup_s3_uploading(self, s3_bucket_name, s3_bucket_access_key, s3_bucket_secret_access_key, folder=""):
         self.upload_to_s3 = True
         self.s3_bucket_name = s3_bucket_name
@@ -92,7 +95,7 @@ class OCWParser(object):
         
         return loaded_jsons
     
-    def get_master_json(self):
+    def generate_master_json(self):
         """ Generates master JSON file for the course """
         def _format_date(date_str):
             """ Coverts date from 2016/02/02 20:28:06 US/Eastern to 2016-02-02 20:28:06-05:00"""
@@ -294,7 +297,7 @@ class OCWParser(object):
     
     def export_master_json(self):
         # Get the most updated master json before exporting it
-        self.master_json = self.get_master_json()
+        self.master_json = self.generate_master_json()
         
         os.makedirs(self.destination_dir, exist_ok=True)
         with open(self.destination_dir + "master.json", "w") as file:
