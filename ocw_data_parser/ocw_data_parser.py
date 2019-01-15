@@ -313,9 +313,10 @@ class OCWParser(object):
                               aws_access_key_id=self.s3_bucket_access_key,
                               aws_secret_access_key=self.s3_bucket_secret_access_key
                               )
-        bucket_info = client.get_bucket_location(Bucket=self.s3_bucket_name)
-        bucket_region = bucket_info["LocationConstraint"]
-        bucket_base_url = f"https://s3.{bucket_region}.amazonaws.com/{self.s3_bucket_name}/"
+        # bucket_info = client.get_bucket_location(Bucket=self.s3_bucket_name)
+        # bucket_region = bucket_info["LocationConstraint"]
+        # bucket_base_url = f"https://s3.{bucket_region}.amazonaws.com/{self.s3_bucket_name}/"
+        bucket_base_url = f"https://{self.s3_bucket_name}.s3.amazonaws.com/"
         if self.s3_target_folder:
             if self.s3_target_folder[-1] != "/":
                 self.s3_target_folder += "/"
