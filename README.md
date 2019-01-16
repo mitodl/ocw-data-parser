@@ -14,6 +14,7 @@ pip install ocw-data-parser
 To parse a single OCW course:
 ```python
 from ocw_data_parser import OCWParser
+
 your_parser = OCWParser("path/to/course/", "path/to/output/destination/")
 your_parser.extract_master_json()  # To get the master json
 your_parser.extract_media_locally()  # To extract the media files locally inside output directory
@@ -31,5 +32,6 @@ your_parser.a.upload_all_media_to_s3()
 To generate static HTML site for OCW course:
 ```python
 from ocw_data_parser import generate_html_for_course
+
 generate_html_for_course("path/to/master.json", "path/to/output/destination/")
 ```
