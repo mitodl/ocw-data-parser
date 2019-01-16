@@ -54,7 +54,7 @@ def print_success(message):
 
 def safe_get(j, key, print_error_message=False):
     value = j.get(key)
-    if value:
+    if value or isinstance(value, list):
         return value
     elif print_error_message:
         print_error("%s: Value for %s is NOT found" % (j["actual_file_name"], key))
