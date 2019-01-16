@@ -106,8 +106,9 @@ class OCWParser(object):
                 timezone = pytz.timezone(tz) if "GMT" not in tz else pytz.timezone("Etc/" + tz)
                 tz_stripped_date = datetime.strptime(" ".join(date_pieces), "%Y-%m-%d %H:%M:%S")
                 tz_aware_date = timezone.localize(tz_stripped_date)
+                tz_aware_date = tz_aware_date.astimezone(pytz.utc)
                 return str(tz_aware_date)
-            return "null"
+            return ""
 
         if not self.jsons:
             self.jsons = self.load_raw_jsons()
