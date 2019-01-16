@@ -1,0 +1,178 @@
+{
+    "tcATmit_subject_tags": [], 
+    "features_tracking": [], 
+    "widgets_features": [], 
+    "_classname": "CourseHomeSection", 
+    "has_inline_embed": false, 
+    "unique_identifier": "https://ocw.mit.edu/courses/brain-and-cognitive-sciences/9-15-biochemistry-and-pharmacology-of-synaptic-transmission-fall-2001/index.htm", 
+    "text": "", 
+    "_content_type_publisher": "text/plain", 
+    "_content_type_license": "text/plain", 
+    "ad_type": "HOUSE", 
+    "other_information_text": "", 
+    "aggregationlevel": 4, 
+    "_uid": "2aff229d2d7a9b2151e71b418888c220", 
+    "_workflow_history": {
+        "page_workflow": [
+            {
+                "action": null, 
+                "review_state": "waiting_for_authoring", 
+                "comments": "", 
+                "actor": "admin", 
+                "time": "2010/07/08 02:30:10.454 GMT-4"
+            }, 
+            {
+                "action": "approve_to_staging", 
+                "review_state": "ready_for_staging", 
+                "actor": "admin", 
+                "comments": "", 
+                "time": "2010/07/08 09:29:08.443 GMT-4"
+            }, 
+            {
+                "action": "decline", 
+                "review_state": "waiting_for_authoring", 
+                "comments": "", 
+                "actor": "hdesai", 
+                "time": "2010/07/17 01:04:22.648 GMT-4"
+            }, 
+            {
+                "action": "approve_to_staging", 
+                "review_state": "ready_for_staging", 
+                "actor": "admin", 
+                "comments": "", 
+                "time": "2010/07/17 11:18:01.855 GMT-4"
+            }
+        ]
+    }, 
+    "expirationDate": "None", 
+    "_content_type_id": "text/plain", 
+    "category_features": [], 
+    "related_content": "", 
+    "id": "index.htm", 
+    "is_media_gallery": false, 
+    "related_mit_links": "", 
+    "contributors": [], 
+    "effectiveDate": "None", 
+    "title": "Course Home", 
+    "parent_module": "e4d2ddd169d2aeee91fdf2ef9d7d6bc2", 
+    "_content_type_ad_type": "text/plain", 
+    "_userdefined_roles": [], 
+    "curriculum_information": "", 
+    "_gopip": 0, 
+    "location": "", 
+    "_atrefs": {
+        "BelongsTo": [
+            "e4d2ddd169d2aeee91fdf2ef9d7d6bc2"
+        ]
+    }, 
+    "_content_type_title": "text/plain", 
+    "feature_requirements": [], 
+    "_atbrefs": {}, 
+    "_content_type": "text/plain", 
+    "_type": "CourseHomeSection", 
+    "technical_location": "https://ocw.mit.edu/courses/brain-and-cognitive-sciences/9-15-biochemistry-and-pharmacology-of-synaptic-transmission-fall-2001/index.htm", 
+    "other_versions": "", 
+    "description": "\nConsiders the process of neurotransmission, especially chemicals used in the brain and elsewhere to carry signals from nerve terminals to the structures they innervate. Focuses on monoamine transmitters (acetylcholine; serotonin; dopamine and norepinephrine); also examines amino acid and peptide transmitters and neuromodulators like adenosine. Macromolecules that mediate neurotransmitter synthesis, release, inactivation, and receptor-mediated actions are discussed, as well as factors that regulate their activity and the second-messenger systems they control. An additional project is required for graduate credit.", 
+    "software_requirements": [
+        {
+            "software_type_col": "Browser", 
+            "minimum_version_col": "40.0", 
+            "software_name_col": "Chrome", 
+            "maximum_version_col": ""
+        }, 
+        {
+            "software_type_col": "Browser", 
+            "minimum_version_col": "8.0", 
+            "software_name_col": "Safari", 
+            "maximum_version_col": ""
+        }, 
+        {
+            "software_type_col": "Browser", 
+            "minimum_version_col": "38.0", 
+            "software_name_col": "Mozilla Firefox", 
+            "maximum_version_col": ""
+        }, 
+        {
+            "software_type_col": "Browser", 
+            "minimum_version_col": "9.0", 
+            "software_name_col": "Internet Explorer", 
+            "maximum_version_col": ""
+        }, 
+        {
+            "software_type_col": "Browser", 
+            "minimum_version_col": "13.1", 
+            "software_name_col": "Edge", 
+            "maximum_version_col": ""
+        }
+    ], 
+    "_content_type_technical_location": "text/plain", 
+    "_layout": "custom_view", 
+    "_properties": [
+        [
+            "title", 
+            "Course Home", 
+            "string"
+        ]
+    ], 
+    "subject": [], 
+    "_content_type_rights": "text/html", 
+    "_directly_provided": [], 
+    "image_caption_text": "", 
+    "image_alternate_text": "", 
+    "metadata_contributor_list": [], 
+    "tcATmit_instructional_tags": [], 
+    "creation_date": "2010/07/08 02:30:10.448 GMT-4", 
+    "highlights_text": "", 
+    "parent_uid": "e4d2ddd169d2aeee91fdf2ef9d7d6bc2", 
+    "modification_date": "2016/09/24 02:10:13.862 GMT-4", 
+    "course_linking": [], 
+    "publisher": "MIT OpenCourseWare", 
+    "excludeFromNav": false, 
+    "language": "", 
+    "license": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/", 
+    "rights": "This site (c) Massachusetts Institute of Technology 2010.  Content within individual courses is (c) by the individual authors unless otherwise noted. The Massachusetts Institute of Technology is providing this Work (as defined below) under the terms of this Creative Commons public license (\"CCPL\" or \"license\") unless otherwise noted. The Work is protected by copyright and/or other applicable law. Any use of the work other than as authorized under this license is prohibited. By exercising any of the rights to the Work provided here, You (as defined below) accept and agree to be bound by the terms of this license. The Licensor, the Massachusetts Institute of Technology, grants You the rights contained here in consideration of Your acceptance of such terms and conditions.", 
+    "url_rewrite_patterns": [], 
+    "always_publish": false, 
+    "_id": "index.htm", 
+    "materialtype": "Other", 
+    "technical_requirements_text": "", 
+    "_content_type_unique_identifier": "text/plain", 
+    "_content_type_description": "text/plain", 
+    "_owner": "admin", 
+    "_defaultpage": "", 
+    "firstTimeEdit": true, 
+    "_permissions": {
+        "Modify portal content": {
+            "acquire": false, 
+            "roles": [
+                "Manager", 
+                "MetadataEditor"
+            ]
+        }, 
+        "Access contents information": {
+            "acquire": false, 
+            "roles": [
+                "Authenticated"
+            ]
+        }, 
+        "View": {
+            "acquire": false, 
+            "roles": [
+                "Authenticated"
+            ]
+        }
+    }, 
+    "ad_champion_text": "", 
+    "allowDiscussion": false, 
+    "_content_type_materialtype": "text/plain", 
+    "creators": [
+        "admin"
+    ], 
+    "courselist_features": [], 
+    "_ac_local_roles": {
+        "admin": [
+            "Owner"
+        ]
+    }, 
+    "_path": "/Plone/courses/brain-and-cognitive-sciences/9-15-biochemistry-and-pharmacology-of-synaptic-transmission-fall-2001/index.htm"
+}
