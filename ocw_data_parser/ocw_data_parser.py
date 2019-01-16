@@ -330,7 +330,10 @@ class OCWParser(object):
         for file in self.media_jsons:
             uid = safe_get(file, "_uid")
             filename = uid + "_" + safe_get(file, "id")
-            d = base64.b64decode(get_binary_data(file))
+            if not get_binary_data(file):
+                print_error(filename)
+            else:
+                d = base64.b64decode(get_binary_data(file))
             if d:
                 s3_bucket.put_object(Key=self.s3_target_folder + filename, Body=d, ACL="public-read")
                 update_file_location(self.master_json, bucket_base_url + filename, uid)
