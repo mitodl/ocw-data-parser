@@ -249,7 +249,7 @@ class OCWParser(object):
                     p.feed(j[key])
                     if p.output_list:
                         for link in p.output_list:
-                            if "/ans7870/" in link and "." in link.split("/")[-1]:
+                            if link and "/ans7870/" in link and "." in link.split("/")[-1]:
                                 obj = {
                                     "parent_uid": safe_get(j, "_uid"),
                                     "link": link
