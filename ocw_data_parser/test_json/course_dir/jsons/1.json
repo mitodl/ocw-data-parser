@@ -1,0 +1,516 @@
+{
+    "aka_course_number": [], 
+    "_content_type_license": "text/plain", 
+    "_uid": "e4d2ddd169d2aeee91fdf2ef9d7d6bc2", 
+    "_content_type_course_level": "text/plain", 
+    "title": "Biochemistry and Pharmacology of Synaptic Transmission", 
+    "_content_type_ocw_batch_id": "text/plain", 
+    "parent_uid": "c3a20cb57cad494caa1868ff07eb3484", 
+    "location": "", 
+    "_content_type_to_year": "text/plain", 
+    "sort_as": "9.15", 
+    "constrainTypesMode": 0, 
+    "dspace_handle": "hdl://1721.1/35742", 
+    "_content_type_dspace_handle": "text/plain", 
+    "technical_location": "https://ocw.mit.edu/courses/brain-and-cognitive-sciences/9-15-biochemistry-and-pharmacology-of-synaptic-transmission-fall-2001", 
+    "software_requirements": [
+        {
+            "software_type_col": "Browser", 
+            "minimum_version_col": "40.0", 
+            "software_name_col": "Chrome", 
+            "maximum_version_col": ""
+        }, 
+        {
+            "software_type_col": "Browser", 
+            "minimum_version_col": "8.0", 
+            "software_name_col": "Safari", 
+            "maximum_version_col": ""
+        }, 
+        {
+            "software_type_col": "Browser", 
+            "minimum_version_col": "38.0", 
+            "software_name_col": "Mozilla Firefox", 
+            "maximum_version_col": ""
+        }, 
+        {
+            "software_type_col": "Browser", 
+            "minimum_version_col": "9.0", 
+            "software_name_col": "Internet Explorer", 
+            "maximum_version_col": ""
+        }, 
+        {
+            "software_type_col": "Browser", 
+            "minimum_version_col": "13.1", 
+            "software_name_col": "Edge", 
+            "maximum_version_col": ""
+        }
+    ], 
+    "_content_type_technical_location": "text/plain", 
+    "instructors": [
+        {
+            "middle_initial": "", 
+            "first_name": "Richard", 
+            "last_name": "Wurtman", 
+            "suffix": "", 
+            "title": "Wurtman, Richard", 
+            "mit_id": "900020771", 
+            "department": "Brain & Cognitive Sciences", 
+            "directory_title": "Professor Emeritus", 
+            "uid": "ef1020ddbbc31bb942970f0557c9daec"
+        }
+    ], 
+    "_content_type_rights": "text/html", 
+    "_directly_provided": [], 
+    "_content_type_sort_as": "text/plain", 
+    "_content_type_to_semester": "text/plain", 
+    "_content_type_unique_identifier": "text/plain", 
+    "from_semester": "Fall", 
+    "_content_type_from_year": "text/plain", 
+    "allowDiscussion": false, 
+    "_content_type_materialtype": "text/plain", 
+    "_content_type_from_semester": "text/plain", 
+    "locallyAllowedTypes": [
+        "OCWImage", 
+        "DownloadSection", 
+        "CourseHomeSection", 
+        "CourseSection", 
+        "OCWExtFile", 
+        "OCWFile"
+    ], 
+    "creation_date": "2003/05/22 03:02:04 GMT-4", 
+    "aggregationlevel": 4, 
+    "last_published_to_production": "2003/07/02 09:30:57 GMT-4", 
+    "is_update_boolean": "", 
+    "immediatelyAddableTypes": [
+        "OCWImage", 
+        "DownloadSection", 
+        "CourseHomeSection", 
+        "CourseSection", 
+        "OCWExtFile", 
+        "OCWFile"
+    ], 
+    "subject": [
+        "neurotransmission", 
+        "nerve terminals", 
+        "monoamine transmitters", 
+        "acetylcholine", 
+        "serotonin", 
+        "dopamine", 
+        "norepinephrine", 
+        "amino acid and peptide transmitters", 
+        "neuromodulators", 
+        "adenosine", 
+        "neurotransmitter synthesis", 
+        "release", 
+        "inactivation", 
+        "receptor-mediated", 
+        "second-messenger"
+    ], 
+    "effectiveDate": "None", 
+    "excludeFromNav": false, 
+    "related_mit_links": "", 
+    "to_semester": "-1", 
+    "_layout": "base_view", 
+    "_workflow_history": {
+        "module_workflow": [
+            {
+                "action": null, 
+                "review_state": "in_process", 
+                "actor": "admin", 
+                "comments": "", 
+                "time": "2010/07/08 02:30:10.347 GMT-4"
+            }, 
+            {
+                "action": "approve_to_staging", 
+                "review_state": "approved_for_staging", 
+                "comments": "", 
+                "actor": "admin", 
+                "time": "2010/07/08 09:29:08.750 GMT-4"
+            }, 
+            {
+                "action": "schedule_for_staging", 
+                "review_state": "scheduled_for_staging", 
+                "actor": "hdesai", 
+                "comments": "", 
+                "time": "2010/07/08 10:12:21.761 GMT-4"
+            }, 
+            {
+                "action": "mark_staged", 
+                "review_state": "staged", 
+                "comments": "", 
+                "actor": "system", 
+                "time": "2010/07/08 10:21:26.486 GMT-4"
+            }, 
+            {
+                "action": "submit_to_fqa", 
+                "review_state": "submitted_for_fqa", 
+                "actor": "hdesai", 
+                "comments": "", 
+                "time": "2010/07/08 10:33:48.619 GMT-4"
+            }, 
+            {
+                "action": "schedule_for_production", 
+                "review_state": "scheduled_for_publishing", 
+                "comments": "", 
+                "actor": "hdesai", 
+                "time": "2010/07/08 10:38:48.927 GMT-4"
+            }, 
+            {
+                "action": "mark_published", 
+                "review_state": "published_in_production", 
+                "actor": "system", 
+                "comments": "", 
+                "time": "2010/07/08 10:46:21.208 GMT-4"
+            }, 
+            {
+                "action": "schedule_for_unpublishing", 
+                "review_state": "scheduled_for_unpublishing", 
+                "comments": "", 
+                "actor": "hdesai", 
+                "time": "2010/07/08 11:02:00.172 GMT-4"
+            }, 
+            {
+                "action": "mark_unpublished", 
+                "review_state": "unpublished", 
+                "actor": "system", 
+                "comments": "", 
+                "time": "2010/07/08 11:08:46.795 GMT-4"
+            }, 
+            {
+                "action": "submit_for_retirement", 
+                "review_state": "submitted_for_retirement", 
+                "comments": "", 
+                "actor": "hdesai", 
+                "time": "2010/07/08 11:15:32.710 GMT-4"
+            }, 
+            {
+                "action": "schedule_for_retirement", 
+                "review_state": "scheduled_for_retirement", 
+                "comments": "", 
+                "actor": "hdesai", 
+                "time": "2010/07/08 11:18:36.431 GMT-4"
+            }, 
+            {
+                "action": "mark_retired", 
+                "review_state": "retired", 
+                "actor": "system", 
+                "comments": "", 
+                "time": "2010/07/08 11:21:33.761 GMT-4"
+            }, 
+            {
+                "action": "mark_archived", 
+                "review_state": "archived", 
+                "comments": "", 
+                "actor": "hdesai", 
+                "time": "2010/07/08 11:28:26.694 GMT-4"
+            }, 
+            {
+                "action": "unlock", 
+                "review_state": "unlocked_for_editing", 
+                "actor": "hdesai", 
+                "comments": "", 
+                "time": "2010/07/17 00:57:37.684 GMT-4"
+            }, 
+            {
+                "action": "make_in_process", 
+                "review_state": "in_process", 
+                "actor": "hdesai", 
+                "comments": "", 
+                "time": "2010/07/17 01:04:22.663 GMT-4"
+            }, 
+            {
+                "action": "approve_to_staging", 
+                "review_state": "approved_for_staging", 
+                "comments": "", 
+                "actor": "admin", 
+                "time": "2010/07/17 11:18:01.979 GMT-4"
+            }, 
+            {
+                "action": "schedule_for_staging", 
+                "review_state": "scheduled_for_staging", 
+                "actor": "hdesai", 
+                "comments": "", 
+                "time": "2010/07/17 11:37:30.613 GMT-4"
+            }, 
+            {
+                "action": "mark_staged", 
+                "review_state": "staged", 
+                "comments": "", 
+                "actor": "system", 
+                "time": "2010/07/17 11:40:35.440 GMT-4"
+            }, 
+            {
+                "action": "submit_to_fqa", 
+                "review_state": "submitted_for_fqa", 
+                "actor": "hdesai", 
+                "comments": "", 
+                "time": "2010/07/17 11:51:16.727 GMT-4"
+            }, 
+            {
+                "action": "schedule_for_production", 
+                "review_state": "scheduled_for_publishing", 
+                "actor": "hdesai", 
+                "comments": "", 
+                "time": "2010/07/17 11:54:39.306 GMT-4"
+            }, 
+            {
+                "action": "mark_published", 
+                "review_state": "published_in_production", 
+                "comments": "", 
+                "actor": "system", 
+                "time": "2010/07/17 11:59:23.111 GMT-4"
+            }, 
+            {
+                "action": "schedule_for_unpublishing", 
+                "review_state": "scheduled_for_unpublishing", 
+                "comments": "", 
+                "actor": "hdesai", 
+                "time": "2010/07/17 12:07:27.646 GMT-4"
+            }, 
+            {
+                "action": "mark_unpublished", 
+                "review_state": "unpublished", 
+                "comments": "", 
+                "actor": "system", 
+                "time": "2010/07/17 12:09:54.681 GMT-4"
+            }, 
+            {
+                "action": "submit_for_retirement", 
+                "review_state": "submitted_for_retirement", 
+                "actor": "hdesai", 
+                "comments": "", 
+                "time": "2010/07/17 12:21:17.138 GMT-4"
+            }, 
+            {
+                "action": "schedule_for_retirement", 
+                "review_state": "scheduled_for_retirement", 
+                "actor": "hdesai", 
+                "comments": "", 
+                "time": "2010/07/17 12:46:26.283 GMT-4"
+            }, 
+            {
+                "action": "mark_retired", 
+                "review_state": "retired", 
+                "comments": "", 
+                "actor": "system", 
+                "time": "2010/07/17 12:48:22.139 GMT-4"
+            }, 
+            {
+                "action": "mark_archived", 
+                "review_state": "archived", 
+                "actor": "hdesai", 
+                "comments": "", 
+                "time": "2010/07/17 13:13:37.551 GMT-4"
+            }
+        ]
+    }, 
+    "_classname": "Course", 
+    "metadata_contributor_list": [
+        {
+            "md_contributor_uid": "ef1020ddbbc31bb942970f0557c9daec", 
+            "md_contributor_entity": "Wurtman, Richard", 
+            "md_contributor_role": "Instructor", 
+            "md_contributor_special_title": "", 
+            "md_contributor_hide": ""
+        }, 
+        {
+            "md_contributor_uid": "", 
+            "md_contributor_entity": "Todd Rautenberg", 
+            "md_contributor_role": "Validator", 
+            "md_contributor_special_title": "", 
+            "md_contributor_hide": ""
+        }, 
+        {
+            "md_contributor_uid": "", 
+            "md_contributor_entity": "Todd Rautenberg", 
+            "md_contributor_role": "Creator", 
+            "md_contributor_special_title": "", 
+            "md_contributor_hide": ""
+        }
+    ], 
+    "_userdefined_roles": [], 
+    "publisher": "MIT OpenCourseWare", 
+    "nextPreviousEnabled": false, 
+    "license": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/", 
+    "widgets_features": [], 
+    "module_comments": [
+        "DSpace archived:", 
+        "gshaneyfelt:1/22/2007 8:44:08 AM", 
+        "RW: Week 7 archiving.:", 
+        "rwolfe:1/19/2007 2:01:40 AM", 
+        "WK 7: Approved for retirement:", 
+        "gshaneyfelt:1/18/2007 8:47:30 AM", 
+        "Unpublished again after manually fixing the typo \"UnderGraduate\" in CourseHome.xml and reseting thPerm: Replaced/Retired", 
+        "Scheduled for publishing after fixing the typo \"UnderGraduate\" in CourseHome.xml and manually resetiSubmitted for FQA after fixing the typo \"UnderGraduate\" in CourseHome.xml and manually reseting the Staging the course after fixing the typo \"UnderGraduate\" in CourseHome.xml and manually resetting thUnlocking the course to fix the typo \"UnderGraduate\" in CourseHome.xml (artf387934):", 
+        "lkumar:10/27/2", 
+        "Unpublishing for course archiving:", 
+        "lkumar:10/3/2006 6:09:17 AM", 
+        "Perm: Replaced/Retired", 
+        "Republishing/unpublishing for course archiving:", 
+        "lkumar:10/3/2006 3:18:58 AM", 
+        "Republishing/unpublishing for course archiving:", 
+        "lkumar:10/3/2006 2:07:30 AM", 
+        "Republishing/unpublishing for course archiving:", 
+        "lkumar:10/3/2006 12:24:54 AM", 
+        "Republishing/unpublishing for course archiving:", 
+        "lkumar:10/3/2006 12:19:44 AM", 
+        "Unpublish for archiving.:", 
+        "finalqa1:10/11/2005 1:29:13 PM", 
+        "Unpublish for archiving.:", 
+        "finalqa1:10/7/2005 10:27:53 AM", 
+        "archive course migration: hdesai:7/8/2010 10:33", 
+        "archive course migration: hdesai:7/8/2010 11:2", 
+        "archive course migration: hdesai:7/8/2010 11:15", 
+        ": hdesai:7/17/2010 0:57", 
+        ": hdesai:7/17/2010 11:51", 
+        ": hdesai:7/17/2010 12:7", 
+        ": hdesai:7/17/2010 12:21"
+    ], 
+    "category_features": [], 
+    "firstTimeEdit": true, 
+    "retirement_date": "2007/01/22 03:20:31 US/Eastern", 
+    "feature_requirements": [], 
+    "first_published_to_production": "2003/07/02 09:30:57 GMT-4", 
+    "_ac_local_roles": {
+        "admin": [
+            "Owner"
+        ]
+    }, 
+    "fm_record_id": "", 
+    "last_unpublishing_date": "2006/10/30 06:00:40 US/Eastern", 
+    "classification": [
+        {
+            "source": "CIP", 
+            "id": "511502", 
+            "description": "Psychiatric/Mental Health Services Technician"
+        }, 
+        {
+            "source": "CIP", 
+            "id": "260202", 
+            "description": "Biochemistry"
+        }, 
+        {
+            "source": "CIP", 
+            "id": "511502", 
+            "description": "Psychiatric/Mental Health Services Technician"
+        }, 
+        {
+            "source": "CIP", 
+            "id": "260202", 
+            "description": "Biochemistry"
+        }, 
+        {
+            "source": "CIP", 
+            "id": "511502", 
+            "description": "Psychiatric/Mental Health Services Technician"
+        }, 
+        {
+            "source": "CIP", 
+            "id": "260202", 
+            "description": "Biochemistry"
+        }
+    ], 
+    "course_owner": "katej", 
+    "last_published_to_staging": "2003/06/25 20:00:37 GMT-4", 
+    "expirationDate": "None", 
+    "_content_type_id": "text/plain", 
+    "_content_type_chp_display_level": "text/plain", 
+    "linked_course_number": [], 
+    "_gopip": 88, 
+    "unique_identifier": "https://ocw.mit.edu/courses/brain-and-cognitive-sciences/9-15-biochemistry-and-pharmacology-of-synaptic-transmission-fall-2001", 
+    "_content_type_title": "text/plain", 
+    "_content_type": "text/plain", 
+    "_atrefs": {
+        "instructors": [
+            "ef1020ddbbc31bb942970f0557c9daec"
+        ]
+    }, 
+    "_id": "9-15-biochemistry-and-pharmacology-of-synaptic-transmission-fall-2001", 
+    "master_course_number": "9.15", 
+    "editor_notes": "", 
+    "ocw_batch_id": "5", 
+    "language": "", 
+    "rights": "This site (c) Massachusetts Institute of Technology 2010.  Content within individual courses is (c) by the individual authors unless otherwise noted. The Massachusetts Institute of Technology is providing this Work (as defined below) under the terms of this Creative Commons public license (\"CCPL\" or \"license\") unless otherwise noted. The Work is protected by copyright and/or other applicable law. Any use of the work other than as authorized under this license is prohibited. By exercising any of the rights to the Work provided here, You (as defined below) accept and agree to be bound by the terms of this license. The Licensor, the Massachusetts Institute of Technology, grants You the rights contained here in consideration of Your acceptance of such terms and conditions.", 
+    "_atbrefs": {
+        "is_update_of": [
+            "0e3ec1e6fe4670e44b55130c4b4205b7"
+        ], 
+        "BelongsTo": [
+            "2aff229d2d7a9b2151e71b418888c220", 
+            "116709acea0fddb3156e56bc040f1cca", 
+            "4dcd2b97aa3830313a0b7d6083bc1417", 
+            "da7518e20e49aad5b2709d50053c89a1", 
+            "43a72a8e9449ed407fbe757476389f26"
+        ]
+    }, 
+    "_defaultpage": "index.htm", 
+    "tcATmit_subject_tags": [], 
+    "features_tracking": [], 
+    "contributors": [], 
+    "_content_type_unique_id": "text/plain", 
+    "chp_display_level": "Both", 
+    "_content_type_master_course_number": "text/plain", 
+    "id": "9-15-biochemistry-and-pharmacology-of-synaptic-transmission-fall-2001", 
+    "materialtype": "Other", 
+    "pop_up_image_dict": {}, 
+    "from_year": "2001", 
+    "_content_type_course_owner": "text/plain", 
+    "_type": "Course", 
+    "description": "", 
+    "to_year": "-1", 
+    "_content_type_publisher": "text/plain", 
+    "tcATmit_instructional_tags": [], 
+    "course_linking": [], 
+    "first_published_to_staging": "2003/06/25 20:00:37 GMT-4", 
+    "modification_date": "2017/08/29 05:41:09.843 GMT-4", 
+    "course_level": "Undergraduate", 
+    "always_publish": false, 
+    "last_unstaging_date": "2006/10/30 06:00:40 US/Eastern", 
+    "_owner": "admin", 
+    "_permissions": {
+        "Modify portal content": {
+            "acquire": false, 
+            "roles": [
+                "MetadataEditor", 
+                "System"
+            ]
+        }, 
+        "Access contents information": {
+            "acquire": false, 
+            "roles": [
+                "Anonymous"
+            ]
+        }, 
+        "List folder contents": {
+            "acquire": false, 
+            "roles": [
+                "Contributor", 
+                "Editor", 
+                "Manager", 
+                "MetadataEditor", 
+                "Owner", 
+                "Reader", 
+                "Reviewer"
+            ]
+        }, 
+        "View": {
+            "acquire": false, 
+            "roles": [
+                "Anonymous"
+            ]
+        }
+    }, 
+    "_properties": [
+        [
+            "title", 
+            "Biochemistry and Pharmacology of Synaptic Transmission", 
+            "string"
+        ]
+    ], 
+    "creators": [
+        "admin"
+    ], 
+    "courselist_features": [], 
+    "unique_id": "e4d2ddd169d2aeee91fdf2ef9d7d6bc2", 
+    "_path": "/Plone/courses/brain-and-cognitive-sciences/9-15-biochemistry-and-pharmacology-of-synaptic-transmission-fall-2001"
+}
