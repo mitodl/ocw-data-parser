@@ -1,4 +1,8 @@
 import json
+import logging
+
+
+log = logging.getLogger(__name__)
 
 
 def update_file_location(master_json, new_file_location, obj_uid=""):
@@ -41,7 +45,7 @@ def load_json_file(path):
             loaded_json = json.load(f)
             return loaded_json
         except json.JSONDecodeError:
-            print("\x1b[0;33;40m Warning:\x1b[0m Failed to load " + path)
+            log.exception("Failed to load %s", path)
 
 
 def print_error(message):
@@ -57,7 +61,7 @@ def safe_get(j, key, print_error_message=False):
     if value or isinstance(value, list):
         return value
     elif print_error_message:
-        print_error("%s: Value for %s is NOT found" % (j["actual_file_name"], key))
+        log.error("%s: Value for %s is NOT found", (j["actual_file_name"], key))
 
 
 def find_all_values_for_key(jsons, key="_content_type"):

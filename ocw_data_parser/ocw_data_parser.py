@@ -1,13 +1,17 @@
+import logging
 from html.parser import HTMLParser
 import os
 import base64
 from requests import get
 import boto3
-from .utils import update_file_location, get_binary_data, is_json, get_correct_path, load_json_file, print_error,\
-    print_success, safe_get, find_all_values_for_key
+from .utils import update_file_location, get_binary_data, is_json, get_correct_path, load_json_file, safe_get, \
+    find_all_values_for_key
 import json
 from datetime import datetime
 import pytz
+
+
+log = logging.getLogger(__name__)
 
 
 class CustomHTMLParser(HTMLParser):
@@ -91,7 +95,7 @@ class OCWParser(object):
                     loaded_json["actual_file_name"] = str(json_index) + ".json"
                     loaded_jsons.append(loaded_json)
                 else:
-                    print_error("Failed to load " + file_path)
+                    log.error("Failed to load %s", file_path)
         
         return loaded_jsons
     
@@ -168,7 +172,6 @@ class OCWParser(object):
                 "type": safe_get(j, "_type"),
             }
             if "media_location" in j and j["media_location"] and j["_content_type"] == "text/html":
-                print()
                 page_dict["youtube_id"] = j["media_location"]
             
             return page_dict
@@ -259,7 +262,7 @@ class OCWParser(object):
     
     def extract_media_locally(self):
         if not self.media_jsons:
-            print("You have to compose media for course first!")
+            log.debug("You have to compose media for course first!")
             return
         
         path_to_containing_folder = self.destination_dir + "static_files/"
@@ -272,16 +275,16 @@ class OCWParser(object):
                     data = base64.b64decode(d)
                     f.write(data)
                 update_file_location(self.master_json, path_to_containing_folder + filename, safe_get(j, "_uid"))
-                print_success(f"Extracted {filename}")
+                log.info("Extracted %s", filename)
             else:
                 json_file = j["actual_file_name"]
-                print_error(f"Media file {json_file} without either datafield key")
-        print_success(f"Done! extracted static media to {path_to_containing_folder}")
+                log.error("Media file %s without either datafield key", json_file)
+        log.info("Done! extracted static media to %s", path_to_containing_folder)
         self.export_master_json()
     
     def extract_foreign_media_locally(self):
         if not self.large_media_links:
-            print("Your course has 0 foreign media files")
+            log.debug("Your course has 0 foreign media files")
             return
         
         path_to_containing_folder = self.destination_dir + "static_files/"
@@ -292,8 +295,8 @@ class OCWParser(object):
                 response = get(media["link"])
                 file.write(response.content)
             update_file_location(self.master_json, path_to_containing_folder + file_name)
-            print_success(f"Extracted {file_name}")
-        print_success(f"Done! extracted foreign media to {path_to_containing_folder}")
+            log.info("Extracted %s", file_name)
+        log.info("Done! extracted foreign media to %s", path_to_containing_folder)
         self.export_master_json()
     
     def export_master_json(self):
@@ -303,11 +306,11 @@ class OCWParser(object):
         os.makedirs(self.destination_dir, exist_ok=True)
         with open(self.destination_dir + "master.json", "w") as file:
             json.dump(self.master_json, file)
-        print_success(f"Extracted {self.destination_dir + 'master.json'}")
+        log.info("Extracted %s", self.destination_dir + 'master.json')
     
     def upload_all_media_to_s3(self):
         if not self.s3_bucket_name:
-            print_error("Please set your s3 bucket name")
+            log.error("Please set your s3 bucket name")
             return
 
         client = boto3.client("s3",
@@ -332,13 +335,13 @@ class OCWParser(object):
             uid = safe_get(file, "_uid")
             filename = uid + "_" + safe_get(file, "id")
             if not get_binary_data(file):
-                print_error(filename)
+                log.error(filename)
             else:
                 d = base64.b64decode(get_binary_data(file))
             if d:
                 s3_bucket.put_object(Key=self.s3_target_folder + filename, Body=d, ACL="public-read")
                 update_file_location(self.master_json, bucket_base_url + filename, uid)
-                print_success(f"Uploaded {filename}")
+                log.info("Uploaded %s", filename)
                 
                 # If current media file is course image, then update course_image_s3_link and alt_text
                 cn_peices = self.master_json["short_url"].split("-")
@@ -348,7 +351,7 @@ class OCWParser(object):
                     self.course_image_s3_link = bucket_base_url + filename
                     self.course_image_alt_text = safe_get(file, "description")
             else:
-                print_error(f"Could NOT upload {filename}")
+                log.error("Could NOT upload %s", filename)
         
         # Upload foreign(large) media files:
         for media in self.large_media_links:
@@ -357,6 +360,6 @@ class OCWParser(object):
             if response:
                 s3_bucket.put_object(Key=self.s3_target_folder + filename, Body=response.content, ACL="public-read")
                 update_file_location(self.master_json, bucket_base_url + filename)
-                print_success(f"Uploaded {filename}")
+                log.info("Uploaded %s", filename)
             else:
-                print_error(f"Could NOT upload {filename}")
+                log.error("Could NOT upload %s", filename)

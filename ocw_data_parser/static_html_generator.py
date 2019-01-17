@@ -1,4 +1,9 @@
-from .utils import is_json, get_correct_path, load_json_file, print_success, print_error
+import logging
+
+from .utils import is_json, get_correct_path, load_json_file
+
+
+log = logging.getLogger(__name__)
 
 
 def generate_html_for_course(master_json, destination):
@@ -10,15 +15,14 @@ def generate_html_for_course(master_json, destination):
     # Check if course files are exported locally or uploaded to S3
     for m in loaded_master_json["course_files"]:
         if "file_location" not in m:
-            print_error("Please make sure to export media locally or upload to S3 before trying to generate HTML site")
+            log.error("Please make sure to export media locally or upload to S3 before trying to generate HTML site")
             return
     
     # Create linked pages
     generate_linked_pages(loaded_master_json["course_pages"], destination, loaded_master_json)
     # Create the course index page
     generate_index_page(loaded_master_json, destination)
-    print_success(
-        "Static website has been generated for " + loaded_master_json["title"] + " and be found at: " + destination)
+    log.info("Static website has been generated for %s and be found at: %s",loaded_master_json["title"], destination)
 
 
 def generate_index_page(mj, destination):
