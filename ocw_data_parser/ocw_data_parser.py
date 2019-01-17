@@ -130,8 +130,8 @@ class OCWParser(object):
         new_json["course_level"] = safe_get(self.jsons[0], "course_level")
         new_json["url"] = safe_get(self.jsons[0], "technical_location").split("ocw.mit.edu")[1]
         new_json["short_url"] = safe_get(self.jsons[0], "id")
-        new_json["effective_date"] = _format_date(safe_get(self.jsons[0], "effectiveDate"))
-        new_json["expiration_date"] = _format_date(safe_get(self.jsons[0], "expirationDate"))
+        # new_json["effective_date"] = _format_date(safe_get(self.jsons[0], "effectiveDate"))
+        # new_json["expiration_date"] = _format_date(safe_get(self.jsons[0], "expirationDate"))
         new_json["image_src"] = self.course_image_s3_link
         new_json["image_description"] = self.course_image_alt_text
         tags_strings = safe_get(self.jsons[0], "subject")
