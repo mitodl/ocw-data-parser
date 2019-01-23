@@ -8,9 +8,9 @@ if sys.version < "3.6":
 
 setup(
     name="ocw_data_parser",
-    version="0.1.6",
+    version="0.1.7",
     packages=find_packages(),
-    install_requires=["boto3>=1.9.62", "requests>=2.21.0", "pytz>=2018.7"],
+    install_requires=["boto3>=1.9.62", "requests>=2.21.0"],
     license="To be determined",
     author="Zagaran, Inc.",
     url="https://github.com/zagaran/ocw-data-parser",

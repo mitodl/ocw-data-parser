@@ -25,7 +25,7 @@ your_parser.extract_foreign_media_locally()  # To extract media files hosted on 
 # Second, setup your s3 info
 your_parser.setup_s3_uploading("your_bucket_name", "optional_containing_folder")
 # Then, call upload all media to s3
-your_parser.a.upload_all_media_to_s3()
+your_parser.upload_all_media_to_s3()
 
 ```
 

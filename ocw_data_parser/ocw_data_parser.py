@@ -7,8 +7,6 @@ import boto3
 from .utils import update_file_location, get_binary_data, is_json, get_correct_path, load_json_file, safe_get, \
     find_all_values_for_key
 import json
-from datetime import datetime
-import pytz
 
 
 log = logging.getLogger(__name__)
@@ -101,19 +99,6 @@ class OCWParser(object):
     
     def generate_master_json(self):
         """ Generates master JSON file for the course """
-        def _format_date(date_str):
-            """ Coverts date from 2016/02/02 20:28:06 US/Eastern to 2016-02-02 20:28:06-05:00"""
-            if date_str and date_str != "None":
-                date_pieces = date_str.split(" ")  # e.g. 2016/02/02 20:28:06 US/Eastern
-                date_pieces[0] = date_pieces[0].replace("/", "-")
-                tz = date_pieces.pop(2)
-                timezone = pytz.timezone(tz) if "GMT" not in tz else pytz.timezone("Etc/" + tz)
-                tz_stripped_date = datetime.strptime(" ".join(date_pieces), "%Y-%m-%d %H:%M:%S")
-                tz_aware_date = timezone.localize(tz_stripped_date)
-                tz_aware_date = tz_aware_date.astimezone(pytz.utc)
-                return str(tz_aware_date)
-            return ""
-
         if not self.jsons:
             self.jsons = self.load_raw_jsons()
         
@@ -134,8 +119,6 @@ class OCWParser(object):
         new_json["course_level"] = safe_get(self.jsons[0], "course_level")
         new_json["url"] = safe_get(self.jsons[0], "technical_location").split("ocw.mit.edu")[1]
         new_json["short_url"] = safe_get(self.jsons[0], "id")
-        # new_json["effective_date"] = _format_date(safe_get(self.jsons[0], "effectiveDate"))
-        # new_json["expiration_date"] = _format_date(safe_get(self.jsons[0], "expirationDate"))
         new_json["image_src"] = self.course_image_s3_link
         new_json["image_description"] = self.course_image_alt_text
         tags_strings = safe_get(self.jsons[0], "subject")
@@ -313,13 +296,6 @@ class OCWParser(object):
             log.error("Please set your s3 bucket name")
             return
 
-        client = boto3.client("s3",
-                              aws_access_key_id=self.s3_bucket_access_key,
-                              aws_secret_access_key=self.s3_bucket_secret_access_key
-                              )
-        # bucket_info = client.get_bucket_location(Bucket=self.s3_bucket_name)
-        # bucket_region = bucket_info["LocationConstraint"]
-        # bucket_base_url = f"https://s3.{bucket_region}.amazonaws.com/{self.s3_bucket_name}/"
         bucket_base_url = f"https://{self.s3_bucket_name}.s3.amazonaws.com/"
         if self.s3_target_folder:
             if self.s3_target_folder[-1] != "/":
@@ -350,6 +326,8 @@ class OCWParser(object):
                 if filename == thumbnail_name:
                     self.course_image_s3_link = bucket_base_url + filename
                     self.course_image_alt_text = safe_get(file, "description")
+                    self.master_json["image_src"] = self.course_image_s3_link
+                    self.master_json["image_description"] = self.course_image_alt_text
             else:
                 log.error("Could NOT upload %s", filename)
         
