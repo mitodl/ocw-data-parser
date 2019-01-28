@@ -46,6 +46,7 @@ class OCWParser(object):
         self.s3_target_folder = s3_target_folder
         self.media_jsons = []
         self.large_media_links = []
+        self.course_image_uid = ""
         self.course_image_s3_link = ""
         self.course_image_alt_text = ""
         self.master_json = None
@@ -101,7 +102,10 @@ class OCWParser(object):
         """ Generates master JSON file for the course """
         if not self.jsons:
             self.jsons = self.load_raw_jsons()
-        
+
+        self.course_image_uid = safe_get(self.jsons[1], "chp_image")
+        if not self.course_image_uid:
+            log.error("Missing course thumbnail (missing chp_image in 2.json)")
         # Generate master JSON
         new_json = dict()
         new_json["uid"] = safe_get(self.jsons[0], "_uid")
@@ -283,9 +287,6 @@ class OCWParser(object):
         self.export_master_json()
     
     def export_master_json(self):
-        # Get the most updated master json before exporting it
-        self.master_json = self.generate_master_json()
-        
         os.makedirs(self.destination_dir, exist_ok=True)
         with open(self.destination_dir + "master.json", "w") as file:
             json.dump(self.master_json, file)
@@ -319,11 +320,8 @@ class OCWParser(object):
                 update_file_location(self.master_json, bucket_base_url + filename, uid)
                 log.info("Uploaded %s", filename)
                 
-                # If current media file is course image, then update course_image_s3_link and alt_text
-                cn_peices = self.master_json["short_url"].split("-")
-                thumbnail_name = "%s_%s-%s.jpg" % \
-                                 (uid, cn_peices[0], cn_peices[1] + cn_peices[-2][0] + cn_peices[-1][2:])
-                if filename == thumbnail_name:
+                # Track course image link
+                if self.course_image_uid and uid == self.course_image_uid:
                     self.course_image_s3_link = bucket_base_url + filename
                     self.course_image_alt_text = safe_get(file, "description")
                     self.master_json["image_src"] = self.course_image_s3_link
