@@ -26,7 +26,8 @@ your_parser.extract_foreign_media_locally()  # To extract media files hosted on 
 your_parser.setup_s3_uploading("your_bucket_name", "optional_containing_folder")
 # Then, call upload all media to s3
 your_parser.upload_all_media_to_s3()
-
+# To upload course image thumbnail only
+your_parser.upload_course_image()
 ```
 
 To generate static HTML site for OCW course:

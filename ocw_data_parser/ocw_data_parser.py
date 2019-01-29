@@ -339,3 +339,36 @@ class OCWParser(object):
                 log.info("Uploaded %s", filename)
             else:
                 log.error("Could NOT upload %s", filename)
+
+    def upload_course_image(self):
+        if not self.s3_bucket_name:
+            log.error("Please set your s3 bucket name")
+            return
+        bucket_base_url = f"https://{self.s3_bucket_name}.s3.amazonaws.com/"
+        if self.s3_target_folder:
+            if self.s3_target_folder[-1] != "/":
+                self.s3_target_folder += "/"
+            bucket_base_url += self.s3_target_folder
+
+        s3_bucket = boto3.resource("s3",
+                                   aws_access_key_id=self.s3_bucket_access_key,
+                                   aws_secret_access_key=self.s3_bucket_secret_access_key
+                                   ).Bucket(self.s3_bucket_name)
+        # Upload static files first
+        for file in self.media_jsons:
+            uid = safe_get(file, "_uid")
+            if uid == self.course_image_uid:
+                filename = uid + "_" + safe_get(file, "id")
+                image_binary_data = get_binary_data(file)
+                if not image_binary_data:
+                    log.error(filename)
+                else:
+                    d = base64.b64decode(image_binary_data)
+                    s3_bucket.put_object(Key=self.s3_target_folder + filename, Body=d, ACL="public-read")
+                    log.info("Uploaded %s", filename)
+                    self.course_image_s3_link = bucket_base_url + filename
+                    self.course_image_alt_text = safe_get(file, "description")
+                    self.master_json["image_src"] = self.course_image_s3_link
+                    self.master_json["image_description"] = self.course_image_alt_text
+                    log.info("Uploaded %s", filename)
+                break
