@@ -103,9 +103,12 @@ class OCWParser(object):
         if not self.jsons:
             self.jsons = self.load_raw_jsons()
 
-        self.course_image_uid = safe_get(self.jsons[1], "chp_image")
+        # Find "CourseHomeSection" JSON and extract chp_image value
+        for j in self.jsons:
+            if j.get("_classname", None) == "CourseHomeSection":
+                self.course_image_uid = j.get("chp_image")
         if not self.course_image_uid:
-            log.error("Missing course thumbnail (missing chp_image in 2.json)")
+            log.error("Missing course thumbnail image")
         # Generate master JSON
         new_json = dict()
         new_json["uid"] = safe_get(self.jsons[0], "_uid")
