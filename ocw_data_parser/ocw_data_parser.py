@@ -105,7 +105,9 @@ class OCWParser(object):
 
         # Find "CourseHomeSection" JSON and extract chp_image value
         for j in self.jsons:
-            if j.get("_classname", None) == "CourseHomeSection":
+            classname = j.get("_classname", None)
+            # CourseHomeSection for courses and SRHomePage is for resources
+            if classname in ["CourseHomeSection", "SRHomePage"]:
                 self.course_image_uid = j.get("chp_image")
         if not self.course_image_uid:
             log.error("Missing course thumbnail image")
