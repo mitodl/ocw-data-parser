@@ -7,6 +7,7 @@ import boto3
 from .utils import update_file_location, get_binary_data, is_json, get_correct_path, load_json_file, safe_get, \
     find_all_values_for_key
 import json
+from smart_open import smart_open
 
 
 log = logging.getLogger(__name__)
@@ -297,7 +298,7 @@ class OCWParser(object):
             json.dump(self.master_json, file)
         log.info("Extracted %s", self.destination_dir + 'master.json')
     
-    def upload_all_media_to_s3(self):
+    def upload_all_media_to_s3(self, chunk_size=5000000):  # default chunk_size set to 50 megabytes
         if not self.s3_bucket_name:
             log.error("Please set your s3 bucket name")
             return
@@ -337,9 +338,11 @@ class OCWParser(object):
         # Upload foreign(large) media files:
         for media in self.large_media_links:
             filename = media["link"].split("/")[-1]
-            response = get(media["link"])
+            response = get(media["link"], stream=True)
             if response:
-                s3_bucket.put_object(Key=self.s3_target_folder + filename, Body=response.content, ACL="public-read")
+                with smart_open(f"s3://{self.s3_bucket_name}/" + self.s3_target_folder + filename, "wb") as s3:
+                    for chunk in response.iter_content(chunk_size=chunk_size):
+                        s3.write(chunk)
                 update_file_location(self.master_json, bucket_base_url + filename)
                 log.info("Uploaded %s", filename)
             else:
