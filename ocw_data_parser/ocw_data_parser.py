@@ -298,7 +298,7 @@ class OCWParser(object):
             json.dump(self.master_json, file)
         log.info("Extracted %s", self.destination_dir + 'master.json')
     
-    def upload_all_media_to_s3(self, chunk_size=5000000):  # default chunk_size set to 50 megabytes
+    def upload_all_media_to_s3(self, chunk_size=1000000):  # default chunk_size set to 10 megabytes
         if not self.s3_bucket_name:
             log.error("Please set your s3 bucket name")
             return
@@ -343,6 +343,7 @@ class OCWParser(object):
                 with smart_open(f"s3://{self.s3_bucket_name}/" + self.s3_target_folder + filename, "wb") as s3:
                     for chunk in response.iter_content(chunk_size=chunk_size):
                         s3.write(chunk)
+                response.close()
                 update_file_location(self.master_json, bucket_base_url + filename)
                 log.info("Uploaded %s", filename)
             else:
