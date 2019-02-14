@@ -340,7 +340,8 @@ class OCWParser(object):
             filename = media["link"].split("/")[-1]
             response = get(media["link"], stream=True)
             if response:
-                with smart_open(f"s3://{self.s3_bucket_name}/" + self.s3_target_folder + filename, "wb") as s3:
+                s3_uri = f"s3://{self.s3_bucket_access_key}:{self.s3_bucket_secret_access_key}@{self.s3_bucket_name}/"
+                with smart_open(s3_uri + self.s3_target_folder + filename, "wb") as s3:
                     for chunk in response.iter_content(chunk_size=chunk_size):
                         s3.write(chunk)
                 response.close()
