@@ -20,7 +20,7 @@ class CustomHTMLParser(HTMLParser):
             self.output_list = []
         else:
             self.output_list = output_list
-    
+
     def handle_starttag(self, tag, attrs):
         if tag == "a":
             self.output_list.append(dict(attrs).get("href"))
@@ -69,7 +69,7 @@ class OCWParser(object):
         self.s3_bucket_access_key = s3_bucket_access_key
         self.s3_bucket_secret_access_key = s3_bucket_secret_access_key
         self.s3_target_folder = folder
-    
+
     def load_raw_jsons(self):
         """ Loads all course raw jsons sequentially and returns them in an ordered list """
         dict_of_all_course_dirs = dict()
@@ -82,7 +82,7 @@ class OCWParser(object):
                         # Turn file name to int to enforce sequential json loading later
                         dict_of_all_course_dirs[directory].append(int(file.split(".")[0]))
                 dict_of_all_course_dirs[directory] = sorted(dict_of_all_course_dirs[directory])
-        
+
         # Load JSONs into memory
         loaded_jsons = []
         for key, val in dict_of_all_course_dirs.items():
@@ -96,9 +96,9 @@ class OCWParser(object):
                     loaded_jsons.append(loaded_json)
                 else:
                     log.error("Failed to load %s", file_path)
-        
+
         return loaded_jsons
-    
+
     def generate_master_json(self):
         """ Generates master JSON file for the course """
         if not self.jsons:
@@ -145,10 +145,10 @@ class OCWParser(object):
         new_json["course_files"] = self.compose_media()
         new_json["course_embedded_media"] = self.compose_embedded_media()
         new_json["course_foreign_files"] = self.gather_foreign_media()
-        
+
         self.master_json = new_json
         return new_json
-    
+
     def compose_pages(self):
         def _compose_page_dict(j):
             url_data = safe_get(j, "technical_location")
@@ -166,9 +166,9 @@ class OCWParser(object):
             }
             if "media_location" in j and j["media_location"] and j["_content_type"] == "text/html":
                 page_dict["youtube_id"] = j["media_location"]
-            
+
             return page_dict
-        
+
         if not self.jsons:
             self.jsons = self.load_raw_jsons()
         page_types = ["CourseHomeSection", "CourseSection", "DownloadSection", "ThisCourseAtMITSection"]
@@ -180,7 +180,7 @@ class OCWParser(object):
                     "_type" in json_file and json_file["_type"] in page_types:
                 pages.append(_compose_page_dict(json_file))
         return pages
-    
+
     def compose_media(self):
         def _compose_media_dict(j):
             return {
@@ -194,7 +194,7 @@ class OCWParser(object):
                 "platform_requirements": safe_get(j, "other_platform_requirements"),
                 "description": safe_get(j, "description"),
             }
-        
+
         if not self.jsons:
             self.jsons = self.load_raw_jsons()
         result = []
@@ -204,7 +204,7 @@ class OCWParser(object):
                 self.media_jsons.append(lj)  # Keep track of the jsons that contain media in case we want to extract
                 result.append(_compose_media_dict(lj))
         return result
-    
+
     def compose_embedded_media(self):
         linked_media_parents = dict()
         for j in self.jsons:
@@ -234,7 +234,7 @@ class OCWParser(object):
                         temp["embedded_media"].append(embedded_media)
                 linked_media_parents[j["inline_embed_id"]] = temp
         return linked_media_parents
-    
+
     def gather_foreign_media(self):
         containing_keys = ['bottomtext', 'courseoutcomestext', 'description', 'image_caption_text', 'optional_text',
                            'text']
@@ -252,12 +252,12 @@ class OCWParser(object):
                                 }
                                 self.large_media_links.append(obj)
         return self.large_media_links
-    
+
     def extract_media_locally(self):
         if not self.media_jsons:
             log.debug("You have to compose media for course first!")
             return
-        
+
         path_to_containing_folder = self.destination_dir + "static_files/"
         os.makedirs(path_to_containing_folder, exist_ok=True)
         for j in self.media_jsons:
@@ -274,12 +274,12 @@ class OCWParser(object):
                 log.error("Media file %s without either datafield key", json_file)
         log.info("Done! extracted static media to %s", path_to_containing_folder)
         self.export_master_json()
-    
+
     def extract_foreign_media_locally(self):
         if not self.large_media_links:
             log.debug("Your course has 0 foreign media files")
             return
-        
+
         path_to_containing_folder = self.destination_dir + "static_files/"
         os.makedirs(path_to_containing_folder, exist_ok=True)
         for media in self.large_media_links:
@@ -291,13 +291,13 @@ class OCWParser(object):
             log.info("Extracted %s", file_name)
         log.info("Done! extracted foreign media to %s", path_to_containing_folder)
         self.export_master_json()
-    
+
     def export_master_json(self):
         os.makedirs(self.destination_dir, exist_ok=True)
         with open(self.destination_dir + "master.json", "w") as file:
             json.dump(self.master_json, file)
         log.info("Extracted %s", self.destination_dir + 'master.json')
-    
+
     def upload_all_media_to_s3(self, chunk_size=1000000):  # default chunk_size set to 10 megabytes
         if not self.s3_bucket_name:
             log.error("Please set your s3 bucket name")
@@ -318,14 +318,14 @@ class OCWParser(object):
             uid = safe_get(file, "_uid")
             filename = uid + "_" + safe_get(file, "id")
             if not get_binary_data(file):
-                log.error(filename)
+                log.error("Could not load binary data for file: %s", filename)
             else:
                 d = base64.b64decode(get_binary_data(file))
             if d:
                 s3_bucket.put_object(Key=self.s3_target_folder + filename, Body=d, ACL="public-read")
                 update_file_location(self.master_json, bucket_base_url + filename, uid)
                 log.info("Uploaded %s", filename)
-                
+
                 # Track course image link
                 if self.course_image_uid and uid == self.course_image_uid:
                     self.course_image_s3_link = bucket_base_url + filename
@@ -334,7 +334,7 @@ class OCWParser(object):
                     self.master_json["image_description"] = self.course_image_alt_text
             else:
                 log.error("Could NOT upload %s", filename)
-        
+
         # Upload foreign(large) media files:
         for media in self.large_media_links:
             filename = media["link"].split("/")[-1]
