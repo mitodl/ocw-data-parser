@@ -355,7 +355,7 @@ class OCWParser(object):
             uid = self.master_json.get('uid')
             if uid:
                 s3_bucket.put_object(Key=self.s3_target_folder + f"{uid}_master.json",
-                                     Body=self.master_json,
+                                     Body=json.dumps(self.master_json),
                                      ACL='private')
             else:
                 log.error('No unique uid found for this master_json')
