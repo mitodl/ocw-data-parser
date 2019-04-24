@@ -298,7 +298,8 @@ class OCWParser(object):
             json.dump(self.master_json, file)
         log.info("Extracted %s", self.destination_dir + 'master.json')
 
-    def upload_all_media_to_s3(self, chunk_size=1000000):  # default chunk_size set to 10 megabytes
+    def upload_all_media_to_s3(self, chunk_size=1000000, upload_master_json=False):
+        # default chunk_size set to 10 megabytes
         if not self.s3_bucket_name:
             log.error("Please set your s3 bucket name")
             return
@@ -349,6 +350,15 @@ class OCWParser(object):
                 log.info("Uploaded %s", filename)
             else:
                 log.error("Could NOT upload %s", filename)
+
+        if upload_master_json:
+            uid = self.master_json.get('uid')
+            if uid:
+                s3_bucket.put_object(Key=self.s3_target_folder + f"{uid}_master.json",
+                                     Body=self.master_json,
+                                     ACL='private')
+            else:
+                log.error('No unique uid found for this master_json')
 
     def upload_course_image(self):
         if not self.s3_bucket_name:
