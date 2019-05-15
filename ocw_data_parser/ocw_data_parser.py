@@ -125,7 +125,6 @@ class OCWParser(object):
         new_json["from_year"] = safe_get(self.jsons[0], "from_year")
         new_json["to_semester"] = safe_get(self.jsons[0], "to_semester")
         new_json["to_year"] = safe_get(self.jsons[0], "to_year")
-        new_json["course_owner"] = safe_get(self.jsons[0], "course_owner")
         new_json["course_level"] = safe_get(self.jsons[0], "course_level")
         new_json["url"] = safe_get(self.jsons[0], "technical_location").split("ocw.mit.edu")[1]
         new_json["short_url"] = safe_get(self.jsons[0], "id")
@@ -136,7 +135,8 @@ class OCWParser(object):
         for tag in tags_strings:
             tags.append({"name": tag})
         new_json["tags"] = tags
-        new_json["instructors"] = safe_get(self.jsons[0], "instructors")
+        new_json["instructors"] = [{key: value for key, value in instructor.items() if key != 'mit_id'}
+                                   for instructor in safe_get(self.jsons[0], "instructors")]
         new_json["language"] = safe_get(self.jsons[0], "language")
         new_json["extra_course_number"] = safe_get(self.jsons[0], "linked_course_number")
         new_json["course_features"] = safe_get(self.jsons[0], "feature_requirements")
