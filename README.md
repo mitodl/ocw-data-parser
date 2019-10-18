@@ -16,8 +16,7 @@ To parse a single OCW course:
 from ocw_data_parser import OCWParser
 
 your_parser = OCWParser("path/to/course/", "path/to/output/destination/")
-your_parser.extract_master_json()  # To get the master json
-your_parser.extract_media_locally()  # To extract the media files locally inside output directory
+your_parser.extract_media_locally()  # To extract the media files and master json locally inside output directory
 your_parser.extract_foreign_media_locally()  # To extract media files hosted on the Akamai cloud
 
 # To upload all media to your S3 Bucket
