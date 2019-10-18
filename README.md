@@ -19,9 +19,9 @@ Place the raw Plone JSON files for each course in their own directory, and place
 from ocw_data_parser import OCWParser
 
 your_parser = OCWParser("path/to/course_dir/", "path/to/output/destination/")
-# To extract the media files and master json locally inside output directory for each course directory in course_dir
+# Extract the media files and master json locally inside output directory for each course directory in course_dir
 your_parser.extract_media_locally()
-# To extract media files hosted on the Akamai cloud
+# Extract media files hosted on the Akamai cloud
 your_parser.extract_foreign_media_locally()
 
 # To upload all media to your S3 Bucket
