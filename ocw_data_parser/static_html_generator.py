@@ -1,6 +1,6 @@
 import logging
 
-from .utils import is_json, get_correct_path, load_json_file
+from .utils import is_json, get_correct_path, get_page_from_url, load_json_file
 
 log = logging.getLogger(__name__)
 
