@@ -1,6 +1,6 @@
 import json
 import logging
-
+import os
 
 log = logging.getLogger(__name__)
 
@@ -38,6 +38,11 @@ def get_correct_path(directory):
         return ""
     return directory if directory[-1] == "/" else directory + "/"
 
+def get_page_from_url(url):
+    try:
+        return os.path.split(url)[1]
+    except ValueError:
+        log.exception("Failed to parse URL %s", url)
 
 def load_json_file(path):
     with open(path, 'r') as f:
