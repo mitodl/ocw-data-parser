@@ -8,6 +8,7 @@ from .utils import update_file_location, get_binary_data, is_json, get_correct_p
     find_all_values_for_key
 import json
 from smart_open import smart_open
+from .static_html_generator import generate_html_for_course
 
 
 log = logging.getLogger(__name__)
@@ -30,6 +31,7 @@ class OCWParser(object):
     def __init__(self,
                  course_dir="",
                  destination_dir="",
+                 static_prefix="",
                  loaded_jsons=list(),
                  upload_to_s3=False,
                  s3_bucket_name="",
@@ -40,6 +42,7 @@ class OCWParser(object):
             raise Exception("Message")
         self.course_dir = get_correct_path(course_dir) if course_dir else course_dir
         self.destination_dir = get_correct_path(destination_dir) if destination_dir else destination_dir
+        self.static_prefix = static_prefix
         self.upload_to_s3 = upload_to_s3
         self.s3_bucket_name = s3_bucket_name
         self.s3_bucket_access_key = s3_bucket_access_key
@@ -267,7 +270,10 @@ class OCWParser(object):
                 with open(path_to_containing_folder + filename, "wb") as f:
                     data = base64.b64decode(d)
                     f.write(data)
-                update_file_location(self.master_json, path_to_containing_folder + filename, safe_get(j, "_uid"))
+                if self.static_prefix:
+                    update_file_location(self.master_json, self.static_prefix + filename, safe_get(j, "_uid"))
+                else:
+                    update_file_location(self.master_json, path_to_containing_folder + filename, safe_get(j, "_uid"))
                 log.info("Extracted %s", filename)
             else:
                 json_file = j["actual_file_name"]
@@ -287,10 +293,20 @@ class OCWParser(object):
             with open(path_to_containing_folder + file_name, "wb") as file:
                 response = get(media["link"])
                 file.write(response.content)
-            update_file_location(self.master_json, path_to_containing_folder + file_name)
+            if self.static_prefix:
+                update_file_location(self.master_json, self.static_prefix + filename, safe_get(j, "_uid"))
+            else:
+                update_file_location(self.master_json, path_to_containing_folder + filename, safe_get(j, "_uid"))
             log.info("Extracted %s", file_name)
         log.info("Done! extracted foreign media to %s", path_to_containing_folder)
         self.export_master_json()
+
+    def generate_static_site(self):
+        self.extract_media_locally()
+        self.extract_foreign_media_locally()
+        generate_html_for_course(
+            self.destination_dir + '/master.json',
+            self.destination_dir)
 
     def export_master_json(self):
         os.makedirs(self.destination_dir, exist_ok=True)
