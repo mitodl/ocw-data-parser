@@ -11,9 +11,9 @@ pip install ocw-data-parser
 ```
 
 ## Usage
-To parse OCW courses:
+Each OCW course exported from Plone usually has a single folder named "0" under the course directory.  This directory structure must be maintained for the parser to work correctly.  When "course_dir" is referred to here, we are talking about the directory that contains this "0" directory.
 
-Place the raw Plone JSON files for each course in their own directory, and place those folders within another directory.  We will refer to this as the "course_dir."  You may place any number of courses in this directory.
+To parse a single OCW course:
 
 ```python
 from ocw_data_parser import OCWParser
