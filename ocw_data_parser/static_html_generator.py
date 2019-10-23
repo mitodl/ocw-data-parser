@@ -117,7 +117,7 @@ def get_course_thumbnail(mj):
             thumbnail_name = media["uid"] + "_" + thumbnail_name
             if media["file_location"].split("/")[-1] == thumbnail_name:
                 return "<div class=\"container\"><div class=\"card float-left\" style=\"max-width: 330px;\"><img class=\"card-img-top\" alt=\"%s\" src=\"%s\" title=\"%s\" />\n<div class=\"card-body\"><p class=\"card-text\">\n%s\n</p></div></div>" % \
-                       (media["alt_text"], media["file_location"], media["alt_text"], media["description"])
+                       (mj["image_alternate_text"], media["file_location"], mj["image_alternate_text"], mj["image_caption_text"])
     return ""
 
 

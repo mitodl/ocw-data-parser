@@ -133,6 +133,8 @@ class OCWParser(object):
         new_json["short_url"] = safe_get(self.jsons[0], "id")
         new_json["image_src"] = self.course_image_s3_link
         new_json["image_description"] = self.course_image_alt_text
+        new_json["image_alternate_text"] = safe_get(self.jsons[1], "image_alternate_text")
+        new_json["image_caption_text"] = safe_get(self.jsons[1], "image_caption_text")
         tags_strings = safe_get(self.jsons[0], "subject")
         tags = list()
         for tag in tags_strings:
@@ -264,17 +266,17 @@ class OCWParser(object):
         path_to_containing_folder = self.destination_dir + "static_files/"
         os.makedirs(path_to_containing_folder, exist_ok=True)
         for j in self.media_jsons:
-            filename = safe_get(j, "_uid") + "_" + safe_get(j, "id")
+            file_name = safe_get(j, "_uid") + "_" + safe_get(j, "id")
             d = get_binary_data(j)
             if d:
-                with open(path_to_containing_folder + filename, "wb") as f:
+                with open(path_to_containing_folder + file_name, "wb") as f:
                     data = base64.b64decode(d)
                     f.write(data)
                 if self.static_prefix:
-                    update_file_location(self.master_json, self.static_prefix + filename, safe_get(j, "_uid"))
+                    update_file_location(self.master_json, self.static_prefix + file_name, safe_get(j, "_uid"))
                 else:
-                    update_file_location(self.master_json, path_to_containing_folder + filename, safe_get(j, "_uid"))
-                log.info("Extracted %s", filename)
+                    update_file_location(self.master_json, path_to_containing_folder + file_name, safe_get(j, "_uid"))
+                log.info("Extracted %s", file_name)
             else:
                 json_file = j["actual_file_name"]
                 log.error("Media file %s without either datafield key", json_file)
@@ -294,9 +296,9 @@ class OCWParser(object):
                 response = get(media["link"])
                 file.write(response.content)
             if self.static_prefix:
-                update_file_location(self.master_json, self.static_prefix + filename, safe_get(j, "_uid"))
+                update_file_location(self.master_json, self.static_prefix + file_name)
             else:
-                update_file_location(self.master_json, path_to_containing_folder + filename, safe_get(j, "_uid"))
+                update_file_location(self.master_json, path_to_containing_folder + file_name)
             log.info("Extracted %s", file_name)
         log.info("Done! extracted foreign media to %s", path_to_containing_folder)
         self.export_master_json()
