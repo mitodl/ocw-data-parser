@@ -133,6 +133,8 @@ class OCWParser(object):
         new_json["short_url"] = safe_get(self.jsons[0], "id")
         new_json["image_src"] = self.course_image_s3_link
         new_json["image_description"] = self.course_image_alt_text
+        new_json["image_alternate_text"] = safe_get(self.jsons[1], "image_alternate_text")
+        new_json["image_caption_text"] = safe_get(self.jsons[1], "image_caption_text")
         tags_strings = safe_get(self.jsons[0], "subject")
         tags = list()
         for tag in tags_strings:
