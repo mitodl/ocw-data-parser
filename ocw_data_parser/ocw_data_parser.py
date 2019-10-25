@@ -2,6 +2,7 @@ import logging
 from html.parser import HTMLParser
 import os
 import copy
+import shutil
 import base64
 from requests import get
 import boto3
@@ -10,7 +11,7 @@ from .utils import update_file_location, get_binary_data, is_json, get_correct_p
 import json
 from smart_open import smart_open
 from .static_html_generator import generate_html_for_course
-
+from .markdown_generator import generate_md_for_course
 
 log = logging.getLogger(__name__)
 
@@ -214,6 +215,7 @@ class OCWParser(object):
                 "credit": safe_get(j, "credit"),
                 "platform_requirements": safe_get(j, "other_platform_requirements"),
                 "description": safe_get(j, "description"),
+                "type": safe_get(j, "_type"),
             }
 
         if not self.jsons:
@@ -222,6 +224,8 @@ class OCWParser(object):
         all_media_types = find_all_values_for_key(self.jsons, "_content_type")
         for lj in self.jsons:
             if lj["_content_type"] in all_media_types:
+                if safe_get(lj, "media_resource_type") == "Video":
+                    print("Video Resource Found")
                 self.media_jsons.append(lj)  # Keep track of the jsons that contain media in case we want to extract
                 result.append(_compose_media_dict(lj))
         return result
@@ -235,9 +239,12 @@ class OCWParser(object):
                     "uid": j["_uid"],
                     "parent_uid": j["parent_uid"],
                     "technical_location": j["technical_location"],
-                    "id": j["id"],
+                    "short_url": j["id"],
                     "inline_embed_id": j["inline_embed_id"],
-                    "embedded_media": [],
+                    "about_this_resource_text": j["about_this_resource_text"],
+                    "related_resources_text": j["related_resources_text"],
+                    "transcript": j["transcript"],
+                    "embedded_media": []
                 }
                 # Find all children of linked embedded media
                 for child in self.jsons:
@@ -246,10 +253,11 @@ class OCWParser(object):
                             "uid": child["_uid"],
                             "parent_uid": child["parent_uid"],
                             "id": child["id"],
-                            "title": child["title"]
+                            "title": child["title"],
+                            "type": safe_get(child, "media_asset_type")
                         }
                         if "media_location" in child and child["media_location"]:
-                            embedded_media["media_info"] = child["media_location"]
+                            embedded_media["media_location"] = child["media_location"]
                         if "technical_location" in child and child["technical_location"]:
                             embedded_media["technical_location"] = child["technical_location"]
                         temp["embedded_media"].append(embedded_media)
@@ -279,8 +287,8 @@ class OCWParser(object):
             log.debug("You have to compose media for course first!")
             return
 
-        path_to_containing_folder = self.destination_dir + self.static_prefix \
-            if self.static_prefix else self.destination_dir + "static_files/"
+        path_to_containing_folder = self.destination_dir + "output/" + self.static_prefix \
+            if self.static_prefix else self.destination_dir + "output/static_files/"
         url_path_to_media = self.static_prefix if self.static_prefix else path_to_containing_folder
         os.makedirs(path_to_containing_folder, exist_ok=True)
         for j in self.media_jsons:
@@ -303,8 +311,8 @@ class OCWParser(object):
             log.debug("Your course has 0 foreign media files")
             return
 
-        path_to_containing_folder = self.destination_dir + self.static_prefix \
-            if self.static_prefix else self.destination_dir + "static_files/"
+        path_to_containing_folder = self.destination_dir + + "output/" + self.static_prefix \
+            if self.static_prefix else self.destination_dir + "output/static_files/"
         url_path_to_media = self.static_prefix if self.static_prefix else path_to_containing_folder
         os.makedirs(path_to_containing_folder, exist_ok=True)
         for media in self.large_media_links:
@@ -322,17 +330,22 @@ class OCWParser(object):
         Extract all static media locally and generate master.json, 
         then generate static HTML for a course
         """
+        shutil.copytree(self.course_dir, self.destination_dir + '/source/')
         self.extract_media_locally()
         self.extract_foreign_media_locally()
         generate_html_for_course(
-            self.destination_dir + '/master.json',
-            self.destination_dir)
+            self.destination_dir + '/master/master.json',
+            self.destination_dir + '/output/')
+        # generate_md_for_course(
+        #     self.destination_dir + '/master.json',
+        #     self.destination_dir)
 
     def export_master_json(self):
-        os.makedirs(self.destination_dir, exist_ok=True)
-        with open(self.destination_dir + "master.json", "w") as file:
+        os.makedirs(self.destination_dir + "/master/", exist_ok=True)
+        file_path = self.destination_dir + "/master/master.json"
+        with open(file_path, "w") as file:
             json.dump(self.master_json, file)
-        log.info("Extracted %s", self.destination_dir + 'master.json')
+        log.info("Extracted %s", file_path)
 
     def upload_all_media_to_s3(self, chunk_size=1000000, upload_master_json=False):
         # default chunk_size set to 10 megabytes
