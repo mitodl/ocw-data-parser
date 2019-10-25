@@ -236,6 +236,8 @@ class OCWParser(object):
         all_media_types = find_all_values_for_key(self.jsons, "_content_type")
         for lj in self.jsons:
             if lj["_content_type"] in all_media_types:
+                if safe_get(lj, "media_resource_type") == "Video":
+                    print("Video Resource Found")
                 self.media_jsons.append(lj)  # Keep track of the jsons that contain media in case we want to extract
                 result.append(_compose_media_dict(lj))
         return result
@@ -321,7 +323,7 @@ class OCWParser(object):
             log.debug("Your course has 0 foreign media files")
             return
 
-        path_to_containing_folder = self.destination_dir + + "output/" + self.static_prefix \
+        path_to_containing_folder = self.destination_dir + 'output/' + self.static_prefix \
             if self.static_prefix else self.destination_dir + "output/static_files/"
         url_path_to_media = self.static_prefix if self.static_prefix else path_to_containing_folder
         os.makedirs(path_to_containing_folder, exist_ok=True)
