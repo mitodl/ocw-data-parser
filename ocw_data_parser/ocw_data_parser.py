@@ -11,10 +11,6 @@ from .utils import update_file_location, get_binary_data, is_json, get_correct_p
 import json
 from smart_open import smart_open
 from .static_html_generator import generate_html_for_course
-<<<<<<< HEAD
-=======
-from .markdown_generator import generate_md_for_course
->>>>>>> Cherry pick changes from static_publishing_research branch relevant to first commits for the media-gallery functionality.
 
 log = logging.getLogger(__name__)
 
