@@ -11,7 +11,6 @@ from .utils import update_file_location, get_binary_data, is_json, get_correct_p
 import json
 from smart_open import smart_open
 from .static_html_generator import generate_html_for_course
-from .markdown_generator import generate_md_for_course
 
 log = logging.getLogger(__name__)
 
@@ -334,9 +333,6 @@ class OCWParser(object):
         generate_html_for_course(
             self.destination_dir + '/master/master.json',
             self.destination_dir + '/output/')
-        # generate_md_for_course(
-        #     self.destination_dir + '/master.json',
-        #     self.destination_dir)
 
     def export_master_json(self):
         os.makedirs(self.destination_dir + "/master/", exist_ok=True)
