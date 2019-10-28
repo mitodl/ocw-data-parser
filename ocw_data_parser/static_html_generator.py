@@ -190,7 +190,7 @@ def generate_linked_pages(linked_pages, destination, mj):
                 # f.write(generate_main_content(mj))
                 if page["text"]:
                     f.write(fix_links(page["text"], mj))
-                if "course_embedded_media" in mj:
+                if "course_embedded_media" in mj and page["is_media_gallery"]:
                     generate_embedded_media_pages(page, destination, mj)
                     f.write(generate_embedded_media_playlist(page, destination, mj))
                 f.write("</div>\n</div>\n</div>\n")

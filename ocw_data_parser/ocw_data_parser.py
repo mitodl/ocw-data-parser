@@ -184,6 +184,7 @@ class OCWParser(object):
                 "short_url": safe_get(j, "id"),
                 "description": safe_get(j, "description"),
                 "type": safe_get(j, "_type"),
+                "is_media_gallery": safe_get(j, "is_media_gallery")
             }
             if "media_location" in j and j["media_location"] and j["_content_type"] == "text/html":
                 page_dict["youtube_id"] = j["media_location"]
