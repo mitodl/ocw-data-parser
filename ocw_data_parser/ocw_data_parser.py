@@ -148,12 +148,14 @@ class OCWParser(object):
         new_json["course_collections"] = safe_get(self.jsons[0], "category_features")
         new_json["course_pages"] = self.compose_pages()
         course_features = []
-        for feature_requirement in safe_get(self.jsons[0], "feature_requirements"):
-            for page in new_json["course_pages"]:
-                if page["short_url"] in feature_requirement["ocw_feature_url"]:
-                    course_feature = copy.copy(feature_requirement)
-                    course_feature["ocw_feature_url"] = './resolveuid/' + page["uid"]
-                    course_features.append(course_feature)
+        feature_requirements = safe_get(self.jsons[0], "feature_requirements")
+        if feature_requirements:
+            for feature_requirement in feature_requirements:
+                for page in new_json["course_pages"]:
+                    if page["short_url"] in feature_requirement["ocw_feature_url"]:
+                        course_feature = copy.copy(feature_requirement)
+                        course_feature["ocw_feature_url"] = './resolveuid/' + page["uid"]
+                        course_features.append(course_feature)
         new_json["course_features"] = course_features
         new_json["course_files"] = self.compose_media()
         new_json["course_embedded_media"] = self.compose_embedded_media()
