@@ -123,14 +123,22 @@ class OCWParser(object):
         new_json["description"] = safe_get(self.jsons[1], "description")
         new_json["sort_as"] = safe_get(self.jsons[0], "sort_as")
         master_course = safe_get(self.jsons[0], "master_course_number")
-        new_json["department_number"] = master_course.split('.')[0]
-        new_json["master_course_number"] = master_course.split('.')[1]
+        if master_course:
+            new_json["department_number"] = master_course.split('.')[0]
+            new_json["master_course_number"] = master_course.split('.')[1]
+        else:
+            new_json["department_number"] = ""
+            new_json["master_course_number"] = ""
         new_json["from_semester"] = safe_get(self.jsons[0], "from_semester")
         new_json["from_year"] = safe_get(self.jsons[0], "from_year")
         new_json["to_semester"] = safe_get(self.jsons[0], "to_semester")
         new_json["to_year"] = safe_get(self.jsons[0], "to_year")
         new_json["course_level"] = safe_get(self.jsons[0], "course_level")
-        new_json["url"] = safe_get(self.jsons[0], "technical_location").split("ocw.mit.edu")[1]
+        technical_location = safe_get(self.jsons[0], "technical_location")
+        if technical_location:
+            new_json["url"] = technical_location.split("ocw.mit.edu")[1]
+        else:
+            new_json["url"] = ""
         new_json["short_url"] = safe_get(self.jsons[0], "id")
         new_json["image_src"] = self.course_image_s3_link
         new_json["image_description"] = self.course_image_alt_text
@@ -141,8 +149,12 @@ class OCWParser(object):
         for tag in tags_strings:
             tags.append({"name": tag})
         new_json["tags"] = tags
-        new_json["instructors"] = [{key: value for key, value in instructor.items() if key != 'mit_id'}
-                                   for instructor in safe_get(self.jsons[0], "instructors")]
+        instructors = safe_get(self.jsons[0], "instructors")
+        if instructors:
+            new_json["instructors"] = [{key: value for key, value in instructor.items() if key != 'mit_id'}
+                                    for instructor in instructors]
+        else:
+            new_json["instructors"] = ""
         new_json["language"] = safe_get(self.jsons[0], "language")
         new_json["extra_course_number"] = safe_get(self.jsons[0], "linked_course_number")
         new_json["course_collections"] = safe_get(self.jsons[0], "category_features")
@@ -332,12 +344,12 @@ class OCWParser(object):
         self.extract_media_locally()
         self.extract_foreign_media_locally()
         generate_html_for_course(
-            self.destination_dir + '/master/master.json',
-            self.destination_dir + '/output/')
+            self.destination_dir + 'master/master.json',
+            self.destination_dir + 'output/')
 
     def export_master_json(self):
-        os.makedirs(self.destination_dir + "/master/", exist_ok=True)
-        file_path = self.destination_dir + "/master/master.json"
+        os.makedirs(self.destination_dir + "master/", exist_ok=True)
+        file_path = self.destination_dir + "master/master.json"
         with open(file_path, "w") as file:
             json.dump(self.master_json, file)
         log.info("Extracted %s", file_path)

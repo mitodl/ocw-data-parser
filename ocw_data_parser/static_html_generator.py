@@ -25,6 +25,7 @@ def generate_html_for_course(master_json, destination):
 
 
 def generate_index_page(mj, destination):
+    os.makedirs(destination, exist_ok=True)
     destination = get_correct_path(destination) + "index.html"
     with open(destination, "w") as f:
         # Order of these f writes is important
@@ -158,15 +159,16 @@ def get_course_description(mj):
 def get_course_collections(mj):
     course_collections = "<hr />\n<h4>Course Collections</h4>\n<p>See related courses in the following collections:</p>\n<p>Find Courses by Topic</p>\n<ul>%s</ul>\n"
     list_of_collections = ""
-    for entry in mj["course_collections"]:
-        feature = entry.get("ocw_feature", "")
-        subfeature = entry.get("ocw_subfeature", "")
-        speciality = entry.get("ocw_speciality", "")
-        if speciality:
-            subfeature += " >"
-        if subfeature:
-            feature += " >"
-        list_of_collections += "<li><a href=\"#\">%s  %s  %s</a></li>\n" % (feature, subfeature, speciality)
+    if mj["course_collections"]:
+        for entry in mj["course_collections"]:
+            feature = entry.get("ocw_feature", "")
+            subfeature = entry.get("ocw_subfeature", "")
+            speciality = entry.get("ocw_speciality", "")
+            if speciality:
+                subfeature += " >"
+            if subfeature:
+                feature += " >"
+            list_of_collections += "<li><a href=\"#\">%s  %s  %s</a></li>\n" % (feature, subfeature, speciality)
     return course_collections % list_of_collections
 
 
@@ -181,13 +183,13 @@ def generate_linked_pages(linked_pages, destination, mj):
     destination = get_correct_path(destination)
     for page in linked_pages:
         if page["url"] and not page["url"].split("/")[-1] == "index.htm":
+            os.makedirs(destination, exist_ok=True)
             with open(destination + compose_page_name(page), "w") as f:
                 f.write(generate_header_and_start_body(page))
                 f.write(generate_breadcrumbs(mj, page["uid"]))
                 f.write(generate_course_container(page))
                 f.write(generate_side_menu(mj))
                 f.write("<div class=\"main-content col-9\">\n")
-                # f.write(generate_main_content(mj))
                 if page["text"]:
                     f.write(fix_links(page["text"], mj))
                 if "course_embedded_media" in mj and page["is_media_gallery"]:
