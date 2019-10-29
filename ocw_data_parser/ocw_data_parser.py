@@ -1,6 +1,7 @@
 import logging
 from html.parser import HTMLParser
 import os
+import copy
 import base64
 from requests import get
 import boto3
@@ -144,9 +145,16 @@ class OCWParser(object):
                                    for instructor in safe_get(self.jsons[0], "instructors")]
         new_json["language"] = safe_get(self.jsons[0], "language")
         new_json["extra_course_number"] = safe_get(self.jsons[0], "linked_course_number")
-        new_json["course_features"] = safe_get(self.jsons[0], "feature_requirements")
         new_json["course_collections"] = safe_get(self.jsons[0], "category_features")
         new_json["course_pages"] = self.compose_pages()
+        course_features = []
+        for feature_requirement in safe_get(self.jsons[0], "feature_requirements"):
+            for page in new_json["course_pages"]:
+                if page["short_url"] in feature_requirement["ocw_feature_url"]:
+                    course_feature = copy.copy(feature_requirement)
+                    course_feature["ocw_feature_url"] = './resolveuid/' + page["uid"]
+                    course_features.append(course_feature)
+        new_json["course_features"] = course_features
         new_json["course_files"] = self.compose_media()
         new_json["course_embedded_media"] = self.compose_embedded_media()
         new_json["course_foreign_files"] = self.gather_foreign_media()

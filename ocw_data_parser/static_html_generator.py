@@ -1,7 +1,6 @@
 import logging
 
-from .utils import is_json, get_correct_path, get_page_from_url, load_json_file
-
+from .utils import is_json, get_correct_path, load_json_file
 
 log = logging.getLogger(__name__)
 
@@ -138,10 +137,9 @@ def get_course_info(mj):
 def get_course_features(mj):
     course_features = "<h4>Course Features</h4>\n<ul>%s</ul>\n"
     features = ""
-    for entry in mj["course_features"]:
-        url = get_page_from_url(entry["ocw_feature_url"].replace('/index.htm', '')) + '.html'
-        features += "<li><a href=\"%s\">%s</a></li>\n" % (url, entry["ocw_feature"])
-    
+    if mj["course_features"]:
+        for entry in mj["course_features"]:
+            features += fix_links("<li><a href=\"%s\">%s</a></li>\n" % (entry["ocw_feature_url"], entry["ocw_feature"]), mj)
     return course_features % features
 
 
