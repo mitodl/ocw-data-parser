@@ -261,7 +261,9 @@ class OCWParser(object):
             log.debug("You have to compose media for course first!")
             return
 
-        path_to_containing_folder = self.destination_dir + "static_files/"
+        path_to_containing_folder = self.destination_dir + self.static_prefix \
+            if self.static_prefix else self.destination_dir + "static_files/"
+        url_path_to_media = self.static_prefix if self.static_prefix else path_to_containing_folder
         os.makedirs(path_to_containing_folder, exist_ok=True)
         for j in self.media_jsons:
             file_name = safe_get(j, "_uid") + "_" + safe_get(j, "id")
@@ -270,10 +272,7 @@ class OCWParser(object):
                 with open(path_to_containing_folder + file_name, "wb") as f:
                     data = base64.b64decode(d)
                     f.write(data)
-                if self.static_prefix:
-                    update_file_location(self.master_json, self.static_prefix + file_name, safe_get(j, "_uid"))
-                else:
-                    update_file_location(self.master_json, path_to_containing_folder + file_name, safe_get(j, "_uid"))
+                update_file_location(self.master_json, url_path_to_media + file_name, safe_get(j, "_uid"))
                 log.info("Extracted %s", file_name)
             else:
                 json_file = j["actual_file_name"]
@@ -286,17 +285,16 @@ class OCWParser(object):
             log.debug("Your course has 0 foreign media files")
             return
 
-        path_to_containing_folder = self.destination_dir + "static_files/"
+        path_to_containing_folder = self.destination_dir + self.static_prefix \
+            if self.static_prefix else self.destination_dir + "static_files/"
+        url_path_to_media = self.static_prefix if self.static_prefix else path_to_containing_folder
         os.makedirs(path_to_containing_folder, exist_ok=True)
         for media in self.large_media_links:
             file_name = media["link"].split("/")[-1]
             with open(path_to_containing_folder + file_name, "wb") as file:
                 response = get(media["link"])
                 file.write(response.content)
-            if self.static_prefix:
-                update_file_location(self.master_json, self.static_prefix + file_name)
-            else:
-                update_file_location(self.master_json, path_to_containing_folder + file_name)
+            update_file_location(self.master_json, url_path_to_media + file_name)
             log.info("Extracted %s", file_name)
         log.info("Done! extracted foreign media to %s", path_to_containing_folder)
         self.export_master_json()
