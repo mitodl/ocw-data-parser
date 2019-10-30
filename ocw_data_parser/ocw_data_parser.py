@@ -6,11 +6,11 @@ import shutil
 import base64
 from requests import get
 import boto3
-from .utils import update_file_location, get_binary_data, is_json, get_correct_path, load_json_file, safe_get, \
+from ocw_data_parser.utils import update_file_location, get_binary_data, is_json, get_correct_path, load_json_file, safe_get, \
     find_all_values_for_key
 import json
 from smart_open import smart_open
-from .static_html_generator import generate_html_for_course
+from ocw_data_parser.static_html_generator import generate_html_for_course
 
 log = logging.getLogger(__name__)
 
