@@ -300,6 +300,10 @@ class OCWParser(object):
         self.export_master_json()
 
     def generate_static_site(self):
+        """
+        Extract all static media locally and generate master.json, 
+        then generate static HTML for a course
+        """
         self.extract_media_locally()
         self.extract_foreign_media_locally()
         generate_html_for_course(
