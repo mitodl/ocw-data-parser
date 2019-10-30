@@ -1,0 +1,9 @@
+language: python
+python:
+  - "3.6"
+install: python setup.py install
+script: pytest
+env:
+  - COVECOV_TOKEN=9a1c974b-194a-48c4-bcb2-f1dbaf6dd97f
+after_success:
+  - codecov
