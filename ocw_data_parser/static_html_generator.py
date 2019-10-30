@@ -1,6 +1,6 @@
 import logging
 import os
-from .utils import is_json, get_correct_path, load_json_file
+from ocw_data_parser.utils import is_json, get_correct_path, load_json_file
 
 log = logging.getLogger(__name__)
 

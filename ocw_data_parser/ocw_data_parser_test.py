@@ -28,3 +28,6 @@ class TestOCWParser(unittest.TestCase):
         with open('ocw_data_parser/test_json/master_json.json', 'r') as master_json:
             master_json_data = json.loads(master_json.read())
             self.assertEqual(master_json_data, ocw_parser.master_json)
+
+if __name__ == '__main__':
+    unittest.main()
