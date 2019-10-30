@@ -38,7 +38,8 @@ class OCWParser(object):
                  s3_bucket_name="",
                  s3_bucket_access_key="",
                  s3_bucket_secret_access_key="",
-                 s3_target_folder=""):
+                 s3_target_folder="",
+                 beautify_master_json=False):
         if not (course_dir and destination_dir) and not loaded_jsons:
             raise Exception("Message")
         self.course_dir = get_correct_path(course_dir) if course_dir else course_dir
@@ -63,6 +64,7 @@ class OCWParser(object):
         if self.jsons:
             self.master_json = self.generate_master_json()
             self.destination_dir += safe_get(self.jsons[0], "id") + "/"
+        self.beautify_master_json = beautify_master_json
 
     def get_master_json(self):
         return self.master_json
@@ -352,7 +354,10 @@ class OCWParser(object):
         os.makedirs(self.destination_dir + "master/", exist_ok=True)
         file_path = self.destination_dir + "master/master.json"
         with open(file_path, "w") as file:
-            json.dump(self.master_json, file)
+            if self.beautify_master_json:
+                json.dump(self.master_json, file, sort_keys = True, indent = 4)
+            else:
+                json.dump(self.master_json, file)
         log.info("Extracted %s", file_path)
 
     def upload_all_media_to_s3(self, chunk_size=1000000, upload_master_json=False):
