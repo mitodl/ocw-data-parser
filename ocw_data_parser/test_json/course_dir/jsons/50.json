@@ -1,0 +1,185 @@
+{
+    "expanded_alternate_text": "", 
+    "features_tracking": [], 
+    "widgets_features": [], 
+    "contributors": [], 
+    "tcATmit_subject_tags": [], 
+    "unique_identifier": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-3-multiplication-and-inverse-matrices/18.06_L03.jpg", 
+    "_content_type_publisher": "text/plain", 
+    "_content_type_license": "text/plain", 
+    "_datafield_image": {
+        "encoding": "base64", 
+        "data": "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", 
+        "content_type": "image/jpeg", 
+        "filename": "18.06_L03.jpg"
+    }, 
+    "aggregationlevel": 2, 
+    "_uid": "00967a4b69ffa77d729fbef2a9faeb1f", 
+    "_workflow_history": {
+        "one_state_workflow": [
+            {
+                "action": null, 
+                "review_state": "published", 
+                "actor": "Jcplayer", 
+                "comments": "", 
+                "time": "2010/10/07 13:38:14.524 GMT-4"
+            }
+        ]
+    }, 
+    "expirationDate": "None", 
+    "_content_type_id": "text/plain", 
+    "duration": "", 
+    "contributor_list": [], 
+    "id": "18.06_L03.jpg", 
+    "related_mit_links": "", 
+    "thumb_height": "", 
+    "effectiveDate": "None", 
+    "title": "18.06_L03.jpg", 
+    "_layout": "view", 
+    "parent_module": "aabc44bdb2e45374d62f30f2a6d4c63e", 
+    "_content_type": "image/jpeg", 
+    "_userdefined_roles": [], 
+    "_gopip": 0, 
+    "location": "", 
+    "_atrefs": {
+        "BelongsTo": [
+            "aabc44bdb2e45374d62f30f2a6d4c63e"
+        ]
+    }, 
+    "_content_type_course_identifier": "text/plain", 
+    "_content_type_title": "text/plain", 
+    "section_identifier": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures", 
+    "_atbrefs": {
+        "thumbnail_image": [
+            "91874a0f258aeadf12ff66ed84bd4f8f"
+        ], 
+        "file_reference": [
+            "80b82e50226589411478f695cc4d6ab0"
+        ]
+    }, 
+    "creation_date": "2010/10/07 13:38:14.515 GMT-4", 
+    "_content_type_section_identifier": "text/plain", 
+    "_type": "OCWImage", 
+    "technical_location": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-3-multiplication-and-inverse-matrices/18.06_L03.jpg", 
+    "description": "", 
+    "thumb_width": "", 
+    "software_requirements": [
+        {
+            "software_type_col": "Browser", 
+            "minimum_version_col": "40.0", 
+            "software_name_col": "Chrome", 
+            "maximum_version_col": ""
+        }, 
+        {
+            "software_type_col": "Browser", 
+            "minimum_version_col": "8.0", 
+            "software_name_col": "Safari", 
+            "maximum_version_col": ""
+        }, 
+        {
+            "software_type_col": "Browser", 
+            "minimum_version_col": "38.0", 
+            "software_name_col": "Mozilla Firefox", 
+            "maximum_version_col": ""
+        }, 
+        {
+            "software_type_col": "Browser", 
+            "minimum_version_col": "9.0", 
+            "software_name_col": "Internet Explorer", 
+            "maximum_version_col": ""
+        }, 
+        {
+            "software_type_col": "Browser", 
+            "minimum_version_col": "13.1", 
+            "software_name_col": "Edge", 
+            "maximum_version_col": ""
+        }
+    ], 
+    "_content_type_technical_location": "text/plain", 
+    "alternate_text": "", 
+    "credit": "", 
+    "subject": [], 
+    "_content_type_rights": "text/html", 
+    "course_identifier": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010", 
+    "_directly_provided": [], 
+    "other_platform_requirements": "", 
+    "_id": "18.06_L03.jpg", 
+    "_classname": "OCWImage", 
+    "metadata_contributor_list": [
+        {
+            "md_contributor_uid": "", 
+            "md_contributor_entity": "Todd Rautenberg", 
+            "md_contributor_hide": "", 
+            "md_contributor_special_title": "", 
+            "md_contributor_role": "Validator"
+        }, 
+        {
+            "md_contributor_uid": "", 
+            "md_contributor_entity": "Todd Rautenberg", 
+            "md_contributor_hide": "", 
+            "md_contributor_special_title": "", 
+            "md_contributor_role": "Creator"
+        }
+    ], 
+    "tcATmit_instructional_tags": [], 
+    "caption": "", 
+    "parent_uid": "91874a0f258aeadf12ff66ed84bd4f8f", 
+    "modification_date": "2016/09/24 04:30:31.816 GMT-4", 
+    "course_linking": [], 
+    "publisher": "MIT OpenCourseWare", 
+    "excludeFromNav": false, 
+    "feature_requirements": [], 
+    "language": "", 
+    "license": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/", 
+    "rights": "This site (c) Massachusetts Institute of Technology 2010.  Content within individual courses is (c) by the individual authors unless otherwise noted. The Massachusetts Institute of Technology is providing this Work (as defined below) under the terms of this Creative Commons public license (\"CCPL\" or \"license\") unless otherwise noted. The Work is protected by copyright and/or other applicable law. Any use of the work other than as authorized under this license is prohibited. By exercising any of the rights to the Work provided here, You (as defined below) accept and agree to be bound by the terms of this license. The Licensor, the Massachusetts Institute of Technology, grants You the rights contained here in consideration of Your acceptance of such terms and conditions.", 
+    "always_publish": false, 
+    "popup_image_id": "", 
+    "materialtype": "Other", 
+    "_content_type_unique_identifier": "text/plain", 
+    "category_features": [], 
+    "is_pop_up_image": false, 
+    "_owner": null, 
+    "_defaultpage": "index_html", 
+    "firstTimeEdit": true, 
+    "_permissions": {
+        "Modify portal content": {
+            "acquire": false, 
+            "roles": [
+                "Editor", 
+                "Manager", 
+                "Owner"
+            ]
+        }, 
+        "Access contents information": {
+            "acquire": false, 
+            "roles": [
+                "Anonymous"
+            ]
+        }, 
+        "View": {
+            "acquire": false, 
+            "roles": [
+                "Anonymous"
+            ]
+        }
+    }, 
+    "_properties": [
+        [
+            "title", 
+            "18.06_L03.jpg", 
+            "string"
+        ]
+    ], 
+    "allowDiscussion": false, 
+    "_content_type_materialtype": "text/plain", 
+    "creators": [
+        "Jcplayer"
+    ], 
+    "courselist_features": [], 
+    "_ac_local_roles": {
+        "Jcplayer": [
+            "Owner"
+        ]
+    }, 
+    "_path": "/Plone/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-3-multiplication-and-inverse-matrices/18.06_L03.jpg"
+}

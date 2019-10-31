@@ -1,0 +1,234 @@
+{
+    "text": "<p>The flash animations were developed by Jean-Michel Claus (with voiceover by Gilbert Strang). We are grateful! Funding was provided by a grant from the <a href=\"http://web.mit.edu/newsoffice/2000/darbeloff-1025.html\">The d'Arbeloff Fund for Excellence in MIT Education</a> as part of The d'Arbeloff Interactive Mathematics Project (d'A I M P).</p> <h2 class=\"subhead\">Matrix Multiplication</h2> <p>An <a href=\"http://ocw.mit.edu/ans7870/18/18.06/tools/Applets_sound/uropmovie.html\">interactive demo</a> (with voiceover explanation) on Matrix Multiplication, <em>A</em> = <em>LU</em>, and <em>PA</em> = <em>LU</em></p> <h2 class=\"subhead\">Eigenvalue Demonstrations</h2> <p>The demonstrations below employ Java&reg; applets with voice-over narration to show some Eigenvalue concepts.</p> <p><a href=\"http://ocw.mit.edu/ans7870/18/18.06/tools/Applets_sound_all/eigen_sound_all.html\">Demo 1</a> - This 3-minute demo shows eigenvectors of 2 by 2 matrices</p> <p>The demo is also broken into 7 independent pieces:</p> <ul> <li><a href=\"http://ocw.mit.edu/ans7870/18/18.06/tools/Applets_sound/eigen_sound_1.html\">Part 1</a></li> <li><a href=\"http://ocw.mit.edu/ans7870/18/18.06/tools/Applets_sound/eigen_sound_2.html\">Part 2</a></li> <li><a href=\"http://ocw.mit.edu/ans7870/18/18.06/tools/Applets_sound/eigen_sound_3.html\">Part 3</a></li> <li><a href=\"http://ocw.mit.edu/ans7870/18/18.06/tools/Applets_sound/eigen_sound_4.html\">Part 4</a></li> <li><a href=\"http://ocw.mit.edu/ans7870/18/18.06/tools/Applets_sound/eigen_sound_5.html\">Part 5</a></li> <li><a href=\"http://ocw.mit.edu/ans7870/18/18.06/tools/Applets_sound/eigen_sound_6.html\">Part 6</a></li> <li><a href=\"http://ocw.mit.edu/ans7870/18/18.06/tools/Applets_sound/eigen_sound_7.html\">Part 7</a></li> </ul> <p><a href=\"http://ocw.mit.edu/ans7870/18/18.06/tools/Power_method/power_method_flash.html\">Demo 2</a> - Powers A<sup>n</sup>V lead toward the top eigenvalue/eigenvector</p> <h2 class=\"subhead\">Mini-lectures on Eigenvalues</h2> <p>The mini-lectures with voice-over narration below help to explain some key Eigenvalue concepts.</p> <p><a href=\"http://ocw.mit.edu/ans7870/18/18.06/tools/all/eigen_lecture_all.html\">Full Lecture</a> (all eight together)</p> <p>Or view individually (about 2 minutes each)</p> <ul> <li><a href=\"http://ocw.mit.edu/ans7870/18/18.06/tools/individual/eigen_lecture_1.html\">det(A-\\lambda I)=0</a></li> <li><a href=\"http://ocw.mit.edu/ans7870/18/18.06/tools/individual/eigen_lecture_2.html\">Eigenvectors and Trace</a></li> <li><a href=\"http://ocw.mit.edu/ans7870/18/18.06/tools/individual/eigen_lecture_3.html\">Powers</a></li> <li><a href=\"http://ocw.mit.edu/ans7870/18/18.06/tools/individual/eigen_lecture_4.html\">Diagonalization</a></li> <li><a href=\"http://ocw.mit.edu/ans7870/18/18.06/tools/individual/eigen_lecture_5.html\">Differential Equations</a></li> <li><a href=\"http://ocw.mit.edu/ans7870/18/18.06/tools/individual/eigen_lecture_6.html\">Symmetry</a></li> <li><a href=\"http://ocw.mit.edu/ans7870/18/18.06/tools/individual/eigen_lecture_7.html\">Positive Definite</a></li> <li><a href=\"http://ocw.mit.edu/ans7870/18/18.06/tools/individual/eigen_lecture_8.html\">SVD</a></li> </ul>", 
+    "_content_type_license": "text/plain", 
+    "_uid": "b5785e071ddb991cf3dfd7cc469e6397", 
+    "title": "Tools", 
+    "_ac_local_roles": {
+        "cc_saror4": [
+            "Owner"
+        ]
+    }, 
+    "location": "", 
+    "_content_type_course_identifier": "text/plain", 
+    "_atbrefs": {}, 
+    "constrainTypesMode": 0, 
+    "technical_location": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/tools", 
+    "software_requirements": [
+        {
+            "software_type_col": "Browser", 
+            "minimum_version_col": "40.0", 
+            "software_name_col": "Chrome", 
+            "maximum_version_col": ""
+        }, 
+        {
+            "software_type_col": "Browser", 
+            "minimum_version_col": "8.0", 
+            "software_name_col": "Safari", 
+            "maximum_version_col": ""
+        }, 
+        {
+            "software_type_col": "Browser", 
+            "minimum_version_col": "38.0", 
+            "software_name_col": "Mozilla Firefox", 
+            "maximum_version_col": ""
+        }, 
+        {
+            "software_type_col": "Browser", 
+            "minimum_version_col": "9.0", 
+            "software_name_col": "Internet Explorer", 
+            "maximum_version_col": ""
+        }, 
+        {
+            "software_type_col": "Browser", 
+            "minimum_version_col": "13.1", 
+            "software_name_col": "Edge", 
+            "maximum_version_col": ""
+        }
+    ], 
+    "_content_type_technical_location": "text/plain", 
+    "_content_type_rights": "text/html", 
+    "_directly_provided": [
+        "Products.CMFEditions.interfaces.IVersioned"
+    ], 
+    "parent_uid": "aabc44bdb2e45374d62f30f2a6d4c63e", 
+    "excludeFromNav": false, 
+    "_content_type_unique_identifier": "text/plain", 
+    "allowDiscussion": false, 
+    "metadata_contributor_list": [], 
+    "locallyAllowedTypes": [
+        "OCWImage", 
+        "CourseSection", 
+        "OCWExtFile", 
+        "OCWFile"
+    ], 
+    "_content_type_text": "text/html", 
+    "ad_type": "HOUSE", 
+    "creation_date": "2010/05/14 12:21:49.920 GMT-4", 
+    "aggregationlevel": 3, 
+    "duration": "", 
+    "immediatelyAddableTypes": [
+        "OCWImage", 
+        "CourseSection", 
+        "OCWExtFile", 
+        "OCWFile"
+    ], 
+    "subject": [], 
+    "_content_type_short_page_title": "text/plain", 
+    "effectiveDate": "2010/09/03 03:17:08.914 GMT-4", 
+    "parent_module": "aabc44bdb2e45374d62f30f2a6d4c63e", 
+    "is_mathml_document": false, 
+    "bottomtext": "", 
+    "short_page_title": "Tools", 
+    "section_identifier": null, 
+    "related_mit_links": "", 
+    "_content_type_ad_type": "text/plain", 
+    "_layout": "custom_view", 
+    "_workflow_history": {
+        "page_workflow": [
+            {
+                "action": null, 
+                "review_state": "waiting_for_authoring", 
+                "actor": "admin", 
+                "comments": "", 
+                "time": "2010/05/14 12:21:49.925 GMT-4"
+            }, 
+            {
+                "action": "approve_to_staging", 
+                "review_state": "ready_for_staging", 
+                "comments": "", 
+                "actor": "admin", 
+                "time": "2010/05/16 11:42:29.183 GMT-4"
+            }, 
+            {
+                "action": null, 
+                "review_state": "waiting_for_authoring", 
+                "comments": "", 
+                "actor": "cc_saror4", 
+                "time": "2010/08/17 00:14:20.151 GMT-4"
+            }, 
+            {
+                "action": "approve_to_staging", 
+                "review_state": "ready_for_staging", 
+                "actor": "cc_gegrov", 
+                "comments": "", 
+                "time": "2010/09/03 03:17:08.947 GMT-4"
+            }, 
+            {
+                "action": "decline", 
+                "review_state": "waiting_for_authoring", 
+                "actor": "cc_gegrov", 
+                "comments": "", 
+                "time": "2010/09/03 03:25:34.198 GMT-4"
+            }, 
+            {
+                "action": "approve_to_staging", 
+                "review_state": "ready_for_staging", 
+                "actor": "cc_gegrov", 
+                "comments": "", 
+                "time": "2010/09/03 04:08:02.616 GMT-4"
+            }
+        ]
+    }, 
+    "_classname": "CourseSection", 
+    "_content_type_materialtype": "text/plain", 
+    "_userdefined_roles": [], 
+    "publisher": "MIT OpenCourseWare", 
+    "nextPreviousEnabled": false, 
+    "language": "", 
+    "url_rewrite_patterns": [], 
+    "widgets_features": [], 
+    "category_features": [], 
+    "firstTimeEdit": true, 
+    "feature_requirements": [], 
+    "list_in_left_nav": false, 
+    "short_name_tlp": "Tools", 
+    "expirationDate": "None", 
+    "_content_type_id": "text/plain", 
+    "contributor_list": [], 
+    "is_media_gallery": false, 
+    "contributors": [], 
+    "_gopip": 9, 
+    "_content_type_title": "text/plain", 
+    "course_linking": [], 
+    "_atrefs": {
+        "BelongsTo": [
+            "aabc44bdb2e45374d62f30f2a6d4c63e"
+        ]
+    }, 
+    "other_platform_requirements": "", 
+    "license": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/", 
+    "rights": "This site (c) Massachusetts Institute of Technology 2010.  Content within individual courses is (c) by the individual authors unless otherwise noted. The Massachusetts Institute of Technology is providing this Work (as defined below) under the terms of this Creative Commons public license (\"CCPL\" or \"license\") unless otherwise noted. The Work is protected by copyright and/or other applicable law. Any use of the work other than as authorized under this license is prohibited. By exercising any of the rights to the Work provided here, You (as defined below) accept and agree to be bound by the terms of this license. The Licensor, the Massachusetts Institute of Technology, grants You the rights contained here in consideration of Your acceptance of such terms and conditions.", 
+    "hide_Page_title": false, 
+    "_defaultpage": "", 
+    "tcATmit_subject_tags": [], 
+    "features_tracking": [], 
+    "ad_champion_text": "", 
+    "has_inline_embed": false, 
+    "unique_identifier": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/tools", 
+    "is_image_gallery": false, 
+    "id": "tools", 
+    "materialtype": "Other", 
+    "_type": "CourseSection", 
+    "description": "This section contains demonstrations on matrix multiplication and Eigenvalues.", 
+    "course_identifier": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010", 
+    "_content_type_publisher": "text/plain", 
+    "tcATmit_instructional_tags": [], 
+    "_content_type": "text/html", 
+    "creators": [
+        "admin"
+    ], 
+    "modification_date": "2016/09/24 07:52:20.489 GMT-4", 
+    "always_publish": false, 
+    "_content_type_description": "text/plain", 
+    "_owner": null, 
+    "_permissions": {
+        "Change portal events": {
+            "acquire": false, 
+            "roles": [
+                "Editor", 
+                "Manager", 
+                "MetadataEditor", 
+                "Owner"
+            ]
+        }, 
+        "Modify portal content": {
+            "acquire": false, 
+            "roles": [
+                "Manager", 
+                "MetadataEditor"
+            ]
+        }, 
+        "Access contents information": {
+            "acquire": false, 
+            "roles": [
+                "Authenticated"
+            ]
+        }, 
+        "List folder contents": {
+            "acquire": false, 
+            "roles": [
+                "Editor", 
+                "Manager", 
+                "MetadataEditor", 
+                "Owner"
+            ]
+        }, 
+        "View": {
+            "acquire": false, 
+            "roles": [
+                "Authenticated"
+            ]
+        }
+    }, 
+    "_properties": [
+        [
+            "title", 
+            "Tools", 
+            "string"
+        ]
+    ], 
+    "_id": "tools", 
+    "courselist_features": [], 
+    "_content_type_short_name_tlp": "text/plain", 
+    "_path": "/Plone/courses/mathematics/18-06-linear-algebra-spring-2010/tools"
+}

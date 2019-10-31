@@ -1,18 +1,22 @@
 {
-    "text": "<h2 class=\"subhead\">Course Meeting Times</h2> <p>Lectures: 2 sessions / week, 1.5 hours / session<br /> Labs: 1 session / week, 1 hour / session</p> <h2 class=\"subhead\">Prerequisites</h2> <p>There are no prerequisites for this course.</p> <h2 class=\"subhead\">Course Description</h2> <p>The primary focus of this course is the study of the thermal, luminous, and acoustical behavior of buildings. The course examines the basic scientific principles underlying these phenomena and introduces students to a range of technologies and analysis techniques for designing comfortable indoor environments. Students will be challenged to apply these techniques and explore the role energy, light, and sound can play in shaping architecture.</p> <p>Following a review of how to analyze a site's climate and local energy mix, the course will introduce students to the art and science of lighting buildings along with rules of thumb and computer-based methods for analyzing daylight within and around buildings. The second part of the course is dedicated to the principles of heat storage and heat flow into and out of buildings. Basic manual and computer-based methods to predict the energy use of buildings will also be discussed. In order to introduce students to the effective use of computer simulations during design, a building optimization game that mimics a sustainable design charrette will be organized. During the game, students will compete in groups to develop the building with the lowest energy use within a given cost budget. The last part of the course provides an overview of building acoustics and sound attenuation.</p> <p>The course format consists of semiweekly lectures and weekly labs. Individual and group assignments as well as in-class presentations and exercises will help students to study the use of environmental technologies in contemporary buildings.</p> <h2 class=\"subhead\">Learning Objectives</h2> <p>The course aims to help students to:</p> <ul>     <li>understand and apply the scientific principles underlying the thermal, luminous, and acoustical behavior of buildings;</li>     <li>learn to evaluate the pros and cons of a range of technologies for creating comfortable indoor environments; and</li>     <li>conduct a series of design analysis workflows regarding climate, building energy use, and daylighting and acquire the knowledge required to critically discuss/present the environmental concept of a building.</li> </ul> <h2 class=\"subhead\">Requirements</h2> <p>The following deliverables will be required to pass this class:</p> <ul>     <li>Attendance of semiweekly lectures and labs.</li>     <li>Timely completion of assignments. Late assignments will not be accepted.</li>     <li>Completion of a group course project. The course project will be to develop and present an environmental concept for a small office building.</li>     <li>Preparation of 15 minute in-class group presentations on one of the American Institute of Architects (AIA) Committee on the Environment (COTE)&nbsp;<a href=\"http://www.aiatopten.org/\">Top Ten Projects</a> for the current year. Presentations should have the following format:     <ul>         <li>Overview of the main environmental features of the building.</li>         <li>Discussion of predicted energy use. (Note: You do not have to explicitly model the building for energy use. You should rather review the predicted and actual energy use for the building&mdash;this is published for most of the AIA awarded buildings&mdash;and assess how they compare; also compare the data to typical buildings of the same type. The <a href=\"https://www.eia.gov/consumption/commercial/\">Commercial Buildings Energy Consumption Survey</a> (CBECS) has data on energy usage for various building types in different parts of the country. How much better is your building than the average? What design strategies contribute the most to the savings?)</li>         <li>Daylighting analysis of the building. Construct a simple 3D model of the whole or key spaces within the building. The model does not have to be very detailed, but should include the major fa\u00e7ade openings and elements so that you can evaluate how light is being distributed in the space.</li>         <li>Discussion of what you like and/or dislike about the building and its environmental concept.</li>     </ul></li>     <li>Active participation in class discussions.</li> </ul> <h2 class=\"subhead\">Grading</h2> <div class=\"maintabletemplate\"><table class=\"tablewidth50\">     <thead>         <tr>             <th>Activities</th>             <th>PERCENTAGES</th>         </tr>     </thead>     <tbody>         <tr class=\"row\">             <td>Quality and timely submission of completed assignments</td>             <td>45%</td>         </tr>         <tr class=\"alt-row\">             <td>Course project presentation</td>             <td>30%</td>         </tr>         <tr class=\"row\">             <td>AIA case study presentation</td>             <td>15%</td>         </tr>         <tr class=\"alt-row\">             <td>Participation in class discussions</td>             <td>10%</td>         </tr>     </tbody> </table></div> <p>Please familiarize yourself with MIT's <a href=\"http://web.mit.edu/academicintegrity/\">Academic Integrity Expectations</a>.</p>", 
+    "text": "<h2 class=\"subhead\">Course Meeting Times</h2> <p>Lectures: 3 sessions / week, 1 hour / session</p> <p>Recitations: 1 session / week, 1 hour / session</p> <h2 class=\"subhead\">Prerequisites</h2> <p>Multivariable Calculus (18.02)</p> <h2 class=\"subhead\">Text</h2> <p>The readings are assigned in: <a href=\"http://www.amazon.com/exec/obidos/ASIN/0980232716/ref=nosim/mitopencourse-20\"><img src=\"/images/a_logo_17.gif\" alt=\"Buy at Amazon\" align=\"absMiddle\" border=\"0\" /></a> Strang, Gilbert. <em>Introduction to Linear Algebra</em>. 4th ed. <a href=\"http://www.wellesleycambridge.com/\">Wellesley-Cambridge Press</a>, 2009. ISBN: 9780980232714.</p> <p>Reading assignments are also provided for the newer edition: <a href=\"http://www.amazon.com/exec/obidos/ASIN/0980232775/ref=nosim/mitopencourse-20\"><img alt=\"Buy at Amazon\" src=\"/images/a_logo_17.gif\" align=\"absmiddle\" border=\"0\" /></a> Strang, Gilbert. <em>Introduction to Linear Algebra</em>. 5th ed. <a href=\"http://www.wellesleycambridge.com/\">Wellesley-Cambridge Press</a>, 2016. ISBN: 9780980232776.</p> <p>NOTE: More material on linear algebra (and much more about differential equations) is in Professor Strang's 2014 textbook  <em><a href=\"http://www-math.mit.edu/~gs/dela\">Differential Equations and Linear Algebra</a></em>. In 2016, the textbook was developed into a series of 55 short videos,&nbsp;<em><a href=\"http://ocw.mit.edu/resources/res-18-009-learn-differential-equations-up-close-with-gilbert-strang-and-cleve-moler-fall-2015/index.htm\">Learn Differential Equations: Up Close with Gilbert Strang and Cleve Moler</a>.</em></p> <h2 class=\"subhead\">Goals</h2> <p>The goals for 18.06 are using matrices and also understanding them.</p> <p>Here are key computations and some of the ideas behind them:</p> <ol>     <li>Solving Ax = b for square systems by elimination (pivots, multipliers, back substitution, invertibility of A, factorization into A = LU)</li>     <li>Complete solution to Ax = b (column space containing b, rank of A, nullspace of A and special solutions to Ax = 0 from row reduced R)</li>     <li>Basis and dimension (bases for the four fundamental subspaces)</li>     <li>Least squares solutions (closest line by understanding projections)</li>     <li>Orthogonalization by Gram-Schmidt (factorization into A = QR)</li>     <li>Properties of determinants (leading to the cofactor formula and the sum over all n! permutations, applications to inv(A) and volume)</li>     <li>Eigenvalues and eigenvectors (diagonalizing A, computing powers A^k and matrix exponentials to solve difference and differential equations)</li>     <li>Symmetric matrices and positive definite matrices (real eigenvalues and orthogonal eigenvectors, tests for x'Ax &gt; 0, applications)</li>     <li>Linear transformations and change of basis (connected to the Singular Value Decomposition - orthonormal bases that diagonalize A)</li>     <li>Linear algebra in engineering (graphs and networks, Markov matrices, Fourier matrix, Fast Fourier Transform, linear programming)</li> </ol> <h2 class=\"subhead\">Homework</h2> <p>The homeworks are essential in learning linear algebra. They are not a test and you are encouraged to talk to other students about difficult problems-after you have found them difficult. Talking about linear algebra is healthy. But you must write your own solutions.</p> <h2 class=\"subhead\">Exams</h2> <p>There will be three one-hour exams at class times and a final exam. The use of calculators or notes is not permitted during the exams.</p> <h2 class=\"subhead\">Grading</h2> <div class=\"maintabletemplate\"><table summary=\"See table caption for summary.\" class=\"tablewidth50\">     <caption class=\"invisible\">Grading criteria.</caption>     <thead>         <tr>             <th scope=\"col\">ACTIVITIES</th>             <th scope=\"col\">PERCENTAGES</th>         </tr>     </thead>     <tbody>         <tr class=\"row\">             <td>Problem sets</td>             <td>15%</td>         </tr>         <tr class=\"alt-row\">             <td>Three one-hour exams</td>             <td>45%</td>         </tr>         <tr class=\"row\">             <td>Final exam</td>             <td>40%</td>         </tr>     </tbody> </table></div> <h2 class=\"subhead\">MATLAB&reg;</h2> <p>Some homework problems will require you to use MATLAB, an important tool for numerical linear algebra. No previous MATLAB experience is required in 18.06. The <a href=\"/courses/mathematics/18-06-linear-algebra-spring-2010/related-resources\">related resources</a> section has links to information about MATLAB, including a tutorial.</p>", 
     "_content_type_license": "text/plain", 
-    "_uid": "7ff44e4c1453a64c006834e77a71f955", 
+    "_uid": "ede17211bd49ea166ed701f09c1de288", 
     "title": "Syllabus", 
     "_ac_local_roles": {
-        "pchipman": [
+        "cc_saror4": [
             "Owner"
         ]
     }, 
     "location": "", 
     "_content_type_course_identifier": "text/plain", 
-    "_atbrefs": {}, 
+    "_atbrefs": {
+        "isReferencing": [
+            "ede17211bd49ea166ed701f09c1de288"
+        ]
+    }, 
     "constrainTypesMode": 0, 
-    "technical_location": "https://ocw.mit.edu/courses/architecture/4-401-environmental-technologies-in-buildings-fall-2018/syllabus", 
+    "technical_location": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/syllabus", 
     "software_requirements": [
         {
             "software_type_col": "Browser", 
@@ -50,7 +54,7 @@
     "_directly_provided": [
         "Products.CMFEditions.interfaces.IVersioned"
     ], 
-    "parent_uid": "61f2eb4c2d288f68efcada60f5a247d2", 
+    "parent_uid": "aabc44bdb2e45374d62f30f2a6d4c63e", 
     "excludeFromNav": false, 
     "_content_type_unique_identifier": "text/plain", 
     "allowDiscussion": false, 
@@ -59,25 +63,23 @@
         "OCWImage", 
         "CourseSection", 
         "OCWExtFile", 
-        "OCWFile", 
-        "MediaResource"
+        "OCWFile"
     ], 
     "_content_type_text": "text/html", 
     "ad_type": "HOUSE", 
-    "creation_date": "2019/01/14 08:53:03.033 US/Eastern", 
+    "creation_date": "2010/05/14 12:21:47.138 GMT-4", 
     "aggregationlevel": 3, 
     "duration": "", 
     "immediatelyAddableTypes": [
         "OCWImage", 
         "CourseSection", 
         "OCWExtFile", 
-        "OCWFile", 
-        "MediaResource"
+        "OCWFile"
     ], 
     "subject": [], 
     "_content_type_short_page_title": "text/plain", 
-    "effectiveDate": "2019/05/22 12:55:50.636 GMT-4", 
-    "parent_module": "61f2eb4c2d288f68efcada60f5a247d2", 
+    "effectiveDate": "2010/09/03 02:55:27.128 GMT-4", 
+    "parent_module": "aabc44bdb2e45374d62f30f2a6d4c63e", 
     "is_mathml_document": false, 
     "bottomtext": "", 
     "short_page_title": "Syllabus", 
@@ -90,72 +92,128 @@
             {
                 "action": null, 
                 "review_state": "waiting_for_authoring", 
+                "actor": "admin", 
                 "comments": "", 
-                "actor": "pchipman", 
-                "time": "2019/01/14 08:53:03.069 US/Eastern"
+                "time": "2010/05/14 12:21:47.144 GMT-4"
             }, 
             {
                 "action": "approve_to_staging", 
                 "review_state": "ready_for_staging", 
-                "actor": "pchipman", 
                 "comments": "", 
-                "time": "2019/05/22 12:55:51.143 GMT-4"
+                "actor": "admin", 
+                "time": "2010/05/16 11:42:28.092 GMT-4"
+            }, 
+            {
+                "action": null, 
+                "review_state": "waiting_for_authoring", 
+                "comments": "", 
+                "actor": "cc_saror4", 
+                "time": "2010/08/17 00:14:19.472 GMT-4"
+            }, 
+            {
+                "action": "approve_to_staging", 
+                "review_state": "ready_for_staging", 
+                "actor": "cc_gegrov", 
+                "comments": "", 
+                "time": "2010/09/03 02:55:27.165 GMT-4"
             }, 
             {
                 "action": "decline", 
                 "review_state": "waiting_for_authoring", 
                 "comments": "", 
-                "actor": "peterchipman", 
-                "time": "2019/09/06 13:35:34.277 Universal"
+                "actor": "cc_ajsing", 
+                "time": "2010/09/03 07:07:47.579 GMT-4"
             }, 
             {
                 "action": "approve_to_staging", 
                 "review_state": "ready_for_staging", 
-                "actor": "peterchipman", 
+                "actor": "cc_ajsing", 
                 "comments": "", 
-                "time": "2019/09/06 13:45:28.915 Universal"
+                "time": "2010/09/03 09:34:13.606 GMT-4"
+            }, 
+            {
+                "action": "decline_to_qa", 
+                "review_state": "waiting_for_qa", 
+                "comments": "", 
+                "actor": "eliz", 
+                "time": "2014/06/02 17:42:13.515 GMT-4"
+            }, 
+            {
+                "action": "approve_to_staging", 
+                "review_state": "ready_for_staging", 
+                "actor": "eliz", 
+                "comments": "", 
+                "time": "2014/06/06 10:57:52.087 GMT-4"
+            }, 
+            {
+                "action": "decline_to_qa", 
+                "review_state": "waiting_for_qa", 
+                "comments": "", 
+                "actor": "eliz", 
+                "time": "2016/05/10 14:56:15.681 GMT-4"
+            }, 
+            {
+                "action": "approve_to_staging", 
+                "review_state": "ready_for_staging", 
+                "actor": "eliz", 
+                "comments": "", 
+                "time": "2016/05/10 15:07:09.680 GMT-4"
+            }, 
+            {
+                "action": "decline_to_qa", 
+                "review_state": "waiting_for_qa", 
+                "comments": "", 
+                "actor": "eliz", 
+                "time": "2016/06/14 11:02:00.330 GMT-4"
+            }, 
+            {
+                "action": "approve_to_staging", 
+                "review_state": "ready_for_staging", 
+                "actor": "eliz", 
+                "comments": "", 
+                "time": "2016/06/14 11:06:28.164 GMT-4"
+            }, 
+            {
+                "action": "decline_to_qa", 
+                "review_state": "waiting_for_qa", 
+                "comments": "", 
+                "actor": "eliz", 
+                "time": "2017/08/21 10:56:46.990 GMT-4"
+            }, 
+            {
+                "action": "approve_to_staging", 
+                "review_state": "ready_for_staging", 
+                "actor": "eliz", 
+                "comments": "", 
+                "time": "2017/08/28 11:10:00.606 GMT-4"
             }, 
             {
                 "action": "decline", 
                 "review_state": "waiting_for_authoring", 
                 "comments": "", 
-                "actor": "peterchipman", 
-                "time": "2019/09/27 12:56:47.589 Universal"
+                "actor": "asingh33", 
+                "time": "2017/08/30 00:32:52.993 GMT-4"
             }, 
             {
                 "action": "approve_to_staging", 
                 "review_state": "ready_for_staging", 
-                "actor": "peterchipman", 
+                "actor": "asingh33", 
                 "comments": "", 
-                "time": "2019/09/27 15:35:06.643 Universal"
+                "time": "2017/08/30 00:42:27.005 GMT-4"
             }, 
             {
                 "action": "decline", 
                 "review_state": "waiting_for_authoring", 
                 "comments": "", 
-                "actor": "peterchipman", 
-                "time": "2019/09/30 13:52:41.005 Universal"
+                "actor": "asingh33", 
+                "time": "2017/08/30 00:48:38.848 GMT-4"
             }, 
             {
                 "action": "approve_to_staging", 
                 "review_state": "ready_for_staging", 
-                "actor": "peterchipman", 
+                "actor": "asingh33", 
                 "comments": "", 
-                "time": "2019/09/30 18:34:00.320 Universal"
-            }, 
-            {
-                "action": "decline", 
-                "review_state": "waiting_for_authoring", 
-                "comments": "", 
-                "actor": "peterchipman", 
-                "time": "2019/10/07 13:06:27.335 Universal"
-            }, 
-            {
-                "action": "approve_to_staging", 
-                "review_state": "ready_for_staging", 
-                "actor": "peterchipman", 
-                "comments": "", 
-                "time": "2019/10/07 13:57:44.096 Universal"
+                "time": "2017/08/30 01:05:38.633 GMT-4"
             }
         ]
     }, 
@@ -171,7 +229,7 @@
     "firstTimeEdit": true, 
     "feature_requirements": [], 
     "list_in_left_nav": false, 
-    "short_name_tlp": "", 
+    "short_name_tlp": "Syllabus", 
     "expirationDate": "None", 
     "_content_type_id": "text/plain", 
     "contributor_list": [], 
@@ -182,33 +240,38 @@
     "course_linking": [], 
     "_atrefs": {
         "BelongsTo": [
-            "61f2eb4c2d288f68efcada60f5a247d2"
+            "aabc44bdb2e45374d62f30f2a6d4c63e"
+        ], 
+        "isReferencing": [
+            "ede17211bd49ea166ed701f09c1de288", 
+            "6d4babc3884f613c593e2df8ac802a95"
         ]
     }, 
     "other_platform_requirements": "", 
-    "license": "https://creativecommons.org/licenses/by-nc-sa/3.0/us/", 
-    "rights": "This site (c) Massachusetts Institute of Technology 2018.  Content within individual courses is (c) by the individual authors unless otherwise noted. The Massachusetts Institute of Technology is providing this Work (as defined below) under the terms of this Creative Commons public license (\"CCPL\" or \"license\") unless otherwise noted. The Work is protected by copyright and/or other applicable law. Any use of the work other than as authorized under this license is prohibited. By exercising any of the rights to the Work provided here, You (as defined below) accept and agree to be bound by the terms of this license. The Licensor, the Massachusetts Institute of Technology, grants You the rights contained here in consideration of Your acceptance of such terms and conditions.", 
+    "license": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/", 
+    "rights": "This site (c) Massachusetts Institute of Technology 2010.  Content within individual courses is (c) by the individual authors unless otherwise noted. The Massachusetts Institute of Technology is providing this Work (as defined below) under the terms of this Creative Commons public license (\"CCPL\" or \"license\") unless otherwise noted. The Work is protected by copyright and/or other applicable law. Any use of the work other than as authorized under this license is prohibited. By exercising any of the rights to the Work provided here, You (as defined below) accept and agree to be bound by the terms of this license. The Licensor, the Massachusetts Institute of Technology, grants You the rights contained here in consideration of Your acceptance of such terms and conditions.", 
     "hide_Page_title": false, 
     "_defaultpage": "", 
     "tcATmit_subject_tags": [], 
     "features_tracking": [], 
     "ad_champion_text": "", 
     "has_inline_embed": false, 
-    "unique_identifier": "https://ocw.mit.edu/courses/architecture/4-401-environmental-technologies-in-buildings-fall-2018/syllabus", 
+    "unique_identifier": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/syllabus", 
     "is_image_gallery": false, 
     "id": "syllabus", 
     "materialtype": "Other", 
     "_type": "CourseSection", 
-    "description": "", 
-    "course_identifier": "https://ocw.mit.edu/courses/architecture/4-401-environmental-technologies-in-buildings-fall-2018", 
+    "description": "This syllabus section provides information on course goals, meeting times, prerequisites, required text, homework, exams, grading, and tools for numerical linear algebra.", 
+    "course_identifier": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010", 
     "_content_type_publisher": "text/plain", 
     "tcATmit_instructional_tags": [], 
     "_content_type": "text/html", 
     "creators": [
-        "pchipman"
+        "admin"
     ], 
-    "modification_date": "2019/10/07 13:57:43.226 Universal", 
+    "modification_date": "2017/08/30 01:05:38.596 GMT-4", 
     "always_publish": false, 
+    "_content_type_description": "text/plain", 
     "_owner": null, 
     "_permissions": {
         "Change portal events": {
@@ -258,5 +321,6 @@
     ], 
     "_id": "syllabus", 
     "courselist_features": [], 
-    "_path": "/Plone/courses/architecture/4-401-environmental-technologies-in-buildings-fall-2018/syllabus"
+    "_content_type_short_name_tlp": "text/plain", 
+    "_path": "/Plone/courses/mathematics/18-06-linear-algebra-spring-2010/syllabus"
 }

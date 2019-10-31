@@ -1,0 +1,185 @@
+{
+    "expanded_alternate_text": "", 
+    "features_tracking": [], 
+    "widgets_features": [], 
+    "contributors": [], 
+    "tcATmit_subject_tags": [], 
+    "unique_identifier": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-8-solving-ax-b-row-reduced-form-r/18.06_L08.jpg", 
+    "_content_type_publisher": "text/plain", 
+    "_content_type_license": "text/plain", 
+    "_datafield_image": {
+        "encoding": "base64", 
+        "data": "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", 
+        "content_type": "image/jpeg", 
+        "filename": "18.06_L08.jpg"
+    }, 
+    "aggregationlevel": 2, 
+    "_uid": "c5886a1a55f63de48680fe2a324d791e", 
+    "_workflow_history": {
+        "one_state_workflow": [
+            {
+                "action": null, 
+                "review_state": "published", 
+                "actor": "Jcplayer", 
+                "comments": "", 
+                "time": "2010/10/07 14:54:58.143 GMT-4"
+            }
+        ]
+    }, 
+    "expirationDate": "None", 
+    "_content_type_id": "text/plain", 
+    "duration": "", 
+    "contributor_list": [], 
+    "id": "18.06_L08.jpg", 
+    "related_mit_links": "", 
+    "thumb_height": "", 
+    "effectiveDate": "None", 
+    "title": "18.06_L08.jpg", 
+    "_layout": "view", 
+    "parent_module": "aabc44bdb2e45374d62f30f2a6d4c63e", 
+    "_content_type": "image/jpeg", 
+    "_userdefined_roles": [], 
+    "_gopip": 0, 
+    "location": "", 
+    "_atrefs": {
+        "BelongsTo": [
+            "aabc44bdb2e45374d62f30f2a6d4c63e"
+        ]
+    }, 
+    "_content_type_course_identifier": "text/plain", 
+    "_content_type_title": "text/plain", 
+    "section_identifier": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures", 
+    "_atbrefs": {
+        "thumbnail_image": [
+            "11f8e0fcbb9df3ed3a53fa822ef7724f"
+        ], 
+        "file_reference": [
+            "2e70d46a9010c78e122d975e5edb9a62"
+        ]
+    }, 
+    "creation_date": "2010/10/07 14:54:58.135 GMT-4", 
+    "_content_type_section_identifier": "text/plain", 
+    "_type": "OCWImage", 
+    "technical_location": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-8-solving-ax-b-row-reduced-form-r/18.06_L08.jpg", 
+    "description": "", 
+    "thumb_width": "", 
+    "software_requirements": [
+        {
+            "software_type_col": "Browser", 
+            "minimum_version_col": "40.0", 
+            "software_name_col": "Chrome", 
+            "maximum_version_col": ""
+        }, 
+        {
+            "software_type_col": "Browser", 
+            "minimum_version_col": "8.0", 
+            "software_name_col": "Safari", 
+            "maximum_version_col": ""
+        }, 
+        {
+            "software_type_col": "Browser", 
+            "minimum_version_col": "38.0", 
+            "software_name_col": "Mozilla Firefox", 
+            "maximum_version_col": ""
+        }, 
+        {
+            "software_type_col": "Browser", 
+            "minimum_version_col": "9.0", 
+            "software_name_col": "Internet Explorer", 
+            "maximum_version_col": ""
+        }, 
+        {
+            "software_type_col": "Browser", 
+            "minimum_version_col": "13.1", 
+            "software_name_col": "Edge", 
+            "maximum_version_col": ""
+        }
+    ], 
+    "_content_type_technical_location": "text/plain", 
+    "alternate_text": "", 
+    "credit": "", 
+    "subject": [], 
+    "_content_type_rights": "text/html", 
+    "course_identifier": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010", 
+    "_directly_provided": [], 
+    "other_platform_requirements": "", 
+    "_id": "18.06_L08.jpg", 
+    "_classname": "OCWImage", 
+    "metadata_contributor_list": [
+        {
+            "md_contributor_uid": "", 
+            "md_contributor_entity": "Todd Rautenberg", 
+            "md_contributor_hide": "", 
+            "md_contributor_special_title": "", 
+            "md_contributor_role": "Validator"
+        }, 
+        {
+            "md_contributor_uid": "", 
+            "md_contributor_entity": "Todd Rautenberg", 
+            "md_contributor_hide": "", 
+            "md_contributor_special_title": "", 
+            "md_contributor_role": "Creator"
+        }
+    ], 
+    "tcATmit_instructional_tags": [], 
+    "caption": "", 
+    "parent_uid": "11f8e0fcbb9df3ed3a53fa822ef7724f", 
+    "modification_date": "2016/09/24 04:30:33.594 GMT-4", 
+    "course_linking": [], 
+    "publisher": "MIT OpenCourseWare", 
+    "excludeFromNav": false, 
+    "feature_requirements": [], 
+    "language": "", 
+    "license": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/", 
+    "rights": "This site (c) Massachusetts Institute of Technology 2010.  Content within individual courses is (c) by the individual authors unless otherwise noted. The Massachusetts Institute of Technology is providing this Work (as defined below) under the terms of this Creative Commons public license (\"CCPL\" or \"license\") unless otherwise noted. The Work is protected by copyright and/or other applicable law. Any use of the work other than as authorized under this license is prohibited. By exercising any of the rights to the Work provided here, You (as defined below) accept and agree to be bound by the terms of this license. The Licensor, the Massachusetts Institute of Technology, grants You the rights contained here in consideration of Your acceptance of such terms and conditions.", 
+    "always_publish": false, 
+    "popup_image_id": "", 
+    "materialtype": "Other", 
+    "_content_type_unique_identifier": "text/plain", 
+    "category_features": [], 
+    "is_pop_up_image": false, 
+    "_owner": null, 
+    "_defaultpage": "index_html", 
+    "firstTimeEdit": true, 
+    "_permissions": {
+        "Modify portal content": {
+            "acquire": false, 
+            "roles": [
+                "Editor", 
+                "Manager", 
+                "Owner"
+            ]
+        }, 
+        "Access contents information": {
+            "acquire": false, 
+            "roles": [
+                "Anonymous"
+            ]
+        }, 
+        "View": {
+            "acquire": false, 
+            "roles": [
+                "Anonymous"
+            ]
+        }
+    }, 
+    "_properties": [
+        [
+            "title", 
+            "18.06_L08.jpg", 
+            "string"
+        ]
+    ], 
+    "allowDiscussion": false, 
+    "_content_type_materialtype": "text/plain", 
+    "creators": [
+        "Jcplayer"
+    ], 
+    "courselist_features": [], 
+    "_ac_local_roles": {
+        "Jcplayer": [
+            "Owner"
+        ]
+    }, 
+    "_path": "/Plone/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-8-solving-ax-b-row-reduced-form-r/18.06_L08.jpg"
+}

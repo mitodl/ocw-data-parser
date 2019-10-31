@@ -1,0 +1,185 @@
+{
+    "expanded_alternate_text": "", 
+    "features_tracking": [], 
+    "widgets_features": [], 
+    "contributors": [], 
+    "tcATmit_subject_tags": [], 
+    "unique_identifier": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-9-independence-basis-and-dimension/18.06_L09.jpg", 
+    "_content_type_publisher": "text/plain", 
+    "_content_type_license": "text/plain", 
+    "_datafield_image": {
+        "encoding": "base64", 
+        "data": "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", 
+        "content_type": "image/jpeg", 
+        "filename": "18.06_L09.jpg"
+    }, 
+    "aggregationlevel": 2, 
+    "_uid": "2db9c4e4997126e4ab3da54d283e4b12", 
+    "_workflow_history": {
+        "one_state_workflow": [
+            {
+                "action": null, 
+                "review_state": "published", 
+                "actor": "Jcplayer", 
+                "comments": "", 
+                "time": "2010/10/07 15:00:09.850 GMT-4"
+            }
+        ]
+    }, 
+    "expirationDate": "None", 
+    "_content_type_id": "text/plain", 
+    "duration": "", 
+    "contributor_list": [], 
+    "id": "18.06_L09.jpg", 
+    "related_mit_links": "", 
+    "thumb_height": "", 
+    "effectiveDate": "None", 
+    "title": "18.06_L09.jpg", 
+    "_layout": "view", 
+    "parent_module": "aabc44bdb2e45374d62f30f2a6d4c63e", 
+    "_content_type": "image/jpeg", 
+    "_userdefined_roles": [], 
+    "_gopip": 0, 
+    "location": "", 
+    "_atrefs": {
+        "BelongsTo": [
+            "aabc44bdb2e45374d62f30f2a6d4c63e"
+        ]
+    }, 
+    "_content_type_course_identifier": "text/plain", 
+    "_content_type_title": "text/plain", 
+    "section_identifier": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures", 
+    "_atbrefs": {
+        "thumbnail_image": [
+            "a8f2e55a61ed246993e8e771b35766e1"
+        ], 
+        "file_reference": [
+            "b2fead2fc8247554808fce9ad14e6aec"
+        ]
+    }, 
+    "creation_date": "2010/10/07 15:00:09.841 GMT-4", 
+    "_content_type_section_identifier": "text/plain", 
+    "_type": "OCWImage", 
+    "technical_location": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-9-independence-basis-and-dimension/18.06_L09.jpg", 
+    "description": "", 
+    "thumb_width": "", 
+    "software_requirements": [
+        {
+            "software_type_col": "Browser", 
+            "minimum_version_col": "40.0", 
+            "software_name_col": "Chrome", 
+            "maximum_version_col": ""
+        }, 
+        {
+            "software_type_col": "Browser", 
+            "minimum_version_col": "8.0", 
+            "software_name_col": "Safari", 
+            "maximum_version_col": ""
+        }, 
+        {
+            "software_type_col": "Browser", 
+            "minimum_version_col": "38.0", 
+            "software_name_col": "Mozilla Firefox", 
+            "maximum_version_col": ""
+        }, 
+        {
+            "software_type_col": "Browser", 
+            "minimum_version_col": "9.0", 
+            "software_name_col": "Internet Explorer", 
+            "maximum_version_col": ""
+        }, 
+        {
+            "software_type_col": "Browser", 
+            "minimum_version_col": "13.1", 
+            "software_name_col": "Edge", 
+            "maximum_version_col": ""
+        }
+    ], 
+    "_content_type_technical_location": "text/plain", 
+    "alternate_text": "", 
+    "credit": "", 
+    "subject": [], 
+    "_content_type_rights": "text/html", 
+    "course_identifier": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010", 
+    "_directly_provided": [], 
+    "other_platform_requirements": "", 
+    "_id": "18.06_L09.jpg", 
+    "_classname": "OCWImage", 
+    "metadata_contributor_list": [
+        {
+            "md_contributor_uid": "", 
+            "md_contributor_entity": "Todd Rautenberg", 
+            "md_contributor_hide": "", 
+            "md_contributor_special_title": "", 
+            "md_contributor_role": "Validator"
+        }, 
+        {
+            "md_contributor_uid": "", 
+            "md_contributor_entity": "Todd Rautenberg", 
+            "md_contributor_hide": "", 
+            "md_contributor_special_title": "", 
+            "md_contributor_role": "Creator"
+        }
+    ], 
+    "tcATmit_instructional_tags": [], 
+    "caption": "", 
+    "parent_uid": "a8f2e55a61ed246993e8e771b35766e1", 
+    "modification_date": "2016/09/24 04:34:03.703 GMT-4", 
+    "course_linking": [], 
+    "publisher": "MIT OpenCourseWare", 
+    "excludeFromNav": false, 
+    "feature_requirements": [], 
+    "language": "", 
+    "license": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/", 
+    "rights": "This site (c) Massachusetts Institute of Technology 2010.  Content within individual courses is (c) by the individual authors unless otherwise noted. The Massachusetts Institute of Technology is providing this Work (as defined below) under the terms of this Creative Commons public license (\"CCPL\" or \"license\") unless otherwise noted. The Work is protected by copyright and/or other applicable law. Any use of the work other than as authorized under this license is prohibited. By exercising any of the rights to the Work provided here, You (as defined below) accept and agree to be bound by the terms of this license. The Licensor, the Massachusetts Institute of Technology, grants You the rights contained here in consideration of Your acceptance of such terms and conditions.", 
+    "always_publish": false, 
+    "popup_image_id": "", 
+    "materialtype": "Other", 
+    "_content_type_unique_identifier": "text/plain", 
+    "category_features": [], 
+    "is_pop_up_image": false, 
+    "_owner": null, 
+    "_defaultpage": "index_html", 
+    "firstTimeEdit": true, 
+    "_permissions": {
+        "Modify portal content": {
+            "acquire": false, 
+            "roles": [
+                "Editor", 
+                "Manager", 
+                "Owner"
+            ]
+        }, 
+        "Access contents information": {
+            "acquire": false, 
+            "roles": [
+                "Anonymous"
+            ]
+        }, 
+        "View": {
+            "acquire": false, 
+            "roles": [
+                "Anonymous"
+            ]
+        }
+    }, 
+    "_properties": [
+        [
+            "title", 
+            "18.06_L09.jpg", 
+            "string"
+        ]
+    ], 
+    "allowDiscussion": false, 
+    "_content_type_materialtype": "text/plain", 
+    "creators": [
+        "Jcplayer"
+    ], 
+    "courselist_features": [], 
+    "_ac_local_roles": {
+        "Jcplayer": [
+            "Owner"
+        ]
+    }, 
+    "_path": "/Plone/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-9-independence-basis-and-dimension/18.06_L09.jpg"
+}
