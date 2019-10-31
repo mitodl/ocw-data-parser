@@ -1,10 +1,10 @@
 {
-    "text": "", 
+    "text": "<div class=\"maintabletemplate\">\r\n<table class=\"tablewidth75\">\r\n    <thead>\r\n        <tr>\r\n            <th>WEEK&nbsp;#</th>\r\n            <th>MONDAY LECTURES</th>\r\n            <th>WEDNESDAY LECTURES</th>\r\n            <th>LABS AND OTHER ACTIVITIES</th>\r\n        </tr>\r\n    </thead>\r\n    <tbody>\r\n        <tr class=\"row\">\r\n            <td>1</td>\r\n            <td>&nbsp;(no lecture)</td>\r\n            <td>Course Introduction | Energy Use in Society</td>\r\n            <td>Software overview and installation</td>\r\n        </tr>\r\n        <tr class=\"alt-row\">\r\n            <td>2</td>\r\n            <td>Energy Use in Buildings</td>\r\n            <td>Understanding Climate: Solar Radiation | Where Is the Sun?</td>\r\n            <td>DIVA Shading Study (<a href=\"https://www.youtube.com/watch?v=hlHamUJ-suk\">DIVA-GH2</a>)</td>\r\n        </tr>\r\n        <tr class=\"row\">\r\n            <td>3</td>\r\n            <td>Understanding Climate: Wind, Temperature, and Relative Humidity | Climate File Game</td>\r\n            <td>Thermal Comfort | CBE Comfort Tool | Case Studies</td>\r\n            <td>&nbsp;</td>\r\n        </tr>\r\n        <tr class=\"alt-row\">\r\n            <td>4</td>\r\n            <td>Active Solar</td>\r\n            <td>(no lecture)</td>\r\n            <td>DIVA Radiation Maps + ArchSim PV Simulations (<a href=\"https://www.youtube.com/watch?v=1BUrj14B_a0&amp;feature=youtu.be\">DIVA-GH7</a>)</td>\r\n        </tr>\r\n        <tr class=\"row\">\r\n            <td>5</td>\r\n            <td>Light and Human Vision | Photometry</td>\r\n            <td>Daylighting Design Principles</td>\r\n            <td>\ufeffDIVA Rendering &amp; Illuminance Calculations\ufeff (<a href=\"https://vimeo.com/178032314\">DIVA-GH1</a>)</td>\r\n        </tr>\r\n        <tr class=\"alt-row\">\r\n            <td>6</td>\r\n            <td>(no lecture)</td>\r\n            <td>Daylight Simulations | Daylight Availability Metrics | Characterizing Material</td>\r\n            <td>DIVA Daylight Availability Calculations (<a href=\"https://vimeo.com/178104137\">DIVA-GH4</a>) + Dynamic Shading (<a href=\"https://vimeo.com/178178194\">DIVA-GH5</a>)</td>\r\n        </tr>\r\n        <tr class=\"row\">\r\n            <td>7</td>\r\n            <td>\ufeffVisual Comfort</td>\r\n            <td>Electric Lighting | Controls | Occupant Behavior</td>\r\n            <td>Glare Analysis (<a href=\"https://www.youtube.com/watch?v=B1Pzf7x7x-o\">DIVA-RH3</a>) + Electric Lighting &amp; Controls (<a href=\"https://www.youtube.com/watch?v=W42ZSmCftkw\">DIVA-RH5</a>, <a href=\"https://www.youtube.com/watch?v=cT2meCERpCQ\">DIVA-RH6</a>)</td>\r\n        </tr>\r\n        <tr class=\"alt-row\">\r\n            <td>8</td>\r\n            <td>Thermal Mass | Heat Flow I</td>\r\n            <td>(no lecture)</td>\r\n            <td>Setting Up an Integrated Daylighting/Thermal Model (<a href=\"https://www.youtube.com/watch?v=I0sN1HTOjQU&amp;feature=youtu.be\">DIVA-GH8</a>, <a href=\"https://www.youtube.com/watch?v=C-90PHpFMhk&amp;feature=youtu.be\">DIVA-GH10</a>)</td>\r\n        </tr>\r\n        <tr class=\"row\">\r\n            <td>9</td>\r\n            <td>Heat Flow II | Insulation Materials</td>\r\n            <td>Window Technologies | Shading</td>\r\n            <td>Planning for the final project</td>\r\n        </tr>\r\n        <tr class=\"alt-row\">\r\n            <td>10</td>\r\n            <td>Ventilation</td>\r\n            <td>Internal Gains | Load Calculations</td>\r\n            <td>Simulation game</td>\r\n        </tr>\r\n        <tr class=\"row\">\r\n            <td>11</td>\r\n            <td>(no lecture)</td>\r\n            <td>AIA student presentations (undergraduate)</td>\r\n            <td>&nbsp;</td>\r\n        </tr>\r\n        <tr class=\"alt-row\">\r\n            <td>12</td>\r\n            <td>AIA student presentations (graduate)</td>\r\n            <td>HVAC for Small Buildings</td>\r\n            <td>&nbsp;</td>\r\n        </tr>\r\n        <tr class=\"row\">\r\n            <td>13</td>\r\n            <td>HVAC for Large Buildings (guest lecture)</td>\r\n            <td>MIT HVAC tour</td>\r\n            <td>Final project presentations (undergraduate)</td>\r\n        </tr>\r\n        <tr class=\"alt-row\">\r\n            <td>14</td>\r\n            <td>Acoustics I (guest lecture)</td>\r\n            <td>Acoustics II (guest lecture)</td>\r\n            <td>&nbsp;</td>\r\n        </tr>\r\n        <tr class=\"row\">\r\n            <td>15</td>\r\n            <td>Individual meetings with graduate student groups</td>\r\n            <td>Individual meetings with graduate student groups</td>\r\n            <td>&nbsp;</td>\r\n        </tr>\r\n        <tr class=\"alt-row\">\r\n            <td>16</td>\r\n            <td colspan=\"3\">&nbsp;Exam week: final project presentations (graduate)</td>\r\n        </tr>\r\n    </tbody>\r\n</table>\r\n</div>", 
     "_content_type_license": "text/plain", 
-    "_uid": "da7518e20e49aad5b2709d50053c89a1", 
-    "title": "Readings", 
+    "_uid": "02ba5a0fe3992dbe3ede6bec6956254e", 
+    "title": "Calendar", 
     "_ac_local_roles": {
-        "admin": [
+        "peterchipman": [
             "Owner"
         ]
     }, 
@@ -12,7 +12,7 @@
     "_content_type_course_identifier": "text/plain", 
     "_atbrefs": {}, 
     "constrainTypesMode": 0, 
-    "technical_location": "https://ocw.mit.edu/courses/brain-and-cognitive-sciences/9-15-biochemistry-and-pharmacology-of-synaptic-transmission-fall-2001/readings", 
+    "technical_location": "https://ocw.mit.edu/courses/architecture/4-401-environmental-technologies-in-buildings-fall-2018/calendar", 
     "software_requirements": [
         {
             "software_type_col": "Browser", 
@@ -47,8 +47,10 @@
     ], 
     "_content_type_technical_location": "text/plain", 
     "_content_type_rights": "text/html", 
-    "_directly_provided": [], 
-    "parent_uid": "e4d2ddd169d2aeee91fdf2ef9d7d6bc2", 
+    "_directly_provided": [
+        "Products.CMFEditions.interfaces.IVersioned"
+    ], 
+    "parent_uid": "61f2eb4c2d288f68efcada60f5a247d2", 
     "excludeFromNav": false, 
     "_content_type_unique_identifier": "text/plain", 
     "allowDiscussion": false, 
@@ -57,25 +59,28 @@
         "OCWImage", 
         "CourseSection", 
         "OCWExtFile", 
-        "OCWFile"
+        "OCWFile", 
+        "MediaResource"
     ], 
+    "_content_type_text": "text/html", 
     "ad_type": "HOUSE", 
-    "creation_date": "2010/07/08 02:30:10.830 GMT-4", 
+    "creation_date": "2019/09/30 18:29:38.245 Universal", 
     "aggregationlevel": 3, 
     "duration": "", 
     "immediatelyAddableTypes": [
         "OCWImage", 
         "CourseSection", 
         "OCWExtFile", 
-        "OCWFile"
+        "OCWFile", 
+        "MediaResource"
     ], 
     "subject": [], 
     "_content_type_short_page_title": "text/plain", 
-    "effectiveDate": "None", 
-    "parent_module": "e4d2ddd169d2aeee91fdf2ef9d7d6bc2", 
+    "effectiveDate": "2019/09/30 18:33:47.340 Universal", 
+    "parent_module": "61f2eb4c2d288f68efcada60f5a247d2", 
     "is_mathml_document": false, 
     "bottomtext": "", 
-    "short_page_title": "Readings", 
+    "short_page_title": "Calendar", 
     "section_identifier": null, 
     "related_mit_links": "", 
     "_content_type_ad_type": "text/plain", 
@@ -85,30 +90,44 @@
             {
                 "action": null, 
                 "review_state": "waiting_for_authoring", 
+                "actor": "peterchipman", 
                 "comments": "", 
-                "actor": "admin", 
-                "time": "2010/07/08 02:30:10.836 GMT-4"
+                "time": "2019/09/30 18:29:38.254 Universal"
             }, 
             {
                 "action": "approve_to_staging", 
                 "review_state": "ready_for_staging", 
-                "actor": "admin", 
                 "comments": "", 
-                "time": "2010/07/08 09:29:08.620 GMT-4"
+                "actor": "peterchipman", 
+                "time": "2019/09/30 18:33:47.542 Universal"
+            }, 
+            {
+                "action": "decline_to_qa", 
+                "review_state": "waiting_for_qa", 
+                "actor": "yunpengwang", 
+                "comments": "", 
+                "time": "2019/10/04 13:57:33.491 Universal"
+            }, 
+            {
+                "action": "approve_to_staging", 
+                "review_state": "ready_for_staging", 
+                "actor": "yunpengwang", 
+                "comments": "", 
+                "time": "2019/10/04 14:02:56.880 Universal"
             }, 
             {
                 "action": "decline", 
                 "review_state": "waiting_for_authoring", 
                 "comments": "", 
-                "actor": "hdesai", 
-                "time": "2010/07/17 01:04:22.786 GMT-4"
+                "actor": "peterchipman", 
+                "time": "2019/10/07 13:10:01.809 Universal"
             }, 
             {
                 "action": "approve_to_staging", 
                 "review_state": "ready_for_staging", 
-                "actor": "admin", 
+                "actor": "peterchipman", 
                 "comments": "", 
-                "time": "2010/07/17 11:18:01.935 GMT-4"
+                "time": "2019/10/07 13:57:56.230 Universal"
             }
         ]
     }, 
@@ -124,12 +143,10 @@
     "firstTimeEdit": true, 
     "feature_requirements": [], 
     "list_in_left_nav": false, 
-    "short_name_tlp": "Readings", 
+    "short_name_tlp": "", 
     "expirationDate": "None", 
     "_content_type_id": "text/plain", 
-    "contributor_list": [
-        {}
-    ], 
+    "contributor_list": [], 
     "is_media_gallery": false, 
     "contributors": [], 
     "_gopip": 3, 
@@ -137,35 +154,35 @@
     "course_linking": [], 
     "_atrefs": {
         "BelongsTo": [
-            "e4d2ddd169d2aeee91fdf2ef9d7d6bc2"
+            "61f2eb4c2d288f68efcada60f5a247d2"
         ]
     }, 
     "other_platform_requirements": "", 
-    "license": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/", 
-    "rights": "This site (c) Massachusetts Institute of Technology 2010.  Content within individual courses is (c) by the individual authors unless otherwise noted. The Massachusetts Institute of Technology is providing this Work (as defined below) under the terms of this Creative Commons public license (\"CCPL\" or \"license\") unless otherwise noted. The Work is protected by copyright and/or other applicable law. Any use of the work other than as authorized under this license is prohibited. By exercising any of the rights to the Work provided here, You (as defined below) accept and agree to be bound by the terms of this license. The Licensor, the Massachusetts Institute of Technology, grants You the rights contained here in consideration of Your acceptance of such terms and conditions.", 
-    "hide_Page_title": null, 
+    "license": "https://creativecommons.org/licenses/by-nc-sa/3.0/us/", 
+    "rights": "This site (c) Massachusetts Institute of Technology 2019.  Content within individual courses is (c) by the individual authors unless otherwise noted. The Massachusetts Institute of Technology is providing this Work (as defined below) under the terms of this Creative Commons public license (\"CCPL\" or \"license\") unless otherwise noted. The Work is protected by copyright and/or other applicable law. Any use of the work other than as authorized under this license is prohibited. By exercising any of the rights to the Work provided here, You (as defined below) accept and agree to be bound by the terms of this license. The Licensor, the Massachusetts Institute of Technology, grants You the rights contained here in consideration of Your acceptance of such terms and conditions.", 
+    "hide_Page_title": false, 
     "_defaultpage": "", 
     "tcATmit_subject_tags": [], 
     "features_tracking": [], 
     "ad_champion_text": "", 
     "has_inline_embed": false, 
-    "unique_identifier": "https://ocw.mit.edu/courses/brain-and-cognitive-sciences/9-15-biochemistry-and-pharmacology-of-synaptic-transmission-fall-2001/readings", 
+    "unique_identifier": "https://ocw.mit.edu/courses/architecture/4-401-environmental-technologies-in-buildings-fall-2018/calendar", 
     "is_image_gallery": false, 
-    "id": "readings", 
+    "id": "calendar", 
     "materialtype": "Other", 
     "_type": "CourseSection", 
-    "description": "This section contains a list of citations.", 
-    "course_identifier": "https://ocw.mit.edu/courses/brain-and-cognitive-sciences/9-15-biochemistry-and-pharmacology-of-synaptic-transmission-fall-2001", 
+    "description": "Topics of lectures, links to labs, and other activities", 
+    "course_identifier": "https://ocw.mit.edu/courses/architecture/4-401-environmental-technologies-in-buildings-fall-2018", 
     "_content_type_publisher": "text/plain", 
     "tcATmit_instructional_tags": [], 
     "_content_type": "text/html", 
     "creators": [
-        "admin"
+        "peterchipman"
     ], 
-    "modification_date": "2016/09/24 06:35:42.136 GMT-4", 
+    "modification_date": "2019/10/07 13:57:56.033 Universal", 
     "always_publish": false, 
     "_content_type_description": "text/plain", 
-    "_owner": "admin", 
+    "_owner": "peterchipman", 
     "_permissions": {
         "Change portal events": {
             "acquire": false, 
@@ -208,12 +225,11 @@
     "_properties": [
         [
             "title", 
-            "Readings", 
+            "Calendar", 
             "string"
         ]
     ], 
-    "_id": "readings", 
+    "_id": "calendar", 
     "courselist_features": [], 
-    "_content_type_short_name_tlp": "text/plain", 
-    "_path": "/Plone/courses/brain-and-cognitive-sciences/9-15-biochemistry-and-pharmacology-of-synaptic-transmission-fall-2001/readings"
+    "_path": "/Plone/courses/architecture/4-401-environmental-technologies-in-buildings-fall-2018/calendar"
 }

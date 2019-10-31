@@ -1,18 +1,18 @@
 {
     "aka_course_number": [], 
     "_content_type_license": "text/plain", 
-    "_uid": "e4d2ddd169d2aeee91fdf2ef9d7d6bc2", 
+    "_uid": "61f2eb4c2d288f68efcada60f5a247d2", 
+    "_content_type_is_update_boolean": "text/plain", 
     "_content_type_course_level": "text/plain", 
-    "title": "Biochemistry and Pharmacology of Synaptic Transmission", 
+    "title": "Environmental Technologies in Buildings", 
     "_content_type_ocw_batch_id": "text/plain", 
-    "parent_uid": "c3a20cb57cad494caa1868ff07eb3484", 
+    "parent_uid": "0800ffec6270b49fc4b08ec6341b1b44", 
     "location": "", 
     "_content_type_to_year": "text/plain", 
-    "sort_as": "9.15", 
+    "sort_as": "4.401", 
     "constrainTypesMode": 0, 
-    "dspace_handle": "hdl://1721.1/35742", 
-    "_content_type_dspace_handle": "text/plain", 
-    "technical_location": "https://ocw.mit.edu/courses/brain-and-cognitive-sciences/9-15-biochemistry-and-pharmacology-of-synaptic-transmission-fall-2001", 
+    "dspace_handle": "", 
+    "technical_location": "https://ocw.mit.edu/courses/architecture/4-401-environmental-technologies-in-buildings-fall-2018", 
     "software_requirements": [
         {
             "software_type_col": "Browser", 
@@ -49,18 +49,20 @@
     "instructors": [
         {
             "middle_initial": "", 
-            "first_name": "Richard", 
-            "last_name": "Wurtman", 
+            "first_name": "Christoph", 
+            "last_name": "Reinhart", 
             "suffix": "", 
-            "title": "Wurtman, Richard", 
-            "mit_id": "900020771", 
-            "department": "Brain & Cognitive Sciences", 
-            "directory_title": "Professor Emeritus", 
-            "uid": "ef1020ddbbc31bb942970f0557c9daec"
+            "title": "Reinhart, Christoph", 
+            "mit_id": "", 
+            "department": "", 
+            "directory_title": "", 
+            "uid": "8c7fcc374af0fdcdb68d32fd70f758c7"
         }
     ], 
     "_content_type_rights": "text/html", 
-    "_directly_provided": [], 
+    "_directly_provided": [
+        "Products.CMFEditions.interfaces.IVersioned"
+    ], 
     "_content_type_sort_as": "text/plain", 
     "_content_type_to_semester": "text/plain", 
     "_content_type_unique_identifier": "text/plain", 
@@ -74,39 +76,40 @@
         "DownloadSection", 
         "CourseHomeSection", 
         "CourseSection", 
+        "ThisCourseAtMITSection", 
         "OCWExtFile", 
-        "OCWFile"
+        "OCWFile", 
+        "MediaResource"
     ], 
-    "creation_date": "2003/05/22 03:02:04 GMT-4", 
+    "creation_date": "2019/01/14 08:53:00.425 US/Eastern", 
     "aggregationlevel": 4, 
-    "last_published_to_production": "2003/07/02 09:30:57 GMT-4", 
-    "is_update_boolean": "", 
+    "last_published_to_production": "2019/10/18 14:33:41.340 Universal", 
+    "is_update_boolean": "No", 
     "immediatelyAddableTypes": [
         "OCWImage", 
         "DownloadSection", 
         "CourseHomeSection", 
         "CourseSection", 
+        "ThisCourseAtMITSection", 
         "OCWExtFile", 
-        "OCWFile"
+        "OCWFile", 
+        "MediaResource"
     ], 
     "subject": [
-        "neurotransmission", 
-        "nerve terminals", 
-        "monoamine transmitters", 
-        "acetylcholine", 
-        "serotonin", 
-        "dopamine", 
-        "norepinephrine", 
-        "amino acid and peptide transmitters", 
-        "neuromodulators", 
-        "adenosine", 
-        "neurotransmitter synthesis", 
-        "release", 
-        "inactivation", 
-        "receptor-mediated", 
-        "second-messenger"
+        "heating", 
+        "cooling", 
+        "ventilation", 
+        "thermal comfort", 
+        "lighting", 
+        "daylighting", 
+        "thermal mass", 
+        "insulation", 
+        "shading", 
+        "solar", 
+        "energy efficiency"
     ], 
-    "effectiveDate": "None", 
+    "effectiveDate": "2019/05/22 17:16:20 Universal", 
+    "_content_type_language": "text/plain", 
     "excludeFromNav": false, 
     "related_mit_links": "", 
     "to_semester": "-1", 
@@ -116,362 +119,631 @@
             {
                 "action": null, 
                 "review_state": "in_process", 
-                "actor": "admin", 
+                "actor": "pchipman", 
                 "comments": "", 
-                "time": "2010/07/08 02:30:10.347 GMT-4"
+                "time": "2019/01/14 08:53:00.469 US/Eastern"
             }, 
             {
                 "action": "approve_to_staging", 
                 "review_state": "approved_for_staging", 
                 "comments": "", 
-                "actor": "admin", 
-                "time": "2010/07/08 09:29:08.750 GMT-4"
+                "actor": "pchipman", 
+                "time": "2019/05/22 13:16:20.274 GMT-4"
             }, 
             {
                 "action": "schedule_for_staging", 
                 "review_state": "scheduled_for_staging", 
-                "actor": "hdesai", 
-                "comments": "", 
-                "time": "2010/07/08 10:12:21.761 GMT-4"
+                "actor": "pchipman", 
+                "comments": "Almost ready to show to Reinhart? ", 
+                "time": "2019/05/22 13:19:26.578 GMT-4"
             }, 
             {
                 "action": "mark_staged", 
                 "review_state": "staged", 
                 "comments": "", 
                 "actor": "system", 
-                "time": "2010/07/08 10:21:26.486 GMT-4"
-            }, 
-            {
-                "action": "submit_to_fqa", 
-                "review_state": "submitted_for_fqa", 
-                "actor": "hdesai", 
-                "comments": "", 
-                "time": "2010/07/08 10:33:48.619 GMT-4"
-            }, 
-            {
-                "action": "schedule_for_production", 
-                "review_state": "scheduled_for_publishing", 
-                "comments": "", 
-                "actor": "hdesai", 
-                "time": "2010/07/08 10:38:48.927 GMT-4"
-            }, 
-            {
-                "action": "mark_published", 
-                "review_state": "published_in_production", 
-                "actor": "system", 
-                "comments": "", 
-                "time": "2010/07/08 10:46:21.208 GMT-4"
-            }, 
-            {
-                "action": "schedule_for_unpublishing", 
-                "review_state": "scheduled_for_unpublishing", 
-                "comments": "", 
-                "actor": "hdesai", 
-                "time": "2010/07/08 11:02:00.172 GMT-4"
-            }, 
-            {
-                "action": "mark_unpublished", 
-                "review_state": "unpublished", 
-                "actor": "system", 
-                "comments": "", 
-                "time": "2010/07/08 11:08:46.795 GMT-4"
-            }, 
-            {
-                "action": "submit_for_retirement", 
-                "review_state": "submitted_for_retirement", 
-                "comments": "", 
-                "actor": "hdesai", 
-                "time": "2010/07/08 11:15:32.710 GMT-4"
-            }, 
-            {
-                "action": "schedule_for_retirement", 
-                "review_state": "scheduled_for_retirement", 
-                "comments": "", 
-                "actor": "hdesai", 
-                "time": "2010/07/08 11:18:36.431 GMT-4"
-            }, 
-            {
-                "action": "mark_retired", 
-                "review_state": "retired", 
-                "actor": "system", 
-                "comments": "", 
-                "time": "2010/07/08 11:21:33.761 GMT-4"
-            }, 
-            {
-                "action": "mark_archived", 
-                "review_state": "archived", 
-                "comments": "", 
-                "actor": "hdesai", 
-                "time": "2010/07/08 11:28:26.694 GMT-4"
+                "time": "2019/05/22 13:21:05.640 GMT-4"
             }, 
             {
                 "action": "unlock", 
                 "review_state": "unlocked_for_editing", 
-                "actor": "hdesai", 
-                "comments": "", 
-                "time": "2010/07/17 00:57:37.684 GMT-4"
+                "actor": "pchipman", 
+                "comments": "revising features links", 
+                "time": "2019/05/22 14:12:01.355 GMT-4"
             }, 
             {
                 "action": "make_in_process", 
                 "review_state": "in_process", 
-                "actor": "hdesai", 
                 "comments": "", 
-                "time": "2010/07/17 01:04:22.663 GMT-4"
+                "actor": "pchipman", 
+                "time": "2019/05/22 14:45:03.627 GMT-4"
             }, 
             {
                 "action": "approve_to_staging", 
                 "review_state": "approved_for_staging", 
+                "actor": "pchipman", 
                 "comments": "", 
-                "actor": "admin", 
-                "time": "2010/07/17 11:18:01.979 GMT-4"
+                "time": "2019/05/22 14:53:58.154 GMT-4"
             }, 
             {
                 "action": "schedule_for_staging", 
                 "review_state": "scheduled_for_staging", 
-                "actor": "hdesai", 
-                "comments": "", 
-                "time": "2010/07/17 11:37:30.613 GMT-4"
+                "actor": "pchipman", 
+                "comments": "Shortened CHP description for pop-up purposes.", 
+                "time": "2019/05/22 14:54:27.962 GMT-4"
             }, 
             {
                 "action": "mark_staged", 
                 "review_state": "staged", 
                 "comments": "", 
                 "actor": "system", 
-                "time": "2010/07/17 11:40:35.440 GMT-4"
+                "time": "2019/05/22 14:59:11.377 GMT-4"
+            }, 
+            {
+                "action": "unlock", 
+                "review_state": "unlocked_for_editing", 
+                "actor": "pchipman", 
+                "comments": "Revisions to image credits in lecture slides.", 
+                "time": "2019/05/31 10:15:21.435 GMT-4"
+            }, 
+            {
+                "action": "make_in_process", 
+                "review_state": "in_process", 
+                "actor": "pchipman", 
+                "comments": "", 
+                "time": "2019/05/31 10:36:40.513 GMT-4"
+            }, 
+            {
+                "action": "approve_to_staging", 
+                "review_state": "approved_for_staging", 
+                "actor": "pchipman", 
+                "comments": "", 
+                "time": "2019/05/31 10:36:43.683 GMT-4"
+            }, 
+            {
+                "action": "schedule_for_staging", 
+                "review_state": "scheduled_for_staging", 
+                "actor": "pchipman", 
+                "comments": "Made revisions to image credits in a couple of lectures.", 
+                "time": "2019/05/31 10:37:12.154 GMT-4"
+            }, 
+            {
+                "action": "mark_staged", 
+                "review_state": "staged", 
+                "comments": "", 
+                "actor": "system", 
+                "time": "2019/05/31 10:38:00.006 GMT-4"
+            }, 
+            {
+                "action": "unlock", 
+                "review_state": "unlocked_for_editing", 
+                "actor": "peterchipman", 
+                "comments": "Adding accessibility notices.", 
+                "time": "2019/08/23 17:49:51.056 Universal"
+            }, 
+            {
+                "action": "make_in_process", 
+                "review_state": "in_process", 
+                "comments": "", 
+                "actor": "peterchipman", 
+                "time": "2019/08/23 17:50:46.532 Universal"
+            }, 
+            {
+                "action": "approve_to_staging", 
+                "review_state": "approved_for_staging", 
+                "actor": "peterchipman", 
+                "comments": "", 
+                "time": "2019/08/23 18:59:15.122 Universal"
+            }, 
+            {
+                "action": "schedule_for_staging", 
+                "review_state": "scheduled_for_staging", 
+                "comments": "Inaccessibility tags were already there! ", 
+                "actor": "peterchipman", 
+                "time": "2019/08/23 19:00:38.532 Universal"
+            }, 
+            {
+                "action": "mark_staged", 
+                "review_state": "staged", 
+                "actor": "system", 
+                "comments": "", 
+                "time": "2019/08/23 19:03:30.111 Universal"
+            }, 
+            {
+                "action": "unlock", 
+                "review_state": "unlocked_for_editing", 
+                "comments": "Added cross-listing number.", 
+                "actor": "peterchipman", 
+                "time": "2019/08/27 13:12:34.879 Universal"
+            }, 
+            {
+                "action": "make_in_process", 
+                "review_state": "in_process", 
+                "actor": "peterchipman", 
+                "comments": "", 
+                "time": "2019/08/27 13:13:08.173 Universal"
+            }, 
+            {
+                "action": "approve_to_staging", 
+                "review_state": "approved_for_staging", 
+                "actor": "peterchipman", 
+                "comments": "", 
+                "time": "2019/08/27 13:13:16.618 Universal"
+            }, 
+            {
+                "action": "schedule_for_staging", 
+                "review_state": "scheduled_for_staging", 
+                "comments": "Added cross-listing number.", 
+                "actor": "peterchipman", 
+                "time": "2019/08/27 13:14:08.723 Universal"
+            }, 
+            {
+                "action": "mark_staged", 
+                "review_state": "staged", 
+                "actor": "system", 
+                "comments": "", 
+                "time": "2019/08/27 13:17:08.871 Universal"
+            }, 
+            {
+                "action": "unlock", 
+                "review_state": "unlocked_for_editing", 
+                "comments": "Hiving off software/bibliography info to separate page at professor's request.", 
+                "actor": "peterchipman", 
+                "time": "2019/09/06 13:33:32.912 Universal"
+            }, 
+            {
+                "action": "make_in_process", 
+                "review_state": "in_process", 
+                "actor": "peterchipman", 
+                "comments": "", 
+                "time": "2019/09/06 13:35:18.401 Universal"
+            }, 
+            {
+                "action": "approve_to_staging", 
+                "review_state": "approved_for_staging", 
+                "comments": "", 
+                "actor": "peterchipman", 
+                "time": "2019/09/06 13:45:29.072 Universal"
+            }, 
+            {
+                "action": "make_in_process", 
+                "review_state": "in_process", 
+                "actor": "peterchipman", 
+                "comments": "", 
+                "time": "2019/09/18 14:09:24.936 Universal"
+            }, 
+            {
+                "action": "approve_to_staging", 
+                "review_state": "approved_for_staging", 
+                "comments": "", 
+                "actor": "peterchipman", 
+                "time": "2019/09/18 15:36:09.872 Universal"
+            }, 
+            {
+                "action": "make_in_process", 
+                "review_state": "in_process", 
+                "actor": "peterchipman", 
+                "comments": "", 
+                "time": "2019/09/18 15:40:11.516 Universal"
+            }, 
+            {
+                "action": "approve_to_staging", 
+                "review_state": "approved_for_staging", 
+                "comments": "", 
+                "actor": "peterchipman", 
+                "time": "2019/09/18 15:46:35.911 Universal"
+            }, 
+            {
+                "action": "schedule_for_staging", 
+                "review_state": "scheduled_for_staging", 
+                "actor": "peterchipman", 
+                "comments": "Made corrections to pdfs based on permissions process, also added inaccessibility statements and one file size statement to assignments page.", 
+                "time": "2019/09/18 15:49:12.754 Universal"
+            }, 
+            {
+                "action": "mark_staged", 
+                "review_state": "staged", 
+                "comments": "", 
+                "actor": "system", 
+                "time": "2019/09/18 15:51:51.815 Universal"
+            }, 
+            {
+                "action": "unlock", 
+                "review_state": "unlocked_for_editing", 
+                "actor": "peterchipman", 
+                "comments": "Making edits based on Eliz QA comments", 
+                "time": "2019/09/27 12:55:32.531 Universal"
+            }, 
+            {
+                "action": "make_in_process", 
+                "review_state": "in_process", 
+                "actor": "peterchipman", 
+                "comments": "", 
+                "time": "2019/09/27 12:56:47.611 Universal"
+            }, 
+            {
+                "action": "approve_to_staging", 
+                "review_state": "approved_for_staging", 
+                "comments": "", 
+                "actor": "peterchipman", 
+                "time": "2019/09/27 15:35:06.800 Universal"
+            }, 
+            {
+                "action": "schedule_for_staging", 
+                "review_state": "scheduled_for_staging", 
+                "actor": "peterchipman", 
+                "comments": "made QA edits.", 
+                "time": "2019/09/27 15:35:36.774 Universal"
+            }, 
+            {
+                "action": "mark_staged", 
+                "review_state": "staged", 
+                "comments": "", 
+                "actor": "system", 
+                "time": "2019/09/27 15:38:11.838 Universal"
+            }, 
+            {
+                "action": "unlock", 
+                "review_state": "unlocked_for_editing", 
+                "actor": "peterchipman", 
+                "comments": "Minor change to syllabus page", 
+                "time": "2019/09/30 13:52:04.469 Universal"
+            }, 
+            {
+                "action": "make_in_process", 
+                "review_state": "in_process", 
+                "comments": "", 
+                "actor": "peterchipman", 
+                "time": "2019/09/30 13:52:41.030 Universal"
+            }, 
+            {
+                "action": "approve_to_staging", 
+                "review_state": "approved_for_staging", 
+                "actor": "peterchipman", 
+                "comments": "", 
+                "time": "2019/09/30 18:34:00.484 Universal"
+            }, 
+            {
+                "action": "schedule_for_staging", 
+                "review_state": "scheduled_for_staging", 
+                "comments": "Hived off Calendar as separate section.", 
+                "actor": "peterchipman", 
+                "time": "2019/09/30 18:34:46.341 Universal"
+            }, 
+            {
+                "action": "mark_staged", 
+                "review_state": "staged", 
+                "actor": "system", 
+                "comments": "", 
+                "time": "2019/09/30 18:38:27.820 Universal"
+            }, 
+            {
+                "action": "unlock", 
+                "review_state": "unlocked_for_editing", 
+                "comments": "FQA", 
+                "actor": "yunpengwang", 
+                "time": "2019/10/04 13:57:20.226 Universal"
+            }, 
+            {
+                "action": "make_in_process", 
+                "review_state": "in_process", 
+                "actor": "yunpengwang", 
+                "comments": "", 
+                "time": "2019/10/04 13:57:33.513 Universal"
+            }, 
+            {
+                "action": "approve_to_staging", 
+                "review_state": "approved_for_staging", 
+                "actor": "yunpengwang", 
+                "comments": "", 
+                "time": "2019/10/04 14:02:57.088 Universal"
+            }, 
+            {
+                "action": "make_in_process", 
+                "review_state": "in_process", 
+                "comments": "", 
+                "actor": "yunpengwang", 
+                "time": "2019/10/04 14:03:08.868 Universal"
+            }, 
+            {
+                "action": "approve_to_staging", 
+                "review_state": "approved_for_staging", 
+                "actor": "peterchipman", 
+                "comments": "", 
+                "time": "2019/10/07 13:58:09.259 Universal"
+            }, 
+            {
+                "action": "schedule_for_staging", 
+                "review_state": "scheduled_for_staging", 
+                "comments": "Made some FQA edits.", 
+                "actor": "peterchipman", 
+                "time": "2019/10/07 13:59:08.172 Universal"
+            }, 
+            {
+                "action": "mark_staged", 
+                "review_state": "staged", 
+                "actor": "system", 
+                "comments": "", 
+                "time": "2019/10/07 18:54:24.896 Universal"
             }, 
             {
                 "action": "submit_to_fqa", 
                 "review_state": "submitted_for_fqa", 
-                "actor": "hdesai", 
-                "comments": "", 
-                "time": "2010/07/17 11:51:16.727 GMT-4"
+                "comments": "Made Cathleen's, Sharon's and Yunpeng's recommende changes--ready to publish.", 
+                "actor": "peterchipman", 
+                "time": "2019/10/09 13:43:21.896 Universal"
             }, 
             {
                 "action": "schedule_for_production", 
                 "review_state": "scheduled_for_publishing", 
-                "actor": "hdesai", 
-                "comments": "", 
-                "time": "2010/07/17 11:54:39.306 GMT-4"
+                "actor": "joemartis", 
+                "comments": "This is approved for publication Ticket #3036", 
+                "time": "2019/10/09 14:19:21.368 Universal"
             }, 
             {
                 "action": "mark_published", 
                 "review_state": "published_in_production", 
                 "comments": "", 
                 "actor": "system", 
-                "time": "2010/07/17 11:59:23.111 GMT-4"
+                "time": "2019/10/09 14:23:17.529 Universal"
             }, 
             {
-                "action": "schedule_for_unpublishing", 
-                "review_state": "scheduled_for_unpublishing", 
+                "action": "unlock", 
+                "review_state": "unlocked_for_editing", 
+                "actor": "peterchipman", 
+                "comments": "adding course lists to metadata", 
+                "time": "2019/10/18 14:15:49.675 Universal"
+            }, 
+            {
+                "action": "make_in_process", 
+                "review_state": "in_process", 
                 "comments": "", 
-                "actor": "hdesai", 
-                "time": "2010/07/17 12:07:27.646 GMT-4"
+                "actor": "peterchipman", 
+                "time": "2019/10/18 14:16:30.528 Universal"
             }, 
             {
-                "action": "mark_unpublished", 
-                "review_state": "unpublished", 
+                "action": "approve_to_staging", 
+                "review_state": "approved_for_staging", 
+                "actor": "peterchipman", 
+                "comments": "", 
+                "time": "2019/10/18 14:16:47.152 Universal"
+            }, 
+            {
+                "action": "schedule_for_staging", 
+                "review_state": "scheduled_for_staging", 
+                "actor": "peterchipman", 
+                "comments": "added course list metadata", 
+                "time": "2019/10/18 14:17:20.058 Universal"
+            }, 
+            {
+                "action": "mark_staged", 
+                "review_state": "staged", 
                 "comments": "", 
                 "actor": "system", 
-                "time": "2010/07/17 12:09:54.681 GMT-4"
+                "time": "2019/10/18 14:19:58.705 Universal"
             }, 
             {
-                "action": "submit_for_retirement", 
-                "review_state": "submitted_for_retirement", 
-                "actor": "hdesai", 
-                "comments": "", 
-                "time": "2010/07/17 12:21:17.138 GMT-4"
+                "action": "submit_to_fqa", 
+                "review_state": "submitted_for_fqa", 
+                "actor": "peterchipman", 
+                "comments": "repub -- new course list metadata added.", 
+                "time": "2019/10/18 14:20:42.715 Universal"
             }, 
             {
-                "action": "schedule_for_retirement", 
-                "review_state": "scheduled_for_retirement", 
-                "actor": "hdesai", 
-                "comments": "", 
-                "time": "2010/07/17 12:46:26.283 GMT-4"
+                "action": "schedule_for_production", 
+                "review_state": "scheduled_for_publishing", 
+                "comments": "maint repub Ticket #3048", 
+                "actor": "joemartis", 
+                "time": "2019/10/18 14:24:10.687 Universal"
             }, 
             {
-                "action": "mark_retired", 
-                "review_state": "retired", 
-                "comments": "", 
+                "action": "mark_published", 
+                "review_state": "published_in_production", 
                 "actor": "system", 
-                "time": "2010/07/17 12:48:22.139 GMT-4"
-            }, 
-            {
-                "action": "mark_archived", 
-                "review_state": "archived", 
-                "actor": "hdesai", 
                 "comments": "", 
-                "time": "2010/07/17 13:13:37.551 GMT-4"
+                "time": "2019/10/18 14:33:41.316 Universal"
             }
         ]
     }, 
     "_classname": "Course", 
     "metadata_contributor_list": [
         {
-            "md_contributor_uid": "ef1020ddbbc31bb942970f0557c9daec", 
-            "md_contributor_entity": "Wurtman, Richard", 
+            "md_contributor_uid": "8c7fcc374af0fdcdb68d32fd70f758c7", 
+            "md_contributor_entity": "Reinhart, Christoph", 
             "md_contributor_role": "Instructor", 
             "md_contributor_special_title": "", 
-            "md_contributor_hide": ""
-        }, 
-        {
-            "md_contributor_uid": "", 
-            "md_contributor_entity": "Todd Rautenberg", 
-            "md_contributor_role": "Validator", 
-            "md_contributor_special_title": "", 
-            "md_contributor_hide": ""
-        }, 
-        {
-            "md_contributor_uid": "", 
-            "md_contributor_entity": "Todd Rautenberg", 
-            "md_contributor_role": "Creator", 
-            "md_contributor_special_title": "", 
-            "md_contributor_hide": ""
+            "md_contributor_hide": "N"
         }
     ], 
     "_userdefined_roles": [], 
     "publisher": "MIT OpenCourseWare", 
     "nextPreviousEnabled": false, 
-    "license": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/", 
+    "license": "https://creativecommons.org/licenses/by-nc-sa/3.0/us/", 
     "widgets_features": [], 
     "module_comments": [
-        "DSpace archived:", 
-        "gshaneyfelt:1/22/2007 8:44:08 AM", 
-        "RW: Week 7 archiving.:", 
-        "rwolfe:1/19/2007 2:01:40 AM", 
-        "WK 7: Approved for retirement:", 
-        "gshaneyfelt:1/18/2007 8:47:30 AM", 
-        "Unpublished again after manually fixing the typo \"UnderGraduate\" in CourseHome.xml and reseting thPerm: Replaced/Retired", 
-        "Scheduled for publishing after fixing the typo \"UnderGraduate\" in CourseHome.xml and manually resetiSubmitted for FQA after fixing the typo \"UnderGraduate\" in CourseHome.xml and manually reseting the Staging the course after fixing the typo \"UnderGraduate\" in CourseHome.xml and manually resetting thUnlocking the course to fix the typo \"UnderGraduate\" in CourseHome.xml (artf387934):", 
-        "lkumar:10/27/2", 
-        "Unpublishing for course archiving:", 
-        "lkumar:10/3/2006 6:09:17 AM", 
-        "Perm: Replaced/Retired", 
-        "Republishing/unpublishing for course archiving:", 
-        "lkumar:10/3/2006 3:18:58 AM", 
-        "Republishing/unpublishing for course archiving:", 
-        "lkumar:10/3/2006 2:07:30 AM", 
-        "Republishing/unpublishing for course archiving:", 
-        "lkumar:10/3/2006 12:24:54 AM", 
-        "Republishing/unpublishing for course archiving:", 
-        "lkumar:10/3/2006 12:19:44 AM", 
-        "Unpublish for archiving.:", 
-        "finalqa1:10/11/2005 1:29:13 PM", 
-        "Unpublish for archiving.:", 
-        "finalqa1:10/7/2005 10:27:53 AM", 
-        "archive course migration: hdesai:7/8/2010 10:33", 
-        "archive course migration: hdesai:7/8/2010 11:2", 
-        "archive course migration: hdesai:7/8/2010 11:15", 
-        ": hdesai:7/17/2010 0:57", 
-        ": hdesai:7/17/2010 11:51", 
-        ": hdesai:7/17/2010 12:7", 
-        ": hdesai:7/17/2010 12:21"
+        "Almost ready to show to Reinhart?  [schedule for staging]: pchipman:5/22/2019 13:19", 
+        "revising features links [unlock]: pchipman:5/22/2019 14:12", 
+        "Shortened CHP description for pop-up purposes. [schedule for staging]: pchipman:5/22/2019 14:54", 
+        "Revisions to image credits in lecture slides. [unlock]: pchipman:5/31/2019 10:15", 
+        "Made revisions to image credits in a couple of lectures. [schedule for staging]: pchipman:5/31/2019 10:37", 
+        "Adding accessibility notices. [unlock]: peterchipman:8/23/2019 17:49", 
+        "Inaccessibility tags were already there!  [schedule for staging]: peterchipman:8/23/2019 19:0", 
+        "Added cross-listing number. [unlock]: peterchipman:8/27/2019 13:12", 
+        "Added cross-listing number. [schedule for staging]: peterchipman:8/27/2019 13:14", 
+        "Hiving off software/bibliography info to separate page at professor's request. [unlock]: peterchipman:9/6/2019 13:33", 
+        "Made corrections to pdfs based on permissions process, also added inaccessibility statements and one file size statement to assignments page. [schedule for staging]: peterchipman:9/18/2019 15:49", 
+        "Making edits based on Eliz QA comments [unlock]: peterchipman:9/27/2019 12:55", 
+        "made QA edits. [schedule for staging]: peterchipman:9/27/2019 15:35", 
+        "Minor change to syllabus page [unlock]: peterchipman:9/30/2019 13:52", 
+        "Hived off Calendar as separate section. [schedule for staging]: peterchipman:9/30/2019 18:34", 
+        "FQA [unlock]: yunpengwang:10/4/2019 13:57", 
+        "Made some FQA edits. [schedule for staging]: peterchipman:10/7/2019 13:59", 
+        "Made Cathleen's, Sharon's and Yunpeng's recommende changes--ready to publish. [submit to fqa]: peterchipman:10/9/2019 13:43", 
+        "This is approved for publication Ticket #3036 [schedule for production]: joemartis:10/9/2019 14:19", 
+        "adding course lists to metadata [unlock]: peterchipman:10/18/2019 14:15", 
+        "added course list metadata [schedule for staging]: peterchipman:10/18/2019 14:17", 
+        "repub -- new course list metadata added. [submit to fqa]: peterchipman:10/18/2019 14:20", 
+        "maint repub Ticket #3048 [schedule for production]: joemartis:10/18/2019 14:24"
     ], 
-    "category_features": [], 
-    "firstTimeEdit": true, 
-    "retirement_date": "2007/01/22 03:20:31 US/Eastern", 
-    "feature_requirements": [], 
-    "first_published_to_production": "2003/07/02 09:30:57 GMT-4", 
+    "category_features": [
+        {
+            "ocw_feature": "Energy", 
+            "ocw_subfeature": "Buildings", 
+            "ocw_feature_url": "", 
+            "ocw_speciality": "", 
+            "ocw_feature_notes": ""
+        }, 
+        {
+            "ocw_feature": "Fine Arts", 
+            "ocw_subfeature": "Architecture", 
+            "ocw_feature_url": "", 
+            "ocw_speciality": "Environmental Design", 
+            "ocw_feature_notes": ""
+        }
+    ], 
+    "firstTimeEdit": false, 
+    "retirement_date": "None", 
+    "feature_requirements": [
+        {
+            "ocw_feature": "Lecture notes", 
+            "ocw_subfeature": "Complete", 
+            "ocw_feature_url": "/courses/architecture/4-401-environmental-technologies-in-buildings-fall-2018/lecture-slides-1/index.htm", 
+            "ocw_speciality": "", 
+            "ocw_feature_notes": ""
+        }, 
+        {
+            "ocw_feature": "Assignments", 
+            "ocw_subfeature": "(no examples)", 
+            "ocw_feature_url": "/courses/architecture/4-401-environmental-technologies-in-buildings-fall-2018/assignments/index.htm", 
+            "ocw_speciality": "", 
+            "ocw_feature_notes": ""
+        }
+    ], 
+    "first_published_to_production": "2019/10/09 14:23:17.555 Universal", 
     "_ac_local_roles": {
-        "admin": [
+        "pchipman": [
             "Owner"
         ]
     }, 
-    "fm_record_id": "", 
-    "last_unpublishing_date": "2006/10/30 06:00:40 US/Eastern", 
-    "classification": [
-        {
-            "source": "CIP", 
-            "id": "511502", 
-            "description": "Psychiatric/Mental Health Services Technician"
-        }, 
-        {
-            "source": "CIP", 
-            "id": "260202", 
-            "description": "Biochemistry"
-        }, 
-        {
-            "source": "CIP", 
-            "id": "511502", 
-            "description": "Psychiatric/Mental Health Services Technician"
-        }, 
-        {
-            "source": "CIP", 
-            "id": "260202", 
-            "description": "Biochemistry"
-        }, 
-        {
-            "source": "CIP", 
-            "id": "511502", 
-            "description": "Psychiatric/Mental Health Services Technician"
-        }, 
-        {
-            "source": "CIP", 
-            "id": "260202", 
-            "description": "Biochemistry"
-        }
-    ], 
-    "course_owner": "katej", 
-    "last_published_to_staging": "2003/06/25 20:00:37 GMT-4", 
+    "fm_record_id": "8115", 
+    "last_unpublishing_date": "None", 
+    "classification": [], 
+    "course_owner": "peterchipman", 
+    "last_published_to_staging": "2019/10/18 14:19:58.728 Universal", 
     "expirationDate": "None", 
     "_content_type_id": "text/plain", 
     "_content_type_chp_display_level": "text/plain", 
-    "linked_course_number": [], 
-    "_gopip": 88, 
-    "unique_identifier": "https://ocw.mit.edu/courses/brain-and-cognitive-sciences/9-15-biochemistry-and-pharmacology-of-synaptic-transmission-fall-2001", 
+    "linked_course_number": [
+        {
+            "linked_course_number_col": "4.464", 
+            "sort_as_col": "4.464", 
+            "linked_course_type_col": "Graduate"
+        }
+    ], 
+    "_content_type_fm_record_id": "text/plain", 
+    "_gopip": 119, 
+    "unique_identifier": "https://ocw.mit.edu/courses/architecture/4-401-environmental-technologies-in-buildings-fall-2018", 
     "_content_type_title": "text/plain", 
     "_content_type": "text/plain", 
     "_atrefs": {
         "instructors": [
-            "ef1020ddbbc31bb942970f0557c9daec"
+            "8c7fcc374af0fdcdb68d32fd70f758c7"
+        ], 
+        "master_subject": [
+            "fa48797b1d49833648274b86ee2d268c"
         ]
     }, 
-    "_id": "9-15-biochemistry-and-pharmacology-of-synaptic-transmission-fall-2001", 
-    "master_course_number": "9.15", 
+    "_id": "4-401-environmental-technologies-in-buildings-fall-2018", 
+    "master_course_number": "4.401", 
     "editor_notes": "", 
-    "ocw_batch_id": "5", 
-    "language": "", 
-    "rights": "This site (c) Massachusetts Institute of Technology 2010.  Content within individual courses is (c) by the individual authors unless otherwise noted. The Massachusetts Institute of Technology is providing this Work (as defined below) under the terms of this Creative Commons public license (\"CCPL\" or \"license\") unless otherwise noted. The Work is protected by copyright and/or other applicable law. Any use of the work other than as authorized under this license is prohibited. By exercising any of the rights to the Work provided here, You (as defined below) accept and agree to be bound by the terms of this license. The Licensor, the Massachusetts Institute of Technology, grants You the rights contained here in consideration of Your acceptance of such terms and conditions.", 
+    "ocw_batch_id": "189", 
+    "language": "en-US", 
+    "rights": "This site (c) Massachusetts Institute of Technology 2018.  Content within individual courses is (c) by the individual authors unless otherwise noted. The Massachusetts Institute of Technology is providing this Work (as defined below) under the terms of this Creative Commons public license (\"CCPL\" or \"license\") unless otherwise noted. The Work is protected by copyright and/or other applicable law. Any use of the work other than as authorized under this license is prohibited. By exercising any of the rights to the Work provided here, You (as defined below) accept and agree to be bound by the terms of this license. The Licensor, the Massachusetts Institute of Technology, grants You the rights contained here in consideration of Your acceptance of such terms and conditions.", 
     "_atbrefs": {
-        "is_update_of": [
-            "0e3ec1e6fe4670e44b55130c4b4205b7"
-        ], 
         "BelongsTo": [
-            "2aff229d2d7a9b2151e71b418888c220", 
-            "116709acea0fddb3156e56bc040f1cca", 
-            "4dcd2b97aa3830313a0b7d6083bc1417", 
-            "da7518e20e49aad5b2709d50053c89a1", 
-            "43a72a8e9449ed407fbe757476389f26"
+            "02ba5a0fe3992dbe3ede6bec6956254e", 
+            "93c41ef18a13b65c495ef196a737db5e", 
+            "13f7348b393e8bf7defaa7a4d040799b", 
+            "7a78d1885b6244c92489b8265a2f5f9d", 
+            "1176b5e57136bcc5ad3e9f4bf7c7a0a1", 
+            "be2f4e041e1683f5615ec47f6208d8d9", 
+            "751a40da4408146a65f198fd3edeb8ee", 
+            "77107c99112f7c2e4f90e7e454200b66", 
+            "7b3aca8cb1f3a8f93a98efb1da6faa93", 
+            "5b9e24cbf2abd05c5e06a263a85b61f9", 
+            "35b1bfdbe2b8d720f6aa5cde6caf3770", 
+            "d22ab095cde0ee5463d984784a55629c", 
+            "d6e0e979c5f62d4c3fab3ea921d4caed", 
+            "4cfe5b351f32c9a27932cfc4ec110224", 
+            "2a0d878698ed9717f8009689b04b2b50", 
+            "4a661a066142c53ab84981fa6b000619", 
+            "4eb91842e5f36bb02376b9b096cb9c50", 
+            "7ff44e4c1453a64c006834e77a71f955", 
+            "54dda49e87e0ee5723d790211ba2998b", 
+            "3dabcea4815af7e1fdbc9fd88a814bab", 
+            "5cc7bc9ef089d76383fa4b37c55fe441", 
+            "e7ce684bf283f16e21ca14755834116c", 
+            "da40a5bcd7dc66f465a48ee6f3c1e1b4", 
+            "d735219180f1708e311284e120f37bb0", 
+            "6b5a0ecd55c5d82ad3ad89783e273ce2", 
+            "b8666429a76f3871713b25de8ed5c5b6", 
+            "e6c8d40a32eaa86a4df5122251657fe1", 
+            "2087c0f424b5ddd02e0e0568f0b288f9", 
+            "7d0075e4cfca2a38a0cf86a634ca4205", 
+            "9e1814f0e72c5b6b6748238570b34efe", 
+            "c03cdb9ea591216d81a3f2febd616a3c", 
+            "112aca2f2f0963ab54544229f6773b27", 
+            "ea268fdc900bdb9b8e195593363c14bf", 
+            "ea064154791a4eb5e144e76ceeca60a5", 
+            "400472d8d9edfcec734dfbf1bfa7a583"
         ]
     }, 
     "_defaultpage": "index.htm", 
     "tcATmit_subject_tags": [], 
-    "features_tracking": [], 
+    "features_tracking": [
+        {
+            "ocw_feature": "Documents not accessible", 
+            "ocw_subfeature": "Scanned", 
+            "ocw_feature_url": "/courses/architecture/4-401-environmental-technologies-in-buildings-fall-2018/lecture-slides-1/index.htm", 
+            "ocw_speciality": "", 
+            "ocw_feature_notes": "Lots of text on images in pdfs."
+        }
+    ], 
     "contributors": [], 
     "_content_type_unique_id": "text/plain", 
     "chp_display_level": "Both", 
     "_content_type_master_course_number": "text/plain", 
-    "id": "9-15-biochemistry-and-pharmacology-of-synaptic-transmission-fall-2001", 
+    "id": "4-401-environmental-technologies-in-buildings-fall-2018", 
     "materialtype": "Other", 
     "pop_up_image_dict": {}, 
-    "from_year": "2001", 
+    "from_year": "2018", 
     "_content_type_course_owner": "text/plain", 
     "_type": "Course", 
     "description": "", 
+    "master_subject": [
+        "fa48797b1d49833648274b86ee2d268c"
+    ], 
     "to_year": "-1", 
     "_content_type_publisher": "text/plain", 
     "tcATmit_instructional_tags": [], 
     "course_linking": [], 
-    "first_published_to_staging": "2003/06/25 20:00:37 GMT-4", 
-    "modification_date": "2017/08/29 05:41:09.843 GMT-4", 
+    "first_published_to_staging": "2019/05/22 13:21:05.684 GMT-4", 
+    "modification_date": "2019/10/18 14:33:41.340 Universal", 
     "course_level": "Undergraduate", 
     "always_publish": false, 
-    "last_unstaging_date": "2006/10/30 06:00:40 US/Eastern", 
-    "_owner": "admin", 
+    "last_unstaging_date": "None", 
+    "_owner": null, 
     "_permissions": {
         "Modify portal content": {
             "acquire": false, 
             "roles": [
+                "Contributor", 
+                "Editor", 
+                "Manager", 
                 "MetadataEditor", 
+                "Owner", 
+                "Reader", 
+                "Reviewer", 
                 "System"
             ]
         }, 
@@ -503,14 +775,36 @@
     "_properties": [
         [
             "title", 
-            "Biochemistry and Pharmacology of Synaptic Transmission", 
+            "Environmental Technologies in Buildings", 
             "string"
         ]
     ], 
     "creators": [
-        "admin"
+        "pchipman"
     ], 
-    "courselist_features": [], 
-    "unique_id": "e4d2ddd169d2aeee91fdf2ef9d7d6bc2", 
-    "_path": "/Plone/courses/brain-and-cognitive-sciences/9-15-biochemistry-and-pharmacology-of-synaptic-transmission-fall-2001"
+    "courselist_features": [
+        {
+            "ocw_feature": "Environment at MIT", 
+            "ocw_subfeature": "Engineering for Sustainability", 
+            "ocw_feature_url": "", 
+            "ocw_speciality": "", 
+            "ocw_feature_notes": ""
+        }, 
+        {
+            "ocw_feature": "Energy Minor", 
+            "ocw_subfeature": "Energy Minor Elective Courses", 
+            "ocw_feature_url": "", 
+            "ocw_speciality": "", 
+            "ocw_feature_notes": ""
+        }, 
+        {
+            "ocw_feature": "Energy at MIT", 
+            "ocw_subfeature": "Buildings", 
+            "ocw_feature_url": "", 
+            "ocw_speciality": "", 
+            "ocw_feature_notes": ""
+        }
+    ], 
+    "unique_id": "61f2eb4c2d288f68efcada60f5a247d2", 
+    "_path": "/Plone/courses/architecture/4-401-environmental-technologies-in-buildings-fall-2018"
 }

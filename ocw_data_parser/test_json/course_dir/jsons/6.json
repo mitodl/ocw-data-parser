@@ -1,18 +1,22 @@
 {
-    "text": "", 
+    "text": "<p>Slides are available for the following lectures:</p> <ul>     <li><a href=\"./resolveuid/e7ce684bf283f16e21ca14755834116c\">Course Introduction | Energy Use in Society (PDF - 2.1 MB)</a></li>     <li><a href=\"./resolveuid/da40a5bcd7dc66f465a48ee6f3c1e1b4\">Energy Use in Buildings\ufeff (PDF - 6.3 MB)</a></li>     <li><a href=\"./resolveuid/d735219180f1708e311284e120f37bb0\">Understanding Climate: Solar Radiation | Where Is the Sun? \ufeff(PDF - 4.5 MB)</a></li>     <li><a href=\"./resolveuid/6b5a0ecd55c5d82ad3ad89783e273ce2\">Understanding Climate: Wind, Temperature, and Relative Humidity | Climate File Game \ufeff(PDF&nbsp;-&nbsp;7.3 MB)</a></li>     <li><a href=\"./resolveuid/b8666429a76f3871713b25de8ed5c5b6\">Thermal Comfort | CBE Comfort Tool | Case Studies \ufeff(PDF - 5.0 MB)</a></li>     <li><a href=\"./resolveuid/e6c8d40a32eaa86a4df5122251657fe1\">Active Solar \ufeff(PDF - 13.2 MB)</a></li>     <li><a href=\"./resolveuid/1176b5e57136bcc5ad3e9f4bf7c7a0a1\">Light and Human Vision | Photometry \ufeff(PDF - 9.1 MB)</a></li>     <li><a href=\"./resolveuid/be2f4e041e1683f5615ec47f6208d8d9\">Daylighting Design Principles \ufeff(PDF - 7.1 MB)</a></li>     <li><a href=\"./resolveuid/2087c0f424b5ddd02e0e0568f0b288f9\">Daylight Simulations | Daylight Availability Metrics | Characterizing Material \ufeff(PDF - 4.8 MB)</a></li>     <li><a href=\"./resolveuid/7d0075e4cfca2a38a0cf86a634ca4205\">Visual Comfort \ufeff(PDF - 5.7 MB)</a></li>     <li><a href=\"./resolveuid/9e1814f0e72c5b6b6748238570b34efe\">Electric Lighting | Controls | Occupant Behavior \ufeff(PDF - 3.8 MB)</a></li>     <li><a href=\"./resolveuid/c03cdb9ea591216d81a3f2febd616a3c\"><img alt=\"This resource may not render correctly in a screen reader.\" src=\"/images/inacessible.gif\" />Thermal Mass | Heat Flow I \ufeff(PDF - 5.2 MB)</a></li>     <li><a href=\"./resolveuid/751a40da4408146a65f198fd3edeb8ee\">Heat Flow II | Insulation Materials \ufeff(PDF - 5.0 MB)</a></li>     <li><a href=\"./resolveuid/77107c99112f7c2e4f90e7e454200b66\">Window Technologies | Shading \ufeff(PDF - 4.6 MB)</a></li>     <li><a href=\"./resolveuid/7b3aca8cb1f3a8f93a98efb1da6faa93\">Ventilation \ufeff(PDF - 4.0 MB\ufeff\ufeff)</a></li>     <li><a href=\"./resolveuid/5b9e24cbf2abd05c5e06a263a85b61f9\">Internal Gains | Load Calculations \ufeff(PDF - 3.1 MB)</a></li>     <li><a href=\"./resolveuid/35b1bfdbe2b8d720f6aa5cde6caf3770\">HVAC for Small Buildings \ufeff(PDF - 4.8 MB)</a></li> </ul>", 
     "_content_type_license": "text/plain", 
-    "_uid": "43a72a8e9449ed407fbe757476389f26", 
-    "title": "Assignments", 
+    "_uid": "13f7348b393e8bf7defaa7a4d040799b", 
+    "title": "Lecture Slides", 
     "_ac_local_roles": {
-        "admin": [
+        "pchipman": [
             "Owner"
         ]
     }, 
     "location": "", 
     "_content_type_course_identifier": "text/plain", 
-    "_atbrefs": {}, 
+    "_atbrefs": {
+        "isReferencing": [
+            "13f7348b393e8bf7defaa7a4d040799b"
+        ]
+    }, 
     "constrainTypesMode": 0, 
-    "technical_location": "https://ocw.mit.edu/courses/brain-and-cognitive-sciences/9-15-biochemistry-and-pharmacology-of-synaptic-transmission-fall-2001/assignments", 
+    "technical_location": "https://ocw.mit.edu/courses/architecture/4-401-environmental-technologies-in-buildings-fall-2018/lecture-slides-1", 
     "software_requirements": [
         {
             "software_type_col": "Browser", 
@@ -47,8 +51,10 @@
     ], 
     "_content_type_technical_location": "text/plain", 
     "_content_type_rights": "text/html", 
-    "_directly_provided": [], 
-    "parent_uid": "e4d2ddd169d2aeee91fdf2ef9d7d6bc2", 
+    "_directly_provided": [
+        "Products.CMFEditions.interfaces.IVersioned"
+    ], 
+    "parent_uid": "61f2eb4c2d288f68efcada60f5a247d2", 
     "excludeFromNav": false, 
     "_content_type_unique_identifier": "text/plain", 
     "allowDiscussion": false, 
@@ -57,25 +63,28 @@
         "OCWImage", 
         "CourseSection", 
         "OCWExtFile", 
-        "OCWFile"
+        "OCWFile", 
+        "MediaResource"
     ], 
+    "_content_type_text": "text/html", 
     "ad_type": "HOUSE", 
-    "creation_date": "2010/07/08 02:30:10.946 GMT-4", 
+    "creation_date": "2019/01/16 15:27:39.556 US/Eastern", 
     "aggregationlevel": 3, 
     "duration": "", 
     "immediatelyAddableTypes": [
         "OCWImage", 
         "CourseSection", 
         "OCWExtFile", 
-        "OCWFile"
+        "OCWFile", 
+        "MediaResource"
     ], 
     "subject": [], 
     "_content_type_short_page_title": "text/plain", 
-    "effectiveDate": "None", 
-    "parent_module": "e4d2ddd169d2aeee91fdf2ef9d7d6bc2", 
+    "effectiveDate": "2019/05/22 13:16:12.623 GMT-4", 
+    "parent_module": "61f2eb4c2d288f68efcada60f5a247d2", 
     "is_mathml_document": false, 
     "bottomtext": "", 
-    "short_page_title": "Assignments", 
+    "short_page_title": "Lecture Slides", 
     "section_identifier": null, 
     "related_mit_links": "", 
     "_content_type_ad_type": "text/plain", 
@@ -86,29 +95,71 @@
                 "action": null, 
                 "review_state": "waiting_for_authoring", 
                 "comments": "", 
-                "actor": "admin", 
-                "time": "2010/07/08 02:30:10.952 GMT-4"
+                "actor": "pchipman", 
+                "time": "2019/01/16 15:27:39.565 US/Eastern"
             }, 
             {
                 "action": "approve_to_staging", 
                 "review_state": "ready_for_staging", 
-                "actor": "admin", 
+                "actor": "pchipman", 
                 "comments": "", 
-                "time": "2010/07/08 09:29:08.678 GMT-4"
+                "time": "2019/05/22 13:16:12.653 GMT-4"
             }, 
             {
                 "action": "decline", 
                 "review_state": "waiting_for_authoring", 
                 "comments": "", 
-                "actor": "hdesai", 
-                "time": "2010/07/17 01:04:22.823 GMT-4"
+                "actor": "peterchipman", 
+                "time": "2019/08/23 17:50:46.507 Universal"
             }, 
             {
                 "action": "approve_to_staging", 
                 "review_state": "ready_for_staging", 
-                "actor": "admin", 
+                "actor": "peterchipman", 
                 "comments": "", 
-                "time": "2010/07/17 11:18:01.957 GMT-4"
+                "time": "2019/08/23 18:59:14.974 Universal"
+            }, 
+            {
+                "action": "decline_to_qa", 
+                "review_state": "waiting_for_qa", 
+                "comments": "", 
+                "actor": "peterchipman", 
+                "time": "2019/09/18 14:09:24.893 Universal"
+            }, 
+            {
+                "action": "approve_to_staging", 
+                "review_state": "ready_for_staging", 
+                "actor": "peterchipman", 
+                "comments": "", 
+                "time": "2019/09/18 15:36:09.820 Universal"
+            }, 
+            {
+                "action": "decline", 
+                "review_state": "waiting_for_authoring", 
+                "comments": "", 
+                "actor": "peterchipman", 
+                "time": "2019/09/18 15:45:50.758 Universal"
+            }, 
+            {
+                "action": "approve_to_staging", 
+                "review_state": "ready_for_staging", 
+                "actor": "peterchipman", 
+                "comments": "", 
+                "time": "2019/09/18 15:46:20.655 Universal"
+            }, 
+            {
+                "action": "decline", 
+                "review_state": "waiting_for_authoring", 
+                "comments": "", 
+                "actor": "peterchipman", 
+                "time": "2019/09/27 13:45:03.964 Universal"
+            }, 
+            {
+                "action": "approve_to_staging", 
+                "review_state": "ready_for_staging", 
+                "actor": "peterchipman", 
+                "comments": "", 
+                "time": "2019/09/27 15:34:42.102 Universal"
             }
         ]
     }, 
@@ -124,12 +175,10 @@
     "firstTimeEdit": true, 
     "feature_requirements": [], 
     "list_in_left_nav": false, 
-    "short_name_tlp": "Assignments", 
+    "short_name_tlp": "", 
     "expirationDate": "None", 
     "_content_type_id": "text/plain", 
-    "contributor_list": [
-        {}
-    ], 
+    "contributor_list": [], 
     "is_media_gallery": false, 
     "contributors": [], 
     "_gopip": 4, 
@@ -137,35 +186,54 @@
     "course_linking": [], 
     "_atrefs": {
         "BelongsTo": [
-            "e4d2ddd169d2aeee91fdf2ef9d7d6bc2"
+            "61f2eb4c2d288f68efcada60f5a247d2"
+        ], 
+        "isReferencing": [
+            "13f7348b393e8bf7defaa7a4d040799b", 
+            "5b9e24cbf2abd05c5e06a263a85b61f9", 
+            "b8666429a76f3871713b25de8ed5c5b6", 
+            "da40a5bcd7dc66f465a48ee6f3c1e1b4", 
+            "7b3aca8cb1f3a8f93a98efb1da6faa93", 
+            "2087c0f424b5ddd02e0e0568f0b288f9", 
+            "e6c8d40a32eaa86a4df5122251657fe1", 
+            "77107c99112f7c2e4f90e7e454200b66", 
+            "be2f4e041e1683f5615ec47f6208d8d9", 
+            "35b1bfdbe2b8d720f6aa5cde6caf3770", 
+            "d735219180f1708e311284e120f37bb0", 
+            "751a40da4408146a65f198fd3edeb8ee", 
+            "9e1814f0e72c5b6b6748238570b34efe", 
+            "1176b5e57136bcc5ad3e9f4bf7c7a0a1", 
+            "7d0075e4cfca2a38a0cf86a634ca4205", 
+            "c03cdb9ea591216d81a3f2febd616a3c", 
+            "6b5a0ecd55c5d82ad3ad89783e273ce2", 
+            "e7ce684bf283f16e21ca14755834116c"
         ]
     }, 
     "other_platform_requirements": "", 
-    "license": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/", 
-    "rights": "This site (c) Massachusetts Institute of Technology 2010.  Content within individual courses is (c) by the individual authors unless otherwise noted. The Massachusetts Institute of Technology is providing this Work (as defined below) under the terms of this Creative Commons public license (\"CCPL\" or \"license\") unless otherwise noted. The Work is protected by copyright and/or other applicable law. Any use of the work other than as authorized under this license is prohibited. By exercising any of the rights to the Work provided here, You (as defined below) accept and agree to be bound by the terms of this license. The Licensor, the Massachusetts Institute of Technology, grants You the rights contained here in consideration of Your acceptance of such terms and conditions.", 
-    "hide_Page_title": null, 
+    "license": "https://creativecommons.org/licenses/by-nc-sa/3.0/us/", 
+    "rights": "This site (c) Massachusetts Institute of Technology 2019.  Content within individual courses is (c) by the individual authors unless otherwise noted. The Massachusetts Institute of Technology is providing this Work (as defined below) under the terms of this Creative Commons public license (\"CCPL\" or \"license\") unless otherwise noted. The Work is protected by copyright and/or other applicable law. Any use of the work other than as authorized under this license is prohibited. By exercising any of the rights to the Work provided here, You (as defined below) accept and agree to be bound by the terms of this license. The Licensor, the Massachusetts Institute of Technology, grants You the rights contained here in consideration of Your acceptance of such terms and conditions.", 
+    "hide_Page_title": false, 
     "_defaultpage": "", 
     "tcATmit_subject_tags": [], 
     "features_tracking": [], 
     "ad_champion_text": "", 
     "has_inline_embed": false, 
-    "unique_identifier": "https://ocw.mit.edu/courses/brain-and-cognitive-sciences/9-15-biochemistry-and-pharmacology-of-synaptic-transmission-fall-2001/assignments", 
+    "unique_identifier": "https://ocw.mit.edu/courses/architecture/4-401-environmental-technologies-in-buildings-fall-2018/lecture-slides-1", 
     "is_image_gallery": false, 
-    "id": "assignments", 
+    "id": "lecture-slides-1", 
     "materialtype": "Other", 
     "_type": "CourseSection", 
-    "description": "List of Term Paper Topics", 
-    "course_identifier": "https://ocw.mit.edu/courses/brain-and-cognitive-sciences/9-15-biochemistry-and-pharmacology-of-synaptic-transmission-fall-2001", 
+    "description": "", 
+    "course_identifier": "https://ocw.mit.edu/courses/architecture/4-401-environmental-technologies-in-buildings-fall-2018", 
     "_content_type_publisher": "text/plain", 
     "tcATmit_instructional_tags": [], 
     "_content_type": "text/html", 
     "creators": [
-        "admin"
+        "pchipman"
     ], 
-    "modification_date": "2016/09/24 06:35:42.175 GMT-4", 
+    "modification_date": "2019/09/27 15:34:41.860 Universal", 
     "always_publish": false, 
-    "_content_type_description": "text/plain", 
-    "_owner": "admin", 
+    "_owner": null, 
     "_permissions": {
         "Change portal events": {
             "acquire": false, 
@@ -208,12 +276,11 @@
     "_properties": [
         [
             "title", 
-            "Assignments", 
+            "Lecture Slides", 
             "string"
         ]
     ], 
-    "_id": "assignments", 
+    "_id": "lecture-slides-1", 
     "courselist_features": [], 
-    "_content_type_short_name_tlp": "text/plain", 
-    "_path": "/Plone/courses/brain-and-cognitive-sciences/9-15-biochemistry-and-pharmacology-of-synaptic-transmission-fall-2001/assignments"
+    "_path": "/Plone/courses/architecture/4-401-environmental-technologies-in-buildings-fall-2018/lecture-slides-1"
 }
