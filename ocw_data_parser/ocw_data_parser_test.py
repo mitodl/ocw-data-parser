@@ -176,7 +176,7 @@ class TestOCWParser(unittest.TestCase):
         self.set_up()
         self.ocw_parser.course_image_uid = None
         self.ocw_parser.generate_master_json()
-        self.assertIsNone(self.ocw_parser.course_image_uid)
+        self.assertIsNotNone(self.ocw_parser.course_image_uid)
         self.tear_down()
 
     def test_get_master_json(self):
