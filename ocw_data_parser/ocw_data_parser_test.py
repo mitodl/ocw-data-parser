@@ -6,7 +6,8 @@ import unittest
 import os
 import shutil
 
-from ocw_data_parser import OCWParser
+from ocw_data_parser.ocw_data_parser import OCWParser
+from ocw_data_parser.utils import *
 
 
 class TestOCWParser(unittest.TestCase):
@@ -16,10 +17,14 @@ class TestOCWParser(unittest.TestCase):
     ocw_parser = None
     course_id = None
 
-    def set_up(self, generate_static_site=False, setup_s3_uploading=False):
+    def set_up(self, extract_media_locally=False, extract_foreign_media_locally=False, generate_static_site=False, setup_s3_uploading=False):
         self.ocw_parser = OCWParser(course_dir="ocw_data_parser/test_json/course_dir",
                                     destination_dir="ocw_data_parser/test_json/destination_dir",
                                     static_prefix="static_files/")
+        if extract_media_locally:
+            self.ocw_parser.extract_media_locally()
+        if extract_foreign_media_locally:
+            self.ocw_parser.extract_foreign_media_locally()
         if generate_static_site:
             self.ocw_parser.generate_static_site()
         if setup_s3_uploading:
@@ -37,6 +42,35 @@ class TestOCWParser(unittest.TestCase):
         if os.path.isdir(destination_dir):
             shutil.rmtree(destination_dir)
         self.course_id = None
+
+    # utils.py
+
+    def test_update_local_file_location(self):
+        self.set_up(extract_media_locally=True)
+        if len(self.ocw_parser.master_json["course_files"]) > 0:
+            test_file = self.ocw_parser.master_json["course_files"][0]
+            original_location = test_file["file_location"]
+            update_file_location(self.ocw_parser.master_json, 'test_location', obj_uid=test_file["uid"])
+            self.assertNotEqual(original_location, self.ocw_parser.master_json["course_files"][0]["file_location"])
+            self.tear_down()
+        else:
+            self.tear_down()
+            self.fail("test course has no local media to test")
+
+    def test_update_foreign_file_location(self):
+        self.set_up(extract_foreign_media_locally=True)
+        if len(self.ocw_parser.master_json["course_foreign_files"]) > 0:
+            test_file = self.ocw_parser.master_json["course_foreign_files"][0]
+            original_location = test_file["file_location"]
+            original_filename = test_file["link"].split("/")[-1]
+            update_file_location(self.ocw_parser.master_json, 'test_location/' + original_filename)
+            self.assertNotEqual(original_location, self.ocw_parser.master_json["course_foreign_files"][0]["file_location"])
+            self.tear_down()
+        else:
+            self.tear_down()
+            self.fail("test course has no foreign media to test")
+
+    # ocw_data_parser.py
 
     def test_no_params(self):
         """
@@ -75,7 +109,9 @@ class TestOCWParser(unittest.TestCase):
         self.set_up(setup_s3_uploading=True)
         self.assertEqual("target_folder", self.ocw_parser.s3_target_folder)
         self.tear_down()
-        
+
+    
+
     def test_uid(self):
         """
         Test that the uid property of the master JSON matches the uid of the course site root
