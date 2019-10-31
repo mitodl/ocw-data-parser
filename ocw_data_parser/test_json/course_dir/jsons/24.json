@@ -1,22 +1,68 @@
 {
-    "text": "<div class=\"maintabletemplate\">\r\n<table class=\"tablewidth75\">\r\n    <thead>\r\n        <tr>\r\n            <th>Due Dates</th>\r\n            <th>Assignments</th>\r\n        </tr>\r\n    </thead>\r\n    <tbody>\r\n        <tr class=\"row\">\r\n            <td><p>Friday of week 2</p></td>\r\n            <td><p><a href=\"./resolveuid/d22ab095cde0ee5463d984784a55629c\">Assignment 1: My Energy Essay (PDF)</a></p></td>\r\n        </tr>\r\n        <tr class=\"alt-row\">\r\n            <td><p>Friday of week 3</p></td>\r\n            <td><p><img alt=\"This resource may not render correctly in a screen reader.\" src=\"/images/inacessible.gif\" /><a href=\"./resolveuid/d6e0e979c5f62d4c3fab3ea921d4caed\">Assignment 2: Shading Studies and Sun Path Diagrams (PDF)</a></p></td>\r\n        </tr>\r\n        <tr class=\"row\">\r\n            <td><p>Friday of week 4</p></td>\r\n            <td><p><img alt=\"This resource may not render correctly in a screen reader.\" src=\"/images/inacessible.gif\" /><a href=\"./resolveuid/4cfe5b351f32c9a27932cfc4ec110224\">Assignment 3: Visual and Thermal Comfort (PDF)</a></p></td>\r\n        </tr>\r\n        <tr class=\"alt-row\">\r\n            <td><p>Friday of week 5</p></td>\r\n            <td><p><a href=\"./resolveuid/2a0d878698ed9717f8009689b04b2b50\"><img alt=\"This resource may not render correctly in a screen reader.\" src=\"/images/inacessible.gif\" />Assignment 4: Designing a PV System (PDF)</a></p></td>\r\n        </tr>\r\n        <tr class=\"row\">\r\n            <td><p>Friday of week 7</p></td>\r\n            <td><p><a href=\"./resolveuid/4a661a066142c53ab84981fa6b000619\">Assignment 5: Daylight Availability Study (PDF)</a></p></td>\r\n        </tr>\r\n        <tr class=\"alt-row\">\r\n            <td><p>Friday of week 8</p></td>\r\n            <td><p><img alt=\"This resource may not render correctly in a screen reader.\" src=\"/images/inacessible.gif\" /><a href=\"./resolveuid/112aca2f2f0963ab54544229f6773b27\">Assignment 6: Visual Comfort and Electric Lighting (PDF)</a></p></td>\r\n        </tr>\r\n        <tr class=\"row\">\r\n            <td><p>Friday of week 9</p></td>\r\n            <td><p><img alt=\"This resource may not render correctly in a screen reader.\" src=\"/images/inacessible.gif\" /><a href=\"./resolveuid/ea268fdc900bdb9b8e195593363c14bf\">Assignment 7: Energy Explorations (PDF)</a></p></td>\r\n        </tr>\r\n        <tr class=\"alt-row\">\r\n            <td><p>Friday of week 10</p></td>\r\n            <td><p><img alt=\"This resource may not render correctly in a screen reader.\" src=\"/images/inacessible.gif\" /><a href=\"./resolveuid/ea064154791a4eb5e144e76ceeca60a5\">Assignment 8: Simulation Game Analysis (PDF - 1.5 MB)</a></p></td>\r\n        </tr>\r\n        <tr class=\"row\">\r\n            <td>\r\n            <p>Friday of week 13&nbsp;(undergraduate students)</p>\r\n            <p>Monday of Exam Week (graduate students)</p>\r\n            </td>\r\n            <td><p><a href=\"./resolveuid/400472d8d9edfcec734dfbf1bfa7a583\">Course project (PDF)</a></p></td>\r\n        </tr>\r\n    </tbody>\r\n</table>\r\n</div>\r\n<p>&nbsp;</p>", 
+    "expanded_alternate_text": "", 
+    "features_tracking": [], 
+    "widgets_features": [], 
+    "contributors": [], 
+    "tcATmit_subject_tags": [], 
+    "unique_identifier": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-1-the-geometry-of-linear-equations/18.06_L01.jpg", 
+    "_content_type_publisher": "text/plain", 
     "_content_type_license": "text/plain", 
-    "_uid": "93c41ef18a13b65c495ef196a737db5e", 
-    "title": "Assignments", 
-    "_ac_local_roles": {
-        "pchipman": [
-            "Owner"
+    "_datafield_image": {
+        "encoding": "base64", 
+        "data": "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", 
+        "content_type": "image/jpeg", 
+        "filename": "18.06_L01.jpg"
+    }, 
+    "aggregationlevel": 2, 
+    "_uid": "de934bc25ff753f35da19d96196db309", 
+    "_workflow_history": {
+        "one_state_workflow": [
+            {
+                "action": null, 
+                "review_state": "published", 
+                "actor": "Jcplayer", 
+                "comments": "", 
+                "time": "2010/10/07 13:15:31.212 GMT-4"
+            }
         ]
     }, 
+    "expirationDate": "None", 
+    "_content_type_id": "text/plain", 
+    "duration": "", 
+    "contributor_list": [], 
+    "id": "18.06_L01.jpg", 
+    "related_mit_links": "", 
+    "thumb_height": "", 
+    "effectiveDate": "None", 
+    "title": "18.06_L01.jpg", 
+    "_layout": "view", 
+    "parent_module": "aabc44bdb2e45374d62f30f2a6d4c63e", 
+    "_content_type": "image/jpeg", 
+    "_userdefined_roles": [], 
+    "_gopip": 0, 
     "location": "", 
-    "_content_type_course_identifier": "text/plain", 
-    "_atbrefs": {
-        "isReferencing": [
-            "93c41ef18a13b65c495ef196a737db5e"
+    "_atrefs": {
+        "BelongsTo": [
+            "aabc44bdb2e45374d62f30f2a6d4c63e"
         ]
     }, 
-    "constrainTypesMode": 0, 
-    "technical_location": "https://ocw.mit.edu/courses/architecture/4-401-environmental-technologies-in-buildings-fall-2018/assignments", 
+    "_content_type_course_identifier": "text/plain", 
+    "_content_type_title": "text/plain", 
+    "section_identifier": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures", 
+    "_atbrefs": {
+        "thumbnail_image": [
+            "e6719967cc0a48ef7c122ec203472574"
+        ], 
+        "file_reference": [
+            "11b1902354547659cbcd7910417af11f"
+        ]
+    }, 
+    "creation_date": "2010/10/07 13:15:31.204 GMT-4", 
+    "_content_type_section_identifier": "text/plain", 
+    "_type": "OCWImage", 
+    "technical_location": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-1-the-geometry-of-linear-equations/18.06_L01.jpg", 
+    "description": "", 
+    "thumb_width": "", 
     "software_requirements": [
         {
             "software_type_col": "Browser", 
@@ -50,215 +96,90 @@
         }
     ], 
     "_content_type_technical_location": "text/plain", 
-    "_content_type_rights": "text/html", 
-    "_directly_provided": [
-        "Products.CMFEditions.interfaces.IVersioned"
-    ], 
-    "parent_uid": "61f2eb4c2d288f68efcada60f5a247d2", 
-    "excludeFromNav": false, 
-    "_content_type_unique_identifier": "text/plain", 
-    "allowDiscussion": false, 
-    "metadata_contributor_list": [], 
-    "locallyAllowedTypes": [
-        "OCWImage", 
-        "CourseSection", 
-        "OCWExtFile", 
-        "OCWFile", 
-        "MediaResource"
-    ], 
-    "_content_type_text": "text/html", 
-    "ad_type": "HOUSE", 
-    "creation_date": "2019/01/16 09:55:00.582 US/Eastern", 
-    "aggregationlevel": 3, 
-    "duration": "", 
-    "immediatelyAddableTypes": [
-        "OCWImage", 
-        "CourseSection", 
-        "OCWExtFile", 
-        "OCWFile", 
-        "MediaResource"
-    ], 
+    "alternate_text": "", 
+    "credit": "", 
     "subject": [], 
-    "_content_type_short_page_title": "text/plain", 
-    "effectiveDate": "2019/05/22 11:53:22.711 GMT-4", 
-    "parent_module": "61f2eb4c2d288f68efcada60f5a247d2", 
-    "is_mathml_document": false, 
-    "bottomtext": "", 
-    "short_page_title": "Assignments", 
-    "section_identifier": null, 
-    "related_mit_links": "", 
-    "_content_type_ad_type": "text/plain", 
-    "_layout": "custom_view", 
-    "_workflow_history": {
-        "page_workflow": [
-            {
-                "action": null, 
-                "review_state": "waiting_for_authoring", 
-                "comments": "", 
-                "actor": "pchipman", 
-                "time": "2019/01/16 09:55:00.592 US/Eastern"
-            }, 
-            {
-                "action": "approve_to_staging", 
-                "review_state": "ready_for_staging", 
-                "actor": "pchipman", 
-                "comments": "", 
-                "time": "2019/05/22 11:53:22.771 GMT-4"
-            }, 
-            {
-                "action": "decline", 
-                "review_state": "waiting_for_authoring", 
-                "comments": "", 
-                "actor": "peterchipman", 
-                "time": "2019/09/18 15:40:11.493 Universal"
-            }, 
-            {
-                "action": "approve_to_staging", 
-                "review_state": "ready_for_staging", 
-                "actor": "peterchipman", 
-                "comments": "", 
-                "time": "2019/09/18 15:46:35.760 Universal"
-            }, 
-            {
-                "action": "decline", 
-                "review_state": "waiting_for_authoring", 
-                "comments": "", 
-                "actor": "peterchipman", 
-                "time": "2019/09/27 14:05:50.441 Universal"
-            }, 
-            {
-                "action": "approve_to_staging", 
-                "review_state": "ready_for_staging", 
-                "actor": "peterchipman", 
-                "comments": "", 
-                "time": "2019/09/27 15:34:30.419 Universal"
-            }, 
-            {
-                "action": "decline_to_qa", 
-                "review_state": "waiting_for_qa", 
-                "comments": "", 
-                "actor": "yunpengwang", 
-                "time": "2019/10/04 14:03:08.844 Universal"
-            }, 
-            {
-                "action": "approve_to_staging", 
-                "review_state": "ready_for_staging", 
-                "actor": "peterchipman", 
-                "comments": "", 
-                "time": "2019/10/07 13:58:09.105 Universal"
-            }
-        ]
-    }, 
-    "_classname": "CourseSection", 
-    "_content_type_materialtype": "text/plain", 
-    "_userdefined_roles": [], 
-    "publisher": "MIT OpenCourseWare", 
-    "nextPreviousEnabled": false, 
-    "language": "", 
-    "url_rewrite_patterns": [], 
-    "widgets_features": [], 
-    "category_features": [], 
-    "firstTimeEdit": true, 
-    "feature_requirements": [], 
-    "list_in_left_nav": false, 
-    "short_name_tlp": "", 
-    "expirationDate": "None", 
-    "_content_type_id": "text/plain", 
-    "contributor_list": [], 
-    "is_media_gallery": false, 
-    "contributors": [], 
-    "_gopip": 5, 
-    "_content_type_title": "text/plain", 
-    "course_linking": [], 
-    "_atrefs": {
-        "BelongsTo": [
-            "61f2eb4c2d288f68efcada60f5a247d2"
-        ], 
-        "isReferencing": [
-            "93c41ef18a13b65c495ef196a737db5e", 
-            "d22ab095cde0ee5463d984784a55629c", 
-            "112aca2f2f0963ab54544229f6773b27", 
-            "d6e0e979c5f62d4c3fab3ea921d4caed", 
-            "2a0d878698ed9717f8009689b04b2b50", 
-            "4a661a066142c53ab84981fa6b000619", 
-            "ea064154791a4eb5e144e76ceeca60a5", 
-            "ea268fdc900bdb9b8e195593363c14bf", 
-            "400472d8d9edfcec734dfbf1bfa7a583", 
-            "4cfe5b351f32c9a27932cfc4ec110224"
-        ]
-    }, 
+    "_content_type_rights": "text/html", 
+    "course_identifier": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010", 
+    "_directly_provided": [], 
     "other_platform_requirements": "", 
-    "license": "https://creativecommons.org/licenses/by-nc-sa/3.0/us/", 
-    "rights": "This site (c) Massachusetts Institute of Technology 2019.  Content within individual courses is (c) by the individual authors unless otherwise noted. The Massachusetts Institute of Technology is providing this Work (as defined below) under the terms of this Creative Commons public license (\"CCPL\" or \"license\") unless otherwise noted. The Work is protected by copyright and/or other applicable law. Any use of the work other than as authorized under this license is prohibited. By exercising any of the rights to the Work provided here, You (as defined below) accept and agree to be bound by the terms of this license. The Licensor, the Massachusetts Institute of Technology, grants You the rights contained here in consideration of Your acceptance of such terms and conditions.", 
-    "hide_Page_title": false, 
-    "_defaultpage": "", 
-    "tcATmit_subject_tags": [], 
-    "features_tracking": [], 
-    "ad_champion_text": "", 
-    "has_inline_embed": false, 
-    "unique_identifier": "https://ocw.mit.edu/courses/architecture/4-401-environmental-technologies-in-buildings-fall-2018/assignments", 
-    "is_image_gallery": false, 
-    "id": "assignments", 
-    "materialtype": "Other", 
-    "_type": "CourseSection", 
-    "description": "", 
-    "course_identifier": "https://ocw.mit.edu/courses/architecture/4-401-environmental-technologies-in-buildings-fall-2018", 
-    "_content_type_publisher": "text/plain", 
-    "tcATmit_instructional_tags": [], 
-    "_content_type": "text/html", 
-    "creators": [
-        "pchipman"
+    "_id": "18.06_L01.jpg", 
+    "_classname": "OCWImage", 
+    "metadata_contributor_list": [
+        {
+            "md_contributor_uid": "", 
+            "md_contributor_entity": "Todd Rautenberg", 
+            "md_contributor_hide": "", 
+            "md_contributor_special_title": "", 
+            "md_contributor_role": "Validator"
+        }, 
+        {
+            "md_contributor_uid": "", 
+            "md_contributor_entity": "Todd Rautenberg", 
+            "md_contributor_hide": "", 
+            "md_contributor_special_title": "", 
+            "md_contributor_role": "Creator"
+        }
     ], 
-    "modification_date": "2019/10/07 13:58:08.333 Universal", 
+    "tcATmit_instructional_tags": [], 
+    "caption": "", 
+    "parent_uid": "e6719967cc0a48ef7c122ec203472574", 
+    "modification_date": "2016/09/24 04:30:31.024 GMT-4", 
+    "course_linking": [], 
+    "publisher": "MIT OpenCourseWare", 
+    "excludeFromNav": false, 
+    "feature_requirements": [], 
+    "language": "", 
+    "license": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/", 
+    "rights": "This site (c) Massachusetts Institute of Technology 2010.  Content within individual courses is (c) by the individual authors unless otherwise noted. The Massachusetts Institute of Technology is providing this Work (as defined below) under the terms of this Creative Commons public license (\"CCPL\" or \"license\") unless otherwise noted. The Work is protected by copyright and/or other applicable law. Any use of the work other than as authorized under this license is prohibited. By exercising any of the rights to the Work provided here, You (as defined below) accept and agree to be bound by the terms of this license. The Licensor, the Massachusetts Institute of Technology, grants You the rights contained here in consideration of Your acceptance of such terms and conditions.", 
     "always_publish": false, 
+    "popup_image_id": "", 
+    "materialtype": "Other", 
+    "_content_type_unique_identifier": "text/plain", 
+    "category_features": [], 
+    "is_pop_up_image": false, 
     "_owner": null, 
+    "_defaultpage": "index_html", 
+    "firstTimeEdit": true, 
     "_permissions": {
-        "Change portal events": {
+        "Modify portal content": {
             "acquire": false, 
             "roles": [
                 "Editor", 
                 "Manager", 
-                "MetadataEditor", 
                 "Owner"
-            ]
-        }, 
-        "Modify portal content": {
-            "acquire": false, 
-            "roles": [
-                "Manager", 
-                "MetadataEditor"
             ]
         }, 
         "Access contents information": {
             "acquire": false, 
             "roles": [
-                "Authenticated"
-            ]
-        }, 
-        "List folder contents": {
-            "acquire": false, 
-            "roles": [
-                "Editor", 
-                "Manager", 
-                "MetadataEditor", 
-                "Owner"
+                "Anonymous"
             ]
         }, 
         "View": {
             "acquire": false, 
             "roles": [
-                "Authenticated"
+                "Anonymous"
             ]
         }
     }, 
     "_properties": [
         [
             "title", 
-            "Assignments", 
+            "18.06_L01.jpg", 
             "string"
         ]
     ], 
-    "_id": "assignments", 
+    "allowDiscussion": false, 
+    "_content_type_materialtype": "text/plain", 
+    "creators": [
+        "Jcplayer"
+    ], 
     "courselist_features": [], 
-    "_path": "/Plone/courses/architecture/4-401-environmental-technologies-in-buildings-fall-2018/assignments"
+    "_ac_local_roles": {
+        "Jcplayer": [
+            "Owner"
+        ]
+    }, 
+    "_path": "/Plone/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-1-the-geometry-of-linear-equations/18.06_L01.jpg"
 }

@@ -1,0 +1,105 @@
+{
+    "contributors": [], 
+    "text": "", 
+    "threeplay_api_json": "", 
+    "_content_type_license": "text/plain", 
+    "asset_language": "en-us", 
+    "media_location": "", 
+    "_uid": "f021a4969f515edd79fb4ba0cc289da9", 
+    "_workflow_history": {
+        "one_state_workflow": [
+            {
+                "action": null, 
+                "review_state": "published", 
+                "actor": "samehn", 
+                "comments": "", 
+                "time": "2011/05/07 03:04:52.713 GMT-4"
+            }
+        ]
+    }, 
+    "expirationDate": "None", 
+    "_content_type_id": "text/plain", 
+    "id": "Thumbnail-OCW-JPG", 
+    "tableContents": false, 
+    "_path": "/Plone/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-14-orthogonal-vectors-and-subspaces/Thumbnail-OCW-JPG", 
+    "media_asset_source": "OCW", 
+    "effectiveDate": "None", 
+    "title": "Thumbnail-OCW-JPG", 
+    "media_asset_type": "Thumbnail", 
+    "_ac_local_roles": {
+        "samehn": [
+            "Owner"
+        ]
+    }, 
+    "_userdefined_roles": [], 
+    "_content_type_file_uid": "text/plain", 
+    "location": "", 
+    "_content_type_title": "text/plain", 
+    "excludeFromNav": false, 
+    "presentation": false, 
+    "_type": "OCWMediaAsset", 
+    "description": "", 
+    "_atrefs": {
+        "file_reference": [
+            "f7838d8692da0a2a708cf3fbff2863d8"
+        ]
+    }, 
+    "_layout": "custom_view", 
+    "subject": [], 
+    "_content_type_rights": "text/html", 
+    "_directly_provided": [], 
+    "language": "", 
+    "_content_type_asset_language": "text/plain", 
+    "_classname": "OCWMediaAsset", 
+    "_content_type_media_format": "text/plain", 
+    "creation_date": "2011/05/07 03:04:52.695 GMT-4", 
+    "parent_uid": "70a8aa5c146f5edff5e1c040db373113", 
+    "_content_type_media_asset_type": "text/plain", 
+    "modification_date": "2016/09/14 04:59:52.366 GMT-4", 
+    "_content_type": "text/html", 
+    "_id": "Thumbnail-OCW-JPG", 
+    "file_uid": "f7838d8692da0a2a708cf3fbff2863d8", 
+    "license": "http://ocw.mit.edu/terms", 
+    "rights": "This site (c) Massachusetts Institute of Technology 2010.  Content within individual courses is (c) by the individual authors unless otherwise noted. The Massachusetts Institute of Technology is providing this Work (as defined below) under the terms of this Creative Commons public license (\"CCPL\" or \"license\") unless otherwise noted. The Work is protected by copyright and/or other applicable law. Any use of the work other than as authorized under this license is prohibited. By exercising any of the rights to the Work provided here, You (as defined below) accept and agree to be bound by the terms of this license. The Licensor, the Massachusetts Institute of Technology, grants You the rights contained here in consideration of Your acceptance of such terms and conditions.", 
+    "_atbrefs": {}, 
+    "media_size": "", 
+    "file_reference": "f7838d8692da0a2a708cf3fbff2863d8", 
+    "_owner": null, 
+    "_defaultpage": "", 
+    "_permissions": {
+        "Modify portal content": {
+            "acquire": false, 
+            "roles": [
+                "Editor", 
+                "Manager", 
+                "Owner"
+            ]
+        }, 
+        "Access contents information": {
+            "acquire": false, 
+            "roles": [
+                "Anonymous"
+            ]
+        }, 
+        "View": {
+            "acquire": false, 
+            "roles": [
+                "Anonymous"
+            ]
+        }
+    }, 
+    "media_format": "JPG", 
+    "_properties": [
+        [
+            "title", 
+            "Thumbnail-OCW-JPG", 
+            "string"
+        ]
+    ], 
+    "allowDiscussion": false, 
+    "_gopip": 6, 
+    "creators": [
+        "samehn"
+    ], 
+    "_content_type_media_asset_source": "text/plain"
+}

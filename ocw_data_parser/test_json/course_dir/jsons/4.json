@@ -1,22 +1,18 @@
 {
-    "text": "<h2 class=\"subhead\">Software</h2>\r\n<p>Throughout the course we will be using the following software packages:</p>\r\n<ul>\r\n    <li><strong>Rhinoceros 5 or 6</strong>. Rhinoceros forms the CAD backbone of all environmental analysis tools that we will be using in this class. Students should therefore ideally have a working version of Rhino 5 or 6 installed on their laptops or workstations. You can install a 90-day <a href=\"https://www.rhino3d.com/download/rhino-for-windows/6/evaluation\">demo version</a> of Rhino 6 for free.</li>\r\n    <li><strong>DIVA-for-Rhino</strong>.&nbsp;We will be using DIVA for assignments on solar radiation and daylighting and energy simulation. Students may request free licenses for their laptops from the <a href=\"http://diva4rhino.com/\">DIVA-for-Rhino website</a>.</li>\r\n    <li><strong>Climate Consultant</strong>. Climate Consultant is an easy-to-use, graphic-based computer program for visualizing and interpreting annual climate files. The tool can be <a href=\"http://www.energy-design-tools.aud.ucla.edu\">downloaded</a> free-of-charge. (During class we will also be introducing MIT's new CLIMA+ tool that has comparable functionality to Climate Consultant.)</li>\r\n</ul>\r\n<h2 class=\"subhead\">Bibliography</h2>\r\n<p>Information required for completing the assignments will be provided through the lecture notes and selected online materials as well as the two-volume&nbsp;<em>Daylighting Handbook</em>, which can be purchased on Amazon:</p>\r\n<p><a href=\"http://www.amazon.com/exec/obidos/ASIN/069220363X/ref=nosim/mitopencourse-20\"><img alt=\"Buy at Amazon\" src=\"/images/a_logo_17.gif\" align=\"absmiddle\" border=\"0\" /></a>&nbsp;Reinhart, Christoph. <em>Daylighting Handbook I. </em>Building Technology Press, 2014. ISBN:&nbsp;9780692203637.<br />\r\n<a href=\"http://www.amazon.com/exec/obidos/ASIN/0578407094/ref=nosim/mitopencourse-20\"><img alt=\"Buy at Amazon\" src=\"/images/a_logo_17.gif\" align=\"absmiddle\" border=\"0\" /></a>&nbsp;Reinhart, Christoph. <em>Daylighting Handbook II.&nbsp;</em>Building Technology Press, 2018. ISBN:&nbsp;9780578407098.</p>", 
+    "text": "<div class=\"maintabletemplate\"><table class=\"tablewidth50\" summary=\"See table caption for summary.\"> <caption class=\"invisible\">Course calendar.</caption> <thead> <tr> <th id=\"tbl446id0_0\" scope=\"col\">SES&nbsp;#</th> <th id=\"tbl446id0_1\" scope=\"col\">TOPICS</th> <th id=\"tbl446id0_2\" scope=\"col\">KEY&nbsp;DATES</th> </tr> </thead> <tbody> <tr class=\"row\"> <td headers=\"tbl446id0_0\">1</td> <td headers=\"tbl446id0_1\">The geometry of linear equations</td> <td headers=\"tbl446id0_2\">&nbsp;</td> </tr> <tr class=\"alt-row\"> <td headers=\"tbl446id0_0\">2</td> <td headers=\"tbl446id0_1\">Elimination with matrices</td> <td headers=\"tbl446id0_2\">&nbsp;</td> </tr> <tr class=\"row\"> <td headers=\"tbl446id0_0\">3</td> <td headers=\"tbl446id0_1\">Matrix operations and inverses</td> <td headers=\"tbl446id0_2\">&nbsp;</td> </tr> <tr class=\"alt-row\"> <td headers=\"tbl446id0_0\">4</td> <td headers=\"tbl446id0_1\"><em>LU</em> and <em>LDU</em> factorization</td> <td headers=\"tbl446id0_2\">&nbsp;</td> </tr> <tr class=\"row\"> <td headers=\"tbl446id0_0\">5</td> <td headers=\"tbl446id0_1\">Transposes and permutations</td> <td headers=\"tbl446id0_2\">Problem set 1 due</td> </tr> <tr class=\"alt-row\"> <td headers=\"tbl446id0_0\">6</td> <td headers=\"tbl446id0_1\">Vector spaces and subspaces</td> <td headers=\"tbl446id0_2\">&nbsp;</td> </tr> <tr class=\"row\"> <td headers=\"tbl446id0_0\">7</td> <td headers=\"tbl446id0_1\">The nullspace: Solving Ax = 0</td> <td headers=\"tbl446id0_2\">&nbsp;</td> </tr> <tr class=\"alt-row\"> <td headers=\"tbl446id0_0\">8</td> <td headers=\"tbl446id0_1\">Rectangular <em>PA</em> = <em>LU</em> and Ax = b</td> <td headers=\"tbl446id0_2\">Problem set 2 due</td> </tr> <tr class=\"row\"> <td headers=\"tbl446id0_0\">9</td> <td headers=\"tbl446id0_1\">Row reduced echelon form</td> <td headers=\"tbl446id0_2\">&nbsp;</td> </tr> <tr class=\"alt-row\"> <td headers=\"tbl446id0_0\">10</td> <td headers=\"tbl446id0_1\">Basis and dimension</td> <td headers=\"tbl446id0_2\">&nbsp;</td> </tr> <tr class=\"row\"> <td headers=\"tbl446id0_0\">11</td> <td headers=\"tbl446id0_1\">The four fundamental subspaces</td> <td headers=\"tbl446id0_2\">Problem set 3 due</td> </tr> <tr class=\"alt-row\"> <td headers=\"tbl446id0_0\">12</td> <td headers=\"tbl446id0_1\">Exam 1: Chapters 1 to 3.4</td> <td headers=\"tbl446id0_2\">&nbsp;</td> </tr> <tr class=\"row\"> <td headers=\"tbl446id0_0\">13</td> <td headers=\"tbl446id0_1\">Graphs and networks</td> <td headers=\"tbl446id0_2\">&nbsp;</td> </tr> <tr class=\"alt-row\"> <td headers=\"tbl446id0_0\">14</td> <td headers=\"tbl446id0_1\">Orthogonality</td> <td headers=\"tbl446id0_2\">Problem set 4 due</td> </tr> <tr class=\"row\"> <td headers=\"tbl446id0_0\">15</td> <td headers=\"tbl446id0_1\">Projections and subspaces</td> <td headers=\"tbl446id0_2\">&nbsp;</td> </tr> <tr class=\"alt-row\"> <td headers=\"tbl446id0_0\">16</td> <td headers=\"tbl446id0_1\">Least squares approximations</td> <td headers=\"tbl446id0_2\">&nbsp;</td> </tr> <tr class=\"row\"> <td headers=\"tbl446id0_0\">17</td> <td headers=\"tbl446id0_1\">Gram-Schmidt and <em>A</em> = <em>QR</em></td> <td headers=\"tbl446id0_2\">Problem set 5 due</td> </tr> <tr class=\"alt-row\"> <td headers=\"tbl446id0_0\">18</td> <td headers=\"tbl446id0_1\">Properties of determinants</td> <td headers=\"tbl446id0_2\">&nbsp;</td> </tr> <tr class=\"row\"> <td headers=\"tbl446id0_0\">19</td> <td headers=\"tbl446id0_1\">Formulas for determinants</td> <td headers=\"tbl446id0_2\">&nbsp;</td> </tr> <tr class=\"alt-row\"> <td headers=\"tbl446id0_0\">20</td> <td headers=\"tbl446id0_1\">Applications of determinants</td> <td headers=\"tbl446id0_2\">Problem set 6 due</td> </tr> <tr class=\"row\"> <td headers=\"tbl446id0_0\">21</td> <td headers=\"tbl446id0_1\">Eigenvalues and eigenvectors</td> <td headers=\"tbl446id0_2\">&nbsp;</td> </tr> <tr class=\"alt-row\"> <td headers=\"tbl446id0_0\">22</td> <td headers=\"tbl446id0_1\">Diagonalization</td> <td headers=\"tbl446id0_2\">&nbsp;</td> </tr> <tr class=\"row\"> <td headers=\"tbl446id0_0\">23</td> <td headers=\"tbl446id0_1\">Markov matrices</td> <td headers=\"tbl446id0_2\">Problem set 7 due</td> </tr> <tr class=\"alt-row\"> <td headers=\"tbl446id0_0\">24</td> <td headers=\"tbl446id0_1\"><em>Review for exam 2</em></td> <td headers=\"tbl446id0_2\">&nbsp;</td> </tr> <tr class=\"row\"> <td headers=\"tbl446id0_0\">25</td> <td headers=\"tbl446id0_1\">Exam 2: Chapters 1-5, 6.1-6.2, 8.2</td> <td headers=\"tbl446id0_2\">&nbsp;</td> </tr> <tr class=\"alt-row\"> <td headers=\"tbl446id0_0\">26</td> <td headers=\"tbl446id0_1\">Differential equations</td> <td headers=\"tbl446id0_2\">&nbsp;</td> </tr> <tr class=\"row\"> <td headers=\"tbl446id0_0\">27</td> <td headers=\"tbl446id0_1\">Symmetric matrices</td> <td headers=\"tbl446id0_2\">&nbsp;</td> </tr> <tr class=\"alt-row\"> <td headers=\"tbl446id0_0\">28</td> <td headers=\"tbl446id0_1\">Positive definite matrices</td> <td headers=\"tbl446id0_2\">&nbsp;</td> </tr> <tr class=\"row\"> <td headers=\"tbl446id0_0\">29</td> <td headers=\"tbl446id0_1\">Matrices in engineering</td> <td headers=\"tbl446id0_2\">Problem set 8 due</td> </tr> <tr class=\"alt-row\"> <td headers=\"tbl446id0_0\">30</td> <td headers=\"tbl446id0_1\">Similar matrices</td> <td headers=\"tbl446id0_2\">&nbsp;</td> </tr> <tr class=\"row\"> <td headers=\"tbl446id0_0\">31</td> <td headers=\"tbl446id0_1\">Singular value decomposition</td> <td headers=\"tbl446id0_2\">Problem set 9 due</td> </tr> <tr class=\"alt-row\"> <td headers=\"tbl446id0_0\">32</td> <td headers=\"tbl446id0_1\">Fourier series, FFT, complex matrices</td> <td headers=\"tbl446id0_2\">&nbsp;</td> </tr> <tr class=\"row\"> <td headers=\"tbl446id0_0\">33</td> <td headers=\"tbl446id0_1\">Linear transformations</td> <td headers=\"tbl446id0_2\">&nbsp;</td> </tr> <tr class=\"alt-row\"> <td headers=\"tbl446id0_0\">34</td> <td headers=\"tbl446id0_1\">Choice of basis</td> <td headers=\"tbl446id0_2\">Problem set 10 due</td> </tr> <tr class=\"row\"> <td headers=\"tbl446id0_0\">35</td> <td headers=\"tbl446id0_1\">Linear programming</td> <td headers=\"tbl446id0_2\">&nbsp;</td> </tr> <tr class=\"alt-row\"> <td headers=\"tbl446id0_0\">36</td> <td headers=\"tbl446id0_1\"><em>Course review</em></td> <td headers=\"tbl446id0_2\">&nbsp;</td> </tr> <tr class=\"row\"> <td headers=\"tbl446id0_0\">37</td> <td headers=\"tbl446id0_1\">Exam 3: Chapters 1-8 (8.1, 2, 3, 5)</td> <td headers=\"tbl446id0_2\">&nbsp;</td> </tr> <tr class=\"alt-row\"> <td headers=\"tbl446id0_0\">38</td> <td headers=\"tbl446id0_1\">Numerical linear algebra</td> <td headers=\"tbl446id0_2\">&nbsp;</td> </tr> <tr class=\"row\"> <td headers=\"tbl446id0_0\">39</td> <td headers=\"tbl446id0_1\">Computational science</td> <td headers=\"tbl446id0_2\">&nbsp;</td> </tr> <tr class=\"alt-row\"> <td headers=\"tbl446id0_0\">40</td> <td headers=\"tbl446id0_1\">Final exam</td> <td headers=\"tbl446id0_2\">&nbsp;</td> </tr> </tbody> </table></div>", 
     "_content_type_license": "text/plain", 
-    "_uid": "7a78d1885b6244c92489b8265a2f5f9d", 
-    "title": "Software and Bibliography", 
+    "_uid": "dd9a953efeee023ce9f4e965b7a55d57", 
+    "title": "Calendar", 
     "_ac_local_roles": {
-        "peterchipman": [
+        "cc_saror4": [
             "Owner"
         ]
     }, 
     "location": "", 
     "_content_type_course_identifier": "text/plain", 
-    "_atbrefs": {
-        "isReferencing": [
-            "7a78d1885b6244c92489b8265a2f5f9d"
-        ]
-    }, 
+    "_atbrefs": {}, 
     "constrainTypesMode": 0, 
-    "technical_location": "https://ocw.mit.edu/courses/architecture/4-401-environmental-technologies-in-buildings-fall-2018/software-and-bibliography", 
+    "technical_location": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/calendar", 
     "software_requirements": [
         {
             "software_type_col": "Browser", 
@@ -54,7 +50,7 @@
     "_directly_provided": [
         "Products.CMFEditions.interfaces.IVersioned"
     ], 
-    "parent_uid": "61f2eb4c2d288f68efcada60f5a247d2", 
+    "parent_uid": "aabc44bdb2e45374d62f30f2a6d4c63e", 
     "excludeFromNav": false, 
     "_content_type_unique_identifier": "text/plain", 
     "allowDiscussion": false, 
@@ -63,28 +59,26 @@
         "OCWImage", 
         "CourseSection", 
         "OCWExtFile", 
-        "OCWFile", 
-        "MediaResource"
+        "OCWFile"
     ], 
     "_content_type_text": "text/html", 
     "ad_type": "HOUSE", 
-    "creation_date": "2019/09/06 13:35:16.399 Universal", 
+    "creation_date": "2010/05/14 12:21:47.210 GMT-4", 
     "aggregationlevel": 3, 
     "duration": "", 
     "immediatelyAddableTypes": [
         "OCWImage", 
         "CourseSection", 
         "OCWExtFile", 
-        "OCWFile", 
-        "MediaResource"
+        "OCWFile"
     ], 
     "subject": [], 
     "_content_type_short_page_title": "text/plain", 
-    "effectiveDate": "2019/09/06 13:44:49.429 Universal", 
-    "parent_module": "61f2eb4c2d288f68efcada60f5a247d2", 
+    "effectiveDate": "2010/09/03 03:08:25.695 GMT-4", 
+    "parent_module": "aabc44bdb2e45374d62f30f2a6d4c63e", 
     "is_mathml_document": false, 
     "bottomtext": "", 
-    "short_page_title": "Software and Bibliography", 
+    "short_page_title": "Calendar", 
     "section_identifier": null, 
     "related_mit_links": "", 
     "_content_type_ad_type": "text/plain", 
@@ -95,43 +89,57 @@
                 "action": null, 
                 "review_state": "waiting_for_authoring", 
                 "comments": "", 
-                "actor": "peterchipman", 
-                "time": "2019/09/06 13:35:16.409 Universal"
+                "actor": "admin", 
+                "time": "2010/05/14 12:21:47.215 GMT-4"
             }, 
             {
                 "action": "approve_to_staging", 
                 "review_state": "ready_for_staging", 
-                "actor": "peterchipman", 
+                "actor": "admin", 
                 "comments": "", 
-                "time": "2019/09/06 13:44:50.166 Universal"
+                "time": "2010/05/16 11:42:28.309 GMT-4"
             }, 
             {
-                "action": "decline_to_qa", 
-                "review_state": "waiting_for_qa", 
+                "action": null, 
+                "review_state": "waiting_for_authoring", 
+                "actor": "cc_saror4", 
                 "comments": "", 
-                "actor": "peterchipman", 
-                "time": "2019/09/27 13:29:59.378 Universal"
+                "time": "2010/08/17 00:14:19.509 GMT-4"
             }, 
             {
                 "action": "approve_to_staging", 
                 "review_state": "ready_for_staging", 
-                "actor": "peterchipman", 
                 "comments": "", 
-                "time": "2019/09/27 15:34:55.353 Universal"
+                "actor": "cc_gegrov", 
+                "time": "2010/09/03 03:08:25.719 GMT-4"
             }, 
             {
                 "action": "decline", 
                 "review_state": "waiting_for_authoring", 
                 "comments": "", 
-                "actor": "peterchipman", 
-                "time": "2019/10/07 13:56:30.280 Universal"
+                "actor": "cc_gegrov", 
+                "time": "2010/09/03 03:09:31.011 GMT-4"
             }, 
             {
                 "action": "approve_to_staging", 
                 "review_state": "ready_for_staging", 
-                "actor": "peterchipman", 
+                "actor": "cc_gegrov", 
                 "comments": "", 
-                "time": "2019/10/07 13:57:29.970 Universal"
+                "time": "2010/09/03 03:09:52.401 GMT-4"
+            }, 
+            {
+                "action": "decline", 
+                "review_state": "waiting_for_authoring", 
+                "comments": "", 
+                "actor": "cc_ajsing", 
+                "time": "2010/09/03 07:26:58.561 GMT-4"
+            }, 
+            {
+                "action": "approve_to_staging", 
+                "review_state": "ready_for_staging", 
+                "actor": "cc_ajsing", 
+                "comments": "", 
+                "time": "2010/09/03 09:34:13.114 GMT-4"
             }
         ]
     }, 
@@ -147,7 +155,7 @@
     "firstTimeEdit": true, 
     "feature_requirements": [], 
     "list_in_left_nav": false, 
-    "short_name_tlp": "", 
+    "short_name_tlp": "Calendar", 
     "expirationDate": "None", 
     "_content_type_id": "text/plain", 
     "contributor_list": [], 
@@ -158,38 +166,35 @@
     "course_linking": [], 
     "_atrefs": {
         "BelongsTo": [
-            "61f2eb4c2d288f68efcada60f5a247d2"
-        ], 
-        "isReferencing": [
-            "7a78d1885b6244c92489b8265a2f5f9d"
+            "aabc44bdb2e45374d62f30f2a6d4c63e"
         ]
     }, 
     "other_platform_requirements": "", 
-    "license": "https://creativecommons.org/licenses/by-nc-sa/3.0/us/", 
-    "rights": "This site (c) Massachusetts Institute of Technology 2019.  Content within individual courses is (c) by the individual authors unless otherwise noted. The Massachusetts Institute of Technology is providing this Work (as defined below) under the terms of this Creative Commons public license (\"CCPL\" or \"license\") unless otherwise noted. The Work is protected by copyright and/or other applicable law. Any use of the work other than as authorized under this license is prohibited. By exercising any of the rights to the Work provided here, You (as defined below) accept and agree to be bound by the terms of this license. The Licensor, the Massachusetts Institute of Technology, grants You the rights contained here in consideration of Your acceptance of such terms and conditions.", 
+    "license": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/", 
+    "rights": "This site (c) Massachusetts Institute of Technology 2010.  Content within individual courses is (c) by the individual authors unless otherwise noted. The Massachusetts Institute of Technology is providing this Work (as defined below) under the terms of this Creative Commons public license (\"CCPL\" or \"license\") unless otherwise noted. The Work is protected by copyright and/or other applicable law. Any use of the work other than as authorized under this license is prohibited. By exercising any of the rights to the Work provided here, You (as defined below) accept and agree to be bound by the terms of this license. The Licensor, the Massachusetts Institute of Technology, grants You the rights contained here in consideration of Your acceptance of such terms and conditions.", 
     "hide_Page_title": false, 
     "_defaultpage": "", 
     "tcATmit_subject_tags": [], 
     "features_tracking": [], 
     "ad_champion_text": "", 
     "has_inline_embed": false, 
-    "unique_identifier": "https://ocw.mit.edu/courses/architecture/4-401-environmental-technologies-in-buildings-fall-2018/software-and-bibliography", 
+    "unique_identifier": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/calendar", 
     "is_image_gallery": false, 
-    "id": "software-and-bibliography", 
+    "id": "calendar", 
     "materialtype": "Other", 
     "_type": "CourseSection", 
-    "description": "Discussion of the software and basic texts needed for the course.", 
-    "course_identifier": "https://ocw.mit.edu/courses/architecture/4-401-environmental-technologies-in-buildings-fall-2018", 
+    "description": "This calendar section provides the schedule of lecture topics, exams, and assignment due dates for the course.", 
+    "course_identifier": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010", 
     "_content_type_publisher": "text/plain", 
     "tcATmit_instructional_tags": [], 
     "_content_type": "text/html", 
     "creators": [
-        "peterchipman"
+        "admin"
     ], 
-    "modification_date": "2019/10/07 13:57:29.169 Universal", 
+    "modification_date": "2016/09/24 07:52:19.480 GMT-4", 
     "always_publish": false, 
     "_content_type_description": "text/plain", 
-    "_owner": "peterchipman", 
+    "_owner": null, 
     "_permissions": {
         "Change portal events": {
             "acquire": false, 
@@ -232,11 +237,12 @@
     "_properties": [
         [
             "title", 
-            "Software and Bibliography", 
+            "Calendar", 
             "string"
         ]
     ], 
-    "_id": "software-and-bibliography", 
+    "_id": "calendar", 
     "courselist_features": [], 
-    "_path": "/Plone/courses/architecture/4-401-environmental-technologies-in-buildings-fall-2018/software-and-bibliography"
+    "_content_type_short_name_tlp": "text/plain", 
+    "_path": "/Plone/courses/mathematics/18-06-linear-algebra-spring-2010/calendar"
 }
