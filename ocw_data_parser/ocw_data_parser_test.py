@@ -18,6 +18,9 @@ class TestOCWParser(unittest.TestCase):
     course_id = None
 
     def set_up(self, extract_media_locally=False, extract_foreign_media_locally=False, generate_static_site=False, setup_s3_uploading=False):
+        """
+        Instantiace an OCWParser object and run functions depending on args passed in
+        """
         self.ocw_parser = OCWParser(course_dir="ocw_data_parser/test_json/course_dir",
                                     destination_dir="ocw_data_parser/test_json/destination_dir",
                                     static_prefix="static_files/")
@@ -37,6 +40,9 @@ class TestOCWParser(unittest.TestCase):
         self.course_id = self.ocw_parser.master_json["short_url"]
     
     def tear_down(self):
+        """
+        Remove any generated files and null out local variables
+        """
         destination_dir = "ocw_data_parser/test_json/destination_dir"
         self.ocw_parser = None
         if os.path.isdir(destination_dir):
@@ -46,6 +52,10 @@ class TestOCWParser(unittest.TestCase):
     # utils.py
 
     def test_update_local_file_location(self):
+        """
+        Extract local course media, update the location of one of the files 
+        and then assert that the location has indeed changed
+        """
         self.set_up(extract_media_locally=True)
         if len(self.ocw_parser.master_json["course_files"]) > 0:
             test_file = self.ocw_parser.master_json["course_files"][0]
@@ -58,6 +68,10 @@ class TestOCWParser(unittest.TestCase):
             self.fail("test course has no local media to test")
 
     def test_update_foreign_file_location(self):
+        """
+        Extract foreign course media, update the location of one of the files 
+        and then assert that the location has indeed changed
+        """
         self.set_up(extract_foreign_media_locally=True)
         if len(self.ocw_parser.master_json["course_foreign_files"]) > 0:
             test_file = self.ocw_parser.master_json["course_foreign_files"][0]
@@ -91,21 +105,33 @@ class TestOCWParser(unittest.TestCase):
         self.tear_down()
 
     def test_set_s3_bucket_name(self):
+        """
+        Test setting the s3 bucket name
+        """
         self.set_up(setup_s3_uploading=True)
         self.assertEqual("bucket_name", self.ocw_parser.s3_bucket_name)
         self.tear_down()
 
     def test_set_s3_access_key(self):
+        """
+        Test setting the s3 access key
+        """
         self.set_up(setup_s3_uploading=True)
         self.assertEqual("bucket_access_key", self.ocw_parser.s3_bucket_access_key)
         self.tear_down()
 
     def test_set_s3_secret_access_key(self):
+        """
+        Test setting the s3 secret access key
+        """
         self.set_up(setup_s3_uploading=True)
         self.assertEqual("bucket_secret_access_key", self.ocw_parser.s3_bucket_secret_access_key)
         self.tear_down()
 
     def test_set_s3_target_folder(self):
+        """
+        Test setting the s3 target folder
+        """
         self.set_up(setup_s3_uploading=True)
         self.assertEqual("target_folder", self.ocw_parser.s3_target_folder)
         self.tear_down()
