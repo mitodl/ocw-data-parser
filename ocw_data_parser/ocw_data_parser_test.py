@@ -6,7 +6,7 @@ import unittest
 import os
 import shutil
 
-from ocw_data_parser.ocw_data_parser import OCWParser
+from ocw_data_parser.ocw_data_parser import *
 from ocw_data_parser.utils import *
 
 
@@ -147,6 +147,37 @@ class TestOCWParser(unittest.TestCase):
         """
         with self.assertRaises(Exception):
             OCWParser()
+
+    def test_html_parser_output_list(self):
+        """
+        Test passing in an output_list to the CustomHTMLParser
+        """
+        output_list = ['test']
+        parser = CustomHTMLParser(output_list=output_list)
+        self.assertEqual('test', parser.output_list[0])
+
+    def test_parser_loaded_jsons(self):
+        self.set_up()
+        try:
+            OCWParser(loaded_jsons=self.ocw_parser.jsons)
+            self.tear_down()
+        except:
+            self.tear_down()
+            self.fail("instantiating parser with preloaded jsons failed")
+
+    def test_generate_master_json_none_source(self):
+        self.set_up()
+        self.ocw_parser.jsons = None
+        self.ocw_parser.generate_master_json()
+        self.assertIsNotNone(self.ocw_parser.jsons)
+        self.tear_down()
+
+    def test_generate_master_json_none_course_image_uid(self):
+        self.set_up()
+        self.ocw_parser.course_image_uid = None
+        self.ocw_parser.generate_master_json()
+        self.assertIsNone(self.ocw_parser.course_image_uid)
+        self.tear_down()
 
     def test_get_master_json(self):
         """
