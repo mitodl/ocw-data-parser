@@ -1,0 +1,205 @@
+{
+    "text": "<div id=\"download_inner_main\"><p class=\"ptext\">This package contains the same content as the online version of the course, except for any audio/video materials and other interactive file types.</p><p class=\"ptext\">For help downloading and using course materials, read our <a href=\"https://ocw.mit.edu/help/faq-technology/\">frequently asked questions</a>.</p></div>", 
+    "_content_type_license": "text/plain", 
+    "_uid": "54dda49e87e0ee5723d790211ba2998b", 
+    "title": "Download Course Materials", 
+    "_ac_local_roles": {
+        "pchipman": [
+            "Owner"
+        ]
+    }, 
+    "location": "", 
+    "_content_type_course_identifier": "text/plain", 
+    "_atbrefs": {}, 
+    "constrainTypesMode": 0, 
+    "technical_location": "https://ocw.mit.edu/courses/architecture/4-401-environmental-technologies-in-buildings-fall-2018/download-course-materials", 
+    "software_requirements": [
+        {
+            "software_type_col": "Browser", 
+            "minimum_version_col": "40.0", 
+            "software_name_col": "Chrome", 
+            "maximum_version_col": ""
+        }, 
+        {
+            "software_type_col": "Browser", 
+            "minimum_version_col": "8.0", 
+            "software_name_col": "Safari", 
+            "maximum_version_col": ""
+        }, 
+        {
+            "software_type_col": "Browser", 
+            "minimum_version_col": "38.0", 
+            "software_name_col": "Mozilla Firefox", 
+            "maximum_version_col": ""
+        }, 
+        {
+            "software_type_col": "Browser", 
+            "minimum_version_col": "9.0", 
+            "software_name_col": "Internet Explorer", 
+            "maximum_version_col": ""
+        }, 
+        {
+            "software_type_col": "Browser", 
+            "minimum_version_col": "13.1", 
+            "software_name_col": "Edge", 
+            "maximum_version_col": ""
+        }
+    ], 
+    "_content_type_technical_location": "text/plain", 
+    "_content_type_rights": "text/html", 
+    "_directly_provided": [
+        "Products.CMFEditions.interfaces.IVersioned"
+    ], 
+    "parent_uid": "61f2eb4c2d288f68efcada60f5a247d2", 
+    "excludeFromNav": false, 
+    "_content_type_unique_identifier": "text/plain", 
+    "allowDiscussion": false, 
+    "metadata_contributor_list": [], 
+    "locallyAllowedTypes": [
+        "OCWImage", 
+        "CourseSection", 
+        "OCWExtFile", 
+        "OCWFile"
+    ], 
+    "_content_type_text": "text/html", 
+    "ad_type": "HOUSE", 
+    "creation_date": "2019/01/15 09:32:17.127 US/Eastern", 
+    "aggregationlevel": 3, 
+    "duration": "", 
+    "immediatelyAddableTypes": [
+        "OCWImage", 
+        "CourseSection", 
+        "OCWExtFile", 
+        "OCWFile"
+    ], 
+    "subject": [], 
+    "_content_type_short_page_title": "text/plain", 
+    "effectiveDate": "2019/05/22 12:55:56.716 GMT-4", 
+    "parent_module": "61f2eb4c2d288f68efcada60f5a247d2", 
+    "is_mathml_document": false, 
+    "bottomtext": "", 
+    "short_page_title": "Download Course Materials", 
+    "section_identifier": null, 
+    "related_mit_links": "", 
+    "_content_type_ad_type": "text/plain", 
+    "_layout": "custom_view", 
+    "_workflow_history": {
+        "page_workflow": [
+            {
+                "action": null, 
+                "review_state": "waiting_for_authoring", 
+                "comments": "", 
+                "actor": "pchipman", 
+                "time": "2019/01/15 09:32:17.142 US/Eastern"
+            }, 
+            {
+                "action": "approve_to_staging", 
+                "review_state": "ready_for_staging", 
+                "actor": "pchipman", 
+                "comments": "", 
+                "time": "2019/05/22 12:55:56.845 GMT-4"
+            }
+        ]
+    }, 
+    "_classname": "DownloadSection", 
+    "_content_type_materialtype": "text/plain", 
+    "_userdefined_roles": [], 
+    "publisher": "MIT OpenCourseWare", 
+    "nextPreviousEnabled": false, 
+    "language": "", 
+    "url_rewrite_patterns": [], 
+    "widgets_features": [], 
+    "category_features": [], 
+    "firstTimeEdit": true, 
+    "feature_requirements": [], 
+    "list_in_left_nav": false, 
+    "short_name_tlp": "Download Course Materials", 
+    "expirationDate": "None", 
+    "_content_type_id": "text/plain", 
+    "contributor_list": [], 
+    "is_media_gallery": false, 
+    "contributors": [], 
+    "_gopip": 8, 
+    "_content_type_title": "text/plain", 
+    "course_linking": [], 
+    "_atrefs": {
+        "BelongsTo": [
+            "61f2eb4c2d288f68efcada60f5a247d2"
+        ]
+    }, 
+    "other_platform_requirements": "", 
+    "license": "https://creativecommons.org/licenses/by-nc-sa/3.0/us/", 
+    "rights": "This site (c) Massachusetts Institute of Technology 2018.  Content within individual courses is (c) by the individual authors unless otherwise noted. The Massachusetts Institute of Technology is providing this Work (as defined below) under the terms of this Creative Commons public license (\"CCPL\" or \"license\") unless otherwise noted. The Work is protected by copyright and/or other applicable law. Any use of the work other than as authorized under this license is prohibited. By exercising any of the rights to the Work provided here, You (as defined below) accept and agree to be bound by the terms of this license. The Licensor, the Massachusetts Institute of Technology, grants You the rights contained here in consideration of Your acceptance of such terms and conditions.", 
+    "hide_Page_title": false, 
+    "_defaultpage": "", 
+    "tcATmit_subject_tags": [], 
+    "features_tracking": [], 
+    "ad_champion_text": "", 
+    "has_inline_embed": false, 
+    "unique_identifier": "https://ocw.mit.edu/courses/architecture/4-401-environmental-technologies-in-buildings-fall-2018/download-course-materials", 
+    "is_image_gallery": false, 
+    "id": "download-course-materials", 
+    "materialtype": "Other", 
+    "_type": "DownloadSection", 
+    "description": "", 
+    "course_identifier": "https://ocw.mit.edu/courses/architecture/4-401-environmental-technologies-in-buildings-fall-2018", 
+    "_content_type_publisher": "text/plain", 
+    "tcATmit_instructional_tags": [], 
+    "_content_type": "text/html", 
+    "creators": [
+        "pchipman"
+    ], 
+    "modification_date": "2019/05/22 12:55:56.717 GMT-4", 
+    "always_publish": false, 
+    "_owner": null, 
+    "_permissions": {
+        "Change portal events": {
+            "acquire": false, 
+            "roles": [
+                "Editor", 
+                "Manager", 
+                "MetadataEditor", 
+                "Owner"
+            ]
+        }, 
+        "Modify portal content": {
+            "acquire": false, 
+            "roles": [
+                "Manager", 
+                "MetadataEditor"
+            ]
+        }, 
+        "Access contents information": {
+            "acquire": false, 
+            "roles": [
+                "Authenticated"
+            ]
+        }, 
+        "List folder contents": {
+            "acquire": false, 
+            "roles": [
+                "Editor", 
+                "Manager", 
+                "MetadataEditor", 
+                "Owner"
+            ]
+        }, 
+        "View": {
+            "acquire": false, 
+            "roles": [
+                "Authenticated"
+            ]
+        }
+    }, 
+    "_properties": [
+        [
+            "title", 
+            "Download Course Materials", 
+            "string"
+        ]
+    ], 
+    "_id": "download-course-materials", 
+    "courselist_features": [], 
+    "_content_type_short_name_tlp": "text/plain", 
+    "_path": "/Plone/courses/architecture/4-401-environmental-technologies-in-buildings-fall-2018/download-course-materials"
+}

@@ -1,10 +1,10 @@
 {
-    "text": "", 
+    "text": "<h2 class=\"subhead\">Course Meeting Times</h2> <p>Lectures: 2 sessions / week, 1.5 hours / session<br /> Labs: 1 session / week, 1 hour / session</p> <h2 class=\"subhead\">Prerequisites</h2> <p>There are no prerequisites for this course.</p> <h2 class=\"subhead\">Course Description</h2> <p>The primary focus of this course is the study of the thermal, luminous, and acoustical behavior of buildings. The course examines the basic scientific principles underlying these phenomena and introduces students to a range of technologies and analysis techniques for designing comfortable indoor environments. Students will be challenged to apply these techniques and explore the role energy, light, and sound can play in shaping architecture.</p> <p>Following a review of how to analyze a site's climate and local energy mix, the course will introduce students to the art and science of lighting buildings along with rules of thumb and computer-based methods for analyzing daylight within and around buildings. The second part of the course is dedicated to the principles of heat storage and heat flow into and out of buildings. Basic manual and computer-based methods to predict the energy use of buildings will also be discussed. In order to introduce students to the effective use of computer simulations during design, a building optimization game that mimics a sustainable design charrette will be organized. During the game, students will compete in groups to develop the building with the lowest energy use within a given cost budget. The last part of the course provides an overview of building acoustics and sound attenuation.</p> <p>The course format consists of semiweekly lectures and weekly labs. Individual and group assignments as well as in-class presentations and exercises will help students to study the use of environmental technologies in contemporary buildings.</p> <h2 class=\"subhead\">Learning Objectives</h2> <p>The course aims to help students to:</p> <ul>     <li>understand and apply the scientific principles underlying the thermal, luminous, and acoustical behavior of buildings;</li>     <li>learn to evaluate the pros and cons of a range of technologies for creating comfortable indoor environments; and</li>     <li>conduct a series of design analysis workflows regarding climate, building energy use, and daylighting and acquire the knowledge required to critically discuss/present the environmental concept of a building.</li> </ul> <h2 class=\"subhead\">Requirements</h2> <p>The following deliverables will be required to pass this class:</p> <ul>     <li>Attendance of semiweekly lectures and labs.</li>     <li>Timely completion of assignments. Late assignments will not be accepted.</li>     <li>Completion of a group course project. The course project will be to develop and present an environmental concept for a small office building.</li>     <li>Preparation of 15 minute in-class group presentations on one of the American Institute of Architects (AIA) Committee on the Environment (COTE)&nbsp;<a href=\"http://www.aiatopten.org/\">Top Ten Projects</a> for the current year. Presentations should have the following format:     <ul>         <li>Overview of the main environmental features of the building.</li>         <li>Discussion of predicted energy use. (Note: You do not have to explicitly model the building for energy use. You should rather review the predicted and actual energy use for the building&mdash;this is published for most of the AIA awarded buildings&mdash;and assess how they compare; also compare the data to typical buildings of the same type. The <a href=\"https://www.eia.gov/consumption/commercial/\">Commercial Buildings Energy Consumption Survey</a> (CBECS) has data on energy usage for various building types in different parts of the country. How much better is your building than the average? What design strategies contribute the most to the savings?)</li>         <li>Daylighting analysis of the building. Construct a simple 3D model of the whole or key spaces within the building. The model does not have to be very detailed, but should include the major fa\u00e7ade openings and elements so that you can evaluate how light is being distributed in the space.</li>         <li>Discussion of what you like and/or dislike about the building and its environmental concept.</li>     </ul></li>     <li>Active participation in class discussions.</li> </ul> <h2 class=\"subhead\">Grading</h2> <div class=\"maintabletemplate\"><table class=\"tablewidth50\">     <thead>         <tr>             <th>Activities</th>             <th>PERCENTAGES</th>         </tr>     </thead>     <tbody>         <tr class=\"row\">             <td>Quality and timely submission of completed assignments</td>             <td>45%</td>         </tr>         <tr class=\"alt-row\">             <td>Course project presentation</td>             <td>30%</td>         </tr>         <tr class=\"row\">             <td>AIA case study presentation</td>             <td>15%</td>         </tr>         <tr class=\"alt-row\">             <td>Participation in class discussions</td>             <td>10%</td>         </tr>     </tbody> </table></div> <p>Please familiarize yourself with MIT's <a href=\"http://web.mit.edu/academicintegrity/\">Academic Integrity Expectations</a>.</p>", 
     "_content_type_license": "text/plain", 
-    "_uid": "116709acea0fddb3156e56bc040f1cca", 
+    "_uid": "7ff44e4c1453a64c006834e77a71f955", 
     "title": "Syllabus", 
     "_ac_local_roles": {
-        "admin": [
+        "pchipman": [
             "Owner"
         ]
     }, 
@@ -12,7 +12,7 @@
     "_content_type_course_identifier": "text/plain", 
     "_atbrefs": {}, 
     "constrainTypesMode": 0, 
-    "technical_location": "https://ocw.mit.edu/courses/brain-and-cognitive-sciences/9-15-biochemistry-and-pharmacology-of-synaptic-transmission-fall-2001/syllabus", 
+    "technical_location": "https://ocw.mit.edu/courses/architecture/4-401-environmental-technologies-in-buildings-fall-2018/syllabus", 
     "software_requirements": [
         {
             "software_type_col": "Browser", 
@@ -47,8 +47,10 @@
     ], 
     "_content_type_technical_location": "text/plain", 
     "_content_type_rights": "text/html", 
-    "_directly_provided": [], 
-    "parent_uid": "e4d2ddd169d2aeee91fdf2ef9d7d6bc2", 
+    "_directly_provided": [
+        "Products.CMFEditions.interfaces.IVersioned"
+    ], 
+    "parent_uid": "61f2eb4c2d288f68efcada60f5a247d2", 
     "excludeFromNav": false, 
     "_content_type_unique_identifier": "text/plain", 
     "allowDiscussion": false, 
@@ -57,22 +59,25 @@
         "OCWImage", 
         "CourseSection", 
         "OCWExtFile", 
-        "OCWFile"
+        "OCWFile", 
+        "MediaResource"
     ], 
+    "_content_type_text": "text/html", 
     "ad_type": "HOUSE", 
-    "creation_date": "2010/07/08 02:30:10.569 GMT-4", 
+    "creation_date": "2019/01/14 08:53:03.033 US/Eastern", 
     "aggregationlevel": 3, 
     "duration": "", 
     "immediatelyAddableTypes": [
         "OCWImage", 
         "CourseSection", 
         "OCWExtFile", 
-        "OCWFile"
+        "OCWFile", 
+        "MediaResource"
     ], 
     "subject": [], 
     "_content_type_short_page_title": "text/plain", 
-    "effectiveDate": "None", 
-    "parent_module": "e4d2ddd169d2aeee91fdf2ef9d7d6bc2", 
+    "effectiveDate": "2019/05/22 12:55:50.636 GMT-4", 
+    "parent_module": "61f2eb4c2d288f68efcada60f5a247d2", 
     "is_mathml_document": false, 
     "bottomtext": "", 
     "short_page_title": "Syllabus", 
@@ -86,29 +91,71 @@
                 "action": null, 
                 "review_state": "waiting_for_authoring", 
                 "comments": "", 
-                "actor": "admin", 
-                "time": "2010/07/08 02:30:10.575 GMT-4"
+                "actor": "pchipman", 
+                "time": "2019/01/14 08:53:03.069 US/Eastern"
             }, 
             {
                 "action": "approve_to_staging", 
                 "review_state": "ready_for_staging", 
-                "actor": "admin", 
+                "actor": "pchipman", 
                 "comments": "", 
-                "time": "2010/07/08 09:29:08.512 GMT-4"
+                "time": "2019/05/22 12:55:51.143 GMT-4"
             }, 
             {
                 "action": "decline", 
                 "review_state": "waiting_for_authoring", 
                 "comments": "", 
-                "actor": "hdesai", 
-                "time": "2010/07/17 01:04:22.704 GMT-4"
+                "actor": "peterchipman", 
+                "time": "2019/09/06 13:35:34.277 Universal"
             }, 
             {
                 "action": "approve_to_staging", 
                 "review_state": "ready_for_staging", 
-                "actor": "admin", 
+                "actor": "peterchipman", 
                 "comments": "", 
-                "time": "2010/07/17 11:18:01.892 GMT-4"
+                "time": "2019/09/06 13:45:28.915 Universal"
+            }, 
+            {
+                "action": "decline", 
+                "review_state": "waiting_for_authoring", 
+                "comments": "", 
+                "actor": "peterchipman", 
+                "time": "2019/09/27 12:56:47.589 Universal"
+            }, 
+            {
+                "action": "approve_to_staging", 
+                "review_state": "ready_for_staging", 
+                "actor": "peterchipman", 
+                "comments": "", 
+                "time": "2019/09/27 15:35:06.643 Universal"
+            }, 
+            {
+                "action": "decline", 
+                "review_state": "waiting_for_authoring", 
+                "comments": "", 
+                "actor": "peterchipman", 
+                "time": "2019/09/30 13:52:41.005 Universal"
+            }, 
+            {
+                "action": "approve_to_staging", 
+                "review_state": "ready_for_staging", 
+                "actor": "peterchipman", 
+                "comments": "", 
+                "time": "2019/09/30 18:34:00.320 Universal"
+            }, 
+            {
+                "action": "decline", 
+                "review_state": "waiting_for_authoring", 
+                "comments": "", 
+                "actor": "peterchipman", 
+                "time": "2019/10/07 13:06:27.335 Universal"
+            }, 
+            {
+                "action": "approve_to_staging", 
+                "review_state": "ready_for_staging", 
+                "actor": "peterchipman", 
+                "comments": "", 
+                "time": "2019/10/07 13:57:44.096 Universal"
             }
         ]
     }, 
@@ -124,12 +171,10 @@
     "firstTimeEdit": true, 
     "feature_requirements": [], 
     "list_in_left_nav": false, 
-    "short_name_tlp": "Syllabus", 
+    "short_name_tlp": "", 
     "expirationDate": "None", 
     "_content_type_id": "text/plain", 
-    "contributor_list": [
-        {}
-    ], 
+    "contributor_list": [], 
     "is_media_gallery": false, 
     "contributors": [], 
     "_gopip": 1, 
@@ -137,35 +182,34 @@
     "course_linking": [], 
     "_atrefs": {
         "BelongsTo": [
-            "e4d2ddd169d2aeee91fdf2ef9d7d6bc2"
+            "61f2eb4c2d288f68efcada60f5a247d2"
         ]
     }, 
     "other_platform_requirements": "", 
-    "license": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/", 
-    "rights": "This site (c) Massachusetts Institute of Technology 2010.  Content within individual courses is (c) by the individual authors unless otherwise noted. The Massachusetts Institute of Technology is providing this Work (as defined below) under the terms of this Creative Commons public license (\"CCPL\" or \"license\") unless otherwise noted. The Work is protected by copyright and/or other applicable law. Any use of the work other than as authorized under this license is prohibited. By exercising any of the rights to the Work provided here, You (as defined below) accept and agree to be bound by the terms of this license. The Licensor, the Massachusetts Institute of Technology, grants You the rights contained here in consideration of Your acceptance of such terms and conditions.", 
-    "hide_Page_title": null, 
+    "license": "https://creativecommons.org/licenses/by-nc-sa/3.0/us/", 
+    "rights": "This site (c) Massachusetts Institute of Technology 2018.  Content within individual courses is (c) by the individual authors unless otherwise noted. The Massachusetts Institute of Technology is providing this Work (as defined below) under the terms of this Creative Commons public license (\"CCPL\" or \"license\") unless otherwise noted. The Work is protected by copyright and/or other applicable law. Any use of the work other than as authorized under this license is prohibited. By exercising any of the rights to the Work provided here, You (as defined below) accept and agree to be bound by the terms of this license. The Licensor, the Massachusetts Institute of Technology, grants You the rights contained here in consideration of Your acceptance of such terms and conditions.", 
+    "hide_Page_title": false, 
     "_defaultpage": "", 
     "tcATmit_subject_tags": [], 
     "features_tracking": [], 
     "ad_champion_text": "", 
     "has_inline_embed": false, 
-    "unique_identifier": "https://ocw.mit.edu/courses/brain-and-cognitive-sciences/9-15-biochemistry-and-pharmacology-of-synaptic-transmission-fall-2001/syllabus", 
+    "unique_identifier": "https://ocw.mit.edu/courses/architecture/4-401-environmental-technologies-in-buildings-fall-2018/syllabus", 
     "is_image_gallery": false, 
     "id": "syllabus", 
     "materialtype": "Other", 
     "_type": "CourseSection", 
-    "description": "A description of the course, term paper, text and exams.", 
-    "course_identifier": "https://ocw.mit.edu/courses/brain-and-cognitive-sciences/9-15-biochemistry-and-pharmacology-of-synaptic-transmission-fall-2001", 
+    "description": "", 
+    "course_identifier": "https://ocw.mit.edu/courses/architecture/4-401-environmental-technologies-in-buildings-fall-2018", 
     "_content_type_publisher": "text/plain", 
     "tcATmit_instructional_tags": [], 
     "_content_type": "text/html", 
     "creators": [
-        "admin"
+        "pchipman"
     ], 
-    "modification_date": "2016/09/24 06:35:41.992 GMT-4", 
+    "modification_date": "2019/10/07 13:57:43.226 Universal", 
     "always_publish": false, 
-    "_content_type_description": "text/plain", 
-    "_owner": "admin", 
+    "_owner": null, 
     "_permissions": {
         "Change portal events": {
             "acquire": false, 
@@ -214,6 +258,5 @@
     ], 
     "_id": "syllabus", 
     "courselist_features": [], 
-    "_content_type_short_name_tlp": "text/plain", 
-    "_path": "/Plone/courses/brain-and-cognitive-sciences/9-15-biochemistry-and-pharmacology-of-synaptic-transmission-fall-2001/syllabus"
+    "_path": "/Plone/courses/architecture/4-401-environmental-technologies-in-buildings-fall-2018/syllabus"
 }

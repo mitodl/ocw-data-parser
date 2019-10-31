@@ -1,0 +1,264 @@
+{
+    "text": "<div class=\"maintabletemplate\">\r\n<table class=\"tablewidth75\">\r\n    <thead>\r\n        <tr>\r\n            <th>Due Dates</th>\r\n            <th>Assignments</th>\r\n        </tr>\r\n    </thead>\r\n    <tbody>\r\n        <tr class=\"row\">\r\n            <td><p>Friday of week 2</p></td>\r\n            <td><p><a href=\"./resolveuid/d22ab095cde0ee5463d984784a55629c\">Assignment 1: My Energy Essay (PDF)</a></p></td>\r\n        </tr>\r\n        <tr class=\"alt-row\">\r\n            <td><p>Friday of week 3</p></td>\r\n            <td><p><img alt=\"This resource may not render correctly in a screen reader.\" src=\"/images/inacessible.gif\" /><a href=\"./resolveuid/d6e0e979c5f62d4c3fab3ea921d4caed\">Assignment 2: Shading Studies and Sun Path Diagrams (PDF)</a></p></td>\r\n        </tr>\r\n        <tr class=\"row\">\r\n            <td><p>Friday of week 4</p></td>\r\n            <td><p><img alt=\"This resource may not render correctly in a screen reader.\" src=\"/images/inacessible.gif\" /><a href=\"./resolveuid/4cfe5b351f32c9a27932cfc4ec110224\">Assignment 3: Visual and Thermal Comfort (PDF)</a></p></td>\r\n        </tr>\r\n        <tr class=\"alt-row\">\r\n            <td><p>Friday of week 5</p></td>\r\n            <td><p><a href=\"./resolveuid/2a0d878698ed9717f8009689b04b2b50\"><img alt=\"This resource may not render correctly in a screen reader.\" src=\"/images/inacessible.gif\" />Assignment 4: Designing a PV System (PDF)</a></p></td>\r\n        </tr>\r\n        <tr class=\"row\">\r\n            <td><p>Friday of week 7</p></td>\r\n            <td><p><a href=\"./resolveuid/4a661a066142c53ab84981fa6b000619\">Assignment 5: Daylight Availability Study (PDF)</a></p></td>\r\n        </tr>\r\n        <tr class=\"alt-row\">\r\n            <td><p>Friday of week 8</p></td>\r\n            <td><p><img alt=\"This resource may not render correctly in a screen reader.\" src=\"/images/inacessible.gif\" /><a href=\"./resolveuid/112aca2f2f0963ab54544229f6773b27\">Assignment 6: Visual Comfort and Electric Lighting (PDF)</a></p></td>\r\n        </tr>\r\n        <tr class=\"row\">\r\n            <td><p>Friday of week 9</p></td>\r\n            <td><p><img alt=\"This resource may not render correctly in a screen reader.\" src=\"/images/inacessible.gif\" /><a href=\"./resolveuid/ea268fdc900bdb9b8e195593363c14bf\">Assignment 7: Energy Explorations (PDF)</a></p></td>\r\n        </tr>\r\n        <tr class=\"alt-row\">\r\n            <td><p>Friday of week 10</p></td>\r\n            <td><p><img alt=\"This resource may not render correctly in a screen reader.\" src=\"/images/inacessible.gif\" /><a href=\"./resolveuid/ea064154791a4eb5e144e76ceeca60a5\">Assignment 8: Simulation Game Analysis (PDF - 1.5 MB)</a></p></td>\r\n        </tr>\r\n        <tr class=\"row\">\r\n            <td>\r\n            <p>Friday of week 13&nbsp;(undergraduate students)</p>\r\n            <p>Monday of Exam Week (graduate students)</p>\r\n            </td>\r\n            <td><p><a href=\"./resolveuid/400472d8d9edfcec734dfbf1bfa7a583\">Course project (PDF)</a></p></td>\r\n        </tr>\r\n    </tbody>\r\n</table>\r\n</div>\r\n<p>&nbsp;</p>", 
+    "_content_type_license": "text/plain", 
+    "_uid": "93c41ef18a13b65c495ef196a737db5e", 
+    "title": "Assignments", 
+    "_ac_local_roles": {
+        "pchipman": [
+            "Owner"
+        ]
+    }, 
+    "location": "", 
+    "_content_type_course_identifier": "text/plain", 
+    "_atbrefs": {
+        "isReferencing": [
+            "93c41ef18a13b65c495ef196a737db5e"
+        ]
+    }, 
+    "constrainTypesMode": 0, 
+    "technical_location": "https://ocw.mit.edu/courses/architecture/4-401-environmental-technologies-in-buildings-fall-2018/assignments", 
+    "software_requirements": [
+        {
+            "software_type_col": "Browser", 
+            "minimum_version_col": "40.0", 
+            "software_name_col": "Chrome", 
+            "maximum_version_col": ""
+        }, 
+        {
+            "software_type_col": "Browser", 
+            "minimum_version_col": "8.0", 
+            "software_name_col": "Safari", 
+            "maximum_version_col": ""
+        }, 
+        {
+            "software_type_col": "Browser", 
+            "minimum_version_col": "38.0", 
+            "software_name_col": "Mozilla Firefox", 
+            "maximum_version_col": ""
+        }, 
+        {
+            "software_type_col": "Browser", 
+            "minimum_version_col": "9.0", 
+            "software_name_col": "Internet Explorer", 
+            "maximum_version_col": ""
+        }, 
+        {
+            "software_type_col": "Browser", 
+            "minimum_version_col": "13.1", 
+            "software_name_col": "Edge", 
+            "maximum_version_col": ""
+        }
+    ], 
+    "_content_type_technical_location": "text/plain", 
+    "_content_type_rights": "text/html", 
+    "_directly_provided": [
+        "Products.CMFEditions.interfaces.IVersioned"
+    ], 
+    "parent_uid": "61f2eb4c2d288f68efcada60f5a247d2", 
+    "excludeFromNav": false, 
+    "_content_type_unique_identifier": "text/plain", 
+    "allowDiscussion": false, 
+    "metadata_contributor_list": [], 
+    "locallyAllowedTypes": [
+        "OCWImage", 
+        "CourseSection", 
+        "OCWExtFile", 
+        "OCWFile", 
+        "MediaResource"
+    ], 
+    "_content_type_text": "text/html", 
+    "ad_type": "HOUSE", 
+    "creation_date": "2019/01/16 09:55:00.582 US/Eastern", 
+    "aggregationlevel": 3, 
+    "duration": "", 
+    "immediatelyAddableTypes": [
+        "OCWImage", 
+        "CourseSection", 
+        "OCWExtFile", 
+        "OCWFile", 
+        "MediaResource"
+    ], 
+    "subject": [], 
+    "_content_type_short_page_title": "text/plain", 
+    "effectiveDate": "2019/05/22 11:53:22.711 GMT-4", 
+    "parent_module": "61f2eb4c2d288f68efcada60f5a247d2", 
+    "is_mathml_document": false, 
+    "bottomtext": "", 
+    "short_page_title": "Assignments", 
+    "section_identifier": null, 
+    "related_mit_links": "", 
+    "_content_type_ad_type": "text/plain", 
+    "_layout": "custom_view", 
+    "_workflow_history": {
+        "page_workflow": [
+            {
+                "action": null, 
+                "review_state": "waiting_for_authoring", 
+                "comments": "", 
+                "actor": "pchipman", 
+                "time": "2019/01/16 09:55:00.592 US/Eastern"
+            }, 
+            {
+                "action": "approve_to_staging", 
+                "review_state": "ready_for_staging", 
+                "actor": "pchipman", 
+                "comments": "", 
+                "time": "2019/05/22 11:53:22.771 GMT-4"
+            }, 
+            {
+                "action": "decline", 
+                "review_state": "waiting_for_authoring", 
+                "comments": "", 
+                "actor": "peterchipman", 
+                "time": "2019/09/18 15:40:11.493 Universal"
+            }, 
+            {
+                "action": "approve_to_staging", 
+                "review_state": "ready_for_staging", 
+                "actor": "peterchipman", 
+                "comments": "", 
+                "time": "2019/09/18 15:46:35.760 Universal"
+            }, 
+            {
+                "action": "decline", 
+                "review_state": "waiting_for_authoring", 
+                "comments": "", 
+                "actor": "peterchipman", 
+                "time": "2019/09/27 14:05:50.441 Universal"
+            }, 
+            {
+                "action": "approve_to_staging", 
+                "review_state": "ready_for_staging", 
+                "actor": "peterchipman", 
+                "comments": "", 
+                "time": "2019/09/27 15:34:30.419 Universal"
+            }, 
+            {
+                "action": "decline_to_qa", 
+                "review_state": "waiting_for_qa", 
+                "comments": "", 
+                "actor": "yunpengwang", 
+                "time": "2019/10/04 14:03:08.844 Universal"
+            }, 
+            {
+                "action": "approve_to_staging", 
+                "review_state": "ready_for_staging", 
+                "actor": "peterchipman", 
+                "comments": "", 
+                "time": "2019/10/07 13:58:09.105 Universal"
+            }
+        ]
+    }, 
+    "_classname": "CourseSection", 
+    "_content_type_materialtype": "text/plain", 
+    "_userdefined_roles": [], 
+    "publisher": "MIT OpenCourseWare", 
+    "nextPreviousEnabled": false, 
+    "language": "", 
+    "url_rewrite_patterns": [], 
+    "widgets_features": [], 
+    "category_features": [], 
+    "firstTimeEdit": true, 
+    "feature_requirements": [], 
+    "list_in_left_nav": false, 
+    "short_name_tlp": "", 
+    "expirationDate": "None", 
+    "_content_type_id": "text/plain", 
+    "contributor_list": [], 
+    "is_media_gallery": false, 
+    "contributors": [], 
+    "_gopip": 5, 
+    "_content_type_title": "text/plain", 
+    "course_linking": [], 
+    "_atrefs": {
+        "BelongsTo": [
+            "61f2eb4c2d288f68efcada60f5a247d2"
+        ], 
+        "isReferencing": [
+            "93c41ef18a13b65c495ef196a737db5e", 
+            "d22ab095cde0ee5463d984784a55629c", 
+            "112aca2f2f0963ab54544229f6773b27", 
+            "d6e0e979c5f62d4c3fab3ea921d4caed", 
+            "2a0d878698ed9717f8009689b04b2b50", 
+            "4a661a066142c53ab84981fa6b000619", 
+            "ea064154791a4eb5e144e76ceeca60a5", 
+            "ea268fdc900bdb9b8e195593363c14bf", 
+            "400472d8d9edfcec734dfbf1bfa7a583", 
+            "4cfe5b351f32c9a27932cfc4ec110224"
+        ]
+    }, 
+    "other_platform_requirements": "", 
+    "license": "https://creativecommons.org/licenses/by-nc-sa/3.0/us/", 
+    "rights": "This site (c) Massachusetts Institute of Technology 2019.  Content within individual courses is (c) by the individual authors unless otherwise noted. The Massachusetts Institute of Technology is providing this Work (as defined below) under the terms of this Creative Commons public license (\"CCPL\" or \"license\") unless otherwise noted. The Work is protected by copyright and/or other applicable law. Any use of the work other than as authorized under this license is prohibited. By exercising any of the rights to the Work provided here, You (as defined below) accept and agree to be bound by the terms of this license. The Licensor, the Massachusetts Institute of Technology, grants You the rights contained here in consideration of Your acceptance of such terms and conditions.", 
+    "hide_Page_title": false, 
+    "_defaultpage": "", 
+    "tcATmit_subject_tags": [], 
+    "features_tracking": [], 
+    "ad_champion_text": "", 
+    "has_inline_embed": false, 
+    "unique_identifier": "https://ocw.mit.edu/courses/architecture/4-401-environmental-technologies-in-buildings-fall-2018/assignments", 
+    "is_image_gallery": false, 
+    "id": "assignments", 
+    "materialtype": "Other", 
+    "_type": "CourseSection", 
+    "description": "", 
+    "course_identifier": "https://ocw.mit.edu/courses/architecture/4-401-environmental-technologies-in-buildings-fall-2018", 
+    "_content_type_publisher": "text/plain", 
+    "tcATmit_instructional_tags": [], 
+    "_content_type": "text/html", 
+    "creators": [
+        "pchipman"
+    ], 
+    "modification_date": "2019/10/07 13:58:08.333 Universal", 
+    "always_publish": false, 
+    "_owner": null, 
+    "_permissions": {
+        "Change portal events": {
+            "acquire": false, 
+            "roles": [
+                "Editor", 
+                "Manager", 
+                "MetadataEditor", 
+                "Owner"
+            ]
+        }, 
+        "Modify portal content": {
+            "acquire": false, 
+            "roles": [
+                "Manager", 
+                "MetadataEditor"
+            ]
+        }, 
+        "Access contents information": {
+            "acquire": false, 
+            "roles": [
+                "Authenticated"
+            ]
+        }, 
+        "List folder contents": {
+            "acquire": false, 
+            "roles": [
+                "Editor", 
+                "Manager", 
+                "MetadataEditor", 
+                "Owner"
+            ]
+        }, 
+        "View": {
+            "acquire": false, 
+            "roles": [
+                "Authenticated"
+            ]
+        }
+    }, 
+    "_properties": [
+        [
+            "title", 
+            "Assignments", 
+            "string"
+        ]
+    ], 
+    "_id": "assignments", 
+    "courselist_features": [], 
+    "_path": "/Plone/courses/architecture/4-401-environmental-technologies-in-buildings-fall-2018/assignments"
+}

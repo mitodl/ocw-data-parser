@@ -1,18 +1,22 @@
 {
-    "text": "", 
+    "text": "<h2 class=\"subhead\">Software</h2>\r\n<p>Throughout the course we will be using the following software packages:</p>\r\n<ul>\r\n    <li><strong>Rhinoceros 5 or 6</strong>. Rhinoceros forms the CAD backbone of all environmental analysis tools that we will be using in this class. Students should therefore ideally have a working version of Rhino 5 or 6 installed on their laptops or workstations. You can install a 90-day <a href=\"https://www.rhino3d.com/download/rhino-for-windows/6/evaluation\">demo version</a> of Rhino 6 for free.</li>\r\n    <li><strong>DIVA-for-Rhino</strong>.&nbsp;We will be using DIVA for assignments on solar radiation and daylighting and energy simulation. Students may request free licenses for their laptops from the <a href=\"http://diva4rhino.com/\">DIVA-for-Rhino website</a>.</li>\r\n    <li><strong>Climate Consultant</strong>. Climate Consultant is an easy-to-use, graphic-based computer program for visualizing and interpreting annual climate files. The tool can be <a href=\"http://www.energy-design-tools.aud.ucla.edu\">downloaded</a> free-of-charge. (During class we will also be introducing MIT's new CLIMA+ tool that has comparable functionality to Climate Consultant.)</li>\r\n</ul>\r\n<h2 class=\"subhead\">Bibliography</h2>\r\n<p>Information required for completing the assignments will be provided through the lecture notes and selected online materials as well as the two-volume&nbsp;<em>Daylighting Handbook</em>, which can be purchased on Amazon:</p>\r\n<p><a href=\"http://www.amazon.com/exec/obidos/ASIN/069220363X/ref=nosim/mitopencourse-20\"><img alt=\"Buy at Amazon\" src=\"/images/a_logo_17.gif\" align=\"absmiddle\" border=\"0\" /></a>&nbsp;Reinhart, Christoph. <em>Daylighting Handbook I. </em>Building Technology Press, 2014. ISBN:&nbsp;9780692203637.<br />\r\n<a href=\"http://www.amazon.com/exec/obidos/ASIN/0578407094/ref=nosim/mitopencourse-20\"><img alt=\"Buy at Amazon\" src=\"/images/a_logo_17.gif\" align=\"absmiddle\" border=\"0\" /></a>&nbsp;Reinhart, Christoph. <em>Daylighting Handbook II.&nbsp;</em>Building Technology Press, 2018. ISBN:&nbsp;9780578407098.</p>", 
     "_content_type_license": "text/plain", 
-    "_uid": "4dcd2b97aa3830313a0b7d6083bc1417", 
-    "title": "Calendar", 
+    "_uid": "7a78d1885b6244c92489b8265a2f5f9d", 
+    "title": "Software and Bibliography", 
     "_ac_local_roles": {
-        "admin": [
+        "peterchipman": [
             "Owner"
         ]
     }, 
     "location": "", 
     "_content_type_course_identifier": "text/plain", 
-    "_atbrefs": {}, 
+    "_atbrefs": {
+        "isReferencing": [
+            "7a78d1885b6244c92489b8265a2f5f9d"
+        ]
+    }, 
     "constrainTypesMode": 0, 
-    "technical_location": "https://ocw.mit.edu/courses/brain-and-cognitive-sciences/9-15-biochemistry-and-pharmacology-of-synaptic-transmission-fall-2001/calendar", 
+    "technical_location": "https://ocw.mit.edu/courses/architecture/4-401-environmental-technologies-in-buildings-fall-2018/software-and-bibliography", 
     "software_requirements": [
         {
             "software_type_col": "Browser", 
@@ -47,8 +51,10 @@
     ], 
     "_content_type_technical_location": "text/plain", 
     "_content_type_rights": "text/html", 
-    "_directly_provided": [], 
-    "parent_uid": "e4d2ddd169d2aeee91fdf2ef9d7d6bc2", 
+    "_directly_provided": [
+        "Products.CMFEditions.interfaces.IVersioned"
+    ], 
+    "parent_uid": "61f2eb4c2d288f68efcada60f5a247d2", 
     "excludeFromNav": false, 
     "_content_type_unique_identifier": "text/plain", 
     "allowDiscussion": false, 
@@ -57,25 +63,28 @@
         "OCWImage", 
         "CourseSection", 
         "OCWExtFile", 
-        "OCWFile"
+        "OCWFile", 
+        "MediaResource"
     ], 
+    "_content_type_text": "text/html", 
     "ad_type": "HOUSE", 
-    "creation_date": "2010/07/08 02:30:10.669 GMT-4", 
+    "creation_date": "2019/09/06 13:35:16.399 Universal", 
     "aggregationlevel": 3, 
     "duration": "", 
     "immediatelyAddableTypes": [
         "OCWImage", 
         "CourseSection", 
         "OCWExtFile", 
-        "OCWFile"
+        "OCWFile", 
+        "MediaResource"
     ], 
     "subject": [], 
     "_content_type_short_page_title": "text/plain", 
-    "effectiveDate": "None", 
-    "parent_module": "e4d2ddd169d2aeee91fdf2ef9d7d6bc2", 
+    "effectiveDate": "2019/09/06 13:44:49.429 Universal", 
+    "parent_module": "61f2eb4c2d288f68efcada60f5a247d2", 
     "is_mathml_document": false, 
     "bottomtext": "", 
-    "short_page_title": "Calendar", 
+    "short_page_title": "Software and Bibliography", 
     "section_identifier": null, 
     "related_mit_links": "", 
     "_content_type_ad_type": "text/plain", 
@@ -86,29 +95,43 @@
                 "action": null, 
                 "review_state": "waiting_for_authoring", 
                 "comments": "", 
-                "actor": "admin", 
-                "time": "2010/07/08 02:30:10.676 GMT-4"
+                "actor": "peterchipman", 
+                "time": "2019/09/06 13:35:16.409 Universal"
             }, 
             {
                 "action": "approve_to_staging", 
                 "review_state": "ready_for_staging", 
-                "actor": "admin", 
+                "actor": "peterchipman", 
                 "comments": "", 
-                "time": "2010/07/08 09:29:08.564 GMT-4"
+                "time": "2019/09/06 13:44:50.166 Universal"
+            }, 
+            {
+                "action": "decline_to_qa", 
+                "review_state": "waiting_for_qa", 
+                "comments": "", 
+                "actor": "peterchipman", 
+                "time": "2019/09/27 13:29:59.378 Universal"
+            }, 
+            {
+                "action": "approve_to_staging", 
+                "review_state": "ready_for_staging", 
+                "actor": "peterchipman", 
+                "comments": "", 
+                "time": "2019/09/27 15:34:55.353 Universal"
             }, 
             {
                 "action": "decline", 
                 "review_state": "waiting_for_authoring", 
                 "comments": "", 
-                "actor": "hdesai", 
-                "time": "2010/07/17 01:04:22.747 GMT-4"
+                "actor": "peterchipman", 
+                "time": "2019/10/07 13:56:30.280 Universal"
             }, 
             {
                 "action": "approve_to_staging", 
                 "review_state": "ready_for_staging", 
-                "actor": "admin", 
+                "actor": "peterchipman", 
                 "comments": "", 
-                "time": "2010/07/17 11:18:01.913 GMT-4"
+                "time": "2019/10/07 13:57:29.970 Universal"
             }
         ]
     }, 
@@ -124,12 +147,10 @@
     "firstTimeEdit": true, 
     "feature_requirements": [], 
     "list_in_left_nav": false, 
-    "short_name_tlp": "Calendar", 
+    "short_name_tlp": "", 
     "expirationDate": "None", 
     "_content_type_id": "text/plain", 
-    "contributor_list": [
-        {}
-    ], 
+    "contributor_list": [], 
     "is_media_gallery": false, 
     "contributors": [], 
     "_gopip": 2, 
@@ -137,35 +158,38 @@
     "course_linking": [], 
     "_atrefs": {
         "BelongsTo": [
-            "e4d2ddd169d2aeee91fdf2ef9d7d6bc2"
+            "61f2eb4c2d288f68efcada60f5a247d2"
+        ], 
+        "isReferencing": [
+            "7a78d1885b6244c92489b8265a2f5f9d"
         ]
     }, 
     "other_platform_requirements": "", 
-    "license": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/", 
-    "rights": "This site (c) Massachusetts Institute of Technology 2010.  Content within individual courses is (c) by the individual authors unless otherwise noted. The Massachusetts Institute of Technology is providing this Work (as defined below) under the terms of this Creative Commons public license (\"CCPL\" or \"license\") unless otherwise noted. The Work is protected by copyright and/or other applicable law. Any use of the work other than as authorized under this license is prohibited. By exercising any of the rights to the Work provided here, You (as defined below) accept and agree to be bound by the terms of this license. The Licensor, the Massachusetts Institute of Technology, grants You the rights contained here in consideration of Your acceptance of such terms and conditions.", 
-    "hide_Page_title": null, 
+    "license": "https://creativecommons.org/licenses/by-nc-sa/3.0/us/", 
+    "rights": "This site (c) Massachusetts Institute of Technology 2019.  Content within individual courses is (c) by the individual authors unless otherwise noted. The Massachusetts Institute of Technology is providing this Work (as defined below) under the terms of this Creative Commons public license (\"CCPL\" or \"license\") unless otherwise noted. The Work is protected by copyright and/or other applicable law. Any use of the work other than as authorized under this license is prohibited. By exercising any of the rights to the Work provided here, You (as defined below) accept and agree to be bound by the terms of this license. The Licensor, the Massachusetts Institute of Technology, grants You the rights contained here in consideration of Your acceptance of such terms and conditions.", 
+    "hide_Page_title": false, 
     "_defaultpage": "", 
     "tcATmit_subject_tags": [], 
     "features_tracking": [], 
     "ad_champion_text": "", 
     "has_inline_embed": false, 
-    "unique_identifier": "https://ocw.mit.edu/courses/brain-and-cognitive-sciences/9-15-biochemistry-and-pharmacology-of-synaptic-transmission-fall-2001/calendar", 
+    "unique_identifier": "https://ocw.mit.edu/courses/architecture/4-401-environmental-technologies-in-buildings-fall-2018/software-and-bibliography", 
     "is_image_gallery": false, 
-    "id": "calendar", 
+    "id": "software-and-bibliography", 
     "materialtype": "Other", 
     "_type": "CourseSection", 
-    "description": "A schedule of lecture topics and reading assignments.", 
-    "course_identifier": "https://ocw.mit.edu/courses/brain-and-cognitive-sciences/9-15-biochemistry-and-pharmacology-of-synaptic-transmission-fall-2001", 
+    "description": "Discussion of the software and basic texts needed for the course.", 
+    "course_identifier": "https://ocw.mit.edu/courses/architecture/4-401-environmental-technologies-in-buildings-fall-2018", 
     "_content_type_publisher": "text/plain", 
     "tcATmit_instructional_tags": [], 
     "_content_type": "text/html", 
     "creators": [
-        "admin"
+        "peterchipman"
     ], 
-    "modification_date": "2016/09/24 06:35:42.067 GMT-4", 
+    "modification_date": "2019/10/07 13:57:29.169 Universal", 
     "always_publish": false, 
     "_content_type_description": "text/plain", 
-    "_owner": "admin", 
+    "_owner": "peterchipman", 
     "_permissions": {
         "Change portal events": {
             "acquire": false, 
@@ -208,12 +232,11 @@
     "_properties": [
         [
             "title", 
-            "Calendar", 
+            "Software and Bibliography", 
             "string"
         ]
     ], 
-    "_id": "calendar", 
+    "_id": "software-and-bibliography", 
     "courselist_features": [], 
-    "_content_type_short_name_tlp": "text/plain", 
-    "_path": "/Plone/courses/brain-and-cognitive-sciences/9-15-biochemistry-and-pharmacology-of-synaptic-transmission-fall-2001/calendar"
+    "_path": "/Plone/courses/architecture/4-401-environmental-technologies-in-buildings-fall-2018/software-and-bibliography"
 }
