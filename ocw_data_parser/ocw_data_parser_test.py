@@ -84,6 +84,61 @@ class TestOCWParser(unittest.TestCase):
             self.tear_down()
             self.fail("test course has no foreign media to test")
 
+    def test_get_binary_data_none(self):
+        """
+        Find the first file without a datafield property and attempt to get the binary data from it
+        """
+        self.set_up()
+        if len(self.ocw_parser.master_json["course_files"]) > 0:
+            for media in self.ocw_parser.master_json["course_files"]:
+                if "_datafield_image" not in media and "_datafield_file" not in media:
+                    data = get_binary_data(media)
+                    self.assertIsNone(data)
+        else:
+            self.tear_down()
+            self.fail("test course has no local media to test")
+
+    def test_get_correct_path_none(self):
+        """
+        Test passing in invalid data to get_correct_path
+        """
+        get_correct_path(None)
+        
+    def test_load_invalid_json_file(self):
+        """
+        Test passing in an invalid JSON file (this one)
+        """
+        self.assertIsNone(load_json_file('ocw_data_parser/ocw_data_parser_test.py'))
+
+    def test_print_error(self):
+        """
+        Test printing an error doesn't throw an exception
+        """
+        try:
+            print_error("Error!")
+        except:
+            self.fail("print_error raised an exception")
+
+    def test_print_success(self):
+        """
+        Test that printing a success message doesn't throw an exception
+        """
+        try:
+            print_success("Success!")
+        except:
+            self.fail("print_success raised an exception")
+
+    def test_safe_get_invalid_value(self):
+        """
+        Test trying to get a value from a dict that doesn't exist
+        """
+        test_dict = {
+            "value_one": "1",
+            "value_two": "2",
+            "actual_file_name": 'test'
+        }
+        self.assertIsNone(safe_get(test_dict, "value_three", print_error_message=True))
+
     # ocw_data_parser.py
 
     def test_no_params(self):
