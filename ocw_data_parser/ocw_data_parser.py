@@ -8,6 +8,7 @@ from .utils import update_file_location, get_binary_data, is_json, get_correct_p
     find_all_values_for_key
 import json
 from smart_open import smart_open
+from .static_html_generator import generate_html_for_course
 
 
 log = logging.getLogger(__name__)
@@ -30,6 +31,7 @@ class OCWParser(object):
     def __init__(self,
                  course_dir="",
                  destination_dir="",
+                 static_prefix="",
                  loaded_jsons=list(),
                  upload_to_s3=False,
                  s3_bucket_name="",
@@ -40,6 +42,7 @@ class OCWParser(object):
             raise Exception("Message")
         self.course_dir = get_correct_path(course_dir) if course_dir else course_dir
         self.destination_dir = get_correct_path(destination_dir) if destination_dir else destination_dir
+        self.static_prefix = static_prefix
         self.upload_to_s3 = upload_to_s3
         self.s3_bucket_name = s3_bucket_name
         self.s3_bucket_access_key = s3_bucket_access_key
@@ -258,17 +261,19 @@ class OCWParser(object):
             log.debug("You have to compose media for course first!")
             return
 
-        path_to_containing_folder = self.destination_dir + "static_files/"
+        path_to_containing_folder = self.destination_dir + self.static_prefix \
+            if self.static_prefix else self.destination_dir + "static_files/"
+        url_path_to_media = self.static_prefix if self.static_prefix else path_to_containing_folder
         os.makedirs(path_to_containing_folder, exist_ok=True)
         for j in self.media_jsons:
-            filename = safe_get(j, "_uid") + "_" + safe_get(j, "id")
+            file_name = safe_get(j, "_uid") + "_" + safe_get(j, "id")
             d = get_binary_data(j)
             if d:
-                with open(path_to_containing_folder + filename, "wb") as f:
+                with open(path_to_containing_folder + file_name, "wb") as f:
                     data = base64.b64decode(d)
                     f.write(data)
-                update_file_location(self.master_json, path_to_containing_folder + filename, safe_get(j, "_uid"))
-                log.info("Extracted %s", filename)
+                update_file_location(self.master_json, url_path_to_media + file_name, safe_get(j, "_uid"))
+                log.info("Extracted %s", file_name)
             else:
                 json_file = j["actual_file_name"]
                 log.error("Media file %s without either datafield key", json_file)
@@ -280,17 +285,30 @@ class OCWParser(object):
             log.debug("Your course has 0 foreign media files")
             return
 
-        path_to_containing_folder = self.destination_dir + "static_files/"
+        path_to_containing_folder = self.destination_dir + self.static_prefix \
+            if self.static_prefix else self.destination_dir + "static_files/"
+        url_path_to_media = self.static_prefix if self.static_prefix else path_to_containing_folder
         os.makedirs(path_to_containing_folder, exist_ok=True)
         for media in self.large_media_links:
             file_name = media["link"].split("/")[-1]
             with open(path_to_containing_folder + file_name, "wb") as file:
                 response = get(media["link"])
                 file.write(response.content)
-            update_file_location(self.master_json, path_to_containing_folder + file_name)
+            update_file_location(self.master_json, url_path_to_media + file_name)
             log.info("Extracted %s", file_name)
         log.info("Done! extracted foreign media to %s", path_to_containing_folder)
         self.export_master_json()
+
+    def generate_static_site(self):
+        """
+        Extract all static media locally and generate master.json, 
+        then generate static HTML for a course
+        """
+        self.extract_media_locally()
+        self.extract_foreign_media_locally()
+        generate_html_for_course(
+            self.destination_dir + '/master.json',
+            self.destination_dir)
 
     def export_master_json(self):
         os.makedirs(self.destination_dir, exist_ok=True)
