@@ -1,0 +1,4 @@
+[run]
+omit = 
+    ocw_data_parser/ocw_data_parser_test.py
+    ocw_data_parser/test_json/*
