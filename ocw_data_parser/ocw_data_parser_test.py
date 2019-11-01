@@ -179,6 +179,16 @@ class TestOCWParser(unittest.TestCase):
         self.assertIsNotNone(self.ocw_parser.course_image_uid)
         self.tear_down()
 
+    def test_load_raw_jsons_invalid_file(self):
+        with open("ocw_data_parser/test_json/course_dir/jsons/test.json", "w") as f:
+            f.write("test")
+        with self.assertRaises(Exception):
+            self.set_up()
+        os.remove("ocw_data_parser/test_json/course_dir/jsons/test.json")
+        self.tear_down()
+
+    
+
     def test_get_master_json(self):
         """
         Test that getting the master JSON is not None or empty and doesn't throw an exception
