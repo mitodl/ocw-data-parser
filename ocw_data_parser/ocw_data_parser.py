@@ -155,7 +155,9 @@ class OCWParser(object):
                     ocw_feature_url = safe_get(feature_requirement, "ocw_feature_url")
                     if (ocw_feature_url):
                         ocw_feature_url_parts = ocw_feature_url.split("/")
-                        ocw_feature_short_url = ocw_feature_url_parts[-2] + "/" + ocw_feature_url_parts[-1]
+                        ocw_feature_short_url = ocw_feature_url 
+                        if len(ocw_feature_url_parts) > 1:
+                            ocw_feature_short_url = ocw_feature_url_parts[-2] + "/" + ocw_feature_url_parts[-1]
                         if page["short_url"] in ocw_feature_short_url and 'index.htm' not in page["short_url"]:
                             course_feature = copy.copy(feature_requirement)
                             course_feature["ocw_feature_url"] = './resolveuid/' + page["uid"]
