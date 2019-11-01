@@ -5,7 +5,9 @@ import json
 import unittest
 import os
 import shutil
-
+import responses
+import boto3
+from moto import mock_s3
 from ocw_data_parser.ocw_data_parser import *
 from ocw_data_parser.utils import *
 
@@ -32,10 +34,10 @@ class TestOCWParser(unittest.TestCase):
             self.ocw_parser.generate_static_site()
         if setup_s3_uploading:
             self.ocw_parser.setup_s3_uploading(
-                s3_bucket_name = "bucket_name",
-                s3_bucket_access_key = "bucket_access_key",
-                s3_bucket_secret_access_key = "bucket_secret_access_key",
-                folder = "target_folder"
+                s3_bucket_name = "testing",
+                s3_bucket_access_key = "testing",
+                s3_bucket_secret_access_key = "testing",
+                folder = "testing"
             )
         self.course_id = self.ocw_parser.master_json["short_url"]
     
@@ -181,13 +183,33 @@ class TestOCWParser(unittest.TestCase):
 
     def test_load_raw_jsons_invalid_file(self):
         with open("ocw_data_parser/test_json/course_dir/jsons/test.json", "w") as f:
-            f.write("test")
+            f.write("")
         with self.assertRaises(Exception):
-            self.set_up()
+            self.set_up(generate_static_site=True)
         os.remove("ocw_data_parser/test_json/course_dir/jsons/test.json")
         self.tear_down()
 
-    
+    @mock_s3
+    def test_upload_all_data_to_s3(self):
+        self.set_up(setup_s3_uploading=True)
+        conn = boto3.client('s3',
+            aws_access_key_id=self.ocw_parser.s3_bucket_access_key, 
+            aws_secret_access_key=self.ocw_parser.s3_bucket_secret_access_key)
+        conn.create_bucket(Bucket=self.ocw_parser.s3_bucket_name)
+        responses.add_passthru("https://")
+        responses.add_passthru("http://")
+        self.ocw_parser.upload_all_media_to_s3(upload_master_json=True)
+
+        s3 = boto3.resource('s3',
+            aws_access_key_id=self.ocw_parser.s3_bucket_access_key, 
+            aws_secret_access_key=self.ocw_parser.s3_bucket_secret_access_key)
+        bucket = s3.Bucket(name=self.ocw_parser.s3_bucket_name)
+        course_image_key = None
+        for bucket_item in bucket.objects.filter(Prefix=self.ocw_parser.s3_target_folder):
+            if bucket_item.key in self.ocw_parser.course_image_s3_link:
+                course_image_key = bucket_item.key
+        self.assertIsNotNone(course_image_key)
+        self.tear_down()
 
     def test_get_master_json(self):
         """
@@ -205,7 +227,7 @@ class TestOCWParser(unittest.TestCase):
         Test setting the s3 bucket name
         """
         self.set_up(setup_s3_uploading=True)
-        self.assertEqual("bucket_name", self.ocw_parser.s3_bucket_name)
+        self.assertEqual("testing", self.ocw_parser.s3_bucket_name)
         self.tear_down()
 
     def test_set_s3_access_key(self):
@@ -213,7 +235,7 @@ class TestOCWParser(unittest.TestCase):
         Test setting the s3 access key
         """
         self.set_up(setup_s3_uploading=True)
-        self.assertEqual("bucket_access_key", self.ocw_parser.s3_bucket_access_key)
+        self.assertEqual("testing", self.ocw_parser.s3_bucket_access_key)
         self.tear_down()
 
     def test_set_s3_secret_access_key(self):
@@ -221,7 +243,7 @@ class TestOCWParser(unittest.TestCase):
         Test setting the s3 secret access key
         """
         self.set_up(setup_s3_uploading=True)
-        self.assertEqual("bucket_secret_access_key", self.ocw_parser.s3_bucket_secret_access_key)
+        self.assertEqual("testing", self.ocw_parser.s3_bucket_secret_access_key)
         self.tear_down()
 
     def test_set_s3_target_folder(self):
@@ -229,10 +251,8 @@ class TestOCWParser(unittest.TestCase):
         Test setting the s3 target folder
         """
         self.set_up(setup_s3_uploading=True)
-        self.assertEqual("target_folder", self.ocw_parser.s3_target_folder)
+        self.assertEqual("testing", self.ocw_parser.s3_target_folder)
         self.tear_down()
-
-    
 
     def test_uid(self):
         """
