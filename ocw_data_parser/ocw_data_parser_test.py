@@ -19,6 +19,7 @@ class TestOCWParser(unittest.TestCase):
     ocw_parser = None
     course_id = None
 
+    @mock_s3
     def set_up(self, extract_media_locally=False, extract_foreign_media_locally=False, generate_static_site=False, setup_s3_uploading=False):
         """
         Instantiace an OCWParser object and run functions depending on args passed in
@@ -39,6 +40,16 @@ class TestOCWParser(unittest.TestCase):
                 s3_bucket_secret_access_key = "testing",
                 folder = "testing"
             )
+            conn = boto3.client('s3',
+                aws_access_key_id=self.ocw_parser.s3_bucket_access_key, 
+                aws_secret_access_key=self.ocw_parser.s3_bucket_secret_access_key)
+            conn.create_bucket(Bucket=self.ocw_parser.s3_bucket_name)
+            responses.add_passthru("https://")
+            responses.add_passthru("http://")
+            s3 = boto3.resource('s3',
+                aws_access_key_id=self.ocw_parser.s3_bucket_access_key, 
+                aws_secret_access_key=self.ocw_parser.s3_bucket_secret_access_key)
+            self.s3_bucket = s3.Bucket(name=self.ocw_parser.s3_bucket_name)
         self.course_id = self.ocw_parser.master_json["short_url"]
     
     def tear_down(self):
@@ -192,20 +203,20 @@ class TestOCWParser(unittest.TestCase):
     @mock_s3
     def test_upload_all_data_to_s3(self):
         self.set_up(setup_s3_uploading=True)
-        conn = boto3.client('s3',
-            aws_access_key_id=self.ocw_parser.s3_bucket_access_key, 
-            aws_secret_access_key=self.ocw_parser.s3_bucket_secret_access_key)
-        conn.create_bucket(Bucket=self.ocw_parser.s3_bucket_name)
-        responses.add_passthru("https://")
-        responses.add_passthru("http://")
         self.ocw_parser.upload_all_media_to_s3(upload_master_json=True)
-
-        s3 = boto3.resource('s3',
-            aws_access_key_id=self.ocw_parser.s3_bucket_access_key, 
-            aws_secret_access_key=self.ocw_parser.s3_bucket_secret_access_key)
-        bucket = s3.Bucket(name=self.ocw_parser.s3_bucket_name)
         course_image_key = None
-        for bucket_item in bucket.objects.filter(Prefix=self.ocw_parser.s3_target_folder):
+        for bucket_item in self.s3_bucket.objects.filter(Prefix=self.ocw_parser.s3_target_folder):
+            if bucket_item.key in self.ocw_parser.course_image_s3_link:
+                course_image_key = bucket_item.key
+        self.assertIsNotNone(course_image_key)
+        self.tear_down()
+
+    @mock_s3
+    def test_upload_course_image(self):
+        self.set_up(setup_s3_uploading=True)
+        self.ocw_parser.upload_course_image()
+        course_image_key = None
+        for bucket_item in self.s3_bucket.objects.filter(Prefix=self.ocw_parser.s3_target_folder):
             if bucket_item.key in self.ocw_parser.course_image_s3_link:
                 course_image_key = bucket_item.key
         self.assertIsNotNone(course_image_key)
