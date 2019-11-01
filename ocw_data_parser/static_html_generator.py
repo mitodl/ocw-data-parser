@@ -2,7 +2,6 @@ import logging
 
 from .utils import is_json, get_correct_path, load_json_file
 
-
 log = logging.getLogger(__name__)
 
 
@@ -117,7 +116,7 @@ def get_course_thumbnail(mj):
             thumbnail_name = media["uid"] + "_" + thumbnail_name
             if media["file_location"].split("/")[-1] == thumbnail_name:
                 return "<div class=\"container\"><div class=\"card float-left\" style=\"max-width: 330px;\"><img class=\"card-img-top\" alt=\"%s\" src=\"%s\" title=\"%s\" />\n<div class=\"card-body\"><p class=\"card-text\">\n%s\n</p></div></div>" % \
-                       (media["alt_text"], media["file_location"], media["alt_text"], media["description"])
+                       (mj["image_alternate_text"], media["file_location"], mj["image_alternate_text"], mj["image_caption_text"])
     return ""
 
 
@@ -138,9 +137,9 @@ def get_course_info(mj):
 def get_course_features(mj):
     course_features = "<h4>Course Features</h4>\n<ul>%s</ul>\n"
     features = ""
-    for entry in mj["course_features"]:
-        features += "<li><a href=\"%s\">%s</a></li>\n" % (entry["ocw_feature_url"], entry["ocw_feature"])
-    
+    if mj["course_features"]:
+        for entry in mj["course_features"]:
+            features += fix_links("<li><a href=\"%s\">%s</a></li>\n" % (entry["ocw_feature_url"], entry["ocw_feature"]), mj)
     return course_features % features
 
 

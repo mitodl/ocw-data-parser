@@ -1,6 +1,7 @@
 import logging
 from html.parser import HTMLParser
 import os
+import copy
 import base64
 from requests import get
 import boto3
@@ -133,6 +134,8 @@ class OCWParser(object):
         new_json["short_url"] = safe_get(self.jsons[0], "id")
         new_json["image_src"] = self.course_image_s3_link
         new_json["image_description"] = self.course_image_alt_text
+        new_json["image_alternate_text"] = safe_get(self.jsons[1], "image_alternate_text")
+        new_json["image_caption_text"] = safe_get(self.jsons[1], "image_caption_text")
         tags_strings = safe_get(self.jsons[0], "subject")
         tags = list()
         for tag in tags_strings:
@@ -142,9 +145,24 @@ class OCWParser(object):
                                    for instructor in safe_get(self.jsons[0], "instructors")]
         new_json["language"] = safe_get(self.jsons[0], "language")
         new_json["extra_course_number"] = safe_get(self.jsons[0], "linked_course_number")
-        new_json["course_features"] = safe_get(self.jsons[0], "feature_requirements")
         new_json["course_collections"] = safe_get(self.jsons[0], "category_features")
         new_json["course_pages"] = self.compose_pages()
+        course_features = {}
+        feature_requirements = safe_get(self.jsons[0], "feature_requirements")
+        if feature_requirements:
+            for feature_requirement in feature_requirements:
+                for page in new_json["course_pages"]:
+                    ocw_feature_url = safe_get(feature_requirement, "ocw_feature_url")
+                    if (ocw_feature_url):
+                        ocw_feature_url_parts = ocw_feature_url.split("/")
+                        ocw_feature_short_url = ocw_feature_url 
+                        if len(ocw_feature_url_parts) > 1:
+                            ocw_feature_short_url = ocw_feature_url_parts[-2] + "/" + ocw_feature_url_parts[-1]
+                        if page["short_url"] in ocw_feature_short_url and 'index.htm' not in page["short_url"]:
+                            course_feature = copy.copy(feature_requirement)
+                            course_feature["ocw_feature_url"] = './resolveuid/' + page["uid"]
+                            course_features[page["uid"]] = course_feature
+        new_json["course_features"] = list(course_features.values())
         new_json["course_files"] = self.compose_media()
         new_json["course_embedded_media"] = self.compose_embedded_media()
         new_json["course_foreign_files"] = self.gather_foreign_media()

@@ -1,7 +1,6 @@
 import json
 import logging
 
-
 log = logging.getLogger(__name__)
 
 
@@ -37,7 +36,6 @@ def get_correct_path(directory):
     if not directory:
         return ""
     return directory if directory[-1] == "/" else directory + "/"
-
 
 def load_json_file(path):
     with open(path, 'r') as f:
