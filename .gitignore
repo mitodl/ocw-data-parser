@@ -4,6 +4,7 @@
 .project
 .idea/
 .python-version
+.vscode/settings.json
 
 # A place to stick your files
 private/*
