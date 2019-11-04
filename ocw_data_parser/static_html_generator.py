@@ -66,7 +66,7 @@ def generate_breadcrumbs(mj, current_page_uid):
     # If page_trail is empty that means we're generating breadcrumbs for the home page
     if not page_trail:
         breadcrumbs = "<li class=\"breadcrumb-item active\"><a href=\"index.html\">%s</a></li>\n" % mj["title"]
-    if page_trail:
+    else:
         prefix = (len(page_trail) - 1) * '../'
         breadcrumbs = "<li class=\"breadcrumb-item\"><a href=\"%sindex.html\">%s</a></li>\n" % (prefix, mj["title"])
         for item in page_trail[:-1]:
