@@ -341,6 +341,7 @@ class OCWParser(object):
         then generate static HTML for a course
         """
         shutil.copytree(self.course_dir, self.destination_dir + '/source/')
+        self.export_master_json()
         self.extract_media_locally()
         self.extract_foreign_media_locally()
         generate_html_for_course(
