@@ -1,6 +1,6 @@
 import logging
 import os
-from ocw_data_parser.utils import is_json, get_correct_path, load_json_file
+from .utils import is_json, get_correct_path, load_json_file, safe_get, safe_write
 
 log = logging.getLogger(__name__)
 
@@ -29,12 +29,12 @@ def generate_index_page(mj, destination):
     destination = get_correct_path(destination) + "index.html"
     with open(destination, "w") as f:
         # Order of these f writes is important
-        f.write(generate_header_and_start_body(mj))
-        f.write(generate_breadcrumbs(mj, mj["uid"]))
-        f.write(generate_course_container(mj))
-        f.write(generate_side_menu(mj))
-        f.write(generate_main_content(mj))
-        f.write("</body>\n</html>\n")
+        safe_write(f, generate_header_and_start_body(mj))
+        safe_write(f, generate_breadcrumbs(mj, mj["uid"]))
+        safe_write(f, generate_course_container(mj))
+        safe_write(f, generate_side_menu(mj))
+        safe_write(f, generate_main_content(mj))
+        safe_write(f, "</body>\n</html>\n")
 
 
 def generate_header_and_start_body(mj):
@@ -185,17 +185,25 @@ def generate_linked_pages(linked_pages, destination, mj):
         if page["url"] and not page["url"].split("/")[-1] == "index.htm":
             os.makedirs(destination, exist_ok=True)
             with open(destination + compose_page_name(page), "w") as f:
-                f.write(generate_header_and_start_body(page))
-                f.write(generate_breadcrumbs(mj, page["uid"]))
-                f.write(generate_course_container(page))
-                f.write(generate_side_menu(mj))
-                f.write("<div class=\"main-content col-9\">\n")
+                safe_write(f, generate_header_and_start_body(page))
+                safe_write(f, generate_breadcrumbs(mj, page["uid"]))
+                safe_write(f, generate_course_container(page))
+                safe_write(f, generate_side_menu(mj))
+                safe_write(f, "<div class=\"main-content col-9\">\n")
                 if page["text"]:
-                    f.write(fix_links(page["text"], mj))
+                    safe_write(f, fix_links(page["text"], mj))
+                if page["short_url"] == "instructor-insights":
+                    safe_write(f, fix_links(safe_get(page, "courseoverviewtext"), mj))
+                    safe_write(f, fix_links(safe_get(page, "courseoutcomestext"), mj))
+                    safe_write(f, fix_links(safe_get(page, "instructorinsightstext"), mj))
+                    safe_write(f, fix_links(safe_get(page, "curriculuminformationtext"), mj))
+                    safe_write(f, fix_links(safe_get(page, "theclassroomtext"), mj))
+                    safe_write(f, fix_links(safe_get(page, "studentinformationtext"), mj))
+                    safe_write(f, fix_links(safe_get(page, "howstudenttimewasspenttext"), mj))
                 if "course_embedded_media" in mj and page["is_media_gallery"]:
                     generate_embedded_media_pages(page, destination, mj)
-                    f.write(generate_embedded_media_playlist(page, destination, mj))
-                f.write("</div>\n</div>\n</div>\n")
+                    safe_write(f, generate_embedded_media_playlist(page, destination, mj))
+                safe_write(f, "</div>\n</div>\n</div>\n")
 
 def generate_embedded_media_pages(page, destination, mj):
     course_embedded_media = mj["course_embedded_media"]
@@ -233,37 +241,37 @@ def generate_embedded_media_page(page, embedded_media, destination, mj):
     destination = directory + embedded_media["short_url"] + '.html'
     youtube_id = ''
     with open(destination, "w") as f:
-        f.write(generate_header_and_start_body(embedded_media))
-        f.write(generate_breadcrumbs(mj, embedded_media["uid"]))
-        f.write(generate_course_container(embedded_media))
-        f.write(generate_side_menu(mj, prefix="../"))
-        f.write("<div class=\"main-content col-9\">\n")
-        f.write(get_youtube_embedded_html(embedded_media))
-        f.write("<ul class=\"nav nav-tabs\">\n")
-        f.write("<li class=\"nav-item\"><a href=\"#about\" class=\"nav-link active\" data-toggle=\"tab\">About this Video</a></li>\n")
-        f.write("<li class=\"nav-item\"><a href=\"#playlist\" class=\"nav-link\" data-toggle=\"tab\">Playlist</a></li>\n")
-        f.write("<li class=\"nav-item\"><a href=\"#related-resources\" class=\"nav-link\" data-toggle=\"tab\">Related Resources</a></li>\n")
-        f.write("<li class=\"nav-item\"><a href=\"#transcript\" class=\"nav-link\" data-toggle=\"tab\">Transcript</a></li>\n")
-        f.write("<li class=\"nav-item\"><a href=\"#download\" class=\"nav-link\" data-toggle=\"tab\">Download this Video</a></li>\n")
-        f.write("</ul>\n")
-        f.write("<div class=\"tab-content\">\n")
-        f.write("<div class=\"tab-pane fade show active\" id=\"about\">\n")
-        f.write(embedded_media["about_this_resource_text"] + "\n")
-        f.write("</div>\n")
-        f.write("<div class=\"tab-pane fade\" id=\"playlist\">\n")
-        f.write(generate_embedded_media_playlist(page, destination, mj, prefix="../"))
-        f.write("</div>\n")
-        f.write("<div class=\"tab-pane fade\" id=\"related-resources\">\n")
-        f.write(fix_links(embedded_media["related_resources_text"], mj, prefix="../") + "\n")
-        f.write("</div>\n")
-        f.write("<div class=\"tab-pane fade\" id=\"transcript\">\n")
-        f.write(embedded_media["transcript"])
-        f.write("</div>\n")
-        f.write("<div class=\"tab-pane fade\" id=\"download\">\n")
-        f.write(get_video_download_html(embedded_media))
-        f.write("</div>\n")
-        f.write("</div>\n")
-        f.write("</div>\n</div>\n</div>\n")
+        safe_write(f, generate_header_and_start_body(embedded_media))
+        safe_write(f, generate_breadcrumbs(mj, embedded_media["uid"]))
+        safe_write(f, generate_course_container(embedded_media))
+        safe_write(f, generate_side_menu(mj, prefix="../"))
+        safe_write(f, "<div class=\"main-content col-9\">\n")
+        safe_write(f, get_youtube_embedded_html(embedded_media))
+        safe_write(f, "<ul class=\"nav nav-tabs\">\n")
+        safe_write(f, "<li class=\"nav-item\"><a href=\"#about\" class=\"nav-link active\" data-toggle=\"tab\">About this Video</a></li>\n")
+        safe_write(f, "<li class=\"nav-item\"><a href=\"#playlist\" class=\"nav-link\" data-toggle=\"tab\">Playlist</a></li>\n")
+        safe_write(f, "<li class=\"nav-item\"><a href=\"#related-resources\" class=\"nav-link\" data-toggle=\"tab\">Related Resources</a></li>\n")
+        safe_write(f, "<li class=\"nav-item\"><a href=\"#transcript\" class=\"nav-link\" data-toggle=\"tab\">Transcript</a></li>\n")
+        safe_write(f, "<li class=\"nav-item\"><a href=\"#download\" class=\"nav-link\" data-toggle=\"tab\">Download this Video</a></li>\n")
+        safe_write(f, "</ul>\n")
+        safe_write(f, "<div class=\"tab-content\">\n")
+        safe_write(f, "<div class=\"tab-pane fade show active\" id=\"about\">\n")
+        safe_write(f, embedded_media["about_this_resource_text"] + "\n")
+        safe_write(f, "</div>\n")
+        safe_write(f, "<div class=\"tab-pane fade\" id=\"playlist\">\n")
+        safe_write(f, generate_embedded_media_playlist(page, destination, mj, prefix="../"))
+        safe_write(f, "</div>\n")
+        safe_write(f, "<div class=\"tab-pane fade\" id=\"related-resources\">\n")
+        safe_write(f, fix_links(embedded_media["related_resources_text"], mj, prefix="../") + "\n")
+        safe_write(f, "</div>\n")
+        safe_write(f, "<div class=\"tab-pane fade\" id=\"transcript\">\n")
+        safe_write(f, embedded_media["transcript"])
+        safe_write(f, "</div>\n")
+        safe_write(f, "<div class=\"tab-pane fade\" id=\"download\">\n")
+        safe_write(f, get_video_download_html(embedded_media))
+        safe_write(f, "</div>\n")
+        safe_write(f, "</div>\n")
+        safe_write(f, "</div>\n</div>\n</div>\n")
     return compose_page_name(page).replace('.html', '') + '/' + embedded_media["short_url"] + '.html'
 
 def get_sub_pages(linked_pages, page_uid):
@@ -308,21 +316,22 @@ def get_video_download_html(obj):
     return s
 
 def fix_links(html_str, mj, prefix=""):
-    # Fix links to linked pages
-    for page in mj["course_pages"]:
-        placeholder = "resolveuid/" + page["uid"]
-        if placeholder in html_str:
-            html_str = html_str.replace(placeholder, prefix + compose_page_name(page))
-    # Fix links to linked media
-    for media in mj["course_files"]:
-        placeholder = "resolveuid/" + media["uid"]
-        if placeholder in html_str:
-            media_path = media["file_location"]
-            html_str = html_str.replace(placeholder, prefix + media_path)
-    # Fix embedded media
-    if "course_embedded_media" in mj:
-        for key, val in mj["course_embedded_media"].items():
-            if key in html_str:
-                s = get_youtube_embedded_html(val)
-                html_str = html_str.replace(key, s)
+    if html_str:
+        # Fix links to linked pages
+        for page in mj["course_pages"]:
+            placeholder = "resolveuid/" + page["uid"]
+            if placeholder in html_str:
+                html_str = html_str.replace(placeholder, prefix + compose_page_name(page))
+        # Fix links to linked media
+        for media in mj["course_files"]:
+            placeholder = "resolveuid/" + media["uid"]
+            if placeholder in html_str:
+                media_path = media["file_location"]
+                html_str = html_str.replace(placeholder, prefix + media_path)
+        # Fix embedded media
+        if "course_embedded_media" in mj:
+            for key, val in mj["course_embedded_media"].items():
+                if key in html_str:
+                    s = get_youtube_embedded_html(val)
+                    html_str = html_str.replace(key, s)
     return html_str
