@@ -61,6 +61,10 @@ def safe_get(j, key, print_error_message=False):
     elif print_error_message:
         log.error("%s: Value for %s is NOT found", (j["actual_file_name"], key))
 
+def safe_write(f, s):
+    if s:
+        f.write(s)
+
 
 def find_all_values_for_key(jsons, key="_content_type"):
     excluded_values = ["text/plain", "text/html"]
