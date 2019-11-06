@@ -7,7 +7,7 @@ import base64
 from requests import get
 import boto3
 from .utils import update_file_location, get_binary_data, is_json, get_correct_path, load_json_file, safe_get, \
-    find_all_values_for_key
+    safe_write, find_all_values_for_key
 import json
 from smart_open import smart_open
 from .static_html_generator import generate_html_for_course
@@ -192,6 +192,16 @@ class OCWParser(object):
                 "parent_uid": safe_get(j, "parent_uid"),
                 "title": safe_get(j, "title"),
                 "text": safe_get(j, "text"),
+                "studentinformationtext": safe_get(j, "studentinformationtext"),
+                "curriculuminformationtext": safe_get(j, "curriculuminformationtext"),
+                "courseteamrolestext": safe_get(j, "courseteamrolestext"),
+                "theclassroomtext": safe_get(j, "theclassroomtext"),
+                "howstudenttimewasspenttext": safe_get(j, "howstudenttimewasspenttext"),
+                "courseoverviewtext": safe_get(j, "courseoverviewtext"),
+                "ad_champion_text": safe_get(j, "ad_champion_text"),
+                "bottomtext": safe_get(j, "bottomtext"),
+                "courseoutcomestext": safe_get(j, "courseoutcomestext"),
+                "instructorinsightstext": safe_get(j, "instructorinsightstext"),
                 "url": url_data,
                 "short_url": safe_get(j, "id"),
                 "description": safe_get(j, "description"),
@@ -307,7 +317,7 @@ class OCWParser(object):
             if d:
                 with open(path_to_containing_folder + file_name, "wb") as f:
                     data = base64.b64decode(d)
-                    f.write(data)
+                    safe_write(f, data)
                 update_file_location(self.master_json, url_path_to_media + file_name, safe_get(j, "_uid"))
                 log.info("Extracted %s", file_name)
             else:
