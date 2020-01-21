@@ -141,10 +141,16 @@ def test_upload_course_image(ocw_parser_s3, s3_bucket):
 
 def test_get_master_json(ocw_parser):
     """
-    Test that getting the master JSON is not None or empty and doesn't throw an exception
+    Test that getting the master JSON is not None or empty or missing basic properties 
+    and doesn't throw an exception
     """
     try:
-        assert ocw_parser.get_master_json()
+        master_json = ocw_parser.get_master_json()
+        assert master_json
+        assert master_json["uid"]
+        assert master_json["title"]
+        assert master_json["description"]
+        assert master_json["short_url"]
     except:
         fail("get_master_json raised an exception")
 
