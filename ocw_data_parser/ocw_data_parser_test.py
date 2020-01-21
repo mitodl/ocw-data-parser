@@ -10,6 +10,7 @@ import boto3
 from moto import mock_s3
 from ocw_data_parser.ocw_data_parser import CustomHTMLParser, OCWParser
 from ocw_data_parser.utils import update_file_location, get_binary_data, is_json, get_correct_path, load_json_file, print_error, print_success, safe_get, find_all_values_for_key
+import ocw_data_parser.test_constants as constants
 
 """
 Tests for OCW Parser
@@ -18,13 +19,13 @@ Tests for OCW Parser
 @pytest.fixture(autouse=True, scope="session")
 def s3_bucket():
     with mock_s3():
-        conn = boto3.client('s3',
+        conn = boto3.client("s3",
                             aws_access_key_id="testing",
                             aws_secret_access_key="testing")
         conn.create_bucket(Bucket="testing")
         responses.add_passthru("https://")
         responses.add_passthru("http://")
-        s3 = boto3.resource('s3',
+        s3 = boto3.resource("s3",
                             aws_access_key_id="testing",
                             aws_secret_access_key="testing")
         s3_bucket = s3.Bucket(name="testing")
@@ -35,18 +36,19 @@ def ocw_parser():
     """
     Instantiate an OCWParser object and run functions depending on args passed in
     """
-    yield OCWParser(course_dir="ocw_data_parser/test_json/course_dir",
-                        destination_dir="ocw_data_parser/test_json/destination_dir",
-                        static_prefix="static_files/")
-    destination_dir = "ocw_data_parser/test_json/destination_dir"
+    parser = OCWParser(course_dir=constants.COURSE_DIR,
+                        destination_dir=constants.DESTINATION_DIR,
+                        static_prefix=constants.STATIC_PREFIX)
+    yield parser
+    destination_dir = parser.destination_dir
     if os.path.isdir(destination_dir):
         shutil.rmtree(destination_dir)
 
 @pytest.fixture(autouse=True, scope="session")
 def ocw_parser_s3():
-    parser = OCWParser(course_dir="ocw_data_parser/test_json/course_dir",
-                        destination_dir="ocw_data_parser/test_json/destination_dir",
-                        static_prefix="static_files/")
+    parser = OCWParser(course_dir=constants.COURSE_DIR,
+                        destination_dir=constants.DESTINATION_DIR,
+                        static_prefix=constants.STATIC_PREFIX)
     parser.setup_s3_uploading(
         s3_bucket_name="testing",
         s3_bucket_access_key="testing",
@@ -72,7 +74,7 @@ def test_update_local_file_location(ocw_parser):
         test_file = ocw_parser.master_json["course_files"][0]
         original_location = test_file["file_location"]
         update_file_location(ocw_parser.master_json,
-                                'test_location', obj_uid=test_file["uid"])
+                                "test_location", obj_uid=test_file["uid"])
         assert original_location != ocw_parser.master_json["course_files"][0]["file_location"]
     else:
         fail("test course has no local media to test")
@@ -88,7 +90,7 @@ def test_update_foreign_file_location(ocw_parser):
         original_location = test_file["file_location"]
         original_filename = test_file["link"].split("/")[-1]
         update_file_location(ocw_parser.master_json,
-                                'test_location/' + original_filename)
+                                os.path.join("test_location/", original_filename))
         assert original_location != ocw_parser.master_json["course_foreign_files"][0]["file_location"]
     else:
         fail("test course has no foreign media to test")
@@ -115,7 +117,7 @@ def test_load_invalid_json_file(ocw_parser):
     """
     Test passing in an invalid JSON file (this one)
     """
-    assert load_json_file('ocw_data_parser/ocw_data_parser_test.py') is None
+    assert load_json_file("ocw_data_parser/ocw_data_parser_test.py") is None
 
 def test_print_error(ocw_parser):
     """
@@ -142,7 +144,7 @@ def test_safe_get_invalid_value(ocw_parser):
     test_dict = {
         "value_one": "1",
         "value_two": "2",
-        "actual_file_name": 'test'
+        "actual_file_name": "test"
     }
     assert safe_get(test_dict, "value_three", print_error_message=True) is None
 
@@ -159,9 +161,9 @@ def test_html_parser_output_list(ocw_parser):
     """
     Test passing in an output_list to the CustomHTMLParser
     """
-    output_list = ['test']
+    output_list = ["test"]
     parser = CustomHTMLParser(output_list=output_list)
-    assert 'test' == parser.output_list[0]
+    assert "test" == parser.output_list[0]
 
 def test_parser_loaded_jsons(ocw_parser):
     """
@@ -193,16 +195,16 @@ def test_load_raw_jsons_invalid_file(ocw_parser):
     """
     Add a json file with invalid content to the course_dir and make sure it generates an error
     """
-    with open("ocw_data_parser/test_json/course_dir/jsons/999.json", "w") as f:
+    with open(os.path.join(constants.COURSE_DIR, "jsons/999.json"), "w") as f:
         f.write("{")
     try:
-        OCWParser(course_dir="ocw_data_parser/test_json/course_dir",
-                destination_dir="ocw_data_parser/test_json/destination_dir",
-                static_prefix="static_files/")
+        OCWParser(course_dir=constants.COURSE_DIR,
+                destination_dir=constants.DESTINATION_DIR,
+                static_prefix=constants.STATIC_PREFIX)
         assert False
     except:
         assert True
-    os.remove("ocw_data_parser/test_json/course_dir/jsons/999.json")
+    os.remove(os.path.join(constants.COURSE_DIR, "jsons/999.json"))
 
 def test_upload_all_data_to_s3(ocw_parser_s3, s3_bucket):
     """
@@ -264,8 +266,8 @@ def test_uid(ocw_parser, course_id):
     Test that the uid property of the master JSON matches the uid of the course site root
     """
     ocw_parser.generate_static_site()
-    with open('ocw_data_parser/test_json/course_dir/jsons/1.json', 'r') as first_json:
+    with open(os.path.join(constants.COURSE_DIR, "jsons/1.json"), "r") as first_json:
         first_json_data = json.loads(first_json.read())
-        with open('ocw_data_parser/test_json/destination_dir/{}/master/master.json'.format(course_id), 'r') as master_json:
+        with open(os.path.join(constants.DESTINATION_DIR, course_id, "master/master.json"), "r") as master_json:
             master_json_data = json.loads(master_json.read())
             assert first_json_data["_uid"] == master_json_data["uid"]
