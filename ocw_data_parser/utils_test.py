@@ -42,10 +42,14 @@ def test_get_binary_data_none(ocw_parser):
     Find the first file without a datafield property and attempt to get the binary data from it
     """
     if len(ocw_parser.master_json["course_files"]) > 0:
+        found = False
         for media in ocw_parser.master_json["course_files"]:
             if "_datafield_image" not in media and "_datafield_file" not in media:
+                found = True
                 data = get_binary_data(media)
                 assert data is None
+        if not found:
+            fail("test course has no file without a datafield property")
     else:
         fail("test course has no local media to test")
 
