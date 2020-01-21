@@ -58,7 +58,7 @@ def test_get_correct_path_none(ocw_parser):
     """
     Test passing in invalid data to get_correct_path
     """
-    get_correct_path(None)
+    assert get_correct_path(None) == ""
 
 
 def test_load_invalid_json_file(ocw_parser):
