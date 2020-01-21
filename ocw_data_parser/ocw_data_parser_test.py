@@ -8,6 +8,7 @@ import shutil
 import responses
 import boto3
 from moto import mock_s3
+from tempfile import TemporaryDirectory
 from ocw_data_parser.ocw_data_parser import CustomHTMLParser, OCWParser
 from ocw_data_parser.utils import update_file_location, get_binary_data, is_json, get_correct_path, load_json_file, print_error, print_success, safe_get, find_all_values_for_key
 import ocw_data_parser.test_constants as constants
@@ -36,27 +37,25 @@ def ocw_parser():
     """
     Instantiate an OCWParser object and run functions depending on args passed in
     """
-    parser = OCWParser(course_dir=constants.COURSE_DIR,
-                        destination_dir=constants.DESTINATION_DIR,
-                        static_prefix=constants.STATIC_PREFIX)
-    yield parser
-    destination_dir = parser.destination_dir
-    if os.path.isdir(destination_dir):
-        shutil.rmtree(destination_dir)
+    with TemporaryDirectory() as destination_dir:
+        parser = OCWParser(course_dir=constants.COURSE_DIR,
+                            destination_dir=destination_dir,
+                            static_prefix=constants.STATIC_PREFIX)
+        yield parser
 
 @pytest.fixture(autouse=True, scope="session")
 def ocw_parser_s3():
-    parser = OCWParser(course_dir=constants.COURSE_DIR,
-                        destination_dir=constants.DESTINATION_DIR,
-                        static_prefix=constants.STATIC_PREFIX)
-    parser.setup_s3_uploading(
-        s3_bucket_name="testing",
-        s3_bucket_access_key="testing",
-        s3_bucket_secret_access_key="testing",
-        folder="testing"
-    )
-    
-    yield parser
+    with TemporaryDirectory() as destination_dir:
+        parser = OCWParser(course_dir=constants.COURSE_DIR,
+                            destination_dir=destination_dir,
+                            static_prefix=constants.STATIC_PREFIX)
+        parser.setup_s3_uploading(
+            s3_bucket_name="testing",
+            s3_bucket_access_key="testing",
+            s3_bucket_secret_access_key="testing",
+            folder="testing"
+        )
+        yield parser
 
 @pytest.fixture(autouse=True)
 def course_id(ocw_parser):
@@ -195,16 +194,17 @@ def test_load_raw_jsons_invalid_file(ocw_parser):
     """
     Add a json file with invalid content to the course_dir and make sure it generates an error
     """
-    with open(os.path.join(constants.COURSE_DIR, "jsons/999.json"), "w") as f:
-        f.write("{")
-    try:
-        OCWParser(course_dir=constants.COURSE_DIR,
-                destination_dir=constants.DESTINATION_DIR,
-                static_prefix=constants.STATIC_PREFIX)
-        assert False
-    except:
-        assert True
-    os.remove(os.path.join(constants.COURSE_DIR, "jsons/999.json"))
+    with TemporaryDirectory() as destination_dir:
+        with open(os.path.join(constants.COURSE_DIR, "jsons/999.json"), "w") as f:
+            f.write("{")
+        try:
+            OCWParser(course_dir=constants.COURSE_DIR,
+                    destination_dir=destination_dir,
+                    static_prefix=constants.STATIC_PREFIX)
+            assert False
+        except:
+            assert True
+        os.remove(os.path.join(constants.COURSE_DIR, "jsons/999.json"))
 
 def test_upload_all_data_to_s3(ocw_parser_s3, s3_bucket):
     """
@@ -268,6 +268,6 @@ def test_uid(ocw_parser, course_id):
     ocw_parser.generate_static_site()
     with open(os.path.join(constants.COURSE_DIR, "jsons/1.json"), "r") as first_json:
         first_json_data = json.loads(first_json.read())
-        with open(os.path.join(constants.DESTINATION_DIR, course_id, "master/master.json"), "r") as master_json:
+        with open(os.path.join(ocw_parser.destination_dir, "master/master.json"), "r") as master_json:
             master_json_data = json.loads(master_json.read())
             assert first_json_data["_uid"] == master_json_data["uid"]
