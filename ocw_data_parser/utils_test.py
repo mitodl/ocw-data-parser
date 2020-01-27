@@ -42,8 +42,7 @@ def test_get_binary_data_none(ocw_parser):
             found = True
             data = get_binary_data(media)
             assert data is None, "unexpected binary data in non _datafield_image or _datafield_file media"
-    if not found:
-        pytest.fail("test course has no file without a datafield property")
+    assert found, "test course has no file without a datafield property"
 
 def test_get_correct_path_none(ocw_parser):
     """
