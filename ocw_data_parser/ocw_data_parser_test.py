@@ -125,7 +125,7 @@ def test_set_s3_target_folder(ocw_parser_s3):
     """
     Test setting the s3 target folder
     """
-    assert "testing/" == ocw_parser_s3.s3_target_folder
+    assert "testing" == ocw_parser_s3.s3_target_folder
 
 def test_uid(ocw_parser, course_id):
     """
