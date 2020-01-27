@@ -28,10 +28,7 @@ def test_parser_loaded_jsons(ocw_parser):
     """
     Test instantiating a parser with preloaded jsons
     """
-    try:
-        assert OCWParser(loaded_jsons=ocw_parser.jsons)
-    except:
-        pytest.fail("instantiating parser with preloaded jsons failed")
+    assert OCWParser(loaded_jsons=ocw_parser.jsons), "instantiating parser with preloaded jsons failed"
 
 def test_generate_master_json_none_source(ocw_parser):
     """
@@ -93,15 +90,13 @@ def test_get_master_json(ocw_parser):
     Test that getting the master JSON is not None or empty or missing basic properties 
     and doesn't throw an exception
     """
-    try:
-        master_json = ocw_parser.get_master_json()
-        assert master_json
-        assert master_json["uid"]
-        assert master_json["title"]
-        assert master_json["description"]
-        assert master_json["short_url"]
-    except:
-        pytest.fail("get_master_json raised an exception")
+    fail_template = "failed to read {} property from master json"
+    master_json = ocw_parser.get_master_json()
+    assert master_json, "failed to get master json"
+    assert master_json["uid"], fail_template.format("uid")
+    assert master_json["title"], fail_template.format("title")
+    assert master_json["description"], fail_template.format("description")
+    assert master_json["short_url"], fail_template.format("short_url")
 
 def test_set_s3_bucket_name(ocw_parser_s3):
     """
