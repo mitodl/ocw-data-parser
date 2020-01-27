@@ -42,8 +42,9 @@ def load_json_file(path):
         try:
             loaded_json = json.load(f)
             return loaded_json
-        except json.JSONDecodeError:
+        except json.JSONDecodeError as err:
             log.exception("Failed to load %s", path)
+            raise err
 
 
 def print_error(message):

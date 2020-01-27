@@ -4,6 +4,8 @@ import pytest
 from tempfile import TemporaryDirectory
 from ocw_data_parser.ocw_data_parser import CustomHTMLParser, OCWParser
 import ocw_data_parser.test_constants as constants
+import logging
+log = logging.getLogger(__name__)
 
 """
 Tests for ocw_data_parser
@@ -54,13 +56,10 @@ def test_load_raw_jsons_invalid_file(ocw_parser):
     with TemporaryDirectory() as destination_dir:
         with open(os.path.join(constants.COURSE_DIR, "jsons/999.json"), "w") as f:
             f.write("{")
-        try:
+        with pytest.raises(json.decoder.JSONDecodeError):
             OCWParser(course_dir=constants.COURSE_DIR,
-                    destination_dir=destination_dir,
-                    static_prefix=constants.STATIC_PREFIX)
-            assert False
-        except:
-            assert True
+                        destination_dir=destination_dir,
+                        static_prefix=constants.STATIC_PREFIX)
         os.remove(os.path.join(constants.COURSE_DIR, "jsons/999.json"))
 
 def test_upload_all_data_to_s3(ocw_parser_s3, s3_bucket):
