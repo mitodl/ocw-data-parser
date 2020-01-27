@@ -1,6 +1,5 @@
 import os
 import pytest
-from ocw_data_parser.ocw_data_parser_test import ocw_parser
 from ocw_data_parser.utils import update_file_location, get_binary_data, is_json, get_correct_path, load_json_file, print_error, print_success, safe_get, find_all_values_for_key
 
 

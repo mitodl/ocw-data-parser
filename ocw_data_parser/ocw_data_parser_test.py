@@ -1,64 +1,13 @@
-"""
-Tests for ocw_data_parser
-"""
+import os
 import json
 import pytest
-import os
-import shutil
-import responses
-import boto3
-from moto import mock_s3
 from tempfile import TemporaryDirectory
 from ocw_data_parser.ocw_data_parser import CustomHTMLParser, OCWParser
 import ocw_data_parser.test_constants as constants
 
 """
-Tests for OCW Parser
+Tests for ocw_data_parser
 """
-
-@pytest.fixture(autouse=True, scope="session")
-def s3_bucket():
-    with mock_s3():
-        conn = boto3.client("s3",
-                            aws_access_key_id="testing",
-                            aws_secret_access_key="testing")
-        conn.create_bucket(Bucket="testing")
-        responses.add_passthru("https://")
-        responses.add_passthru("http://")
-        s3 = boto3.resource("s3",
-                            aws_access_key_id="testing",
-                            aws_secret_access_key="testing")
-        s3_bucket = s3.Bucket(name="testing")
-        yield s3_bucket
-
-@pytest.fixture(autouse=True, scope="function")
-def ocw_parser():
-    """
-    Instantiate an OCWParser object and run functions depending on args passed in
-    """
-    with TemporaryDirectory() as destination_dir:
-        parser = OCWParser(course_dir=constants.COURSE_DIR,
-                            destination_dir=destination_dir,
-                            static_prefix=constants.STATIC_PREFIX)
-        yield parser
-
-@pytest.fixture(autouse=True, scope="session")
-def ocw_parser_s3():
-    with TemporaryDirectory() as destination_dir:
-        parser = OCWParser(course_dir=constants.COURSE_DIR,
-                            destination_dir=destination_dir,
-                            static_prefix=constants.STATIC_PREFIX)
-        parser.setup_s3_uploading(
-            s3_bucket_name="testing",
-            s3_bucket_access_key="testing",
-            s3_bucket_secret_access_key="testing",
-            folder="testing"
-        )
-        yield parser
-
-@pytest.fixture(autouse=True)
-def course_id(ocw_parser):
-    yield ocw_parser.master_json["short_url"]
 
 def test_no_params(ocw_parser):
     """
@@ -82,7 +31,7 @@ def test_parser_loaded_jsons(ocw_parser):
     try:
         assert OCWParser(loaded_jsons=ocw_parser.jsons)
     except:
-        fail("instantiating parser with preloaded jsons failed")
+        pytest.fail("instantiating parser with preloaded jsons failed")
 
 def test_generate_master_json_none_source(ocw_parser):
     """
@@ -152,7 +101,7 @@ def test_get_master_json(ocw_parser):
         assert master_json["description"]
         assert master_json["short_url"]
     except:
-        fail("get_master_json raised an exception")
+        pytest.fail("get_master_json raised an exception")
 
 def test_set_s3_bucket_name(ocw_parser_s3):
     """
