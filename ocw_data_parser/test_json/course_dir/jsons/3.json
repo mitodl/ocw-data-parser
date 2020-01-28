@@ -1,18 +1,22 @@
 {
-    "text": "", 
+    "text": "<h2 class=\"subhead\">Course Meeting Times</h2> <p>Lectures: 3 sessions / week, 1 hour / session</p> <p>Recitations: 1 session / week, 1 hour / session</p> <h2 class=\"subhead\">Prerequisites</h2> <p>Multivariable Calculus (18.02)</p> <h2 class=\"subhead\">Text</h2> <p>The readings are assigned in: <a href=\"http://www.amazon.com/exec/obidos/ASIN/0980232716/ref=nosim/mitopencourse-20\"><img src=\"/images/a_logo_17.gif\" alt=\"Buy at Amazon\" align=\"absMiddle\" border=\"0\" /></a> Strang, Gilbert. <em>Introduction to Linear Algebra</em>. 4th ed. <a href=\"http://www.wellesleycambridge.com/\">Wellesley-Cambridge Press</a>, 2009. ISBN: 9780980232714.</p> <p>Reading assignments are also provided for the newer edition: <a href=\"http://www.amazon.com/exec/obidos/ASIN/0980232775/ref=nosim/mitopencourse-20\"><img alt=\"Buy at Amazon\" src=\"/images/a_logo_17.gif\" align=\"absmiddle\" border=\"0\" /></a> Strang, Gilbert. <em>Introduction to Linear Algebra</em>. 5th ed. <a href=\"http://www.wellesleycambridge.com/\">Wellesley-Cambridge Press</a>, 2016. ISBN: 9780980232776.</p> <p>NOTE: More material on linear algebra (and much more about differential equations) is in Professor Strang's 2014 textbook  <em><a href=\"http://www-math.mit.edu/~gs/dela\">Differential Equations and Linear Algebra</a></em>. In 2016, the textbook was developed into a series of 55 short videos,&nbsp;<em><a href=\"http://ocw.mit.edu/resources/res-18-009-learn-differential-equations-up-close-with-gilbert-strang-and-cleve-moler-fall-2015/index.htm\">Learn Differential Equations: Up Close with Gilbert Strang and Cleve Moler</a>.</em></p> <h2 class=\"subhead\">Goals</h2> <p>The goals for 18.06 are using matrices and also understanding them.</p> <p>Here are key computations and some of the ideas behind them:</p> <ol>     <li>Solving Ax = b for square systems by elimination (pivots, multipliers, back substitution, invertibility of A, factorization into A = LU)</li>     <li>Complete solution to Ax = b (column space containing b, rank of A, nullspace of A and special solutions to Ax = 0 from row reduced R)</li>     <li>Basis and dimension (bases for the four fundamental subspaces)</li>     <li>Least squares solutions (closest line by understanding projections)</li>     <li>Orthogonalization by Gram-Schmidt (factorization into A = QR)</li>     <li>Properties of determinants (leading to the cofactor formula and the sum over all n! permutations, applications to inv(A) and volume)</li>     <li>Eigenvalues and eigenvectors (diagonalizing A, computing powers A^k and matrix exponentials to solve difference and differential equations)</li>     <li>Symmetric matrices and positive definite matrices (real eigenvalues and orthogonal eigenvectors, tests for x'Ax &gt; 0, applications)</li>     <li>Linear transformations and change of basis (connected to the Singular Value Decomposition - orthonormal bases that diagonalize A)</li>     <li>Linear algebra in engineering (graphs and networks, Markov matrices, Fourier matrix, Fast Fourier Transform, linear programming)</li> </ol> <h2 class=\"subhead\">Homework</h2> <p>The homeworks are essential in learning linear algebra. They are not a test and you are encouraged to talk to other students about difficult problems-after you have found them difficult. Talking about linear algebra is healthy. But you must write your own solutions.</p> <h2 class=\"subhead\">Exams</h2> <p>There will be three one-hour exams at class times and a final exam. The use of calculators or notes is not permitted during the exams.</p> <h2 class=\"subhead\">Grading</h2> <div class=\"maintabletemplate\"><table summary=\"See table caption for summary.\" class=\"tablewidth50\">     <caption class=\"invisible\">Grading criteria.</caption>     <thead>         <tr>             <th scope=\"col\">ACTIVITIES</th>             <th scope=\"col\">PERCENTAGES</th>         </tr>     </thead>     <tbody>         <tr class=\"row\">             <td>Problem sets</td>             <td>15%</td>         </tr>         <tr class=\"alt-row\">             <td>Three one-hour exams</td>             <td>45%</td>         </tr>         <tr class=\"row\">             <td>Final exam</td>             <td>40%</td>         </tr>     </tbody> </table></div> <h2 class=\"subhead\">MATLAB&reg;</h2> <p>Some homework problems will require you to use MATLAB, an important tool for numerical linear algebra. No previous MATLAB experience is required in 18.06. The <a href=\"/courses/mathematics/18-06-linear-algebra-spring-2010/related-resources\">related resources</a> section has links to information about MATLAB, including a tutorial.</p>", 
     "_content_type_license": "text/plain", 
-    "_uid": "116709acea0fddb3156e56bc040f1cca", 
+    "_uid": "ede17211bd49ea166ed701f09c1de288", 
     "title": "Syllabus", 
     "_ac_local_roles": {
-        "admin": [
+        "cc_saror4": [
             "Owner"
         ]
     }, 
     "location": "", 
     "_content_type_course_identifier": "text/plain", 
-    "_atbrefs": {}, 
+    "_atbrefs": {
+        "isReferencing": [
+            "ede17211bd49ea166ed701f09c1de288"
+        ]
+    }, 
     "constrainTypesMode": 0, 
-    "technical_location": "https://ocw.mit.edu/courses/brain-and-cognitive-sciences/9-15-biochemistry-and-pharmacology-of-synaptic-transmission-fall-2001/syllabus", 
+    "technical_location": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/syllabus", 
     "software_requirements": [
         {
             "software_type_col": "Browser", 
@@ -47,8 +51,10 @@
     ], 
     "_content_type_technical_location": "text/plain", 
     "_content_type_rights": "text/html", 
-    "_directly_provided": [], 
-    "parent_uid": "e4d2ddd169d2aeee91fdf2ef9d7d6bc2", 
+    "_directly_provided": [
+        "Products.CMFEditions.interfaces.IVersioned"
+    ], 
+    "parent_uid": "aabc44bdb2e45374d62f30f2a6d4c63e", 
     "excludeFromNav": false, 
     "_content_type_unique_identifier": "text/plain", 
     "allowDiscussion": false, 
@@ -59,8 +65,9 @@
         "OCWExtFile", 
         "OCWFile"
     ], 
+    "_content_type_text": "text/html", 
     "ad_type": "HOUSE", 
-    "creation_date": "2010/07/08 02:30:10.569 GMT-4", 
+    "creation_date": "2010/05/14 12:21:47.138 GMT-4", 
     "aggregationlevel": 3, 
     "duration": "", 
     "immediatelyAddableTypes": [
@@ -71,8 +78,8 @@
     ], 
     "subject": [], 
     "_content_type_short_page_title": "text/plain", 
-    "effectiveDate": "None", 
-    "parent_module": "e4d2ddd169d2aeee91fdf2ef9d7d6bc2", 
+    "effectiveDate": "2010/09/03 02:55:27.128 GMT-4", 
+    "parent_module": "aabc44bdb2e45374d62f30f2a6d4c63e", 
     "is_mathml_document": false, 
     "bottomtext": "", 
     "short_page_title": "Syllabus", 
@@ -85,30 +92,128 @@
             {
                 "action": null, 
                 "review_state": "waiting_for_authoring", 
-                "comments": "", 
                 "actor": "admin", 
-                "time": "2010/07/08 02:30:10.575 GMT-4"
+                "comments": "", 
+                "time": "2010/05/14 12:21:47.144 GMT-4"
             }, 
             {
                 "action": "approve_to_staging", 
                 "review_state": "ready_for_staging", 
-                "actor": "admin", 
                 "comments": "", 
-                "time": "2010/07/08 09:29:08.512 GMT-4"
+                "actor": "admin", 
+                "time": "2010/05/16 11:42:28.092 GMT-4"
+            }, 
+            {
+                "action": null, 
+                "review_state": "waiting_for_authoring", 
+                "comments": "", 
+                "actor": "cc_saror4", 
+                "time": "2010/08/17 00:14:19.472 GMT-4"
+            }, 
+            {
+                "action": "approve_to_staging", 
+                "review_state": "ready_for_staging", 
+                "actor": "cc_gegrov", 
+                "comments": "", 
+                "time": "2010/09/03 02:55:27.165 GMT-4"
             }, 
             {
                 "action": "decline", 
                 "review_state": "waiting_for_authoring", 
                 "comments": "", 
-                "actor": "hdesai", 
-                "time": "2010/07/17 01:04:22.704 GMT-4"
+                "actor": "cc_ajsing", 
+                "time": "2010/09/03 07:07:47.579 GMT-4"
             }, 
             {
                 "action": "approve_to_staging", 
                 "review_state": "ready_for_staging", 
-                "actor": "admin", 
+                "actor": "cc_ajsing", 
                 "comments": "", 
-                "time": "2010/07/17 11:18:01.892 GMT-4"
+                "time": "2010/09/03 09:34:13.606 GMT-4"
+            }, 
+            {
+                "action": "decline_to_qa", 
+                "review_state": "waiting_for_qa", 
+                "comments": "", 
+                "actor": "eliz", 
+                "time": "2014/06/02 17:42:13.515 GMT-4"
+            }, 
+            {
+                "action": "approve_to_staging", 
+                "review_state": "ready_for_staging", 
+                "actor": "eliz", 
+                "comments": "", 
+                "time": "2014/06/06 10:57:52.087 GMT-4"
+            }, 
+            {
+                "action": "decline_to_qa", 
+                "review_state": "waiting_for_qa", 
+                "comments": "", 
+                "actor": "eliz", 
+                "time": "2016/05/10 14:56:15.681 GMT-4"
+            }, 
+            {
+                "action": "approve_to_staging", 
+                "review_state": "ready_for_staging", 
+                "actor": "eliz", 
+                "comments": "", 
+                "time": "2016/05/10 15:07:09.680 GMT-4"
+            }, 
+            {
+                "action": "decline_to_qa", 
+                "review_state": "waiting_for_qa", 
+                "comments": "", 
+                "actor": "eliz", 
+                "time": "2016/06/14 11:02:00.330 GMT-4"
+            }, 
+            {
+                "action": "approve_to_staging", 
+                "review_state": "ready_for_staging", 
+                "actor": "eliz", 
+                "comments": "", 
+                "time": "2016/06/14 11:06:28.164 GMT-4"
+            }, 
+            {
+                "action": "decline_to_qa", 
+                "review_state": "waiting_for_qa", 
+                "comments": "", 
+                "actor": "eliz", 
+                "time": "2017/08/21 10:56:46.990 GMT-4"
+            }, 
+            {
+                "action": "approve_to_staging", 
+                "review_state": "ready_for_staging", 
+                "actor": "eliz", 
+                "comments": "", 
+                "time": "2017/08/28 11:10:00.606 GMT-4"
+            }, 
+            {
+                "action": "decline", 
+                "review_state": "waiting_for_authoring", 
+                "comments": "", 
+                "actor": "asingh33", 
+                "time": "2017/08/30 00:32:52.993 GMT-4"
+            }, 
+            {
+                "action": "approve_to_staging", 
+                "review_state": "ready_for_staging", 
+                "actor": "asingh33", 
+                "comments": "", 
+                "time": "2017/08/30 00:42:27.005 GMT-4"
+            }, 
+            {
+                "action": "decline", 
+                "review_state": "waiting_for_authoring", 
+                "comments": "", 
+                "actor": "asingh33", 
+                "time": "2017/08/30 00:48:38.848 GMT-4"
+            }, 
+            {
+                "action": "approve_to_staging", 
+                "review_state": "ready_for_staging", 
+                "actor": "asingh33", 
+                "comments": "", 
+                "time": "2017/08/30 01:05:38.633 GMT-4"
             }
         ]
     }, 
@@ -127,9 +232,7 @@
     "short_name_tlp": "Syllabus", 
     "expirationDate": "None", 
     "_content_type_id": "text/plain", 
-    "contributor_list": [
-        {}
-    ], 
+    "contributor_list": [], 
     "is_media_gallery": false, 
     "contributors": [], 
     "_gopip": 1, 
@@ -137,35 +240,39 @@
     "course_linking": [], 
     "_atrefs": {
         "BelongsTo": [
-            "e4d2ddd169d2aeee91fdf2ef9d7d6bc2"
+            "aabc44bdb2e45374d62f30f2a6d4c63e"
+        ], 
+        "isReferencing": [
+            "ede17211bd49ea166ed701f09c1de288", 
+            "6d4babc3884f613c593e2df8ac802a95"
         ]
     }, 
     "other_platform_requirements": "", 
     "license": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/", 
     "rights": "This site (c) Massachusetts Institute of Technology 2010.  Content within individual courses is (c) by the individual authors unless otherwise noted. The Massachusetts Institute of Technology is providing this Work (as defined below) under the terms of this Creative Commons public license (\"CCPL\" or \"license\") unless otherwise noted. The Work is protected by copyright and/or other applicable law. Any use of the work other than as authorized under this license is prohibited. By exercising any of the rights to the Work provided here, You (as defined below) accept and agree to be bound by the terms of this license. The Licensor, the Massachusetts Institute of Technology, grants You the rights contained here in consideration of Your acceptance of such terms and conditions.", 
-    "hide_Page_title": null, 
+    "hide_Page_title": false, 
     "_defaultpage": "", 
     "tcATmit_subject_tags": [], 
     "features_tracking": [], 
     "ad_champion_text": "", 
     "has_inline_embed": false, 
-    "unique_identifier": "https://ocw.mit.edu/courses/brain-and-cognitive-sciences/9-15-biochemistry-and-pharmacology-of-synaptic-transmission-fall-2001/syllabus", 
+    "unique_identifier": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/syllabus", 
     "is_image_gallery": false, 
     "id": "syllabus", 
     "materialtype": "Other", 
     "_type": "CourseSection", 
-    "description": "A description of the course, term paper, text and exams.", 
-    "course_identifier": "https://ocw.mit.edu/courses/brain-and-cognitive-sciences/9-15-biochemistry-and-pharmacology-of-synaptic-transmission-fall-2001", 
+    "description": "This syllabus section provides information on course goals, meeting times, prerequisites, required text, homework, exams, grading, and tools for numerical linear algebra.", 
+    "course_identifier": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010", 
     "_content_type_publisher": "text/plain", 
     "tcATmit_instructional_tags": [], 
     "_content_type": "text/html", 
     "creators": [
         "admin"
     ], 
-    "modification_date": "2016/09/24 06:35:41.992 GMT-4", 
+    "modification_date": "2017/08/30 01:05:38.596 GMT-4", 
     "always_publish": false, 
     "_content_type_description": "text/plain", 
-    "_owner": "admin", 
+    "_owner": null, 
     "_permissions": {
         "Change portal events": {
             "acquire": false, 
@@ -215,5 +322,5 @@
     "_id": "syllabus", 
     "courselist_features": [], 
     "_content_type_short_name_tlp": "text/plain", 
-    "_path": "/Plone/courses/brain-and-cognitive-sciences/9-15-biochemistry-and-pharmacology-of-synaptic-transmission-fall-2001/syllabus"
+    "_path": "/Plone/courses/mathematics/18-06-linear-algebra-spring-2010/syllabus"
 }

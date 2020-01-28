@@ -1,0 +1,185 @@
+{
+    "expanded_alternate_text": "", 
+    "features_tracking": [], 
+    "widgets_features": [], 
+    "contributors": [], 
+    "tcATmit_subject_tags": [], 
+    "unique_identifier": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-31-change-of-basis-image-compression/18.06_L31.jpg", 
+    "_content_type_publisher": "text/plain", 
+    "_content_type_license": "text/plain", 
+    "_datafield_image": {
+        "encoding": "base64", 
+        "data": "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", 
+        "content_type": "image/jpeg", 
+        "filename": "18.06_L31.jpg"
+    }, 
+    "aggregationlevel": 2, 
+    "_uid": "add714b296f26d5dd4d29cc93cceb105", 
+    "_workflow_history": {
+        "one_state_workflow": [
+            {
+                "action": null, 
+                "review_state": "published", 
+                "actor": "Jcplayer", 
+                "comments": "", 
+                "time": "2010/10/08 14:01:21.254 GMT-4"
+            }
+        ]
+    }, 
+    "expirationDate": "None", 
+    "_content_type_id": "text/plain", 
+    "duration": "", 
+    "contributor_list": [], 
+    "id": "18.06_L31.jpg", 
+    "related_mit_links": "", 
+    "thumb_height": "", 
+    "effectiveDate": "None", 
+    "title": "18.06_L31.jpg", 
+    "_layout": "view", 
+    "parent_module": "aabc44bdb2e45374d62f30f2a6d4c63e", 
+    "_content_type": "image/jpeg", 
+    "_userdefined_roles": [], 
+    "_gopip": 0, 
+    "location": "", 
+    "_atrefs": {
+        "BelongsTo": [
+            "aabc44bdb2e45374d62f30f2a6d4c63e"
+        ]
+    }, 
+    "_content_type_course_identifier": "text/plain", 
+    "_content_type_title": "text/plain", 
+    "section_identifier": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures", 
+    "_atbrefs": {
+        "thumbnail_image": [
+            "4371dc4a06f111ab06b96f4db31262c0"
+        ], 
+        "file_reference": [
+            "5b13e07e76a71500f251663960853d0b"
+        ]
+    }, 
+    "creation_date": "2010/10/08 14:01:21.246 GMT-4", 
+    "_content_type_section_identifier": "text/plain", 
+    "_type": "OCWImage", 
+    "technical_location": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-31-change-of-basis-image-compression/18.06_L31.jpg", 
+    "description": "", 
+    "thumb_width": "", 
+    "software_requirements": [
+        {
+            "software_type_col": "Browser", 
+            "minimum_version_col": "40.0", 
+            "software_name_col": "Chrome", 
+            "maximum_version_col": ""
+        }, 
+        {
+            "software_type_col": "Browser", 
+            "minimum_version_col": "8.0", 
+            "software_name_col": "Safari", 
+            "maximum_version_col": ""
+        }, 
+        {
+            "software_type_col": "Browser", 
+            "minimum_version_col": "38.0", 
+            "software_name_col": "Mozilla Firefox", 
+            "maximum_version_col": ""
+        }, 
+        {
+            "software_type_col": "Browser", 
+            "minimum_version_col": "9.0", 
+            "software_name_col": "Internet Explorer", 
+            "maximum_version_col": ""
+        }, 
+        {
+            "software_type_col": "Browser", 
+            "minimum_version_col": "13.1", 
+            "software_name_col": "Edge", 
+            "maximum_version_col": ""
+        }
+    ], 
+    "_content_type_technical_location": "text/plain", 
+    "alternate_text": "", 
+    "credit": "", 
+    "subject": [], 
+    "_content_type_rights": "text/html", 
+    "course_identifier": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010", 
+    "_directly_provided": [], 
+    "other_platform_requirements": "", 
+    "_id": "18.06_L31.jpg", 
+    "_classname": "OCWImage", 
+    "metadata_contributor_list": [
+        {
+            "md_contributor_uid": "", 
+            "md_contributor_entity": "Todd Rautenberg", 
+            "md_contributor_hide": "", 
+            "md_contributor_special_title": "", 
+            "md_contributor_role": "Validator"
+        }, 
+        {
+            "md_contributor_uid": "", 
+            "md_contributor_entity": "Todd Rautenberg", 
+            "md_contributor_hide": "", 
+            "md_contributor_special_title": "", 
+            "md_contributor_role": "Creator"
+        }
+    ], 
+    "tcATmit_instructional_tags": [], 
+    "caption": "", 
+    "parent_uid": "4371dc4a06f111ab06b96f4db31262c0", 
+    "modification_date": "2016/09/24 04:34:10.890 GMT-4", 
+    "course_linking": [], 
+    "publisher": "MIT OpenCourseWare", 
+    "excludeFromNav": false, 
+    "feature_requirements": [], 
+    "language": "", 
+    "license": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/", 
+    "rights": "This site (c) Massachusetts Institute of Technology 2010.  Content within individual courses is (c) by the individual authors unless otherwise noted. The Massachusetts Institute of Technology is providing this Work (as defined below) under the terms of this Creative Commons public license (\"CCPL\" or \"license\") unless otherwise noted. The Work is protected by copyright and/or other applicable law. Any use of the work other than as authorized under this license is prohibited. By exercising any of the rights to the Work provided here, You (as defined below) accept and agree to be bound by the terms of this license. The Licensor, the Massachusetts Institute of Technology, grants You the rights contained here in consideration of Your acceptance of such terms and conditions.", 
+    "always_publish": false, 
+    "popup_image_id": "", 
+    "materialtype": "Other", 
+    "_content_type_unique_identifier": "text/plain", 
+    "category_features": [], 
+    "is_pop_up_image": false, 
+    "_owner": null, 
+    "_defaultpage": "index_html", 
+    "firstTimeEdit": true, 
+    "_permissions": {
+        "Modify portal content": {
+            "acquire": false, 
+            "roles": [
+                "Editor", 
+                "Manager", 
+                "Owner"
+            ]
+        }, 
+        "Access contents information": {
+            "acquire": false, 
+            "roles": [
+                "Anonymous"
+            ]
+        }, 
+        "View": {
+            "acquire": false, 
+            "roles": [
+                "Anonymous"
+            ]
+        }
+    }, 
+    "_properties": [
+        [
+            "title", 
+            "18.06_L31.jpg", 
+            "string"
+        ]
+    ], 
+    "allowDiscussion": false, 
+    "_content_type_materialtype": "text/plain", 
+    "creators": [
+        "Jcplayer"
+    ], 
+    "courselist_features": [], 
+    "_ac_local_roles": {
+        "Jcplayer": [
+            "Owner"
+        ]
+    }, 
+    "_path": "/Plone/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-31-change-of-basis-image-compression/18.06_L31.jpg"
+}
