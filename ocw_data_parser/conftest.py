@@ -5,6 +5,7 @@ import responses
 import boto3
 from moto import mock_s3
 from ocw_data_parser.ocw_data_parser import OCWParser
+from tempfile import TemporaryDirectory
 
 @pytest.fixture(autouse=True, scope="session")
 def s3_bucket():
@@ -26,12 +27,10 @@ def ocw_parser():
     """
     Instantiate an OCWParser object and run functions depending on args passed in
     """
-    yield OCWParser(course_dir="ocw_data_parser/test_json/course_dir",
-                        destination_dir="ocw_data_parser/test_json/destination_dir",
-                        static_prefix="static_files/")
-    destination_dir = "ocw_data_parser/test_json/destination_dir"
-    if os.path.isdir(destination_dir):
-        shutil.rmtree(destination_dir)
+    with TemporaryDirectory() as destination_dir:
+        yield OCWParser(course_dir="ocw_data_parser/test_json/course_dir",
+                            destination_dir=destination_dir,
+                            static_prefix="static_files/")
 
 @pytest.fixture(autouse=True, scope="function")
 def ocw_parser_s3(ocw_parser):
