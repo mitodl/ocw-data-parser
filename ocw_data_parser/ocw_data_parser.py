@@ -222,6 +222,7 @@ class OCWParser(object):
         def _compose_media_dict(j):
             return {
                 "uid": safe_get(j, "_uid"),
+                "id": safe_get(j, "id"),
                 "parent_uid": safe_get(j, "parent_uid"),
                 "title": safe_get(j, "title"),
                 "caption": safe_get(j, "caption"),
