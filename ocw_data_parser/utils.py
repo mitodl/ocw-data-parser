@@ -6,6 +6,9 @@ log = logging.getLogger(__name__)
 
 def update_file_location(master_json, new_file_location, obj_uid=""):
     if obj_uid:
+        for p in master_json["course_pages"]:
+            if p["uid"] == obj_uid:
+                p["file_location"] = new_file_location
         for j in master_json["course_files"]:
             if j["uid"] == obj_uid:
                 j["file_location"] = new_file_location

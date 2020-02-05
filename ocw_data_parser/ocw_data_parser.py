@@ -198,7 +198,8 @@ class OCWParser(object):
                 "short_url": safe_get(j, "id"),
                 "description": safe_get(j, "description"),
                 "type": safe_get(j, "_type"),
-                "is_media_gallery": safe_get(j, "is_media_gallery")
+                "is_media_gallery": safe_get(j, "is_media_gallery"),
+                "file_location": safe_get(j, "_uid") + "_" + safe_get(j, "id") + ".html"
             }
             if "media_location" in j and j["media_location"] and j["_content_type"] == "text/html":
                 page_dict["youtube_id"] = j["media_location"]
@@ -303,6 +304,13 @@ class OCWParser(object):
             if self.static_prefix else self.destination_dir + "output/static_files/"
         url_path_to_media = self.static_prefix if self.static_prefix else path_to_containing_folder
         os.makedirs(path_to_containing_folder, exist_ok=True)
+        for p in self.compose_pages():
+            if safe_get(p, "text"):
+                file_name = safe_get(p, "uid") + "_" + safe_get(p, "short_url") + ".html"
+                with open(path_to_containing_folder + file_name, "w") as f:
+                    f.write("<html><head></head><body>")
+                    f.write(safe_get(p, "text"))
+                    f.write("</body></html>")
         for j in self.media_jsons:
             file_name = safe_get(j, "_uid") + "_" + safe_get(j, "id")
             d = get_binary_data(j)
@@ -377,6 +385,12 @@ class OCWParser(object):
                                    aws_secret_access_key=self.s3_bucket_secret_access_key
                                    ).Bucket(self.s3_bucket_name)
         # Upload static files first
+        for p in self.compose_pages():
+            if safe_get(p, "text"):
+                file_name = safe_get(p, "uid") + "_" + safe_get(p, "short_url") + ".html"
+                html = "<html><head></head><body>" + safe_get(p, "text") + "</body></html>"
+                s3_bucket.put_object(Key=self.s3_target_folder + file_name, Body=html, ACL="public-read")
+                update_file_location(self.master_json, bucket_base_url + file_name, safe_get(p, "uid"))
         for file in self.media_jsons:
             uid = safe_get(file, "_uid")
             filename = uid + "_" + safe_get(file, "id")
