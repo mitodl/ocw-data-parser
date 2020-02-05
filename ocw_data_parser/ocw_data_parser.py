@@ -7,7 +7,7 @@ import base64
 from requests import get
 import boto3
 from ocw_data_parser.utils import update_file_location, get_binary_data, is_json, get_correct_path, load_json_file, safe_get, \
-    find_all_values_for_key
+    find_all_values_for_key, htmlify
 import json
 from smart_open import smart_open
 from ocw_data_parser.static_html_generator import generate_html_for_course
@@ -306,12 +306,10 @@ class OCWParser(object):
         url_path_to_media = self.static_prefix if self.static_prefix else path_to_containing_folder
         os.makedirs(path_to_containing_folder, exist_ok=True)
         for p in self.compose_pages():
-            if safe_get(p, "text"):
-                file_name = safe_get(p, "uid") + "_" + safe_get(p, "short_url") + ".html"
-                with open(path_to_containing_folder + file_name, "w") as f:
-                    f.write("<html><head></head><body>")
-                    f.write(safe_get(p, "text"))
-                    f.write("</body></html>")
+            filename, html = htmlify(p)
+            if filename and html:
+                with open(path_to_containing_folder + filename, "w") as f:
+                    f.write(html)
         for j in self.media_jsons:
             file_name = safe_get(j, "_uid") + "_" + safe_get(j, "id")
             d = get_binary_data(j)
@@ -387,11 +385,10 @@ class OCWParser(object):
                                    ).Bucket(self.s3_bucket_name)
         # Upload static files first
         for p in self.compose_pages():
-            if safe_get(p, "text"):
-                file_name = safe_get(p, "uid") + "_" + safe_get(p, "short_url") + ".html"
-                html = "<html><head></head><body>" + safe_get(p, "text") + "</body></html>"
-                s3_bucket.put_object(Key=self.s3_target_folder + file_name, Body=html, ACL="public-read")
-                update_file_location(self.master_json, bucket_base_url + file_name, safe_get(p, "uid"))
+            filename, html = htmlify(p)
+            if filename and html:
+                s3_bucket.put_object(Key=self.s3_target_folder + filename, Body=html, ACL="public-read")
+                update_file_location(self.master_json, bucket_base_url + filename, safe_get(p, "uid"))
         for file in self.media_jsons:
             uid = safe_get(file, "_uid")
             filename = uid + "_" + safe_get(file, "id")

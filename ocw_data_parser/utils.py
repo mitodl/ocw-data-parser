@@ -78,3 +78,11 @@ def find_all_values_for_key(jsons, key="_content_type"):
         if value in result:
             result.remove(value)
     return result
+
+def htmlify(page):
+    safe_text = safe_get(page, "text")
+    if safe_text:
+        file_name = safe_get(page, "uid") + "_" + safe_get(page, "short_url") + ".html"
+        html = "<html><head></head><body>" + safe_text + "</body></html>"
+        return file_name, html
+    return None, None
