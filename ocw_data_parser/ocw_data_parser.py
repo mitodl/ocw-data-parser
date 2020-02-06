@@ -7,7 +7,7 @@ import base64
 from requests import get
 import boto3
 from ocw_data_parser.utils import update_file_location, get_binary_data, is_json, get_correct_path, load_json_file, safe_get, \
-    find_all_values_for_key
+    find_all_values_for_key, htmlify
 import json
 from smart_open import smart_open
 from ocw_data_parser.static_html_generator import generate_html_for_course
@@ -198,7 +198,8 @@ class OCWParser(object):
                 "short_url": safe_get(j, "id"),
                 "description": safe_get(j, "description"),
                 "type": safe_get(j, "_type"),
-                "is_media_gallery": safe_get(j, "is_media_gallery")
+                "is_media_gallery": safe_get(j, "is_media_gallery"),
+                "file_location": safe_get(j, "_uid") + "_" + safe_get(j, "id") + ".html"
             }
             if "media_location" in j and j["media_location"] and j["_content_type"] == "text/html":
                 page_dict["youtube_id"] = j["media_location"]
@@ -221,6 +222,7 @@ class OCWParser(object):
         def _compose_media_dict(j):
             return {
                 "uid": safe_get(j, "_uid"),
+                "id": safe_get(j, "id"),
                 "parent_uid": safe_get(j, "parent_uid"),
                 "title": safe_get(j, "title"),
                 "caption": safe_get(j, "caption"),
@@ -303,6 +305,11 @@ class OCWParser(object):
             if self.static_prefix else self.destination_dir + "output/static_files/"
         url_path_to_media = self.static_prefix if self.static_prefix else path_to_containing_folder
         os.makedirs(path_to_containing_folder, exist_ok=True)
+        for p in self.compose_pages():
+            filename, html = htmlify(p)
+            if filename and html:
+                with open(path_to_containing_folder + filename, "w") as f:
+                    f.write(html)
         for j in self.media_jsons:
             file_name = safe_get(j, "_uid") + "_" + safe_get(j, "id")
             d = get_binary_data(j)
@@ -377,6 +384,11 @@ class OCWParser(object):
                                    aws_secret_access_key=self.s3_bucket_secret_access_key
                                    ).Bucket(self.s3_bucket_name)
         # Upload static files first
+        for p in self.compose_pages():
+            filename, html = htmlify(p)
+            if filename and html:
+                s3_bucket.put_object(Key=self.s3_target_folder + filename, Body=html, ACL="public-read")
+                update_file_location(self.master_json, bucket_base_url + filename, safe_get(p, "uid"))
         for file in self.media_jsons:
             uid = safe_get(file, "_uid")
             filename = uid + "_" + safe_get(file, "id")

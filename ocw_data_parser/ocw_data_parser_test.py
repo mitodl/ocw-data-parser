@@ -67,11 +67,16 @@ def test_upload_all_data_to_s3(ocw_parser_s3, s3_bucket):
     Use moto (mock boto) to test s3 uploading
     """
     ocw_parser_s3.upload_all_media_to_s3(upload_master_json=True)
-    course_image_key = None
-    for bucket_item in s3_bucket.objects.filter(Prefix=ocw_parser_s3.s3_target_folder):
-        if bucket_item.key in ocw_parser_s3.course_image_s3_link:
-            course_image_key = bucket_item.key
-    assert course_image_key is not None
+    master_json = ocw_parser_s3.get_master_json()
+    for p in master_json["course_pages"]:
+        if p["text"]:
+            for bucket_item in s3_bucket.objects.filter(Prefix=ocw_parser_s3.s3_target_folder):
+                if bucket_item.key in p["file_location"]:
+                    assert bucket_item.key == ocw_parser_s3.s3_target_folder + p["uid"] + "_" + p["short_url"] + ".html"
+    for f in master_json["course_files"]:
+        for bucket_item in s3_bucket.objects.filter(Prefix=ocw_parser_s3.s3_target_folder):
+            if bucket_item.key in f["file_location"]:
+                assert bucket_item.key == ocw_parser_s3.s3_target_folder + f["uid"] + "_" + f["id"]
 
 def test_upload_course_image(ocw_parser_s3, s3_bucket):
     """

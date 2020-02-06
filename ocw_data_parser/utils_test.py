@@ -1,7 +1,7 @@
 import os
 import json
 import pytest
-from ocw_data_parser.utils import update_file_location, get_binary_data, is_json, get_correct_path, load_json_file, print_error, print_success, safe_get, find_all_values_for_key
+from ocw_data_parser.utils import update_file_location, get_binary_data, is_json, get_correct_path, load_json_file, print_error, print_success, safe_get, find_all_values_for_key, htmlify
 
 
 def test_update_local_file_location(ocw_parser):
@@ -79,3 +79,18 @@ def test_safe_get_invalid_value(ocw_parser):
         "actual_file_name": "test"
     }
     assert safe_get(test_dict, "value_three", print_error_message=True) is None
+
+def test_htmlify(ocw_parser):
+    """
+    Test that calling htmlify on a page returns some html and a filename
+    """
+    master_json = ocw_parser.get_master_json()
+    course_pages = safe_get(master_json, "course_pages")
+    test_page = course_pages[0]
+    filename, html = htmlify(test_page)
+    assert filename == test_page["uid"] + "_" + test_page["short_url"] + ".html"
+    assert "<html>" in html
+    assert "</html>" in html
+    assert "<body>" in html
+    assert "</body>" in html
+    assert test_page["text"] in html

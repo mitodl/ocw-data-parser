@@ -6,6 +6,9 @@ log = logging.getLogger(__name__)
 
 def update_file_location(master_json, new_file_location, obj_uid=""):
     if obj_uid:
+        for p in master_json["course_pages"]:
+            if p["uid"] == obj_uid:
+                p["file_location"] = new_file_location
         for j in master_json["course_files"]:
             if j["uid"] == obj_uid:
                 j["file_location"] = new_file_location
@@ -75,3 +78,11 @@ def find_all_values_for_key(jsons, key="_content_type"):
         if value in result:
             result.remove(value)
     return result
+
+def htmlify(page):
+    safe_text = safe_get(page, "text")
+    if safe_text:
+        file_name = safe_get(page, "uid") + "_" + safe_get(page, "short_url") + ".html"
+        html = "<html><head></head><body>" + safe_text + "</body></html>"
+        return file_name, html
+    return None, None
