@@ -1,7 +1,7 @@
 Release Notes
 =============
 
-Version 0.3.0
+Version 0.3.0 (Released February 12, 2020)
 -------------
 
 - Write raw HTML for course pages (#25)
