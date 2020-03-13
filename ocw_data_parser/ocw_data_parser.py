@@ -116,8 +116,6 @@ class OCWParser(object):
             # CourseHomeSection for courses and SRHomePage is for resources
             if classname in ["CourseHomeSection", "SRHomePage"]:
                 self.course_image_uid = j.get("chp_image")
-        if not self.course_image_uid:
-            log.error("Missing course thumbnail image")
         # Generate master JSON
         new_json = dict()
         new_json["uid"] = safe_get(self.jsons[0], "_uid")
