@@ -1,7 +1,7 @@
 Release Notes
 =============
 
-Version 0.4.0
+Version 0.4.0 (Released March 16, 2020)
 -------------
 
 - remove missing thumbnail error
