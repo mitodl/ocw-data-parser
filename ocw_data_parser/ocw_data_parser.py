@@ -53,8 +53,11 @@ class OCWParser(object):
         self.media_jsons = []
         self.large_media_links = []
         self.course_image_uid = ""
+        self.course_thumbnail_image_uid = ""
         self.course_image_s3_link = ""
+        self.course_thumbnail_image_s3_link = ""
         self.course_image_alt_text = ""
+        self.course_thumbnail_image_alt_text = ""
         self.master_json = None
         if course_dir and destination_dir:
             # Preload raw jsons
@@ -116,6 +119,7 @@ class OCWParser(object):
             # CourseHomeSection for courses and SRHomePage is for resources
             if classname in ["CourseHomeSection", "SRHomePage"]:
                 self.course_image_uid = j.get("chp_image")
+                self.course_thumbnail_image_uid = j.get("chp_image_thumb")
         # Generate master JSON
         new_json = dict()
         new_json["uid"] = safe_get(self.jsons[0], "_uid")
@@ -141,7 +145,9 @@ class OCWParser(object):
             new_json["url"] = ""
         new_json["short_url"] = safe_get(self.jsons[0], "id")
         new_json["image_src"] = self.course_image_s3_link
+        new_json["thumbnail_image_src"] = self.course_thumbnail_image_s3_link
         new_json["image_description"] = self.course_image_alt_text
+        new_json["thumbnail_image_description"] = self.course_thumbnail_image_alt_text
         new_json["image_alternate_text"] = safe_get(self.jsons[1], "image_alternate_text")
         new_json["image_caption_text"] = safe_get(self.jsons[1], "image_caption_text")
         tags_strings = safe_get(self.jsons[0], "subject")
@@ -405,6 +411,12 @@ class OCWParser(object):
                     self.course_image_alt_text = safe_get(file, "description")
                     self.master_json["image_src"] = self.course_image_s3_link
                     self.master_json["image_description"] = self.course_image_alt_text
+
+                if self.course_thumbnail_image_uid and uid == self.course_thumbnail_image_uid:
+                    self.course_thumbnail_image_s3_link = bucket_base_url + filename
+                    self.course_thumbnail_image_alt_text = safe_get(file, "description")
+                    self.master_json["thumbnail_image_src"] = self.course_thumbnail_image_s3_link
+                    self.master_json["thumbnail_image_description"] = self.course_thumbnail_image_alt_text
             else:
                 log.error("Could NOT upload %s", filename)
 
@@ -449,7 +461,7 @@ class OCWParser(object):
         # Upload static files first
         for file in self.media_jsons:
             uid = safe_get(file, "_uid")
-            if uid == self.course_image_uid:
+            if uid == self.course_image_uid or uid == self.course_thumbnail_image_uid:
                 filename = uid + "_" + safe_get(file, "id")
                 image_binary_data = get_binary_data(file)
                 if not image_binary_data:
@@ -458,9 +470,13 @@ class OCWParser(object):
                     d = base64.b64decode(image_binary_data)
                     s3_bucket.put_object(Key=self.s3_target_folder + filename, Body=d, ACL="public-read")
                     log.info("Uploaded %s", filename)
-                    self.course_image_s3_link = bucket_base_url + filename
-                    self.course_image_alt_text = safe_get(file, "description")
-                    self.master_json["image_src"] = self.course_image_s3_link
-                    self.master_json["image_description"] = self.course_image_alt_text
-                    log.info("Uploaded %s", filename)
-                break
+                    if uid == self.course_image_uid:
+                        self.course_image_s3_link = bucket_base_url + filename
+                        self.course_image_alt_text = safe_get(file, "description")
+                        self.master_json["image_src"] = self.course_image_s3_link
+                        self.master_json["image_description"] = self.course_image_alt_text
+                    else:
+                        self.course_thumbnail_image_s3_link = bucket_base_url + filename
+                        self.course_thumbnail_image_alt_text = safe_get(file, "description")
+                        self.master_json["thumbnail_image_src"] = self.course_thumbnail_image_s3_link
+                        self.master_json["thumbnail_image_description"] = self.course_thumbnail_image_alt_text

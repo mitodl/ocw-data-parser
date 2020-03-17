@@ -68,6 +68,7 @@ def test_upload_all_data_to_s3(ocw_parser_s3, s3_bucket):
     """
     ocw_parser_s3.upload_all_media_to_s3(upload_master_json=True)
     master_json = ocw_parser_s3.get_master_json()
+
     for p in master_json["course_pages"]:
         if p["text"]:
             for bucket_item in s3_bucket.objects.filter(Prefix=ocw_parser_s3.s3_target_folder):
@@ -77,6 +78,17 @@ def test_upload_all_data_to_s3(ocw_parser_s3, s3_bucket):
         for bucket_item in s3_bucket.objects.filter(Prefix=ocw_parser_s3.s3_target_folder):
             if bucket_item.key in f["file_location"]:
                 assert bucket_item.key == ocw_parser_s3.s3_target_folder + f["uid"] + "_" + f["id"]
+                
+        if f["uid"] == ocw_parser_s3.course_image_uid:
+            assert master_json["image_src"] == s3_upload_base() + f["uid"] + "_" + f["id"]
+            assert master_json["image_description"] == f["description"]
+        elif f["uid"] == ocw_parser_s3.course_thumbnail_image_uid:
+            assert master_json["thumbnail_image_src"] == s3_upload_base() + f["uid"] + "_" + f["id"]
+            assert master_json["thumbnail_image_description"] == f["description"]
+
+    assert master_json["image_src"] is not None
+    assert master_json["thumbnail_image_src"] is not None
+
 
 def test_upload_course_image(ocw_parser_s3, s3_bucket):
     """
@@ -88,6 +100,20 @@ def test_upload_course_image(ocw_parser_s3, s3_bucket):
         if bucket_item.key in ocw_parser_s3.course_image_s3_link:
             course_image_key = bucket_item.key
     assert course_image_key is not None
+
+    master_json = ocw_parser_s3.get_master_json()
+
+    assert ocw_parser_s3.master_json["image_src"] is not None
+    assert ocw_parser_s3.master_json["thumbnail_image_src"] is not None
+
+    for f in master_json["course_files"]:
+        if f["uid"] == ocw_parser_s3.course_image_uid:
+            assert master_json["image_src"] == s3_upload_base() + f["uid"] + "_" + f["id"]
+            assert master_json["image_description"] == f["description"]
+        elif f["uid"] == ocw_parser_s3.course_thumbnail_image_uid:
+            assert master_json["thumbnail_image_src"] == s3_upload_base() + f["uid"] + "_" + f["id"]
+            assert master_json["thumbnail_image_description"] == f["description"]
+
 
 def test_get_master_json(ocw_parser):
     """
@@ -125,6 +151,9 @@ def test_set_s3_target_folder(ocw_parser_s3):
     Test setting the s3 target folder
     """
     assert "testing" == ocw_parser_s3.s3_target_folder
+
+def s3_upload_base():
+    return "https://testing.s3.amazonaws.com/testing/"
 
 def test_uid(ocw_parser, course_id):
     """
