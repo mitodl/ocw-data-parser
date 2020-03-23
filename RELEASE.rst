@@ -1,6 +1,11 @@
 Release Notes
 =============
 
+Version 0.5.0
+-------------
+
+- add thumbnail image to master json
+
 Version 0.4.0 (Released March 16, 2020)
 -------------
 
