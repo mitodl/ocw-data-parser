@@ -41,7 +41,7 @@ class OCWParser(object):
                  s3_target_folder="",
                  beautify_master_json=False):
         if not (course_dir and destination_dir) and not loaded_jsons:
-            raise Exception("Message")
+            raise Exception("OCWParser must be initated with course_dir and destination_dir or loaded_jsons")
         self.course_dir = get_correct_path(course_dir) if course_dir else course_dir
         self.destination_dir = get_correct_path(destination_dir) if destination_dir else destination_dir
         self.static_prefix = static_prefix
@@ -387,6 +387,7 @@ class OCWParser(object):
                                    aws_access_key_id=self.s3_bucket_access_key,
                                    aws_secret_access_key=self.s3_bucket_secret_access_key
                                    ).Bucket(self.s3_bucket_name)
+        
         # Upload static files first
         for p in self.compose_pages():
             filename, html = htmlify(p)
@@ -436,13 +437,18 @@ class OCWParser(object):
                 log.error("Could NOT upload %s", filename)
 
         if upload_master_json:
-            uid = self.master_json.get('uid')
-            if uid:
-                s3_bucket.put_object(Key=self.s3_target_folder + f"{uid}_master.json",
+            self.upload_master_json_to_s3(s3_bucket)
+
+
+    def upload_master_json_to_s3(self, s3_bucket):
+        uid = self.master_json.get('uid')
+        if uid:
+            s3_bucket.put_object(Key=self.s3_target_folder + f"{uid}_master.json",
                                      Body=json.dumps(self.master_json),
                                      ACL='private')
-            else:
-                log.error('No unique uid found for this master_json')
+        else:
+            log.error('No unique uid found for this master_json')
+
 
     def upload_course_image(self):
         if not self.s3_bucket_name:
@@ -480,3 +486,5 @@ class OCWParser(object):
                         self.course_thumbnail_image_alt_text = safe_get(file, "description")
                         self.master_json["thumbnail_image_src"] = self.course_thumbnail_image_s3_link
                         self.master_json["thumbnail_image_description"] = self.course_thumbnail_image_alt_text
+
+        self.upload_master_json_to_s3(s3_bucket)
