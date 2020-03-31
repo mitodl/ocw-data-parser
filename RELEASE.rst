@@ -1,6 +1,11 @@
 Release Notes
 =============
 
+Version 0.6.0
+-------------
+
+- upload master json in image only s3 upload
+
 Version 0.5.0 (Released March 23, 2020)
 -------------
 
