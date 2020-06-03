@@ -202,6 +202,7 @@ class OCWParser(object):
                 "short_url": safe_get(j, "id"),
                 "description": safe_get(j, "description"),
                 "type": safe_get(j, "_type"),
+                "is_image_gallery": safe_get(j, "is_image_gallery"),
                 "is_media_gallery": safe_get(j, "is_media_gallery"),
                 "file_location": safe_get(j, "_uid") + "_" + safe_get(j, "id") + ".html"
             }
