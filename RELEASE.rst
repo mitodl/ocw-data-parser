@@ -1,6 +1,11 @@
 Release Notes
 =============
 
+Version 0.7.0
+-------------
+
+- add is_image_gallery to master json course_pages objects (#33)
+
 Version 0.6.0 (Released March 31, 2020)
 -------------
 
