@@ -41,9 +41,12 @@ class OCWParser(object):
                  s3_target_folder="",
                  beautify_master_json=False):
         if not (course_dir and destination_dir) and not loaded_jsons:
-            raise Exception("OCWParser must be initated with course_dir and destination_dir or loaded_jsons")
-        self.course_dir = get_correct_path(course_dir) if course_dir else course_dir
-        self.destination_dir = get_correct_path(destination_dir) if destination_dir else destination_dir
+            raise Exception(
+                "OCWParser must be initated with course_dir and destination_dir or loaded_jsons")
+        self.course_dir = get_correct_path(
+            course_dir) if course_dir else course_dir
+        self.destination_dir = get_correct_path(
+            destination_dir) if destination_dir else destination_dir
         self.static_prefix = static_prefix
         self.upload_to_s3 = upload_to_s3
         self.s3_bucket_name = s3_bucket_name
@@ -89,8 +92,10 @@ class OCWParser(object):
                 for file in os.listdir(dir_in_question):
                     if is_json(file):
                         # Turn file name to int to enforce sequential json loading later
-                        dict_of_all_course_dirs[directory].append(int(file.split(".")[0]))
-                dict_of_all_course_dirs[directory] = sorted(dict_of_all_course_dirs[directory])
+                        dict_of_all_course_dirs[directory].append(
+                            int(file.split(".")[0]))
+                dict_of_all_course_dirs[directory] = sorted(
+                    dict_of_all_course_dirs[directory])
 
         # Load JSONs into memory
         loaded_jsons = []
@@ -150,8 +155,10 @@ class OCWParser(object):
         new_json["thumbnail_image_src"] = self.course_thumbnail_image_s3_link
         new_json["image_description"] = self.course_image_alt_text
         new_json["thumbnail_image_description"] = self.course_thumbnail_image_alt_text
-        new_json["image_alternate_text"] = safe_get(self.jsons[1], "image_alternate_text")
-        new_json["image_caption_text"] = safe_get(self.jsons[1], "image_caption_text")
+        new_json["image_alternate_text"] = safe_get(
+            self.jsons[1], "image_alternate_text")
+        new_json["image_caption_text"] = safe_get(
+            self.jsons[1], "image_caption_text")
         tags_strings = safe_get(self.jsons[0], "subject")
         tags = list()
         for tag in tags_strings:
@@ -160,24 +167,28 @@ class OCWParser(object):
         instructors = safe_get(self.jsons[0], "instructors")
         if instructors:
             new_json["instructors"] = [{key: value for key, value in instructor.items() if key != 'mit_id'}
-                                    for instructor in instructors]
+                                       for instructor in instructors]
         else:
             new_json["instructors"] = ""
         new_json["language"] = safe_get(self.jsons[0], "language")
-        new_json["extra_course_number"] = safe_get(self.jsons[0], "linked_course_number")
-        new_json["course_collections"] = safe_get(self.jsons[0], "category_features")
+        new_json["extra_course_number"] = safe_get(
+            self.jsons[0], "linked_course_number")
+        new_json["course_collections"] = safe_get(
+            self.jsons[0], "category_features")
         new_json["course_pages"] = self.compose_pages()
         course_features = {}
         feature_requirements = safe_get(self.jsons[0], "feature_requirements")
         if feature_requirements:
             for feature_requirement in feature_requirements:
                 for page in new_json["course_pages"]:
-                    ocw_feature_url = safe_get(feature_requirement, "ocw_feature_url")
+                    ocw_feature_url = safe_get(
+                        feature_requirement, "ocw_feature_url")
                     if (ocw_feature_url):
                         ocw_feature_url_parts = ocw_feature_url.split("/")
-                        ocw_feature_short_url = ocw_feature_url 
+                        ocw_feature_short_url = ocw_feature_url
                         if len(ocw_feature_url_parts) > 1:
-                            ocw_feature_short_url = ocw_feature_url_parts[-2] + "/" + ocw_feature_url_parts[-1]
+                            ocw_feature_short_url = ocw_feature_url_parts[-2] + \
+                                "/" + ocw_feature_url_parts[-1]
                         if page["short_url"] in ocw_feature_short_url and 'index.htm' not in page["short_url"]:
                             course_feature = copy.copy(feature_requirement)
                             course_feature["ocw_feature_url"] = './resolveuid/' + page["uid"]
@@ -249,7 +260,8 @@ class OCWParser(object):
         all_media_types = find_all_values_for_key(self.jsons, "_content_type")
         for lj in self.jsons:
             if lj["_content_type"] in all_media_types:
-                self.media_jsons.append(lj)  # Keep track of the jsons that contain media in case we want to extract
+                # Keep track of the jsons that contain media in case we want to extract
+                self.media_jsons.append(lj)
                 result.append(_compose_media_dict(lj))
         return result
 
@@ -327,12 +339,15 @@ class OCWParser(object):
                 with open(path_to_containing_folder + file_name, "wb") as f:
                     data = base64.b64decode(d)
                     f.write(data)
-                update_file_location(self.master_json, url_path_to_media + file_name, safe_get(j, "_uid"))
+                update_file_location(
+                    self.master_json, url_path_to_media + file_name, safe_get(j, "_uid"))
                 log.info("Extracted %s", file_name)
             else:
                 json_file = j["actual_file_name"]
-                log.error("Media file %s without either datafield key", json_file)
-        log.info("Done! extracted static media to %s", path_to_containing_folder)
+                log.error(
+                    "Media file %s without either datafield key", json_file)
+        log.info("Done! extracted static media to %s",
+                 path_to_containing_folder)
         self.export_master_json()
 
     def extract_foreign_media_locally(self):
@@ -349,14 +364,16 @@ class OCWParser(object):
             with open(path_to_containing_folder + file_name, "wb") as file:
                 response = get(media["link"])
                 file.write(response.content)
-            update_file_location(self.master_json, url_path_to_media + file_name)
+            update_file_location(
+                self.master_json, url_path_to_media + file_name)
             log.info("Extracted %s", file_name)
-        log.info("Done! extracted foreign media to %s", path_to_containing_folder)
+        log.info("Done! extracted foreign media to %s",
+                 path_to_containing_folder)
         self.export_master_json()
 
     def generate_static_site(self):
         """
-        Extract all static media locally and generate master.json, 
+        Extract all static media locally and generate master.json,
         then generate static HTML for a course
         """
         shutil.copytree(self.course_dir, self.destination_dir + '/source/')
@@ -367,12 +384,43 @@ class OCWParser(object):
             self.destination_dir + 'master/master.json',
             self.destination_dir + 'output/')
 
-    def export_master_json(self):
+    def export_master_json(self, s3_links=False):
+        if s3_links:
+            if not self.s3_bucket_name:
+                log.error("Please set your s3 bucket name")
+                return
+            bucket_base_url = f"https://{self.s3_bucket_name}.s3.amazonaws.com/{self.master_json['short_url']}/"
+            for p in self.compose_pages():
+                filename, html = htmlify(p)
+                if filename and html:
+                    update_file_location(
+                        self.master_json, bucket_base_url + filename, safe_get(p, "uid"))
+            for file in self.media_jsons:
+                uid = safe_get(file, "_uid")
+                filename = uid + "_" + safe_get(file, "id")
+                update_file_location(
+                    self.master_json, bucket_base_url + filename, uid)
+                if self.course_image_uid and uid == self.course_image_uid:
+                    self.course_image_s3_link = bucket_base_url + filename
+                    self.course_image_alt_text = safe_get(file, "description")
+                    self.master_json["image_src"] = self.course_image_s3_link
+                    self.master_json["image_description"] = self.course_image_alt_text
+
+                if self.course_thumbnail_image_uid and uid == self.course_thumbnail_image_uid:
+                    self.course_thumbnail_image_s3_link = bucket_base_url + filename
+                    self.course_thumbnail_image_alt_text = safe_get(
+                        file, "description")
+                    self.master_json["thumbnail_image_src"] = self.course_thumbnail_image_s3_link
+                    self.master_json["thumbnail_image_description"] = self.course_thumbnail_image_alt_text
+            for media in self.large_media_links:
+                filename = media["link"].split("/")[-1]
+                update_file_location(
+                    self.master_json, bucket_base_url + filename)
         os.makedirs(self.destination_dir + "master/", exist_ok=True)
         file_path = self.destination_dir + "master/master.json"
         with open(file_path, "w") as file:
             if self.beautify_master_json:
-                json.dump(self.master_json, file, sort_keys = True, indent = 4)
+                json.dump(self.master_json, file, sort_keys=True, indent=4)
             else:
                 json.dump(self.master_json, file)
         log.info("Extracted %s", file_path)
@@ -393,13 +441,15 @@ class OCWParser(object):
                                    aws_access_key_id=self.s3_bucket_access_key,
                                    aws_secret_access_key=self.s3_bucket_secret_access_key
                                    ).Bucket(self.s3_bucket_name)
-        
+
         # Upload static files first
         for p in self.compose_pages():
             filename, html = htmlify(p)
             if filename and html:
-                s3_bucket.put_object(Key=self.s3_target_folder + filename, Body=html, ACL="public-read")
-                update_file_location(self.master_json, bucket_base_url + filename, safe_get(p, "uid"))
+                s3_bucket.put_object(
+                    Key=self.s3_target_folder + filename, Body=html, ACL="public-read")
+                update_file_location(
+                    self.master_json, bucket_base_url + filename, safe_get(p, "uid"))
         for file in self.media_jsons:
             uid = safe_get(file, "_uid")
             filename = uid + "_" + safe_get(file, "id")
@@ -408,8 +458,10 @@ class OCWParser(object):
             else:
                 d = base64.b64decode(get_binary_data(file))
             if d:
-                s3_bucket.put_object(Key=self.s3_target_folder + filename, Body=d, ACL="public-read")
-                update_file_location(self.master_json, bucket_base_url + filename, uid)
+                s3_bucket.put_object(
+                    Key=self.s3_target_folder + filename, Body=d, ACL="public-read")
+                update_file_location(
+                    self.master_json, bucket_base_url + filename, uid)
                 log.info("Uploaded %s", filename)
 
                 # Track course image link
@@ -421,7 +473,8 @@ class OCWParser(object):
 
                 if self.course_thumbnail_image_uid and uid == self.course_thumbnail_image_uid:
                     self.course_thumbnail_image_s3_link = bucket_base_url + filename
-                    self.course_thumbnail_image_alt_text = safe_get(file, "description")
+                    self.course_thumbnail_image_alt_text = safe_get(
+                        file, "description")
                     self.master_json["thumbnail_image_src"] = self.course_thumbnail_image_s3_link
                     self.master_json["thumbnail_image_description"] = self.course_thumbnail_image_alt_text
             else:
@@ -437,7 +490,8 @@ class OCWParser(object):
                     for chunk in response.iter_content(chunk_size=chunk_size):
                         s3.write(chunk)
                 response.close()
-                update_file_location(self.master_json, bucket_base_url + filename)
+                update_file_location(
+                    self.master_json, bucket_base_url + filename)
                 log.info("Uploaded %s", filename)
             else:
                 log.error("Could NOT upload %s", filename)
@@ -445,16 +499,14 @@ class OCWParser(object):
         if upload_master_json:
             self.upload_master_json_to_s3(s3_bucket)
 
-
     def upload_master_json_to_s3(self, s3_bucket):
         uid = self.master_json.get('uid')
         if uid:
             s3_bucket.put_object(Key=self.s3_target_folder + f"{uid}_master.json",
-                                     Body=json.dumps(self.master_json),
-                                     ACL='private')
+                                 Body=json.dumps(self.master_json),
+                                 ACL='private')
         else:
             log.error('No unique uid found for this master_json')
-
 
     def upload_course_image(self):
         if not self.s3_bucket_name:
@@ -480,17 +532,38 @@ class OCWParser(object):
                     log.error(filename)
                 else:
                     d = base64.b64decode(image_binary_data)
-                    s3_bucket.put_object(Key=self.s3_target_folder + filename, Body=d, ACL="public-read")
+                    s3_bucket.put_object(
+                        Key=self.s3_target_folder + filename, Body=d, ACL="public-read")
                     log.info("Uploaded %s", filename)
                     if uid == self.course_image_uid:
                         self.course_image_s3_link = bucket_base_url + filename
-                        self.course_image_alt_text = safe_get(file, "description")
+                        self.course_image_alt_text = safe_get(
+                            file, "description")
                         self.master_json["image_src"] = self.course_image_s3_link
                         self.master_json["image_description"] = self.course_image_alt_text
                     else:
                         self.course_thumbnail_image_s3_link = bucket_base_url + filename
-                        self.course_thumbnail_image_alt_text = safe_get(file, "description")
+                        self.course_thumbnail_image_alt_text = safe_get(
+                            file, "description")
                         self.master_json["thumbnail_image_src"] = self.course_thumbnail_image_s3_link
                         self.master_json["thumbnail_image_description"] = self.course_thumbnail_image_alt_text
 
         self.upload_master_json_to_s3(s3_bucket)
+
+
+def parseAll(coursesDir, destinationDir, s3Bucket, s3Links=False, overwrite=False, beautifyMasterJson=False):
+    for courseDir in os.listdir(coursesDir):
+        sourcePath = "{}/".format(os.path.join(coursesDir, courseDir))
+        destPath = os.path.join(destinationDir, courseDir)
+        if os.path.exists(destPath) and overwrite:
+            shutil.rmtree(destPath)
+        if not os.path.exists(destPath):
+            os.mkdir(destPath)
+            parser = OCWParser(course_dir=sourcePath, destination_dir=destinationDir, s3_bucket_name=s3Bucket,
+                               s3_target_folder=courseDir, beautify_master_json=beautifyMasterJson)
+            parser.export_master_json(s3_links=s3Links)
+            masterPath = os.path.join(destPath, "master")
+            for filename in os.listdir(masterPath):
+                shutil.move(os.path.join(masterPath, filename),
+                            os.path.join(destPath, filename))
+            shutil.rmtree(masterPath)
