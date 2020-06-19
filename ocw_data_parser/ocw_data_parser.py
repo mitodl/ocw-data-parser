@@ -213,7 +213,7 @@ class OCWParser(object):
 
         if not self.jsons:
             self.jsons = self.load_raw_jsons()
-        page_types = ["CourseHomeSection", "CourseSection", "DownloadSection", "ThisCourseAtMITSection"]
+        page_types = ["CourseHomeSection", "CourseSection", "DownloadSection", "ThisCourseAtMITSection", "SupplementalResourceSection"]
         pages = []
         for json_file in self.jsons:
             if json_file["_content_type"] == "text/html" and \
