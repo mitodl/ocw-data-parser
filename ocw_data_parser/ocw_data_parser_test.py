@@ -62,6 +62,14 @@ def test_load_raw_jsons_invalid_file(ocw_parser):
                         static_prefix=constants.STATIC_PREFIX)
         os.remove(os.path.join(constants.COURSE_DIR, "jsons/999.json"))
 
+def test_generate_static_site(ocw_parser):
+    ocw_parser.generate_static_site()
+    for root, dirs, files in os.walk(ocw_parser.destination_dir, topdown=False):
+        if "master" in root:
+            assert "master.json" in files
+        if "static" in root:
+            assert len(files) > 0
+
 def test_upload_all_data_to_s3(ocw_parser_s3, s3_bucket):
     """
     Use moto (mock boto) to test s3 uploading
