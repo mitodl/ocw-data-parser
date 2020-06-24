@@ -194,6 +194,7 @@ class OCWParser(object):
             if url_data:
                 url_data = url_data.split("ocw.mit.edu")[1]
             page_dict = {
+                "order_index": safe_get(j, "actual_file_name").replace(".json", ""),
                 "uid": safe_get(j, "_uid"),
                 "parent_uid": safe_get(j, "parent_uid"),
                 "title": safe_get(j, "title"),
@@ -226,6 +227,7 @@ class OCWParser(object):
     def compose_media(self):
         def _compose_media_dict(j):
             return {
+                "order_index": safe_get(j, "actual_file_name").replace(".json", ""),
                 "uid": safe_get(j, "_uid"),
                 "id": safe_get(j, "id"),
                 "parent_uid": safe_get(j, "parent_uid"),
@@ -254,6 +256,7 @@ class OCWParser(object):
         for j in self.jsons:
             if j and "inline_embed_id" in j and j["inline_embed_id"]:
                 temp = {
+                    "order_index": safe_get(j, "actual_file_name").replace(".json", ""),
                     "title": j["title"],
                     "uid": j["_uid"],
                     "parent_uid": j["parent_uid"],
