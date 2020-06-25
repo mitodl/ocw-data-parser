@@ -32,6 +32,18 @@ def test_parser_loaded_jsons(ocw_parser):
     """
     assert OCWParser(loaded_jsons=ocw_parser.jsons), "instantiating parser with preloaded jsons failed"
 
+def test_parser_invalid_file(ocw_parser):
+    """
+    Test instantiating a parser with an improperly named json file in the source directory
+    """
+    with TemporaryDirectory() as destination_dir:
+        with open(os.path.join(constants.COURSE_DIR, "jsons/test.json"), "w") as f:
+            with pytest.raises(ValueError):
+                OCWParser(course_dir=constants.COURSE_DIR,
+                            destination_dir=destination_dir,
+                            static_prefix=constants.STATIC_PREFIX)
+            os.remove(os.path.join(constants.COURSE_DIR, "jsons/test.json"))
+
 def test_generate_master_json_none_source(ocw_parser):
     """
     Make sure that running generate_master_json doesn't throw an error after nulling 
