@@ -103,11 +103,7 @@ class OCWParser(object):
                     # Add the json file name (used for error reporting)
                     loaded_json["actual_file_name"] = str(json_index) + ".json"
                     # The only representation we have of ordering is the file name
-                    try:
-                        order_index = int(json_index)
-                    except ValueError:
-                        order_index = None
-                    loaded_json["order_index"] = order_index
+                    loaded_json["order_index"] = int(json_index)
                     loaded_jsons.append(loaded_json)
                 else:
                     log.error("Failed to load %s", file_path)

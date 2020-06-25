@@ -38,17 +38,10 @@ def test_parser_invalid_file(ocw_parser):
     """
     with TemporaryDirectory() as destination_dir:
         with open(os.path.join(constants.COURSE_DIR, "jsons/test.json"), "w") as f:
-            found = False
-            try:
-                parser = OCWParser(course_dir=constants.COURSE_DIR,
-                                destination_dir=destination_dir,
-                                static_prefix=constants.STATIC_PREFIX)
-                for json in parser.jsons:
-                    if not json.order_index:
-                        found = True
-                assert found == True
-            except:
-                found = False
+            with pytest.raises(ValueError):
+                OCWParser(course_dir=constants.COURSE_DIR,
+                            destination_dir=destination_dir,
+                            static_prefix=constants.STATIC_PREFIX)
             os.remove(os.path.join(constants.COURSE_DIR, "jsons/test.json"))
 
 def test_generate_master_json_none_source(ocw_parser):
