@@ -2,7 +2,7 @@ import os
 import json
 import pytest
 from tempfile import TemporaryDirectory
-from ocw_data_parser.ocw_data_parser import CustomHTMLParser, OCWParser
+from ocw_data_parser.ocw_data_parser import CustomHTMLParser, OCWParser, parseAll
 import ocw_data_parser.test_constants as constants
 import logging
 log = logging.getLogger(__name__)
@@ -37,12 +37,12 @@ def test_parser_invalid_file(ocw_parser):
     Test instantiating a parser with an improperly named json file in the source directory
     """
     with TemporaryDirectory() as destination_dir:
-        with open(os.path.join(constants.COURSE_DIR, "jsons/test.json"), "w") as f:
+        with open(os.path.join(constants.SINGLE_COURSE_DIR, "jsons/test.json"), "w") as f:
             with pytest.raises(ValueError):
-                OCWParser(course_dir=constants.COURSE_DIR,
+                OCWParser(course_dir=constants.SINGLE_COURSE_DIR,
                             destination_dir=destination_dir,
                             static_prefix=constants.STATIC_PREFIX)
-            os.remove(os.path.join(constants.COURSE_DIR, "jsons/test.json"))
+            os.remove(os.path.join(constants.SINGLE_COURSE_DIR, "jsons/test.json"))
 
 def test_generate_master_json_none_source(ocw_parser):
     """
@@ -66,13 +66,13 @@ def test_load_raw_jsons_invalid_file(ocw_parser):
     Add a json file with invalid content to the course_dir and make sure it generates an error
     """
     with TemporaryDirectory() as destination_dir:
-        with open(os.path.join(constants.COURSE_DIR, "jsons/999.json"), "w") as f:
+        with open(os.path.join(constants.SINGLE_COURSE_DIR, "jsons/999.json"), "w") as f:
             f.write("{")
         with pytest.raises(json.decoder.JSONDecodeError):
-            OCWParser(course_dir=constants.COURSE_DIR,
+            OCWParser(course_dir=constants.SINGLE_COURSE_DIR,
                         destination_dir=destination_dir,
                         static_prefix=constants.STATIC_PREFIX)
-        os.remove(os.path.join(constants.COURSE_DIR, "jsons/999.json"))
+        os.remove(os.path.join(constants.SINGLE_COURSE_DIR, "jsons/999.json"))
 
 def test_generate_static_site(ocw_parser):
     ocw_parser.generate_static_site()
@@ -189,8 +189,14 @@ def test_uid(ocw_parser, course_id):
     Test that the uid property of the master JSON matches the uid of the course site root
     """
     ocw_parser.generate_static_site()
-    with open(os.path.join(constants.COURSE_DIR, "jsons/1.json"), "r") as first_json:
+    with open(os.path.join(constants.SINGLE_COURSE_DIR, "jsons/1.json"), "r") as first_json:
         first_json_data = json.loads(first_json.read())
         with open(os.path.join(ocw_parser.destination_dir, "master/master.json"), "r") as master_json:
             master_json_data = json.loads(master_json.read())
             assert first_json_data["_uid"] == master_json_data["uid"]
+
+def test_parse_all():
+    with TemporaryDirectory() as destination_dir:
+        parseAll(constants.COURSE_DIR, destination_dir)
+        assert os.path.isdir(os.path.join(destination_dir, "course-1"))
+        assert os.path.isdir(os.path.join(destination_dir, "course-2"))

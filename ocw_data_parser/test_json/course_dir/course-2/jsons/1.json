@@ -1,0 +1,1190 @@
+{
+    "_content_type_license": "text/plain", 
+    "_uid": "236793a57f96cf26ea0aec0ca35bd118", 
+    "_content_type_is_update_boolean": "text/plain", 
+    "_content_type_course_level": "text/plain", 
+    "title": "Geographic Information System (GIS) Tutorial", 
+    "_content_type_ocw_batch_id": "text/plain", 
+    "parent_uid": "461f831cc670b59848f89b47033975ef", 
+    "location": "", 
+    "_content_type_to_year": "text/plain", 
+    "sort_as": "RES.STR-001", 
+    "constrainTypesMode": 0, 
+    "dspace_handle": "", 
+    "technical_location": "https://ocw.mit.edu/resources/res-str-001-geographic-information-system-gis-tutorial-january-iap-2016", 
+    "software_requirements": [
+        {
+            "software_type_col": "Browser", 
+            "minimum_version_col": "40.0", 
+            "software_name_col": "Chrome", 
+            "maximum_version_col": ""
+        }, 
+        {
+            "software_type_col": "Browser", 
+            "minimum_version_col": "8.0", 
+            "software_name_col": "Safari", 
+            "maximum_version_col": ""
+        }, 
+        {
+            "software_type_col": "Browser", 
+            "minimum_version_col": "38.0", 
+            "software_name_col": "Mozilla Firefox", 
+            "maximum_version_col": ""
+        }, 
+        {
+            "software_type_col": "Browser", 
+            "minimum_version_col": "9.0", 
+            "software_name_col": "Internet Explorer", 
+            "maximum_version_col": ""
+        }, 
+        {
+            "software_type_col": "Browser", 
+            "minimum_version_col": "13.1", 
+            "software_name_col": "Edge", 
+            "maximum_version_col": ""
+        }
+    ], 
+    "_content_type_technical_location": "text/plain", 
+    "instructors": [
+        {
+            "middle_initial": "", 
+            "first_name": "MIT GIS Services Group", 
+            "last_name": "", 
+            "suffix": "", 
+            "title": "", 
+            "mit_id": "", 
+            "department": "", 
+            "directory_title": "", 
+            "uid": "e2ea16949976d7b8768638b299860a05"
+        }
+    ], 
+    "_content_type_rights": "text/html", 
+    "_directly_provided": [
+        "Products.CMFEditions.interfaces.IVersioned"
+    ], 
+    "_content_type_sort_as": "text/plain", 
+    "_content_type_to_semester": "text/plain", 
+    "_content_type_unique_identifier": "text/plain", 
+    "from_semester": "January IAP", 
+    "_content_type_from_year": "text/plain", 
+    "allowDiscussion": false, 
+    "_content_type_materialtype": "text/plain", 
+    "_content_type_from_semester": "text/plain", 
+    "locallyAllowedTypes": [
+        "SRDownloadSection", 
+        "SRHomePage", 
+        "OCWImage", 
+        "SupplementalResourceSection", 
+        "ThisCourseAtMITSection", 
+        "OCWExtFile", 
+        "OCWFile", 
+        "MediaResource"
+    ], 
+    "creation_date": "2016/03/01 05:53:51.959 US/Eastern", 
+    "aggregationlevel": 4, 
+    "last_published_to_production": "2016/09/18 23:57:07.786 GMT-4", 
+    "is_update_boolean": "No", 
+    "immediatelyAddableTypes": [
+        "SRDownloadSection", 
+        "SRHomePage", 
+        "OCWImage", 
+        "SupplementalResourceSection", 
+        "ThisCourseAtMITSection", 
+        "OCWExtFile", 
+        "OCWFile", 
+        "MediaResource"
+    ], 
+    "subject": [
+        "GIS", 
+        "geospatial information systems", 
+        "spatial data", 
+        "spatial statistics", 
+        "ArcGIS", 
+        "QGIS", 
+        "maps", 
+        "spatial regression"
+    ], 
+    "effectiveDate": "2016/03/08 04:06:16 US/Eastern", 
+    "_content_type_language": "text/plain", 
+    "excludeFromNav": false, 
+    "related_mit_links": "", 
+    "to_semester": "-1", 
+    "_layout": "base_view", 
+    "_workflow_history": {
+        "module_workflow": [
+            {
+                "action": null, 
+                "review_state": "in_process", 
+                "actor": "asingh33", 
+                "comments": "", 
+                "time": "2016/03/01 05:53:52.004 US/Eastern"
+            }, 
+            {
+                "action": "approve_to_staging", 
+                "review_state": "approved_for_staging", 
+                "comments": "", 
+                "actor": "rsharma20", 
+                "time": "2016/03/07 00:06:16.497 US/Eastern"
+            }, 
+            {
+                "action": "schedule_for_staging", 
+                "review_state": "scheduled_for_staging", 
+                "comments": "Staged after authoring", 
+                "actor": "rsharma20", 
+                "time": "2016/03/07 00:06:49.950 US/Eastern"
+            }, 
+            {
+                "action": "mark_staged", 
+                "review_state": "staged", 
+                "actor": "system", 
+                "comments": "", 
+                "time": "2016/03/07 00:10:41.480 US/Eastern"
+            }, 
+            {
+                "action": "unlock", 
+                "review_state": "unlocked_for_editing", 
+                "comments": "Unlocked for authoring", 
+                "actor": "rsharma20", 
+                "time": "2016/03/07 23:54:34.611 US/Eastern"
+            }, 
+            {
+                "action": "make_in_process", 
+                "review_state": "in_process", 
+                "comments": "", 
+                "actor": "rsharma20", 
+                "time": "2016/03/07 23:54:45.662 US/Eastern"
+            }, 
+            {
+                "action": "approve_to_staging", 
+                "review_state": "approved_for_staging", 
+                "actor": "rsharma20", 
+                "comments": "", 
+                "time": "2016/03/07 23:58:31.634 US/Eastern"
+            }, 
+            {
+                "action": "schedule_for_staging", 
+                "review_state": "scheduled_for_staging", 
+                "actor": "rsharma20", 
+                "comments": "Staged after authoring", 
+                "time": "2016/03/07 23:59:00.206 US/Eastern"
+            }, 
+            {
+                "action": "mark_staged", 
+                "review_state": "staged", 
+                "comments": "", 
+                "actor": "system", 
+                "time": "2016/03/08 00:00:26.418 US/Eastern"
+            }, 
+            {
+                "action": "unlock", 
+                "review_state": "unlocked_for_editing", 
+                "actor": "rsharma20", 
+                "comments": "Unlocked for authoring", 
+                "time": "2016/03/08 23:34:20.952 US/Eastern"
+            }, 
+            {
+                "action": "make_in_process", 
+                "review_state": "in_process", 
+                "actor": "rsharma20", 
+                "comments": "", 
+                "time": "2016/03/08 23:34:38.170 US/Eastern"
+            }, 
+            {
+                "action": "approve_to_staging", 
+                "review_state": "approved_for_staging", 
+                "comments": "", 
+                "actor": "rsharma20", 
+                "time": "2016/03/08 23:54:29.315 US/Eastern"
+            }, 
+            {
+                "action": "make_in_process", 
+                "review_state": "in_process", 
+                "comments": "", 
+                "actor": "rsharma20", 
+                "time": "2016/03/08 23:54:33.366 US/Eastern"
+            }, 
+            {
+                "action": "approve_to_staging", 
+                "review_state": "approved_for_staging", 
+                "comments": "", 
+                "actor": "rsharma20", 
+                "time": "2016/03/08 23:58:29.404 US/Eastern"
+            }, 
+            {
+                "action": "make_in_process", 
+                "review_state": "in_process", 
+                "comments": "", 
+                "actor": "rsharma20", 
+                "time": "2016/03/08 23:58:55.296 US/Eastern"
+            }, 
+            {
+                "action": "approve_to_staging", 
+                "review_state": "approved_for_staging", 
+                "comments": "", 
+                "actor": "rsharma20", 
+                "time": "2016/03/09 00:03:24.400 US/Eastern"
+            }, 
+            {
+                "action": "make_in_process", 
+                "review_state": "in_process", 
+                "actor": "rsharma20", 
+                "comments": "", 
+                "time": "2016/03/09 00:03:32.556 US/Eastern"
+            }, 
+            {
+                "action": "approve_to_staging", 
+                "review_state": "approved_for_staging", 
+                "actor": "rsharma20", 
+                "comments": "", 
+                "time": "2016/03/09 00:07:38.206 US/Eastern"
+            }, 
+            {
+                "action": "schedule_for_staging", 
+                "review_state": "scheduled_for_staging", 
+                "comments": "Staged after authoring", 
+                "actor": "rsharma20", 
+                "time": "2016/03/09 00:08:21.896 US/Eastern"
+            }, 
+            {
+                "action": "mark_staged", 
+                "review_state": "staged", 
+                "actor": "system", 
+                "comments": "", 
+                "time": "2016/03/09 00:10:18.279 US/Eastern"
+            }, 
+            {
+                "action": "unlock", 
+                "review_state": "unlocked_for_editing", 
+                "comments": "Unlocked for authoring", 
+                "actor": "srani11", 
+                "time": "2016/03/09 02:10:11.586 US/Eastern"
+            }, 
+            {
+                "action": "make_in_process", 
+                "review_state": "in_process", 
+                "comments": "", 
+                "actor": "srani11", 
+                "time": "2016/03/09 02:10:40.928 US/Eastern"
+            }, 
+            {
+                "action": "approve_to_staging", 
+                "review_state": "approved_for_staging", 
+                "actor": "rnagar6", 
+                "comments": "", 
+                "time": "2016/03/09 08:37:50.784 US/Eastern"
+            }, 
+            {
+                "action": "schedule_for_staging", 
+                "review_state": "scheduled_for_staging", 
+                "actor": "rnagar6", 
+                "comments": "Staged after editing.", 
+                "time": "2016/03/09 08:38:51.325 US/Eastern"
+            }, 
+            {
+                "action": "mark_staged", 
+                "review_state": "staged", 
+                "comments": "", 
+                "actor": "system", 
+                "time": "2016/03/09 08:42:44.270 US/Eastern"
+            }, 
+            {
+                "action": "unlock", 
+                "review_state": "unlocked_for_editing", 
+                "actor": "rsharma20", 
+                "comments": "Unlocked for authoring", 
+                "time": "2016/03/09 23:09:30.863 US/Eastern"
+            }, 
+            {
+                "action": "make_in_process", 
+                "review_state": "in_process", 
+                "actor": "rsharma20", 
+                "comments": "", 
+                "time": "2016/03/09 23:09:49.774 US/Eastern"
+            }, 
+            {
+                "action": "approve_to_staging", 
+                "review_state": "approved_for_staging", 
+                "actor": "rsharma20", 
+                "comments": "", 
+                "time": "2016/03/09 23:12:54.383 US/Eastern"
+            }, 
+            {
+                "action": "make_in_process", 
+                "review_state": "in_process", 
+                "comments": "", 
+                "actor": "rsharma20", 
+                "time": "2016/03/09 23:13:24.027 US/Eastern"
+            }, 
+            {
+                "action": "approve_to_staging", 
+                "review_state": "approved_for_staging", 
+                "actor": "rsharma20", 
+                "comments": "", 
+                "time": "2016/03/09 23:14:20.258 US/Eastern"
+            }, 
+            {
+                "action": "make_in_process", 
+                "review_state": "in_process", 
+                "comments": "", 
+                "actor": "rsharma20", 
+                "time": "2016/03/09 23:14:26.732 US/Eastern"
+            }, 
+            {
+                "action": "approve_to_staging", 
+                "review_state": "approved_for_staging", 
+                "actor": "rsharma20", 
+                "comments": "", 
+                "time": "2016/03/09 23:24:29.908 US/Eastern"
+            }, 
+            {
+                "action": "make_in_process", 
+                "review_state": "in_process", 
+                "actor": "rsharma20", 
+                "comments": "", 
+                "time": "2016/03/09 23:24:59.856 US/Eastern"
+            }, 
+            {
+                "action": "approve_to_staging", 
+                "review_state": "approved_for_staging", 
+                "comments": "", 
+                "actor": "rsharma20", 
+                "time": "2016/03/10 00:04:49.744 US/Eastern"
+            }, 
+            {
+                "action": "schedule_for_staging", 
+                "review_state": "scheduled_for_staging", 
+                "comments": "Staged after authoring", 
+                "actor": "rsharma20", 
+                "time": "2016/03/10 00:05:18.489 US/Eastern"
+            }, 
+            {
+                "action": "mark_staged", 
+                "review_state": "staged", 
+                "actor": "system", 
+                "comments": "", 
+                "time": "2016/03/10 00:10:37.922 US/Eastern"
+            }, 
+            {
+                "action": "unlock", 
+                "review_state": "unlocked_for_editing", 
+                "comments": "Unlocked for authoring", 
+                "actor": "srani11", 
+                "time": "2016/03/10 02:11:26.049 US/Eastern"
+            }, 
+            {
+                "action": "make_in_process", 
+                "review_state": "in_process", 
+                "comments": "", 
+                "actor": "srani11", 
+                "time": "2016/03/10 02:11:49.129 US/Eastern"
+            }, 
+            {
+                "action": "approve_to_staging", 
+                "review_state": "approved_for_staging", 
+                "actor": "srani11", 
+                "comments": "", 
+                "time": "2016/03/10 03:00:41.213 US/Eastern"
+            }, 
+            {
+                "action": "make_in_process", 
+                "review_state": "in_process", 
+                "actor": "srani11", 
+                "comments": "", 
+                "time": "2016/03/10 03:05:01.102 US/Eastern"
+            }, 
+            {
+                "action": "approve_to_staging", 
+                "review_state": "approved_for_staging", 
+                "actor": "srani11", 
+                "comments": "", 
+                "time": "2016/03/10 03:05:27.938 US/Eastern"
+            }, 
+            {
+                "action": "make_in_process", 
+                "review_state": "in_process", 
+                "comments": "", 
+                "actor": "srani11", 
+                "time": "2016/03/10 03:13:55.083 US/Eastern"
+            }, 
+            {
+                "action": "approve_to_staging", 
+                "review_state": "approved_for_staging", 
+                "comments": "", 
+                "actor": "srani11", 
+                "time": "2016/03/10 04:32:04.512 US/Eastern"
+            }, 
+            {
+                "action": "make_in_process", 
+                "review_state": "in_process", 
+                "actor": "rsharma20", 
+                "comments": "", 
+                "time": "2016/03/10 23:17:53.086 US/Eastern"
+            }, 
+            {
+                "action": "approve_to_staging", 
+                "review_state": "approved_for_staging", 
+                "actor": "rsharma20", 
+                "comments": "", 
+                "time": "2016/03/10 23:18:11.131 US/Eastern"
+            }, 
+            {
+                "action": "schedule_for_staging", 
+                "review_state": "scheduled_for_staging", 
+                "comments": "Staged after authoring", 
+                "actor": "rsharma20", 
+                "time": "2016/03/10 23:18:51.250 US/Eastern"
+            }, 
+            {
+                "action": "mark_staged", 
+                "review_state": "staged", 
+                "actor": "system", 
+                "comments": "", 
+                "time": "2016/03/10 23:20:48.335 US/Eastern"
+            }, 
+            {
+                "action": "unlock", 
+                "review_state": "unlocked_for_editing", 
+                "comments": "unlocked for authoring", 
+                "actor": "srani11", 
+                "time": "2016/03/11 01:14:41.071 US/Eastern"
+            }, 
+            {
+                "action": "make_in_process", 
+                "review_state": "in_process", 
+                "comments": "", 
+                "actor": "srani11", 
+                "time": "2016/03/11 01:29:10.864 US/Eastern"
+            }, 
+            {
+                "action": "approve_to_staging", 
+                "review_state": "approved_for_staging", 
+                "comments": "", 
+                "actor": "srani11", 
+                "time": "2016/03/11 01:29:32.118 US/Eastern"
+            }, 
+            {
+                "action": "make_in_process", 
+                "review_state": "in_process", 
+                "actor": "srani11", 
+                "comments": "", 
+                "time": "2016/03/11 01:50:43.526 US/Eastern"
+            }, 
+            {
+                "action": "approve_to_staging", 
+                "review_state": "approved_for_staging", 
+                "actor": "srani11", 
+                "comments": "", 
+                "time": "2016/03/11 01:53:12.502 US/Eastern"
+            }, 
+            {
+                "action": "make_in_process", 
+                "review_state": "in_process", 
+                "comments": "", 
+                "actor": "srani11", 
+                "time": "2016/03/11 04:48:05.174 US/Eastern"
+            }, 
+            {
+                "action": "approve_to_staging", 
+                "review_state": "approved_for_staging", 
+                "actor": "srani11", 
+                "comments": "", 
+                "time": "2016/03/11 05:12:59.610 US/Eastern"
+            }, 
+            {
+                "action": "schedule_for_staging", 
+                "review_state": "scheduled_for_staging", 
+                "comments": "Staged after authoring", 
+                "actor": "srani11", 
+                "time": "2016/03/11 05:15:47.939 US/Eastern"
+            }, 
+            {
+                "action": "mark_staged", 
+                "review_state": "staged", 
+                "actor": "system", 
+                "comments": "", 
+                "time": "2016/03/11 05:20:53.123 US/Eastern"
+            }, 
+            {
+                "action": "unlock", 
+                "review_state": "unlocked_for_editing", 
+                "comments": "Unlocked for authoring.", 
+                "actor": "asingh33", 
+                "time": "2016/03/11 05:32:19.150 US/Eastern"
+            }, 
+            {
+                "action": "make_in_process", 
+                "review_state": "in_process", 
+                "actor": "asingh33", 
+                "comments": "", 
+                "time": "2016/03/11 05:33:23.265 US/Eastern"
+            }, 
+            {
+                "action": "approve_to_staging", 
+                "review_state": "approved_for_staging", 
+                "comments": "", 
+                "actor": "asingh33", 
+                "time": "2016/03/11 05:35:02.528 US/Eastern"
+            }, 
+            {
+                "action": "make_in_process", 
+                "review_state": "in_process", 
+                "actor": "asingh33", 
+                "comments": "", 
+                "time": "2016/03/11 05:35:53.212 US/Eastern"
+            }, 
+            {
+                "action": "approve_to_staging", 
+                "review_state": "approved_for_staging", 
+                "comments": "", 
+                "actor": "asingh33", 
+                "time": "2016/03/11 05:39:27.085 US/Eastern"
+            }, 
+            {
+                "action": "make_in_process", 
+                "review_state": "in_process", 
+                "actor": "sbabbar", 
+                "comments": "", 
+                "time": "2016/03/11 06:10:19.815 US/Eastern"
+            }, 
+            {
+                "action": "approve_to_staging", 
+                "review_state": "approved_for_staging", 
+                "comments": "", 
+                "actor": "asingh33", 
+                "time": "2016/03/11 06:23:51.751 US/Eastern"
+            }, 
+            {
+                "action": "schedule_for_staging", 
+                "review_state": "scheduled_for_staging", 
+                "actor": "asingh33", 
+                "comments": "Staged after authoring.", 
+                "time": "2016/03/11 06:27:33.846 US/Eastern"
+            }, 
+            {
+                "action": "mark_staged", 
+                "review_state": "staged", 
+                "comments": "", 
+                "actor": "system", 
+                "time": "2016/03/11 06:31:06.347 US/Eastern"
+            }, 
+            {
+                "action": "unlock", 
+                "review_state": "unlocked_for_editing", 
+                "actor": "brem", 
+                "comments": "QA Edits", 
+                "time": "2016/03/14 12:07:59.392 GMT-4"
+            }, 
+            {
+                "action": "make_in_process", 
+                "review_state": "in_process", 
+                "actor": "brem", 
+                "comments": "", 
+                "time": "2016/03/14 12:08:31.058 GMT-4"
+            }, 
+            {
+                "action": "approve_to_staging", 
+                "review_state": "approved_for_staging", 
+                "comments": "", 
+                "actor": "brem", 
+                "time": "2016/03/14 12:20:55.263 GMT-4"
+            }, 
+            {
+                "action": "schedule_for_staging", 
+                "review_state": "scheduled_for_staging", 
+                "comments": "", 
+                "actor": "brem", 
+                "time": "2016/03/14 12:21:08.218 GMT-4"
+            }, 
+            {
+                "action": "mark_staged", 
+                "review_state": "staged", 
+                "actor": "system", 
+                "comments": "", 
+                "time": "2016/03/14 12:24:04.673 GMT-4"
+            }, 
+            {
+                "action": "unlock", 
+                "review_state": "unlocked_for_editing", 
+                "comments": "QA edits", 
+                "actor": "brem", 
+                "time": "2016/03/15 11:00:14.040 GMT-4"
+            }, 
+            {
+                "action": "make_in_process", 
+                "review_state": "in_process", 
+                "actor": "brem", 
+                "comments": "", 
+                "time": "2016/03/15 11:01:34.885 GMT-4"
+            }, 
+            {
+                "action": "approve_to_staging", 
+                "review_state": "approved_for_staging", 
+                "comments": "", 
+                "actor": "brem", 
+                "time": "2016/03/15 11:39:48.523 GMT-4"
+            }, 
+            {
+                "action": "schedule_for_staging", 
+                "review_state": "scheduled_for_staging", 
+                "actor": "brem", 
+                "comments": "", 
+                "time": "2016/03/15 11:40:20.009 GMT-4"
+            }, 
+            {
+                "action": "mark_staged", 
+                "review_state": "staged", 
+                "comments": "", 
+                "actor": "system", 
+                "time": "2016/03/15 11:44:59.748 GMT-4"
+            }, 
+            {
+                "action": "unlock", 
+                "review_state": "unlocked_for_editing", 
+                "actor": "brem", 
+                "comments": "qa edits", 
+                "time": "2016/03/16 15:58:17.246 GMT-4"
+            }, 
+            {
+                "action": "make_in_process", 
+                "review_state": "in_process", 
+                "actor": "brem", 
+                "comments": "", 
+                "time": "2016/03/16 15:58:27.712 GMT-4"
+            }, 
+            {
+                "action": "approve_to_staging", 
+                "review_state": "approved_for_staging", 
+                "comments": "", 
+                "actor": "brem", 
+                "time": "2016/03/16 15:59:05.645 GMT-4"
+            }, 
+            {
+                "action": "schedule_for_staging", 
+                "review_state": "scheduled_for_staging", 
+                "comments": "", 
+                "actor": "brem", 
+                "time": "2016/03/16 15:59:31.224 GMT-4"
+            }, 
+            {
+                "action": "mark_staged", 
+                "review_state": "staged", 
+                "actor": "system", 
+                "comments": "", 
+                "time": "2016/03/16 16:00:21.769 GMT-4"
+            }, 
+            {
+                "action": "submit_to_fqa", 
+                "review_state": "submitted_for_fqa", 
+                "comments": "submitting for fqa", 
+                "actor": "brem", 
+                "time": "2016/03/16 16:38:43.474 GMT-4"
+            }, 
+            {
+                "action": "reject_from_fqa", 
+                "review_state": "rejected_from_fqa", 
+                "actor": "brem", 
+                "comments": "adding RES.STR tag", 
+                "time": "2016/03/22 04:17:35.885 GMT-4"
+            }, 
+            {
+                "action": "unlock", 
+                "review_state": "unlocked_for_editing", 
+                "comments": "qa edits\r\n", 
+                "actor": "brem", 
+                "time": "2016/03/22 10:02:03.646 GMT-4"
+            }, 
+            {
+                "action": "make_in_process", 
+                "review_state": "in_process", 
+                "comments": "", 
+                "actor": "brem", 
+                "time": "2016/03/22 10:02:19.357 GMT-4"
+            }, 
+            {
+                "action": "approve_to_staging", 
+                "review_state": "approved_for_staging", 
+                "comments": "", 
+                "actor": "brem", 
+                "time": "2016/03/22 10:02:23.065 GMT-4"
+            }, 
+            {
+                "action": "schedule_for_staging", 
+                "review_state": "scheduled_for_staging", 
+                "comments": "", 
+                "actor": "brem", 
+                "time": "2016/03/22 10:02:30.557 GMT-4"
+            }, 
+            {
+                "action": "mark_staged", 
+                "review_state": "staged", 
+                "actor": "system", 
+                "comments": "", 
+                "time": "2016/03/22 10:06:05.658 GMT-4"
+            }, 
+            {
+                "action": "submit_to_fqa", 
+                "review_state": "submitted_for_fqa", 
+                "comments": "submitting to FQA. STR tag is missing, will be added when FQA notes come back.", 
+                "actor": "brem", 
+                "time": "2016/03/22 10:09:48.683 GMT-4"
+            }, 
+            {
+                "action": "reject_from_fqa", 
+                "review_state": "rejected_from_fqa", 
+                "actor": "erima", 
+                "comments": "MITRES_STR_001IAP16_Intro.pdf ============================\r\nI believe I saw these links in other documents but they aren't linked on this one:\r\n- [ ] p24 link isn't active\r\n- [ ] p25 link isn't active\r\n\r\nMITRES_STR_001IAP16_spati.pdf ============================\r\n- [ ] Page 30 commissioned art needs alt text\r\n- [ ] Page 38 needs alt text\r\n- [ ] Page 46 needs alt text\r\n- [ ] Page 47 too\r\n", 
+                "time": "2016/03/22 17:16:24.166 GMT-4"
+            }, 
+            {
+                "action": "unlock", 
+                "review_state": "unlocked_for_editing", 
+                "comments": "FQA edits", 
+                "actor": "brem", 
+                "time": "2016/03/23 10:38:50.617 GMT-4"
+            }, 
+            {
+                "action": "make_in_process", 
+                "review_state": "in_process", 
+                "comments": "", 
+                "actor": "brem", 
+                "time": "2016/03/23 11:09:32.602 GMT-4"
+            }, 
+            {
+                "action": "approve_to_staging", 
+                "review_state": "approved_for_staging", 
+                "comments": "", 
+                "actor": "brem", 
+                "time": "2016/03/23 11:10:33.545 GMT-4"
+            }, 
+            {
+                "action": "schedule_for_staging", 
+                "review_state": "scheduled_for_staging", 
+                "actor": "brem", 
+                "comments": "", 
+                "time": "2016/03/23 11:42:50.965 GMT-4"
+            }, 
+            {
+                "action": "mark_staged", 
+                "review_state": "staged", 
+                "comments": "", 
+                "actor": "system", 
+                "time": "2016/03/23 12:09:49.607 GMT-4"
+            }, 
+            {
+                "action": "submit_to_fqa", 
+                "review_state": "submitted_for_fqa", 
+                "actor": "brem", 
+                "comments": "submitting for re-FQA", 
+                "time": "2016/03/23 12:16:05.344 GMT-4"
+            }, 
+            {
+                "action": "reject_from_fqa", 
+                "review_state": "rejected_from_fqa", 
+                "comments": "fqa edits", 
+                "actor": "brem", 
+                "time": "2016/03/23 15:39:45.129 GMT-4"
+            }, 
+            {
+                "action": "unlock", 
+                "review_state": "unlocked_for_editing", 
+                "comments": "fqa edits", 
+                "actor": "brem", 
+                "time": "2016/03/23 15:40:48.888 GMT-4"
+            }, 
+            {
+                "action": "make_in_process", 
+                "review_state": "in_process", 
+                "comments": "", 
+                "actor": "brem", 
+                "time": "2016/03/23 15:40:55.117 GMT-4"
+            }, 
+            {
+                "action": "approve_to_staging", 
+                "review_state": "approved_for_staging", 
+                "comments": "", 
+                "actor": "brem", 
+                "time": "2016/03/23 15:41:04.421 GMT-4"
+            }, 
+            {
+                "action": "schedule_for_staging", 
+                "review_state": "scheduled_for_staging", 
+                "actor": "brem", 
+                "comments": "", 
+                "time": "2016/03/23 15:41:26.548 GMT-4"
+            }, 
+            {
+                "action": "mark_staged", 
+                "review_state": "staged", 
+                "comments": "", 
+                "actor": "system", 
+                "time": "2016/03/23 15:46:54.070 GMT-4"
+            }, 
+            {
+                "action": "unlock", 
+                "review_state": "unlocked_for_editing", 
+                "actor": "vverma9", 
+                "comments": "Unlocked for edit.", 
+                "time": "2016/03/28 03:26:41.098 GMT-4"
+            }, 
+            {
+                "action": "make_in_process", 
+                "review_state": "in_process", 
+                "actor": "vverma9", 
+                "comments": "", 
+                "time": "2016/03/28 03:29:29.732 GMT-4"
+            }, 
+            {
+                "action": "approve_to_staging", 
+                "review_state": "approved_for_staging", 
+                "comments": "", 
+                "actor": "vverma9", 
+                "time": "2016/03/28 03:32:31.070 GMT-4"
+            }, 
+            {
+                "action": "schedule_for_staging", 
+                "review_state": "scheduled_for_staging", 
+                "actor": "srani11", 
+                "comments": "Staged after edit", 
+                "time": "2016/03/28 06:46:14.016 GMT-4"
+            }, 
+            {
+                "action": "mark_staged", 
+                "review_state": "staged", 
+                "comments": "", 
+                "actor": "system", 
+                "time": "2016/03/28 06:51:07.521 GMT-4"
+            }, 
+            {
+                "action": "submit_to_fqa", 
+                "review_state": "submitted_for_fqa", 
+                "actor": "brem", 
+                "comments": "re-submitting to fqa", 
+                "time": "2016/03/28 11:47:38.667 GMT-4"
+            }, 
+            {
+                "action": "schedule_for_production", 
+                "review_state": "scheduled_for_publishing", 
+                "comments": "FQA Approved", 
+                "actor": "erima", 
+                "time": "2016/03/28 15:58:11.064 GMT-4"
+            }, 
+            {
+                "action": "mark_published", 
+                "review_state": "published_in_production", 
+                "actor": "system", 
+                "comments": "", 
+                "time": "2016/03/28 21:35:22.261 GMT-4"
+            }, 
+            {
+                "action": "unlock", 
+                "review_state": "unlocked_for_editing", 
+                "comments": "adding \"about this course\" section", 
+                "actor": "brem", 
+                "time": "2016/07/27 14:39:07.532 GMT-4"
+            }, 
+            {
+                "action": "make_in_process", 
+                "review_state": "in_process", 
+                "actor": "brem", 
+                "comments": "", 
+                "time": "2016/07/27 14:40:06.812 GMT-4"
+            }, 
+            {
+                "action": "approve_to_staging", 
+                "review_state": "approved_for_staging", 
+                "comments": "", 
+                "actor": "brem", 
+                "time": "2016/08/03 11:46:39.154 GMT-4"
+            }, 
+            {
+                "action": "schedule_for_staging", 
+                "review_state": "scheduled_for_staging", 
+                "comments": "reverting changes", 
+                "actor": "brem", 
+                "time": "2016/08/03 11:47:16.920 GMT-4"
+            }, 
+            {
+                "action": "mark_staged", 
+                "review_state": "staged", 
+                "actor": "system", 
+                "comments": "", 
+                "time": "2016/08/03 11:51:56.774 GMT-4"
+            }, 
+            {
+                "action": "submit_to_fqa", 
+                "review_state": "submitted_for_fqa", 
+                "comments": "returning to PIP", 
+                "actor": "Kcanavan", 
+                "time": "2016/09/15 13:15:55.382 GMT-4"
+            }, 
+            {
+                "action": "schedule_for_production", 
+                "review_state": "scheduled_for_publishing", 
+                "comments": "returning to PIP", 
+                "actor": "Kcanavan", 
+                "time": "2016/09/15 13:16:28.800 GMT-4"
+            }, 
+            {
+                "action": "cancel_publishing", 
+                "review_state": "submitted_for_fqa", 
+                "actor": "Kcanavan", 
+                "comments": "delaying repub temporarily", 
+                "time": "2016/09/16 10:50:29.467 GMT-4"
+            }, 
+            {
+                "action": "schedule_for_production", 
+                "review_state": "scheduled_for_publishing", 
+                "comments": "return to PIP", 
+                "actor": "Kcanavan", 
+                "time": "2016/09/16 14:21:43.322 GMT-4"
+            }, 
+            {
+                "action": "mark_published", 
+                "review_state": "published_in_production", 
+                "actor": "system", 
+                "comments": "", 
+                "time": "2016/09/18 23:57:07.728 GMT-4"
+            }
+        ]
+    }, 
+    "_classname": "SupplementalResource", 
+    "metadata_contributor_list": [
+        {
+            "md_contributor_uid": "e2ea16949976d7b8768638b299860a05", 
+            "md_contributor_entity": "MIT GIS Services Group", 
+            "md_contributor_role": "Instructor", 
+            "md_contributor_special_title": "", 
+            "md_contributor_hide": "N"
+        }
+    ], 
+    "_userdefined_roles": [], 
+    "publisher": "MIT OpenCourseWare", 
+    "nextPreviousEnabled": false, 
+    "license": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/", 
+    "widgets_features": [], 
+    "module_comments": [
+        "Staged after authoring [schedule for staging]: rsharma20:3/7/2016 0:6", 
+        "Unlocked for authoring [unlock]: rsharma20:3/7/2016 23:54", 
+        "Staged after authoring [schedule for staging]: rsharma20:3/7/2016 23:59", 
+        "Unlocked for authoring [unlock]: rsharma20:3/8/2016 23:34", 
+        "Staged after authoring [schedule for staging]: rsharma20:3/9/2016 0:8", 
+        "Unlocked for authoring [unlock]: srani11:3/9/2016 2:10", 
+        "Staged after editing. [schedule for staging]: rnagar6:3/9/2016 8:38", 
+        "Unlocked for authoring [unlock]: rsharma20:3/9/2016 23:9", 
+        "Staged after authoring [schedule for staging]: rsharma20:3/10/2016 0:5", 
+        "Unlocked for authoring [unlock]: srani11:3/10/2016 2:11", 
+        "Staged after authoring [schedule for staging]: rsharma20:3/10/2016 23:18", 
+        "unlocked for authoring [unlock]: srani11:3/11/2016 1:14", 
+        "Staged after authoring [schedule for staging]: srani11:3/11/2016 5:15", 
+        "Unlocked for authoring. [unlock]: asingh33:3/11/2016 5:32", 
+        "Staged after authoring. [schedule for staging]: asingh33:3/11/2016 6:27", 
+        "QA Edits [unlock]: brem:3/14/2016 12:7", 
+        "[schedule for staging]: brem:3/14/2016 12:21", 
+        "QA edits [unlock]: brem:3/15/2016 11:0", 
+        "[schedule for staging]: brem:3/15/2016 11:40", 
+        "qa edits [unlock]: brem:3/16/2016 15:58", 
+        "[schedule for staging]: brem:3/16/2016 15:59", 
+        "submitting for fqa [submit to fqa]: brem:3/16/2016 16:38", 
+        "erik to fqa: erima:3/21/2016 17:36", 
+        "adding RES.STR tag [reject from fqa]: brem:3/22/2016 4:17", 
+        "qa edits", 
+        "[unlock]: brem:3/22/2016 10:2", 
+        "[schedule for staging]: brem:3/22/2016 10:2", 
+        "submitting to FQA. STR tag is missing, will be added when FQA notes come back. [submit to fqa]: brem:3/22/2016 10:9", 
+        "MITRES_STR_001IAP16_Intro.pdf ============================", 
+        "I believe I saw these links in other documents but they aren't linked on this one:", 
+        "- [ ] p24 link isn't active", 
+        "- [ ] p25 link isn't active", 
+        "MITRES_STR_001IAP16_spati.pdf ============================", 
+        "- [ ] Page 30 commissioned art needs alt text", 
+        "- [ ] Page 38 needs alt text", 
+        "- [ ] Page 46 needs alt text", 
+        "- [ ] Page 47 too", 
+        "[reject from fqa]: erima:3/22/2016 17:16", 
+        "FQA edits [unlock]: brem:3/23/2016 10:38", 
+        "[schedule for staging]: brem:3/23/2016 11:42", 
+        "submitting for re-FQA [submit to fqa]: brem:3/23/2016 12:16", 
+        "fqa edits [reject from fqa]: brem:3/23/2016 15:39", 
+        "fqa edits [unlock]: brem:3/23/2016 15:40", 
+        "[schedule for staging]: brem:3/23/2016 15:41", 
+        "Unlocked for edit. [unlock]: vverma9:3/28/2016 3:26", 
+        "Staged after edit [schedule for staging]: srani11:3/28/2016 6:46", 
+        "re-submitting to fqa [submit to fqa]: brem:3/28/2016 11:47", 
+        "FQA Approved [schedule for production]: erima:3/28/2016 15:58", 
+        "adding \"about this course\" section [unlock]: brem:7/27/2016 14:39", 
+        "reverting changes [schedule for staging]: brem:8/3/2016 11:47", 
+        "returning to PIP [submit to fqa]: Kcanavan:9/15/2016 13:15", 
+        "returning to PIP [schedule for production]: Kcanavan:9/15/2016 13:16", 
+        "delaying repub temporarily [cancel publishing]: Kcanavan:9/16/2016 10:50", 
+        "return to PIP [schedule for production]: Kcanavan:9/16/2016 14:21"
+    ], 
+    "category_features": [
+        {
+            "ocw_feature": "Social Science", 
+            "ocw_subfeature": "Geography", 
+            "ocw_feature_url": "", 
+            "ocw_speciality": "", 
+            "ocw_feature_notes": ""
+        }
+    ], 
+    "firstTimeEdit": false, 
+    "retirement_date": "None", 
+    "feature_requirements": [
+        {
+            "ocw_feature": "Assignments", 
+            "ocw_subfeature": "programming (no examples)", 
+            "ocw_feature_url": "/resources/res-str-001-geographic-information-system-gis-tutorial-january-iap-2016/introduction-to-gis/", 
+            "ocw_feature_notes": "", 
+            "ocw_speciality": ""
+        }
+    ], 
+    "first_published_to_production": "2016/03/28 21:35:22.280 GMT-4", 
+    "_ac_local_roles": {
+        "asingh33": [
+            "Owner"
+        ]
+    }, 
+    "fm_record_id": "9049", 
+    "last_unpublishing_date": "None", 
+    "classification": [
+        {
+            "source": "CIP", 
+            "id": "450701", 
+            "description": ""
+        }
+    ], 
+    "course_owner": "brem", 
+    "last_published_to_staging": "2016/08/03 11:51:56.886 GMT-4", 
+    "expirationDate": "None", 
+    "_content_type_id": "text/plain", 
+    "_content_type_fm_record_id": "text/plain", 
+    "_gopip": 59, 
+    "unique_identifier": "https://ocw.mit.edu/resources/res-str-001-geographic-information-system-gis-tutorial-january-iap-2016", 
+    "_content_type_title": "text/plain", 
+    "_content_type": "text/plain", 
+    "_atrefs": {
+        "instructors": [
+            "e2ea16949976d7b8768638b299860a05"
+        ], 
+        "master_subject": [
+            "cc5f0cde519dd5a9bfaeeb2a06c695fa"
+        ]
+    }, 
+    "_id": "res-str-001-geographic-information-system-gis-tutorial-january-iap-2016", 
+    "master_course_number": "RES.STR-001", 
+    "editor_notes": "", 
+    "ocw_batch_id": "157", 
+    "language": "en-US", 
+    "rights": "This site (c) Massachusetts Institute of Technology 2016.  Content within individual courses is (c) by the individual authors unless otherwise noted. The Massachusetts Institute of Technology is providing this Work (as defined below) under the terms of this Creative Commons public license (\"CCPL\" or \"license\") unless otherwise noted. The Work is protected by copyright and/or other applicable law. Any use of the work other than as authorized under this license is prohibited. By exercising any of the rights to the Work provided here, You (as defined below) accept and agree to be bound by the terms of this license. The Licensor, the Massachusetts Institute of Technology, grants You the rights contained here in consideration of Your acceptance of such terms and conditions.", 
+    "_atbrefs": {
+        "BelongsTo": [
+            "cd4865266db27a4c6d2a83b8b78cef23", 
+            "e50033f149a6f59d6646e17cae4d4fc2", 
+            "f8ae706639dd475d2d475c2481375ccb", 
+            "a8dcf343da76c175462947a68cd92d2a", 
+            "8d31ebc2a1b54e79784920a025b2e08a", 
+            "cac893d6dd6c462005ea99eafc8b2394", 
+            "def0c1483f1ad7da6f9bb9fc616ffe1c", 
+            "a3b5dd9af8900999684c5696e1b017af", 
+            "b500ca0acd5e89c3277a5218c379bbb8", 
+            "465756c723f415a4d346952796d589d4", 
+            "9baf99f8ba6f704544d402380ff954e4", 
+            "a29f5c524fb3f11120c88124905ec45e", 
+            "d96872203a1900a59560b3007abd03e3", 
+            "5b24f942b9d6359381d3934a9afa7377", 
+            "1dad9efd1e84ee7d3fcb235dae091841", 
+            "d023fa54e6b4f869ecbf1d7519621f68", 
+            "a50b6e6b6d8e88e9e653fb02085724b1", 
+            "23b7c5bd5aa8b062f654045b94ba2abf", 
+            "5c8d404ffdf1ba9b351ba07757966fb8", 
+            "ae9e1c3e67ee9d1b572a124dc922ec42", 
+            "b9f4b649fce4d327c2c925a4f0ec11d0"
+        ]
+    }, 
+    "_defaultpage": "index.htm", 
+    "tcATmit_subject_tags": [], 
+    "features_tracking": [], 
+    "contributors": [], 
+    "_content_type_unique_id": "text/plain", 
+    "_content_type_master_course_number": "text/plain", 
+    "id": "res-str-001-geographic-information-system-gis-tutorial-january-iap-2016", 
+    "materialtype": "Other", 
+    "pop_up_image_dict": {}, 
+    "from_year": "2016", 
+    "_content_type_course_owner": "text/plain", 
+    "_type": "SupplementalResource", 
+    "description": "", 
+    "master_subject": [
+        "cc5f0cde519dd5a9bfaeeb2a06c695fa"
+    ], 
+    "to_year": "-1", 
+    "_content_type_publisher": "text/plain", 
+    "tcATmit_instructional_tags": [], 
+    "course_linking": [], 
+    "first_published_to_staging": "2016/03/07 00:10:41.502 US/Eastern", 
+    "modification_date": "2017/08/29 03:14:15.678 GMT-4", 
+    "course_level": "Non Credit", 
+    "always_publish": false, 
+    "last_unstaging_date": "None", 
+    "_owner": null, 
+    "_permissions": {
+        "Modify portal content": {
+            "acquire": false, 
+            "roles": [
+                "Contributor", 
+                "Editor", 
+                "Manager", 
+                "MetadataEditor", 
+                "Owner", 
+                "Reader", 
+                "Reviewer", 
+                "System"
+            ]
+        }, 
+        "Access contents information": {
+            "acquire": false, 
+            "roles": [
+                "Anonymous"
+            ]
+        }, 
+        "List folder contents": {
+            "acquire": false, 
+            "roles": [
+                "Contributor", 
+                "Editor", 
+                "Manager", 
+                "MetadataEditor", 
+                "Owner", 
+                "Reader", 
+                "Reviewer"
+            ]
+        }, 
+        "View": {
+            "acquire": false, 
+            "roles": [
+                "Anonymous"
+            ]
+        }
+    }, 
+    "_properties": [
+        [
+            "title", 
+            "Geographic Information System (GIS) Tutorial", 
+            "string"
+        ]
+    ], 
+    "creators": [
+        "asingh33"
+    ], 
+    "courselist_features": [
+        {
+            "ocw_feature": "Supplemental Resource", 
+            "ocw_subfeature": "Software Tools and Resources", 
+            "ocw_feature_url": "", 
+            "ocw_speciality": "", 
+            "ocw_feature_notes": ""
+        }
+    ], 
+    "unique_id": "236793a57f96cf26ea0aec0ca35bd118", 
+    "_path": "/Plone/resources/res-str-001-geographic-information-system-gis-tutorial-january-iap-2016"
+}

@@ -1,0 +1,252 @@
+{
+    "text": "<div class=\"full alpha omega\"><a name=\"insights\"></a>\r\n<h2 class=\"title\">Instructor Insights</h2>\r\n</div>\r\n<p>In the following video, Professor Gilbert Strang describes various aspects of how he teaches <em>18.06 Linear Algebra</em>.</p>\r\n<p style=\"text-align: left;\"><span style=\"background-color: rgb(255, 255, 255); color: rgb(51, 51, 51); font-size: 12.144px; text-align: left;\">12700054aninterviewwithgilbertstrangonteachinglinearalgebra63021644</span></p>\r\n\r\n<div class=\"clear\">&nbsp;</div>\r\n<div class=\"onethird alpha\">\r\n<h2 class=\"title\">Curriculum Information</h2>\r\n<h3 class=\"subsubhead\">Prerequisites</h3>\r\n<p>Mathematics GIR&nbsp;<img src=\"/images/educator/icon-question-gir.png\" class=\"question\" alt=\"\" /></p>\r\n<h3 class=\"subsubhead\">Requirements Satisfied</h3>\r\n<p>18.06 fulfills the linear algebra requirement for the <a href=\"http://math.mit.edu/academics/undergrad/major/index.php\">Bachelor of Science in Mathematics</a>.</p>\r\n<h3 class=\"subsubhead\">Offered</h3>\r\n<p>Every   semester</p>\r\n</div>\r\n<div class=\"twothirds omega anythingSlider anythingSlider-default activeSlider\"><a name=\"classroom\"></a>\r\n<h2 class=\"title\">The Classroom</h2>\r\n<div class=\"classroom anythingWindow\">\r\n<ul id=\"slider\" class=\"anythingBase horizontal\" style=\"width: 980px; left: -514px;\">\r\n    <li class=\"panel\">\r\n    <div id=\"externalNav\" class=\"textSlide\"><img src=\"./resolveuid/c026f62fe19be161c863f65792240870\" alt=\"A view toward the front of a classroom from over the rows of seats, showing six sliding chalkboards.\" class=\"photo\" width=\"290\" height=\"180\" />\r\n    <p class=\"nav\"><img alt=\"\" src=\"/images/educator/classroom_prev_dim.png\" style=\"width: 15px; height: 15px; margin-right: 10px; alt=\" /> Room 1 of 1 <span><img src=\"/images/educator/classroom_next_dim.png\" style=\"width: 15px; height: 15px; margin-left: 10px;\" alt=\"\" /></span></p>\r\n    <h3 class=\"subsubhead\">Lecture</h3>\r\n    <p>Classes met in a lecture hall like this one, with tiers of tablet chairs for 294, sliding chalkboards, and A/V equipment.</p>\r\n    </div>\r\n    </li>\r\n</ul>\r\n</div>\r\n</div>\r\n<div class=\"clear\">&nbsp;</div>\r\n<div class=\"onehalf alpha\"><a name=\"assessment\"></a>\r\n<h2 class=\"title\">Assessment</h2>\r\n<p>The students' grades were based on the following activities:</p>\r\n<div class=\"edu_grading\" style=\"clear: both; position: relative;\">\r\n<div><canvas width=\"175\" height=\"175\" id=\"canvas5\"></canvas>                                         <script>\r\n                                            var pieData = [\r\n                                                    {\r\n                                                        value: 15,\r\n                                                        color: \"#DD1E2F\"\r\n                                                    },\r\n                                                    {\r\n                                                        value: 45,\r\n                                                        color: \"#EBB035\"\r\n                                                    },\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t{\r\n                                                        value: 40,\r\n                                                        color: \"#9ACCEF\"\r\n                                                    }\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\r\n                                                ];\r\n                                        var myPie = new Chart(document.getElementById(\"canvas5\").getContext(\"2d\")).Pie(pieData);\r\n                                        </script></div>\r\n<div class=\"edu_breakdown_key\" style=\"float: right; width: 185px; margin-top: -180px;\">\r\n<div><img src=\"/images/educator/edu_b-lab-key.png\" alt=\"The color used on the preceding chart which represents the percentage of the total grade contributed by problem sets.\" /> 15% Problem sets</div>\r\n<div><img src=\"/images/educator/edu_b-lecture-key.png\" alt=\"The color used on the preceding chart which represents the percentage of the total grade contributed by three one-hour exams.\" /> 45% Three one-hour exams</div>\r\n<div><img src=\"/images/educator/edu_b-present-key.png\" alt=\"The color used on the preceding chart which represents the percentage of the total grade contributed by final exam.\" /> 40% Final exam</div>\r\n</div>\r\n</div>\r\n</div>\r\n<div class=\"onehalf omega\">\r\n<h2 class=\"title\">Student Information</h2>\r\n<div style=\"width: 105px; text-align: left; float:right; margin: 0px 0px 20px 20px;\"><img width=\"105\" height=\"105\" alt=\"182 students took this course when it was offered in Spring 2010.\" src=\"./resolveuid/c24518ecda658185c40c2e5eeb72c7fa\" /></div>\r\n<h3 class=\"subsubhead\">Breakdown by Year</h3>\r\n<p>Mostly undergraduates</p>\r\n<h3 class=\"subsubhead\">Breakdown by Major</h3>\r\n<p>Many computer science &amp; engineering and management majors</p>\r\n</div>\r\n<div class=\"clear\">&nbsp;</div>\r\n<div class=\"full alpha omega\"><a name=\"studenttime\"></a>\r\n<h2 class=\"title\">How Student Time Was Spent</h2>\r\n</div>\r\n<div class=\"onehalf alpha\">\r\n<p>During an average week, students were expected to spend 12 hours on the course, roughly divided as follows:</p>\r\n<h2 class=\"subhead\">Lecture</h2>\r\n<div style=\"clear: both; position: relative;\">\r\n<div class=\"edu_hours_left\"><canvas width=\"100\" height=\"100\" id=\"canvas1\"></canvas>                                         <script>\r\n\r\n                                            var pieData = [\r\n\r\n                                                    {\r\n\r\n                                                        value: 25,\r\n\r\n                                                        color: \"#931101\"\r\n\r\n                                                    },\r\n\r\n                                                    {\r\n\r\n                                                        value: 75,\r\n\r\n                                                        color: \"#eee\"\r\n\r\n                                                    }\r\n\r\n                                                \r\n\r\n                                                ];\r\n\r\n                                        var myPie = new Chart(document.getElementById(\"canvas1\").getContext(\"2d\")).Pie(pieData);\r\n\r\n                                        </script>                                         3 hours per week</div>\r\n<div class=\"edu_hours_right\">\r\n<p>Met 3 times per week for 1 hour per session; 38 sessions total; mandatory attendance.</p>\r\n</div>\r\n<div class=\"clear\">&nbsp;</div>\r\n</div>\r\n<h2 class=\"subhead\">Recitation</h2>\r\n<div style=\"clear: both; position: relative;\">\r\n<div class=\"edu_hours_left\"><canvas width=\"100\" height=\"100\" id=\"canvas2\"></canvas>                                         <script>\r\n\r\n                                            var pieData = [\r\n\r\n                                                    {\r\n\r\n                                                        value: 25,\r\n\r\n                                                        color: \"#eee\"\r\n\r\n                                                    },\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\r\n                                                    {\r\n\r\n                                                        value: 8,\r\n\r\n                                                        color: \"#931101\"\r\n\r\n                                                    },\r\n\r\n                                                    {\r\n\r\n                                                        value: 67,\r\n\r\n                                                        color: \"#eee\"\r\n\r\n                                                    }\r\n\r\n                                                \r\n\r\n                                                ];\r\n\r\n                                        var myPie = new Chart(document.getElementById(\"canvas2\").getContext(\"2d\")).Pie(pieData);\r\n\r\n                                        </script>                                           1  hours per week</div>\r\n<div class=\"edu_hours_right\">\r\n<p>Met 1 time per week for 1 hour each session.</p>\r\n</div>\r\n<div class=\"clear\">&nbsp;</div>\r\n</div>\r\n<h2 class=\"subhead\">Out of Class</h2>\r\n<div style=\"clear: both; position: relative;\">\r\n<div class=\"edu_hours_left\"><canvas width=\"100\" height=\"100\" id=\"canvas3\"></canvas>                                         <script>\r\n\r\n                                            var pieData = [\r\n\r\n                                                    {\r\n\r\n                                                        value: 33,\r\n\r\n                                                        color: \"#eee\"\r\n\r\n                                                    },\r\n\r\n                                                    {\r\n\r\n                                                        value: 67,\r\n\r\n                                                        color: \"#931101\"\r\n\r\n                                                    }\r\n\r\n                                                \r\n\r\n                                                ];\r\n\r\n                                        var myPie = new Chart(document.getElementById(\"canvas3\").getContext(\"2d\")).Pie(pieData);\r\n\r\n                                        </script>                                         8 hours per week</div>\r\n<div class=\"edu_hours_right\">\r\n<p>Completing problem sets; studying for exams.</p>\r\n</div>\r\n<div class=\"clear\">&nbsp;</div>\r\n</div>\r\n</div>\r\n<div class=\"onehalf no_title omega\">\r\n<h2 style=\"margin-top: -10px;\" class=\"subhead\">Semester Breakdown</h2>\r\n<table class=\"edu_breakdown\">\r\n    <thead>\r\n        <tr>\r\n            <th style=\"padding-bottom: 8px;\" class=\"week_col\" scope=\"col\">WEEK</th>\r\n            <th style=\"padding-bottom: 8px;\" class=\"day_col\" scope=\"col\">M</th>\r\n            <th style=\"padding-bottom: 8px;\" class=\"day_col\" scope=\"col\">T</th>\r\n            <th style=\"padding-bottom: 8px;\" class=\"day_col\" scope=\"col\">W</th>\r\n            <th style=\"padding-bottom: 8px;\" class=\"day_col\" scope=\"col\">Th</th>\r\n            <th style=\"padding-bottom: 8px;\" class=\"day_col\" scope=\"col\">F</th>\r\n        </tr>\r\n    </thead>\r\n    <tbody>\r\n        <tr>\r\n            <th scope=\"row\">1</th>\r\n            <td><img alt=\"No classes throughout MIT.\" src=\"/images/educator/edu_b-noclass.png\" /></td>\r\n            <td><img src=\"/images/educator/edu_b-blank.png\" alt=\"No session scheduled.\" /></td>\r\n            <td><img src=\"/images/educator/edu_b-lecture.png\" alt=\"Lecture session scheduled.\" /></td>\r\n            <td><img src=\"/images/educator/edu_b-blank.png\" alt=\"No session scheduled.\" /></td>\r\n            <td><img src=\"/images/educator/edu_b-lecture.png\" alt=\"Lecture session scheduled.\" /></td>\r\n        </tr>\r\n        <tr>\r\n            <th scope=\"row\">2</th>\r\n            <td><img src=\"/images/educator/edu_b-lecture.png\" alt=\"Lecture session scheduled.\" /></td>\r\n            <td><img src=\"/images/educator/edu_b-recitation.png\" alt=\"Recitation session scheduled.\" /></td>\r\n            <td><img src=\"/images/educator/edu_b-lecture.png\" alt=\"Lecture session scheduled.\" /></td>\r\n            <td><img src=\"/images/educator/edu_b-blank.png\" alt=\"No session scheduled.\" /></td>\r\n            <td><img src=\"/images/educator/edu_b-lecture-duedate.png\" alt=\"Lecture session scheduled and problem set due.\" /></td>\r\n        </tr>\r\n        <tr>\r\n            <th scope=\"row\">3</th>\r\n            <td><img src=\"/images/educator/edu_b-noclass.png\" alt=\"No classes throughout MIT.\" /></td>\r\n            <td><img src=\"/images/educator/edu_b-recitation.png\" alt=\"Recitation session scheduled.\" /></td>\r\n            <td><img src=\"/images/educator/edu_b-lecture.png\" alt=\"Lecture session scheduled.\" /></td>\r\n            <td><img src=\"/images/educator/edu_b-blank.png\" alt=\"No session scheduled.\" /></td>\r\n            <td><img src=\"/images/educator/edu_b-lecture-duedate.png\" alt=\"Lecture session scheduled and problem set due.\" /></td>\r\n        </tr>\r\n        <tr>\r\n            <th scope=\"row\">4</th>\r\n            <td><img src=\"/images/educator/edu_b-lecture.png\" alt=\"Lecture session scheduled.\" /></td>\r\n            <td><img src=\"/images/educator/edu_b-recitation.png\" alt=\"Recitation session scheduled.\" /></td>\r\n            <td><img src=\"/images/educator/edu_b-lecture.png\" alt=\"Lecture session scheduled.\" /></td>\r\n            <td><img src=\"/images/educator/edu_b-blank.png\" alt=\"No session scheduled.\" /></td>\r\n            <td><img src=\"/images/educator/edu_b-lecture-duedate.png\" alt=\"Lecture session scheduled and problem set due.\" /></td>\r\n        </tr>\r\n        <tr>\r\n            <th scope=\"row\">5</th>\r\n            <td><img src=\"/images/educator/edu_b-lecture-exam.png\" alt=\"Lecture session and exam scheduled.\" /></td>\r\n            <td><img src=\"/images/educator/edu_b-recitation.png\" alt=\"Recitation session scheduled.\" /></td>\r\n            <td><img src=\"/images/educator/edu_b-lecture.png\" alt=\"Lecture session scheduled.\" /></td>\r\n            <td><img src=\"/images/educator/edu_b-blank.png\" alt=\"No session scheduled.\" /></td>\r\n            <td><img src=\"/images/educator/edu_b-lecture-duedate.png\" alt=\"Lecture session scheduled and problem set due.\" /></td>\r\n        </tr>\r\n        <tr>\r\n            <th scope=\"row\">6</th>\r\n            <td><img src=\"/images/educator/edu_b-lecture.png\" alt=\"Lecture session scheduled.\" /></td>\r\n            <td><img src=\"/images/educator/edu_b-recitation.png\" alt=\"Recitation session scheduled.\" /></td>\r\n            <td><img src=\"/images/educator/edu_b-lecture.png\" alt=\"Lecture session scheduled.\" /></td>\r\n            <td><img src=\"/images/educator/edu_b-blank.png\" alt=\"No session scheduled.\" /></td>\r\n            <td><img src=\"/images/educator/edu_b-lecture-duedate.png\" alt=\"Lecture session scheduled and problem set due.\" /></td>\r\n        </tr>\r\n        <tr>\r\n            <th scope=\"row\">7</th>\r\n            <td><img src=\"/images/educator/edu_b-lecture.png\" alt=\"Lecture session scheduled.\" /></td>\r\n            <td><img src=\"/images/educator/edu_b-recitation.png\" alt=\"Recitation session scheduled.\" /></td>\r\n            <td><img src=\"/images/educator/edu_b-lecture.png\" alt=\"Lecture session scheduled.\" /></td>\r\n            <td><img src=\"/images/educator/edu_b-blank.png\" alt=\"No session scheduled.\" /></td>\r\n            <td><img src=\"/images/educator/edu_b-lecture-duedate.png\" alt=\"Lecture session scheduled and problem set due.\" /></td>\r\n        </tr>\r\n        <tr>\r\n            <th scope=\"row\">8</th>\r\n            <td><img src=\"/images/educator/edu_b-noclass.png\" alt=\"No classes throughout MIT.\" /></td>\r\n            <td><img src=\"/images/educator/edu_b-noclass.png\" alt=\"No classes throughout MIT.\" /></td>\r\n            <td><img src=\"/images/educator/edu_b-noclass.png\" alt=\"No classes throughout MIT.\" /></td>\r\n            <td><img src=\"/images/educator/edu_b-noclass.png\" alt=\"No classes throughout MIT.\" /></td>\r\n            <td><img src=\"/images/educator/edu_b-noclass.png\" alt=\"No classes throughout MIT.\" /></td>\r\n        </tr>\r\n        <tr>\r\n            <th scope=\"row\">9</th>\r\n            <td><img src=\"/images/educator/edu_b-lecture.png\" alt=\"Lecture session scheduled.\" /></td>\r\n            <td><img src=\"/images/educator/edu_b-recitation.png\" alt=\"Recitation session scheduled.\" /></td>\r\n            <td><img src=\"/images/educator/edu_b-lecture.png\" alt=\"Lecture session scheduled.\" /></td>\r\n            <td><img src=\"/images/educator/edu_b-blank.png\" alt=\"No session scheduled.\" /></td>\r\n            <td><img src=\"/images/educator/edu_b-lecture-duedate.png\" alt=\"Lecture session scheduled and problem set due.\" /></td>\r\n        </tr>\r\n        <tr>\r\n            <th scope=\"row\">10</th>\r\n            <td><img src=\"/images/educator/edu_b-lecture.png\" alt=\"Lecture session scheduled.\" /></td>\r\n            <td><img src=\"/images/educator/edu_b-recitation.png\" alt=\"Recitation session scheduled.\" /></td>\r\n            <td><img src=\"/images/educator/edu_b-lecture-exam.png\" alt=\"Lecture session and exam scheduled.\" /></td>\r\n            <td><img src=\"/images/educator/edu_b-blank.png\" alt=\"No session scheduled.\" /></td>\r\n            <td><img src=\"/images/educator/edu_b-lecture.png\" alt=\"Lecture session scheduled.\" /></td>\r\n        </tr>\r\n        <tr>\r\n            <th scope=\"row\">11</th>\r\n            <td><img src=\"/images/educator/edu_b-noclass.png\" alt=\"No classes throughout MIT.\" /></td>\r\n            <td><img src=\"/images/educator/edu_b-noclass.png\" alt=\"No classes throughout MIT.\" /></td>\r\n            <td><img src=\"/images/educator/edu_b-lecture.png\" alt=\"Lecture session scheduled.\" /></td>\r\n            <td><img src=\"/images/educator/edu_b-blank.png\" alt=\"No session scheduled.\" /></td>\r\n            <td><img src=\"/images/educator/edu_b-lecture-duedate.png\" alt=\"Lecture session scheduled and problem set due.\" /></td>\r\n        </tr>\r\n        <tr>\r\n            <th scope=\"row\">12</th>\r\n            <td><img src=\"/images/educator/edu_b-lecture.png\" alt=\"Lecture session scheduled.\" /></td>\r\n            <td><img src=\"/images/educator/edu_b-recitation.png\" alt=\"Recitation session scheduled.\" /></td>\r\n            <td><img src=\"/images/educator/edu_b-lecture.png\" alt=\"Lecture session scheduled.\" /></td>\r\n            <td><img src=\"/images/educator/edu_b-blank.png\" alt=\"No session scheduled.\" /></td>\r\n            <td><img src=\"/images/educator/edu_b-lecture-duedate.png\" alt=\"Lecture session scheduled and problem set due.\" /></td>\r\n        </tr>\r\n        <tr>\r\n            <th scope=\"row\">13</th>\r\n            <td><img src=\"/images/educator/edu_b-lecture.png\" alt=\"Lecture session scheduled.\" /></td>\r\n            <td><img src=\"/images/educator/edu_b-recitation.png\" alt=\"Recitation session scheduled.\" /></td>\r\n            <td><img src=\"/images/educator/edu_b-lecture.png\" alt=\"Lecture session scheduled.\" /></td>\r\n            <td><img src=\"/images/educator/edu_b-blank.png\" alt=\"No session scheduled.\" /></td>\r\n            <td><img src=\"/images/educator/edu_b-lecture-duedate.png\" alt=\"Lecture session scheduled and problem set due.\" /></td>\r\n        </tr>\r\n        <tr>\r\n            <th scope=\"row\">14</th>\r\n            <td><img src=\"/images/educator/edu_b-lecture.png\" alt=\"Lecture session scheduled.\" /></td>\r\n            <td><img src=\"/images/educator/edu_b-recitation.png\" alt=\"Recitation session scheduled.\" /></td>\r\n            <td><img src=\"/images/educator/edu_b-lecture.png\" alt=\"Lecture session scheduled.\" /></td>\r\n            <td><img src=\"/images/educator/edu_b-blank.png\" alt=\"No session scheduled.\" /></td>\r\n            <td><img src=\"/images/educator/edu_b-lecture-exam.png\" alt=\"Lecture session and exam scheduled.\" /></td>\r\n        </tr>\r\n        <tr>\r\n            <th scope=\"row\">15</th>\r\n            <td><img src=\"/images/educator/edu_b-lecture.png\" alt=\"Lecture session scheduled.\" /></td>\r\n            <td><img src=\"/images/educator/edu_b-recitation.png\" alt=\"Recitation session scheduled.\" /></td>\r\n            <td><img src=\"/images/educator/edu_b-lecture.png\" alt=\"Lecture session scheduled.\" /></td>\r\n            <td><img src=\"/images/educator/edu_b-blank.png\" alt=\"No session scheduled.\" /></td>\r\n            <td><img alt=\"No classes throughout MIT.\" src=\"/images/educator/edu_b-noclass.png\" /></td>\r\n        </tr>\r\n        <tr>\r\n            <th scope=\"row\">16</th>\r\n            <td><img alt=\"No classes throughout MIT.\" src=\"/images/educator/edu_b-noclass.png\" /></td>\r\n            <td><img alt=\"No classes throughout MIT.\" src=\"/images/educator/edu_b-noclass.png\" /></td>\r\n            <td><img alt=\"No classes throughout MIT.\" src=\"/images/educator/edu_b-noclass.png\" /></td>\r\n            <td><img alt=\"No classes throughout MIT.\" src=\"/images/educator/edu_b-noclass.png\" /></td>\r\n            <td><img alt=\"No classes throughout MIT.\" src=\"/images/educator/edu_b-noclass.png\" /></td>\r\n        </tr>\r\n    </tbody>\r\n</table>\r\n<div class=\"edu_breakdown_key\">\r\n<div style=\"float: left;\">\r\n<div><img alt=\"Displays the color and pattern used on the preceding table to indicate dates when classes are not held at MIT.\" src=\"/images/educator/edu_b-noclass-key.png\" /> No classes throughout MIT</div>\r\n<div><img src=\"/images/educator/edu_b-recitation-key.png\" alt=\"Displays the color used on the preceding table to indicate dates when recitations are held.\" /> Recitation</div>\r\n<div><img src=\"/images/educator/edu_b-duedate-key.png\" alt=\"Displays the symbol used on the preceding table to indicate dates when problem sets are due.\" /> Problem set due</div>\r\n</div>\r\n<div style=\"float: right;\">\r\n<div><img alt=\"Displays the color used on the preceding table to indicate dates when no class session is scheduled.\" src=\"/images/educator/edu_b-blank-key.png\" /> No class session scheduled</div>\r\n<div><img src=\"/images/educator/edu_b-lecture-key.png\" alt=\"Displays the color used on the preceding table to indicate dates when lecture sessions are held.\" /> Lecture session</div>\r\n<div><img src=\"/images/educator/edu_b-exam-key.png\" alt=\"Displays the symbol used on the preceding table to indicate dates when exams are held.\" /> Exam</div>\r\n</div>\r\n</div>\r\n</div>\r\n<div class=\"clear\">&nbsp;</div>\r\n<div class=\"full alpha omega\">\r\n<h2 class=\"title\">Course Team Roles</h2>\r\n</div>\r\n<div>\r\n<h2 class=\"subhead\">Lead Instructor (Professor Strang)</h2>\r\n<p>Professor Strang prepared and delivered lectures; prepared problem sets.</p>\r\n<h2 class=\"subhead\">Teaching Assistants&nbsp;</h2>\r\n<p>Five teaching assistants conducted recitation sessions; held office hours and fielded student questions by email.</p>\r\n</div>\r\n<div class=\"clear\">&nbsp;</div>", 
+    "_content_type_license": "text/plain", 
+    "_uid": "3f3b7835cf477d3ba10b05fbe03cbffa", 
+    "studentinformationtext": "", 
+    "title": "Instructor Insights", 
+    "_ac_local_roles": {
+        "yunpengwang": [
+            "Owner"
+        ]
+    }, 
+    "location": "", 
+    "_content_type_course_identifier": "text/plain", 
+    "_atbrefs": {
+        "isReferencing": [
+            "3f3b7835cf477d3ba10b05fbe03cbffa"
+        ]
+    }, 
+    "constrainTypesMode": 0, 
+    "technical_location": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/instructor-insights", 
+    "software_requirements": [
+        {
+            "software_type_col": "Browser", 
+            "minimum_version_col": "40.0", 
+            "software_name_col": "Chrome", 
+            "maximum_version_col": ""
+        }, 
+        {
+            "software_type_col": "Browser", 
+            "minimum_version_col": "8.0", 
+            "software_name_col": "Safari", 
+            "maximum_version_col": ""
+        }, 
+        {
+            "software_type_col": "Browser", 
+            "minimum_version_col": "38.0", 
+            "software_name_col": "Mozilla Firefox", 
+            "maximum_version_col": ""
+        }, 
+        {
+            "software_type_col": "Browser", 
+            "minimum_version_col": "9.0", 
+            "software_name_col": "Internet Explorer", 
+            "maximum_version_col": ""
+        }, 
+        {
+            "software_type_col": "Browser", 
+            "minimum_version_col": "13.1", 
+            "software_name_col": "Edge", 
+            "maximum_version_col": ""
+        }
+    ], 
+    "_content_type_technical_location": "text/plain", 
+    "_content_type_rights": "text/html", 
+    "_directly_provided": [
+        "Products.CMFEditions.interfaces.IVersioned"
+    ], 
+    "parent_uid": "aabc44bdb2e45374d62f30f2a6d4c63e", 
+    "excludeFromNav": false, 
+    "curriculuminformationtext": "", 
+    "_content_type_unique_identifier": "text/plain", 
+    "allowDiscussion": false, 
+    "_content_type_materialtype": "text/plain", 
+    "locallyAllowedTypes": [
+        "OCWImage", 
+        "CourseSection", 
+        "OCWExtFile", 
+        "OCWFile", 
+        "MediaResource"
+    ], 
+    "_content_type_text": "text/html", 
+    "ad_type": "HOUSE", 
+    "creation_date": "2019/07/11 14:33:23.836 GMT-4", 
+    "aggregationlevel": 3, 
+    "duration": "", 
+    "immediatelyAddableTypes": [
+        "OCWImage", 
+        "CourseSection", 
+        "OCWExtFile", 
+        "OCWFile", 
+        "MediaResource"
+    ], 
+    "subject": [], 
+    "_content_type_short_page_title": "text/plain", 
+    "effectiveDate": "2019/07/12 09:48:21.313 GMT-4", 
+    "parent_module": "aabc44bdb2e45374d62f30f2a6d4c63e", 
+    "is_mathml_document": false, 
+    "bottomtext": "", 
+    "short_page_title": "Instructor Insights", 
+    "section_identifier": null, 
+    "related_mit_links": "", 
+    "_content_type_ad_type": "text/plain", 
+    "_layout": "custom_view", 
+    "_workflow_history": {
+        "page_workflow": [
+            {
+                "action": null, 
+                "review_state": "waiting_for_authoring", 
+                "comments": "", 
+                "actor": "yunpengwang", 
+                "time": "2019/07/11 14:33:23.847 GMT-4"
+            }, 
+            {
+                "action": "approve_to_staging", 
+                "review_state": "ready_for_staging", 
+                "comments": "", 
+                "actor": "yunpengwang", 
+                "time": "2019/07/12 09:48:21.335 GMT-4"
+            }, 
+            {
+                "action": "decline_to_qa", 
+                "review_state": "waiting_for_qa", 
+                "actor": "yunpengwang", 
+                "comments": "", 
+                "time": "2019/07/12 10:40:13.183 GMT-4"
+            }, 
+            {
+                "action": "approve_to_staging", 
+                "review_state": "ready_for_staging", 
+                "actor": "yunpengwang", 
+                "comments": "", 
+                "time": "2019/07/12 10:40:47.821 GMT-4"
+            }, 
+            {
+                "action": "decline_to_qa", 
+                "review_state": "waiting_for_qa", 
+                "comments": "", 
+                "actor": "yunpengwang", 
+                "time": "2019/07/31 14:40:54.738 Universal"
+            }, 
+            {
+                "action": "approve_to_staging", 
+                "review_state": "ready_for_staging", 
+                "actor": "yunpengwang", 
+                "comments": "", 
+                "time": "2019/07/31 18:35:02.294 Universal"
+            }
+        ]
+    }, 
+    "_classname": "ThisCourseAtMITSection", 
+    "metadata_contributor_list": [], 
+    "courseteamrolestext": "", 
+    "_userdefined_roles": [], 
+    "publisher": "MIT OpenCourseWare", 
+    "theclassroomtext": "", 
+    "nextPreviousEnabled": false, 
+    "language": "", 
+    "url_rewrite_patterns": [], 
+    "widgets_features": [], 
+    "category_features": [], 
+    "firstTimeEdit": true, 
+    "feature_requirements": [], 
+    "list_in_left_nav": false, 
+    "short_name_tlp": "", 
+    "expirationDate": "None", 
+    "_content_type_id": "text/plain", 
+    "contributor_list": [], 
+    "is_media_gallery": false, 
+    "contributors": [], 
+    "_gopip": 3, 
+    "_content_type_title": "text/plain", 
+    "course_linking": [], 
+    "_atrefs": {
+        "BelongsTo": [
+            "aabc44bdb2e45374d62f30f2a6d4c63e"
+        ], 
+        "isReferencing": [
+            "c24518ecda658185c40c2e5eeb72c7fa", 
+            "3f3b7835cf477d3ba10b05fbe03cbffa", 
+            "c026f62fe19be161c863f65792240870"
+        ]
+    }, 
+    "other_platform_requirements": "", 
+    "howstudenttimewasspenttext": "", 
+    "license": "https://creativecommons.org/licenses/by-nc-sa/3.0/us/", 
+    "rights": "This site (c) Massachusetts Institute of Technology 2019.  Content within individual courses is (c) by the individual authors unless otherwise noted. The Massachusetts Institute of Technology is providing this Work (as defined below) under the terms of this Creative Commons public license (\"CCPL\" or \"license\") unless otherwise noted. The Work is protected by copyright and/or other applicable law. Any use of the work other than as authorized under this license is prohibited. By exercising any of the rights to the Work provided here, You (as defined below) accept and agree to be bound by the terms of this license. The Licensor, the Massachusetts Institute of Technology, grants You the rights contained here in consideration of Your acceptance of such terms and conditions.", 
+    "hide_Page_title": false, 
+    "_defaultpage": "", 
+    "courseoverviewtext": "", 
+    "tcATmit_subject_tags": [], 
+    "features_tracking": [], 
+    "ad_champion_text": "", 
+    "has_inline_embed": true, 
+    "unique_identifier": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/instructor-insights", 
+    "is_image_gallery": false, 
+    "_path": "/Plone/courses/mathematics/18-06-linear-algebra-spring-2010/instructor-insights", 
+    "id": "instructor-insights", 
+    "materialtype": "Other", 
+    "instructorinsightstext": "", 
+    "_type": "ThisCourseAtMITSection", 
+    "description": "In this section Professor Gilbert Strang describes various aspects of how he teaches 18.06 Linear Algebra.", 
+    "course_identifier": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010", 
+    "_content_type_publisher": "text/plain", 
+    "tcATmit_instructional_tags": [], 
+    "_content_type": "text/html", 
+    "creators": [
+        "yunpengwang"
+    ], 
+    "modification_date": "2019/07/31 18:34:59.867 Universal", 
+    "always_publish": false, 
+    "_content_type_description": "text/plain", 
+    "_owner": "yunpengwang", 
+    "_permissions": {
+        "Change portal events": {
+            "acquire": false, 
+            "roles": [
+                "Editor", 
+                "Manager", 
+                "MetadataEditor", 
+                "Owner"
+            ]
+        }, 
+        "Modify portal content": {
+            "acquire": false, 
+            "roles": [
+                "Manager", 
+                "MetadataEditor"
+            ]
+        }, 
+        "Access contents information": {
+            "acquire": false, 
+            "roles": [
+                "Authenticated"
+            ]
+        }, 
+        "List folder contents": {
+            "acquire": false, 
+            "roles": [
+                "Editor", 
+                "Manager", 
+                "MetadataEditor", 
+                "Owner"
+            ]
+        }, 
+        "View": {
+            "acquire": false, 
+            "roles": [
+                "Authenticated"
+            ]
+        }
+    }, 
+    "_properties": [
+        [
+            "title", 
+            "Instructor Insights", 
+            "string"
+        ]
+    ], 
+    "_id": "instructor-insights", 
+    "courselist_features": [], 
+    "courseoutcomestext": ""
+}

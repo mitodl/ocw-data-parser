@@ -28,7 +28,7 @@ def ocw_parser():
     Instantiate an OCWParser object and run functions depending on args passed in
     """
     with TemporaryDirectory() as destination_dir:
-        yield OCWParser(course_dir="ocw_data_parser/test_json/course_dir",
+        yield OCWParser(course_dir="ocw_data_parser/test_json/course_dir/course-1",
                             destination_dir=destination_dir,
                             static_prefix="static_files/")
 

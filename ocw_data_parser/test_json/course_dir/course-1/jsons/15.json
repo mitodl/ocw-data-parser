@@ -1,0 +1,159 @@
+{
+    "tcATmit_subject_tags": [], 
+    "features_tracking": [], 
+    "widgets_features": [], 
+    "contributors": [], 
+    "unique_identifier": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/instructor-insights/an-interview-with-gilbert-strang-on-teaching-linear-algebra/7UJ4CFRGd-U.srt", 
+    "_content_type_publisher": "text/plain", 
+    "_content_type_license": "text/plain", 
+    "creation_date": "2019/07/31 18:02:47.451 Universal", 
+    "aggregationlevel": 2, 
+    "_uid": "9dbd5e22e2379a1bb4e844757c445dfd", 
+    "_workflow_history": {
+        "one_state_workflow": [
+            {
+                "action": null, 
+                "review_state": "published", 
+                "actor": "yunpengwang", 
+                "comments": "", 
+                "time": "2019/07/31 18:02:47.598 Universal"
+            }
+        ]
+    }, 
+    "expirationDate": "None", 
+    "_content_type_id": "text/plain", 
+    "duration": "", 
+    "contributor_list": [], 
+    "id": "7UJ4CFRGd-U.srt", 
+    "related_mit_links": "", 
+    "effectiveDate": "None", 
+    "title": "3play caption file", 
+    "parent_module": "aabc44bdb2e45374d62f30f2a6d4c63e", 
+    "_content_type": "application/x-subrip", 
+    "_userdefined_roles": [], 
+    "_gopip": 4, 
+    "location": "", 
+    "_atrefs": {
+        "BelongsTo": [
+            "aabc44bdb2e45374d62f30f2a6d4c63e"
+        ]
+    }, 
+    "_content_type_course_identifier": "text/plain", 
+    "_content_type_title": "text/plain", 
+    "section_identifier": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/instructor-insights", 
+    "_atbrefs": {
+        "file_reference": [
+            "63f512d905780635f927ea8c8213d931"
+        ]
+    }, 
+    "_content_type_section_identifier": "text/plain", 
+    "_type": "OCWFile", 
+    "technical_location": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/instructor-insights/an-interview-with-gilbert-strang-on-teaching-linear-algebra/7UJ4CFRGd-U.srt", 
+    "description": "", 
+    "software_requirements": [
+        {
+            "software_type_col": "Browser", 
+            "minimum_version_col": "40.0", 
+            "software_name_col": "Chrome", 
+            "maximum_version_col": ""
+        }, 
+        {
+            "software_type_col": "Browser", 
+            "minimum_version_col": "8.0", 
+            "software_name_col": "Safari", 
+            "maximum_version_col": ""
+        }, 
+        {
+            "software_type_col": "Browser", 
+            "minimum_version_col": "38.0", 
+            "software_name_col": "Mozilla Firefox", 
+            "maximum_version_col": ""
+        }, 
+        {
+            "software_type_col": "Browser", 
+            "minimum_version_col": "9.0", 
+            "software_name_col": "Internet Explorer", 
+            "maximum_version_col": ""
+        }, 
+        {
+            "software_type_col": "Browser", 
+            "minimum_version_col": "13.1", 
+            "software_name_col": "Edge", 
+            "maximum_version_col": ""
+        }
+    ], 
+    "_content_type_technical_location": "text/plain", 
+    "_layout": "file_view", 
+    "subject": [], 
+    "_datafield_file": {
+        "encoding": "base64", 
+        "data": "MQowMDowMDowNiw4NDAgLS0+IDAwOjAwOjExLDAyMApTQVJBSCBIQU5TRU46IFdlbGwsIHlvdSBoYXZlIGEKbG90IG9mIGZvbGxvd2VycyBvZiB5b3VyIDE4LjA2CgoyCjAwOjAwOjExLDAyMCAtLT4gMDA6MDA6MTEsNTIwCnZpZGVvcy4KCjMKMDA6MDA6MTEsNTIwIC0tPiAwMDowMDoxMyw0NDAKR0lMQkVSVCBTVFJBTkc6ClRoYXQncyB3b25kZXJmdWwuCgo0CjAwOjAwOjEzLDQ0MCAtLT4gMDA6MDA6MTYsMzUwClNBUkFIIEhBTlNFTjogQW5kIEknbGwKcmVhZCB0aGlzIHF1b3RlIHRvIHlvdS4KCjUKMDA6MDA6MTYsMzUwIC0tPiAwMDowMDoxOSwyNjAKIkEgY29tbWVudGVyIGV2ZW4gbm90ZWQKdGhhdCB0aGlzIGlzIG5vdCBsZWN0dXJlLAoKNgowMDowMDoxOSwyNjAgLS0+IDAwOjAwOjIwLDg1MAp0aGlzIGlzIGFydC4iCgo3CjAwOjAwOjIwLDg1MCAtLT4gMDA6MDA6MjEsNzgwCkdJTEJFUlQgU1RSQU5HOiBHb3NoLgoKOAowMDowMDoyMSw3ODAgLS0+IDAwOjAwOjIyLDg2MApPSy4KCjkKMDA6MDA6MjIsODYwIC0tPiAwMDowMDoyNywxMjAKV2VsbCwgaWYgeW91J3JlIGdvaW5nIHRvIGFzawp3aGF0J3MgbXkgc3lzdGVtLCBJIGhhdmUgbm9uZS4KCjEwCjAwOjAwOjMwLDM5MCAtLT4gMDA6MDA6MzIsNTQwCkkgZ3Vlc3MtLSB3ZWxsLCBmaXJzdApJIGxpa2Ugc3R1ZGVudHMuCgoxMQowMDowMDozMiw1NDAgLS0+IDAwOjAwOjM0LDI0MApBbmQgSSB3YW50IHRvIGhlbHAuCgoxMgowMDowMDozNCwyNDAgLS0+IDAwOjAwOjQyLDkzMApBbmQgbWF5YmUgdGhlIGtleSBwb2ludAppcyB0byB0aGluayB3aXRoIHRoZW0uCgoxMwowMDowMDo0Miw5MzAgLS0+IDAwOjAwOjQ4LDQ4MApOb3QgdG8ganVzdCBzYXksIE9LLCBoZXJlCml0IGlzLCBsaXN0ZW4sIGxpc3RlbiB1cC4KCjE0CjAwOjAwOjQ4LDQ4MCAtLT4gMDA6MDA6NTUsNDkwCkkgdGhpbmsgdGhyb3VnaCB0aGUgcXVlc3Rpb24KYWxsIG92ZXIgYWdhaW4gYXMgdGhleSBkby4KCjE1CjAwOjAwOjU1LDQ5MCAtLT4gMDA6MDA6NTYsODIwCkFuZCB5b3UgaGF2ZSB0byBnaXZlIHRpbWUuCgoxNgowMDowMDo1Niw4MjAgLS0+IDAwOjAxOjAxLDE3MApZb3UgY2FuJ3QgemlwIHRocm91Z2ggYSBwcm9vZi4KCjE3CjAwOjAxOjAxLDE3MCAtLT4gMDA6MDE6MDUsNjIwCkJlY2F1c2UgdGhpcyBjbGFzcyBoYXMgdG8gYmUKc29ydCBvZiB0aGlua2luZyB3aXRoIHlvdS4KCjE4CjAwOjAxOjA1LDYyMCAtLT4gMDA6MDE6MTEsMDQwCkFuZCB0aGF0J3MtLSB5ZWFoLAp0aGF0J3MgbXkgdGhvdWdodC4KCjE5CjAwOjAxOjExLDA0MCAtLT4gMDA6MDE6MTUsODIwCkkgZG9uJ3Qga25vdyBpZiBJIGFjaGlldmUgaXQsCmJ1dCBJIHRoaW5rIGl0J3MgdGhlIGdvYWwuCgoyMAowMDowMToxNSw4MjAgLS0+IDAwOjAxOjE5LDExMApTQVJBSCBIQU5TRU46IE9uZQpvZiBvdXIgdXNlcnMgb24gT0NXCgoyMQowMDowMToxOSwxMTAgLS0+IDAwOjAxOjIzLDk3MApub3RlZCB0aGF0IGR1cmluZwpsZWN0dXJlcyB5b3Ugc29tZXRpbWVzIGFzawoKMjIKMDA6MDE6MjMsOTcwIC0tPiAwMDowMToyOCw4NzcKcmhldG9yaWNhbCBxdWVzdGlvbnMsIG9yIG1heWJlCmZlaWduIGNvbmZ1c2lvbiBhcyBhIHdheS0tCgoyMwowMDowMToyOCw4NzcgLS0+IDAwOjAxOjMwLDIxMApHSUxCRVJUIFNUUkFORzogRmVpZ24gY29uZnVzaW9uPwoKMjQKMDA6MDE6MzAsMjEwIC0tPiAwMDowMTozMSwwODAKSSdtIGNvbmZ1c2VkLgoKMjUKMDA6MDE6MzEsMDgwIC0tPiAwMDowMTozMSwzNzEKU0FSQUggSEFOU0VOOiBBcmUgeW91PwoKMjYKMDA6MDE6MzEsMzcxIC0tPiAwMDowMTozMSw0NzAKT0suCgoyNwowMDowMTozMSw0NzAgLS0+IDAwOjAxOjMyLDU4MApHSUxCRVJUIFNUUkFORzogV2VsbCwgbm8uCgoyOAowMDowMTozMiw1ODAgLS0+IDAwOjAxOjM2LDA2MApXZWxsLCBubywgaXQncyBwcm9iYWJseSB0cnVlLgoKMjkKMDA6MDE6MzYsMDYwIC0tPiAwMDowMTo0MSwxNjAKVGhhdCdzIG1heWJlIHBhcnQgb2YKbm90IHJ1c2hpbmcgdGhyb3VnaCBpdC4KCjMwCjAwOjAxOjQxLDE2MCAtLT4gMDA6MDE6NDksNTAwCkJ1dCBnZXR0aW5nLS0gc28gSSdsbCBwYXVzZQphdCB0aGUgY3JpdGljYWwgcG9pbnQsIG1heWJlLgoKMzEKMDA6MDE6NDksNTAwIC0tPiAwMDowMTo1Nyw1MDAKWW91IGhhdmUgdG8gZ2l2ZSB0aW1lIHRvIHNlZSwKT0ssIHdoYXQncyB0aGUgbmV4dCBzdGVwPwoKMzIKMDA6MDE6NTcsNTAwIC0tPiAwMDowMjowMSwxNzAKWW91IGtub3csIG1hdGhlbWF0aWNzCmlzIGJlYXV0aWZ1bGx5IG9yZGVyZWQsCgozMwowMDowMjowMSwxNzAgLS0+IDAwOjAyOjAzLDE4MAphbmQgc2Vuc2libGUsIGFuZCBsb2dpY2FsLgoKMzQKMDA6MDI6MDMsMTgwIC0tPiAwMDowMjowNiw3NTAKQW5kIGxpbmVhciBhbGdlYnJhCmlzIG5vdCB0b28gZGlmZmljdWx0LgoKMzUKMDA6MDI6MDYsNzUwIC0tPiAwMDowMjowOSw2OTAKQnV0IHN0aWxsLCB5b3UgY2FuJ3QgcnVzaC4KCjM2CjAwOjAyOjA5LDY5MCAtLT4gMDA6MDI6MTQsNjYwCllvdSBoYXZlIHRvIHNvcnQgb2Ygc2VlCnRoZSBpZGVhIGEgZmV3IHRpbWVzLgoKMzcKMDA6MDI6MTQsNjYwIC0tPiAwMDowMjoxOCwyNDAKRmlyc3QgbWF5YmUgb24gdGhlCmJvYXJkIGFzIHN5bWJvbHMuCgozOAowMDowMjoxOCwyNDAgLS0+IDAwOjAyOjIxLDAwMApCdXQgbm90IGV2ZXJ5Ym9keQpwaWNrcyB1cCBvbiBzeW1ib2xzLgoKMzkKMDA6MDI6MjEsMDAwIC0tPiAwMDowMjoyMyw3NzAKVGhlbiB5b3Ugc2F5LCB3aGF0IGRvZXMgaXQgbWVhbj8KCjQwCjAwOjAyOjIzLDc3MCAtLT4gMDA6MDI6MjYsNTgwCkFuZCB0aGVuIGZpbmFsbHkgeW91CnNheSwgd2h5IGlzIGl0IHRydWU/Cgo0MQowMDowMjoyNiw1ODAgLS0+IDAwOjAyOjI4LDU2MApCdXQgeW91IGRvbid0IHNheSwKIldoeSBpcyBpdCB0cnVlPwoKNDIKMDA6MDI6MjgsNTYwIC0tPiAwMDowMjozMSw2NzAKR2l2ZSB0aGUgcHJvb2YsIgp0aGUgdmVyeSBmaXJzdCBzdGVwLgoKNDMKMDA6MDI6MzEsNjcwIC0tPiAwMDowMjozNCw2MjAKWW91IHdhbnQgdG8gbWFrZSBwZW9wbGUKdGhpbmssIHllYWgsIGl0IGlzIHRydWUuCgo0NAowMDowMjozNyw2NzAgLS0+IDAwOjAyOjQyLDI2MApTQVJBSCBIQU5TRU46IE90aGVycyBoYXZlIG5vdGVkCnRoYXQgeW91IGRvIHRoaXMgdGhpbmcgd2hlcmUKCjQ1CjAwOjAyOjQyLDI2MCAtLT4gMDA6MDI6NDUsNjIwCnlvdSBkaXNwbGF5IHlvdXIgb3duCnRoaW5raW5nIGtpbmQgb2Ygb24gdGhlIHNwb3QKCjQ2CjAwOjAyOjQ1LDYyMCAtLT4gMDA6MDI6NDcsMjkwCmFzIHlvdSB3b3JrIHRocm91Z2ggcHJvYmxlbXMuCgo0NwowMDowMjo0NywyOTAgLS0+IDAwOjAyOjQ4LDQ0MApHSUxCRVJUIFNUUkFORzogWWVhaC4KCjQ4CjAwOjAyOjQ4LDQ0MCAtLT4gMDA6MDI6NTAsODEwClNBUkFIIEhBTlNFTjogSXMgdGhlcmUgZXZlcgphIHJpc2sgaW4gdGhhdCBmb3IgeW91PwoKNDkKMDA6MDI6NTAsODEwIC0tPiAwMDowMjo1MiwwNDAKR0lMQkVSVCBTVFJBTkc6IE9oLCB5ZXMuCgo1MAowMDowMjo1MiwwNDAgLS0+IDAwOjAyOjU2LDc1MApBbmQgaXQgaGFwcGVucywgdGhhdApJIGxvc2UgdGhlIHRocmVhZAoKNTEKMDA6MDI6NTYsNzUwIC0tPiAwMDowMzowMCw2MjAKb3IgSSBjb21lIHVwIHRvIGEgZGVhZAplbmQgd2hlcmUgSSBkb24ndCBrbm93Cgo1MgowMDowMzowMCw2MjAgLS0+IDAwOjAzOjAxLDk1MAp3aGF0IEknbSBzdXBwb3NlZCB0byBkbyBuZXh0LgoKNTMKMDA6MDM6MDEsOTUwIC0tPiAwMDowMzowOSwxNzAKQnV0IGdlbmVyYWxseSwgZXNwZWNpYWxseSBpbgoxOC4wNiwgVGhlIGJhc2ljIGxpbmVhciBhbGdlYnJhCgo1NAowMDowMzowOSwxNzAgLS0+IDAwOjAzOjE0LDE4MApjb3Vyc2UgdGhhdCBtYW55CnBlb3BsZSBoYXZlIHdhdGNoZWQsCgo1NQowMDowMzoxNCwxODAgLS0+IDAwOjAzOjE2LDk1MAp0aGVyZSBJIGtpbmQgb2YgZ2V0IGl0IE9LLgoKNTYKMDA6MDM6MTYsOTUwIC0tPiAwMDowMzoxOSw0OTAKWWVhaCwgSSd2ZSB0YXVnaHQKaXQgZW5vdWdoIHRpbWVzCgo1NwowMDowMzoxOSw0OTAgLS0+IDAwOjAzOjIzLDEyMAp0byBoYXZlIGEgZ29vZCBjaGFuY2UKb2YgZ2V0dGluZyBpdCByaWdodC4KCjU4CjAwOjAzOjIzLDEyMCAtLT4gMDA6MDM6MjYsNjMwClNBUkFIIEhBTlNFTjogSXMgdGhpcyBhIHN0cmF0ZWd5CnRoYXQgeW91IGRldmVsb3BlZCBvdmVyIHRpbWU/Cgo1OQowMDowMzoyNiw2MzAgLS0+IDAwOjAzOjI5LDI3MApZb3Uga25vdywgbG90cyBvZiBwZW9wbGUKYXJlIG5lcnZvdXMgdG8gZG8gdGhhdCwKCjYwCjAwOjAzOjI5LDI3MCAtLT4gMDA6MDM6MzIsOTAwCnRvIG1ha2UgdGhlbXNlbHZlcyB2dWxuZXJhYmxlCmluIGZyb250IG9mIGEgbGFyZ2UgbGVjdHVyZQoKNjEKMDA6MDM6MzIsOTAwIC0tPiAwMDowMzozMyw2ODAKY2xhc3MgbGlrZSB0aGF0LgoKNjIKMDA6MDM6MzMsNjgwIC0tPiAwMDowMzozNiwyOTAKQnV0IHlvdSdyZSB3b3JraW5nCnByb2JsZW1zIGluIHJlYWwgdGltZQoKNjMKMDA6MDM6MzYsMjkwIC0tPiAwMDowMzozOCw4NDgKYW5kIGRlbW9uc3RyYXRpbmcgd2hhdCBoYXBwZW5zCndoZW4geW91IGhpdCBhIGRlYWQgZW5kLgoKNjQKMDA6MDM6MzgsODQ4IC0tPiAwMDowMzo0MCw4OTAKR0lMQkVSVCBTVFJBTkc6IFdlbGwsCnRoYXQncyBPSywgYmVjYXVzZSBzdHVkZW50cwoKNjUKMDA6MDM6NDAsODkwIC0tPiAwMDowMzo0NCwzMDAKYXJlIGdvaW5nIHRvIGhpdCBkZWFkIGVuZHMsIHNvCml0IHNlZW1zIHRvIG1lIGl0J3MgT0sgZm9yIG1lCgo2NgowMDowMzo0NCwzMDAgLS0+IDAwOjAzOjQ2LDMxMAp0byBnZXQgc3R1Y2ssIHRvby4KCjY3CjAwOjAzOjQ2LDMxMCAtLT4gMDA6MDM6NTAsMTUwCkFuZCB0aGVuIGlmIHRoZXkgc2VlLApvaCwgT0ssIG1heWJlIHRoaXMKCjY4CjAwOjAzOjUwLDE1MCAtLT4gMDA6MDM6NTMsNjAwCmlzIHRoZSB3YXkgdG8gZ2V0Cm91dCBvZiB0aGF0IGNvcm5lci4KCjY5CjAwOjAzOjUzLDYwMCAtLT4gMDA6MDM6NTUsOTEwClllYWguCgo3MAowMDowMzo1NSw5MTAgLS0+IDAwOjA0OjAwLDA4MApTbyBlc3NlbnRpYWxseSBJIHRoaW5rIHRoZQp0aGluZyBpcyBJIGxpa2Ugc3R1ZGVudHMuCgo3MQowMDowNDowMCwwODAgLS0+IDAwOjA0OjAxLDYxMApJIGxpa2UgbWF0aC4KCjcyCjAwOjA0OjAxLDYxMCAtLT4gMDA6MDQ6MDcsMDIwCkFuZCBwdXR0aW5nIHRoZW0gdG9nZXRoZXIgaXMKanVzdCB0aGUgYmVzdCBqb2IgaW4gdGhlIHdvcmxkLgoKNzMKMDA6MDQ6MDcsMDIwIC0tPiAwMDowNDowOSw4MTgKU0FSQUggSEFOU0VOOiBMZXQncyB0YWxrCmFib3V0IGh1bW9yIGZvciBhIHNlY29uZC4KCjc0CjAwOjA0OjA5LDgxOCAtLT4gMDA6MDQ6MTAsNjEwCkdJTEJFUlQgU1RSQU5HOiBPSy4KCjc1CjAwOjA0OjEwLDYxMCAtLT4gMDA6MDQ6MTEsOTg1ClNBUkFIIEhBTlNFTjogWW91CmhhdmUgYmVlbiBrbm93bgoKNzYKMDA6MDQ6MTEsOTg1IC0tPiAwMDowNDoxNSwxNzIKdG8gc2F5IHRoaW5ncyBsaWtlLCBrZWVwIHRoaW5ncwppbiB0aGVpciBHYXVzcy1naXZlbiBvcmRlci4KCjc3CjAwOjA0OjE1LDE3MiAtLT4gMDA6MDQ6MTYsMDg5CkdJTEJFUlQgU1RSQU5HOiBJIHNlZS4KCjc4CjAwOjA0OjE2LDA4OSAtLT4gMDA6MDQ6MTgsMzgxClNBUkFIIEhBTlNFTjogQW5kIG90aGVyIHJlYWxseQpmdW5ueSB0aGluZ3MgdGhhdCBwZW9wbGUKCjc5CjAwOjA0OjE4LDM4MSAtLT4gMDA6MDQ6MTksNzMwCmp1c3QgbG92ZS4KCjgwCjAwOjA0OjE5LDczMCAtLT4gMDA6MDQ6MjMsMDAwClNvIHdoYXQncyB0aGUgcm9sZSBvZgpodW1vciBpbiB5b3VyIHRlYWNoaW5nPwoKODEKMDA6MDQ6MjMsMDAwIC0tPiAwMDowNDoyNCw4MzAKR0lMQkVSVCBTVFJBTkc6CldlbGwsIG1heWJlIGl0J3MtLQoKODIKMDA6MDQ6MjQsODMwIC0tPiAwMDowNDoyOSw2MzAKd2hpY2ggaXMgd2hhdCBJJ20gc2F5aW5nCmhlcmUsIG1heWJlIHRoZSBrZXkgcG9pbnQKCjgzCjAwOjA0OjI5LDYzMCAtLT4gMDA6MDQ6MzEsMTYwCmlzIHRvIG1ha2UgaXQgaHVtYW4uCgo4NAowMDowNDozMSwxNjAgLS0+IDAwOjA0OjM2LDA4MApZb3Uga25vdywgeW91J3JlIGEgcGVyc29uLApsaWtlIHRoZSBzdHVkZW50IGlzIGEgcGVyc29uLgoKODUKMDA6MDQ6MzYsMDgwIC0tPiAwMDowNDozOSw4OTAKVGhlIGJvb2sgaXNuJ3QgcXVpdGUgYSBwZXJzb24sCmJ1dCBpdCB3YXMgd3JpdHRlbiBieSBhIHBlcnNvbi4KCjg2CjAwOjA0OjM5LDg5MCAtLT4gMDA6MDQ6NDcsMTIwCkFuZCB0byBzZWUgdGhhdCBpdCdzIGp1c3QKbGlrZSBhIG5hdHVyYWwgdGhpbmcgdG8gZG8uCgo4NwowMDowNDo0NywxMjAgLS0+IDAwOjA0OjQ3LDY2MApZZWFoLgoKODgKMDA6MDQ6NDcsNjYwIC0tPiAwMDowNDo0OCwzODAKWWVhaC4KCjg5CjAwOjA0OjQ4LDM4MCAtLT4gMDA6MDQ6NDksMDEwClllYWguCgo5MAowMDowNDo0OSwwMTAgLS0+IDAwOjA0OjUwLDk5MApTQVJBSCBIQU5TRU46IFNvCm9uZSBvZiBvdXIgdXNlcnMKCjkxCjAwOjA0OjUwLDk5MCAtLT4gMDA6MDQ6NTQsMjYwCndhcyB0aGlua2luZyBhYm91dCBob3cgeW91CnRlYWNoIGNvbXBsZXggbWF0ZXJpYWwsIGhvdwoKOTIKMDA6MDQ6NTQsMjYwIC0tPiAwMDowNDo1OCw0MzAKeW91IGNvbnZleSBpdCBpbiB3YXlzIHRoYXQKYXJlIGNvbWZvcnRhYmxlIGZvciBzdHVkZW50cy4KCjkzCjAwOjA0OjU4LDQzMCAtLT4gMDA6MDU6MDAsMzgwCkFuZCB0aGUgdXNlciB3YXMKd29uZGVyaW5nLCBob3cgZG8KCjk0CjAwOjA1OjAwLDM4MCAtLT4gMDA6MDU6MDUsMzMwCnlvdSBrbm93IHdoZW4gdG8gZ28gaW50bwpkZXRhaWwgYW5kIHdoZW4gbm90IHRvPwoKOTUKMDA6MDU6MDUsMzMwIC0tPiAwMDowNToxMSwwMDAKR0lMQkVSVCBTVFJBTkc6IEkgc3VwcG9zZSBJIHRyeQp0byB0aGluayBpdCB0aHJvdWdoIG9uY2UgYWdhaW4uCgo5NgowMDowNToxMSwwMDAgLS0+IDAwOjA1OjEzLDQ2MApBbmQgdGhlbiB5b3Ugc29ydApvZiBhdXRvbWF0aWNhbGx5Cgo5NwowMDowNToxMyw0NjAgLS0+IDAwOjA1OjE4LDM3MApzZWUgdGhlIHdvcmQtLSB5b3UgcmVjb2duaXplCndoYXQgd29yZHMgeW91IG5lZWQgdG8gdXNlLAoKOTgKMDA6MDU6MTgsMzcwIC0tPiAwMDowNToyMSw5OTAKYW5kIHdoYXQgdGhlIHN0ZXBzIGFyZS4KCjk5CjAwOjA1OjIxLDk5MCAtLT4gMDA6MDU6MjMsNTcwClllYWguCgoxMDAKMDA6MDU6MjMsNTcwIC0tPiAwMDowNToyNSw1NjAKSWYgeW91J3JlIG5vdAp0aGlua2luZyBpdCB5b3Vyc2VsZiwKCjEwMQowMDowNToyNSw1NjAgLS0+IDAwOjA1OjI3LDk1MAp0aGVuIHlvdSdyZSBwcm9iYWJseQpnb2luZyB0b28gZmFzdAoKMTAyCjAwOjA1OjI3LDk1MCAtLT4gMDA6MDU6MzUsMjkwCmFuZCBub3QgY29ubmVjdGluZyB3aXRoCnRoZSB0aGlua2luZyBvZiB0aGUgY2xhc3MuCgoxMDMKMDA6MDU6MzUsMjkwIC0tPiAwMDowNTozNiw3OTAKU0FSQUggSEFOU0VOOiBBbmQKaG93IGRvIHlvdSBjb25uZWN0CgoxMDQKMDA6MDU6MzYsNzkwIC0tPiAwMDowNTo0MCwyMzAKd2l0aCB0aGUgdGhpbmtpbmcgb2YgdGhlIGNsYXNzCndoZW4gaXQncyBzdWNoIGEgbGFyZ2UgbGVjdHVyZQoKMTA1CjAwOjA1OjQwLDIzMCAtLT4gMDA6MDU6NDAsNzMwCmhhbGw/CgoxMDYKMDA6MDU6NDAsNzMwIC0tPiAwMDowNTo0MywwMDAKQW5kIGV2ZXJ5b25lJ3MgYXQgYSBkaWZmZXJlbnQKcG9pbnQgaW4gdGhlaXIgdW5kZXJzdGFuZGluZy4KCjEwNwowMDowNTo0MywwMDAgLS0+IDAwOjA1OjQzLDkzMApHSUxCRVJUIFNUUkFORzoKVGhhdCdzIHByb2JhYmx5IHRydWUuCgoxMDgKMDA6MDU6NDMsOTMwIC0tPiAwMDowNTo0NSw5MTAKQW5kIG9mIGNvdXJzZSwgeW91IGRvbid0Cmtub3cgd2hhdCBldmVyeWJvZHkKCjEwOQowMDowNTo0NSw5MTAgLS0+IDAwOjA1OjQ3LDk4MAppcyB0aGlua2luZyBpbiB0aGF0IGNsYXNzLgoKMTEwCjAwOjA1OjQ3LDk4MCAtLT4gMDA6MDU6NTQsNTQwCkJ1dCBvdmVyYWxsLCBpZiB5b3UgZ2V0LS0KCjExMQowMDowNTo1NCw1NDAgLS0+IDAwOjA2OjAwLDcyMAppZiB5b3Ugc3RheSBzb3J0IG9mIGNvbnNjaW91cwpvZiB0aGUgY2xhc3MsIGNvbnNjaW91cyBvZiB3aGVyZQoKMTEyCjAwOjA2OjAwLDcyMCAtLT4gMDA6MDY6MDYsNjIwCnRoZXkgYXJlLCB0aGF0J3MsIEkgdGhpbmssCnRoZSB0aGluZyBmb3IgYW55IHNwZWFrZXIsCgoxMTMKMDA6MDY6MDYsNjIwIC0tPiAwMDowNjowOSwxMjAKaXMgdG8gYmUgY29uc2Npb3VzCm9mIHRoZSBhdWRpZW5jZQoKMTE0CjAwOjA2OjA5LDEyMCAtLT4gMDA6MDY6MTIsMjEwCmFuZCBub3QganVzdCBhIEEtQiBpbnZlcnNlLgoKMTE1CjAwOjA2OjE0LDE0NSAtLT4gMDA6MDY6MTUsNTIwClNBUkFIIEhBTlNFTjogV2hhdAplbHNlIHdvdWxkIHlvdQoKMTE2CjAwOjA2OjE1LDUyMCAtLT4gMDA6MDY6MjAsMzMwCmxpa2UgdG8gYWRkIGFib3V0IHRlYWNoaW5nCjE4LjA2IGxpbmVhciBhbGdlYnJhPwoKMTE3CjAwOjA2OjIwLDMzMCAtLT4gMDA6MDY6MjMsMTMwCkdJTEJFUlQgU1RSQU5HOiBXZWxsLCB3aXRoCjE4LjA2IG9mIGNvdXJzZSwgSSdtIGp1c3QtLQoKMTE4CjAwOjA2OjIzLDEzMCAtLT4gMDA6MDY6MjYsNzcwCnNvLCByZWNlbnRseSwgT3BlbgpDb3Vyc2VXYXJlLCB3aGljaCBJIHRoaW5rCgoxMTkKMDA6MDY6MjYsNzcwIC0tPiAwMDowNjoyOCw5MzAKd2FzIGp1c3Qgc3VjaCBhIGdyZWF0IGlkZWEuCgoxMjAKMDA6MDY6MjgsOTMwIC0tPiAwMDowNjozMCw0MDAKR3JlYXQgaWRlYSBmb3IgTUlULgoKMTIxCjAwOjA2OjMwLDQwMCAtLT4gMDA6MDY6MzMsMjIwCkdyZWF0IGlkZWEgZm9yIGZhY3VsdHkuCgoxMjIKMDA6MDY6MzMsMjIwIC0tPiAwMDowNjozOSw0MDAKU28gdGhleSBkaWQgYSBjb3VudCBvZiB0aGUKbnVtYmVyIG9mIHZpZXdlcnMgaW4gMTguMDYsCgoxMjMKMDA6MDY6MzksNDAwIC0tPiAwMDowNjo0MSw2MDAKYW5kIGl0IHdhcyAxMCBtaWxsaW9uLgoKMTI0CjAwOjA2OjQxLDYwMCAtLT4gMDA6MDY6NDMsMjQwCldoaWNoIHdhcyBsaWtlLCB3b28uCgoxMjUKMDA6MDY6NDMsMjQwIC0tPiAwMDowNjo0NCw4ODAKSSBuZXZlciBleHBlY3RlZC4KCjEyNgowMDowNjo0NCw4ODAgLS0+IDAwOjA2OjQ5LDI3MApCdXQgSSBkbyBnZXQgbmljZSwKcmVhbGx5IG5pY2UgbWVzc2FnZXMKCjEyNwowMDowNjo0OSwyNzAgLS0+IDAwOjA2OjUyLDk0MApmcm9tIGFsbCBvdmVyIHRoZSB3b3JsZC4KCjEyOAowMDowNjo1Miw5NDAgLS0+IDAwOjA2OjU1LDMwMApBbmQgSSByZXBseSB0bwp0aGVtIGZhciBhcyBJIGNhbi4KCjEyOQowMDowNjo1OCw2OTAgLS0+IDAwOjA3OjAzLDQzMApTb21ldGltZXMgdGhleSdsbCBhc2sgd2hhdCdzCmEgZ29vZCB3YXkgdG8gbGVhcm4gbWF0aD8KCjEzMAowMDowNzowMyw0MzAgLS0+IDAwOjA3OjA1LDc3MApJIGRvbid0IGtub3cgaWYgSSBoYXZlCmFuIGFuc3dlciB0byB0aGF0LgoKMTMxCjAwOjA3OjA1LDc3MCAtLT4gMDA6MDc6MDgsNjUwCkJ1dCBhbnl3YXksIEkgdHJ5CnRvIGJlIGVuY291cmFnaW5nLgoKMTMyCjAwOjA3OjA4LDY1MCAtLT4gMDA6MDc6MTMsMjEwClNvIHllYWguCgoxMzMKMDA6MDc6MTMsMjEwIC0tPiAwMDowNzoxNCw3NDAKSXQncyBiZWVuIHdvbmRlcmZ1bC4KCjEzNAowMDowNzoxNCw3NDAgLS0+IDAwOjA3OjIzLDAzNQpKdXN0IGhhdmluZyB0aGUgdmlkZW8KbGVjdHVyZXMgYXZhaWxhYmxlCgoxMzUKMDA6MDc6MjMsMDM1IC0tPiAwMDowNzoyNiw1MDAKYWxsb3dzIGV2ZXJ5Ym9keQp0byBiZSBpbiB0aGUgY2xhc3MuCgoxMzYKMDA6MDc6MjYsNTAwIC0tPiAwMDowNzoyNyw3MDAKWWVhaC4KCjEzNwowMDowNzoyNyw3MDAgLS0+IDAwOjA3OjMyLDI3MApTbywgdGhhbmsgeW91IGFsbCBmb3IKam9pbmluZyB0aGUgY2xhc3MuCgoxMzgKMDA6MDc6MzIsMjcwIC0tPiAwMDowNzozNCwwOTAKVGhhbmsgeW91Lg==", 
+        "content_type": "application/x-subrip", 
+        "filename": "7UJ4CFRGd-U.srt"
+    }, 
+    "course_identifier": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010", 
+    "_content_type_rights": "text/html", 
+    "other_platform_requirements": "", 
+    "_classname": "OCWFile", 
+    "_content_type_materialtype": "text/plain", 
+    "tcATmit_instructional_tags": [], 
+    "_directly_provided": [], 
+    "parent_uid": "e21b71ff0fa975bfa9acb2a155aafc1d", 
+    "modification_date": "2019/07/31 18:02:47.625 Universal", 
+    "course_linking": [], 
+    "publisher": "MIT OpenCourseWare", 
+    "excludeFromNav": false, 
+    "feature_requirements": [], 
+    "language": "", 
+    "license": "https://creativecommons.org/licenses/by-nc-sa/3.0/us/", 
+    "rights": "This site (c) Massachusetts Institute of Technology 2019.  Content within individual courses is (c) by the individual authors unless otherwise noted. The Massachusetts Institute of Technology is providing this Work (as defined below) under the terms of this Creative Commons public license (\"CCPL\" or \"license\") unless otherwise noted. The Work is protected by copyright and/or other applicable law. Any use of the work other than as authorized under this license is prohibited. By exercising any of the rights to the Work provided here, You (as defined below) accept and agree to be bound by the terms of this license. The Licensor, the Massachusetts Institute of Technology, grants You the rights contained here in consideration of Your acceptance of such terms and conditions.", 
+    "always_publish": true, 
+    "_id": "7UJ4CFRGd-U.srt", 
+    "materialtype": "Other", 
+    "_content_type_unique_identifier": "text/plain", 
+    "category_features": [], 
+    "_owner": "yunpengwang", 
+    "_defaultpage": "index_html", 
+    "firstTimeEdit": true, 
+    "_permissions": {
+        "Modify portal content": {
+            "acquire": false, 
+            "roles": [
+                "Editor", 
+                "Manager", 
+                "Owner"
+            ]
+        }, 
+        "Access contents information": {
+            "acquire": false, 
+            "roles": [
+                "Anonymous"
+            ]
+        }, 
+        "View": {
+            "acquire": false, 
+            "roles": [
+                "Anonymous"
+            ]
+        }
+    }, 
+    "_properties": [
+        [
+            "title", 
+            "3play caption file", 
+            "string"
+        ]
+    ], 
+    "allowDiscussion": false, 
+    "metadata_contributor_list": [], 
+    "creators": [
+        "yunpengwang"
+    ], 
+    "courselist_features": [], 
+    "_ac_local_roles": {
+        "yunpengwang": [
+            "Owner"
+        ]
+    }, 
+    "_path": "/Plone/courses/mathematics/18-06-linear-algebra-spring-2010/instructor-insights/an-interview-with-gilbert-strang-on-teaching-linear-algebra/7UJ4CFRGd-U.srt"
+}

@@ -551,19 +551,22 @@ class OCWParser(object):
         self.upload_master_json_to_s3(s3_bucket)
 
 
-def parseAll(coursesDir, destinationDir, s3Bucket, s3Links=False, overwrite=False, beautifyMasterJson=False):
+def parseAll(coursesDir, destinationDir, s3Bucket="", s3Links=False, overwrite=False, beautifyMasterJson=False):
     for courseDir in os.listdir(coursesDir):
         sourcePath = "{}/".format(os.path.join(coursesDir, courseDir))
         destPath = os.path.join(destinationDir, courseDir)
-        if os.path.exists(destPath) and overwrite:
-            shutil.rmtree(destPath)
-        if not os.path.exists(destPath):
-            os.mkdir(destPath)
-            parser = OCWParser(course_dir=sourcePath, destination_dir=destinationDir, s3_bucket_name=s3Bucket,
-                               s3_target_folder=courseDir, beautify_master_json=beautifyMasterJson)
-            parser.export_master_json(s3_links=s3Links)
-            masterPath = os.path.join(destPath, "master")
-            for filename in os.listdir(masterPath):
-                shutil.move(os.path.join(masterPath, filename),
-                            os.path.join(destPath, filename))
-            shutil.rmtree(masterPath)
+        if os.path.isdir(sourcePath):
+            if os.path.exists(destPath) and overwrite:
+                shutil.rmtree(destPath)
+            if not os.path.exists(destPath):
+                os.mkdir(destPath)
+                print(sourcePath)
+                parser = OCWParser(course_dir=sourcePath, destination_dir=destinationDir, s3_bucket_name=s3Bucket,
+                                s3_target_folder=courseDir, beautify_master_json=beautifyMasterJson)
+                parser.export_master_json(s3_links=s3Links)
+                masterPath = os.path.join(destPath, "master")
+                if os.path.isdir(masterPath):
+                    for filename in os.listdir(masterPath):
+                        shutil.move(os.path.join(masterPath, filename),
+                                    os.path.join(destPath, filename))
+                    shutil.rmtree(masterPath)
