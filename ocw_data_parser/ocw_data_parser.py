@@ -105,7 +105,7 @@ class OCWParser(object):
                     # The only representation we have of ordering is the file name
                     try:
                         order_index = int(json_index)
-                    except:
+                    except ValueError:
                         order_index = None
                     loaded_json["order_index"] = order_index
                     loaded_jsons.append(loaded_json)
