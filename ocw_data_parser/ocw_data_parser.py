@@ -102,6 +102,12 @@ class OCWParser(object):
                 if loaded_json:
                     # Add the json file name (used for error reporting)
                     loaded_json["actual_file_name"] = str(json_index) + ".json"
+                    # The only representation we have of ordering is the file name
+                    try:
+                        order_index = int(json_index)
+                    except:
+                        order_index = None
+                    loaded_json["order_index"] = order_index
                     loaded_jsons.append(loaded_json)
                 else:
                     log.error("Failed to load %s", file_path)
@@ -194,7 +200,7 @@ class OCWParser(object):
             if url_data:
                 url_data = url_data.split("ocw.mit.edu")[1]
             page_dict = {
-                "order_index": safe_get(j, "actual_file_name").replace(".json", ""),
+                "order_index": safe_get(j, "order_index"),
                 "uid": safe_get(j, "_uid"),
                 "parent_uid": safe_get(j, "parent_uid"),
                 "title": safe_get(j, "title"),
@@ -227,7 +233,7 @@ class OCWParser(object):
     def compose_media(self):
         def _compose_media_dict(j):
             return {
-                "order_index": safe_get(j, "actual_file_name").replace(".json", ""),
+                "order_index": safe_get(j, "order_index"),
                 "uid": safe_get(j, "_uid"),
                 "id": safe_get(j, "id"),
                 "parent_uid": safe_get(j, "parent_uid"),
@@ -256,7 +262,7 @@ class OCWParser(object):
         for j in self.jsons:
             if j and "inline_embed_id" in j and j["inline_embed_id"]:
                 temp = {
-                    "order_index": safe_get(j, "actual_file_name").replace(".json", ""),
+                    "order_index": safe_get(j, "order_index"),
                     "title": j["title"],
                     "uid": j["_uid"],
                     "parent_uid": j["parent_uid"],
