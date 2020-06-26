@@ -1,7 +1,7 @@
 Release Notes
 =============
 
-Version 0.8.0
+Version 0.8.0 (Released June 26, 2020)
 -------------
 
 - Add order_index (#36)
