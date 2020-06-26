@@ -1,6 +1,13 @@
 Release Notes
 =============
 
+Version 0.8.0
+-------------
+
+- Add order_index (#36)
+- add SupplementalResourceSection to the types of pages scanned (#35)
+- add some tests for file generation functions (#19)
+
 Version 0.7.0 (Released June 08, 2020)
 -------------
 
