@@ -157,6 +157,13 @@ def test_get_master_json(ocw_parser):
     assert master_json["description"], fail_template.format("description")
     assert master_json["short_url"], fail_template.format("short_url")
 
+def test_export_master_json_s3_links(ocw_parser_s3):
+    """
+    Test that exporting the master json file with s3 links doesn't error
+    """
+    ocw_parser_s3.export_master_json(s3_links=True)
+    assert os.path.isdir(os.path.join(ocw_parser_s3.destination_dir, "master"))
+
 def test_set_s3_bucket_name(ocw_parser_s3):
     """
     Test setting the s3 bucket name
