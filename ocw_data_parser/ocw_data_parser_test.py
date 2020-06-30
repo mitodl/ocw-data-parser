@@ -1,6 +1,7 @@
 import os
 import json
 import pytest
+from mock import patch
 from tempfile import TemporaryDirectory
 from ocw_data_parser.ocw_data_parser import CustomHTMLParser, OCWParser, parseAll
 import ocw_data_parser.test_constants as constants
@@ -143,6 +144,14 @@ def test_upload_course_image(ocw_parser_s3, s3_bucket):
             assert master_json["thumbnail_image_src"] == s3_upload_base() + f["uid"] + "_" + f["id"]
             assert master_json["thumbnail_image_description"] == f["description"]
 
+def test_upload_course_image_no_s3_bucket_name(ocw_parser_s3, caplog):
+    """
+    Test that uploading the course image without the s3 bucket name throws an error
+    """
+    ocw_parser_s3.s3_bucket_name = None
+    ocw_parser_s3.upload_course_image()
+    assert ["Please set your s3 bucket name"] == [rec.message for rec in caplog.records]
+
 
 def test_get_master_json(ocw_parser):
     """
@@ -163,6 +172,14 @@ def test_export_master_json_s3_links(ocw_parser_s3):
     """
     ocw_parser_s3.export_master_json(s3_links=True)
     assert os.path.isdir(os.path.join(ocw_parser_s3.destination_dir, "master"))
+
+def test_export_master_json_no_s3_bucket_name(ocw_parser_s3, caplog):
+    """
+    Test that exporting the master json file without an s3 bucket name throws an error
+    """
+    ocw_parser_s3.s3_bucket_name = None
+    ocw_parser_s3.export_master_json(s3_links=True)
+    assert ["Please set your s3 bucket name"] == [rec.message for rec in caplog.records]
 
 def test_set_s3_bucket_name(ocw_parser_s3):
     """
