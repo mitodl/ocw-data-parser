@@ -3,7 +3,7 @@ import json
 import pytest
 from mock import patch
 from tempfile import TemporaryDirectory
-from ocw_data_parser.ocw_data_parser import CustomHTMLParser, OCWParser, parseAll
+from ocw_data_parser.ocw_data_parser import CustomHTMLParser, OCWParser
 import ocw_data_parser.test_constants as constants
 import logging
 log = logging.getLogger(__name__)
@@ -218,9 +218,3 @@ def test_uid(ocw_parser, course_id):
         with open(os.path.join(ocw_parser.destination_dir, "master/master.json"), "r") as master_json:
             master_json_data = json.loads(master_json.read())
             assert first_json_data["_uid"] == master_json_data["uid"]
-
-def test_parse_all():
-    with TemporaryDirectory() as destination_dir:
-        parseAll(constants.COURSE_DIR, destination_dir)
-        assert os.path.isdir(os.path.join(destination_dir, "course-1"))
-        assert os.path.isdir(os.path.join(destination_dir, "course-2"))
