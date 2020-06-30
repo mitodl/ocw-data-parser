@@ -35,8 +35,29 @@ your_parser.upload_course_image()
 ```
 
 To generate static HTML site for OCW course:
+
 ```python
 from ocw_data_parser import generate_html_for_course
 
 generate_html_for_course("path/to/master.json", "path/to/output/destination/")
+```
+
+## Local Workflow
+
+To download a list of courses based on `example_courses.json`, placed in `private` as `courses.json`:
+
+```python
+from course_downloader import OCWDownloader
+
+downloader = OCWDownloader("private/courses.json", "PROD", "private/raw_courses", "ocw-content-storage")
+downloader.downloadCourses()
+```
+In order for the above to work, you need `awscli` installed on your machine and it needs to be configured for access to the bucket that you specify.
+
+To parse a folder of course folders (like the ones downloaded above) and export only master json with s3 links:
+
+```python
+from util import parseAll
+
+parseAll(coursesDir="private/raw_courses", destinationDir="../ocw-to-hugo/private/courses", s3Bucket="open-learning-course-data-ci", s3Links=True, overwrite=True, beautifyMasterJson=True)
 ```
