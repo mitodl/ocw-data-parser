@@ -17,16 +17,16 @@ def test_download_courses(ocw_downloader):
     Use moto (mock boto) to test s3 downloading and make sure all files 
     end up where they're supposed to
     """
-    ocw_downloader.downloadCourses()
-    for root, dirs, files in os.walk(ocw_downloader.destinationDir):
+    ocw_downloader.download_courses()
+    for root, dirs, files in os.walk(ocw_downloader.destination_dir):
         if len(dirs) == 0 and len(files) > 0:
             path, folder = os.path.split(root)
             if folder == "0":
                 path, course = os.path.split(path)
-                for jsonFile in files:
-                    testDataPath = os.path.join(constants.COURSE_DIR, course, "jsons", jsonFile)
-                    downloadedPath = os.path.join(path, course, "0", jsonFile)
-                    assert filecmp.cmp(testDataPath, downloadedPath)
+                for json_file in files:
+                    test_data_path = os.path.join(constants.COURSE_DIR, course, "jsons", json_file)
+                    downloaded_path = os.path.join(path, course, "0", json_file)
+                    assert filecmp.cmp(test_data_path, downloaded_path)
 
 def test_download_courses_no_destination_dir(ocw_downloader):
     """
@@ -34,9 +34,9 @@ def test_download_courses_no_destination_dir(ocw_downloader):
     the process runs without error and the directory is recreated
     """
     with patch.object(os, "makedirs", wraps=os.makedirs) as mock:
-        shutil.rmtree(ocw_downloader.destinationDir)
-        ocw_downloader.downloadCourses()
-        mock.assert_any_call(ocw_downloader.destinationDir)
+        shutil.rmtree(ocw_downloader.destination_dir)
+        ocw_downloader.download_courses()
+        mock.assert_any_call(ocw_downloader.destination_dir)
 
 def test_download_courses_overwrite(ocw_downloader):
     """
@@ -44,14 +44,14 @@ def test_download_courses_overwrite(ocw_downloader):
     ensure that os.remove is called for each file
     """
     with patch.object(os, "remove", wraps=os.remove) as mock:
-        ocw_downloader.downloadCourses()
+        ocw_downloader.download_courses()
         ocw_downloader.overwrite = True
-        ocw_downloader.downloadCourses()
-        for root, dirs, files in os.walk(ocw_downloader.destinationDir):
+        ocw_downloader.download_courses()
+        for root, dirs, files in os.walk(ocw_downloader.destination_dir):
             if len(dirs) == 0 and len(files) > 0:
                 path, folder = os.path.split(root)
                 if folder == "0":
                     path, course = os.path.split(path)
-                    for jsonFile in files:
-                        downloadedPath = os.path.join(path, course, "0", jsonFile)
-                        mock.assert_any_call(downloadedPath)
+                    for json_file in files:
+                        downloaded_path = os.path.join(path, course, "0", json_file)
+                        mock.assert_any_call(downloaded_path)

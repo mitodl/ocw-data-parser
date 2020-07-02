@@ -90,21 +90,21 @@ def htmlify(page):
         return file_name, html
     return None, None
 
-def parse_all(coursesDir, destinationDir, s3Bucket="", s3Links=False, overwrite=False, beautifyMasterJson=False):
-    for courseDir in os.listdir(coursesDir):
-        sourcePath = "{}/".format(os.path.join(coursesDir, courseDir))
-        destPath = os.path.join(destinationDir, courseDir)
-        if os.path.isdir(sourcePath):
-            if os.path.exists(destPath) and overwrite:
-                shutil.rmtree(destPath)
-            if not os.path.exists(destPath):
-                os.makedirs(destPath)
-                parser = ocw_data_parser.OCWParser(course_dir=sourcePath, destination_dir=destinationDir, s3_bucket_name=s3Bucket,
-                                s3_target_folder=courseDir, beautify_master_json=beautifyMasterJson)
-                parser.export_master_json(s3_links=s3Links)
-                masterPath = os.path.join(destPath, "master")
-                if os.path.isdir(masterPath):
-                    for filename in os.listdir(masterPath):
-                        shutil.move(os.path.join(masterPath, filename),
-                                    os.path.join(destPath, filename))
-                    shutil.rmtree(masterPath)
+def parse_all(courses_dir, destination_dir, s3_bucket="", s3_links=False, overwrite=False, beautify_master_json=False):
+    for course_dir in os.listdir(courses_dir):
+        source_path = "{}/".format(os.path.join(courses_dir, course_dir))
+        dest_path = os.path.join(destination_dir, course_dir)
+        if os.path.isdir(source_path):
+            if os.path.exists(dest_path) and overwrite:
+                shutil.rmtree(dest_path)
+            if not os.path.exists(dest_path):
+                os.makedirs(dest_path)
+                parser = ocw_data_parser.OCWParser(course_dir=source_path, destination_dir=destination_dir, s3_bucket_name=s3_bucket,
+                                s3_target_folder=course_dir, beautify_master_json=beautify_master_json)
+                parser.export_master_json(s3_links=s3_links)
+                master_path = os.path.join(dest_path, "master")
+                if os.path.isdir(master_path):
+                    for filename in os.listdir(master_path):
+                        shutil.move(os.path.join(master_path, filename),
+                                    os.path.join(dest_path, filename))
+                    shutil.rmtree(master_path)

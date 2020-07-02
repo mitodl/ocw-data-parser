@@ -50,7 +50,7 @@ To download a list of courses based on `example_courses.json`, placed in `privat
 from ocw_data_parser import OCWDownloader
 
 downloader = OCWDownloader("private/courses.json", "PROD", "private/raw_courses", "ocw-content-storage")
-downloader.downloadCourses()
+downloader.download_courses()
 ```
 In order for the above to work, you need `awscli` installed on your machine and it needs to be configured for access to the bucket that you specify.
 

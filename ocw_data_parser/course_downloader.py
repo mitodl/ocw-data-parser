@@ -17,53 +17,53 @@ class OCWDownloader(object):
                  overwrite=False):
         self.coursesJson = courses_json
         self.env = env
-        self.destinationDir = destination_dir
-        self.s3BucketName = s3_bucket_name
+        self.destination_dir = destination_dir
+        self.s3_bucket_name = s3_bucket_name
         self.overwrite = overwrite
 
-    def downloadCourses(self):
+    def download_courses(self):
         courses = None
         with open(self.coursesJson) as f:
             courses = json.load(f)["courses"]
-        if not os.path.exists(self.destinationDir):
-            os.makedirs(self.destinationDir)
+        if not os.path.exists(self.destination_dir):
+            os.makedirs(self.destination_dir)
         s3 = boto3.resource("s3")
-        s3Client = boto3.client("s3")
-        ocwContentStorage = s3.Bucket(self.s3BucketName)
-        allObjects = ocwContentStorage.meta.client.list_objects(
-            Bucket=ocwContentStorage.name, Prefix="{}/".format(self.env), Delimiter="/")
+        s3_client = boto3.client("s3")
+        ocw_content_storage = s3.Bucket(self.s3_bucket_name)
+        all_objects = ocw_content_storage.meta.client.list_objects(
+            Bucket=ocw_content_storage.name, Prefix="{}/".format(self.env), Delimiter="/")
 
         # first tier subfolders under env should be department numbers
-        for departmentPath in allObjects.get("CommonPrefixes"):
+        for department_path in all_objects.get("CommonPrefixes"):
             # second tier subfolders should be course numbers
-            courseNumbers = ocwContentStorage.meta.client.list_objects(
-                Bucket=ocwContentStorage.name, Prefix=departmentPath.get("Prefix"), Delimiter="/")
-            for courseNumberPath in courseNumbers.get("CommonPrefixes"):
+            course_numbers = ocw_content_storage.meta.client.list_objects(
+                Bucket=ocw_content_storage.name, Prefix=department_path.get("Prefix"), Delimiter="/")
+            for course_number_path in course_numbers.get("CommonPrefixes"):
                 # third tier folders should be course terms
-                courseTerms = ocwContentStorage.meta.client.list_objects(
-                    Bucket=ocwContentStorage.name, Prefix=courseNumberPath.get("Prefix"), Delimiter="/")
-                for courseTerm in courseTerms.get("CommonPrefixes"):
+                course_terms = ocw_content_storage.meta.client.list_objects(
+                    Bucket=ocw_content_storage.name, Prefix=course_number_path.get("Prefix"), Delimiter="/")
+                for course_term in course_terms.get("CommonPrefixes"):
                     # fourth tier folders should be course folders keyed with the course id
-                    courseFolders = ocwContentStorage.meta.client.list_objects(
-                        Bucket=ocwContentStorage.name, Prefix=courseTerm.get("Prefix"), Delimiter="/")
-                    for courseFolder in courseFolders.get("CommonPrefixes"):
+                    course_folders = ocw_content_storage.meta.client.list_objects(
+                        Bucket=ocw_content_storage.name, Prefix=course_term.get("Prefix"), Delimiter="/")
+                    for course_folder in course_folders.get("CommonPrefixes"):
                         # make sure the course is in our list
-                        courseId = os.path.basename(
-                            os.path.normpath(courseFolder.get("Prefix")))
-                        if courseId in courses:
+                        course_id = os.path.basename(
+                            os.path.normpath(course_folder.get("Prefix")))
+                        if course_id in courses:
                             # make the destination path if it doesn't exist and download all files
-                            rawCoursePath = os.path.join(
-                                self.destinationDir, courseId, "0")
-                            if not os.path.exists(rawCoursePath):
-                                os.makedirs(rawCoursePath)
-                            for courseFile in ocwContentStorage.objects.filter(Prefix=os.path.join(courseFolder.get("Prefix", "0"))):
-                                destFilename = os.path.join(
-                                    rawCoursePath, os.path.basename(os.path.normpath(courseFile.key)))
-                                if (os.path.exists(destFilename) and self.overwrite):
-                                    os.remove(destFilename)
-                                if not os.path.exists(destFilename):
+                            raw_course_path = os.path.join(
+                                self.destination_dir, course_id, "0")
+                            if not os.path.exists(raw_course_path):
+                                os.makedirs(raw_course_path)
+                            for course_file in ocw_content_storage.objects.filter(Prefix=os.path.join(course_folder.get("Prefix", "0"))):
+                                dest_filename = os.path.join(
+                                    raw_course_path, os.path.basename(os.path.normpath(course_file.key)))
+                                if (os.path.exists(dest_filename) and self.overwrite):
+                                    os.remove(dest_filename)
+                                if not os.path.exists(dest_filename):
                                     print("downloading {}...".format(
-                                        destFilename))
-                                    with open(destFilename, "wb+") as f:
-                                        s3Client.download_fileobj(
-                                            ocwContentStorage.name, courseFile.key, f)
+                                        dest_filename))
+                                    with open(dest_filename, "wb+") as f:
+                                        s3_client.download_fileobj(
+                                            ocw_content_storage.name, course_file.key, f)
