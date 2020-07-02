@@ -3,7 +3,7 @@ import json
 import pytest
 from tempfile import TemporaryDirectory
 import ocw_data_parser.test_constants as constants
-from ocw_data_parser.utils import update_file_location, get_binary_data, is_json, get_correct_path, load_json_file, print_error, print_success, safe_get, find_all_values_for_key, htmlify, parseAll
+from ocw_data_parser.utils import update_file_location, get_binary_data, is_json, get_correct_path, load_json_file, print_error, print_success, safe_get, find_all_values_for_key, htmlify, parse_all
 
 
 def test_update_local_file_location(ocw_parser):
@@ -99,6 +99,6 @@ def test_htmlify(ocw_parser):
 
 def test_parse_all():
     with TemporaryDirectory() as destination_dir:
-        parseAll(constants.COURSE_DIR, destination_dir)
+        parse_all(constants.COURSE_DIR, destination_dir)
         assert os.path.isdir(os.path.join(destination_dir, "course-1"))
         assert os.path.isdir(os.path.join(destination_dir, "course-2"))
