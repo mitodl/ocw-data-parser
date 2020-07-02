@@ -90,7 +90,7 @@ def htmlify(page):
         return file_name, html
     return None, None
 
-def parseAll(coursesDir, destinationDir, s3Bucket="", s3Links=False, overwrite=False, beautifyMasterJson=False):
+def parse_all(coursesDir, destinationDir, s3Bucket="", s3Links=False, overwrite=False, beautifyMasterJson=False):
     for courseDir in os.listdir(coursesDir):
         sourcePath = "{}/".format(os.path.join(coursesDir, courseDir))
         destPath = os.path.join(destinationDir, courseDir)
