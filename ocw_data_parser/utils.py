@@ -98,8 +98,7 @@ def parse_all(coursesDir, destinationDir, s3Bucket="", s3Links=False, overwrite=
             if os.path.exists(destPath) and overwrite:
                 shutil.rmtree(destPath)
             if not os.path.exists(destPath):
-                os.mkdir(destPath)
-                print(sourcePath)
+                os.makedirs(destPath)
                 parser = ocw_data_parser.OCWParser(course_dir=sourcePath, destination_dir=destinationDir, s3_bucket_name=s3Bucket,
                                 s3_target_folder=courseDir, beautify_master_json=beautifyMasterJson)
                 parser.export_master_json(s3_links=s3Links)
