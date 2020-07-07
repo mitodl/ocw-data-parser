@@ -50,9 +50,8 @@ def ocw_parser_s3(ocw_parser):
         s3_bucket_name="testing",
         s3_bucket_access_key="testing",
         s3_bucket_secret_access_key="testing",
-        folder="testing"
+        folder="course-1"
     )
-    
     yield ocw_parser
 
 @pytest.fixture(autouse=True)

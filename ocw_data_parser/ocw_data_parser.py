@@ -227,7 +227,8 @@ class OCWParser(object):
 
         if not self.jsons:
             self.jsons = self.load_raw_jsons()
-        page_types = ["CourseHomeSection", "CourseSection", "DownloadSection", "ThisCourseAtMITSection", "SupplementalResourceSection"]
+        page_types = ["CourseHomeSection", "CourseSection", "DownloadSection",
+                      "ThisCourseAtMITSection", "SupplementalResourceSection"]
         pages = []
         for json_file in self.jsons:
             if json_file["_content_type"] == "text/html" and \
@@ -386,36 +387,7 @@ class OCWParser(object):
 
     def export_master_json(self, s3_links=False):
         if s3_links:
-            if not self.s3_bucket_name:
-                log.error("Please set your s3 bucket name")
-                return
-            bucket_base_url = f"https://{self.s3_bucket_name}.s3.amazonaws.com/{self.master_json['short_url']}/"
-            for p in self.compose_pages():
-                filename, html = htmlify(p)
-                if filename and html:
-                    update_file_location(
-                        self.master_json, bucket_base_url + filename, safe_get(p, "uid"))
-            for file in self.media_jsons:
-                uid = safe_get(file, "_uid")
-                filename = uid + "_" + safe_get(file, "id")
-                update_file_location(
-                    self.master_json, bucket_base_url + filename, uid)
-                if self.course_image_uid and uid == self.course_image_uid:
-                    self.course_image_s3_link = bucket_base_url + filename
-                    self.course_image_alt_text = safe_get(file, "description")
-                    self.master_json["image_src"] = self.course_image_s3_link
-                    self.master_json["image_description"] = self.course_image_alt_text
-
-                if self.course_thumbnail_image_uid and uid == self.course_thumbnail_image_uid:
-                    self.course_thumbnail_image_s3_link = bucket_base_url + filename
-                    self.course_thumbnail_image_alt_text = safe_get(
-                        file, "description")
-                    self.master_json["thumbnail_image_src"] = self.course_thumbnail_image_s3_link
-                    self.master_json["thumbnail_image_description"] = self.course_thumbnail_image_alt_text
-            for media in self.large_media_links:
-                filename = media["link"].split("/")[-1]
-                update_file_location(
-                    self.master_json, bucket_base_url + filename)
+            self.update_s3_content()
         os.makedirs(self.destination_dir + "master/", exist_ok=True)
         file_path = self.destination_dir + "master/master.json"
         with open(file_path, "w") as file:
@@ -425,46 +397,12 @@ class OCWParser(object):
                 json.dump(self.master_json, file)
         log.info("Extracted %s", file_path)
 
-    def upload_all_media_to_s3(self, chunk_size=1000000, upload_master_json=False):
-        # default chunk_size set to 10 megabytes
-        if not self.s3_bucket_name:
-            log.error("Please set your s3 bucket name")
-            return
-
-        bucket_base_url = f"https://{self.s3_bucket_name}.s3.amazonaws.com/"
-        if self.s3_target_folder:
-            if self.s3_target_folder[-1] != "/":
-                self.s3_target_folder += "/"
-            bucket_base_url += self.s3_target_folder
-
-        s3_bucket = boto3.resource("s3",
-                                   aws_access_key_id=self.s3_bucket_access_key,
-                                   aws_secret_access_key=self.s3_bucket_secret_access_key
-                                   ).Bucket(self.s3_bucket_name)
-
-        # Upload static files first
-        for p in self.compose_pages():
-            filename, html = htmlify(p)
-            if filename and html:
-                s3_bucket.put_object(
-                    Key=self.s3_target_folder + filename, Body=html, ACL="public-read")
-                update_file_location(
-                    self.master_json, bucket_base_url + filename, safe_get(p, "uid"))
-        for file in self.media_jsons:
-            uid = safe_get(file, "_uid")
-            filename = uid + "_" + safe_get(file, "id")
-            if not get_binary_data(file):
-                log.error("Could not load binary data for file: %s", filename)
-            else:
-                d = base64.b64decode(get_binary_data(file))
-            if d:
-                s3_bucket.put_object(
-                    Key=self.s3_target_folder + filename, Body=d, ACL="public-read")
-                update_file_location(
-                    self.master_json, bucket_base_url + filename, uid)
-                log.info("Uploaded %s", filename)
-
-                # Track course image link
+    def find_course_image_s3_link(self):
+        bucket_base_url = self.get_s3_base_url()
+        if bucket_base_url:
+            for file in self.media_jsons:
+                uid = safe_get(file, "_uid")
+                filename = uid + "_" + safe_get(file, "id")
                 if self.course_image_uid and uid == self.course_image_uid:
                     self.course_image_s3_link = bucket_base_url + filename
                     self.course_image_alt_text = safe_get(file, "description")
@@ -477,25 +415,91 @@ class OCWParser(object):
                         file, "description")
                     self.master_json["thumbnail_image_src"] = self.course_thumbnail_image_s3_link
                     self.master_json["thumbnail_image_description"] = self.course_thumbnail_image_alt_text
-            else:
-                log.error("Could NOT upload %s", filename)
 
-        # Upload foreign(large) media files:
-        for media in self.large_media_links:
-            filename = media["link"].split("/")[-1]
-            response = get(media["link"], stream=True)
-            if response:
-                s3_uri = f"s3://{self.s3_bucket_access_key}:{self.s3_bucket_secret_access_key}@{self.s3_bucket_name}/"
-                with smart_open(s3_uri + self.s3_target_folder + filename, "wb") as s3:
-                    for chunk in response.iter_content(chunk_size=chunk_size):
-                        s3.write(chunk)
-                response.close()
-                update_file_location(
-                    self.master_json, bucket_base_url + filename)
-                log.info("Uploaded %s", filename)
-            else:
-                log.error("Could NOT upload %s", filename)
+    def get_s3_base_url(self):
+        if not self.s3_bucket_name:
+            log.error("Please set your s3 bucket name")
+            return
+        bucket_base_url = f"https://{self.s3_bucket_name}.s3.amazonaws.com/"
+        if self.s3_target_folder:
+            if self.s3_target_folder[-1] != "/":
+                self.s3_target_folder += "/"
+            bucket_base_url += self.s3_target_folder
+        return bucket_base_url
 
+    def get_s3_bucket(self):
+        self.find_course_image_s3_link()
+        return boto3.resource("s3",
+                              aws_access_key_id=self.s3_bucket_access_key,
+                              aws_secret_access_key=self.s3_bucket_secret_access_key
+                              ).Bucket(self.s3_bucket_name)
+
+    def update_s3_content(self, update_pages=True, update_media=True, media_uid_filter=None, update_external_media=True, chunk_size=1000000):
+        bucket_base_url = self.get_s3_base_url()
+        if bucket_base_url:
+            s3_bucket = self.get_s3_bucket()
+            if update_pages:
+                for p in self.compose_pages():
+                    filename, html = htmlify(p)
+                    if filename and html:
+                        if self.upload_to_s3:
+                            s3_bucket.put_object(
+                                Key=self.s3_target_folder + filename, Body=html, ACL="public-read")
+                        update_file_location(
+                            self.master_json, bucket_base_url + filename, safe_get(p, "uid"))
+            if update_media:
+                if media_uid_filter:
+                    media_jsons = [
+                        media_json for media_json in self.media_jsons if media_json in media_uid_filter]
+                else:
+                    media_jsons = self.media_jsons
+                for file in media_jsons:
+                    uid = safe_get(file, "_uid")
+                    filename = uid + "_" + safe_get(file, "id")
+                    if not get_binary_data(file):
+                        log.error(
+                            "Could not load binary data for file: %s", filename)
+                    else:
+                        d = base64.b64decode(get_binary_data(file))
+                    if self.upload_to_s3 and d:
+                        s3_bucket.put_object(
+                            Key=self.s3_target_folder + filename, Body=d, ACL="public-read")
+                    update_file_location(
+                        self.master_json, bucket_base_url + filename, uid)
+                    if self.course_image_uid and uid == self.course_image_uid:
+                        self.course_image_s3_link = bucket_base_url + filename
+                        self.course_image_alt_text = safe_get(
+                            file, "description")
+                        self.master_json["image_src"] = self.course_image_s3_link
+                        self.master_json["image_description"] = self.course_image_alt_text
+
+                    if self.course_thumbnail_image_uid and uid == self.course_thumbnail_image_uid:
+                        self.course_thumbnail_image_s3_link = bucket_base_url + filename
+                        self.course_thumbnail_image_alt_text = safe_get(
+                            file, "description")
+                        self.master_json["thumbnail_image_src"] = self.course_thumbnail_image_s3_link
+                        self.master_json["thumbnail_image_description"] = self.course_thumbnail_image_alt_text
+            if update_external_media:
+                for media in self.large_media_links:
+                    filename = media["link"].split("/")[-1]
+                    response = get(media["link"], stream=True)
+                    if self.upload_to_s3 and response:
+                        s3_uri = f"s3://{self.s3_bucket_access_key}:{self.s3_bucket_secret_access_key}@{self.s3_bucket_name}/"
+                        with smart_open(s3_uri + self.s3_target_folder + filename, "wb") as s3:
+                            for chunk in response.iter_content(chunk_size=chunk_size):
+                                s3.write(chunk)
+                        response.close()
+                        update_file_location(
+                            self.master_json, bucket_base_url + filename)
+                        log.info("Uploaded %s", filename)
+                    else:
+                        log.error("Could NOT upload %s", filename)
+                    update_file_location(
+                        self.master_json, bucket_base_url + filename)
+
+    def upload_all_media_to_s3(self, upload_master_json=False):
+        s3_bucket = self.get_s3_bucket()
+        self.update_s3_content()
         if upload_master_json:
             self.upload_master_json_to_s3(s3_bucket)
 
@@ -509,43 +513,10 @@ class OCWParser(object):
             log.error('No unique uid found for this master_json')
 
     def upload_course_image(self):
-        if not self.s3_bucket_name:
-            log.error("Please set your s3 bucket name")
-            return
-        bucket_base_url = f"https://{self.s3_bucket_name}.s3.amazonaws.com/"
-        if self.s3_target_folder:
-            if self.s3_target_folder[-1] != "/":
-                self.s3_target_folder += "/"
-            bucket_base_url += self.s3_target_folder
-
-        s3_bucket = boto3.resource("s3",
-                                   aws_access_key_id=self.s3_bucket_access_key,
-                                   aws_secret_access_key=self.s3_bucket_secret_access_key
-                                   ).Bucket(self.s3_bucket_name)
-        # Upload static files first
+        s3_bucket = self.get_s3_bucket()
         for file in self.media_jsons:
             uid = safe_get(file, "_uid")
             if uid == self.course_image_uid or uid == self.course_thumbnail_image_uid:
-                filename = uid + "_" + safe_get(file, "id")
-                image_binary_data = get_binary_data(file)
-                if not image_binary_data:
-                    log.error(filename)
-                else:
-                    d = base64.b64decode(image_binary_data)
-                    s3_bucket.put_object(
-                        Key=self.s3_target_folder + filename, Body=d, ACL="public-read")
-                    log.info("Uploaded %s", filename)
-                    if uid == self.course_image_uid:
-                        self.course_image_s3_link = bucket_base_url + filename
-                        self.course_image_alt_text = safe_get(
-                            file, "description")
-                        self.master_json["image_src"] = self.course_image_s3_link
-                        self.master_json["image_description"] = self.course_image_alt_text
-                    else:
-                        self.course_thumbnail_image_s3_link = bucket_base_url + filename
-                        self.course_thumbnail_image_alt_text = safe_get(
-                            file, "description")
-                        self.master_json["thumbnail_image_src"] = self.course_thumbnail_image_s3_link
-                        self.master_json["thumbnail_image_description"] = self.course_thumbnail_image_alt_text
-
+                self.update_s3_content(
+                    update_pages=False, update_external_media=False, media_uid_filter=[uid])
         self.upload_master_json_to_s3(s3_bucket)
