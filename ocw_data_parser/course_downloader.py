@@ -17,7 +17,7 @@ class OCWDownloader(object):
                  destination_dir="",
                  s3_bucket_name="",
                  overwrite=False):
-        self.coursesJson = courses_json
+        self.courses_json = courses_json
         self.env = env
         self.destination_dir = destination_dir
         self.s3_bucket_name = s3_bucket_name
@@ -25,7 +25,7 @@ class OCWDownloader(object):
 
     def download_courses(self):
         courses = None
-        with open(self.coursesJson) as f:
+        with open(self.courses_json) as f:
             courses = json.load(f)["courses"]
         if not os.path.exists(self.destination_dir):
             os.makedirs(self.destination_dir)
@@ -54,3 +54,10 @@ class OCWDownloader(object):
                             with open(dest_filename, "wb+") as f:
                                 s3_client.download_fileobj(
                                     self.s3_bucket_name, obj["Key"], f)
+                        courses.pop(course_id)
+        
+        # if there are still courses in the list, that means they weren't found on s3
+        if len(courses) > 0:
+            print("The following courses were not found in the s3 bucket {}:".format(self.s3_bucket_name))
+            for course_id in courses:
+                print(" - {}".format(course_id))
