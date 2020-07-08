@@ -1,0 +1,197 @@
+{
+    "list_in_left_nav": false, 
+    "tcATmit_subject_tags": [], 
+    "features_tracking": [], 
+    "widgets_features": [], 
+    "locallyAllowedTypes": [
+        "OCWImage", 
+        "OCWExtFile", 
+        "OCWFile"
+    ], 
+    "has_inline_embed": false, 
+    "_content_type_text": "text/html", 
+    "unique_identifier": "https://ocw.mit.edu/resources/res-str-001-geographic-information-system-gis-tutorial-january-iap-2016/download-resource-materials", 
+    "text": "<div id=\"download_inner_main\"><p class=\"ptext\">This package contains the same content as the online version of the course, except for any audio/video materials and other interactive file types.</p><p class=\"ptext\">For help downloading and using course materials, read our <a href=\"http://ocw.mit.edu/help/faq-technology/\">frequently asked questions</a>.</p></div>", 
+    "_content_type_publisher": "text/plain", 
+    "_content_type_license": "text/plain", 
+    "ad_type": "HOUSE", 
+    "creation_date": "2016/03/01 11:53:58.070 US/Eastern", 
+    "aggregationlevel": 3, 
+    "is_image_gallery": false, 
+    "_uid": "f8ae706639dd475d2d475c2481375ccb", 
+    "_workflow_history": {
+        "page_workflow": [
+            {
+                "action": null, 
+                "review_state": "waiting_for_authoring", 
+                "actor": "rsharma20", 
+                "comments": "", 
+                "time": "2016/03/01 11:53:58.081 US/Eastern"
+            }, 
+            {
+                "action": "approve_to_staging", 
+                "review_state": "ready_for_staging", 
+                "actor": "rsharma20", 
+                "comments": "", 
+                "time": "2016/03/07 00:06:13.078 US/Eastern"
+            }
+        ]
+    }, 
+    "hide_Page_title": false, 
+    "_content_type_id": "text/plain", 
+    "immediatelyAddableTypes": [
+        "OCWImage", 
+        "OCWExtFile", 
+        "OCWFile"
+    ], 
+    "id": "download-resource-materials", 
+    "is_media_gallery": false, 
+    "related_mit_links": "", 
+    "_content_type_short_page_title": "text/plain", 
+    "_userdefined_roles": [], 
+    "contributors": [], 
+    "effectiveDate": "2016/03/07 00:06:13.031 US/Eastern", 
+    "title": "Download Resource Materials", 
+    "parent_module": "236793a57f96cf26ea0aec0ca35bd118", 
+    "_content_type_ad_type": "text/plain", 
+    "_gopip": 4, 
+    "is_mathml_document": false, 
+    "_ac_local_roles": {
+        "rsharma20": [
+            "Owner"
+        ]
+    }, 
+    "location": "", 
+    "bottomtext": "", 
+    "short_page_title": "Download Resource Materials", 
+    "_content_type_title": "text/plain", 
+    "feature_requirements": [], 
+    "_atbrefs": {}, 
+    "constrainTypesMode": 0, 
+    "_content_type": "text/html", 
+    "_type": "SRDownloadSection", 
+    "technical_location": "https://ocw.mit.edu/resources/res-str-001-geographic-information-system-gis-tutorial-january-iap-2016/download-resource-materials", 
+    "description": "", 
+    "short_name_tlp": "Download Resource Materials", 
+    "software_requirements": [
+        {
+            "software_type_col": "Browser", 
+            "minimum_version_col": "40.0", 
+            "software_name_col": "Chrome", 
+            "maximum_version_col": ""
+        }, 
+        {
+            "software_type_col": "Browser", 
+            "minimum_version_col": "8.0", 
+            "software_name_col": "Safari", 
+            "maximum_version_col": ""
+        }, 
+        {
+            "software_type_col": "Browser", 
+            "minimum_version_col": "38.0", 
+            "software_name_col": "Mozilla Firefox", 
+            "maximum_version_col": ""
+        }, 
+        {
+            "software_type_col": "Browser", 
+            "minimum_version_col": "9.0", 
+            "software_name_col": "Internet Explorer", 
+            "maximum_version_col": ""
+        }, 
+        {
+            "software_type_col": "Browser", 
+            "minimum_version_col": "13.1", 
+            "software_name_col": "Edge", 
+            "maximum_version_col": ""
+        }
+    ], 
+    "_content_type_technical_location": "text/plain", 
+    "_layout": "custom_view", 
+    "_properties": [
+        [
+            "title", 
+            "Download Resource Materials", 
+            "string"
+        ]
+    ], 
+    "subject": [], 
+    "_content_type_rights": "text/html", 
+    "_atrefs": {
+        "BelongsTo": [
+            "236793a57f96cf26ea0aec0ca35bd118"
+        ]
+    }, 
+    "_directly_provided": [
+        "Products.CMFEditions.interfaces.IVersioned"
+    ], 
+    "_path": "/Plone/resources/res-str-001-geographic-information-system-gis-tutorial-january-iap-2016/download-resource-materials", 
+    "_classname": "SRDownloadSection", 
+    "metadata_contributor_list": [], 
+    "tcATmit_instructional_tags": [], 
+    "parent_uid": "236793a57f96cf26ea0aec0ca35bd118", 
+    "modification_date": "2016/09/24 00:21:05.609 GMT-4", 
+    "course_linking": [], 
+    "publisher": "MIT OpenCourseWare", 
+    "excludeFromNav": false, 
+    "nextPreviousEnabled": false, 
+    "language": "", 
+    "license": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/", 
+    "rights": "This site (c) Massachusetts Institute of Technology 2016.  Content within individual courses is (c) by the individual authors unless otherwise noted. The Massachusetts Institute of Technology is providing this Work (as defined below) under the terms of this Creative Commons public license (\"CCPL\" or \"license\") unless otherwise noted. The Work is protected by copyright and/or other applicable law. Any use of the work other than as authorized under this license is prohibited. By exercising any of the rights to the Work provided here, You (as defined below) accept and agree to be bound by the terms of this license. The Licensor, the Massachusetts Institute of Technology, grants You the rights contained here in consideration of Your acceptance of such terms and conditions.", 
+    "url_rewrite_patterns": [], 
+    "always_publish": false, 
+    "_id": "download-resource-materials", 
+    "materialtype": "Other", 
+    "_content_type_unique_identifier": "text/plain", 
+    "category_features": [], 
+    "_owner": null, 
+    "_defaultpage": "", 
+    "firstTimeEdit": true, 
+    "_permissions": {
+        "Change portal events": {
+            "acquire": false, 
+            "roles": [
+                "Editor", 
+                "Manager", 
+                "MetadataEditor", 
+                "Owner"
+            ]
+        }, 
+        "Modify portal content": {
+            "acquire": false, 
+            "roles": [
+                "Manager", 
+                "MetadataEditor"
+            ]
+        }, 
+        "Access contents information": {
+            "acquire": false, 
+            "roles": [
+                "Authenticated"
+            ]
+        }, 
+        "List folder contents": {
+            "acquire": false, 
+            "roles": [
+                "Editor", 
+                "Manager", 
+                "MetadataEditor", 
+                "Owner"
+            ]
+        }, 
+        "View": {
+            "acquire": false, 
+            "roles": [
+                "Authenticated"
+            ]
+        }
+    }, 
+    "ad_champion_text": "", 
+    "allowDiscussion": false, 
+    "_content_type_materialtype": "text/plain", 
+    "creators": [
+        "rsharma20"
+    ], 
+    "courselist_features": [], 
+    "_content_type_short_name_tlp": "text/plain", 
+    "expirationDate": "None"
+}

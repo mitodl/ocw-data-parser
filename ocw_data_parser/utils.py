@@ -1,5 +1,8 @@
+import os
+import shutil
 import json
 import logging
+import ocw_data_parser.ocw_data_parser
 
 log = logging.getLogger(__name__)
 
@@ -86,3 +89,22 @@ def htmlify(page):
         html = "<html><head></head><body>" + safe_text + "</body></html>"
         return file_name, html
     return None, None
+
+def parse_all(courses_dir, destination_dir, s3_bucket="", s3_links=False, overwrite=False, beautify_master_json=False):
+    for course_dir in os.listdir(courses_dir):
+        source_path = "{}/".format(os.path.join(courses_dir, course_dir))
+        dest_path = os.path.join(destination_dir, course_dir)
+        if os.path.isdir(source_path):
+            if os.path.exists(dest_path) and overwrite:
+                shutil.rmtree(dest_path)
+            if not os.path.exists(dest_path):
+                os.makedirs(dest_path)
+                parser = ocw_data_parser.OCWParser(course_dir=source_path, destination_dir=destination_dir, s3_bucket_name=s3_bucket,
+                                s3_target_folder=course_dir, beautify_master_json=beautify_master_json)
+                parser.export_master_json(s3_links=s3_links)
+                master_path = os.path.join(dest_path, "master")
+                if os.path.isdir(master_path):
+                    for filename in os.listdir(master_path):
+                        shutil.move(os.path.join(master_path, filename),
+                                    os.path.join(dest_path, filename))
+                    shutil.rmtree(master_path)

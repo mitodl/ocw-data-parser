@@ -1,0 +1,100 @@
+{
+    "contributors": [], 
+    "text": "", 
+    "threeplay_api_json": "", 
+    "_content_type_license": "text/plain", 
+    "asset_language": "en-us", 
+    "media_location": "7UJ4CFRGd-U", 
+    "_uid": "6493ebd45e1379ce8efb4b938e5fcbb0", 
+    "_workflow_history": {
+        "one_state_workflow": [
+            {
+                "action": null, 
+                "review_state": "published", 
+                "actor": "yunpengwang", 
+                "comments": "", 
+                "time": "2019/07/31 18:02:14.090 Universal"
+            }
+        ]
+    }, 
+    "expirationDate": "None", 
+    "_content_type_id": "text/plain", 
+    "id": "Video-YouTube-Stream", 
+    "tableContents": false, 
+    "_path": "/Plone/courses/mathematics/18-06-linear-algebra-spring-2010/instructor-insights/an-interview-with-gilbert-strang-on-teaching-linear-algebra/Video-YouTube-Stream", 
+    "media_asset_source": "YouTube", 
+    "effectiveDate": "None", 
+    "title": "Video-YouTube-Stream", 
+    "media_asset_type": "Video", 
+    "_ac_local_roles": {
+        "yunpengwang": [
+            "Owner"
+        ]
+    }, 
+    "_userdefined_roles": [], 
+    "_gopip": 0, 
+    "location": "", 
+    "_content_type_title": "text/plain", 
+    "excludeFromNav": false, 
+    "presentation": false, 
+    "_content_type_media_location": "text/plain", 
+    "_type": "OCWMediaAsset", 
+    "description": "", 
+    "_atrefs": {}, 
+    "_layout": "custom_view", 
+    "subject": [], 
+    "_content_type_rights": "text/html", 
+    "_directly_provided": [], 
+    "language": "", 
+    "_content_type_asset_language": "text/plain", 
+    "_classname": "OCWMediaAsset", 
+    "_content_type_media_format": "text/plain", 
+    "creation_date": "2019/07/31 18:02:13.965 Universal", 
+    "parent_uid": "e21b71ff0fa975bfa9acb2a155aafc1d", 
+    "_content_type_media_asset_type": "text/plain", 
+    "modification_date": "2019/07/31 18:02:14.305 Universal", 
+    "_content_type": "text/html", 
+    "_id": "Video-YouTube-Stream", 
+    "file_uid": "", 
+    "license": "https://ocw-origin.odl.mit.edu/terms", 
+    "rights": "This site (c) Massachusetts Institute of Technology 2019.  Content within individual courses is (c) by the individual authors unless otherwise noted. The Massachusetts Institute of Technology is providing this Work (as defined below) under the terms of this Creative Commons public license (\"CCPL\" or \"license\") unless otherwise noted. The Work is protected by copyright and/or other applicable law. Any use of the work other than as authorized under this license is prohibited. By exercising any of the rights to the Work provided here, You (as defined below) accept and agree to be bound by the terms of this license. The Licensor, the Massachusetts Institute of Technology, grants You the rights contained here in consideration of Your acceptance of such terms and conditions.", 
+    "_atbrefs": {}, 
+    "media_size": "", 
+    "_owner": "yunpengwang", 
+    "_defaultpage": "", 
+    "_permissions": {
+        "Modify portal content": {
+            "acquire": false, 
+            "roles": [
+                "Editor", 
+                "Manager", 
+                "Owner"
+            ]
+        }, 
+        "Access contents information": {
+            "acquire": false, 
+            "roles": [
+                "Anonymous"
+            ]
+        }, 
+        "View": {
+            "acquire": false, 
+            "roles": [
+                "Anonymous"
+            ]
+        }
+    }, 
+    "media_format": "Stream", 
+    "_properties": [
+        [
+            "title", 
+            "Video-YouTube-Stream", 
+            "string"
+        ]
+    ], 
+    "allowDiscussion": false, 
+    "creators": [
+        "yunpengwang"
+    ], 
+    "_content_type_media_asset_source": "text/plain"
+}

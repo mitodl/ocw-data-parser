@@ -1,0 +1,322 @@
+{
+    "list_in_left_nav": false, 
+    "tcATmit_subject_tags": [], 
+    "features_tracking": [], 
+    "widgets_features": [], 
+    "locallyAllowedTypes": [
+        "OCWImage", 
+        "SupplementalResourceSection", 
+        "OCWExtFile", 
+        "OCWFile", 
+        "MediaResource"
+    ], 
+    "has_inline_embed": false, 
+    "_content_type_text": "text/html", 
+    "unique_identifier": "https://ocw.mit.edu/resources/res-str-001-geographic-information-system-gis-tutorial-january-iap-2016/spatial-data", 
+    "text": "<p>The following material was drawn from a workshop on Spatial Data and Spatial Data Sources given at MIT during IAP 2016 <img src=\"/images/educator/icon-question-iap.png\" class=\"question\" alt=\"\" />. It covers spatial data definitions, formats, and sources as well as metadata, and data management.</p> <div class=\"maintabletemplate\"><table summary=\"See table caption for summary.\" class=\"tablewidth50\">     <caption class=\"invisible\">Course data.</caption>  <!-- BEGIN TABLE HEADER (for MIT OCW Table Template 2.51) -->     <thead>         <tr>             <th scope=\"col\">RESOURCES</th>         </tr>     </thead>     <!-- END TABLE HEADER -->     <tbody>         <tr class=\"row\">             <td><a href=\"./resolveuid/23b7c5bd5aa8b062f654045b94ba2abf\">Introduction to Spatial Data (PDF - 3.1MB)</a></td>         </tr>         <tr class=\"alt-row\">             <td><a href=\"./resolveuid/a8dcf343da76c175462947a68cd92d2a\">Sources of Spatial Data (PDF)</a></td>         </tr>         <!-- TEN ROWS -->     </tbody> </table></div>", 
+    "_content_type_publisher": "text/plain", 
+    "_content_type_license": "text/plain", 
+    "ad_type": "HOUSE", 
+    "creation_date": "2016/03/01 11:52:12.175 US/Eastern", 
+    "aggregationlevel": 3, 
+    "is_image_gallery": false, 
+    "_uid": "cd4865266db27a4c6d2a83b8b78cef23", 
+    "hide_Page_title": false, 
+    "_content_type_id": "text/plain", 
+    "immediatelyAddableTypes": [
+        "OCWImage", 
+        "SupplementalResourceSection", 
+        "OCWExtFile", 
+        "OCWFile", 
+        "MediaResource"
+    ], 
+    "category_features": [], 
+    "id": "spatial-data", 
+    "is_media_gallery": false, 
+    "subject": [], 
+    "_content_type_short_page_title": "text/plain", 
+    "related_mit_links": "", 
+    "contributors": [], 
+    "effectiveDate": "2016/03/07 00:06:08.505 US/Eastern", 
+    "title": "Spatial Data", 
+    "parent_module": "236793a57f96cf26ea0aec0ca35bd118", 
+    "_content_type_ad_type": "text/plain", 
+    "_userdefined_roles": [], 
+    "is_mathml_document": false, 
+    "_gopip": 2, 
+    "location": "", 
+    "bottomtext": "", 
+    "short_page_title": "Spatial Data", 
+    "_content_type_title": "text/plain", 
+    "feature_requirements": [], 
+    "_atbrefs": {
+        "isReferencing": [
+            "cd4865266db27a4c6d2a83b8b78cef23"
+        ]
+    }, 
+    "constrainTypesMode": 0, 
+    "_content_type": "text/html", 
+    "_type": "SupplementalResourceSection", 
+    "technical_location": "https://ocw.mit.edu/resources/res-str-001-geographic-information-system-gis-tutorial-january-iap-2016/spatial-data", 
+    "description": "his section contains an introduction to spatial data and a list of online resources for obtaining spatial data.", 
+    "short_name_tlp": "", 
+    "software_requirements": [
+        {
+            "software_type_col": "Browser", 
+            "minimum_version_col": "40.0", 
+            "software_name_col": "Chrome", 
+            "maximum_version_col": ""
+        }, 
+        {
+            "software_type_col": "Browser", 
+            "minimum_version_col": "8.0", 
+            "software_name_col": "Safari", 
+            "maximum_version_col": ""
+        }, 
+        {
+            "software_type_col": "Browser", 
+            "minimum_version_col": "38.0", 
+            "software_name_col": "Mozilla Firefox", 
+            "maximum_version_col": ""
+        }, 
+        {
+            "software_type_col": "Browser", 
+            "minimum_version_col": "9.0", 
+            "software_name_col": "Internet Explorer", 
+            "maximum_version_col": ""
+        }, 
+        {
+            "software_type_col": "Browser", 
+            "minimum_version_col": "13.1", 
+            "software_name_col": "Edge", 
+            "maximum_version_col": ""
+        }
+    ], 
+    "_content_type_technical_location": "text/plain", 
+    "_layout": "custom_view", 
+    "_properties": [
+        [
+            "title", 
+            "Spatial Data", 
+            "string"
+        ]
+    ], 
+    "_workflow_history": {
+        "page_workflow": [
+            {
+                "action": null, 
+                "review_state": "waiting_for_authoring", 
+                "actor": "rsharma20", 
+                "comments": "", 
+                "time": "2016/03/01 11:52:12.184 US/Eastern"
+            }, 
+            {
+                "action": "approve_to_staging", 
+                "review_state": "ready_for_staging", 
+                "comments": "", 
+                "actor": "rsharma20", 
+                "time": "2016/03/07 00:06:08.543 US/Eastern"
+            }, 
+            {
+                "action": "decline", 
+                "review_state": "waiting_for_authoring", 
+                "actor": "rsharma20", 
+                "comments": "", 
+                "time": "2016/03/08 23:54:33.352 US/Eastern"
+            }, 
+            {
+                "action": "approve_to_staging", 
+                "review_state": "ready_for_staging", 
+                "actor": "rsharma20", 
+                "comments": "", 
+                "time": "2016/03/08 23:58:29.365 US/Eastern"
+            }, 
+            {
+                "action": "decline", 
+                "review_state": "waiting_for_authoring", 
+                "comments": "", 
+                "actor": "rsharma20", 
+                "time": "2016/03/09 23:13:24.011 US/Eastern"
+            }, 
+            {
+                "action": "approve_to_staging", 
+                "review_state": "ready_for_staging", 
+                "actor": "rsharma20", 
+                "comments": "", 
+                "time": "2016/03/09 23:14:20.214 US/Eastern"
+            }, 
+            {
+                "action": "decline", 
+                "review_state": "waiting_for_authoring", 
+                "comments": "", 
+                "actor": "srani11", 
+                "time": "2016/03/10 03:05:01.088 US/Eastern"
+            }, 
+            {
+                "action": "approve_to_staging", 
+                "review_state": "ready_for_staging", 
+                "comments": "", 
+                "actor": "srani11", 
+                "time": "2016/03/10 03:05:27.901 US/Eastern"
+            }, 
+            {
+                "action": "decline", 
+                "review_state": "waiting_for_authoring", 
+                "actor": "rsharma20", 
+                "comments": "", 
+                "time": "2016/03/10 23:17:55.653 US/Eastern"
+            }, 
+            {
+                "action": "approve_to_staging", 
+                "review_state": "ready_for_staging", 
+                "actor": "rsharma20", 
+                "comments": "", 
+                "time": "2016/03/10 23:18:11.091 US/Eastern"
+            }, 
+            {
+                "action": "decline", 
+                "review_state": "waiting_for_authoring", 
+                "actor": "srani11", 
+                "comments": "", 
+                "time": "2016/03/11 01:29:10.685 US/Eastern"
+            }, 
+            {
+                "action": "approve_to_staging", 
+                "review_state": "ready_for_staging", 
+                "actor": "srani11", 
+                "comments": "", 
+                "time": "2016/03/11 01:29:32.076 US/Eastern"
+            }, 
+            {
+                "action": "decline_to_qa", 
+                "review_state": "waiting_for_qa", 
+                "comments": "", 
+                "actor": "brem", 
+                "time": "2016/03/14 12:11:11.361 GMT-4"
+            }, 
+            {
+                "action": "approve_to_staging", 
+                "review_state": "ready_for_staging", 
+                "actor": "brem", 
+                "comments": "", 
+                "time": "2016/03/14 12:20:50.295 GMT-4"
+            }, 
+            {
+                "action": "decline_to_qa", 
+                "review_state": "waiting_for_qa", 
+                "comments": "", 
+                "actor": "brem", 
+                "time": "2016/03/15 11:03:12.185 GMT-4"
+            }, 
+            {
+                "action": "approve_to_staging", 
+                "review_state": "ready_for_staging", 
+                "comments": "", 
+                "actor": "brem", 
+                "time": "2016/03/15 11:03:29.893 GMT-4"
+            }, 
+            {
+                "action": "decline_to_qa", 
+                "review_state": "waiting_for_qa", 
+                "actor": "brem", 
+                "comments": "", 
+                "time": "2016/03/23 11:09:32.548 GMT-4"
+            }, 
+            {
+                "action": "approve_to_staging", 
+                "review_state": "ready_for_staging", 
+                "actor": "brem", 
+                "comments": "", 
+                "time": "2016/03/23 11:10:33.155 GMT-4"
+            }
+        ]
+    }, 
+    "_content_type_rights": "text/html", 
+    "_atrefs": {
+        "BelongsTo": [
+            "236793a57f96cf26ea0aec0ca35bd118"
+        ], 
+        "isReferencing": [
+            "cd4865266db27a4c6d2a83b8b78cef23", 
+            "a8dcf343da76c175462947a68cd92d2a", 
+            "23b7c5bd5aa8b062f654045b94ba2abf"
+        ]
+    }, 
+    "_directly_provided": [
+        "Products.CMFEditions.interfaces.IVersioned"
+    ], 
+    "_path": "/Plone/resources/res-str-001-geographic-information-system-gis-tutorial-january-iap-2016/spatial-data", 
+    "_classname": "SupplementalResourceSection", 
+    "metadata_contributor_list": [], 
+    "tcATmit_instructional_tags": [], 
+    "parent_uid": "236793a57f96cf26ea0aec0ca35bd118", 
+    "modification_date": "2016/09/24 00:09:41.037 GMT-4", 
+    "course_linking": [], 
+    "publisher": "MIT OpenCourseWare", 
+    "excludeFromNav": false, 
+    "nextPreviousEnabled": false, 
+    "language": "", 
+    "license": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/", 
+    "rights": "This site (c) Massachusetts Institute of Technology 2016.  Content within individual courses is (c) by the individual authors unless otherwise noted. The Massachusetts Institute of Technology is providing this Work (as defined below) under the terms of this Creative Commons public license (\"CCPL\" or \"license\") unless otherwise noted. The Work is protected by copyright and/or other applicable law. Any use of the work other than as authorized under this license is prohibited. By exercising any of the rights to the Work provided here, You (as defined below) accept and agree to be bound by the terms of this license. The Licensor, the Massachusetts Institute of Technology, grants You the rights contained here in consideration of Your acceptance of such terms and conditions.", 
+    "url_rewrite_patterns": [], 
+    "always_publish": false, 
+    "_id": "spatial-data", 
+    "materialtype": "Other", 
+    "_content_type_unique_identifier": "text/plain", 
+    "_content_type_description": "text/plain", 
+    "_owner": null, 
+    "_defaultpage": "", 
+    "firstTimeEdit": true, 
+    "_permissions": {
+        "Change portal events": {
+            "acquire": false, 
+            "roles": [
+                "Editor", 
+                "Manager", 
+                "MetadataEditor", 
+                "Owner"
+            ]
+        }, 
+        "Modify portal content": {
+            "acquire": false, 
+            "roles": [
+                "Manager", 
+                "MetadataEditor"
+            ]
+        }, 
+        "Access contents information": {
+            "acquire": false, 
+            "roles": [
+                "Authenticated"
+            ]
+        }, 
+        "List folder contents": {
+            "acquire": false, 
+            "roles": [
+                "Editor", 
+                "Manager", 
+                "MetadataEditor", 
+                "Owner"
+            ]
+        }, 
+        "View": {
+            "acquire": false, 
+            "roles": [
+                "Authenticated"
+            ]
+        }
+    }, 
+    "ad_champion_text": "", 
+    "allowDiscussion": false, 
+    "_content_type_materialtype": "text/plain", 
+    "creators": [
+        "rsharma20"
+    ], 
+    "courselist_features": [], 
+    "_ac_local_roles": {
+        "rsharma20": [
+            "Owner"
+        ]
+    }, 
+    "expirationDate": "None"
+}

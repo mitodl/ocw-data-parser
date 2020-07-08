@@ -1,0 +1,185 @@
+{
+    "expanded_alternate_text": "", 
+    "features_tracking": [], 
+    "widgets_features": [], 
+    "contributors": [], 
+    "tcATmit_subject_tags": [], 
+    "unique_identifier": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-1-the-geometry-of-linear-equations/18.06_L01.jpg", 
+    "_content_type_publisher": "text/plain", 
+    "_content_type_license": "text/plain", 
+    "_datafield_image": {
+        "encoding": "base64", 
+        "data": "/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAcFBQYFBAcGBQYIBwcIChELCgkJChUPEAwRGBUaGRgVGBcbHichGx0lHRcYIi4iJSgpKywrGiAvMy8qMicqKyoBBwgICgkKFAsLFCocGBwqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKv/AABEIAFoAeAMBIgACEQEDEQH/xAAbAAABBQEBAAAAAAAAAAAAAAAFAgMEBgcAAf/EAEsQAAIBAgQDBAUGCAoLAAAAAAECAwQRAAUSIQYTMSJBUXEUYYGx0QcVMlKRoTNCQ2JzgrLSFyMlVXKTorPBwhYkNTZERXSEkqPi/8QAGAEBAQEBAQAAAAAAAAAAAAAAAAMBAgT/xAAfEQACAgMAAwEBAAAAAAAAAAAAAQIRAxIxITJxQRP/2gAMAwEAAhEDEQA/ACPyfpq+TOpT62Sp/cPjIqWumgV1iYASLpbsg3HtxsHyci/yfsPrZRGP/ScY7T0kzUrVQjJgjdY2fuDMCQPsU/ZiOLj+mZfYMNn9a1alYjKkyJylIQbJawXfqANt+4DE/JfnCZqHloGpllkC8tFUhtOptTdknaxtq6AWI2x0mXIMpSshlghkSnjljAlRJGYHS1l2J6MbjvU4Vkk9ZBUelJPCullmeRpFZmOoKoc3uou1z078WokD5oq+fM6ylSnZHM51wkgFWLWC379yBhWeS5ipgizFCDAoiVg7MNgNrE7Hx2FzfE7M6iprMzzqaPMYooqicRzaidMhJLD6IIsCpsficQ8zrayegnild9EdQoljdSpWUppOwYg35W9+hG3U4AhwV2ZS5ksUE8sVTO6xWVuXc3sAbWw3VPVmsggmUJOqIg2s24ut/XYj7MN1Uk9SPTao8wzOVLd5Khb/AHMMH6wwZtXlavSpjjp+UzOxtEYwbvqf6IGm+nfe/moAjNqmrWoEFcY+ZF2S0YO/niIjM/QoP6Tge84XV0UnpwSEFuaImXW295EDgE+3r6sezyRxVMnJCzNrOlyLqB3WHf59PfhQC8uWySSwQ+kwwrIkXLhS7PIzKOlhZiSet7YJ1EsdJxZmtHBROs6mqLvLISxZVdrKFtpFwOhv68BpKdqjMklkLJGIadnnYdlf4tLkn7fEk7YKwR0MfGkdVPmO89aXWKKFi1mfo+q1rg79/wBt8AA4Kutq5WNIkUOndnjRYwg8S/Ue04fzWYU9qTmNNKEBmc3sXPavvuTYhbm3Tpjk+bqqWClaqrdBcBIo6REAJ2v+EO/rO+FZjHBVVGbzUsMhME7SmYnYo0mmxHcbsN7/AIuFAB1TsaKf9G3ux5jypJFDPt+Tb3Y7A7Rs3yai/AyDxyqL+7xmOXZxTQ8PHLvRi0hvLzGFxzeZGQLXtp0R26Xux7saT8ntZTZfwFFU1rSLAuXU6uY4zI3aUDZRueuKNFD8nisCvFeYG3X+SJMSxcZ3l9iY8CVeXUcpoIigopbMj2ZC0k1gqlrNbrsLi3kMN0lPbJZ6KooagzMjTRM7aVKgXuFIubddiPb0JaOs4KiouTFxLmylUMZPzRKbKCxYW03H0mub9Dhmkr+BaGdXk4jrpFKG0ZyeYBgwIPs7vhi1ojTANFCBC8lJHUpUQrqeWGSylb9CNiOo3v7MKqaGNabNoIXMggqkkDE3LIpdL383X7cG6TMOCqGUzwcT5gpaN4wfmiYfSUg+8HCYqzgeClqFbP8AMNU4Ees5PMFADBiLW63Xx8cZaFMr1NWxwZUtN6MryJUNKJCbWDIFK7WO9h3226YlvTyz1TLAadXTLlkCyIAzqKcK4B6khbkD1Yn34GcdniKvO9uzk8u+H/SuD4FAOfZkNETLc5HIGCMCp3IuRvb1XwtG0wYscUma5cdQCVdJD1NrNH2P2oreROGIOHbSU4q5Hp0mjMvMaHsogNiSSR4dBc7gdSMHqmXgioWIR5nmyxUsXLt80yNYEtJcmw8WPkMJnzPgx4Y4pc5zgooJC/NUm+5ud++98NkKY1XZlTDJ6Cko6eeSlQnTqcKzSrtc2W99JFrHYG3mMNSlBtBRUq1Vw19Bk5e/55bte7z6FkzjgiJFVc1zsqpJAXLCLE2BsSPADDfzlwEOtVxA3ll4GFoUwM+ZVzsGNVKtjcKh0qP1RthlHmSGWBHYRTWMi/Wsbi+LZH/B69HzznVcradXIYRLN/4He+BhzngRTflcUN5U0I95xuyFMrdXF/qFQQv5JvdjsHMwzrgr5rqhBRcT8wwuFMkdOFvY2vv0x5hZ0kXDgZl/g7jDWBFBSld+/s/HGR0yFioRSx8AMapwUb8DUqjvoKYfsYzvJs0bLY6mHkrNHUqEkBYg6bEG3gd+vmOhIMcK79KZ35XwOOjwZlOIMo9JFbIOXOzOoCyr9FSCFuddrm/lgVWxuaTL3jRgppz33/KyWF/ZgutKJqxWDyo6Q0lnicKIQYVPMbboLDw88JzOrkioaCiTlBJ6aOTmMouja3N9XUfSb7Ti5AESyGHLooWRyNcjuyAG6kIAAe7dThbcysoa2ZNUrPUxyEldB+jKzbd1t8Kocmz81MkVdHNR0iCwmlhKxsb2HmPI93rwczDnZPlcpVYXYiGAuYlIcGOZS3qPXfb3482PJJz1Z6smFRhugRQ0tZHQtJDTyPNHPDNGNBbUoD32HUXtfywtKapGUVCmFUDxoY4o7nYyWPW5veP7sPpWvXcPzJII0WnWGBAoCjd2a59e25w8Kary3LatKu6ulNHPCG7QUCoC2326sT4b+vHpPKMVMdWamCnp5o0hqoade0y3uYlQkA7/AFgSMQ85iMctIiLZBRwkC/iuo/2icEJqGXM5ctSmaPmPQqwVm03AkdTbxtYm3gDiHmczNTZW56vR7+yWRf8ALgAOQ4/F+/CCWv0+/Ekybb4RqB64AXW0op6hUS5Biie5PeyKx+8nDSqwUbA4JZsQZ6ZhsGpIvuQD/DEIWtcYGkWsDehTk2/Bt7sdhdcQKGb9G3ux2BqNL4JcLwZRXP8AwNN0/UxlkPUHGm8H7cG0Vu+ip/8AJjMYPp2xLDxlc3sFqurjrDHJy2WVY0jY6wVIRAosLbbL4nF54U4XouIaWiq8xac01KvIEdgnPOtmte57I1EX2J9VsUBYzpFhjauDFU8PZaq2DCIWFu+3XHrxxTl5PLNuvBYc9y6LNMoejjflSaP4sK3h037sYHXTeiUldRZk7rXelRFo2U37CyAm/S3bHfvjW85zePKs5pGqneFqgmNEkYdoeodduvhgFxfwcOK1fNMtl/lCJArQlgBJbw8Cb7YrkhGTtLyZCUkqb8FCoXinyWtgVlWRpIpFV2C6gusG1zue0NuuJVPLF6BOlXOXLUhpo40TcDmaxc7fjD17YUnBef08jRy5TUqUALNpuoB/OG334crcmqsrljirYtDugcAMG29mPK6Tp9KpNq1w8qDJS02TVVL+SpWjLFbrfnSkqfY3TwOFFaRaXKkrViYwLMpAOsaT2o9Wk/XZrjrbEZYPzThXIN7aTgYS88oMojpYqXImlqCNLM8kGl+83J6kNzEA7uz68Dk4bqi6pPopix7KzGzn9QXb22tgnBW18Tycl+1PGsLdhblVAVQDa42AG2PJI1ooWp4LNO4tNKD0H1F/xPf0G3VQIlXS0bvDC1a7mnj5RdIbq3aJ27W43tf1YbGW5cetfKD66f8A+sOCG3dhQhuOmAB+Y5XAMvqWSuhe0TEAq4J2/o2+/HmJGYQ2y+o2/JN7sdjGdIuHBMLTcGUZVbhaKmufDdMUJOG87SZl+Z8w7JINqV/hi28N8Sx8OcFUEtRT+kQSUdOHRWZWuApBBUX+zBE/KjlEu6ZLVMT38+rOI45Ui+WNsqUeQZvsDlOYD/tJPhjRsgnly/J6WCokWhqOUbGpTSUA6nSfAeOATfKPl53GR1P9fVfHBfIKODj1ZKqOBsqWncKJW1ysx2JFpSRbYd2LxyqPkg8djubyZVHw7WZjLzJ7KAtZMG1Sue9SRuB6tvDFS4f4mzgASR5e9UHB0mNCwZfWB3Yt3HuQ8UVXCNS1NX0rMFOmBqflzEdNIYSFb237r+GM0y/iKkyPTSVlBzaimHKkLc0m467hgOox1PMm1qI46T2LzW5nxJmlMY48lqKYtYGVYm1keF/DAqXJM9qSrT0FbIQLAtGemGIeOqacR8mhniRHDMsOvt+olrm3kRgiOP6Avf5g/tTfv4j/AEbdtHWtKkyGvDWcn/ldV/VnCxwvnTdMrqfalsER8oeWoBr4abf1zfvY4fKHlDDfhoHzMv72N3M0IK8L54u65ZUg+IA+OOHCudd2V1H2D44njj7KGsP9GOv6b97Dr/KDlXJ5b8NDR4aZfffDcaAs8LZ1/Nk4PkPjjz/RfO/5tn+wfHEo8e8PFrHhk38Bz/jhB464asSeGWFuu9T8cNzdAbmXDOcR5TVu+XTBVhck2Gwsce4XmfHHDE+U1kUWQOjvA6qwep2JU777Y7DazVGgTTIJOCsqUgEeiwmx9SDEZYCg2HwxLoP90cp/6SH9kYUfoD2YnDhbJ0irEVvfpi6cC5stErU85AR5NyTYbjbfu6Yqc+ym2DPC4vVSg9LL78JcMXTW54VzFlp4JlVAwZlN7bHGE8bZdGnHmZLGOwZiyj1HG0ZUoMSkgEhQQbdMZTxlvxjVk+rE4dNkgFDEYhsuk27xiTFFciwG58Meje18T4AOx54qcUOwwJcArq8+7C2oN/oDfwGJ0I3fyxIh/BtjmzvUGJRiJrlfYMKqoVMYsoG2CsYBnFwDhqqAB2AwNpAJqfVZUWxA3wy1HcFHiX1N34Lfj377DD1cAFBA3sMaNf0rFblRky+psRcQsbHyOOwTr/8AZtT+gf8AZOOxqZzJH//Z", 
+        "content_type": "image/jpeg", 
+        "filename": "18.06_L01.jpg"
+    }, 
+    "aggregationlevel": 2, 
+    "_uid": "de934bc25ff753f35da19d96196db309", 
+    "_workflow_history": {
+        "one_state_workflow": [
+            {
+                "action": null, 
+                "review_state": "published", 
+                "actor": "Jcplayer", 
+                "comments": "", 
+                "time": "2010/10/07 13:15:31.212 GMT-4"
+            }
+        ]
+    }, 
+    "expirationDate": "None", 
+    "_content_type_id": "text/plain", 
+    "duration": "", 
+    "contributor_list": [], 
+    "id": "18.06_L01.jpg", 
+    "related_mit_links": "", 
+    "thumb_height": "", 
+    "effectiveDate": "None", 
+    "title": "18.06_L01.jpg", 
+    "_layout": "view", 
+    "parent_module": "aabc44bdb2e45374d62f30f2a6d4c63e", 
+    "_content_type": "image/jpeg", 
+    "_userdefined_roles": [], 
+    "_gopip": 0, 
+    "location": "", 
+    "_atrefs": {
+        "BelongsTo": [
+            "aabc44bdb2e45374d62f30f2a6d4c63e"
+        ]
+    }, 
+    "_content_type_course_identifier": "text/plain", 
+    "_content_type_title": "text/plain", 
+    "section_identifier": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures", 
+    "_atbrefs": {
+        "thumbnail_image": [
+            "e6719967cc0a48ef7c122ec203472574"
+        ], 
+        "file_reference": [
+            "11b1902354547659cbcd7910417af11f"
+        ]
+    }, 
+    "creation_date": "2010/10/07 13:15:31.204 GMT-4", 
+    "_content_type_section_identifier": "text/plain", 
+    "_type": "OCWImage", 
+    "technical_location": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-1-the-geometry-of-linear-equations/18.06_L01.jpg", 
+    "description": "", 
+    "thumb_width": "", 
+    "software_requirements": [
+        {
+            "software_type_col": "Browser", 
+            "minimum_version_col": "40.0", 
+            "software_name_col": "Chrome", 
+            "maximum_version_col": ""
+        }, 
+        {
+            "software_type_col": "Browser", 
+            "minimum_version_col": "8.0", 
+            "software_name_col": "Safari", 
+            "maximum_version_col": ""
+        }, 
+        {
+            "software_type_col": "Browser", 
+            "minimum_version_col": "38.0", 
+            "software_name_col": "Mozilla Firefox", 
+            "maximum_version_col": ""
+        }, 
+        {
+            "software_type_col": "Browser", 
+            "minimum_version_col": "9.0", 
+            "software_name_col": "Internet Explorer", 
+            "maximum_version_col": ""
+        }, 
+        {
+            "software_type_col": "Browser", 
+            "minimum_version_col": "13.1", 
+            "software_name_col": "Edge", 
+            "maximum_version_col": ""
+        }
+    ], 
+    "_content_type_technical_location": "text/plain", 
+    "alternate_text": "", 
+    "credit": "", 
+    "subject": [], 
+    "_content_type_rights": "text/html", 
+    "course_identifier": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010", 
+    "_directly_provided": [], 
+    "other_platform_requirements": "", 
+    "_id": "18.06_L01.jpg", 
+    "_classname": "OCWImage", 
+    "metadata_contributor_list": [
+        {
+            "md_contributor_uid": "", 
+            "md_contributor_entity": "Todd Rautenberg", 
+            "md_contributor_hide": "", 
+            "md_contributor_special_title": "", 
+            "md_contributor_role": "Validator"
+        }, 
+        {
+            "md_contributor_uid": "", 
+            "md_contributor_entity": "Todd Rautenberg", 
+            "md_contributor_hide": "", 
+            "md_contributor_special_title": "", 
+            "md_contributor_role": "Creator"
+        }
+    ], 
+    "tcATmit_instructional_tags": [], 
+    "caption": "", 
+    "parent_uid": "e6719967cc0a48ef7c122ec203472574", 
+    "modification_date": "2016/09/24 04:30:31.024 GMT-4", 
+    "course_linking": [], 
+    "publisher": "MIT OpenCourseWare", 
+    "excludeFromNav": false, 
+    "feature_requirements": [], 
+    "language": "", 
+    "license": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/", 
+    "rights": "This site (c) Massachusetts Institute of Technology 2010.  Content within individual courses is (c) by the individual authors unless otherwise noted. The Massachusetts Institute of Technology is providing this Work (as defined below) under the terms of this Creative Commons public license (\"CCPL\" or \"license\") unless otherwise noted. The Work is protected by copyright and/or other applicable law. Any use of the work other than as authorized under this license is prohibited. By exercising any of the rights to the Work provided here, You (as defined below) accept and agree to be bound by the terms of this license. The Licensor, the Massachusetts Institute of Technology, grants You the rights contained here in consideration of Your acceptance of such terms and conditions.", 
+    "always_publish": false, 
+    "popup_image_id": "", 
+    "materialtype": "Other", 
+    "_content_type_unique_identifier": "text/plain", 
+    "category_features": [], 
+    "is_pop_up_image": false, 
+    "_owner": null, 
+    "_defaultpage": "index_html", 
+    "firstTimeEdit": true, 
+    "_permissions": {
+        "Modify portal content": {
+            "acquire": false, 
+            "roles": [
+                "Editor", 
+                "Manager", 
+                "Owner"
+            ]
+        }, 
+        "Access contents information": {
+            "acquire": false, 
+            "roles": [
+                "Anonymous"
+            ]
+        }, 
+        "View": {
+            "acquire": false, 
+            "roles": [
+                "Anonymous"
+            ]
+        }
+    }, 
+    "_properties": [
+        [
+            "title", 
+            "18.06_L01.jpg", 
+            "string"
+        ]
+    ], 
+    "allowDiscussion": false, 
+    "_content_type_materialtype": "text/plain", 
+    "creators": [
+        "Jcplayer"
+    ], 
+    "courselist_features": [], 
+    "_ac_local_roles": {
+        "Jcplayer": [
+            "Owner"
+        ]
+    }, 
+    "_path": "/Plone/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-1-the-geometry-of-linear-equations/18.06_L01.jpg"
+}

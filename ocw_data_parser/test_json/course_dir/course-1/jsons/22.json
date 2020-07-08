@@ -1,0 +1,332 @@
+{
+    "text": "<p>These video lectures of Professor Gilbert Strang teaching 18.06 were recorded live in the Fall of 1999. Support for the video production was provided by the Lord Foundation of Massachusetts under a grant to the MIT Center for Advanced Educational Services.</p>", 
+    "_content_type_license": "text/plain", 
+    "_uid": "6b1f662457366951bfe85945521b0299", 
+    "title": "Video Lectures", 
+    "_ac_local_roles": {
+        "cc_saror4": [
+            "Owner"
+        ]
+    }, 
+    "location": "", 
+    "_content_type_course_identifier": "text/plain", 
+    "_atbrefs": {}, 
+    "constrainTypesMode": 0, 
+    "technical_location": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures", 
+    "software_requirements": [
+        {
+            "software_type_col": "Browser", 
+            "minimum_version_col": "40.0", 
+            "software_name_col": "Chrome", 
+            "maximum_version_col": ""
+        }, 
+        {
+            "software_type_col": "Browser", 
+            "minimum_version_col": "8.0", 
+            "software_name_col": "Safari", 
+            "maximum_version_col": ""
+        }, 
+        {
+            "software_type_col": "Browser", 
+            "minimum_version_col": "38.0", 
+            "software_name_col": "Mozilla Firefox", 
+            "maximum_version_col": ""
+        }, 
+        {
+            "software_type_col": "Browser", 
+            "minimum_version_col": "9.0", 
+            "software_name_col": "Internet Explorer", 
+            "maximum_version_col": ""
+        }, 
+        {
+            "software_type_col": "Browser", 
+            "minimum_version_col": "13.1", 
+            "software_name_col": "Edge", 
+            "maximum_version_col": ""
+        }
+    ], 
+    "_content_type_technical_location": "text/plain", 
+    "_content_type_rights": "text/html", 
+    "_directly_provided": [
+        "Products.CMFEditions.interfaces.IVersioned"
+    ], 
+    "parent_uid": "aabc44bdb2e45374d62f30f2a6d4c63e", 
+    "excludeFromNav": false, 
+    "_content_type_unique_identifier": "text/plain", 
+    "allowDiscussion": false, 
+    "metadata_contributor_list": [], 
+    "locallyAllowedTypes": [
+        "OCWImage", 
+        "CourseSection", 
+        "OCWExtFile", 
+        "OCWFile"
+    ], 
+    "_content_type_text": "text/html", 
+    "ad_type": "HOUSE", 
+    "creation_date": "2010/05/14 12:22:14.397 GMT-4", 
+    "aggregationlevel": 3, 
+    "duration": "", 
+    "immediatelyAddableTypes": [
+        "OCWImage", 
+        "CourseSection", 
+        "OCWExtFile", 
+        "OCWFile"
+    ], 
+    "subject": [], 
+    "_content_type_short_page_title": "text/plain", 
+    "effectiveDate": "2010/05/26 14:43:45.669 GMT-4", 
+    "parent_module": "aabc44bdb2e45374d62f30f2a6d4c63e", 
+    "is_mathml_document": false, 
+    "bottomtext": "", 
+    "short_page_title": "Video Lectures", 
+    "section_identifier": null, 
+    "related_mit_links": "", 
+    "_content_type_ad_type": "text/plain", 
+    "_layout": "custom_view", 
+    "_workflow_history": {
+        "page_workflow": [
+            {
+                "action": null, 
+                "review_state": "waiting_for_authoring", 
+                "comments": "", 
+                "actor": "admin", 
+                "time": "2010/05/14 12:22:14.403 GMT-4"
+            }, 
+            {
+                "action": "approve_to_staging", 
+                "review_state": "ready_for_staging", 
+                "actor": "admin", 
+                "comments": "", 
+                "time": "2010/05/16 11:42:29.991 GMT-4"
+            }, 
+            {
+                "action": "decline", 
+                "review_state": "waiting_for_authoring", 
+                "comments": "", 
+                "actor": "cc_gegrov", 
+                "time": "2010/05/26 14:43:45.974 GMT-4"
+            }, 
+            {
+                "action": "approve_to_staging", 
+                "review_state": "ready_for_staging", 
+                "actor": "cc_acheta", 
+                "comments": "", 
+                "time": "2010/05/26 16:39:26.884 GMT-4"
+            }, 
+            {
+                "action": "decline", 
+                "review_state": "waiting_for_authoring", 
+                "comments": "", 
+                "actor": "cc_acheta", 
+                "time": "2010/05/27 01:49:20.380 GMT-4"
+            }, 
+            {
+                "action": "approve_to_staging", 
+                "review_state": "ready_for_staging", 
+                "actor": "cc_acheta", 
+                "comments": "", 
+                "time": "2010/05/27 01:59:14.744 GMT-4"
+            }, 
+            {
+                "action": null, 
+                "review_state": "waiting_for_authoring", 
+                "actor": "cc_saror4", 
+                "comments": "", 
+                "time": "2010/08/17 00:14:24.415 GMT-4"
+            }, 
+            {
+                "action": "approve_to_staging", 
+                "review_state": "ready_for_staging", 
+                "comments": "", 
+                "actor": "cc_gegrov", 
+                "time": "2010/09/03 03:35:17.760 GMT-4"
+            }, 
+            {
+                "action": "decline", 
+                "review_state": "waiting_for_authoring", 
+                "actor": "cc_gegrov", 
+                "comments": "", 
+                "time": "2010/09/03 08:04:39.358 GMT-4"
+            }, 
+            {
+                "action": "approve_to_staging", 
+                "review_state": "ready_for_staging", 
+                "comments": "", 
+                "actor": "cc_ajsing", 
+                "time": "2010/09/03 09:33:57.872 GMT-4"
+            }, 
+            {
+                "action": "decline", 
+                "review_state": "waiting_for_authoring", 
+                "comments": "", 
+                "actor": "cc_gegrov", 
+                "time": "2010/09/03 10:07:28.588 GMT-4"
+            }, 
+            {
+                "action": "approve_to_staging", 
+                "review_state": "ready_for_staging", 
+                "actor": "cc_gegrov", 
+                "comments": "", 
+                "time": "2010/09/03 11:02:56.512 GMT-4"
+            }, 
+            {
+                "action": "decline", 
+                "review_state": "waiting_for_authoring", 
+                "comments": "", 
+                "actor": "cc_saror4", 
+                "time": "2010/09/10 01:43:43.488 GMT-4"
+            }, 
+            {
+                "action": "approve_to_staging", 
+                "review_state": "ready_for_staging", 
+                "actor": "cc_gegrov", 
+                "comments": "", 
+                "time": "2010/09/10 06:06:22.789 GMT-4"
+            }, 
+            {
+                "action": "decline_to_qa", 
+                "review_state": "waiting_for_qa", 
+                "comments": "", 
+                "actor": "Jcplayer", 
+                "time": "2010/10/07 12:40:09.183 GMT-4"
+            }, 
+            {
+                "action": "approve_to_staging", 
+                "review_state": "ready_for_staging", 
+                "actor": "Jcplayer", 
+                "comments": "", 
+                "time": "2010/10/08 15:06:29.889 GMT-4"
+            }, 
+            {
+                "action": "decline", 
+                "review_state": "waiting_for_authoring", 
+                "comments": "", 
+                "actor": "asingh33", 
+                "time": "2016/01/05 05:45:37.332 US/Eastern"
+            }, 
+            {
+                "action": "approve_to_staging", 
+                "review_state": "ready_for_staging", 
+                "comments": "", 
+                "actor": "asingh33", 
+                "time": "2016/01/05 05:45:43.195 US/Eastern"
+            }, 
+            {
+                "action": "decline_to_qa", 
+                "review_state": "waiting_for_qa", 
+                "actor": "Jcplayer", 
+                "comments": "", 
+                "time": "2017/05/05 13:39:58.690 GMT-4"
+            }, 
+            {
+                "action": "approve_to_staging", 
+                "review_state": "ready_for_staging", 
+                "actor": "Jcplayer", 
+                "comments": "", 
+                "time": "2017/05/05 13:40:06.070 GMT-4"
+            }
+        ]
+    }, 
+    "_classname": "CourseSection", 
+    "_content_type_materialtype": "text/plain", 
+    "_userdefined_roles": [], 
+    "publisher": "MIT OpenCourseWare", 
+    "nextPreviousEnabled": false, 
+    "language": "", 
+    "url_rewrite_patterns": [], 
+    "widgets_features": [], 
+    "category_features": [], 
+    "firstTimeEdit": true, 
+    "feature_requirements": [], 
+    "list_in_left_nav": false, 
+    "short_name_tlp": "Video Lectures", 
+    "expirationDate": "None", 
+    "_content_type_id": "text/plain", 
+    "contributor_list": [], 
+    "is_media_gallery": true, 
+    "contributors": [], 
+    "_gopip": 4, 
+    "_content_type_title": "text/plain", 
+    "course_linking": [], 
+    "_atrefs": {
+        "BelongsTo": [
+            "aabc44bdb2e45374d62f30f2a6d4c63e"
+        ]
+    }, 
+    "other_platform_requirements": "", 
+    "license": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/", 
+    "rights": "This site (c) Massachusetts Institute of Technology 2010.  Content within individual courses is (c) by the individual authors unless otherwise noted. The Massachusetts Institute of Technology is providing this Work (as defined below) under the terms of this Creative Commons public license (\"CCPL\" or \"license\") unless otherwise noted. The Work is protected by copyright and/or other applicable law. Any use of the work other than as authorized under this license is prohibited. By exercising any of the rights to the Work provided here, You (as defined below) accept and agree to be bound by the terms of this license. The Licensor, the Massachusetts Institute of Technology, grants You the rights contained here in consideration of Your acceptance of such terms and conditions.", 
+    "hide_Page_title": false, 
+    "_defaultpage": "", 
+    "tcATmit_subject_tags": [], 
+    "features_tracking": [], 
+    "ad_champion_text": "", 
+    "has_inline_embed": false, 
+    "unique_identifier": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures", 
+    "is_image_gallery": false, 
+    "id": "video-lectures", 
+    "materialtype": "Other", 
+    "_type": "CourseSection", 
+    "description": "This section contains a complete set of video lectures on linear algebra along with transcripts and related resource files.", 
+    "course_identifier": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010", 
+    "_content_type_publisher": "text/plain", 
+    "tcATmit_instructional_tags": [], 
+    "_content_type": "text/html", 
+    "creators": [
+        "admin"
+    ], 
+    "modification_date": "2017/05/05 13:40:06.038 GMT-4", 
+    "always_publish": false, 
+    "_content_type_description": "text/plain", 
+    "_owner": null, 
+    "_permissions": {
+        "Change portal events": {
+            "acquire": false, 
+            "roles": [
+                "Editor", 
+                "Manager", 
+                "MetadataEditor", 
+                "Owner"
+            ]
+        }, 
+        "Modify portal content": {
+            "acquire": false, 
+            "roles": [
+                "Manager", 
+                "MetadataEditor"
+            ]
+        }, 
+        "Access contents information": {
+            "acquire": false, 
+            "roles": [
+                "Authenticated"
+            ]
+        }, 
+        "List folder contents": {
+            "acquire": false, 
+            "roles": [
+                "Editor", 
+                "Manager", 
+                "MetadataEditor", 
+                "Owner"
+            ]
+        }, 
+        "View": {
+            "acquire": false, 
+            "roles": [
+                "Authenticated"
+            ]
+        }
+    }, 
+    "_properties": [
+        [
+            "title", 
+            "Video Lectures", 
+            "string"
+        ]
+    ], 
+    "_id": "video-lectures", 
+    "courselist_features": [], 
+    "_content_type_short_name_tlp": "text/plain", 
+    "_path": "/Plone/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures"
+}
