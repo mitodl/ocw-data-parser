@@ -1,7 +1,7 @@
 Release Notes
 =============
 
-Version 0.9.0
+Version 0.9.0 (Released July 08, 2020)
 -------------
 
 - S3 Download functionality & local parse workflow (#38)
