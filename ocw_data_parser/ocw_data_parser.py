@@ -219,6 +219,7 @@ class OCWParser(object):
                 "type": safe_get(j, "_type"),
                 "is_image_gallery": safe_get(j, "is_image_gallery"),
                 "is_media_gallery": safe_get(j, "is_media_gallery"),
+                "list_in_left_nav": safe_get(j, "list_in_left_nav"),
                 "file_location": safe_get(j, "_uid") + "_" + safe_get(j, "id") + ".html"
             }
             if "media_location" in j and j["media_location"] and j["_content_type"] == "text/html":
