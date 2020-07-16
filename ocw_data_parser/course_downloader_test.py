@@ -18,14 +18,14 @@ def test_download_courses(ocw_downloader):
     end up where they're supposed to
     """
     ocw_downloader.download_courses()
-    for root, dirs, files in os.walk(ocw_downloader.destination_dir):
+    for root, dirs, files in os.walk(constants.COURSE_DIR):
         if len(dirs) == 0 and len(files) > 0:
             path, folder = os.path.split(root)
-            if folder == "0":
+            if folder == "jsons":
                 path, course = os.path.split(path)
                 for json_file in files:
-                    test_data_path = os.path.join(constants.COURSE_DIR, course, "jsons", json_file)
-                    downloaded_path = os.path.join(path, course, "0", json_file)
+                    test_data_path = os.path.join(path, course, "jsons", json_file)
+                    downloaded_path = os.path.join(ocw_downloader.destination_dir, course, "0", json_file)
                     assert filecmp.cmp(test_data_path, downloaded_path)
 
 def test_download_courses_no_destination_dir(ocw_downloader):
