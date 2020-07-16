@@ -54,10 +54,9 @@ class OCWDownloader(object):
                             with open(dest_filename, "wb+") as f:
                                 s3_client.download_fileobj(
                                     self.s3_bucket_name, obj["Key"], f)
-                        courses.pop(courses.index(course_id))
         
-        # if there are still courses in the list, that means they weren't found on s3
-        if len(courses) > 0:
-            print("The following courses were not found in the s3 bucket {}:".format(self.s3_bucket_name))
-            for course_id in courses:
-                print(" - {}".format(course_id))
+        # make sure everything downloaded right
+        downloaded_courses = os.listdir(self.destination_dir)
+        for course_id in courses:
+            if course_id not in downloaded_courses:
+                print("{} was not found in the s3 bucket {}".format(course_id, self.s3_bucket_name))
