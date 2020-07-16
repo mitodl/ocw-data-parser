@@ -38,6 +38,15 @@ def test_download_courses_no_destination_dir(ocw_downloader):
         ocw_downloader.download_courses()
         mock.assert_any_call(ocw_downloader.destination_dir)
 
+def test_download_courses_missing_course(ocw_downloader, capfd):
+    """
+    Download the courses, but add a course to courses.json that doesn't exist first
+    """
+    ocw_downloader.courses_json = "ocw_data_parser/test_json/courses_missing.json"
+    ocw_downloader.download_courses()
+    out, err = capfd.readouterr()
+    assert "missing was not found in the s3 bucket testing" in out
+
 def test_download_courses_overwrite(ocw_downloader):
     """
     Download the courses, then mark overwrite as true and do it again and 
