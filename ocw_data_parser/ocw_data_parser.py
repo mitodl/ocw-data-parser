@@ -212,6 +212,7 @@ class OCWParser(object):
                 "uid": safe_get(j, "_uid"),
                 "parent_uid": safe_get(j, "parent_uid"),
                 "title": safe_get(j, "title"),
+                "short_page_title": safe_get(j, "short_page_title"),
                 "text": safe_get(j, "text"),
                 "url": url_data,
                 "short_url": safe_get(j, "id"),
