@@ -18,14 +18,14 @@ def test_download_courses(ocw_downloader):
     end up where they're supposed to
     """
     ocw_downloader.download_courses()
-    for root, dirs, files in os.walk(ocw_downloader.destination_dir):
+    for root, dirs, files in os.walk(constants.COURSE_DIR):
         if len(dirs) == 0 and len(files) > 0:
             path, folder = os.path.split(root)
-            if folder == "0":
+            if folder == "jsons":
                 path, course = os.path.split(path)
                 for json_file in files:
-                    test_data_path = os.path.join(constants.COURSE_DIR, course, "jsons", json_file)
-                    downloaded_path = os.path.join(path, course, "0", json_file)
+                    test_data_path = os.path.join(path, course, "jsons", json_file)
+                    downloaded_path = os.path.join(ocw_downloader.destination_dir, course, "0", json_file)
                     assert filecmp.cmp(test_data_path, downloaded_path)
 
 def test_download_courses_no_destination_dir(ocw_downloader):
@@ -37,6 +37,15 @@ def test_download_courses_no_destination_dir(ocw_downloader):
         shutil.rmtree(ocw_downloader.destination_dir)
         ocw_downloader.download_courses()
         mock.assert_any_call(ocw_downloader.destination_dir)
+
+def test_download_courses_missing_course(ocw_downloader, capfd):
+    """
+    Download the courses, but add a course to courses.json that doesn't exist first
+    """
+    ocw_downloader.courses_json = "ocw_data_parser/test_json/courses_missing.json"
+    ocw_downloader.download_courses()
+    out, err = capfd.readouterr()
+    assert "missing was not found in the s3 bucket testing" in out
 
 def test_download_courses_overwrite(ocw_downloader):
     """
