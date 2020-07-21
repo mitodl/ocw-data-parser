@@ -1,7 +1,7 @@
 Release Notes
 =============
 
-Version 0.10.0
+Version 0.10.0 (Released July 21, 2020)
 --------------
 
 - add short_page_title to pages (#44)
