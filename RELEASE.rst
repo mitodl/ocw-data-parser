@@ -1,6 +1,14 @@
 Release Notes
 =============
 
+Version 0.10.0
+--------------
+
+- add short_page_title to pages (#44)
+- fix course downloader (#43)
+- add list_in_left_nav (#41)
+- add other_information_text to master json (#40)
+
 Version 0.9.0 (Released July 08, 2020)
 -------------
 
