@@ -160,6 +160,8 @@ def test_upload_course_image(ocw_parser_s3, s3_bucket):
             assert master_json["thumbnail_image_src"] == s3_upload_base(
             ) + f["uid"] + "_" + f["id"]
             assert master_json["thumbnail_image_description"] == f["description"]
+        else:
+            assert f["file_location"]
 
 
 def test_upload_course_image_no_s3_bucket_name(ocw_parser_s3, caplog):

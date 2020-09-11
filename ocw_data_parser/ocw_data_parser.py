@@ -437,7 +437,10 @@ class OCWParser(object):
                               aws_secret_access_key=self.s3_bucket_secret_access_key
                               ).Bucket(self.s3_bucket_name)
 
-    def update_s3_content(self, update_pages=True, update_media=True, media_uid_filter=None, update_external_media=True, chunk_size=1000000):
+    def update_s3_content(self, upload=None, update_pages=True, update_media=True, media_uid_filter=None, update_external_media=True, chunk_size=1000000):
+        upload_to_s3 = self.upload_to_s3
+        if upload:
+            upload_to_s3 = upload
         bucket_base_url = self.get_s3_base_url()
         if bucket_base_url:
             s3_bucket = self.get_s3_bucket()
@@ -445,7 +448,7 @@ class OCWParser(object):
                 for p in self.compose_pages():
                     filename, html = htmlify(p)
                     if filename and html:
-                        if self.upload_to_s3:
+                        if upload_to_s3:
                             s3_bucket.put_object(
                                 Key=self.s3_target_folder + filename, Body=html, ACL="public-read")
                         update_file_location(
@@ -464,7 +467,7 @@ class OCWParser(object):
                             "Could not load binary data for file: %s", filename)
                     else:
                         d = base64.b64decode(get_binary_data(file))
-                    if self.upload_to_s3 and d:
+                    if upload_to_s3 and d:
                         s3_bucket.put_object(
                             Key=self.s3_target_folder + filename, Body=d, ACL="public-read")
                     update_file_location(
@@ -486,7 +489,7 @@ class OCWParser(object):
                 for media in self.large_media_links:
                     filename = media["link"].split("/")[-1]
                     response = get(media["link"], stream=True)
-                    if self.upload_to_s3 and response:
+                    if upload_to_s3 and response:
                         s3_uri = f"s3://{self.s3_bucket_access_key}:{self.s3_bucket_secret_access_key}@{self.s3_bucket_name}/"
                         with smart_open(s3_uri + self.s3_target_folder + filename, "wb") as s3:
                             for chunk in response.iter_content(chunk_size=chunk_size):
@@ -517,6 +520,7 @@ class OCWParser(object):
 
     def upload_course_image(self):
         s3_bucket = self.get_s3_bucket()
+        self.update_s3_content(upload=False)
         for file in self.media_jsons:
             uid = safe_get(file, "_uid")
             if uid == self.course_image_uid or uid == self.course_thumbnail_image_uid:

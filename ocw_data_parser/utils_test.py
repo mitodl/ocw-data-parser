@@ -80,7 +80,7 @@ def test_safe_get_invalid_value(ocw_parser):
         "value_two": "2",
         "actual_file_name": "test"
     }
-    assert safe_get(test_dict, "value_three", print_error_message=True) is None
+    assert safe_get(test_dict, "value_three") is None
 
 def test_htmlify(ocw_parser):
     """
