@@ -1,6 +1,11 @@
 Release Notes
 =============
 
+Version 0.11.0
+--------------
+
+- fix file_location in master json uploaded by upload_course_image (#48)
+
 Version 0.10.0 (Released July 21, 2020)
 --------------
 
