@@ -135,6 +135,7 @@ class OCWParser(object):
         new_json["other_information_text"] = safe_get(self.jsons[1], "other_information_text")
         new_json["last_published_to_production"] = safe_get(self.jsons[0], "last_published_to_production")
         new_json["last_unpublishing_date"] = safe_get(self.jsons[0], "last_unpublishing_date")
+        new_json["retirement_date"] = safe_get(self.jsons[0], "retirement_date")
         new_json["sort_as"] = safe_get(self.jsons[0], "sort_as")
         master_course = safe_get(self.jsons[0], "master_course_number")
         if master_course:
