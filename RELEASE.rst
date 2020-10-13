@@ -1,6 +1,11 @@
 Release Notes
 =============
 
+Version 0.12.0
+--------------
+
+- publishing dates (#51)
+
 Version 0.11.0 (Released September 11, 2020)
 --------------
 
