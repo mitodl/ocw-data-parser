@@ -461,7 +461,12 @@ class OCWParser(object):
                     filename = uid + "_" + file.get("id")
                     if not get_binary_data(file):
                         log.error(
-                            "Could not load binary data for file: %s", filename)
+                            "Could not load binary data for file %s in json file %s for course %s",
+                            filename,
+                            file.get("actual_file_name"),
+                            self.master_json.get("short_url")
+                        )
+                        continue
                     else:
                         d = base64.b64decode(get_binary_data(file))
                     if upload_to_s3 and d:
@@ -494,7 +499,7 @@ class OCWParser(object):
                             self.master_json, bucket_base_url + filename)
                         log.info("Uploaded %s", filename)
                     else:
-                        log.error("Could NOT upload %s", filename)
+                        log.error("Could NOT upload %s for course %s", filename, self.master_json.get("short_url"))
                     update_file_location(
                         self.master_json, bucket_base_url + filename)
 
@@ -511,7 +516,7 @@ class OCWParser(object):
                                  Body=json.dumps(self.master_json),
                                  ACL='private')
         else:
-            log.error('No unique uid found for this master_json')
+            log.error("No unique uid found for master_json for course %s", self.master_json.get("short_url"))
 
     def upload_course_image(self):
         s3_bucket = self.get_s3_bucket()
