@@ -178,6 +178,7 @@ def test_get_master_json(ocw_parser):
     assert master_json["title"], fail_template.format("title")
     assert master_json["description"], fail_template.format("description")
     assert master_json["short_url"], fail_template.format("short_url")
+    assert len(master_json["courselist_features"]) == 7, fail_template.format("courselist_features")
 
 
 def test_export_master_json_s3_links(ocw_parser_s3):

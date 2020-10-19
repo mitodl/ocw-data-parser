@@ -195,26 +195,23 @@ class OCWParser(object):
         courselist_features_raw = safe_get(self.jsons[0], "courselist_features")
         if course_features:
             for courselist_feature_raw in courselist_features_raw:
-                ocw_feature = course_feature["ocw_feature"]
+                ocw_feature = courselist_feature_raw["ocw_feature"]
                 courselist_feature = {}
                 courselist_feature["ocw_feature"] = ocw_feature
-                if ocw_feature == "MITx":
-                    courselist_feature["ocw_subfeature"] = courselist_feature_raw["ocw_subfeature"]
-                elif ocw_feature == "CrossLinks":
-                    courselist_feature["ocw_feature_url"] = courselist_feature_raw["ocw_feature_url"]
-                elif ocw_feature == "Open Learning Library":
-                    raw_url = courselist_feature["ocw_feature_url"]
-                    texts_and_urls = raw_url.split(", ")
+                if ocw_feature == "Open Learning Library":
+                    raw_url = courselist_feature_raw["ocw_feature_url"]
+                    texts_and_urls = raw_url.split(",")
                     for text_and_url in texts_and_urls:
-                        text, url = text_and_url.split("::")
+                        text, url = text_and_url.strip().split("::")
                         courselist_feature["ocw_subfeature"] = text
                         courselist_feature["ocw_feature_url"] = url
+                        courselist_features.append(courselist_feature)
                 else:
                     for attr in courselist_feature_raw:
                         value = courselist_feature_raw[attr]
                         if value:
                             courselist_feature[attr] = value
-                courselist_features.append(courselist_feature)
+                    courselist_features.append(courselist_feature)
         new_json["courselist_features"] = courselist_features
         new_json["course_files"] = self.compose_media()
         new_json["course_embedded_media"] = self.compose_embedded_media()
