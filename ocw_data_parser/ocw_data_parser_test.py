@@ -115,6 +115,39 @@ def test_upload_all_data_to_s3(ocw_parser_s3, s3_bucket):
     assert master_json["thumbnail_image_src"] is not None
 
 
+def test_upload_all_data_to_s3_no_binary_data(ocw_parser_s3, caplog):
+    """
+    Test that there is a descriptive error message when there is no binary data in a json file
+    """
+    with patch("ocw_data_parser.ocw_data_parser.get_binary_data", return_value=None):
+        ocw_parser_s3.upload_all_media_to_s3()
+        assert "Could not load binary data for file 9dbd5e22e2379a1bb4e844757c445dfd_7UJ4CFRGd-U.srt "\
+        "in json file 15.json for course 18-06-linear-algebra-spring-2010" in [rec.message for rec in caplog.records]
+
+
+def test_upload_all_data_to_s3_large_media_link_upload_error(ocw_parser_s3, caplog):
+    """
+    Test that there is a descriptive error message when a large media file cannot be uploaded
+    """
+
+    with patch("ocw_data_parser.ocw_data_parser.get", return_value=None):
+        ocw_parser_s3.upload_all_media_to_s3()
+        assert "Could NOT upload powerMethod.html for course 18-06-linear-algebra-spring-2010" in [
+            rec.message for rec in caplog.records]
+
+
+
+def test_upload_master_json_to_s3_no_uid(ocw_parser_s3, caplog):
+    """
+    Test that there is a descriptive error message when the master json has no uid
+
+    """
+    ocw_parser_s3.master_json['uid']=None
+    ocw_parser_s3.upload_master_json_to_s3("testing")
+    assert "No unique uid found for master_json for course 18-06-linear-algebra-spring-2010" in [
+        rec.message for rec in caplog.records]
+
+
 def test_upload_course_image(ocw_parser_s3, s3_bucket):
     """
     Use moto (mock boto) to test s3 uploading
