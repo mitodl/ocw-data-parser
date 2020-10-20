@@ -10,7 +10,6 @@ from ocw_data_parser.utils import update_file_location, get_binary_data, is_json
     find_all_values_for_key, htmlify
 import json
 from smart_open import smart_open
-from ocw_data_parser.static_html_generator import generate_html_for_course
 
 log = logging.getLogger(__name__)
 
@@ -372,19 +371,6 @@ class OCWParser(object):
         log.info("Done! extracted foreign media to %s",
                  path_to_containing_folder)
         self.export_master_json()
-
-    def generate_static_site(self):
-        """
-        Extract all static media locally and generate master.json,
-        then generate static HTML for a course
-        """
-        shutil.copytree(self.course_dir, self.destination_dir + '/source/')
-        self.export_master_json()
-        self.extract_media_locally()
-        self.extract_foreign_media_locally()
-        generate_html_for_course(
-            self.destination_dir + 'master/master.json',
-            self.destination_dir + 'output/')
 
     def export_master_json(self, s3_links=False):
         if s3_links:
