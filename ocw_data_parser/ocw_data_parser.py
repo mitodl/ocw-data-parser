@@ -15,12 +15,9 @@ log = logging.getLogger(__name__)
 
 
 class CustomHTMLParser(HTMLParser):
-    def __init__(self, output_list=None):
-        HTMLParser.__init__(self)
-        if output_list is None:
-            self.output_list = []
-        else:
-            self.output_list = output_list
+    def __init__(self):
+        super().__init__()
+        self.output_list = []
 
     def handle_starttag(self, tag, attrs):
         if tag == "a":
