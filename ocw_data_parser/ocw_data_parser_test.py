@@ -289,3 +289,14 @@ def test_course_pages(ocw_parser):
     }
     assert page["text"].startswith("<h2 class=\"subhead\">Course Meeting Times")
     assert page["description"].startswith("This syllabus section provides information on course goals")
+
+
+@pytest.mark.parametrize("has_instructors", [True, False])
+def test_instructors(ocw_parser, has_instructors):
+    """instructors list should be present as a list in the output"""
+    expected_instructor = {**ocw_parser.jsons[0]["instructors"][0]}
+    if not has_instructors:
+        ocw_parser.jsons[0]["instructors"] = []
+    ocw_parser.generate_master_json()
+    del expected_instructor["mit_id"]
+    assert ocw_parser.master_json["instructors"] == ([expected_instructor] if has_instructors else [])
