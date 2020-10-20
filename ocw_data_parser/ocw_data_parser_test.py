@@ -249,3 +249,52 @@ def test_uid(ocw_parser, course_id):
         with open(os.path.join(ocw_parser.destination_dir, "master/master.json"), "r") as master_json:
             master_json_data = json.loads(master_json.read())
             assert first_json_data["_uid"] == master_json_data["uid"]
+
+
+def test_course_files(ocw_parser):
+    """Make sure course_files include the right fields with the correct default values"""
+    assert len(ocw_parser.master_json['course_files']) == 172
+    assert ocw_parser.master_json['course_files'][0] == {
+        'order_index': 6,
+        'uid': 'c24518ecda658185c40c2e5eeb72c7fa',
+        'id': '182.png',
+        'parent_uid': '3f3b7835cf477d3ba10b05fbe03cbffa',
+        'title': '182.png',
+        'caption': '',
+        'file_type': 'image/png',
+        'alt_text': '',
+        'credit': '',
+        'platform_requirements': '',
+        'description': '',
+        'type': 'OCWImage',
+    }
+
+
+def test_other_information_text(ocw_parser):
+    """other_information_text should be an empty string"""
+    assert ocw_parser.master_json['other_information_text'] == ''
+
+
+def test_course_pages(ocw_parser):
+    """assert the output of composing course_pages"""
+    assert len(ocw_parser.master_json["course_pages"])
+    page = ocw_parser.master_json["course_pages"][0]
+    page_without_text = {**page}
+    del page_without_text["text"]
+    del page_without_text["description"]
+    assert page_without_text == {
+        'order_index': 3,
+        'uid': 'ede17211bd49ea166ed701f09c1de288',
+        'parent_uid': 'aabc44bdb2e45374d62f30f2a6d4c63e',
+        'title': 'Syllabus',
+        'short_page_title': 'Syllabus',
+        'type': 'CourseSection',
+        'is_image_gallery': False,
+        'is_media_gallery': False,
+        'list_in_left_nav': False,
+        'file_location': 'ede17211bd49ea166ed701f09c1de288_syllabus.html',
+        'short_url': 'syllabus',
+        'url': '/courses/mathematics/18-06-linear-algebra-spring-2010/syllabus',
+    }
+    assert page["text"].startswith("<h2 class=\"subhead\">Course Meeting Times")
+    assert page["description"].startswith("This syllabus section provides information on course goals")

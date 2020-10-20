@@ -6,7 +6,7 @@ import shutil
 import base64
 from requests import get
 import boto3
-from ocw_data_parser.utils import update_file_location, get_binary_data, is_json, get_correct_path, load_json_file, safe_get, \
+from ocw_data_parser.utils import update_file_location, get_binary_data, is_json, get_correct_path, load_json_file, \
     find_all_values_for_key, htmlify
 import json
 from smart_open import smart_open
@@ -69,7 +69,7 @@ class OCWParser(object):
             self.jsons = loaded_jsons
         if self.jsons:
             self.master_json = self.generate_master_json()
-            self.destination_dir += safe_get(self.jsons[0], "id") + "/"
+            self.destination_dir += self.jsons[0].get("id") + "/"
         self.beautify_master_json = beautify_master_json
 
     def get_master_json(self):
@@ -127,67 +127,58 @@ class OCWParser(object):
             if classname in ["CourseHomeSection", "SRHomePage"]:
                 self.course_image_uid = j.get("chp_image")
                 self.course_thumbnail_image_uid = j.get("chp_image_thumb")
+
+        master_course = self.jsons[0].get("master_course_number")
+        technical_location = self.jsons[0].get("technical_location")
+
         # Generate master JSON
-        new_json = dict()
-        new_json["uid"] = safe_get(self.jsons[0], "_uid")
-        new_json["title"] = safe_get(self.jsons[0], "title")
-        new_json["description"] = safe_get(self.jsons[1], "description")
-        new_json["other_information_text"] = safe_get(self.jsons[1], "other_information_text")
-        new_json["last_published_to_production"] = safe_get(self.jsons[0], "last_published_to_production")
-        new_json["last_unpublishing_date"] = safe_get(self.jsons[0], "last_unpublishing_date")
-        new_json["retirement_date"] = safe_get(self.jsons[0], "retirement_date")
-        new_json["sort_as"] = safe_get(self.jsons[0], "sort_as")
-        master_course = safe_get(self.jsons[0], "master_course_number")
-        if master_course:
-            new_json["department_number"] = master_course.split('.')[0]
-            new_json["master_course_number"] = master_course.split('.')[1]
-        else:
-            new_json["department_number"] = ""
-            new_json["master_course_number"] = ""
-        new_json["from_semester"] = safe_get(self.jsons[0], "from_semester")
-        new_json["from_year"] = safe_get(self.jsons[0], "from_year")
-        new_json["to_semester"] = safe_get(self.jsons[0], "to_semester")
-        new_json["to_year"] = safe_get(self.jsons[0], "to_year")
-        new_json["course_level"] = safe_get(self.jsons[0], "course_level")
-        technical_location = safe_get(self.jsons[0], "technical_location")
-        if technical_location:
-            new_json["url"] = technical_location.split("ocw.mit.edu")[1]
-        else:
-            new_json["url"] = ""
-        new_json["short_url"] = safe_get(self.jsons[0], "id")
-        new_json["image_src"] = self.course_image_s3_link
-        new_json["thumbnail_image_src"] = self.course_thumbnail_image_s3_link
-        new_json["image_description"] = self.course_image_alt_text
-        new_json["thumbnail_image_description"] = self.course_thumbnail_image_alt_text
-        new_json["image_alternate_text"] = safe_get(
-            self.jsons[1], "image_alternate_text")
-        new_json["image_caption_text"] = safe_get(
-            self.jsons[1], "image_caption_text")
-        tags_strings = safe_get(self.jsons[0], "subject")
+        new_json = {
+            "uid": self.jsons[0].get("_uid"),
+            "title": self.jsons[0].get("title"),
+            "description": self.jsons[1].get("description"),
+            "other_information_text": self.jsons[1].get("other_information_text"),
+            "last_published_to_production": self.jsons[0].get("last_published_to_production"),
+            "last_unpublishing_date": self.jsons[0].get("last_unpublishing_date"),
+            "retirement_date": self.jsons[0].get("retirement_date"),
+            "sort_as": self.jsons[0].get("sort_as"),
+            "department_number": master_course.split('.')[0] if master_course else "",
+            "master_course_number": master_course.split('.')[1] if master_course else "",
+            "from_semester": self.jsons[0].get("from_semester"),
+            "from_year": self.jsons[0].get("from_year"),
+            "to_semester": self.jsons[0].get("to_semester"),
+            "to_year": self.jsons[0].get("to_year"),
+            "course_level": self.jsons[0].get("course_level"),
+            "url": technical_location.split("ocw.mit.edu")[1] if technical_location else "",
+            "short_url": self.jsons[0].get("id"),
+            "image_src": self.course_image_s3_link,
+            "thumbnail_image_src": self.course_thumbnail_image_s3_link,
+            "image_description": self.course_image_alt_text,
+            "thumbnail_image_description": self.course_thumbnail_image_alt_text,
+            "image_alternate_text": self.jsons[1].get("image_alternate_text"),
+            "image_caption_text": self.jsons[1].get("image_caption_text"),
+        }
+        tags_strings = self.jsons[0].get("subject")
         tags = list()
         for tag in tags_strings:
             tags.append({"name": tag})
         new_json["tags"] = tags
-        instructors = safe_get(self.jsons[0], "instructors")
+        instructors = self.jsons[0].get("instructors")
         if instructors:
             new_json["instructors"] = [{key: value for key, value in instructor.items() if key != 'mit_id'}
                                        for instructor in instructors]
         else:
             new_json["instructors"] = ""
-        new_json["language"] = safe_get(self.jsons[0], "language")
-        new_json["extra_course_number"] = safe_get(
-            self.jsons[0], "linked_course_number")
-        new_json["course_collections"] = safe_get(
-            self.jsons[0], "category_features")
+        new_json["language"] = self.jsons[0].get("language")
+        new_json["extra_course_number"] = self.jsons[0].get("linked_course_number")
+        new_json["course_collections"] = self.jsons[0].get("category_features")
         new_json["course_pages"] = self.compose_pages()
         course_features = {}
-        feature_requirements = safe_get(self.jsons[0], "feature_requirements")
+        feature_requirements = self.jsons[0].get("feature_requirements")
         if feature_requirements:
             for feature_requirement in feature_requirements:
                 for page in new_json["course_pages"]:
-                    ocw_feature_url = safe_get(
-                        feature_requirement, "ocw_feature_url")
-                    if (ocw_feature_url):
+                    ocw_feature_url = feature_requirement.get("ocw_feature_url")
+                    if ocw_feature_url:
                         ocw_feature_url_parts = ocw_feature_url.split("/")
                         ocw_feature_short_url = ocw_feature_url
                         if len(ocw_feature_url_parts) > 1:
@@ -207,24 +198,24 @@ class OCWParser(object):
 
     def compose_pages(self):
         def _compose_page_dict(j):
-            url_data = safe_get(j, "technical_location")
+            url_data = j.get("technical_location")
             if url_data:
                 url_data = url_data.split("ocw.mit.edu")[1]
             page_dict = {
-                "order_index": safe_get(j, "order_index"),
-                "uid": safe_get(j, "_uid"),
-                "parent_uid": safe_get(j, "parent_uid"),
-                "title": safe_get(j, "title"),
-                "short_page_title": safe_get(j, "short_page_title"),
-                "text": safe_get(j, "text"),
+                "order_index": j.get("order_index"),
+                "uid": j.get("_uid"),
+                "parent_uid": j.get("parent_uid"),
+                "title": j.get("title"),
+                "short_page_title": j.get("short_page_title"),
+                "text": j.get("text"),
                 "url": url_data,
-                "short_url": safe_get(j, "id"),
-                "description": safe_get(j, "description"),
-                "type": safe_get(j, "_type"),
-                "is_image_gallery": safe_get(j, "is_image_gallery"),
-                "is_media_gallery": safe_get(j, "is_media_gallery"),
-                "list_in_left_nav": safe_get(j, "list_in_left_nav"),
-                "file_location": safe_get(j, "_uid") + "_" + safe_get(j, "id") + ".html"
+                "short_url": j.get("id"),
+                "description": j.get("description"),
+                "type": j.get("_type"),
+                "is_image_gallery": j.get("is_image_gallery"),
+                "is_media_gallery": j.get("is_media_gallery"),
+                "list_in_left_nav": j.get("list_in_left_nav"),
+                "file_location": j.get("_uid") + "_" + j.get("id") + ".html"
             }
             if "media_location" in j and j["media_location"] and j["_content_type"] == "text/html":
                 page_dict["youtube_id"] = j["media_location"]
@@ -247,18 +238,18 @@ class OCWParser(object):
     def compose_media(self):
         def _compose_media_dict(j):
             return {
-                "order_index": safe_get(j, "order_index"),
-                "uid": safe_get(j, "_uid"),
-                "id": safe_get(j, "id"),
-                "parent_uid": safe_get(j, "parent_uid"),
-                "title": safe_get(j, "title"),
-                "caption": safe_get(j, "caption"),
-                "file_type": safe_get(j, "_content_type"),
-                "alt_text": safe_get(j, "alternate_text"),
-                "credit": safe_get(j, "credit"),
-                "platform_requirements": safe_get(j, "other_platform_requirements"),
-                "description": safe_get(j, "description"),
-                "type": safe_get(j, "_type"),
+                "order_index": j.get("order_index"),
+                "uid": j.get("_uid"),
+                "id": j.get("id"),
+                "parent_uid": j.get("parent_uid"),
+                "title": j.get("title"),
+                "caption": j.get("caption"),
+                "file_type": j.get("_content_type"),
+                "alt_text": j.get("alternate_text"),
+                "credit": j.get("credit"),
+                "platform_requirements": j.get("other_platform_requirements"),
+                "description": j.get("description"),
+                "type": j.get("_type"),
             }
 
         if not self.jsons:
@@ -277,7 +268,7 @@ class OCWParser(object):
         for j in self.jsons:
             if j and "inline_embed_id" in j and j["inline_embed_id"]:
                 temp = {
-                    "order_index": safe_get(j, "order_index"),
+                    "order_index": j.get("order_index"),
                     "title": j["title"],
                     "uid": j["_uid"],
                     "parent_uid": j["parent_uid"],
@@ -297,7 +288,7 @@ class OCWParser(object):
                             "parent_uid": child["parent_uid"],
                             "id": child["id"],
                             "title": child["title"],
-                            "type": safe_get(child, "media_asset_type")
+                            "type": child.get("media_asset_type")
                         }
                         if "media_location" in child and child["media_location"]:
                             embedded_media["media_location"] = child["media_location"]
@@ -319,7 +310,7 @@ class OCWParser(object):
                         for link in p.output_list:
                             if link and "/ans7870/" in link and "." in link.split("/")[-1]:
                                 obj = {
-                                    "parent_uid": safe_get(j, "_uid"),
+                                    "parent_uid": j.get("_uid"),
                                     "link": link
                                 }
                                 self.large_media_links.append(obj)
@@ -340,14 +331,14 @@ class OCWParser(object):
                 with open(path_to_containing_folder + filename, "w") as f:
                     f.write(html)
         for j in self.media_jsons:
-            file_name = safe_get(j, "_uid") + "_" + safe_get(j, "id")
+            file_name = j.get("_uid") + "_" + j.get("id")
             d = get_binary_data(j)
             if d:
                 with open(path_to_containing_folder + file_name, "wb") as f:
                     data = base64.b64decode(d)
                     f.write(data)
                 update_file_location(
-                    self.master_json, url_path_to_media + file_name, safe_get(j, "_uid"))
+                    self.master_json, url_path_to_media + file_name, j.get("_uid"))
                 log.info("Extracted %s", file_name)
             else:
                 json_file = j["actual_file_name"]
@@ -407,18 +398,17 @@ class OCWParser(object):
         bucket_base_url = self.get_s3_base_url()
         if bucket_base_url:
             for file in self.media_jsons:
-                uid = safe_get(file, "_uid")
-                filename = uid + "_" + safe_get(file, "id")
+                uid = file.get("_uid")
+                filename = uid + "_" + file.get("id")
                 if self.course_image_uid and uid == self.course_image_uid:
                     self.course_image_s3_link = bucket_base_url + filename
-                    self.course_image_alt_text = safe_get(file, "description")
+                    self.course_image_alt_text = file.get("description")
                     self.master_json["image_src"] = self.course_image_s3_link
                     self.master_json["image_description"] = self.course_image_alt_text
 
                 if self.course_thumbnail_image_uid and uid == self.course_thumbnail_image_uid:
                     self.course_thumbnail_image_s3_link = bucket_base_url + filename
-                    self.course_thumbnail_image_alt_text = safe_get(
-                        file, "description")
+                    self.course_thumbnail_image_alt_text = file.get("description")
                     self.master_json["thumbnail_image_src"] = self.course_thumbnail_image_s3_link
                     self.master_json["thumbnail_image_description"] = self.course_thumbnail_image_alt_text
 
@@ -455,7 +445,7 @@ class OCWParser(object):
                             s3_bucket.put_object(
                                 Key=self.s3_target_folder + filename, Body=html, ACL="public-read")
                         update_file_location(
-                            self.master_json, bucket_base_url + filename, safe_get(p, "uid"))
+                            self.master_json, bucket_base_url + filename, p.get("uid"))
             if update_media:
                 if media_uid_filter:
                     media_jsons = [
@@ -463,8 +453,8 @@ class OCWParser(object):
                 else:
                     media_jsons = self.media_jsons
                 for file in media_jsons:
-                    uid = safe_get(file, "_uid")
-                    filename = uid + "_" + safe_get(file, "id")
+                    uid = file.get("_uid")
+                    filename = uid + "_" + file.get("id")
                     if not get_binary_data(file):
                         log.error(
                             "Could not load binary data for file: %s", filename)
@@ -477,15 +467,13 @@ class OCWParser(object):
                         self.master_json, bucket_base_url + filename, uid)
                     if self.course_image_uid and uid == self.course_image_uid:
                         self.course_image_s3_link = bucket_base_url + filename
-                        self.course_image_alt_text = safe_get(
-                            file, "description")
+                        self.course_image_alt_text = file.get("description")
                         self.master_json["image_src"] = self.course_image_s3_link
                         self.master_json["image_description"] = self.course_image_alt_text
 
                     if self.course_thumbnail_image_uid and uid == self.course_thumbnail_image_uid:
                         self.course_thumbnail_image_s3_link = bucket_base_url + filename
-                        self.course_thumbnail_image_alt_text = safe_get(
-                            file, "description")
+                        self.course_thumbnail_image_alt_text = file.get("description")
                         self.master_json["thumbnail_image_src"] = self.course_thumbnail_image_s3_link
                         self.master_json["thumbnail_image_description"] = self.course_thumbnail_image_alt_text
             if update_external_media:
@@ -525,7 +513,7 @@ class OCWParser(object):
         s3_bucket = self.get_s3_bucket()
         self.update_s3_content(upload=False)
         for file in self.media_jsons:
-            uid = safe_get(file, "_uid")
+            uid = file.get("_uid")
             if uid == self.course_image_uid or uid == self.course_thumbnail_image_uid:
                 self.update_s3_content(
                     update_pages=False, update_external_media=False, media_uid_filter=[uid])
