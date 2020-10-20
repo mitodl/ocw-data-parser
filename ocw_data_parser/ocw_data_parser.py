@@ -192,7 +192,7 @@ class OCWParser(object):
                             course_features[page["uid"]] = course_feature
         new_json["course_features"] = list(course_features.values())
         open_learning_library_related = []
-        courselist_features = safe_get(self.jsons[0], "courselist_features")
+        courselist_features = self.jsons[0].get("courselist_features")
         if courselist_features:
             for courselist_feature in courselist_features:
                 if courselist_feature["ocw_feature"] == "Open Learning Library":
