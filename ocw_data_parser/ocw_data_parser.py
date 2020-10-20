@@ -211,6 +211,7 @@ class OCWParser(object):
                 "title": j.get("title"),
                 "short_page_title": j.get("short_page_title"),
                 "text": j.get("text"),
+                "bottomtext": j.get("bottomtext"),
                 "url": url_data,
                 "short_url": j.get("id"),
                 "description": j.get("description"),
