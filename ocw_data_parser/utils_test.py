@@ -3,7 +3,8 @@ import json
 import pytest
 from tempfile import TemporaryDirectory
 import ocw_data_parser.test_constants as constants
-from ocw_data_parser.utils import update_file_location, get_binary_data, is_json, get_correct_path, load_json_file, print_error, print_success, safe_get, find_all_values_for_key, htmlify, parse_all
+from ocw_data_parser.utils import update_file_location, get_binary_data, get_correct_path, load_json_file, print_error, print_success, \
+    htmlify, parse_all
 
 
 def test_update_local_file_location(ocw_parser):
@@ -71,23 +72,12 @@ def test_print_success(ocw_parser):
     """
     print_success("Success!")
 
-def test_safe_get_invalid_value(ocw_parser):
-    """
-    Test trying to get a value from a dict that doesn't exist
-    """
-    test_dict = {
-        "value_one": "1",
-        "value_two": "2",
-        "actual_file_name": "test"
-    }
-    assert safe_get(test_dict, "value_three") is None
-
 def test_htmlify(ocw_parser):
     """
     Test that calling htmlify on a page returns some html and a filename
     """
     master_json = ocw_parser.get_master_json()
-    course_pages = safe_get(master_json, "course_pages")
+    course_pages = master_json.get("course_pages")
     test_page = course_pages[0]
     filename, html = htmlify(test_page)
     assert filename == test_page["uid"] + "_" + test_page["short_url"] + ".html"

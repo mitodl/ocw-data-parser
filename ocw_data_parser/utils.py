@@ -61,14 +61,6 @@ def print_success(message):
     print("\x1b[0;32;40m Success:\x1b[0m " + message)
 
 
-def safe_get(j, key, print_error_message=False):
-    value = j.get(key)
-    if value or isinstance(value, list):
-        return value
-    elif print_error_message:
-        log.error("%s: Value for %s is NOT found", (j["actual_file_name"], key))
-
-
 def find_all_values_for_key(jsons, key="_content_type"):
     excluded_values = ["text/plain", "text/html"]
     result = set()
@@ -83,9 +75,9 @@ def find_all_values_for_key(jsons, key="_content_type"):
     return result
 
 def htmlify(page):
-    safe_text = safe_get(page, "text")
+    safe_text = page.get("text")
     if safe_text:
-        file_name = safe_get(page, "uid") + "_" + safe_get(page, "short_url") + ".html"
+        file_name = page.get("uid") + "_" + page.get("short_url") + ".html"
         html = "<html><head></head><body>" + safe_text + "</body></html>"
         return file_name, html
     return None, None
