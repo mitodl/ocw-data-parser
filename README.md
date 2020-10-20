@@ -34,14 +34,6 @@ your_parser.upload_all_media_to_s3()
 your_parser.upload_course_image()
 ```
 
-To generate static HTML site for OCW course:
-
-```python
-from ocw_data_parser import generate_html_for_course
-
-generate_html_for_course("path/to/master.json", "path/to/output/destination/")
-```
-
 ## Local Workflow
 
 To download a list of courses based on `example_courses.json`, placed in `private` as `courses.json`:
