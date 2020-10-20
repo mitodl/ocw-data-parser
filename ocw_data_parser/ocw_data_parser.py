@@ -33,7 +33,7 @@ class OCWParser(object):
                  course_dir="",
                  destination_dir="",
                  static_prefix="",
-                 loaded_jsons=list(),
+                 loaded_jsons=None,
                  upload_to_s3=False,
                  s3_bucket_name="",
                  s3_bucket_access_key="",
@@ -43,6 +43,10 @@ class OCWParser(object):
         if not (course_dir and destination_dir) and not loaded_jsons:
             raise Exception(
                 "OCWParser must be initated with course_dir and destination_dir or loaded_jsons")
+
+        if loaded_jsons is None:
+            loaded_jsons = []
+
         self.course_dir = get_correct_path(
             course_dir) if course_dir else course_dir
         self.destination_dir = get_correct_path(
