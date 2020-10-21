@@ -81,7 +81,7 @@
     "effectiveDate": "2010/09/03 02:55:27.128 GMT-4", 
     "parent_module": "aabc44bdb2e45374d62f30f2a6d4c63e", 
     "is_mathml_document": false, 
-    "bottomtext": "", 
+    "bottomtext": "<p>Sample Bottom Text</p>",
     "short_page_title": "Syllabus", 
     "section_identifier": null, 
     "related_mit_links": "", 

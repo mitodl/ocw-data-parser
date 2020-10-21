@@ -286,6 +286,7 @@ def test_course_pages(ocw_parser):
         'file_location': 'ede17211bd49ea166ed701f09c1de288_syllabus.html',
         'short_url': 'syllabus',
         'url': '/courses/mathematics/18-06-linear-algebra-spring-2010/syllabus',
+        'bottomtext': '<p>Sample Bottom Text</p>'
     }
     assert page["text"].startswith("<h2 class=\"subhead\">Course Meeting Times")
     assert page["description"].startswith("This syllabus section provides information on course goals")
