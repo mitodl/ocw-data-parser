@@ -344,7 +344,7 @@ class OCWParser(object):
             if self.static_prefix else self.destination_dir + "output/static_files/"
         url_path_to_media = self.static_prefix if self.static_prefix else path_to_containing_folder
         os.makedirs(path_to_containing_folder, exist_ok=True)
-        for p in self.compose_pages():
+        for p in compose_pages(self.jsons):
             filename, html = htmlify(p)
             if filename and html:
                 with open(path_to_containing_folder + filename, "w") as f:
