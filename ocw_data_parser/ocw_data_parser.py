@@ -97,6 +97,34 @@ def compose_pages(jsons):
     return pages
 
 
+def _compose_media_dict(j):
+    return {
+        "order_index": j.get("order_index"),
+        "uid": j.get("_uid"),
+        "id": j.get("id"),
+        "parent_uid": j.get("parent_uid"),
+        "title": j.get("title"),
+        "caption": j.get("caption"),
+        "file_type": j.get("_content_type"),
+        "alt_text": j.get("alternate_text"),
+        "credit": j.get("credit"),
+        "platform_requirements": j.get("other_platform_requirements"),
+        "description": j.get("description"),
+        "type": j.get("_type"),
+    }
+
+
+def compose_media(jsons):
+    media_jsons = []
+    all_media_types = find_all_values_for_key(jsons, "_content_type")
+    for lj in jsons:
+        if lj["_content_type"] in all_media_types:
+            # Keep track of the jsons that contain media in case we want to extract
+            media_jsons.append(lj)
+
+    return [_compose_media_dict(js) for js in media_jsons], media_jsons
+
+
 class OCWParser(object):
     def __init__(self,
                  course_dir="",
@@ -172,6 +200,7 @@ class OCWParser(object):
         technical_location = self.jsons[0].get("technical_location")
         instructors = self.jsons[0].get("instructors")
         course_pages = compose_pages(self.jsons)
+        course_files, self.media_jsons = compose_media(self.jsons)
 
         # Generate master JSON
         new_json = {
@@ -208,7 +237,7 @@ class OCWParser(object):
             "course_collections": self.jsons[0].get("category_features"),
             "course_pages": course_pages,
             "course_features": self.compose_course_features(course_pages),
-            "course_files": self.compose_media(),
+            "course_files": course_files,
             "course_embedded_media": self.compose_embedded_media(),
             "course_foreign_files": self.gather_foreign_media()
         }
@@ -229,34 +258,6 @@ class OCWParser(object):
 
         self.master_json = new_json
         return new_json
-
-    def compose_media(self):
-        def _compose_media_dict(j):
-            return {
-                "order_index": j.get("order_index"),
-                "uid": j.get("_uid"),
-                "id": j.get("id"),
-                "parent_uid": j.get("parent_uid"),
-                "title": j.get("title"),
-                "caption": j.get("caption"),
-                "file_type": j.get("_content_type"),
-                "alt_text": j.get("alternate_text"),
-                "credit": j.get("credit"),
-                "platform_requirements": j.get("other_platform_requirements"),
-                "description": j.get("description"),
-                "type": j.get("_type"),
-            }
-
-        if not self.jsons:
-            self.jsons = load_raw_jsons(self.course_dir)
-        result = []
-        all_media_types = find_all_values_for_key(self.jsons, "_content_type")
-        for lj in self.jsons:
-            if lj["_content_type"] in all_media_types:
-                # Keep track of the jsons that contain media in case we want to extract
-                self.media_jsons.append(lj)
-                result.append(_compose_media_dict(lj))
-        return result
 
     def compose_embedded_media(self):
         linked_media_parents = dict()
