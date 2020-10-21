@@ -125,6 +125,42 @@ def compose_media(jsons):
     return [_compose_media_dict(js) for js in media_jsons], media_jsons
 
 
+def compose_embedded_media(jsons):
+    linked_media_parents = dict()
+    for j in jsons:
+        if j and "inline_embed_id" in j and j["inline_embed_id"]:
+            temp = {
+                "order_index": j.get("order_index"),
+                "title": j["title"],
+                "uid": j["_uid"],
+                "parent_uid": j["parent_uid"],
+                "technical_location": j["technical_location"],
+                "short_url": j["id"],
+                "inline_embed_id": j["inline_embed_id"],
+                "about_this_resource_text": j["about_this_resource_text"],
+                "related_resources_text": j["related_resources_text"],
+                "transcript": j["transcript"],
+                "embedded_media": []
+            }
+            # Find all children of linked embedded media
+            for child in jsons:
+                if child["parent_uid"] == j["_uid"]:
+                    embedded_media = {
+                        "uid": child["_uid"],
+                        "parent_uid": child["parent_uid"],
+                        "id": child["id"],
+                        "title": child["title"],
+                        "type": child.get("media_asset_type")
+                    }
+                    if "media_location" in child and child["media_location"]:
+                        embedded_media["media_location"] = child["media_location"]
+                    if "technical_location" in child and child["technical_location"]:
+                        embedded_media["technical_location"] = child["technical_location"]
+                    temp["embedded_media"].append(embedded_media)
+            linked_media_parents[j["inline_embed_id"]] = temp
+    return linked_media_parents
+
+
 class OCWParser(object):
     def __init__(self,
                  course_dir="",
@@ -238,7 +274,7 @@ class OCWParser(object):
             "course_pages": course_pages,
             "course_features": self.compose_course_features(course_pages),
             "course_files": course_files,
-            "course_embedded_media": self.compose_embedded_media(),
+            "course_embedded_media": compose_embedded_media(self.jsons),
             "course_foreign_files": self.gather_foreign_media()
         }
         open_learning_library_related = []
@@ -259,40 +295,6 @@ class OCWParser(object):
         self.master_json = new_json
         return new_json
 
-    def compose_embedded_media(self):
-        linked_media_parents = dict()
-        for j in self.jsons:
-            if j and "inline_embed_id" in j and j["inline_embed_id"]:
-                temp = {
-                    "order_index": j.get("order_index"),
-                    "title": j["title"],
-                    "uid": j["_uid"],
-                    "parent_uid": j["parent_uid"],
-                    "technical_location": j["technical_location"],
-                    "short_url": j["id"],
-                    "inline_embed_id": j["inline_embed_id"],
-                    "about_this_resource_text": j["about_this_resource_text"],
-                    "related_resources_text": j["related_resources_text"],
-                    "transcript": j["transcript"],
-                    "embedded_media": []
-                }
-                # Find all children of linked embedded media
-                for child in self.jsons:
-                    if child["parent_uid"] == j["_uid"]:
-                        embedded_media = {
-                            "uid": child["_uid"],
-                            "parent_uid": child["parent_uid"],
-                            "id": child["id"],
-                            "title": child["title"],
-                            "type": child.get("media_asset_type")
-                        }
-                        if "media_location" in child and child["media_location"]:
-                            embedded_media["media_location"] = child["media_location"]
-                        if "technical_location" in child and child["technical_location"]:
-                            embedded_media["technical_location"] = child["technical_location"]
-                        temp["embedded_media"].append(embedded_media)
-                linked_media_parents[j["inline_embed_id"]] = temp
-        return linked_media_parents
 
     def compose_course_features(self, course_pages):
         course_features = {}
