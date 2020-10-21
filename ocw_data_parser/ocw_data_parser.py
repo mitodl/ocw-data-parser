@@ -24,6 +24,40 @@ class CustomHTMLParser(HTMLParser):
             self.output_list.append(dict(attrs).get("href"))
 
 
+def load_raw_jsons(course_dir):
+    """ Loads all course raw jsons sequentially and returns them in an ordered list """
+    dict_of_all_course_dirs = dict()
+    for directory in os.listdir(course_dir):
+        dir_in_question = course_dir + directory + "/"
+        if os.path.isdir(dir_in_question):
+            dict_of_all_course_dirs[directory] = []
+            for file in os.listdir(dir_in_question):
+                if is_json(file):
+                    # Turn file name to int to enforce sequential json loading later
+                    dict_of_all_course_dirs[directory].append(
+                        int(file.split(".")[0]))
+            dict_of_all_course_dirs[directory] = sorted(
+                dict_of_all_course_dirs[directory])
+
+    # Load JSONs into memory
+    loaded_jsons = []
+    for key, val in dict_of_all_course_dirs.items():
+        path_to_subdir = course_dir + key + "/"
+        for json_index in val:
+            file_path = path_to_subdir + str(json_index) + ".json"
+            loaded_json = load_json_file(file_path)
+            if loaded_json:
+                # Add the json file name (used for error reporting)
+                loaded_json["actual_file_name"] = str(json_index) + ".json"
+                # The only representation we have of ordering is the file name
+                loaded_json["order_index"] = int(json_index)
+                loaded_jsons.append(loaded_json)
+            else:
+                log.error("Failed to load %s", file_path)
+
+    return loaded_jsons
+
+
 class OCWParser(object):
     def __init__(self,
                  course_dir="",
@@ -64,7 +98,7 @@ class OCWParser(object):
         self.master_json = None
         if course_dir and destination_dir:
             # Preload raw jsons
-            self.jsons = self.load_raw_jsons()
+            self.jsons = load_raw_jsons(self.course_dir)
         else:
             self.jsons = loaded_jsons
         if self.jsons:
@@ -82,43 +116,10 @@ class OCWParser(object):
         self.s3_bucket_secret_access_key = s3_bucket_secret_access_key
         self.s3_target_folder = folder
 
-    def load_raw_jsons(self):
-        """ Loads all course raw jsons sequentially and returns them in an ordered list """
-        dict_of_all_course_dirs = dict()
-        for directory in os.listdir(self.course_dir):
-            dir_in_question = self.course_dir + directory + "/"
-            if os.path.isdir(dir_in_question):
-                dict_of_all_course_dirs[directory] = []
-                for file in os.listdir(dir_in_question):
-                    if is_json(file):
-                        # Turn file name to int to enforce sequential json loading later
-                        dict_of_all_course_dirs[directory].append(
-                            int(file.split(".")[0]))
-                dict_of_all_course_dirs[directory] = sorted(
-                    dict_of_all_course_dirs[directory])
-
-        # Load JSONs into memory
-        loaded_jsons = []
-        for key, val in dict_of_all_course_dirs.items():
-            path_to_subdir = self.course_dir + key + "/"
-            for json_index in val:
-                file_path = path_to_subdir + str(json_index) + ".json"
-                loaded_json = load_json_file(file_path)
-                if loaded_json:
-                    # Add the json file name (used for error reporting)
-                    loaded_json["actual_file_name"] = str(json_index) + ".json"
-                    # The only representation we have of ordering is the file name
-                    loaded_json["order_index"] = int(json_index)
-                    loaded_jsons.append(loaded_json)
-                else:
-                    log.error("Failed to load %s", file_path)
-
-        return loaded_jsons
-
     def generate_master_json(self):
         """ Generates master JSON file for the course """
         if not self.jsons:
-            self.jsons = self.load_raw_jsons()
+            self.jsons = load_raw_jsons(self.course_dir)
 
         # Find "CourseHomeSection" JSON and extract chp_image value
         for j in self.jsons:
@@ -237,7 +238,7 @@ class OCWParser(object):
             return page_dict
 
         if not self.jsons:
-            self.jsons = self.load_raw_jsons()
+            self.jsons = load_raw_jsons(self.course_dir)
         page_types = ["CourseHomeSection", "CourseSection", "DownloadSection",
                       "ThisCourseAtMITSection", "SupplementalResourceSection"]
         pages = []
@@ -267,7 +268,7 @@ class OCWParser(object):
             }
 
         if not self.jsons:
-            self.jsons = self.load_raw_jsons()
+            self.jsons = load_raw_jsons(self.course_dir)
         result = []
         all_media_types = find_all_values_for_key(self.jsons, "_content_type")
         for lj in self.jsons:
