@@ -172,23 +172,6 @@ class OCWParser(object):
         new_json["extra_course_number"] = self.jsons[0].get("linked_course_number")
         new_json["course_collections"] = self.jsons[0].get("category_features")
         new_json["course_pages"] = self.compose_pages()
-        course_features = {}
-        feature_requirements = self.jsons[0].get("feature_requirements")
-        if feature_requirements:
-            for feature_requirement in feature_requirements:
-                for page in new_json["course_pages"]:
-                    ocw_feature_url = feature_requirement.get("ocw_feature_url")
-                    if ocw_feature_url:
-                        ocw_feature_url_parts = ocw_feature_url.split("/")
-                        ocw_feature_short_url = ocw_feature_url
-                        if len(ocw_feature_url_parts) > 1:
-                            ocw_feature_short_url = ocw_feature_url_parts[-2] + \
-                                "/" + ocw_feature_url_parts[-1]
-                        if page["short_url"] in ocw_feature_short_url and 'index.htm' not in page["short_url"]:
-                            course_feature = copy.copy(feature_requirement)
-                            course_feature["ocw_feature_url"] = './resolveuid/' + page["uid"]
-                            course_features[page["uid"]] = course_feature
-        new_json["course_features"] = list(course_features.values())
         open_learning_library_related = []
         courselist_features = self.jsons[0].get("courselist_features")
         if courselist_features:
@@ -203,6 +186,7 @@ class OCWParser(object):
                         related_course["url"] = url
                         open_learning_library_related.append(related_course)
         new_json["open_learning_library_related"] = open_learning_library_related
+        new_json["course_features"] = self.compose_course_features(new_json["course_pages"])
         new_json["course_files"] = self.compose_media()
         new_json["course_embedded_media"] = self.compose_embedded_media()
         new_json["course_foreign_files"] = self.gather_foreign_media()
@@ -312,6 +296,25 @@ class OCWParser(object):
                         temp["embedded_media"].append(embedded_media)
                 linked_media_parents[j["inline_embed_id"]] = temp
         return linked_media_parents
+
+    def compose_course_features(self, course_pages):
+        course_features = {}
+        feature_requirements = self.jsons[0].get("feature_requirements")
+        if feature_requirements:
+            for feature_requirement in feature_requirements:
+                for page in course_pages:
+                    ocw_feature_url = feature_requirement.get("ocw_feature_url")
+                    if ocw_feature_url:
+                        ocw_feature_url_parts = ocw_feature_url.split("/")
+                        ocw_feature_short_url = ocw_feature_url
+                        if len(ocw_feature_url_parts) > 1:
+                            ocw_feature_short_url = ocw_feature_url_parts[-2] + \
+                                "/" + ocw_feature_url_parts[-1]
+                        if page["short_url"] in ocw_feature_short_url and 'index.htm' not in page["short_url"]:
+                            course_feature = copy.copy(feature_requirement)
+                            course_feature["ocw_feature_url"] = './resolveuid/' + page["uid"]
+                            course_features[page["uid"]] = course_feature
+        return list(course_features.values())
 
     def gather_foreign_media(self):
         containing_keys = ['bottomtext', 'courseoutcomestext', 'description', 'image_caption_text', 'optional_text',
