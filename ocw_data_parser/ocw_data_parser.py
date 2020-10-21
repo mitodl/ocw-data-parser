@@ -157,12 +157,8 @@ class OCWParser(object):
             "thumbnail_image_description": self.course_thumbnail_image_alt_text,
             "image_alternate_text": self.jsons[1].get("image_alternate_text"),
             "image_caption_text": self.jsons[1].get("image_caption_text"),
+            "tags": [{"name": tag} for tag in self.jsons[0].get("subject")],
         }
-        tags_strings = self.jsons[0].get("subject")
-        tags = list()
-        for tag in tags_strings:
-            tags.append({"name": tag})
-        new_json["tags"] = tags
         instructors = self.jsons[0].get("instructors")
         new_json["instructors"] = [
             {key: value for key, value in instructor.items() if key != 'mit_id'}
