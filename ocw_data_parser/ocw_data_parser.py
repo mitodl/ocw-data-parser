@@ -166,11 +166,10 @@ class OCWParser(object):
             tags.append({"name": tag})
         new_json["tags"] = tags
         instructors = self.jsons[0].get("instructors")
-        if instructors:
-            new_json["instructors"] = [{key: value for key, value in instructor.items() if key != 'mit_id'}
-                                       for instructor in instructors]
-        else:
-            new_json["instructors"] = ""
+        new_json["instructors"] = [
+            {key: value for key, value in instructor.items() if key != 'mit_id'}
+             for instructor in instructors if instructors
+        ]
         new_json["language"] = self.jsons[0].get("language")
         new_json["extra_course_number"] = self.jsons[0].get("linked_course_number")
         new_json["course_collections"] = self.jsons[0].get("category_features")
