@@ -161,6 +161,46 @@ def compose_embedded_media(jsons):
     return linked_media_parents
 
 
+def compose_course_features(jsons, course_pages):
+    course_features = {}
+    feature_requirements = jsons[0].get("feature_requirements")
+    if feature_requirements:
+        for feature_requirement in feature_requirements:
+            for page in course_pages:
+                ocw_feature_url = feature_requirement.get("ocw_feature_url")
+                if ocw_feature_url:
+                    ocw_feature_url_parts = ocw_feature_url.split("/")
+                    ocw_feature_short_url = ocw_feature_url
+                    if len(ocw_feature_url_parts) > 1:
+                        ocw_feature_short_url = ocw_feature_url_parts[-2] + \
+                            "/" + ocw_feature_url_parts[-1]
+                    if page["short_url"] in ocw_feature_short_url and 'index.htm' not in page["short_url"]:
+                        course_feature = copy.copy(feature_requirement)
+                        course_feature["ocw_feature_url"] = './resolveuid/' + page["uid"]
+                        course_features[page["uid"]] = course_feature
+    return list(course_features.values())
+
+
+def gather_foreign_media(jsons):
+    containing_keys = ['bottomtext', 'courseoutcomestext', 'description', 'image_caption_text', 'optional_text',
+                       'text']
+    large_media_links = []
+    for j in jsons:
+        for key in containing_keys:
+            if key in j and isinstance(j[key], str) and "/ans7870/" in j[key]:
+                p = CustomHTMLParser()
+                p.feed(j[key])
+                if p.output_list:
+                    for link in p.output_list:
+                        if link and "/ans7870/" in link and "." in link.split("/")[-1]:
+                            obj = {
+                                "parent_uid": j.get("_uid"),
+                                "link": link
+                            }
+                            large_media_links.append(obj)
+    return large_media_links
+
+
 class OCWParser(object):
     def __init__(self,
                  course_dir="",
@@ -272,10 +312,10 @@ class OCWParser(object):
             "extra_course_number": self.jsons[0].get("linked_course_number"),
             "course_collections": self.jsons[0].get("category_features"),
             "course_pages": course_pages,
-            "course_features": self.compose_course_features(course_pages),
+            "course_features": compose_course_features(self.jsons, course_pages),
             "course_files": course_files,
             "course_embedded_media": compose_embedded_media(self.jsons),
-            "course_foreign_files": self.gather_foreign_media()
+            "course_foreign_files": gather_foreign_media(self.jsons)
         }
         open_learning_library_related = []
         courselist_features = self.jsons[0].get("courselist_features")
@@ -294,44 +334,6 @@ class OCWParser(object):
 
         self.master_json = new_json
         return new_json
-
-
-    def compose_course_features(self, course_pages):
-        course_features = {}
-        feature_requirements = self.jsons[0].get("feature_requirements")
-        if feature_requirements:
-            for feature_requirement in feature_requirements:
-                for page in course_pages:
-                    ocw_feature_url = feature_requirement.get("ocw_feature_url")
-                    if ocw_feature_url:
-                        ocw_feature_url_parts = ocw_feature_url.split("/")
-                        ocw_feature_short_url = ocw_feature_url
-                        if len(ocw_feature_url_parts) > 1:
-                            ocw_feature_short_url = ocw_feature_url_parts[-2] + \
-                                "/" + ocw_feature_url_parts[-1]
-                        if page["short_url"] in ocw_feature_short_url and 'index.htm' not in page["short_url"]:
-                            course_feature = copy.copy(feature_requirement)
-                            course_feature["ocw_feature_url"] = './resolveuid/' + page["uid"]
-                            course_features[page["uid"]] = course_feature
-        return list(course_features.values())
-
-    def gather_foreign_media(self):
-        containing_keys = ['bottomtext', 'courseoutcomestext', 'description', 'image_caption_text', 'optional_text',
-                           'text']
-        for j in self.jsons:
-            for key in containing_keys:
-                if key in j and isinstance(j[key], str) and "/ans7870/" in j[key]:
-                    p = CustomHTMLParser()
-                    p.feed(j[key])
-                    if p.output_list:
-                        for link in p.output_list:
-                            if link and "/ans7870/" in link and "." in link.split("/")[-1]:
-                                obj = {
-                                    "parent_uid": j.get("_uid"),
-                                    "link": link
-                                }
-                                self.large_media_links.append(obj)
-        return self.large_media_links
 
     def extract_media_locally(self):
         if not self.media_jsons:
