@@ -131,6 +131,8 @@ class OCWParser(object):
 
         master_course = self.jsons[0].get("master_course_number")
         technical_location = self.jsons[0].get("technical_location")
+        instructors = self.jsons[0].get("instructors")
+        course_pages = self.compose_pages()
 
         # Generate master JSON
         new_json = {
@@ -158,16 +160,19 @@ class OCWParser(object):
             "image_alternate_text": self.jsons[1].get("image_alternate_text"),
             "image_caption_text": self.jsons[1].get("image_caption_text"),
             "tags": [{"name": tag} for tag in self.jsons[0].get("subject")],
+            "instructors": [
+                {key: value for key, value in instructor.items() if key != 'mit_id'}
+                 for instructor in instructors if instructors
+            ],
+            "language": self.jsons[0].get("language"),
+            "extra_course_number": self.jsons[0].get("linked_course_number"),
+            "course_collections": self.jsons[0].get("category_features"),
+            "course_pages": course_pages,
+            "course_features": self.compose_course_features(course_pages),
+            "course_files": self.compose_media(),
+            "course_embedded_media": self.compose_embedded_media(),
+            "course_foreign_files": self.gather_foreign_media()
         }
-        instructors = self.jsons[0].get("instructors")
-        new_json["instructors"] = [
-            {key: value for key, value in instructor.items() if key != 'mit_id'}
-             for instructor in instructors if instructors
-        ]
-        new_json["language"] = self.jsons[0].get("language")
-        new_json["extra_course_number"] = self.jsons[0].get("linked_course_number")
-        new_json["course_collections"] = self.jsons[0].get("category_features")
-        new_json["course_pages"] = self.compose_pages()
         open_learning_library_related = []
         courselist_features = self.jsons[0].get("courselist_features")
         if courselist_features:
@@ -182,10 +187,6 @@ class OCWParser(object):
                         related_course["url"] = url
                         open_learning_library_related.append(related_course)
         new_json["open_learning_library_related"] = open_learning_library_related
-        new_json["course_features"] = self.compose_course_features(new_json["course_pages"])
-        new_json["course_files"] = self.compose_media()
-        new_json["course_embedded_media"] = self.compose_embedded_media()
-        new_json["course_foreign_files"] = self.gather_foreign_media()
 
         self.master_json = new_json
         return new_json
