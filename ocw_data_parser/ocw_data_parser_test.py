@@ -1,11 +1,13 @@
 import os
 import json
+from pathlib import Path
 import pytest
 from mock import patch
 from tempfile import TemporaryDirectory
 from ocw_data_parser.ocw_data_parser import CustomHTMLParser, OCWParser
 import ocw_data_parser.test_constants as constants
 import logging
+
 log = logging.getLogger(__name__)
 
 """
@@ -19,15 +21,6 @@ def test_no_params(ocw_parser):
     """
     with pytest.raises(Exception):
         OCWParser()
-
-
-def test_html_parser_output_list(ocw_parser):
-    """
-    Test passing in an output_list to the CustomHTMLParser
-    """
-    output_list = ["test"]
-    parser = CustomHTMLParser(output_list=output_list)
-    assert "test" == parser.output_list[0]
 
 
 def test_parser_loaded_jsons(ocw_parser):
@@ -54,7 +47,7 @@ def test_parser_invalid_file(ocw_parser):
 
 def test_generate_master_json_none_source(ocw_parser):
     """
-    Make sure that running generate_master_json doesn't throw an error after nulling 
+    Make sure that running generate_master_json doesn't throw an error after nulling
     out the parser's source jsons
     """
     ocw_parser.jsons = None
@@ -97,12 +90,12 @@ def test_upload_all_data_to_s3(ocw_parser_s3, s3_bucket):
             for bucket_item in s3_bucket.objects.filter(Prefix=ocw_parser_s3.s3_target_folder):
                 if bucket_item.key in p["file_location"]:
                     assert bucket_item.key == ocw_parser_s3.s3_target_folder + \
-                        p["uid"] + "_" + p["short_url"] + ".html"
+                           p["uid"] + "_" + p["short_url"] + ".html"
     for f in master_json["course_files"]:
         for bucket_item in s3_bucket.objects.filter(Prefix=ocw_parser_s3.s3_target_folder):
             if bucket_item.key in f["file_location"]:
                 assert bucket_item.key == ocw_parser_s3.s3_target_folder + \
-                    f["uid"] + "_" + f["id"]
+                       f["uid"] + "_" + f["id"]
 
         if f["uid"] == ocw_parser_s3.course_image_uid:
             assert master_json["image_src"] == s3_upload_base(
@@ -168,7 +161,7 @@ def test_upload_course_image_no_s3_bucket_name(ocw_parser_s3, caplog):
 
 def test_get_master_json(ocw_parser):
     """
-    Test that getting the master JSON is not None or empty or missing basic properties 
+    Test that getting the master JSON is not None or empty or missing basic properties
     and doesn't throw an exception
     """
     fail_template = "failed to read {} property from master json"
@@ -301,3 +294,136 @@ def test_instructors(ocw_parser, has_instructors):
     ocw_parser.generate_master_json()
     del expected_instructor["mit_id"]
     assert ocw_parser.master_json["instructors"] == ([expected_instructor] if has_instructors else [])
+
+
+def test_course_features(ocw_parser):
+    """assert the output of course_features"""
+    assert ocw_parser.master_json["course_features"] == [
+        {
+            "ocw_feature": "AV special element video",
+            "ocw_subfeature": "Tutorial",
+            "ocw_feature_url": "./resolveuid/b5785e071ddb991cf3dfd7cc469e6397",
+            "ocw_speciality": "",
+            "ocw_feature_notes": ""
+        },
+        {
+            "ocw_feature": "AV lectures",
+            "ocw_subfeature": "Video",
+            "ocw_feature_url": "./resolveuid/6b1f662457366951bfe85945521b0299",
+            "ocw_speciality": "",
+            "ocw_feature_notes": ""
+        },
+        {
+            "ocw_feature": "Assignments",
+            "ocw_subfeature": "problem sets with solutions",
+            "ocw_feature_url": "./resolveuid/87609dbba9d13a6b234d62de21a20433",
+            "ocw_speciality": "",
+            "ocw_feature_notes": ""
+        },
+        {
+            "ocw_feature": "Exams",
+            "ocw_subfeature": "Solutions",
+            "ocw_feature_url": "./resolveuid/c13c4766c0cf1486f0cf6435c531eaad",
+            "ocw_speciality": "",
+            "ocw_feature_notes": ""
+        },
+        {
+            "ocw_feature": "Instructor Insights",
+            "ocw_subfeature": "",
+            "ocw_feature_url": "./resolveuid/3f3b7835cf477d3ba10b05fbe03cbffa",
+            "ocw_speciality": "",
+            "ocw_feature_notes": ""
+        }
+    ]
+
+
+def test_tags(ocw_parser):
+    """assert tags output"""
+    expected_tags = [
+        "matrix theory",
+        "linear algebra",
+        "systems of equations",
+        "vector spaces",
+        "determinants",
+        "eigenvalues",
+        "similarity",
+        "positive definite matrices",
+        "least-squares approximations",
+        "stability of differential equations",
+        "networks",
+        "Fourier transforms",
+        "Markov processes",
+    ]
+    assert ocw_parser.master_json["tags"] == [{"name": tag} for tag in expected_tags]
+
+
+def test_course_embedded_media(ocw_parser):
+    """assert embedded media"""
+    assert len(ocw_parser.master_json["course_embedded_media"]) == 36
+    key = "12700054aninterviewwithgilbertstrangonteachinglinearalgebra63021644"
+    media_json = {**ocw_parser.master_json["course_embedded_media"][key]}
+    transcript = media_json["transcript"]
+    del media_json["transcript"]
+    embedded_media = media_json["embedded_media"]
+    del media_json["embedded_media"]
+    assert media_json == {
+        'about_this_resource_text': '',
+        'inline_embed_id': '12700054aninterviewwithgilbertstrangonteachinglinearalgebra63021644',
+        'order_index': 10,
+        'parent_uid': '3f3b7835cf477d3ba10b05fbe03cbffa',
+        'related_resources_text': '',
+        'short_url': 'an-interview-with-gilbert-strang-on-teaching-linear-algebra',
+        'technical_location': 'https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/instructor-insights/an-interview-with-gilbert-strang-on-teaching-linear-algebra',
+        'title': 'An Interview with Gilbert Strang on Teaching Linear Algebra',
+        'uid': 'e21b71ff0fa975bfa9acb2a155aafc1d',
+    }
+    assert transcript.startswith("<p><span m=\'6840\'>SARAH HANSEN:")
+    assert len(embedded_media) == 11
+    assert embedded_media[1] == {  # important because it has a technical_location
+        'id': '18.06.jpg',
+        'parent_uid': 'e21b71ff0fa975bfa9acb2a155aafc1d',
+        'technical_location': 'https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/instructor-insights/an-interview-with-gilbert-strang-on-teaching-linear-algebra/18.06.jpg',
+        'title': '18.06.jpg',
+        'type': None,
+        'uid': 'f777380de6feec2c42ab6e159e05ddf2'
+    }
+    assert embedded_media[2] == {  # important because it has a media_location
+        'id': 'Thumbnail-YouTube-JPG',
+        'media_location': 'https://img.youtube.com/vi/7UJ4CFRGd-U/default.jpg',
+        'parent_uid': 'e21b71ff0fa975bfa9acb2a155aafc1d',
+        'title': 'Thumbnail-YouTube-JPG',
+        'type': 'Thumbnail',
+        'uid': '7cd0685535147aebd9d7c2e98dc68afd'
+    }
+
+
+def test_foreign_files(ocw_parser):
+    """assert course_foreign_files output"""
+    assert len(ocw_parser.master_json["course_foreign_files"]) == 20
+    assert ocw_parser.master_json["course_foreign_files"][0] == {
+        'link': 'http://ocw.mit.edu/ans7870/18/18.06/tools/Applets_sound/uropmovie.html',
+        'parent_uid': 'b5785e071ddb991cf3dfd7cc469e6397',
+    }
+
+
+def test_extract_media_locally(ocw_parser):
+    """extract_media_locally should write media files to a local directory"""
+    ocw_parser.extract_media_locally()
+    static_files = Path(ocw_parser.destination_dir) / "output" / "static_files"
+    for path in static_files.iterdir():
+        assert path.stat().st_size > 0  # make sure files are non-trivial
+
+    expected_counts = {
+        ".pdf": 93,
+        ".srt": 36,
+        ".html": 11,
+        ".jpg": 42,
+        ".png": 1,
+    }
+    counts = {}
+    for path in static_files.iterdir():
+        ext = os.path.splitext(path)[1]
+        if ext not in counts:
+            counts[ext] = 0
+        counts[ext] += 1
+    assert counts == expected_counts
