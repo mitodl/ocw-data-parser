@@ -58,6 +58,45 @@ def load_raw_jsons(course_dir):
     return loaded_jsons
 
 
+def _compose_page_dict(j):
+    url_data = j.get("technical_location")
+    if url_data:
+        url_data = url_data.split("ocw.mit.edu")[1]
+    page_dict = {
+        "order_index": j.get("order_index"),
+        "uid": j.get("_uid"),
+        "parent_uid": j.get("parent_uid"),
+        "title": j.get("title"),
+        "short_page_title": j.get("short_page_title"),
+        "text": j.get("text"),
+        "url": url_data,
+        "short_url": j.get("id"),
+        "description": j.get("description"),
+        "type": j.get("_type"),
+        "is_image_gallery": j.get("is_image_gallery"),
+        "is_media_gallery": j.get("is_media_gallery"),
+        "list_in_left_nav": j.get("list_in_left_nav"),
+        "file_location": j.get("_uid") + "_" + j.get("id") + ".html"
+    }
+    if "media_location" in j and j["media_location"] and j["_content_type"] == "text/html":
+        page_dict["youtube_id"] = j["media_location"]
+
+    return page_dict
+
+
+def compose_pages(jsons):
+    page_types = ["CourseHomeSection", "CourseSection", "DownloadSection",
+                  "ThisCourseAtMITSection", "SupplementalResourceSection"]
+    pages = []
+    for json_file in jsons:
+        if json_file["_content_type"] == "text/html" and \
+                "technical_location" in json_file and json_file["technical_location"] \
+                and json_file["id"] != "page-not-found" and \
+                "_type" in json_file and json_file["_type"] in page_types:
+            pages.append(_compose_page_dict(json_file))
+    return pages
+
+
 class OCWParser(object):
     def __init__(self,
                  course_dir="",
@@ -132,7 +171,7 @@ class OCWParser(object):
         master_course = self.jsons[0].get("master_course_number")
         technical_location = self.jsons[0].get("technical_location")
         instructors = self.jsons[0].get("instructors")
-        course_pages = self.compose_pages()
+        course_pages = compose_pages(self.jsons)
 
         # Generate master JSON
         new_json = {
@@ -190,46 +229,6 @@ class OCWParser(object):
 
         self.master_json = new_json
         return new_json
-
-    def compose_pages(self):
-        def _compose_page_dict(j):
-            url_data = j.get("technical_location")
-            if url_data:
-                url_data = url_data.split("ocw.mit.edu")[1]
-            page_dict = {
-                "order_index": j.get("order_index"),
-                "uid": j.get("_uid"),
-                "parent_uid": j.get("parent_uid"),
-                "title": j.get("title"),
-                "short_page_title": j.get("short_page_title"),
-                "text": j.get("text"),
-                "bottomtext": j.get("bottomtext"),
-                "url": url_data,
-                "short_url": j.get("id"),
-                "description": j.get("description"),
-                "type": j.get("_type"),
-                "is_image_gallery": j.get("is_image_gallery"),
-                "is_media_gallery": j.get("is_media_gallery"),
-                "list_in_left_nav": j.get("list_in_left_nav"),
-                "file_location": j.get("_uid") + "_" + j.get("id") + ".html"
-            }
-            if "media_location" in j and j["media_location"] and j["_content_type"] == "text/html":
-                page_dict["youtube_id"] = j["media_location"]
-
-            return page_dict
-
-        if not self.jsons:
-            self.jsons = load_raw_jsons(self.course_dir)
-        page_types = ["CourseHomeSection", "CourseSection", "DownloadSection",
-                      "ThisCourseAtMITSection", "SupplementalResourceSection"]
-        pages = []
-        for json_file in self.jsons:
-            if json_file["_content_type"] == "text/html" and \
-                    "technical_location" in json_file and json_file["technical_location"] \
-                    and json_file["id"] != "page-not-found" and \
-                    "_type" in json_file and json_file["_type"] in page_types:
-                pages.append(_compose_page_dict(json_file))
-        return pages
 
     def compose_media(self):
         def _compose_media_dict(j):
@@ -440,7 +439,7 @@ class OCWParser(object):
         if bucket_base_url:
             s3_bucket = self.get_s3_bucket()
             if update_pages:
-                for p in self.compose_pages():
+                for p in compose_pages(self.jsons):
                     filename, html = htmlify(p)
                     if filename and html:
                         if upload_to_s3:
