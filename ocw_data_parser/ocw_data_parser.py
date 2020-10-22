@@ -191,6 +191,20 @@ class OCWParser(object):
                             course_feature["ocw_feature_url"] = './resolveuid/' + page["uid"]
                             course_features[page["uid"]] = course_feature
         new_json["course_features"] = list(course_features.values())
+        open_learning_library_related = []
+        courselist_features = self.jsons[0].get("courselist_features")
+        if courselist_features:
+            for courselist_feature in courselist_features:
+                if courselist_feature["ocw_feature"] == "Open Learning Library":
+                    raw_url = courselist_feature["ocw_feature_url"]
+                    courses_and_links = raw_url.split(",")
+                    for course_and_link in courses_and_links:
+                        related_course = {}
+                        course, url = course_and_link.strip().split("::")
+                        related_course["course"] = course
+                        related_course["url"] = url
+                        open_learning_library_related.append(related_course)
+        new_json["open_learning_library_related"] = open_learning_library_related
         new_json["course_files"] = self.compose_media()
         new_json["course_embedded_media"] = self.compose_embedded_media()
         new_json["course_foreign_files"] = self.gather_foreign_media()

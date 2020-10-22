@@ -178,7 +178,8 @@ def test_get_master_json(ocw_parser):
     assert master_json["title"], fail_template.format("title")
     assert master_json["description"], fail_template.format("description")
     assert master_json["short_url"], fail_template.format("short_url")
-
+    assert len(master_json["open_learning_library_related"]) == 3, fail_template.format("open_learning_library_related")
+    assert master_json["open_learning_library_related"][0]["url"] == "https://openlearninglibrary.mit.edu/courses/course-v1:MITx+18.01.1x+2T2019/about"
 
 def test_export_master_json_s3_links(ocw_parser_s3):
     """
