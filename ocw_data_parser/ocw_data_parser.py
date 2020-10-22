@@ -202,6 +202,23 @@ def gather_foreign_media(jsons):
     return large_media_links
 
 
+def compose_open_learning_library_related(jsons):
+    open_learning_library_related = []
+    courselist_features = jsons[0].get("courselist_features")
+    if courselist_features:
+        for courselist_feature in courselist_features:
+            if courselist_feature["ocw_feature"] == "Open Learning Library":
+                raw_url = courselist_feature["ocw_feature_url"]
+                courses_and_links = raw_url.split(",")
+                for course_and_link in courses_and_links:
+                    related_course = {}
+                    course, url = course_and_link.strip().split("::")
+                    related_course["course"] = course
+                    related_course["url"] = url
+                    open_learning_library_related.append(related_course)
+    return open_learning_library_related
+
+
 class OCWParser(object):
     def __init__(self,
                  course_dir="",
@@ -318,22 +335,9 @@ class OCWParser(object):
             "course_features": compose_course_features(self.jsons, course_pages),
             "course_files": course_files,
             "course_embedded_media": compose_embedded_media(self.jsons),
-            "course_foreign_files": foreign_media
+            "course_foreign_files": foreign_media,
+            "open_learning_library_related": compose_open_learning_library_related(self.jsons),
         }
-        open_learning_library_related = []
-        courselist_features = self.jsons[0].get("courselist_features")
-        if courselist_features:
-            for courselist_feature in courselist_features:
-                if courselist_feature["ocw_feature"] == "Open Learning Library":
-                    raw_url = courselist_feature["ocw_feature_url"]
-                    courses_and_links = raw_url.split(",")
-                    for course_and_link in courses_and_links:
-                        related_course = {}
-                        course, url = course_and_link.strip().split("::")
-                        related_course["course"] = course
-                        related_course["url"] = url
-                        open_learning_library_related.append(related_course)
-        new_json["open_learning_library_related"] = open_learning_library_related
 
         self.master_json = new_json
         return new_json
