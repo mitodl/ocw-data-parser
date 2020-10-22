@@ -76,7 +76,8 @@ def _compose_page_dict(j):
         "is_image_gallery": j.get("is_image_gallery"),
         "is_media_gallery": j.get("is_media_gallery"),
         "list_in_left_nav": j.get("list_in_left_nav"),
-        "file_location": j.get("_uid") + "_" + j.get("id") + ".html"
+        "file_location": j.get("_uid") + "_" + j.get("id") + ".html",
+        "bottomtext": j.get("bottomtext"),
     }
     if "media_location" in j and j["media_location"] and j["_content_type"] == "text/html":
         page_dict["youtube_id"] = j["media_location"]
@@ -277,6 +278,8 @@ class OCWParser(object):
         instructors = self.jsons[0].get("instructors")
         course_pages = compose_pages(self.jsons)
         course_files, self.media_jsons = compose_media(self.jsons)
+        foreign_media = gather_foreign_media(self.jsons)
+        self.large_media_links = foreign_media
 
         # Generate master JSON
         new_json = {
@@ -315,7 +318,7 @@ class OCWParser(object):
             "course_features": compose_course_features(self.jsons, course_pages),
             "course_files": course_files,
             "course_embedded_media": compose_embedded_media(self.jsons),
-            "course_foreign_files": gather_foreign_media(self.jsons)
+            "course_foreign_files": foreign_media
         }
         open_learning_library_related = []
         courselist_features = self.jsons[0].get("courselist_features")
