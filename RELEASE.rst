@@ -1,7 +1,7 @@
 Release Notes
 =============
 
-Version 0.13.0
+Version 0.13.0 (Released October 23, 2020)
 --------------
 
 - Add some tests to assert that refactoring worked (#68)
