@@ -58,29 +58,29 @@ def load_raw_jsons(course_dir):
     return loaded_jsons
 
 
-def _compose_page_dict(j):
-    url_data = j.get("technical_location")
+def _compose_page_dict(json_file):
+    url_data = json_file.get("technical_location")
     if url_data:
         url_data = url_data.split("ocw.mit.edu")[1]
     page_dict = {
-        "order_index": j.get("order_index"),
-        "uid": j.get("_uid"),
-        "parent_uid": j.get("parent_uid"),
-        "title": j.get("title"),
-        "short_page_title": j.get("short_page_title"),
-        "text": j.get("text"),
+        "order_index": json_file.get("order_index"),
+        "uid": json_file.get("_uid"),
+        "parent_uid": json_file.get("parent_uid"),
+        "title": json_file.get("title"),
+        "short_page_title": json_file.get("short_page_title"),
+        "text": json_file.get("text"),
         "url": url_data,
-        "short_url": j.get("id"),
-        "description": j.get("description"),
-        "type": j.get("_type"),
-        "is_image_gallery": j.get("is_image_gallery"),
-        "is_media_gallery": j.get("is_media_gallery"),
-        "list_in_left_nav": j.get("list_in_left_nav"),
-        "file_location": j.get("_uid") + "_" + j.get("id") + ".html",
-        "bottomtext": j.get("bottomtext"),
+        "short_url": json_file.get("id"),
+        "description": json_file.get("description"),
+        "type": json_file.get("_type"),
+        "is_image_gallery": json_file.get("is_image_gallery"),
+        "is_media_gallery": json_file.get("is_media_gallery"),
+        "list_in_left_nav": json_file.get("list_in_left_nav"),
+        "file_location": json_file.get("_uid") + "_" + json_file.get("id") + ".html",
+        "bottomtext": json_file.get("bottomtext"),
     }
-    if "media_location" in j and j["media_location"] and j["_content_type"] == "text/html":
-        page_dict["youtube_id"] = j["media_location"]
+    if "media_location" in json_file and json_file["media_location"] and json_file["_content_type"] == "text/html":
+        page_dict["youtube_id"] = json_file["media_location"]
 
     return page_dict
 
@@ -98,54 +98,54 @@ def compose_pages(jsons):
     return pages
 
 
-def _compose_media_dict(j):
+def _compose_media_dict(media_json):
     return {
-        "order_index": j.get("order_index"),
-        "uid": j.get("_uid"),
-        "id": j.get("id"),
-        "parent_uid": j.get("parent_uid"),
-        "title": j.get("title"),
-        "caption": j.get("caption"),
-        "file_type": j.get("_content_type"),
-        "alt_text": j.get("alternate_text"),
-        "credit": j.get("credit"),
-        "platform_requirements": j.get("other_platform_requirements"),
-        "description": j.get("description"),
-        "type": j.get("_type"),
+        "order_index": media_json.get("order_index"),
+        "uid": media_json.get("_uid"),
+        "id": media_json.get("id"),
+        "parent_uid": media_json.get("parent_uid"),
+        "title": media_json.get("title"),
+        "caption": media_json.get("caption"),
+        "file_type": media_json.get("_content_type"),
+        "alt_text": media_json.get("alternate_text"),
+        "credit": media_json.get("credit"),
+        "platform_requirements": media_json.get("other_platform_requirements"),
+        "description": media_json.get("description"),
+        "type": media_json.get("_type"),
     }
 
 
 def compose_media(jsons):
     media_jsons = []
     all_media_types = find_all_values_for_key(jsons, "_content_type")
-    for lj in jsons:
-        if lj["_content_type"] in all_media_types:
+    for json_file in jsons:
+        if json_file["_content_type"] in all_media_types:
             # Keep track of the jsons that contain media in case we want to extract
-            media_jsons.append(lj)
+            media_jsons.append(json_file)
 
-    return [_compose_media_dict(js) for js in media_jsons], media_jsons
+    return [_compose_media_dict(media_json) for media_json in media_jsons], media_jsons
 
 
 def compose_embedded_media(jsons):
     linked_media_parents = dict()
-    for j in jsons:
-        if j and "inline_embed_id" in j and j["inline_embed_id"]:
+    for json_file in jsons:
+        if json_file and "inline_embed_id" in json_file and json_file["inline_embed_id"]:
             temp = {
-                "order_index": j.get("order_index"),
-                "title": j["title"],
-                "uid": j["_uid"],
-                "parent_uid": j["parent_uid"],
-                "technical_location": j["technical_location"],
-                "short_url": j["id"],
-                "inline_embed_id": j["inline_embed_id"],
-                "about_this_resource_text": j["about_this_resource_text"],
-                "related_resources_text": j["related_resources_text"],
-                "transcript": j["transcript"],
+                "order_index": json_file.get("order_index"),
+                "title": json_file["title"],
+                "uid": json_file["_uid"],
+                "parent_uid": json_file["parent_uid"],
+                "technical_location": json_file["technical_location"],
+                "short_url": json_file["id"],
+                "inline_embed_id": json_file["inline_embed_id"],
+                "about_this_resource_text": json_file["about_this_resource_text"],
+                "related_resources_text": json_file["related_resources_text"],
+                "transcript": json_file["transcript"],
                 "embedded_media": []
             }
             # Find all children of linked embedded media
             for child in jsons:
-                if child["parent_uid"] == j["_uid"]:
+                if child["parent_uid"] == json_file["_uid"]:
                     embedded_media = {
                         "uid": child["_uid"],
                         "parent_uid": child["parent_uid"],
@@ -158,7 +158,7 @@ def compose_embedded_media(jsons):
                     if "technical_location" in child and child["technical_location"]:
                         embedded_media["technical_location"] = child["technical_location"]
                     temp["embedded_media"].append(embedded_media)
-            linked_media_parents[j["inline_embed_id"]] = temp
+            linked_media_parents[json_file["inline_embed_id"]] = temp
     return linked_media_parents
 
 
@@ -351,23 +351,23 @@ class OCWParser(object):
             if self.static_prefix else self.destination_dir + "output/static_files/"
         url_path_to_media = self.static_prefix if self.static_prefix else path_to_containing_folder
         os.makedirs(path_to_containing_folder, exist_ok=True)
-        for p in compose_pages(self.jsons):
-            filename, html = htmlify(p)
+        for page in compose_pages(self.jsons):
+            filename, html = htmlify(page)
             if filename and html:
                 with open(path_to_containing_folder + filename, "w") as f:
                     f.write(html)
-        for j in self.media_jsons:
-            file_name = j.get("_uid") + "_" + j.get("id")
-            d = get_binary_data(j)
+        for media_json in self.media_jsons:
+            file_name = media_json.get("_uid") + "_" + media_json.get("id")
+            d = get_binary_data(media_json)
             if d:
                 with open(path_to_containing_folder + file_name, "wb") as f:
                     data = base64.b64decode(d)
                     f.write(data)
                 update_file_location(
-                    self.master_json, url_path_to_media + file_name, j.get("_uid"))
+                    self.master_json, url_path_to_media + file_name, media_json.get("_uid"))
                 log.info("Extracted %s", file_name)
             else:
-                json_file = j["actual_file_name"]
+                json_file = media_json["actual_file_name"]
                 log.error(
                     "Media file %s without either datafield key", json_file)
         log.info("Done! extracted static media to %s",
