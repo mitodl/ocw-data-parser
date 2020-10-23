@@ -1,6 +1,18 @@
 Release Notes
 =============
 
+Version 0.13.0
+--------------
+
+- Add some tests to assert that refactoring worked (#68)
+- Add open_learning_library_related (#54)
+- Provide an empty list if there are no instructors (#64)
+- Include bottomtext section in master JSON (#63)
+- Remove static html generator since we are replacing it with hugo-course-publisher (#58)
+- Fix loaded_jsons initialization (#59)
+- Add PR template (#60)
+- Remove safe_get (#62)
+
 Version 0.12.0 (Released October 13, 2020)
 --------------
 
