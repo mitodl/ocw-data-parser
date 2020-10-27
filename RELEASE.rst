@@ -1,7 +1,7 @@
 Release Notes
 =============
 
-Version 0.14.0
+Version 0.14.0 (Released October 27, 2020)
 --------------
 
 - improve file parser error messages
