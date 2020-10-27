@@ -196,7 +196,7 @@ def gather_foreign_media(jsons):
                         if link and "/ans7870/" in link and "." in link.split("/")[-1]:
                             obj = {
                                 "parent_uid": j.get("_uid"),
-                                "link": link
+                                "link": link.strip()
                             }
                             large_media_links.append(obj)
     return large_media_links
