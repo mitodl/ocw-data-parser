@@ -15,16 +15,208 @@ log = logging.getLogger(__name__)
 
 
 class CustomHTMLParser(HTMLParser):
-    def __init__(self, output_list=None):
-        HTMLParser.__init__(self)
-        if output_list is None:
-            self.output_list = []
-        else:
-            self.output_list = output_list
+    def __init__(self):
+        super().__init__()
+        self.output_list = []
 
     def handle_starttag(self, tag, attrs):
         if tag == "a":
             self.output_list.append(dict(attrs).get("href"))
+
+
+def load_raw_jsons(course_dir):
+    """ Loads all course raw jsons sequentially and returns them in an ordered list """
+    dict_of_all_course_dirs = dict()
+    for directory in os.listdir(course_dir):
+        dir_in_question = course_dir + directory + "/"
+        if os.path.isdir(dir_in_question):
+            dict_of_all_course_dirs[directory] = []
+            for file in os.listdir(dir_in_question):
+                if is_json(file):
+                    # Turn file name to int to enforce sequential json loading later
+                    dict_of_all_course_dirs[directory].append(
+                        int(file.split(".")[0]))
+            dict_of_all_course_dirs[directory] = sorted(
+                dict_of_all_course_dirs[directory])
+
+    # Load JSONs into memory
+    loaded_jsons = []
+    for key, val in dict_of_all_course_dirs.items():
+        path_to_subdir = course_dir + key + "/"
+        for json_index in val:
+            file_path = path_to_subdir + str(json_index) + ".json"
+            loaded_json = load_json_file(file_path)
+            if loaded_json:
+                # Add the json file name (used for error reporting)
+                loaded_json["actual_file_name"] = str(json_index) + ".json"
+                # The only representation we have of ordering is the file name
+                loaded_json["order_index"] = int(json_index)
+                loaded_jsons.append(loaded_json)
+            else:
+                log.error("Failed to load %s", file_path)
+
+    return loaded_jsons
+
+
+def _compose_page_dict(json_file):
+    url_data = json_file.get("technical_location")
+    if url_data:
+        url_data = url_data.split("ocw.mit.edu")[1]
+    page_dict = {
+        "order_index": json_file.get("order_index"),
+        "uid": json_file.get("_uid"),
+        "parent_uid": json_file.get("parent_uid"),
+        "title": json_file.get("title"),
+        "short_page_title": json_file.get("short_page_title"),
+        "text": json_file.get("text"),
+        "url": url_data,
+        "short_url": json_file.get("id"),
+        "description": json_file.get("description"),
+        "type": json_file.get("_type"),
+        "is_image_gallery": json_file.get("is_image_gallery"),
+        "is_media_gallery": json_file.get("is_media_gallery"),
+        "list_in_left_nav": json_file.get("list_in_left_nav"),
+        "file_location": json_file.get("_uid") + "_" + json_file.get("id") + ".html",
+        "bottomtext": json_file.get("bottomtext"),
+    }
+    if "media_location" in json_file and json_file["media_location"] and json_file["_content_type"] == "text/html":
+        page_dict["youtube_id"] = json_file["media_location"]
+
+    return page_dict
+
+
+def compose_pages(jsons):
+    page_types = ["CourseHomeSection", "CourseSection", "DownloadSection",
+                  "ThisCourseAtMITSection", "SupplementalResourceSection"]
+    pages = []
+    for json_file in jsons:
+        if json_file["_content_type"] == "text/html" and \
+                "technical_location" in json_file and json_file["technical_location"] \
+                and json_file["id"] != "page-not-found" and \
+                "_type" in json_file and json_file["_type"] in page_types:
+            pages.append(_compose_page_dict(json_file))
+    return pages
+
+
+def _compose_media_dict(media_json):
+    return {
+        "order_index": media_json.get("order_index"),
+        "uid": media_json.get("_uid"),
+        "id": media_json.get("id"),
+        "parent_uid": media_json.get("parent_uid"),
+        "title": media_json.get("title"),
+        "caption": media_json.get("caption"),
+        "file_type": media_json.get("_content_type"),
+        "alt_text": media_json.get("alternate_text"),
+        "credit": media_json.get("credit"),
+        "platform_requirements": media_json.get("other_platform_requirements"),
+        "description": media_json.get("description"),
+        "type": media_json.get("_type"),
+    }
+
+
+def compose_media(jsons):
+    media_jsons = []
+    all_media_types = find_all_values_for_key(jsons, "_content_type")
+    for json_file in jsons:
+        if json_file["_content_type"] in all_media_types:
+            # Keep track of the jsons that contain media in case we want to extract
+            media_jsons.append(json_file)
+
+    return [_compose_media_dict(media_json) for media_json in media_jsons], media_jsons
+
+
+def compose_embedded_media(jsons):
+    linked_media_parents = dict()
+    for json_file in jsons:
+        if json_file and "inline_embed_id" in json_file and json_file["inline_embed_id"]:
+            temp = {
+                "order_index": json_file.get("order_index"),
+                "title": json_file["title"],
+                "uid": json_file["_uid"],
+                "parent_uid": json_file["parent_uid"],
+                "technical_location": json_file["technical_location"],
+                "short_url": json_file["id"],
+                "inline_embed_id": json_file["inline_embed_id"],
+                "about_this_resource_text": json_file["about_this_resource_text"],
+                "related_resources_text": json_file["related_resources_text"],
+                "transcript": json_file["transcript"],
+                "embedded_media": []
+            }
+            # Find all children of linked embedded media
+            for child in jsons:
+                if child["parent_uid"] == json_file["_uid"]:
+                    embedded_media = {
+                        "uid": child["_uid"],
+                        "parent_uid": child["parent_uid"],
+                        "id": child["id"],
+                        "title": child["title"],
+                        "type": child.get("media_asset_type")
+                    }
+                    if "media_location" in child and child["media_location"]:
+                        embedded_media["media_location"] = child["media_location"]
+                    if "technical_location" in child and child["technical_location"]:
+                        embedded_media["technical_location"] = child["technical_location"]
+                    temp["embedded_media"].append(embedded_media)
+            linked_media_parents[json_file["inline_embed_id"]] = temp
+    return linked_media_parents
+
+
+def compose_course_features(jsons, course_pages):
+    course_features = {}
+    feature_requirements = jsons[0].get("feature_requirements")
+    if feature_requirements:
+        for feature_requirement in feature_requirements:
+            for page in course_pages:
+                ocw_feature_url = feature_requirement.get("ocw_feature_url")
+                if ocw_feature_url:
+                    ocw_feature_url_parts = ocw_feature_url.split("/")
+                    ocw_feature_short_url = ocw_feature_url
+                    if len(ocw_feature_url_parts) > 1:
+                        ocw_feature_short_url = ocw_feature_url_parts[-2] + \
+                            "/" + ocw_feature_url_parts[-1]
+                    if page["short_url"] in ocw_feature_short_url and 'index.htm' not in page["short_url"]:
+                        course_feature = copy.copy(feature_requirement)
+                        course_feature["ocw_feature_url"] = './resolveuid/' + page["uid"]
+                        course_features[page["uid"]] = course_feature
+    return list(course_features.values())
+
+
+def gather_foreign_media(jsons):
+    containing_keys = ['bottomtext', 'courseoutcomestext', 'description', 'image_caption_text', 'optional_text',
+                       'text']
+    large_media_links = []
+    for j in jsons:
+        for key in containing_keys:
+            if key in j and isinstance(j[key], str) and "/ans7870/" in j[key]:
+                p = CustomHTMLParser()
+                p.feed(j[key])
+                if p.output_list:
+                    for link in p.output_list:
+                        if link and "/ans7870/" in link and "." in link.split("/")[-1]:
+                            obj = {
+                                "parent_uid": j.get("_uid"),
+                                "link": link
+                            }
+                            large_media_links.append(obj)
+    return large_media_links
+
+
+def compose_open_learning_library_related(jsons):
+    open_learning_library_related = []
+    courselist_features = jsons[0].get("courselist_features")
+    if courselist_features:
+        for courselist_feature in courselist_features:
+            if courselist_feature["ocw_feature"] == "Open Learning Library":
+                raw_url = courselist_feature["ocw_feature_url"]
+                courses_and_links = raw_url.split(",")
+                for course_and_link in courses_and_links:
+                    related_course = {}
+                    course, url = course_and_link.strip().split("::")
+                    related_course["course"] = course
+                    related_course["url"] = url
+                    open_learning_library_related.append(related_course)
+    return open_learning_library_related
 
 
 class OCWParser(object):
@@ -67,7 +259,7 @@ class OCWParser(object):
         self.master_json = None
         if course_dir and destination_dir:
             # Preload raw jsons
-            self.jsons = self.load_raw_jsons()
+            self.jsons = load_raw_jsons(self.course_dir)
         else:
             self.jsons = loaded_jsons
         if self.jsons:
@@ -85,43 +277,10 @@ class OCWParser(object):
         self.s3_bucket_secret_access_key = s3_bucket_secret_access_key
         self.s3_target_folder = folder
 
-    def load_raw_jsons(self):
-        """ Loads all course raw jsons sequentially and returns them in an ordered list """
-        dict_of_all_course_dirs = dict()
-        for directory in os.listdir(self.course_dir):
-            dir_in_question = self.course_dir + directory + "/"
-            if os.path.isdir(dir_in_question):
-                dict_of_all_course_dirs[directory] = []
-                for file in os.listdir(dir_in_question):
-                    if is_json(file):
-                        # Turn file name to int to enforce sequential json loading later
-                        dict_of_all_course_dirs[directory].append(
-                            int(file.split(".")[0]))
-                dict_of_all_course_dirs[directory] = sorted(
-                    dict_of_all_course_dirs[directory])
-
-        # Load JSONs into memory
-        loaded_jsons = []
-        for key, val in dict_of_all_course_dirs.items():
-            path_to_subdir = self.course_dir + key + "/"
-            for json_index in val:
-                file_path = path_to_subdir + str(json_index) + ".json"
-                loaded_json = load_json_file(file_path)
-                if loaded_json:
-                    # Add the json file name (used for error reporting)
-                    loaded_json["actual_file_name"] = str(json_index) + ".json"
-                    # The only representation we have of ordering is the file name
-                    loaded_json["order_index"] = int(json_index)
-                    loaded_jsons.append(loaded_json)
-                else:
-                    log.error("Failed to load %s", file_path)
-
-        return loaded_jsons
-
     def generate_master_json(self):
         """ Generates master JSON file for the course """
         if not self.jsons:
-            self.jsons = self.load_raw_jsons()
+            self.jsons = load_raw_jsons(self.course_dir)
 
         # Find "CourseHomeSection" JSON and extract chp_image value
         for j in self.jsons:
@@ -133,6 +292,11 @@ class OCWParser(object):
 
         master_course = self.jsons[0].get("master_course_number")
         technical_location = self.jsons[0].get("technical_location")
+        instructors = self.jsons[0].get("instructors")
+        course_pages = compose_pages(self.jsons)
+        course_files, self.media_jsons = compose_media(self.jsons)
+        foreign_media = gather_foreign_media(self.jsons)
+        self.large_media_links = foreign_media
 
         # Generate master JSON
         new_json = {
@@ -159,179 +323,24 @@ class OCWParser(object):
             "thumbnail_image_description": self.course_thumbnail_image_alt_text,
             "image_alternate_text": self.jsons[1].get("image_alternate_text"),
             "image_caption_text": self.jsons[1].get("image_caption_text"),
+            "tags": [{"name": tag} for tag in self.jsons[0].get("subject")],
+            "instructors": [
+                {key: value for key, value in instructor.items() if key != 'mit_id'}
+                 for instructor in instructors if instructors
+            ],
+            "language": self.jsons[0].get("language"),
+            "extra_course_number": self.jsons[0].get("linked_course_number"),
+            "course_collections": self.jsons[0].get("category_features"),
+            "course_pages": course_pages,
+            "course_features": compose_course_features(self.jsons, course_pages),
+            "course_files": course_files,
+            "course_embedded_media": compose_embedded_media(self.jsons),
+            "course_foreign_files": foreign_media,
+            "open_learning_library_related": compose_open_learning_library_related(self.jsons),
         }
-        tags_strings = self.jsons[0].get("subject")
-        tags = list()
-        for tag in tags_strings:
-            tags.append({"name": tag})
-        new_json["tags"] = tags
-        instructors = self.jsons[0].get("instructors")
-        new_json["instructors"] = [
-            {key: value for key, value in instructor.items() if key != 'mit_id'}
-             for instructor in instructors if instructors
-        ]
-        new_json["language"] = self.jsons[0].get("language")
-        new_json["extra_course_number"] = self.jsons[0].get("linked_course_number")
-        new_json["course_collections"] = self.jsons[0].get("category_features")
-        new_json["course_pages"] = self.compose_pages()
-        course_features = {}
-        feature_requirements = self.jsons[0].get("feature_requirements")
-        if feature_requirements:
-            for feature_requirement in feature_requirements:
-                for page in new_json["course_pages"]:
-                    ocw_feature_url = feature_requirement.get("ocw_feature_url")
-                    if ocw_feature_url:
-                        ocw_feature_url_parts = ocw_feature_url.split("/")
-                        ocw_feature_short_url = ocw_feature_url
-                        if len(ocw_feature_url_parts) > 1:
-                            ocw_feature_short_url = ocw_feature_url_parts[-2] + \
-                                "/" + ocw_feature_url_parts[-1]
-                        if page["short_url"] in ocw_feature_short_url and 'index.htm' not in page["short_url"]:
-                            course_feature = copy.copy(feature_requirement)
-                            course_feature["ocw_feature_url"] = './resolveuid/' + page["uid"]
-                            course_features[page["uid"]] = course_feature
-        new_json["course_features"] = list(course_features.values())
-        open_learning_library_related = []
-        courselist_features = self.jsons[0].get("courselist_features")
-        if courselist_features:
-            for courselist_feature in courselist_features:
-                if courselist_feature["ocw_feature"] == "Open Learning Library":
-                    raw_url = courselist_feature["ocw_feature_url"]
-                    courses_and_links = raw_url.split(",")
-                    for course_and_link in courses_and_links:
-                        related_course = {}
-                        course, url = course_and_link.strip().split("::")
-                        related_course["course"] = course
-                        related_course["url"] = url
-                        open_learning_library_related.append(related_course)
-        new_json["open_learning_library_related"] = open_learning_library_related
-        new_json["course_files"] = self.compose_media()
-        new_json["course_embedded_media"] = self.compose_embedded_media()
-        new_json["course_foreign_files"] = self.gather_foreign_media()
 
         self.master_json = new_json
         return new_json
-
-    def compose_pages(self):
-        def _compose_page_dict(j):
-            url_data = j.get("technical_location")
-            if url_data:
-                url_data = url_data.split("ocw.mit.edu")[1]
-            page_dict = {
-                "order_index": j.get("order_index"),
-                "uid": j.get("_uid"),
-                "parent_uid": j.get("parent_uid"),
-                "title": j.get("title"),
-                "short_page_title": j.get("short_page_title"),
-                "text": j.get("text"),
-                "bottomtext": j.get("bottomtext"),
-                "url": url_data,
-                "short_url": j.get("id"),
-                "description": j.get("description"),
-                "type": j.get("_type"),
-                "is_image_gallery": j.get("is_image_gallery"),
-                "is_media_gallery": j.get("is_media_gallery"),
-                "list_in_left_nav": j.get("list_in_left_nav"),
-                "file_location": j.get("_uid") + "_" + j.get("id") + ".html"
-            }
-            if "media_location" in j and j["media_location"] and j["_content_type"] == "text/html":
-                page_dict["youtube_id"] = j["media_location"]
-
-            return page_dict
-
-        if not self.jsons:
-            self.jsons = self.load_raw_jsons()
-        page_types = ["CourseHomeSection", "CourseSection", "DownloadSection",
-                      "ThisCourseAtMITSection", "SupplementalResourceSection"]
-        pages = []
-        for json_file in self.jsons:
-            if json_file["_content_type"] == "text/html" and \
-                    "technical_location" in json_file and json_file["technical_location"] \
-                    and json_file["id"] != "page-not-found" and \
-                    "_type" in json_file and json_file["_type"] in page_types:
-                pages.append(_compose_page_dict(json_file))
-        return pages
-
-    def compose_media(self):
-        def _compose_media_dict(j):
-            return {
-                "order_index": j.get("order_index"),
-                "uid": j.get("_uid"),
-                "id": j.get("id"),
-                "parent_uid": j.get("parent_uid"),
-                "title": j.get("title"),
-                "caption": j.get("caption"),
-                "file_type": j.get("_content_type"),
-                "alt_text": j.get("alternate_text"),
-                "credit": j.get("credit"),
-                "platform_requirements": j.get("other_platform_requirements"),
-                "description": j.get("description"),
-                "type": j.get("_type"),
-            }
-
-        if not self.jsons:
-            self.jsons = self.load_raw_jsons()
-        result = []
-        all_media_types = find_all_values_for_key(self.jsons, "_content_type")
-        for lj in self.jsons:
-            if lj["_content_type"] in all_media_types:
-                # Keep track of the jsons that contain media in case we want to extract
-                self.media_jsons.append(lj)
-                result.append(_compose_media_dict(lj))
-        return result
-
-    def compose_embedded_media(self):
-        linked_media_parents = dict()
-        for j in self.jsons:
-            if j and "inline_embed_id" in j and j["inline_embed_id"]:
-                temp = {
-                    "order_index": j.get("order_index"),
-                    "title": j["title"],
-                    "uid": j["_uid"],
-                    "parent_uid": j["parent_uid"],
-                    "technical_location": j["technical_location"],
-                    "short_url": j["id"],
-                    "inline_embed_id": j["inline_embed_id"],
-                    "about_this_resource_text": j["about_this_resource_text"],
-                    "related_resources_text": j["related_resources_text"],
-                    "transcript": j["transcript"],
-                    "embedded_media": []
-                }
-                # Find all children of linked embedded media
-                for child in self.jsons:
-                    if child["parent_uid"] == j["_uid"]:
-                        embedded_media = {
-                            "uid": child["_uid"],
-                            "parent_uid": child["parent_uid"],
-                            "id": child["id"],
-                            "title": child["title"],
-                            "type": child.get("media_asset_type")
-                        }
-                        if "media_location" in child and child["media_location"]:
-                            embedded_media["media_location"] = child["media_location"]
-                        if "technical_location" in child and child["technical_location"]:
-                            embedded_media["technical_location"] = child["technical_location"]
-                        temp["embedded_media"].append(embedded_media)
-                linked_media_parents[j["inline_embed_id"]] = temp
-        return linked_media_parents
-
-    def gather_foreign_media(self):
-        containing_keys = ['bottomtext', 'courseoutcomestext', 'description', 'image_caption_text', 'optional_text',
-                           'text']
-        for j in self.jsons:
-            for key in containing_keys:
-                if key in j and isinstance(j[key], str) and "/ans7870/" in j[key]:
-                    p = CustomHTMLParser()
-                    p.feed(j[key])
-                    if p.output_list:
-                        for link in p.output_list:
-                            if link and "/ans7870/" in link and "." in link.split("/")[-1]:
-                                obj = {
-                                    "parent_uid": j.get("_uid"),
-                                    "link": link
-                                }
-                                self.large_media_links.append(obj)
-        return self.large_media_links
 
     def extract_media_locally(self):
         if not self.media_jsons:
@@ -342,23 +351,23 @@ class OCWParser(object):
             if self.static_prefix else self.destination_dir + "output/static_files/"
         url_path_to_media = self.static_prefix if self.static_prefix else path_to_containing_folder
         os.makedirs(path_to_containing_folder, exist_ok=True)
-        for p in self.compose_pages():
-            filename, html = htmlify(p)
+        for page in compose_pages(self.jsons):
+            filename, html = htmlify(page)
             if filename and html:
                 with open(path_to_containing_folder + filename, "w") as f:
                     f.write(html)
-        for j in self.media_jsons:
-            file_name = j.get("_uid") + "_" + j.get("id")
-            d = get_binary_data(j)
+        for media_json in self.media_jsons:
+            file_name = media_json.get("_uid") + "_" + media_json.get("id")
+            d = get_binary_data(media_json)
             if d:
                 with open(path_to_containing_folder + file_name, "wb") as f:
                     data = base64.b64decode(d)
                     f.write(data)
                 update_file_location(
-                    self.master_json, url_path_to_media + file_name, j.get("_uid"))
+                    self.master_json, url_path_to_media + file_name, media_json.get("_uid"))
                 log.info("Extracted %s", file_name)
             else:
-                json_file = j["actual_file_name"]
+                json_file = media_json["actual_file_name"]
                 log.error(
                     "Media file %s without either datafield key", json_file)
         log.info("Done! extracted static media to %s",
@@ -442,7 +451,7 @@ class OCWParser(object):
         if bucket_base_url:
             s3_bucket = self.get_s3_bucket()
             if update_pages:
-                for p in self.compose_pages():
+                for p in compose_pages(self.jsons):
                     filename, html = htmlify(p)
                     if filename and html:
                         if upload_to_s3:
