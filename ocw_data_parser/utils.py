@@ -2,6 +2,11 @@ import os
 import shutil
 import json
 import logging
+from datetime import datetime
+from glob import glob
+
+import pytz
+
 import ocw_data_parser.ocw_data_parser
 
 log = logging.getLogger(__name__)
@@ -43,8 +48,9 @@ def get_correct_path(directory):
         return ""
     return directory if directory[-1] == "/" else directory + "/"
 
+
 def load_json_file(path):
-    with open(path, 'r') as f:
+    with open(path, "r") as f:
         try:
             loaded_json = json.load(f)
             return loaded_json
@@ -67,12 +73,13 @@ def find_all_values_for_key(jsons, key="_content_type"):
     for j in jsons:
         if key in j and j[key]:
             result.add(j[key])
-    
+
     # Remove excluded values
     for value in excluded_values:
         if value in result:
             result.remove(value)
     return result
+
 
 def htmlify(page):
     safe_text = page.get("text")
@@ -82,7 +89,78 @@ def htmlify(page):
         return file_name, html
     return None, None
 
-def parse_all(courses_dir, destination_dir, s3_bucket="", s3_links=False, overwrite=False, beautify_master_json=False):
+
+def format_date(date_str):
+    """
+    Converts date from 2016/02/02 20:28:06 US/Eastern to 2016-02-02 20:28:06-05:00
+
+    Args:
+        date_str (String): Datetime object as string in the following format (2016/02/02 20:28:06 US/Eastern)
+    Returns:
+        Datetime object if passed date is valid, otherwise None
+    """
+    if date_str and date_str != "None":
+        date_pieces = date_str.split(" ")  # e.g. 2016/02/02 20:28:06 US/Eastern
+        date_pieces[0] = date_pieces[0].replace("/", "-")
+        # Discard milliseconds if exists
+        date_pieces[1] = (
+            date_pieces[1][:-4] if "." in date_pieces[1] else date_pieces[1]
+        )
+        tz = date_pieces.pop(2)
+        timezone = pytz.timezone(tz) if "GMT" not in tz else pytz.timezone("Etc/" + tz)
+        tz_stripped_date = datetime.strptime(" ".join(date_pieces), "%Y-%m-%d %H:%M:%S")
+        tz_aware_date = timezone.localize(tz_stripped_date)
+        tz_aware_date = tz_aware_date.astimezone(pytz.utc)
+        return tz_aware_date
+    return None
+
+
+def is_course_published(source_path):
+    """
+    Determine if the course is published or not.
+
+    Args:
+        source_path(str): The path to the raw course JSON
+
+    Returns:
+        boolean: True if published, False if not
+    """
+    # Collect last modified timestamps for all course files of the course
+    is_published = True
+    matches = [
+        y for x in os.walk(source_path) for y in glob(os.path.join(x[0], "1.json"))
+    ]
+    if matches and os.path.exists(matches[0]):
+        try:
+            with open(matches[0], "r") as infile:
+                first_json = json.load(infile)
+                last_published_to_production = format_date(
+                    first_json.get("last_published_to_production", None)
+                )
+                last_unpublishing_date = format_date(
+                    first_json.get("last_unpublishing_date", None)
+                )
+                if last_published_to_production is None or (
+                    last_unpublishing_date
+                    and (last_unpublishing_date > last_published_to_production)
+                ):
+                    is_published = False
+        except:  # pylint: disable=bare-except
+            log.exception("Error encountered reading 1.json for %s", source_path)
+    else:
+        log.exception("Could not find 1.json for %s", source_path)
+    return is_published
+
+
+def parse_all(
+    courses_dir,
+    destination_dir,
+    s3_bucket="",
+    s3_links=False,
+    overwrite=False,
+    beautify_master_json=False,
+    upload_master_json=False,
+):
     for course_dir in os.listdir(courses_dir):
         source_path = "{}/".format(os.path.join(courses_dir, course_dir))
         dest_path = os.path.join(destination_dir, course_dir)
@@ -91,12 +169,33 @@ def parse_all(courses_dir, destination_dir, s3_bucket="", s3_links=False, overwr
                 shutil.rmtree(dest_path)
             if not os.path.exists(dest_path):
                 os.makedirs(dest_path)
-                parser = ocw_data_parser.OCWParser(course_dir=source_path, destination_dir=destination_dir, s3_bucket_name=s3_bucket,
-                                s3_target_folder=course_dir, beautify_master_json=beautify_master_json)
-                parser.export_master_json(s3_links=s3_links)
+                parser = ocw_data_parser.OCWParser(
+                    course_dir=source_path,
+                    destination_dir=destination_dir,
+                    s3_bucket_name=s3_bucket,
+                    s3_target_folder=course_dir,
+                    beautify_master_json=beautify_master_json,
+                )
+                upload_master_json = (
+                    s3_links and upload_master_json and is_course_published(source_path)
+                )
+                if upload_master_json:
+                    parser.setup_s3_uploading(
+                        s3_bucket,
+                        os.environ["AWS_ACCESS_KEY_ID"],
+                        os.environ["AWS_SECRET_ACCESS_KEY"],
+                        course_dir,
+                    )
+                    # just upload master json, and update media links.
+                    parser.upload_to_s3 = False
+                parser.export_master_json(
+                    s3_links=s3_links, upload_master_json=upload_master_json
+                )
                 master_path = os.path.join(dest_path, "master")
                 if os.path.isdir(master_path):
                     for filename in os.listdir(master_path):
-                        shutil.move(os.path.join(master_path, filename),
-                                    os.path.join(dest_path, filename))
+                        shutil.move(
+                            os.path.join(master_path, filename),
+                            os.path.join(dest_path, filename),
+                        )
                     shutil.rmtree(master_path)
