@@ -123,7 +123,9 @@ def test_htmlify(ocw_parser):
 
 
 def test_parse_all():
-    """ Test that all expected master json files are written to the output directory"""
+    """
+    Test that all expected master json files are written to the output directory
+    """
     with TemporaryDirectory() as destination_dir:
         parse_all(constants.COURSE_DIR, destination_dir)
         assert os.path.isdir(os.path.join(destination_dir, "course-1"))
@@ -134,7 +136,9 @@ def test_parse_all():
 @pytest.mark.parametrize("s3_links", [True, False])
 @pytest.mark.parametrize("is_published", [True, False])
 def test_parse_all(upload_master_json, s3_links, is_published):
-    """ Test that OCWParser.export_master_json is called with the expected arguments """
+    """
+    Test that OCWParser.export_master_json is called with the expected arguments
+    """
     with patch("ocw_data_parser.utils.is_course_published", return_value=is_published):
         with patch("ocw_data_parser.OCWParser") as mock_parser:
             with TemporaryDirectory() as destination_dir:
@@ -163,7 +167,9 @@ def test_parse_all(upload_master_json, s3_links, is_published):
     ],
 )
 def test_is_course_published(last_published, last_unpublished, is_published):
-    """ Test that the expected value is returned from is_course_published """
+    """
+    Test that the expected value is returned from is_course_published
+    """
     sample_json = {
         "last_published_to_production": last_published,
         "last_unpublishing_date": last_unpublished,
@@ -179,7 +185,9 @@ def test_is_course_published(last_published, last_unpublished, is_published):
 
 
 def test_is_course_published_not_found():
-    """ Test that an error is logged if the 1.json can't be found """
+    """
+    Test that an error is logged if 1.json can't be found
+    """
     with patch("ocw_data_parser.utils.log.error") as mock_log:
         is_course_published("/fake_path")
         mock_log.assert_called_once_with(
@@ -188,7 +196,9 @@ def test_is_course_published_not_found():
 
 
 def test_is_course_published_bad_data():
-    """ Test that an error is logged if the 1.json can't be parsed for dates """
+    """
+    Test that an error is logged if 1.json can't be parsed for dates
+    """
     sample_json = {
         "last_published_to_production": "a b",
         "last_unpublishing_date": "TBA",
