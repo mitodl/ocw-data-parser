@@ -122,15 +122,10 @@ def test_htmlify(ocw_parser):
     assert test_page["text"] in html
 
 
-def test_parse_all(upload_master_json, s3_links, is_published):
+def test_parse_all():
     """ Test that all expected master json files are written to the output directory"""
     with TemporaryDirectory() as destination_dir:
-        parse_all(
-            constants.COURSE_DIR,
-            destination_dir,
-            s3_links=s3_links,
-            upload_master_json=upload_master_json,
-        )
+        parse_all(constants.COURSE_DIR, destination_dir)
         assert os.path.isdir(os.path.join(destination_dir, "course-1"))
         assert os.path.isdir(os.path.join(destination_dir, "course-2"))
 
