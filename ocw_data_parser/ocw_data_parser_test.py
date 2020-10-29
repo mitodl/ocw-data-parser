@@ -289,11 +289,11 @@ def test_course_files(ocw_parser):
     
 def test_course_foreign_files(ocw_parser):
     """Make sure course_foreign_files include the right fields with the correct default values"""
-    assert ocw_parser.master_json['course_foreign_files'][0] == {
+    assert ocw_parser.parsed_json['course_foreign_files'][0] == {
         'link': 'http://ocw.mit.edu/ans7870/18/18.06/tools/Applets_sound/uropmovie.html',
         'parent_uid': 'b5785e071ddb991cf3dfd7cc469e6397'
     }
-    assert len(ocw_parser.master_json['course_foreign_files']) == 20
+    assert len(ocw_parser.parsed_json['course_foreign_files']) == 20
 
 
 def test_other_information_text(ocw_parser):
