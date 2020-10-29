@@ -174,14 +174,15 @@ def test_is_course_published(last_published, last_unpublished, is_published):
         "last_published_to_production": last_published,
         "last_unpublishing_date": last_unpublished,
     }
-    with patch("os.path.exists", return_value=True):
-        with patch("json.load", return_value=sample_json):
-            assert (
-                is_course_published(
-                    "{}/".format(os.path.join(constants.COURSE_DIR, "course-1"))
-                )
-                == is_published
+    with patch("os.path.exists", return_value=True), patch(
+        "json.load", return_value=sample_json
+    ):
+        assert (
+            is_course_published(
+                "{}/".format(os.path.join(constants.COURSE_DIR, "course-1"))
             )
+            == is_published
+        )
 
 
 def test_is_course_published_not_found():
@@ -203,15 +204,16 @@ def test_is_course_published_bad_data():
         "last_published_to_production": "a b",
         "last_unpublishing_date": "TBA",
     }
-    with patch("ocw_data_parser.utils.log.error") as mock_log:
-        with patch("os.path.exists", return_value=True):
-            with patch("ocw_data_parser.utils.glob", return_value=["1.json"]):
-                with patch("json.load", return_value=sample_json):
-                    is_course_published(
-                        "{}/".format(os.path.join(constants.COURSE_DIR, "course-1"))
-                    )
-                    mock_log.assert_called_once_with(
-                        "Error encountered reading 1.json for %s",
-                        "ocw_data_parser/test_json/course_dir/course-1/",
-                        exc_info=True,
-                    )
+    with patch("ocw_data_parser.utils.log.error") as mock_log, patch(
+        "os.path.exists", return_value=True
+    ), patch("ocw_data_parser.utils.glob", return_value=["1.json"]), patch(
+        "json.load", return_value=sample_json
+    ):
+        is_course_published(
+            "{}/".format(os.path.join(constants.COURSE_DIR, "course-1"))
+        )
+        mock_log.assert_called_once_with(
+            "Error encountered reading 1.json for %s",
+            "ocw_data_parser/test_json/course_dir/course-1/",
+            exc_info=True,
+        )
