@@ -513,9 +513,9 @@ class OCWParser(object):
                         self.master_json, bucket_base_url + filename)
 
     def upload_all_media_to_s3(self, upload_master_json=False):
-        s3_bucket = self.get_s3_bucket()
         self.update_s3_content()
         if upload_master_json:
+            s3_bucket = self.get_s3_bucket()
             self.upload_master_json_to_s3(s3_bucket)
 
     def upload_master_json_to_s3(self, s3_bucket):
