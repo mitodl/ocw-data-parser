@@ -12,16 +12,16 @@ import ocw_data_parser.ocw_data_parser
 log = logging.getLogger(__name__)
 
 
-def update_file_location(master_json, new_file_location, obj_uid=""):
+def update_file_location(parsed_json, new_file_location, obj_uid=""):
     if obj_uid:
-        for p in master_json["course_pages"]:
+        for p in parsed_json["course_pages"]:
             if p["uid"] == obj_uid:
                 p["file_location"] = new_file_location
-        for j in master_json["course_files"]:
+        for j in parsed_json["course_files"]:
             if j["uid"] == obj_uid:
                 j["file_location"] = new_file_location
     else:
-        for media in master_json["course_foreign_files"]:
+        for media in parsed_json["course_foreign_files"]:
             original_filename = media["link"].split("/")[-1]
             passed_filename = new_file_location.split("/")[-1]
             if original_filename == passed_filename:

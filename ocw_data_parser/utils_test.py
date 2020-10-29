@@ -67,7 +67,7 @@ def test_get_binary_data_none(ocw_parser):
         len(ocw_parser.master_json["course_files"]) > 0
     ), "test course has no local media to test"
     found = False
-    for media in ocw_parser.master_json["course_files"]:
+    for media in ocw_parser.parsed_json["course_files"]:
         if "_datafield_image" not in media and "_datafield_file" not in media:
             found = True
             data = get_binary_data(media)
@@ -110,8 +110,8 @@ def test_htmlify(ocw_parser):
     """
     Test that calling htmlify on a page returns some html and a filename
     """
-    master_json = ocw_parser.get_master_json()
-    course_pages = master_json.get("course_pages")
+    parsed_json = ocw_parser.get_parsed_json()
+    course_pages = parsed_json.get("course_pages")
     test_page = course_pages[0]
     filename, html = htmlify(test_page)
     assert filename == test_page["uid"] + "_" + test_page["short_url"] + ".html"
