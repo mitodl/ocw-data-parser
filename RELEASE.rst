@@ -1,6 +1,12 @@
 Release Notes
 =============
 
+Version 0.14.1
+--------------
+
+- Strip whitespace from external links (#73)
+- Various refactoring (#66)
+
 Version 0.14.0 (Released October 27, 2020)
 --------------
 
