@@ -212,8 +212,8 @@ def test_export_parsed_json_s3_links(ocw_parser_s3):
     Test that exporting the parsed json file with s3 links doesn't error
     """
     ocw_parser_s3.export_parsed_json(s3_links=True)
-    assert os.path.isdir(os.path.join(ocw_parser_s3.destination_dir, "parsed"))
-
+    json_path = os.path.join(ocw_parser_s3.destination_dir, "{}_parsed.json".format(ocw_parser_s3.parsed_json["short_url"]))
+    assert os.path.exists(json_path) and os.path.getsize(json_path) > 0
 
 def test_export_parsed_json_no_s3_bucket_name(ocw_parser_s3, caplog):
     """
@@ -264,7 +264,7 @@ def test_uid(ocw_parser, course_id):
     ocw_parser.export_parsed_json()
     with open(os.path.join(constants.SINGLE_COURSE_DIR, "jsons/1.json"), "r") as first_json:
         first_json_data = json.loads(first_json.read())
-        with open(os.path.join(ocw_parser.destination_dir, "parsed/parsed.json"), "r") as parsed_json:
+        with open(os.path.join(ocw_parser.destination_dir, "{}_parsed.json".format(course_id)), "r") as parsed_json:
             parsed_json_data = json.loads(parsed_json.read())
             assert first_json_data["_uid"] == parsed_json_data["uid"]
 
