@@ -402,9 +402,9 @@ class OCWParser(object):
         file_path = self.destination_dir + "master/master.json"
         with open(file_path, "w") as file:
             if self.beautify_parsed_json:
-                json.dump(self.parsed_json, file, sort_keys=True, indent=4)
+                json.dump(self.parsed_json, json_file, sort_keys=True, indent=4)
             else:
-                json.dump(self.parsed_json, file)
+                json.dump(self.parsed_json, json_file)
         log.info("Extracted %s", file_path)
 
     def find_course_image_s3_link(self):
