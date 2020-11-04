@@ -395,12 +395,12 @@ class OCWParser(object):
                  path_to_containing_folder)
         self.export_parsed_json()
 
-    def export_master_json(self, s3_links=False, upload_master_json=False):
+    def export_parsed_json(self, s3_links=False, upload_parsed_json=False):
         if s3_links:
-            self.upload_all_media_to_s3(upload_master_json=upload_master_json)
-        os.makedirs(self.destination_dir + "master/", exist_ok=True)
-        file_path = self.destination_dir + "master/master.json"
-        with open(file_path, "w") as file:
+            self.upload_all_media_to_s3(upload_parsed_json=upload_parsed_json)
+        os.makedirs(self.destination_dir, exist_ok=True)
+        file_path = os.path.join(self.destination_dir, "{}_parsed.json".format(self.parsed_json["short_url"]))
+        with open(file_path, "w") as json_file:
             if self.beautify_parsed_json:
                 json.dump(self.parsed_json, json_file, sort_keys=True, indent=4)
             else:
@@ -512,17 +512,17 @@ class OCWParser(object):
                     update_file_location(
                         self.parsed_json, bucket_base_url + filename)
 
-    def upload_all_media_to_s3(self, upload_master_json=False):
+    def upload_all_media_to_s3(self, upload_parsed_json=False):
         self.update_s3_content()
-        if upload_master_json:
+        if upload_parsed_json:
             s3_bucket = self.get_s3_bucket()
-            self.upload_master_json_to_s3(s3_bucket)
+            self.upload_parsed_json_to_s3(s3_bucket)
 
-    def upload_master_json_to_s3(self, s3_bucket):
-        uid = self.master_json.get('uid')
-        if uid:
-            s3_bucket.put_object(Key=self.s3_target_folder + f"{uid}_master.json",
-                                 Body=json.dumps(self.master_json),
+    def upload_parsed_json_to_s3(self, s3_bucket):
+        short_url = self.parsed_json.get('short_url')
+        if short_url:
+            s3_bucket.put_object(Key=self.s3_target_folder + f"{short_url}_parsed.json",
+                                 Body=json.dumps(self.parsed_json),
                                  ACL='private')
         else:
             log.error("No short_url found in parsed_json")
