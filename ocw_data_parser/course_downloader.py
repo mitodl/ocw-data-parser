@@ -13,10 +13,11 @@ An example of the expected format can be found in example_courses.json
 class OCWDownloader(object):
     def __init__(self,
                  courses_json="",
+                 prefix="PROD",
                  destination_dir="",
                  s3_bucket_name="",
                  overwrite=False,
-                 prefix="PROD"):
+        ):
         self.courses_json = courses_json
         self.destination_dir = destination_dir
         self.s3_bucket_name = s3_bucket_name
