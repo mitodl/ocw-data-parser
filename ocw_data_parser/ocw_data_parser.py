@@ -395,9 +395,9 @@ class OCWParser(object):
                  path_to_containing_folder)
         self.export_master_json()
 
-    def export_master_json(self, s3_links=False):
+    def export_master_json(self, s3_links=False, upload_master_json=False):
         if s3_links:
-            self.update_s3_content()
+            self.upload_all_media_to_s3(upload_master_json=upload_master_json)
         os.makedirs(self.destination_dir + "master/", exist_ok=True)
         file_path = self.destination_dir + "master/master.json"
         with open(file_path, "w") as file:
@@ -513,9 +513,9 @@ class OCWParser(object):
                         self.master_json, bucket_base_url + filename)
 
     def upload_all_media_to_s3(self, upload_master_json=False):
-        s3_bucket = self.get_s3_bucket()
         self.update_s3_content()
         if upload_master_json:
+            s3_bucket = self.get_s3_bucket()
             self.upload_master_json_to_s3(s3_bucket)
 
     def upload_master_json_to_s3(self, s3_bucket):
