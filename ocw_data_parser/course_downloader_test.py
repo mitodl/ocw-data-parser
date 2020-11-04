@@ -41,15 +41,15 @@ def test_download_courses_no_destination_dir(ocw_downloader):
         mock.assert_any_call(ocw_downloader.destination_dir)
 
 
-def test_download_courses_skip_nonmatching_prefix(ocw_downloader):
+@pytest.mark.parametrize("prefix,downloaded", [["PROD", True], ["QA", False]])
+def test_download_courses_skip_nonmatching_prefix(ocw_downloader, prefix, downloaded):
     """
-    Download the courses, but delete the destination dir first, then ensure 
-    the process runs without error and the directory is recreated
+    Courses that don't match the specified prefix should not be downloaded
     """
-    ocw_downloader.prefix = "QA"
+    ocw_downloader.prefix = prefix
     ocw_downloader.download_courses()
     downloaded_path = os.path.join(ocw_downloader.destination_dir, constants.S3_TEST_COURSE_ROOT)
-    assert os.path.exists(downloaded_path) is False
+    assert os.path.exists(downloaded_path) is downloaded
 
 
 def test_download_courses_missing_course(ocw_downloader, capfd):
