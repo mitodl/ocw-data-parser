@@ -1,7 +1,7 @@
 Release Notes
 =============
 
-Version 0.15.0
+Version 0.15.0 (Released November 05, 2020)
 --------------
 
 - Add option to upload master json to s3 in parse_all function (#77)
