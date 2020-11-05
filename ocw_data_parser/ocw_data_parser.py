@@ -304,6 +304,7 @@ class OCWParser(object):
             "title": self.jsons[0].get("title"),
             "description": self.jsons[1].get("description"),
             "other_information_text": self.jsons[1].get("other_information_text"),
+            "first_published_to_production": self.jsons[0].get("first_published_to_production"),
             "last_published_to_production": self.jsons[0].get("last_published_to_production"),
             "last_unpublishing_date": self.jsons[0].get("last_unpublishing_date"),
             "retirement_date": self.jsons[0].get("retirement_date"),
