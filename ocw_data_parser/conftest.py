@@ -56,7 +56,7 @@ def ocw_parser_s3(ocw_parser):
 
 @pytest.fixture(autouse=True)
 def course_id(ocw_parser):
-    yield ocw_parser.master_json["short_url"]
+    yield ocw_parser.parsed_json["short_url"]
 
 @pytest.fixture(autouse=True)
 def ocw_downloader(s3_bucket_populated):

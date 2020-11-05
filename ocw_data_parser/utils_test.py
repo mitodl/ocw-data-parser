@@ -26,15 +26,15 @@ def test_update_local_file_location(ocw_parser):
     """
     ocw_parser.extract_media_locally()
     assert (
-        len(ocw_parser.master_json["course_files"]) > 0
+        len(ocw_parser.parsed_json["course_files"]) > 0
     ), "test course has no local media to test"
-    test_file = ocw_parser.master_json["course_files"][0]
+    test_file = ocw_parser.parsed_json["course_files"][0]
     original_location = test_file["file_location"]
     update_file_location(
-        ocw_parser.master_json, "test_location", obj_uid=test_file["uid"]
+        ocw_parser.parsed_json, "test_location", obj_uid=test_file["uid"]
     )
     assert (
-        original_location != ocw_parser.master_json["course_files"][0]["file_location"]
+        original_location != ocw_parser.parsed_json["course_files"][0]["file_location"]
     ), "failed to update local file location"
 
 
@@ -45,17 +45,17 @@ def test_update_foreign_file_location(ocw_parser):
     """
     ocw_parser.extract_foreign_media_locally()
     assert (
-        len(ocw_parser.master_json["course_foreign_files"]) > 0
+        len(ocw_parser.parsed_json["course_foreign_files"]) > 0
     ), "test course has no foreign media to test"
-    test_file = ocw_parser.master_json["course_foreign_files"][0]
+    test_file = ocw_parser.parsed_json["course_foreign_files"][0]
     original_location = test_file["file_location"]
     original_filename = test_file["link"].split("/")[-1]
     update_file_location(
-        ocw_parser.master_json, os.path.join("test_location/", original_filename)
+        ocw_parser.parsed_json, os.path.join("test_location/", original_filename)
     )
     assert (
         original_location
-        != ocw_parser.master_json["course_foreign_files"][0]["file_location"]
+        != ocw_parser.parsed_json["course_foreign_files"][0]["file_location"]
     ), "failed to update foreign file location"
 
 
@@ -64,10 +64,10 @@ def test_get_binary_data_none(ocw_parser):
     Find the first file without a datafield property and attempt to get the binary data from it
     """
     assert (
-        len(ocw_parser.master_json["course_files"]) > 0
+        len(ocw_parser.parsed_json["course_files"]) > 0
     ), "test course has no local media to test"
     found = False
-    for media in ocw_parser.master_json["course_files"]:
+    for media in ocw_parser.parsed_json["course_files"]:
         if "_datafield_image" not in media and "_datafield_file" not in media:
             found = True
             data = get_binary_data(media)
@@ -110,8 +110,8 @@ def test_htmlify(ocw_parser):
     """
     Test that calling htmlify on a page returns some html and a filename
     """
-    master_json = ocw_parser.get_master_json()
-    course_pages = master_json.get("course_pages")
+    parsed_json = ocw_parser.get_parsed_json()
+    course_pages = parsed_json.get("course_pages")
     test_page = course_pages[0]
     filename, html = htmlify(test_page)
     assert filename == test_page["uid"] + "_" + test_page["short_url"] + ".html"
@@ -124,7 +124,7 @@ def test_htmlify(ocw_parser):
 
 def test_parse_all():
     """
-    Test that all expected master json files are written to the output directory
+    Test that all expected parsed json files are written to the output directory
     """
     with TemporaryDirectory() as destination_dir:
         parse_all(constants.COURSE_DIR, destination_dir)
@@ -132,12 +132,12 @@ def test_parse_all():
         assert os.path.isdir(os.path.join(destination_dir, "course-2"))
 
 
-@pytest.mark.parametrize("upload_master_json", [True, False])
+@pytest.mark.parametrize("upload_parsed_json", [True, False])
 @pytest.mark.parametrize("s3_links", [True, False])
 @pytest.mark.parametrize("is_published", [True, False])
-def test_parse_all(upload_master_json, s3_links, is_published):
+def test_parse_all(upload_parsed_json, s3_links, is_published):
     """
-    Test that OCWParser.export_master_json is called with the expected arguments
+    Test that OCWParser.export_parsed_json is called with the expected arguments
     """
     with patch("ocw_data_parser.utils.is_course_published", return_value=is_published):
         with patch("ocw_data_parser.OCWParser") as mock_parser:
@@ -146,13 +146,13 @@ def test_parse_all(upload_master_json, s3_links, is_published):
                     constants.COURSE_DIR,
                     destination_dir,
                     s3_links=s3_links,
-                    upload_master_json=upload_master_json,
+                    upload_parsed_json=upload_parsed_json,
                 )
-                assert mock_parser.return_value.export_master_json.call_count == 2
-                mock_parser.return_value.export_master_json.assert_any_call(
+                assert mock_parser.return_value.export_parsed_json.call_count == 2
+                mock_parser.return_value.export_parsed_json.assert_any_call(
                     s3_links=s3_links,
-                    upload_master_json=(
-                        s3_links and is_published and upload_master_json
+                    upload_parsed_json=(
+                        s3_links and is_published and upload_parsed_json
                     ),
                 )
 

@@ -19,7 +19,7 @@ To parse a single OCW course:
 from ocw_data_parser import OCWParser
 
 your_parser = OCWParser("path/to/course_dir/", "path/to/output/destination/")
-# Extract the media files and master json locally inside output directory for each course directory in course_dir
+# Extract the media files and parsed json locally inside output directory for each course directory in course_dir
 your_parser.extract_media_locally()
 # Extract media files hosted on the Akamai cloud
 your_parser.extract_foreign_media_locally()
@@ -46,10 +46,10 @@ downloader.download_courses()
 ```
 In order for the above to work, you need `awscli` installed on your machine and it needs to be configured for access to the bucket that you specify.
 
-To parse a folder of course folders (like the ones downloaded above) and export only master json with s3 links:
+To parse a folder of course folders (like the ones downloaded above) and export only parsed json with s3 links:
 
 ```python
 from ocw_data_parser import parse_all
 
-parse_all(courses_dir="private/raw_courses", destination_dir="../ocw-to-hugo/private/courses", s3_bucket="open-learning-course-data-ci", s3_links=True, overwrite=True, beautify_master_json=True)
+parse_all(courses_dir="private/raw_courses", destination_dir="../ocw-to-hugo/private/courses", s3_bucket="open-learning-course-data-ci", s3_links=True, overwrite=True, beautify_parsed_json=True)
 ```

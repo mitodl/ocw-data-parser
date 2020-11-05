@@ -12,16 +12,16 @@ import ocw_data_parser.ocw_data_parser
 log = logging.getLogger(__name__)
 
 
-def update_file_location(master_json, new_file_location, obj_uid=""):
+def update_file_location(parsed_json, new_file_location, obj_uid=""):
     if obj_uid:
-        for p in master_json["course_pages"]:
+        for p in parsed_json["course_pages"]:
             if p["uid"] == obj_uid:
                 p["file_location"] = new_file_location
-        for j in master_json["course_files"]:
+        for j in parsed_json["course_files"]:
             if j["uid"] == obj_uid:
                 j["file_location"] = new_file_location
     else:
-        for media in master_json["course_foreign_files"]:
+        for media in parsed_json["course_foreign_files"]:
             original_filename = media["link"].split("/")[-1]
             passed_filename = new_file_location.split("/")[-1]
             if original_filename == passed_filename:
@@ -158,8 +158,8 @@ def parse_all(
     s3_bucket="",
     s3_links=False,
     overwrite=False,
-    beautify_master_json=False,
-    upload_master_json=False,
+    beautify_parsed_json=False,
+    upload_parsed_json=False,
 ):
     for course_dir in os.listdir(courses_dir):
         source_path = "{}/".format(os.path.join(courses_dir, course_dir))
@@ -174,28 +174,20 @@ def parse_all(
                     destination_dir=destination_dir,
                     s3_bucket_name=s3_bucket,
                     s3_target_folder=course_dir,
-                    beautify_master_json=beautify_master_json,
+                    beautify_parsed_json=beautify_parsed_json,
                 )
-                upload_master_json = (
-                    s3_links and upload_master_json and is_course_published(source_path)
+                upload_parsed_json = (
+                    s3_links and upload_parsed_json and is_course_published(source_path)
                 )
-                if upload_master_json:
+                if upload_parsed_json:
                     parser.setup_s3_uploading(
                         s3_bucket,
                         os.environ["AWS_ACCESS_KEY_ID"],
                         os.environ["AWS_SECRET_ACCESS_KEY"],
                         course_dir,
                     )
-                    # just upload master json, and update media links.
+                    # just upload parsed json, and update media links.
                     parser.upload_to_s3 = False
-                parser.export_master_json(
-                    s3_links=s3_links, upload_master_json=upload_master_json
+                parser.export_parsed_json(
+                    s3_links=s3_links, upload_parsed_json=upload_parsed_json
                 )
-                master_path = os.path.join(dest_path, "master")
-                if os.path.isdir(master_path):
-                    for filename in os.listdir(master_path):
-                        shutil.move(
-                            os.path.join(master_path, filename),
-                            os.path.join(dest_path, filename),
-                        )
-                    shutil.rmtree(master_path)
