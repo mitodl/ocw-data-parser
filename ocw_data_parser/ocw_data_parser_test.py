@@ -473,5 +473,5 @@ def test_extract_media_locally(ocw_parser):
 
 def test_publish_date(ocw_parser):
     """Assert that we get first_published_to_production and last_published_to_production"""
-    assert ocw_parser.master_json["first_published_to_production"] == "2010/09/10 10:23:13.887 GMT-4"
-    assert ocw_parser.master_json["last_published_to_production"] == "2019/09/25 17:47:34.670 Universal"
+    assert ocw_parser.parsed_json["first_published_to_production"] == "2010/09/10 10:23:13.887 GMT-4"
+    assert ocw_parser.parsed_json["last_published_to_production"] == "2019/09/25 17:47:34.670 Universal"
