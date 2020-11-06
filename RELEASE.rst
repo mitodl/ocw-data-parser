@@ -1,6 +1,12 @@
 Release Notes
 =============
 
+Version 0.15.1
+--------------
+
+- Add first_published_to_production (#84)
+- refactor master -> parsed and change output file name (#78)
+
 Version 0.15.0 (Released November 05, 2020)
 --------------
 
