@@ -1,7 +1,7 @@
 Release Notes
 =============
 
-Version 0.15.1
+Version 0.15.1 (Released November 06, 2020)
 --------------
 
 - Add first_published_to_production (#84)
