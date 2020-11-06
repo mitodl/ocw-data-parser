@@ -43,7 +43,7 @@ class OCWDownloader(object):
                     if course_id in courses:
                         # make the destination path if it doesn't exist and download all files
                         raw_course_path = os.path.join(
-                            self.destination_dir, "/".join(key_parts[0:-1]))
+                            self.destination_dir, *key_parts[0:-1])
                         if not os.path.exists(raw_course_path):
                             os.makedirs(raw_course_path)
                         dest_filename = os.path.join(
