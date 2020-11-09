@@ -311,6 +311,7 @@ class OCWParser(object):
             "sort_as": self.jsons[0].get("sort_as"),
             "department_number": master_course.split('.')[0] if master_course else "",
             "master_course_number": master_course.split('.')[1] if master_course else "",
+            "other_version_parent_uids": self.jsons[0].get("master_subject"),
             "from_semester": self.jsons[0].get("from_semester"),
             "from_year": self.jsons[0].get("from_year"),
             "to_semester": self.jsons[0].get("to_semester"),

@@ -300,6 +300,10 @@ def test_other_information_text(ocw_parser):
     """other_information_text should be an empty string"""
     assert ocw_parser.parsed_json['other_information_text'] == ''
 
+def test_other_version_parent_uids(ocw_parser):
+    """Make sure other_version_parent_subjects includes a list containing one UID"""
+    assert ocw_parser.master_json['other_version_parent_uids'][0] == "c57db32e19cecbfe65656ede124729fb"
+    assert len(ocw_parser.master_json['other_version_parent_uids']) == 1
 
 def test_course_pages(ocw_parser):
     """assert the output of composing course_pages"""
