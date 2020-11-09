@@ -13,15 +13,16 @@ An example of the expected format can be found in example_courses.json
 class OCWDownloader(object):
     def __init__(self,
                  courses_json="",
-                 env="QA",
+                 prefix="PROD",
                  destination_dir="",
                  s3_bucket_name="",
-                 overwrite=False):
+                 overwrite=False,
+        ):
         self.courses_json = courses_json
-        self.env = env
         self.destination_dir = destination_dir
         self.s3_bucket_name = s3_bucket_name
         self.overwrite = overwrite
+        self.prefix = prefix
 
     def download_courses(self):
         courses = None
@@ -37,12 +38,12 @@ class OCWDownloader(object):
         for page in pages:
             for obj in page["Contents"]:
                 key_parts = obj["Key"].split("/")
-                if len(key_parts) > 3:
+                if len(key_parts) > 3 and key_parts[0] == self.prefix:
                     course_id = key_parts[-3]
                     if course_id in courses:
                         # make the destination path if it doesn't exist and download all files
                         raw_course_path = os.path.join(
-                            self.destination_dir, course_id, "0")
+                            self.destination_dir, *key_parts[0:-1])
                         if not os.path.exists(raw_course_path):
                             os.makedirs(raw_course_path)
                         dest_filename = os.path.join(

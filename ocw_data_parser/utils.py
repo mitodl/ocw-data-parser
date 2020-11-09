@@ -161,33 +161,36 @@ def parse_all(
     beautify_parsed_json=False,
     upload_parsed_json=False,
 ):
-    for course_dir in os.listdir(courses_dir):
-        source_path = "{}/".format(os.path.join(courses_dir, course_dir))
-        dest_path = os.path.join(destination_dir, course_dir)
-        if os.path.isdir(source_path):
-            if os.path.exists(dest_path) and overwrite:
-                shutil.rmtree(dest_path)
-            if not os.path.exists(dest_path):
-                os.makedirs(dest_path)
-                parser = ocw_data_parser.OCWParser(
-                    course_dir=source_path,
-                    destination_dir=destination_dir,
-                    s3_bucket_name=s3_bucket,
-                    s3_target_folder=course_dir,
-                    beautify_parsed_json=beautify_parsed_json,
-                )
-                upload_parsed_json = (
-                    s3_links and upload_parsed_json and is_course_published(source_path)
-                )
-                if upload_parsed_json:
-                    parser.setup_s3_uploading(
-                        s3_bucket,
-                        os.environ["AWS_ACCESS_KEY_ID"],
-                        os.environ["AWS_SECRET_ACCESS_KEY"],
-                        course_dir,
+    for root, dirs, files in os.walk(courses_dir):
+        if len(dirs) == 0 and len(files) > 0:
+            path, folder = os.path.split(root)
+            courses_dir, course_dir = os.path.split(path)
+            source_path = "{}/".format(os.path.join(courses_dir, course_dir))
+            dest_path = os.path.join(destination_dir, course_dir)
+            if os.path.isdir(source_path):
+                if os.path.exists(dest_path) and overwrite:
+                    shutil.rmtree(dest_path)
+                if not os.path.exists(dest_path):
+                    os.makedirs(dest_path)
+                    parser = ocw_data_parser.OCWParser(
+                        course_dir=source_path,
+                        destination_dir=destination_dir,
+                        s3_bucket_name=s3_bucket,
+                        s3_target_folder=course_dir,
+                        beautify_parsed_json=beautify_parsed_json,
                     )
+                    upload_parsed_json = (
+                        s3_links and upload_parsed_json and is_course_published(source_path)
+                        )
+                    if upload_parsed_json:
+                        parser.setup_s3_uploading(
+                            s3_bucket,
+                            os.environ["AWS_ACCESS_KEY_ID"],
+                            os.environ["AWS_SECRET_ACCESS_KEY"],
+                            course_dir,
+                        )
                     # just upload parsed json, and update media links.
-                    parser.upload_to_s3 = False
-                parser.export_parsed_json(
-                    s3_links=s3_links, upload_parsed_json=upload_parsed_json
-                )
+                        parser.upload_to_s3 = False
+                    parser.export_parsed_json(
+                        s3_links=s3_links, upload_parsed_json=upload_parsed_json
+                    )
