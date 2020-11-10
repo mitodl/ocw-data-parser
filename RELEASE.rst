@@ -1,7 +1,7 @@
 Release Notes
 =============
 
-Version 0.16.0
+Version 0.16.0 (Released November 10, 2020)
 --------------
 
 - fix test (#88)
