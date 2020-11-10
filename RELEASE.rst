@@ -1,6 +1,13 @@
 Release Notes
 =============
 
+Version 0.16.0
+--------------
+
+- fix test (#88)
+- Download S3 files to original full path and adjust parse_all to find them (#82)
+- add master_subject array to master json (#74)
+
 Version 0.15.1 (Released November 06, 2020)
 --------------
 
