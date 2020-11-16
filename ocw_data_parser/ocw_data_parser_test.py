@@ -4,7 +4,7 @@ from pathlib import Path
 import pytest
 from mock import patch
 from tempfile import TemporaryDirectory
-from ocw_data_parser.ocw_data_parser import CustomHTMLParser, OCWParser
+from ocw_data_parser.ocw_data_parser import CustomHTMLParser, OCWParser, load_raw_jsons
 import ocw_data_parser.test_constants as constants
 import logging
 
@@ -76,6 +76,23 @@ def test_load_raw_jsons_invalid_file(ocw_parser):
                       destination_dir=destination_dir,
                       static_prefix=constants.STATIC_PREFIX)
         os.remove(os.path.join(constants.SINGLE_COURSE_DIR, "jsons/999.json"))
+
+
+def test_load_raw_jsons():
+    """Test that load_raw_jsons """
+    with TemporaryDirectory() as project_dir:
+        for n in range(1, 4000):
+            g = int(n / 1000)
+            parent_dir = Path(project_dir) / str(g)
+            os.makedirs(parent_dir, exist_ok=True)
+            filepath = parent_dir / f"{n}.json"
+
+            with open(filepath, "w") as f:
+                f.write("{\"a\":2,\"b\":3,\"c\":4}")
+
+        jsons = load_raw_jsons(project_dir)
+
+    assert [_json['order_index'] for _json in jsons] == list(range(1, 4000))
 
 
 def test_upload_all_data_to_s3(ocw_parser_s3, s3_bucket):
