@@ -330,8 +330,8 @@ class OCWParser(object):
             "tags": [{"name": tag} for tag in self.jsons[0].get("subject")],
             "instructors": [
                 {key: value for key, value in instructor.items() if key != 'mit_id'}
-                 for instructor in instructors if instructors
-            ],
+                 for instructor in instructors
+            ] if instructors else [],
             "language": self.jsons[0].get("language"),
             "extra_course_number": self.jsons[0].get("linked_course_number"),
             "course_collections": self.jsons[0].get("category_features"),

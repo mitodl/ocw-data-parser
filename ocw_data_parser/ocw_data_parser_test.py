@@ -353,7 +353,7 @@ def test_instructors(ocw_parser, has_instructors):
     """instructors list should be present as a list in the output"""
     expected_instructor = {**ocw_parser.jsons[0]["instructors"][0]}
     if not has_instructors:
-        ocw_parser.jsons[0]["instructors"] = []
+        ocw_parser.jsons[0]["instructors"] = None
     ocw_parser.generate_parsed_json()
     del expected_instructor["mit_id"]
     assert ocw_parser.parsed_json["instructors"] == ([expected_instructor] if has_instructors else [])
