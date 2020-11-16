@@ -2,6 +2,7 @@ import logging
 from html.parser import HTMLParser
 import os
 import copy
+from pathlib import Path
 import shutil
 import base64
 from requests import get
@@ -26,35 +27,36 @@ class CustomHTMLParser(HTMLParser):
 
 def load_raw_jsons(course_dir):
     """ Loads all course raw jsons sequentially and returns them in an ordered list """
+    course_dir = Path(course_dir)
     dict_of_all_course_dirs = dict()
-    for directory in os.listdir(course_dir):
-        dir_in_question = course_dir + directory + "/"
-        if os.path.isdir(dir_in_question):
-            dict_of_all_course_dirs[directory] = []
+    for dir_in_question in course_dir.iterdir():
+        if dir_in_question.is_dir():
+            dict_of_all_course_dirs[dir_in_question.name] = []
             for file in os.listdir(dir_in_question):
                 if is_json(file):
                     # Turn file name to int to enforce sequential json loading later
-                    dict_of_all_course_dirs[directory].append(
+                    dict_of_all_course_dirs[dir_in_question.name].append(
                         int(file.split(".")[0]))
-            dict_of_all_course_dirs[directory] = sorted(
-                dict_of_all_course_dirs[directory])
+            dict_of_all_course_dirs[dir_in_question.name] = sorted(
+                dict_of_all_course_dirs[dir_in_question.name])
 
     # Load JSONs into memory
     loaded_jsons = []
     for key, val in dict_of_all_course_dirs.items():
-        path_to_subdir = course_dir + key + "/"
+        path_to_subdir = course_dir / key
         for json_index in val:
-            file_path = path_to_subdir + str(json_index) + ".json"
+            file_path = path_to_subdir / f"{str(json_index) + '.json'}"
             loaded_json = load_json_file(file_path)
             if loaded_json:
                 # Add the json file name (used for error reporting)
-                loaded_json["actual_file_name"] = str(json_index) + ".json"
+                loaded_json["actual_file_name"] = f"{json_index}.json"
                 # The only representation we have of ordering is the file name
                 loaded_json["order_index"] = int(json_index)
                 loaded_jsons.append(loaded_json)
             else:
                 log.error("Failed to load %s", file_path)
 
+    loaded_jsons = sorted(loaded_jsons, key=lambda d: d['order_index'])
     return loaded_jsons
 
 
