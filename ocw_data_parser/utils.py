@@ -155,11 +155,11 @@ def is_course_published(source_path):
 def parse_all(
     courses_dir,
     destination_dir,
+    upload_parsed_json,
     s3_bucket="",
     s3_links=False,
     overwrite=False,
-    beautify_parsed_json=False,
-    upload_parsed_json=False,
+    beautify_parsed_json=False
 ):
     for root, dirs, files in os.walk(courses_dir):
         if len(dirs) == 0 and len(files) > 0:
@@ -179,10 +179,10 @@ def parse_all(
                         s3_target_folder=course_dir,
                         beautify_parsed_json=beautify_parsed_json,
                     )
-                    upload_parsed_json = (
+                    perform_upload = (
                         s3_links and upload_parsed_json and is_course_published(source_path)
                         )
-                    if upload_parsed_json:
+                    if perform_upload:
                         parser.setup_s3_uploading(
                             s3_bucket,
                             os.environ["AWS_ACCESS_KEY_ID"],
@@ -192,5 +192,5 @@ def parse_all(
                     # just upload parsed json, and update media links.
                         parser.upload_to_s3 = False
                     parser.export_parsed_json(
-                        s3_links=s3_links, upload_parsed_json=upload_parsed_json
+                        s3_links=s3_links, upload_parsed_json=perform_upload
                     )
