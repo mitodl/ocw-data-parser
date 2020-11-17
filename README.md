@@ -51,5 +51,7 @@ To parse a folder of course folders (like the ones downloaded above) and export 
 ```python
 from ocw_data_parser import parse_all
 
-parse_all(courses_dir="private/raw_courses", destination_dir="../ocw-to-hugo/private/courses", s3_bucket="open-learning-course-data-ci", s3_links=True, overwrite=True, beautify_parsed_json=True)
+parse_all(courses_dir="private/raw_courses", destination_dir="../ocw-to-hugo/private/courses", upload_parsed_json=False, s3_bucket="open-learning-course-data-ci", s3_links=True, overwrite=True, beautify_parsed_json=True)
 ```
+
+If you desire to upload the parsed JSON to S3, simply set `upload_parsed_json` to `True`.
