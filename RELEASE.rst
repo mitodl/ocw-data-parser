@@ -1,7 +1,7 @@
 Release Notes
 =============
 
-Version 0.17.0
+Version 0.17.0 (Released November 19, 2020)
 --------------
 
 - Fix null instructors error (#90)
