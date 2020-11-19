@@ -1,6 +1,12 @@
 Release Notes
 =============
 
+Version 0.17.0 (Released November 19, 2020)
+--------------
+
+- Fix null instructors error (#90)
+- Fix load_raw_jsons sorting (#91)
+
 Version 0.16.0 (Released November 10, 2020)
 --------------
 
