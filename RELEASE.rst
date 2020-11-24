@@ -1,7 +1,7 @@
 Release Notes
 =============
 
-Version 0.18.0
+Version 0.18.0 (Released November 24, 2020)
 --------------
 
 - fix upload_parsed_json argument in parse_all (#94)
