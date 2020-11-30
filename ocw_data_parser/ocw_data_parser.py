@@ -44,7 +44,7 @@ def load_raw_jsons(course_dir):
     for key, val in dict_of_all_course_dirs.items():
         path_to_subdir = course_dir / key
         for json_index in val:
-            file_path = path_to_subdir / f"{str(json_index) + '.json'}"
+            file_path = path_to_subdir / f"{json_index}.json"
             with open(file_path) as f:
                 loaded_json = json.load(f)
             if loaded_json:
