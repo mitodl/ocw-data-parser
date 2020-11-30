@@ -1,9 +1,9 @@
 import os
+from pathlib import Path
 import shutil
 import pytest
 from mock import patch
 import filecmp
-from tempfile import TemporaryDirectory
 import logging
 log = logging.getLogger(__name__)
 import ocw_data_parser.test_constants as constants
@@ -35,10 +35,10 @@ def test_download_courses_no_destination_dir(ocw_downloader):
     Download the courses, but delete the destination dir first, then ensure 
     the process runs without error and the directory is recreated
     """
-    with patch.object(os, "makedirs", wraps=os.makedirs) as mock:
+    with patch("os.makedirs", wraps=os.makedirs) as mock:
         shutil.rmtree(ocw_downloader.destination_dir)
         ocw_downloader.download_courses()
-        mock.assert_any_call(ocw_downloader.destination_dir)
+        mock.assert_any_call(Path(ocw_downloader.destination_dir), exist_ok=True)
 
 
 @pytest.mark.parametrize("prefix,downloaded", [["PROD", True], ["QA", False]])
@@ -77,5 +77,5 @@ def test_download_courses_overwrite(ocw_downloader):
                 if folder == "0":
                     path, course = os.path.split(path)
                     for json_file in files:
-                        downloaded_path = os.path.join(path, course, "0", json_file)
+                        downloaded_path = Path(path, course, "0", json_file)
                         mock.assert_any_call(downloaded_path)

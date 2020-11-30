@@ -9,8 +9,6 @@ import ocw_data_parser.test_constants as constants
 from ocw_data_parser.utils import (
     update_file_location,
     get_binary_data,
-    get_correct_path,
-    load_json_file,
     print_error,
     print_success,
     htmlify,
@@ -77,21 +75,6 @@ def test_get_binary_data_none(ocw_parser):
     assert found, "test course has no file without a datafield property"
 
 
-def test_get_correct_path_none(ocw_parser):
-    """
-    Test passing in invalid data to get_correct_path
-    """
-    assert get_correct_path(None) == ""
-
-
-def test_load_invalid_json_file(ocw_parser):
-    """
-    Test passing in an invalid JSON file (this one)
-    """
-    with pytest.raises(json.decoder.JSONDecodeError):
-        load_json_file("ocw_data_parser/ocw_data_parser_test.py")
-
-
 def test_print_error(ocw_parser):
     """
     Test printing an error doesn't throw an exception
@@ -120,16 +103,6 @@ def test_htmlify(ocw_parser):
     assert "<body>" in html
     assert "</body>" in html
     assert test_page["text"] in html
-
-
-def test_parse_all():
-    """
-    Test that all expected parsed json files are written to the output directory
-    """
-    with TemporaryDirectory() as destination_dir:
-        parse_all(constants.COURSE_DIR, destination_dir)
-        assert os.path.isdir(os.path.join(destination_dir, "course-1"))
-        assert os.path.isdir(os.path.join(destination_dir, "course-2"))
 
 
 @pytest.mark.parametrize("upload_parsed_json", [True, False])
@@ -189,31 +162,9 @@ def test_is_course_published_not_found():
     """
     Test that an error is logged if 1.json can't be found
     """
-    with patch("ocw_data_parser.utils.log.error") as mock_log:
-        is_course_published("/fake_path")
-        mock_log.assert_called_once_with(
-            "Could not find 1.json for %s", "/fake_path", exc_info=True
-        )
-
-
-def test_is_course_published_bad_data():
-    """
-    Test that an error is logged if 1.json can't be parsed for dates
-    """
-    sample_json = {
-        "last_published_to_production": "a b",
-        "last_unpublishing_date": "TBA",
-    }
-    with patch("ocw_data_parser.utils.log.error") as mock_log, patch(
-        "os.path.exists", return_value=True
-    ), patch("ocw_data_parser.utils.glob", return_value=["1.json"]), patch(
-        "json.load", return_value=sample_json
-    ):
-        is_course_published(
-            "{}/".format(os.path.join(constants.COURSE_DIR, "course-1"))
-        )
-        mock_log.assert_called_once_with(
-            "Error encountered reading 1.json for %s",
-            "ocw_data_parser/test_json/course_dir/course-1/",
-            exc_info=True,
-        )
+    invalid_path = "/fake_path"
+    with pytest.raises(Exception) as ex:
+        is_course_published(invalid_path)
+    assert ex.value.args[0] == (
+        f"Could not find 1.json for {invalid_path}"
+    )
