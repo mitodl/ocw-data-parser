@@ -1,22 +1,24 @@
 """OCWParser and related functions"""
 
-import logging
-from html.parser import HTMLParser
-import os
-import copy
-from pathlib import Path
 import base64
-from requests import get
+import copy
+from html.parser import HTMLParser
+import json
+import logging
+import os
+from pathlib import Path
+from urllib.parse import urljoin
+
 import boto3
+from requests import get
+from smart_open import smart_open
+
 from ocw_data_parser.utils import (
     update_file_location,
     get_binary_data,
     find_all_values_for_key,
     htmlify,
 )
-import json
-from smart_open import smart_open
-from urllib.parse import urljoin
 
 log = logging.getLogger(__name__)
 
@@ -67,8 +69,8 @@ def load_raw_jsons(course_dir):
         path_to_subdir = course_dir / key
         for json_index in val:
             file_path = path_to_subdir / f"{json_index}.json"
-            with open(file_path) as f:  # pylint: disable=invalid-name
-                loaded_json = json.load(f)
+            with open(file_path) as file:
+                loaded_json = json.load(file)
             if loaded_json:
                 # Add the json file name (used for error reporting)
                 loaded_json["actual_file_name"] = f"{json_index}.json"
@@ -289,7 +291,7 @@ def gather_foreign_media(jsons):
         "text",
     ]
     large_media_links = []
-    for course_json in jsons:
+    for course_json in jsons:  # pylint: disable=too-many-nested-blocks
         for key in containing_keys:
             if (
                 key in course_json
@@ -336,10 +338,13 @@ def compose_open_learning_library_related(jsons):
     return open_learning_library_related
 
 
-class OCWParser:
-    """Parses JSON files from OCW's Plone database and outputs combined JSON files with S3 links for media"""
+class OCWParser:  # pylint: disable=too-many-instance-attributes
+    """
+    Parses JSON files from OCW's Plone database and outputs combined JSON files
+    with S3 links for media
+    """
 
-    def __init__(
+    def __init__(  # pylint: disable=too-many-arguments
         self,
         course_dir=None,
         destination_dir=None,
@@ -391,6 +396,12 @@ class OCWParser:
         self.beautify_parsed_json = beautify_parsed_json
 
     def get_parsed_json(self):
+        """
+        Return parsed JSON
+
+        Returns:
+            dict: The combined JSON
+        """
         return self.parsed_json
 
     def setup_s3_uploading(
@@ -400,6 +411,15 @@ class OCWParser:
         s3_bucket_secret_access_key,
         folder="",
     ):
+        """
+        Configure S3 uploading
+
+        Args:
+            s3_bucket_name (str): Bucket name
+            s3_bucket_access_key (str): S3 access key
+            s3_bucket_secret_access_key (str): S3 secret
+            folder (str): Target folder
+        """
         self.upload_to_s3 = True
         self.s3_bucket_name = s3_bucket_name
         self.s3_bucket_access_key = s3_bucket_access_key
@@ -407,7 +427,12 @@ class OCWParser:
         self.s3_target_folder = folder
 
     def generate_parsed_json(self):
-        """ Generates parsed JSON file for the course """
+        """
+        Generates parsed JSON file for the course
+
+        Returns:
+            dict: The combined JSON for the course
+        """
         if not self.jsons:
             self.jsons = load_raw_jsons(self.course_dir)
 
@@ -486,6 +511,9 @@ class OCWParser:
         return new_json
 
     def extract_media_locally(self):
+        """
+        Output media files to a local path
+        """
         if not self.media_jsons:
             log.debug("You have to compose media for course first!")
             return
@@ -502,15 +530,15 @@ class OCWParser:
         for page in compose_pages(self.jsons):
             filename, html = htmlify(page)
             if filename and html:
-                with open(path_to_containing_folder / filename, "w") as f:
-                    f.write(html)
+                with open(path_to_containing_folder / filename, "w") as file:
+                    file.write(html)
         for media_json in self.media_jsons:
             file_name = media_json.get("_uid") + "_" + media_json.get("id")
-            d = get_binary_data(media_json)
-            if d:
-                with open(path_to_containing_folder / file_name, "wb") as f:
-                    data = base64.b64decode(d)
-                    f.write(data)
+            b64_data = get_binary_data(media_json)
+            if b64_data:
+                with open(path_to_containing_folder / file_name, "wb") as file:
+                    binary_data = base64.b64decode(b64_data)
+                    file.write(binary_data)
                 update_file_location(
                     self.parsed_json,
                     urljoin(url_path_to_media, file_name),
@@ -524,6 +552,9 @@ class OCWParser:
         self.export_parsed_json()
 
     def extract_foreign_media_locally(self):
+        """
+        Extract foreign media files to a local directory
+        """
         if not self.large_media_links:
             log.debug("Your course has 0 foreign media files")
             return
@@ -548,6 +579,13 @@ class OCWParser:
         self.export_parsed_json()
 
     def export_parsed_json(self, s3_links=False, upload_parsed_json=False):
+        """
+        Export parsed JSON to a file
+
+        Args:
+            s3_links (bool): Also upload media files to S3
+            upload_parsed_json (bool): And upload the parsed JSON file as well
+        """
         if s3_links:
             self.upload_all_media_to_s3(upload_parsed_json=upload_parsed_json)
         os.makedirs(self.destination_dir, exist_ok=True)
@@ -562,6 +600,9 @@ class OCWParser:
         log.info("Extracted %s", file_path)
 
     def find_course_image_s3_link(self):
+        """
+        Find the course image and use it to set the thumbnail in the parsed JSON
+        """
         bucket_base_url = self.get_s3_base_url()
         if bucket_base_url:
             for file in self.media_jsons:
@@ -586,7 +627,13 @@ class OCWParser:
                         "thumbnail_image_description"
                     ] = self.course_thumbnail_image_alt_text
 
-    def get_s3_base_url(self):
+    def get_s3_base_url(self):  # pylint: disable=inconsistent-return-statements
+        """
+        Get the S3 URL with target folder included if it's set
+
+        Returns:
+            str: The S3 bucket URL
+        """
         if not self.s3_bucket_name:
             log.error("Please set your s3 bucket name")
             return
@@ -598,6 +645,12 @@ class OCWParser:
         return bucket_base_url
 
     def get_s3_bucket(self):
+        """
+        Update the thumbnail image and return the S3 bucket
+
+        Returns:
+            s3.Bucket: A boto3 S3 bucket
+        """
         self.find_course_image_s3_link()
         return boto3.resource(
             "s3",
@@ -605,7 +658,7 @@ class OCWParser:
             aws_secret_access_key=self.s3_bucket_secret_access_key,
         ).Bucket(self.s3_bucket_name)
 
-    def update_s3_content(
+    def update_s3_content(  # pylint: disable=too-many-arguments, too-many-locals, too-many-branches, too-many-statements
         self,
         upload=None,
         update_pages=True,
@@ -614,6 +667,17 @@ class OCWParser:
         update_external_media=True,
         chunk_size=1000000,
     ):
+        """
+        Update file_location for parsed JSON content and optionally upload to S3
+
+        Args:
+            upload (bool): If true, also upload media files to S3 after updating file_location
+            update_pages (bool): If true, update content relating to course pages
+            update_media (bool): If true, update content relating to media files
+            media_uid_filter (???):
+            update_external_media (bool): If true, update foreign media file content
+            chunk_size (int): Chunk size to use when uploading to S3
+        """
         upload_to_s3 = self.upload_to_s3
         if upload:
             upload_to_s3 = upload
@@ -621,8 +685,8 @@ class OCWParser:
         if bucket_base_url:
             s3_bucket = self.get_s3_bucket()
             if update_pages:
-                for p in compose_pages(self.jsons):
-                    filename, html = htmlify(p)
+                for page in compose_pages(self.jsons):
+                    filename, html = htmlify(page)
                     if filename and html:
                         if upload_to_s3:
                             s3_bucket.put_object(
@@ -631,7 +695,7 @@ class OCWParser:
                                 ACL="public-read",
                             )
                         update_file_location(
-                            self.parsed_json, bucket_base_url + filename, p.get("uid")
+                            self.parsed_json, bucket_base_url + filename, page.get("uid")
                         )
             if update_media:
                 if media_uid_filter:
@@ -645,7 +709,8 @@ class OCWParser:
                 for file in media_jsons:
                     uid = file.get("_uid")
                     filename = uid + "_" + file.get("id")
-                    if not get_binary_data(file):
+                    b64_data = get_binary_data(file)
+                    if not b64_data:
                         log.error(
                             "Could not load binary data for file %s in json file %s for course %s",
                             filename,
@@ -653,12 +718,11 @@ class OCWParser:
                             self.parsed_json.get("short_url"),
                         )
                         continue
-                    else:
-                        d = base64.b64decode(get_binary_data(file))
-                    if upload_to_s3 and d:
+                    binary_data = base64.b64decode(b64_data)
+                    if upload_to_s3 and binary_data:
                         s3_bucket.put_object(
                             Key=self.s3_target_folder + filename,
-                            Body=d,
+                            Body=binary_data,
                             ACL="public-read",
                         )
                     update_file_location(
@@ -695,9 +759,9 @@ class OCWParser:
                         )
                         with smart_open(
                             s3_uri + self.s3_target_folder + filename, "wb"
-                        ) as s3:
+                        ) as handle:
                             for chunk in response.iter_content(chunk_size=chunk_size):
-                                s3.write(chunk)
+                                handle.write(chunk)
                         response.close()
                         update_file_location(
                             self.parsed_json, bucket_base_url + filename
@@ -712,12 +776,24 @@ class OCWParser:
                     update_file_location(self.parsed_json, bucket_base_url + filename)
 
     def upload_all_media_to_s3(self, upload_parsed_json=False):
+        """
+        Update content and upload to S3
+
+        Args:
+            upload_parsed_json (bool): If True, upload parsed JSON to S3
+        """
         self.update_s3_content()
         if upload_parsed_json:
             s3_bucket = self.get_s3_bucket()
             self.upload_parsed_json_to_s3(s3_bucket)
 
     def upload_parsed_json_to_s3(self, s3_bucket):
+        """
+        Upload parsed JSON to S3
+
+        Args:
+            s3_bucket (s3.Bucket): An S3 bucket
+        """
         short_url = self.parsed_json.get("short_url")
         if short_url:
             s3_bucket.put_object(
@@ -729,11 +805,14 @@ class OCWParser:
             log.error("No short_url found in parsed_json")
 
     def upload_course_image(self):
+        """
+        Upload course image and parsed JSON to S3
+        """
         s3_bucket = self.get_s3_bucket()
         self.update_s3_content(upload=False)
         for file in self.media_jsons:
             uid = file.get("_uid")
-            if uid == self.course_image_uid or uid == self.course_thumbnail_image_uid:
+            if uid in (self.course_image_uid, self.course_thumbnail_image_uid):
                 self.update_s3_content(
                     update_pages=False,
                     update_external_media=False,
