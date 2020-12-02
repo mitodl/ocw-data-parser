@@ -1,3 +1,5 @@
+"""OCWParser and related functions"""
+
 import logging
 from html.parser import HTMLParser
 import os
@@ -20,6 +22,7 @@ log = logging.getLogger(__name__)
 
 
 class CustomHTMLParser(HTMLParser):
+    """Capture links from an HTML file"""
     def __init__(self):
         super().__init__()
         self.output_list = []
@@ -28,9 +31,22 @@ class CustomHTMLParser(HTMLParser):
         if tag == "a":
             self.output_list.append(dict(attrs).get("href"))
 
+    def error(self, message):
+        """Raise parsing errors"""
+        raise Exception(message)
+
 
 def load_raw_jsons(course_dir):
-    """ Loads all course raw jsons sequentially and returns them in an ordered list """
+    """
+    Loads all course raw jsons sequentially and returns them in an ordered list
+
+    Args:
+        course_dir (str or Path): Course directory path
+
+    Returns:
+        list of dict:
+            The JSON from the course sorted by order index
+    """
     course_dir = Path(course_dir)
     dict_of_all_course_dirs = dict()
     for dir_in_question in course_dir.iterdir():
@@ -50,7 +66,7 @@ def load_raw_jsons(course_dir):
         path_to_subdir = course_dir / key
         for json_index in val:
             file_path = path_to_subdir / f"{json_index}.json"
-            with open(file_path) as f:
+            with open(file_path) as f:  # pylint: disable=invalid-name
                 loaded_json = json.load(f)
             if loaded_json:
                 # Add the json file name (used for error reporting)
@@ -97,6 +113,16 @@ def _compose_page_dict(json_file):
 
 
 def compose_pages(jsons):
+    """
+    Create page dicts from course JSONs
+
+    Args:
+        jsons (list of dict): Course input
+
+    Returns:
+        list of dict:
+            Course page information
+    """
     page_types = [
         "CourseHomeSection",
         "CourseSection",
@@ -106,7 +132,7 @@ def compose_pages(jsons):
     ]
     pages = []
     for json_file in jsons:
-        if (
+        if (  # pylint: disable=too-many-boolean-expressions
             json_file["_content_type"] == "text/html"
             and "technical_location" in json_file
             and json_file["technical_location"]
@@ -136,6 +162,15 @@ def _compose_media_dict(media_json):
 
 
 def compose_media(jsons):
+    """
+    Create media dicts from course JSONs
+
+    Args:
+        jsons (list of dict): Input from a course
+
+    Returns:
+        list of dict: The media dicts from the course
+    """
     media_jsons = []
     all_media_types = find_all_values_for_key(jsons, "_content_type")
     for json_file in jsons:
@@ -147,6 +182,15 @@ def compose_media(jsons):
 
 
 def compose_embedded_media(jsons):
+    """
+    Create dicts for embedded media from course JSONs
+
+    Args:
+        jsons (list of dict): Course input
+
+    Returns:
+        list of dict: Embedded media info
+    """
     linked_media_parents = dict()
     for json_file in jsons:
         if (
@@ -189,6 +233,17 @@ def compose_embedded_media(jsons):
 
 
 def compose_course_features(jsons, course_pages):
+    """
+    Create course feature dicts from input JSONs
+
+    Args:
+        jsons (list of dict): Course info
+        course_pages (list of dict): Course page info generated from compose_pages
+
+    Returns:
+        list of dict:
+            Course feature info
+    """
     course_features = {}
     feature_requirements = jsons[0].get("feature_requirements")
     if feature_requirements:
@@ -215,6 +270,15 @@ def compose_course_features(jsons, course_pages):
 
 
 def gather_foreign_media(jsons):
+    """
+    Information about links to foreign media
+
+    Args:
+        jsons (list of dict): Course input
+
+    Returns:
+        list of dict: Information about each link to foreign media
+    """
     containing_keys = [
         "bottomtext",
         "courseoutcomestext",
@@ -224,20 +288,34 @@ def gather_foreign_media(jsons):
         "text",
     ]
     large_media_links = []
-    for j in jsons:
+    for course_json in jsons:
         for key in containing_keys:
-            if key in j and isinstance(j[key], str) and "/ans7870/" in j[key]:
-                p = CustomHTMLParser()
-                p.feed(j[key])
-                if p.output_list:
-                    for link in p.output_list:
+            if (
+                    key in course_json and
+                    isinstance(course_json[key], str) and
+                    "/ans7870/" in course_json[key]
+            ):
+                parser = CustomHTMLParser()
+                parser.feed(course_json[key])
+                if parser.output_list:
+                    for link in parser.output_list:
                         if link and "/ans7870/" in link and "." in link.split("/")[-1]:
-                            obj = {"parent_uid": j.get("_uid"), "link": link.strip()}
+                            obj = {"parent_uid": course_json.get("_uid"), "link": link.strip()}
                             large_media_links.append(obj)
     return large_media_links
 
 
 def compose_open_learning_library_related(jsons):
+    """
+    Compile list of related courses
+
+    Args:
+        jsons (list of dict): Course input
+
+    Returns:
+        list of dict:
+            Info about related courses
+    """
     open_learning_library_related = []
     courselist_features = jsons[0].get("courselist_features")
     if courselist_features:
@@ -255,6 +333,7 @@ def compose_open_learning_library_related(jsons):
 
 
 class OCWParser:
+    """Parses JSON files from OCW's Plone database and outputs combined JSON files with S3 links for media"""
     def __init__(
         self,
         course_dir=None,
@@ -270,7 +349,7 @@ class OCWParser:
     ):
         if not (course_dir and destination_dir) and not loaded_jsons:
             raise Exception(
-                "OCWParser must be initated with course_dir and destination_dir or loaded_jsons"
+                "OCWParser must be initiated with course_dir and destination_dir or loaded_jsons"
             )
 
         if loaded_jsons is None:
@@ -605,7 +684,10 @@ class OCWParser:
                     filename = media["link"].split("/")[-1]
                     response = get(media["link"], stream=True)
                     if upload_to_s3 and response:
-                        s3_uri = f"s3://{self.s3_bucket_access_key}:{self.s3_bucket_secret_access_key}@{self.s3_bucket_name}/"
+                        s3_uri = (
+                            f"s3://{self.s3_bucket_access_key}:{self.s3_bucket_secret_access_key}@"
+                            f"{self.s3_bucket_name}/"
+                        )
                         with smart_open(
                             s3_uri + self.s3_target_folder + filename, "wb"
                         ) as s3:

@@ -1,17 +1,24 @@
+"""Test fixtures for ocw-data-parser"""
+
 import os
-import shutil
-import pytest
-import responses
+from tempfile import TemporaryDirectory
+
 import boto3
 from moto import mock_s3
+import pytest
+import responses
+
 import ocw_data_parser.test_constants as constants
 from ocw_data_parser.ocw_data_parser import OCWParser
 from ocw_data_parser.course_downloader import OCWDownloader
-from tempfile import TemporaryDirectory
+
+
+# pylint: disable=redefined-outer-name
 
 
 @pytest.fixture(autouse=True, scope="session")
 def s3_bucket():
+    """Fake S3 bucket for testing"""
     with mock_s3():
         conn = boto3.client(
             "s3", aws_access_key_id="testing", aws_secret_access_key="testing"
@@ -19,7 +26,7 @@ def s3_bucket():
         conn.create_bucket(Bucket="testing")
         responses.add_passthru("https://")
         responses.add_passthru("http://")
-        s3 = boto3.resource(
+        s3 = boto3.resource(  # pylint: disable=invalid-name
             "s3", aws_access_key_id="testing", aws_secret_access_key="testing"
         )
         s3_bucket = s3.Bucket(name="testing")
@@ -28,6 +35,7 @@ def s3_bucket():
 
 @pytest.fixture(autouse=True, scope="function")
 def s3_bucket_populated(s3_bucket):
+    """Fake S3 bucket with files"""
     if os.path.isdir(constants.COURSE_DIR):
         for course in os.listdir(constants.COURSE_DIR):
             course_dir = os.path.join(constants.COURSE_DIR, course, "jsons")
@@ -57,6 +65,7 @@ def ocw_parser():
 
 @pytest.fixture(autouse=True, scope="function")
 def ocw_parser_s3(ocw_parser):
+    """OCWParser for testing with fake values for S3"""
     ocw_parser.setup_s3_uploading(
         s3_bucket_name="testing",
         s3_bucket_access_key="testing",
@@ -68,11 +77,13 @@ def ocw_parser_s3(ocw_parser):
 
 @pytest.fixture(autouse=True)
 def course_id(ocw_parser):
+    """The course id for the testing course used for ocw_parser"""
     yield ocw_parser.parsed_json["short_url"]
 
 
 @pytest.fixture(autouse=True)
 def ocw_downloader(s3_bucket_populated):
+    """An instance of OCWDownloader for testing"""
     with TemporaryDirectory() as destination_dir:
         yield OCWDownloader(
             "ocw_data_parser/test_json/courses.json",
