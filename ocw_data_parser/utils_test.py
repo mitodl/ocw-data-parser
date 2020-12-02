@@ -1,9 +1,10 @@
+"""Tests for utility functions"""
+
 import os
-import json
-import pytest
 from tempfile import TemporaryDirectory
 
 from mock import patch
+import pytest
 
 import ocw_data_parser.test_constants as constants
 from ocw_data_parser.utils import (
@@ -17,6 +18,7 @@ from ocw_data_parser.utils import (
 )
 
 
+# pylint: disable=unused-argument
 def test_update_local_file_location(ocw_parser):
     """
     Extract local course media, update the location of one of the files

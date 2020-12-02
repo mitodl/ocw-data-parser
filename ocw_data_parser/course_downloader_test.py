@@ -1,13 +1,17 @@
+"""Tests for OCWDownloader"""
+
+import filecmp
+import logging
 import os
 from pathlib import Path
 import shutil
-import pytest
+
 from mock import patch
-import filecmp
-import logging
+import pytest
+
+import ocw_data_parser.test_constants as constants
 
 log = logging.getLogger(__name__)
-import ocw_data_parser.test_constants as constants
 
 """
 Tests for course_downlader
@@ -67,7 +71,7 @@ def test_download_courses_missing_course(ocw_downloader, capfd):
     """
     ocw_downloader.courses_json = "ocw_data_parser/test_json/courses_missing.json"
     ocw_downloader.download_courses()
-    out, err = capfd.readouterr()
+    out, _ = capfd.readouterr()
     assert "missing was not found in the s3 bucket testing" in out
 
 
