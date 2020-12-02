@@ -23,6 +23,7 @@ log = logging.getLogger(__name__)
 
 class CustomHTMLParser(HTMLParser):
     """Capture links from an HTML file"""
+
     def __init__(self):
         super().__init__()
         self.output_list = []
@@ -291,16 +292,19 @@ def gather_foreign_media(jsons):
     for course_json in jsons:
         for key in containing_keys:
             if (
-                    key in course_json and
-                    isinstance(course_json[key], str) and
-                    "/ans7870/" in course_json[key]
+                key in course_json
+                and isinstance(course_json[key], str)
+                and "/ans7870/" in course_json[key]
             ):
                 parser = CustomHTMLParser()
                 parser.feed(course_json[key])
                 if parser.output_list:
                     for link in parser.output_list:
                         if link and "/ans7870/" in link and "." in link.split("/")[-1]:
-                            obj = {"parent_uid": course_json.get("_uid"), "link": link.strip()}
+                            obj = {
+                                "parent_uid": course_json.get("_uid"),
+                                "link": link.strip(),
+                            }
                             large_media_links.append(obj)
     return large_media_links
 
@@ -334,6 +338,7 @@ def compose_open_learning_library_related(jsons):
 
 class OCWParser:
     """Parses JSON files from OCW's Plone database and outputs combined JSON files with S3 links for media"""
+
     def __init__(
         self,
         course_dir=None,
