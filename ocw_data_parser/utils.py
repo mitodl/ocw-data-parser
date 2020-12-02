@@ -2,8 +2,8 @@ import os
 import shutil
 import json
 import logging
+from pathlib import Path
 from datetime import datetime
-from glob import glob
 
 import pytz
 
@@ -39,26 +39,6 @@ def get_binary_data(json_obj):
     return None
 
 
-def is_json(path_to_file):
-    return path_to_file.split("/")[-1].split(".")[1] == "json"
-
-
-def get_correct_path(directory):
-    if not directory:
-        return ""
-    return directory if directory[-1] == "/" else directory + "/"
-
-
-def load_json_file(path):
-    with open(path, "r") as f:
-        try:
-            loaded_json = json.load(f)
-            return loaded_json
-        except json.JSONDecodeError as err:
-            log.exception("Failed to load %s", path)
-            raise err
-
-
 def print_error(message):
     print("\x1b[0;31;40m Error:\x1b[0m " + message)
 
@@ -90,9 +70,9 @@ def htmlify(page):
     return None, None
 
 
-def format_date(date_str):
+def parse_date(date_str):
     """
-    Converts date from 2016/02/02 20:28:06 US/Eastern to 2016-02-02 20:28:06-05:00
+    Parse date string in a format like 2016/02/02 20:28:06 US/Eastern
 
     Args:
         date_str (String): Datetime object as string in the following format (2016/02/02 20:28:06 US/Eastern)
@@ -120,35 +100,34 @@ def is_course_published(source_path):
     Determine if the course is published or not.
 
     Args:
-        source_path(str): The path to the raw course JSON
+        source_path(str or Path): The path to the raw course JSON
 
     Returns:
         boolean: True if published, False if not
     """
+    source_path = Path(source_path) if source_path else None
+
     # Collect last modified timestamps for all course files of the course
     is_published = True
-    matches = [
-        y for x in os.walk(source_path) for y in glob(os.path.join(x[0], "1.json"))
-    ]
-    if matches and os.path.exists(matches[0]):
-        try:
-            with open(matches[0], "r") as infile:
-                first_json = json.load(infile)
-                last_published_to_production = format_date(
-                    first_json.get("last_published_to_production", None)
-                )
-                last_unpublishing_date = format_date(
-                    first_json.get("last_unpublishing_date", None)
-                )
-                if last_published_to_production is None or (
-                    last_unpublishing_date
-                    and (last_unpublishing_date > last_published_to_production)
-                ):
-                    is_published = False
-        except:  # pylint: disable=bare-except
-            log.exception("Error encountered reading 1.json for %s", source_path)
-    else:
-        log.exception("Could not find 1.json for %s", source_path)
+    matches = list(source_path.rglob("1.json"))
+    if not matches:
+        raise Exception(f"Could not find 1.json for {source_path}")
+
+    with open(matches[0], "r") as infile:
+        first_json = json.load(infile)
+
+    last_published_to_production = parse_date(
+        first_json.get("last_published_to_production", None)
+    )
+    last_unpublishing_date = parse_date(
+        first_json.get("last_unpublishing_date", None)
+    )
+    if last_published_to_production is None or (
+        last_unpublishing_date
+        and (last_unpublishing_date > last_published_to_production)
+    ):
+        is_published = False
+
     return is_published
 
 
@@ -159,38 +138,48 @@ def parse_all(
     s3_bucket="",
     s3_links=False,
     overwrite=False,
-    beautify_parsed_json=False
+    beautify_parsed_json=False,
+    courses_json_path=None
 ):
-    for root, dirs, files in os.walk(courses_dir):
-        if len(dirs) == 0 and len(files) > 0:
-            path, folder = os.path.split(root)
-            courses_dir, course_dir = os.path.split(path)
-            source_path = "{}/".format(os.path.join(courses_dir, course_dir))
-            dest_path = os.path.join(destination_dir, course_dir)
-            if os.path.isdir(source_path):
-                if os.path.exists(dest_path) and overwrite:
-                    shutil.rmtree(dest_path)
-                if not os.path.exists(dest_path):
-                    os.makedirs(dest_path)
-                    parser = ocw_data_parser.OCWParser(
-                        course_dir=source_path,
-                        destination_dir=destination_dir,
-                        s3_bucket_name=s3_bucket,
-                        s3_target_folder=course_dir,
-                        beautify_parsed_json=beautify_parsed_json,
-                    )
-                    perform_upload = (
-                        s3_links and upload_parsed_json and is_course_published(source_path)
-                        )
-                    if perform_upload:
-                        parser.setup_s3_uploading(
-                            s3_bucket,
-                            os.environ["AWS_ACCESS_KEY_ID"],
-                            os.environ["AWS_SECRET_ACCESS_KEY"],
-                            course_dir,
-                        )
-                    # just upload parsed json, and update media links.
-                        parser.upload_to_s3 = False
-                    parser.export_parsed_json(
-                        s3_links=s3_links, upload_parsed_json=perform_upload
-                    )
+    source_path = Path(courses_dir) if courses_dir else None
+    destination_dir = Path(destination_dir) if destination_dir else None
+
+    course_list = None
+    if courses_json_path is not None:
+        with open(courses_json_path) as f:
+            course_list = json.load(f)['courses']
+
+    for first_json_path in source_path.rglob("1.json"):
+        source_path = first_json_path.parent.parent
+        course_dir = source_path.name
+
+        if course_list is not None and course_dir not in course_list:
+            continue
+
+        dest_path = destination_dir / course_dir
+        if dest_path.exists() and overwrite:
+            shutil.rmtree(dest_path)
+        if not dest_path.exists():
+            os.makedirs(dest_path)
+            parser = ocw_data_parser.OCWParser(
+                course_dir=source_path,
+                destination_dir=destination_dir,
+                s3_bucket_name=s3_bucket,
+                s3_target_folder=course_dir,
+                beautify_parsed_json=beautify_parsed_json,
+            )
+            perform_upload = (
+                s3_links and upload_parsed_json and is_course_published(source_path)
+            )
+            if perform_upload:
+                parser.setup_s3_uploading(
+                    s3_bucket,
+                    os.environ["AWS_ACCESS_KEY_ID"],
+                    os.environ["AWS_SECRET_ACCESS_KEY"],
+                    course_dir,
+                )
+                # just upload parsed json, and update media links.
+                parser.upload_to_s3 = False
+            parser.export_parsed_json(
+                s3_links=s3_links, upload_parsed_json=perform_upload
+            )

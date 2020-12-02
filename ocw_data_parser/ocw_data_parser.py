@@ -3,14 +3,13 @@ from html.parser import HTMLParser
 import os
 import copy
 from pathlib import Path
-import shutil
 import base64
 from requests import get
 import boto3
-from ocw_data_parser.utils import update_file_location, get_binary_data, is_json, get_correct_path, load_json_file, \
-    find_all_values_for_key, htmlify
+from ocw_data_parser.utils import update_file_location, get_binary_data, find_all_values_for_key, htmlify
 import json
 from smart_open import smart_open
+from urllib.parse import urljoin
 
 log = logging.getLogger(__name__)
 
@@ -32,11 +31,11 @@ def load_raw_jsons(course_dir):
     for dir_in_question in course_dir.iterdir():
         if dir_in_question.is_dir():
             dict_of_all_course_dirs[dir_in_question.name] = []
-            for file in os.listdir(dir_in_question):
-                if is_json(file):
+            for file in dir_in_question.iterdir():
+                if file.suffix == ".json":
                     # Turn file name to int to enforce sequential json loading later
                     dict_of_all_course_dirs[dir_in_question.name].append(
-                        int(file.split(".")[0]))
+                        int(file.stem))
             dict_of_all_course_dirs[dir_in_question.name] = sorted(
                 dict_of_all_course_dirs[dir_in_question.name])
 
@@ -45,8 +44,9 @@ def load_raw_jsons(course_dir):
     for key, val in dict_of_all_course_dirs.items():
         path_to_subdir = course_dir / key
         for json_index in val:
-            file_path = path_to_subdir / f"{str(json_index) + '.json'}"
-            loaded_json = load_json_file(file_path)
+            file_path = path_to_subdir / f"{json_index}.json"
+            with open(file_path) as f:
+                loaded_json = json.load(f)
             if loaded_json:
                 # Add the json file name (used for error reporting)
                 loaded_json["actual_file_name"] = f"{json_index}.json"
@@ -221,10 +221,10 @@ def compose_open_learning_library_related(jsons):
     return open_learning_library_related
 
 
-class OCWParser(object):
+class OCWParser:
     def __init__(self,
-                 course_dir="",
-                 destination_dir="",
+                 course_dir=None,
+                 destination_dir=None,
                  static_prefix="",
                  loaded_jsons=None,
                  upload_to_s3=False,
@@ -240,9 +240,9 @@ class OCWParser(object):
         if loaded_jsons is None:
             loaded_jsons = []
 
-        self.course_dir = get_correct_path(
+        self.course_dir = Path(
             course_dir) if course_dir else course_dir
-        self.destination_dir = get_correct_path(
+        self.destination_dir = Path(
             destination_dir) if destination_dir else destination_dir
         self.static_prefix = static_prefix
         self.upload_to_s3 = upload_to_s3
@@ -266,7 +266,8 @@ class OCWParser(object):
             self.jsons = loaded_jsons
         if self.jsons:
             self.parsed_json = self.generate_parsed_json()
-            self.destination_dir += self.jsons[0].get("id") + "/"
+            if self.destination_dir:
+                self.destination_dir = self.destination_dir / self.jsons[0].get("id")
         self.beautify_parsed_json = beautify_parsed_json
 
     def get_parsed_json(self):
@@ -351,24 +352,27 @@ class OCWParser(object):
             log.debug("You have to compose media for course first!")
             return
 
-        path_to_containing_folder = self.destination_dir + "output/" + self.static_prefix \
-            if self.static_prefix else self.destination_dir + "output/static_files/"
-        url_path_to_media = self.static_prefix if self.static_prefix else path_to_containing_folder
+        path_to_containing_folder = (
+            self.destination_dir / "output" / self.static_prefix
+            if self.static_prefix
+            else self.destination_dir / "output" / "static_files"
+        )
+        url_path_to_media = self.static_prefix if self.static_prefix else str(path_to_containing_folder)
         os.makedirs(path_to_containing_folder, exist_ok=True)
         for page in compose_pages(self.jsons):
             filename, html = htmlify(page)
             if filename and html:
-                with open(path_to_containing_folder + filename, "w") as f:
+                with open(path_to_containing_folder / filename, "w") as f:
                     f.write(html)
         for media_json in self.media_jsons:
             file_name = media_json.get("_uid") + "_" + media_json.get("id")
             d = get_binary_data(media_json)
             if d:
-                with open(path_to_containing_folder + file_name, "wb") as f:
+                with open(path_to_containing_folder / file_name, "wb") as f:
                     data = base64.b64decode(d)
                     f.write(data)
                 update_file_location(
-                    self.parsed_json, url_path_to_media + file_name, media_json.get("_uid"))
+                    self.parsed_json, urljoin(url_path_to_media, file_name), media_json.get("_uid"))
                 log.info("Extracted %s", file_name)
             else:
                 json_file = media_json["actual_file_name"]
@@ -383,13 +387,16 @@ class OCWParser(object):
             log.debug("Your course has 0 foreign media files")
             return
 
-        path_to_containing_folder = self.destination_dir + 'output/' + self.static_prefix \
-            if self.static_prefix else self.destination_dir + "output/static_files/"
-        url_path_to_media = self.static_prefix if self.static_prefix else path_to_containing_folder
+        path_to_containing_folder = (
+            self.destination_dir / 'output' / self.static_prefix
+            if self.static_prefix else
+            self.destination_dir / "output" / "static_files"
+        )
+        url_path_to_media = self.static_prefix if self.static_prefix else str(path_to_containing_folder)
         os.makedirs(path_to_containing_folder, exist_ok=True)
         for media in self.large_media_links:
             file_name = media["link"].split("/")[-1]
-            with open(path_to_containing_folder + file_name, "wb") as file:
+            with open(path_to_containing_folder / file_name, "wb") as file:
                 response = get(media["link"])
                 file.write(response.content)
             update_file_location(
@@ -403,7 +410,7 @@ class OCWParser(object):
         if s3_links:
             self.upload_all_media_to_s3(upload_parsed_json=upload_parsed_json)
         os.makedirs(self.destination_dir, exist_ok=True)
-        file_path = os.path.join(self.destination_dir, "{}_parsed.json".format(self.parsed_json["short_url"]))
+        file_path = self.destination_dir / "{}_parsed.json".format(self.parsed_json["short_url"])
         with open(file_path, "w") as json_file:
             if self.beautify_parsed_json:
                 json.dump(self.parsed_json, json_file, sort_keys=True, indent=4)
