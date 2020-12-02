@@ -165,6 +165,4 @@ def test_is_course_published_not_found():
     invalid_path = "/fake_path"
     with pytest.raises(Exception) as ex:
         is_course_published(invalid_path)
-    assert ex.value.args[0] == (
-        f"Could not find 1.json for {invalid_path}"
-    )
+    assert ex.value.args[0] == (f"Could not find 1.json for {invalid_path}")

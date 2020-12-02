@@ -119,9 +119,7 @@ def is_course_published(source_path):
     last_published_to_production = parse_date(
         first_json.get("last_published_to_production", None)
     )
-    last_unpublishing_date = parse_date(
-        first_json.get("last_unpublishing_date", None)
-    )
+    last_unpublishing_date = parse_date(first_json.get("last_unpublishing_date", None))
     if last_published_to_production is None or (
         last_unpublishing_date
         and (last_unpublishing_date > last_published_to_production)
@@ -139,7 +137,7 @@ def parse_all(
     s3_links=False,
     overwrite=False,
     beautify_parsed_json=False,
-    courses_json_path=None
+    courses_json_path=None,
 ):
     source_path = Path(courses_dir) if courses_dir else None
     destination_dir = Path(destination_dir) if destination_dir else None
@@ -147,7 +145,7 @@ def parse_all(
     course_list = None
     if courses_json_path is not None:
         with open(courses_json_path) as f:
-            course_list = json.load(f)['courses']
+            course_list = json.load(f)["courses"]
 
     for first_json_path in source_path.rglob("1.json"):
         source_path = first_json_path.parent.parent
