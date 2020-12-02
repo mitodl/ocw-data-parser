@@ -1,20 +1,21 @@
-import os
+"""Tests for OCWParser"""
+
 import json
-from pathlib import Path
-import pytest
-from mock import patch
-from tempfile import TemporaryDirectory
-from ocw_data_parser.ocw_data_parser import CustomHTMLParser, OCWParser, load_raw_jsons
-import ocw_data_parser.test_constants as constants
 import logging
+import os
+from pathlib import Path
+from tempfile import TemporaryDirectory
+from unittest.mock import patch
+
+import pytest
+
+from ocw_data_parser.ocw_data_parser import OCWParser, load_raw_jsons
+import ocw_data_parser.test_constants as constants
 
 log = logging.getLogger(__name__)
 
-"""
-Tests for ocw_data_parser
-"""
 
-
+# pylint: disable=unused-argument
 def test_no_params(ocw_parser):
     """
     Test that an OCWParser with no params raises an exception
@@ -37,9 +38,7 @@ def test_parser_invalid_file(ocw_parser):
     Test instantiating a parser with an improperly named json file in the source directory
     """
     with TemporaryDirectory() as destination_dir:
-        with open(
-            os.path.join(constants.SINGLE_COURSE_DIR, "jsons/test.json"), "w"
-        ) as f:
+        with open(os.path.join(constants.SINGLE_COURSE_DIR, "jsons/test.json"), "w"):
             with pytest.raises(ValueError):
                 OCWParser(
                     course_dir=constants.SINGLE_COURSE_DIR,
@@ -75,8 +74,8 @@ def test_load_raw_jsons_invalid_file(ocw_parser):
     with TemporaryDirectory() as destination_dir:
         with open(
             os.path.join(constants.SINGLE_COURSE_DIR, "jsons/999.json"), "w"
-        ) as f:
-            f.write("{")
+        ) as file:
+            file.write("{")
         with pytest.raises(json.decoder.JSONDecodeError):
             OCWParser(
                 course_dir=constants.SINGLE_COURSE_DIR,
@@ -89,14 +88,14 @@ def test_load_raw_jsons_invalid_file(ocw_parser):
 def test_load_raw_jsons():
     """Test that load_raw_jsons """
     with TemporaryDirectory() as project_dir:
-        for n in range(1, 4000):
-            g = int(n / 1000)
-            parent_dir = Path(project_dir) / str(g)
+        for num in range(1, 4000):
+            group = int(num / 1000)
+            parent_dir = Path(project_dir) / str(group)
             os.makedirs(parent_dir, exist_ok=True)
-            filepath = parent_dir / f"{n}.json"
+            filepath = parent_dir / f"{num}.json"
 
-            with open(filepath, "w") as f:
-                f.write('{"a":2,"b":3,"c":4}')
+            with open(filepath, "w") as file:
+                file.write('{"a":2,"b":3,"c":4}')
 
         jsons = load_raw_jsons(project_dir)
 
@@ -110,48 +109,45 @@ def test_upload_all_data_to_s3(ocw_parser_s3, s3_bucket):
     ocw_parser_s3.upload_all_media_to_s3(upload_parsed_json=True)
     parsed_json = ocw_parser_s3.get_parsed_json()
 
-    for p in parsed_json["course_pages"]:
-        if p["text"]:
+    for page in parsed_json["course_pages"]:
+        if page["text"]:
             for bucket_item in s3_bucket.objects.filter(
                 Prefix=ocw_parser_s3.s3_target_folder
             ):
-                if bucket_item.key in p["file_location"]:
+                if bucket_item.key in page["file_location"]:
                     assert (
                         bucket_item.key
-                        == ocw_parser_s3.s3_target_folder
-                        + p["uid"]
-                        + "_"
-                        + p["short_url"]
-                        + ".html"
+                        == f"{ocw_parser_s3.s3_target_folder}{page['uid']}_{page['short_url'].html}"
                     )
-    for f in parsed_json["course_files"]:
+    for course_file in parsed_json["course_files"]:
         for bucket_item in s3_bucket.objects.filter(
             Prefix=ocw_parser_s3.s3_target_folder
         ):
-            if bucket_item.key in f["file_location"]:
+            if bucket_item.key in course_file["file_location"]:
                 assert (
                     bucket_item.key
-                    == ocw_parser_s3.s3_target_folder + f["uid"] + "_" + f["id"]
+                    == f"{ocw_parser_s3.s3_target_folder}{course_file['uid']}_{course_file['id']}"
                 )
 
-        if f["uid"] == ocw_parser_s3.course_image_uid:
+        if course_file["uid"] == ocw_parser_s3.course_image_uid:
             assert (
-                parsed_json["image_src"] == s3_upload_base() + f["uid"] + "_" + f["id"]
+                parsed_json["image_src"]
+                == f'{s3_upload_base()}{course_file["uid"]}_{course_file["id"]}'
             )
-            assert parsed_json["image_description"] == f["description"]
-        elif f["uid"] == ocw_parser_s3.course_thumbnail_image_uid:
+            assert parsed_json["image_description"] == course_file["description"]
+        elif course_file["uid"] == ocw_parser_s3.course_thumbnail_image_uid:
             assert (
                 parsed_json["thumbnail_image_src"]
-                == s3_upload_base() + f["uid"] + "_" + f["id"]
+                == f'{s3_upload_base()}{course_file["uid"]}_{course_file["id"]}'
             )
-            assert parsed_json["thumbnail_image_description"] == f["description"]
+            assert (
+                parsed_json["thumbnail_image_description"] == course_file["description"]
+            )
 
     for bucket_item in s3_bucket.objects.filter(Prefix=ocw_parser_s3.s3_target_folder):
         if (
             bucket_item.key
-            == ocw_parser_s3.s3_target_folder
-            + parsed_json["short_url"]
-            + "_parsed.json"
+            == f'{ocw_parser_s3.s3_target_folder}{parsed_json["short_url"]}_parsed.json'
         ):
             parsed_json_key = bucket_item.key
     assert parsed_json_key is not None
@@ -223,20 +219,23 @@ def test_upload_course_image(ocw_parser_s3, s3_bucket):
     assert ocw_parser_s3.parsed_json["image_src"] is not None
     assert ocw_parser_s3.parsed_json["thumbnail_image_src"] is not None
 
-    for f in parsed_json["course_files"]:
-        if f["uid"] == ocw_parser_s3.course_image_uid:
+    for course_file in parsed_json["course_files"]:
+        if course_file["uid"] == ocw_parser_s3.course_image_uid:
             assert (
-                parsed_json["image_src"] == s3_upload_base() + f["uid"] + "_" + f["id"]
+                parsed_json["image_src"]
+                == f'{s3_upload_base()}{course_file["uid"]}_{course_file["id"]}'
             )
-            assert parsed_json["image_description"] == f["description"]
-        elif f["uid"] == ocw_parser_s3.course_thumbnail_image_uid:
+            assert parsed_json["image_description"] == course_file["description"]
+        elif course_file["uid"] == ocw_parser_s3.course_thumbnail_image_uid:
             assert (
                 parsed_json["thumbnail_image_src"]
-                == s3_upload_base() + f["uid"] + "_" + f["id"]
+                == f'{s3_upload_base()}{course_file["uid"]}_{course_file["id"]}'
             )
-            assert parsed_json["thumbnail_image_description"] == f["description"]
+            assert (
+                parsed_json["thumbnail_image_description"] == course_file["description"]
+            )
         else:
-            assert f["file_location"]
+            assert course_file["file_location"]
 
 
 def test_upload_course_image_no_s3_bucket_name(ocw_parser_s3, caplog):
@@ -297,31 +296,32 @@ def test_set_s3_bucket_name(ocw_parser_s3):
     """
     Test setting the s3 bucket name
     """
-    assert "testing" == ocw_parser_s3.s3_bucket_name
+    assert ocw_parser_s3.s3_bucket_name == "testing"
 
 
 def test_set_s3_access_key(ocw_parser_s3):
     """
     Test setting the s3 access key
     """
-    assert "testing" == ocw_parser_s3.s3_bucket_access_key
+    assert ocw_parser_s3.s3_bucket_access_key == "testing"
 
 
 def test_set_s3_secret_access_key(ocw_parser_s3):
     """
     Test setting the s3 secret access key
     """
-    assert "testing" == ocw_parser_s3.s3_bucket_secret_access_key
+    assert ocw_parser_s3.s3_bucket_secret_access_key == "testing"
 
 
 def test_set_s3_target_folder(ocw_parser_s3):
     """
     Test setting the s3 target folder
     """
-    assert "course-1" == ocw_parser_s3.s3_target_folder
+    assert ocw_parser_s3.s3_target_folder == "course-1"
 
 
 def s3_upload_base():
+    """Fake URL base for S3"""
     return "https://testing.s3.amazonaws.com/course-1/"
 
 
@@ -388,7 +388,7 @@ def test_other_version_parent_uids(ocw_parser):
 
 def test_course_pages(ocw_parser):
     """assert the output of composing course_pages"""
-    assert len(ocw_parser.parsed_json["course_pages"])
+    assert len(ocw_parser.parsed_json["course_pages"]) > 0
     page = ocw_parser.parsed_json["course_pages"][0]
     page_without_text = {**page}
     del page_without_text["text"]

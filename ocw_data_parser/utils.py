@@ -1,3 +1,5 @@
+"""Utility functions for ocw-data-parser"""
+
 import os
 import shutil
 import json
@@ -23,12 +25,12 @@ def update_file_location(parsed_json, new_file_location, obj_uid=""):
         obj_uid
     """
     if obj_uid:
-        for p in parsed_json["course_pages"]:
-            if p["uid"] == obj_uid:
-                p["file_location"] = new_file_location
-        for j in parsed_json["course_files"]:
-            if j["uid"] == obj_uid:
-                j["file_location"] = new_file_location
+        for page in parsed_json["course_pages"]:
+            if page["uid"] == obj_uid:
+                page["file_location"] = new_file_location
+        for course_file in parsed_json["course_files"]:
+            if course_file["uid"] == obj_uid:
+                course_file["file_location"] = new_file_location
     else:
         for media in parsed_json["course_foreign_files"]:
             original_filename = media["link"].split("/")[-1]
@@ -125,8 +127,12 @@ def parse_date(date_str):
         date_pieces[1] = (
             date_pieces[1][:-4] if "." in date_pieces[1] else date_pieces[1]
         )
-        tz = date_pieces.pop(2)
-        timezone = pytz.timezone(tz) if "GMT" not in tz else pytz.timezone("Etc/" + tz)
+        timezone_piece = date_pieces.pop(2)
+        timezone = (
+            pytz.timezone(timezone_piece)
+            if "GMT" not in timezone_piece
+            else pytz.timezone("Etc/" + timezone_piece)
+        )
         tz_stripped_date = datetime.strptime(" ".join(date_pieces), "%Y-%m-%d %H:%M:%S")
         tz_aware_date = timezone.localize(tz_stripped_date)
         tz_aware_date = tz_aware_date.astimezone(pytz.utc)
@@ -168,7 +174,7 @@ def is_course_published(source_path):
     return is_published
 
 
-def parse_all(
+def parse_all(  # pylint: disable=too-many-arguments, too-many-locals
     courses_dir,
     destination_dir,
     upload_parsed_json,
@@ -191,7 +197,7 @@ def parse_all(
         beautify_parsed_json (bool): Pretty print JSON files which are created
         courses_json_path (str or Path or None): If set, only convert courses listed in this file
     """
-    import ocw_data_parser.ocw_data_parser
+    import ocw_data_parser.ocw_data_parser  # pylint: disable=import-outside-toplevel
 
     courses_dir = Path(courses_dir) if courses_dir else None
     destination_dir = Path(destination_dir) if destination_dir else None

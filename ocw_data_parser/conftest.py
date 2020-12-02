@@ -13,7 +13,7 @@ from ocw_data_parser.ocw_data_parser import OCWParser
 from ocw_data_parser.course_downloader import OCWDownloader
 
 
-# pylint: disable=redefined-outer-name
+# pylint: disable=redefined-outer-name, unused-argument
 
 
 @pytest.fixture(autouse=True, scope="session")

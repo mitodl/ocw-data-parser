@@ -2,8 +2,8 @@
 
 import os
 from tempfile import TemporaryDirectory
+from unittest.mock import patch
 
-from mock import patch
 import pytest
 
 import ocw_data_parser.test_constants as constants
