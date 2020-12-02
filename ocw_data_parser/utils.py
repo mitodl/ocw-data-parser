@@ -191,15 +191,15 @@ def parse_all(
         beautify_parsed_json (bool): Pretty print JSON files which are created
         courses_json_path (str or Path or None): If set, only convert courses listed in this file
     """
-    from ocw_data_parser.ocw_data_parser import OCWParser
+    import ocw_data_parser.ocw_data_parser
 
     courses_dir = Path(courses_dir) if courses_dir else None
     destination_dir = Path(destination_dir) if destination_dir else None
 
     course_list = None
     if courses_json_path is not None:
-        with open(courses_json_path) as f:
-            course_list = json.load(f)["courses"]
+        with open(courses_json_path) as file:
+            course_list = json.load(file)["courses"]
 
     for first_json_path in courses_dir.rglob("1.json"):
         source_path = first_json_path.parent.parent
@@ -213,7 +213,7 @@ def parse_all(
             shutil.rmtree(dest_path)
         if not dest_path.exists():
             os.makedirs(dest_path)
-            parser = OCWParser(
+            parser = ocw_data_parser.OCWParser(
                 course_dir=source_path,
                 destination_dir=destination_dir,
                 s3_bucket_name=s3_bucket,
