@@ -13,6 +13,7 @@ import boto3
 
 class OCWDownloader:  # pylint: disable=too-few-public-methods
     """Downloads input JSON from an S3 bucket"""
+
     def __init__(  # pylint: disable=too-many-arguments
         self,
         courses_json=None,

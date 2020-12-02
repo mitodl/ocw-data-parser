@@ -695,7 +695,9 @@ class OCWParser:  # pylint: disable=too-many-instance-attributes
                                 ACL="public-read",
                             )
                         update_file_location(
-                            self.parsed_json, bucket_base_url + filename, page.get("uid")
+                            self.parsed_json,
+                            bucket_base_url + filename,
+                            page.get("uid"),
                         )
             if update_media:
                 if media_uid_filter:
