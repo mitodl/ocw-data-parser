@@ -1,7 +1,0 @@
-language: python
-python:
-  - "3.8"
-install: pip install -r test_requirements.txt && python setup.py install
-script: pytest --cov --cov-report xml
-after_success:
-  - codecov
