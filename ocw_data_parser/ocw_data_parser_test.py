@@ -346,20 +346,21 @@ def test_uid(ocw_parser, course_id):
 
 def test_course_files(ocw_parser):
     """Make sure course_files include the right fields with the correct default values"""
-    assert len(ocw_parser.parsed_json["course_files"]) == 172
-    assert ocw_parser.parsed_json["course_files"][0] == {
-        "order_index": 6,
-        "uid": "c24518ecda658185c40c2e5eeb72c7fa",
-        "id": "182.png",
-        "parent_uid": "3f3b7835cf477d3ba10b05fbe03cbffa",
-        "title": "182.png",
-        "caption": "",
-        "file_type": "image/png",
-        "alt_text": "",
-        "credit": "",
-        "platform_requirements": "",
-        "description": "",
-        "type": "OCWImage",
+    assert len(ocw_parser.parsed_json['course_files']) == 172
+    assert ocw_parser.parsed_json['course_files'][0] == {
+        'order_index': 6,
+        'uid': 'c24518ecda658185c40c2e5eeb72c7fa',
+        'id': '182.png',
+        'parent_uid': '3f3b7835cf477d3ba10b05fbe03cbffa',
+        'title': '182.png',
+        'caption': '',
+        'file_type': 'image/png',
+        'alt_text': '',
+        'credit': '',
+        'platform_requirements': '',
+        'description': '',
+        'type': 'OCWImage',
+        'file_location': '182.png'
     }
 
 
