@@ -1,9 +1,10 @@
-import os
-import json
-import pytest
-from tempfile import TemporaryDirectory
+"""Tests for utility functions"""
 
-from mock import patch
+import os
+from tempfile import TemporaryDirectory
+from unittest.mock import patch
+
+import pytest
 
 import ocw_data_parser.test_constants as constants
 from ocw_data_parser.utils import (
@@ -17,6 +18,7 @@ from ocw_data_parser.utils import (
 )
 
 
+# pylint: disable=unused-argument
 def test_update_local_file_location(ocw_parser):
     """
     Extract local course media, update the location of one of the files
@@ -165,6 +167,4 @@ def test_is_course_published_not_found():
     invalid_path = "/fake_path"
     with pytest.raises(Exception) as ex:
         is_course_published(invalid_path)
-    assert ex.value.args[0] == (
-        f"Could not find 1.json for {invalid_path}"
-    )
+    assert ex.value.args[0] == (f"Could not find 1.json for {invalid_path}")

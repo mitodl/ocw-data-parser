@@ -23,6 +23,12 @@ jobs:
       - name: Install test dependencies
         run: pip install -r test_requirements.txt && python setup.py install
 
+      - name: Lint
+        run: pylint ./**/*.py
+
+      - name: Check formatting
+        run: black --check .
+
       - name: Tests
         run: pytest . --cov --cov-report xml && coverage xml
 

@@ -1,4 +1,7 @@
+"""Constants for testing"""
+
 import os
+
 
 COURSE_DIR = os.path.join("ocw_data_parser", "test_json", "course_dir")
 COURSE_1_ID = "res-str-001-geographic-information-system-gis-tutorial-january-iap-2016"

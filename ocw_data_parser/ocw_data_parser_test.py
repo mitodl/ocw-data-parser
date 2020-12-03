@@ -1,20 +1,21 @@
-import os
+"""Tests for OCWParser"""
+
 import json
-from pathlib import Path
-import pytest
-from mock import patch
-from tempfile import TemporaryDirectory
-from ocw_data_parser.ocw_data_parser import CustomHTMLParser, OCWParser, load_raw_jsons
-import ocw_data_parser.test_constants as constants
 import logging
+import os
+from pathlib import Path
+from tempfile import TemporaryDirectory
+from unittest.mock import patch
+
+import pytest
+
+from ocw_data_parser.ocw_data_parser import OCWParser, load_raw_jsons
+import ocw_data_parser.test_constants as constants
 
 log = logging.getLogger(__name__)
 
-"""
-Tests for ocw_data_parser
-"""
 
-
+# pylint: disable=unused-argument
 def test_no_params(ocw_parser):
     """
     Test that an OCWParser with no params raises an exception
@@ -28,7 +29,8 @@ def test_parser_loaded_jsons(ocw_parser):
     Test instantiating a parser with preloaded jsons
     """
     assert OCWParser(
-        loaded_jsons=ocw_parser.jsons), "instantiating parser with preloaded jsons failed"
+        loaded_jsons=ocw_parser.jsons
+    ), "instantiating parser with preloaded jsons failed"
 
 
 def test_parser_invalid_file(ocw_parser):
@@ -36,13 +38,14 @@ def test_parser_invalid_file(ocw_parser):
     Test instantiating a parser with an improperly named json file in the source directory
     """
     with TemporaryDirectory() as destination_dir:
-        with open(os.path.join(constants.SINGLE_COURSE_DIR, "jsons/test.json"), "w") as f:
+        with open(os.path.join(constants.SINGLE_COURSE_DIR, "jsons/test.json"), "w"):
             with pytest.raises(ValueError):
-                OCWParser(course_dir=constants.SINGLE_COURSE_DIR,
-                          destination_dir=destination_dir,
-                          static_prefix=constants.STATIC_PREFIX)
-            os.remove(os.path.join(
-                constants.SINGLE_COURSE_DIR, "jsons/test.json"))
+                OCWParser(
+                    course_dir=constants.SINGLE_COURSE_DIR,
+                    destination_dir=destination_dir,
+                    static_prefix=constants.STATIC_PREFIX,
+                )
+            os.remove(os.path.join(constants.SINGLE_COURSE_DIR, "jsons/test.json"))
 
 
 def test_generate_parsed_json_none_source(ocw_parser):
@@ -69,30 +72,34 @@ def test_load_raw_jsons_invalid_file(ocw_parser):
     Add a json file with invalid content to the course_dir and make sure it generates an error
     """
     with TemporaryDirectory() as destination_dir:
-        with open(os.path.join(constants.SINGLE_COURSE_DIR, "jsons/999.json"), "w") as f:
-            f.write("{")
+        with open(
+            os.path.join(constants.SINGLE_COURSE_DIR, "jsons/999.json"), "w"
+        ) as file:
+            file.write("{")
         with pytest.raises(json.decoder.JSONDecodeError):
-            OCWParser(course_dir=constants.SINGLE_COURSE_DIR,
-                      destination_dir=destination_dir,
-                      static_prefix=constants.STATIC_PREFIX)
+            OCWParser(
+                course_dir=constants.SINGLE_COURSE_DIR,
+                destination_dir=destination_dir,
+                static_prefix=constants.STATIC_PREFIX,
+            )
         os.remove(os.path.join(constants.SINGLE_COURSE_DIR, "jsons/999.json"))
 
 
 def test_load_raw_jsons():
     """Test that load_raw_jsons """
     with TemporaryDirectory() as project_dir:
-        for n in range(1, 4000):
-            g = int(n / 1000)
-            parent_dir = Path(project_dir) / str(g)
+        for num in range(1, 4000):
+            group = int(num / 1000)
+            parent_dir = Path(project_dir) / str(group)
             os.makedirs(parent_dir, exist_ok=True)
-            filepath = parent_dir / f"{n}.json"
+            filepath = parent_dir / f"{num}.json"
 
-            with open(filepath, "w") as f:
-                f.write("{\"a\":2,\"b\":3,\"c\":4}")
+            with open(filepath, "w") as file:
+                file.write('{"a":2,"b":3,"c":4}')
 
         jsons = load_raw_jsons(project_dir)
 
-    assert [_json['order_index'] for _json in jsons] == list(range(1, 4000))
+    assert [_json["order_index"] for _json in jsons] == list(range(1, 4000))
 
 
 def test_upload_all_data_to_s3(ocw_parser_s3, s3_bucket):
@@ -102,29 +109,46 @@ def test_upload_all_data_to_s3(ocw_parser_s3, s3_bucket):
     ocw_parser_s3.upload_all_media_to_s3(upload_parsed_json=True)
     parsed_json = ocw_parser_s3.get_parsed_json()
 
-    for p in parsed_json["course_pages"]:
-        if p["text"]:
-            for bucket_item in s3_bucket.objects.filter(Prefix=ocw_parser_s3.s3_target_folder):
-                if bucket_item.key in p["file_location"]:
-                    assert bucket_item.key == ocw_parser_s3.s3_target_folder + \
-                           p["uid"] + "_" + p["short_url"] + ".html"
-    for f in parsed_json["course_files"]:
-        for bucket_item in s3_bucket.objects.filter(Prefix=ocw_parser_s3.s3_target_folder):
-            if bucket_item.key in f["file_location"]:
-                assert bucket_item.key == ocw_parser_s3.s3_target_folder + \
-                       f["uid"] + "_" + f["id"]
+    for page in parsed_json["course_pages"]:
+        if page["text"]:
+            for bucket_item in s3_bucket.objects.filter(
+                Prefix=ocw_parser_s3.s3_target_folder
+            ):
+                if bucket_item.key in page["file_location"]:
+                    assert (
+                        bucket_item.key
+                        == f"{ocw_parser_s3.s3_target_folder}{page['uid']}_{page['short_url']}.html"
+                    )
+    for course_file in parsed_json["course_files"]:
+        for bucket_item in s3_bucket.objects.filter(
+            Prefix=ocw_parser_s3.s3_target_folder
+        ):
+            if bucket_item.key in course_file["file_location"]:
+                assert (
+                    bucket_item.key
+                    == f"{ocw_parser_s3.s3_target_folder}{course_file['uid']}_{course_file['id']}"
+                )
 
-        if f["uid"] == ocw_parser_s3.course_image_uid:
-            assert parsed_json["image_src"] == s3_upload_base(
-            ) + f["uid"] + "_" + f["id"]
-            assert parsed_json["image_description"] == f["description"]
-        elif f["uid"] == ocw_parser_s3.course_thumbnail_image_uid:
-            assert parsed_json["thumbnail_image_src"] == s3_upload_base(
-            ) + f["uid"] + "_" + f["id"]
-            assert parsed_json["thumbnail_image_description"] == f["description"]
+        if course_file["uid"] == ocw_parser_s3.course_image_uid:
+            assert (
+                parsed_json["image_src"]
+                == f'{s3_upload_base()}{course_file["uid"]}_{course_file["id"]}'
+            )
+            assert parsed_json["image_description"] == course_file["description"]
+        elif course_file["uid"] == ocw_parser_s3.course_thumbnail_image_uid:
+            assert (
+                parsed_json["thumbnail_image_src"]
+                == f'{s3_upload_base()}{course_file["uid"]}_{course_file["id"]}'
+            )
+            assert (
+                parsed_json["thumbnail_image_description"] == course_file["description"]
+            )
 
     for bucket_item in s3_bucket.objects.filter(Prefix=ocw_parser_s3.s3_target_folder):
-        if bucket_item.key == ocw_parser_s3.s3_target_folder + parsed_json["short_url"] + "_parsed.json":
+        if (
+            bucket_item.key
+            == f'{ocw_parser_s3.s3_target_folder}{parsed_json["short_url"]}_parsed.json'
+        ):
             parsed_json_key = bucket_item.key
     assert parsed_json_key is not None
 
@@ -138,8 +162,11 @@ def test_upload_all_data_to_s3_no_binary_data(ocw_parser_s3, caplog):
     """
     with patch("ocw_data_parser.ocw_data_parser.get_binary_data", return_value=None):
         ocw_parser_s3.upload_all_media_to_s3()
-        assert "Could not load binary data for file 9dbd5e22e2379a1bb4e844757c445dfd_7UJ4CFRGd-U.srt "\
-        "in json file 15.json for course 18-06-linear-algebra-spring-2010" in [rec.message for rec in caplog.records]
+        assert (
+            "Could not load binary data for file 9dbd5e22e2379a1bb4e844757c445dfd_7UJ4CFRGd-U.srt "
+            "in json file 15.json for course 18-06-linear-algebra-spring-2010"
+            in [rec.message for rec in caplog.records]
+        )
 
 
 def test_upload_all_data_to_s3_large_media_link_upload_error(ocw_parser_s3, caplog):
@@ -149,9 +176,10 @@ def test_upload_all_data_to_s3_large_media_link_upload_error(ocw_parser_s3, capl
 
     with patch("ocw_data_parser.ocw_data_parser.get", return_value=None):
         ocw_parser_s3.upload_all_media_to_s3()
-        assert "Could NOT upload powerMethod.html for course 18-06-linear-algebra-spring-2010" in [
-            rec.message for rec in caplog.records]
-
+        assert (
+            "Could NOT upload powerMethod.html for course 18-06-linear-algebra-spring-2010"
+            in [rec.message for rec in caplog.records]
+        )
 
 
 def test_upload_parsed_json_to_s3_no_short_url(ocw_parser_s3, s3_bucket, caplog):
@@ -159,10 +187,11 @@ def test_upload_parsed_json_to_s3_no_short_url(ocw_parser_s3, s3_bucket, caplog)
     Test that there is a descriptive error message when the parsed json has no uid
 
     """
-    ocw_parser_s3.parsed_json['short_url']=None
+    ocw_parser_s3.parsed_json["short_url"] = None
     ocw_parser_s3.upload_parsed_json_to_s3(s3_bucket)
     assert "No short_url found in parsed_json" in [
-        rec.message for rec in caplog.records]
+        rec.message for rec in caplog.records
+    ]
 
 
 def test_upload_course_image(ocw_parser_s3, s3_bucket):
@@ -176,7 +205,12 @@ def test_upload_course_image(ocw_parser_s3, s3_bucket):
     for bucket_item in s3_bucket.objects.filter(Prefix=ocw_parser_s3.s3_target_folder):
         if bucket_item.key in ocw_parser_s3.course_image_s3_link:
             course_image_key = bucket_item.key
-        elif bucket_item.key == ocw_parser_s3.s3_target_folder + parsed_json["short_url"] + "_parsed.json":
+        elif (
+            bucket_item.key
+            == ocw_parser_s3.s3_target_folder
+            + parsed_json["short_url"]
+            + "_parsed.json"
+        ):
             parsed_json_key = bucket_item.key
 
     assert course_image_key is not None
@@ -185,17 +219,23 @@ def test_upload_course_image(ocw_parser_s3, s3_bucket):
     assert ocw_parser_s3.parsed_json["image_src"] is not None
     assert ocw_parser_s3.parsed_json["thumbnail_image_src"] is not None
 
-    for f in parsed_json["course_files"]:
-        if f["uid"] == ocw_parser_s3.course_image_uid:
-            assert parsed_json["image_src"] == s3_upload_base(
-            ) + f["uid"] + "_" + f["id"]
-            assert parsed_json["image_description"] == f["description"]
-        elif f["uid"] == ocw_parser_s3.course_thumbnail_image_uid:
-            assert parsed_json["thumbnail_image_src"] == s3_upload_base(
-            ) + f["uid"] + "_" + f["id"]
-            assert parsed_json["thumbnail_image_description"] == f["description"]
+    for course_file in parsed_json["course_files"]:
+        if course_file["uid"] == ocw_parser_s3.course_image_uid:
+            assert (
+                parsed_json["image_src"]
+                == f'{s3_upload_base()}{course_file["uid"]}_{course_file["id"]}'
+            )
+            assert parsed_json["image_description"] == course_file["description"]
+        elif course_file["uid"] == ocw_parser_s3.course_thumbnail_image_uid:
+            assert (
+                parsed_json["thumbnail_image_src"]
+                == f'{s3_upload_base()}{course_file["uid"]}_{course_file["id"]}'
+            )
+            assert (
+                parsed_json["thumbnail_image_description"] == course_file["description"]
+            )
         else:
-            assert f["file_location"]
+            assert course_file["file_location"]
 
 
 def test_upload_course_image_no_s3_bucket_name(ocw_parser_s3, caplog):
@@ -206,7 +246,8 @@ def test_upload_course_image_no_s3_bucket_name(ocw_parser_s3, caplog):
     with pytest.raises(ValueError):
         ocw_parser_s3.upload_course_image()
         assert ["Please set your s3 bucket name"] == [
-            rec.message for rec in caplog.records]
+            rec.message for rec in caplog.records
+        ]
 
 
 def test_get_parsed_json(ocw_parser):
@@ -221,16 +262,26 @@ def test_get_parsed_json(ocw_parser):
     assert parsed_json["title"], fail_template.format("title")
     assert parsed_json["description"], fail_template.format("description")
     assert parsed_json["short_url"], fail_template.format("short_url")
-    assert len(parsed_json["open_learning_library_related"]) == 3, fail_template.format("open_learning_library_related")
-    assert parsed_json["open_learning_library_related"][0]["url"] == "https://openlearninglibrary.mit.edu/courses/course-v1:MITx+18.01.1x+2T2019/about"
+    assert len(parsed_json["open_learning_library_related"]) == 3, fail_template.format(
+        "open_learning_library_related"
+    )
+    assert (
+        parsed_json["open_learning_library_related"][0]["url"]
+        == "https://openlearninglibrary.mit.edu/courses/course-v1:MITx+18.01.1x+2T2019/about"
+    )
+
 
 def test_export_parsed_json_s3_links(ocw_parser_s3):
     """
     Test that exporting the parsed json file with s3 links doesn't error
     """
     ocw_parser_s3.export_parsed_json(s3_links=True)
-    json_path = os.path.join(ocw_parser_s3.destination_dir, "{}_parsed.json".format(ocw_parser_s3.parsed_json["short_url"]))
+    json_path = os.path.join(
+        ocw_parser_s3.destination_dir,
+        "{}_parsed.json".format(ocw_parser_s3.parsed_json["short_url"]),
+    )
     assert os.path.exists(json_path) and os.path.getsize(json_path) > 0
+
 
 def test_export_parsed_json_no_s3_bucket_name(ocw_parser_s3, caplog):
     """
@@ -238,39 +289,39 @@ def test_export_parsed_json_no_s3_bucket_name(ocw_parser_s3, caplog):
     """
     ocw_parser_s3.s3_bucket_name = None
     ocw_parser_s3.export_parsed_json(s3_links=True)
-    assert ["Please set your s3 bucket name"] == [
-        rec.message for rec in caplog.records]
+    assert ["Please set your s3 bucket name"] == [rec.message for rec in caplog.records]
 
 
 def test_set_s3_bucket_name(ocw_parser_s3):
     """
     Test setting the s3 bucket name
     """
-    assert "testing" == ocw_parser_s3.s3_bucket_name
+    assert ocw_parser_s3.s3_bucket_name == "testing"
 
 
 def test_set_s3_access_key(ocw_parser_s3):
     """
     Test setting the s3 access key
     """
-    assert "testing" == ocw_parser_s3.s3_bucket_access_key
+    assert ocw_parser_s3.s3_bucket_access_key == "testing"
 
 
 def test_set_s3_secret_access_key(ocw_parser_s3):
     """
     Test setting the s3 secret access key
     """
-    assert "testing" == ocw_parser_s3.s3_bucket_secret_access_key
+    assert ocw_parser_s3.s3_bucket_secret_access_key == "testing"
 
 
 def test_set_s3_target_folder(ocw_parser_s3):
     """
     Test setting the s3 target folder
     """
-    assert "course-1" == ocw_parser_s3.s3_target_folder
+    assert ocw_parser_s3.s3_target_folder == "course-1"
 
 
 def s3_upload_base():
+    """Fake URL base for S3"""
     return "https://testing.s3.amazonaws.com/course-1/"
 
 
@@ -279,73 +330,88 @@ def test_uid(ocw_parser, course_id):
     Test that the uid property of the parsed JSON matches the uid of the course site root
     """
     ocw_parser.export_parsed_json()
-    with open(os.path.join(constants.SINGLE_COURSE_DIR, "jsons/1.json"), "r") as first_json:
+    with open(
+        os.path.join(constants.SINGLE_COURSE_DIR, "jsons/1.json"), "r"
+    ) as first_json:
         first_json_data = json.loads(first_json.read())
-        with open(os.path.join(ocw_parser.destination_dir, "{}_parsed.json".format(course_id)), "r") as parsed_json:
+        with open(
+            os.path.join(
+                ocw_parser.destination_dir, "{}_parsed.json".format(course_id)
+            ),
+            "r",
+        ) as parsed_json:
             parsed_json_data = json.loads(parsed_json.read())
             assert first_json_data["_uid"] == parsed_json_data["uid"]
 
 
 def test_course_files(ocw_parser):
     """Make sure course_files include the right fields with the correct default values"""
-    assert len(ocw_parser.parsed_json['course_files']) == 172
-    assert ocw_parser.parsed_json['course_files'][0] == {
-        'order_index': 6,
-        'uid': 'c24518ecda658185c40c2e5eeb72c7fa',
-        'id': '182.png',
-        'parent_uid': '3f3b7835cf477d3ba10b05fbe03cbffa',
-        'title': '182.png',
-        'caption': '',
-        'file_type': 'image/png',
-        'alt_text': '',
-        'credit': '',
-        'platform_requirements': '',
-        'description': '',
-        'type': 'OCWImage',
+    assert len(ocw_parser.parsed_json["course_files"]) == 172
+    assert ocw_parser.parsed_json["course_files"][0] == {
+        "order_index": 6,
+        "uid": "c24518ecda658185c40c2e5eeb72c7fa",
+        "id": "182.png",
+        "parent_uid": "3f3b7835cf477d3ba10b05fbe03cbffa",
+        "title": "182.png",
+        "caption": "",
+        "file_type": "image/png",
+        "alt_text": "",
+        "credit": "",
+        "platform_requirements": "",
+        "description": "",
+        "type": "OCWImage",
     }
-    
+
+
 def test_course_foreign_files(ocw_parser):
     """Make sure course_foreign_files include the right fields with the correct default values"""
-    assert ocw_parser.parsed_json['course_foreign_files'][0] == {
-        'link': 'http://ocw.mit.edu/ans7870/18/18.06/tools/Applets_sound/uropmovie.html',
-        'parent_uid': 'b5785e071ddb991cf3dfd7cc469e6397'
+    assert ocw_parser.parsed_json["course_foreign_files"][0] == {
+        "link": "http://ocw.mit.edu/ans7870/18/18.06/tools/Applets_sound/uropmovie.html",
+        "parent_uid": "b5785e071ddb991cf3dfd7cc469e6397",
     }
-    assert len(ocw_parser.parsed_json['course_foreign_files']) == 20
+    assert len(ocw_parser.parsed_json["course_foreign_files"]) == 20
 
 
 def test_other_information_text(ocw_parser):
     """other_information_text should be an empty string"""
-    assert ocw_parser.parsed_json['other_information_text'] == ''
+    assert ocw_parser.parsed_json["other_information_text"] == ""
+
 
 def test_other_version_parent_uids(ocw_parser):
     """Make sure other_version_parent_subjects includes a list containing one UID"""
-    assert ocw_parser.parsed_json['other_version_parent_uids'][0] == "c57db32e19cecbfe65656ede124729fb"
-    assert len(ocw_parser.parsed_json['other_version_parent_uids']) == 1
+    assert (
+        ocw_parser.parsed_json["other_version_parent_uids"][0]
+        == "c57db32e19cecbfe65656ede124729fb"
+    )
+    assert len(ocw_parser.parsed_json["other_version_parent_uids"]) == 1
+
 
 def test_course_pages(ocw_parser):
     """assert the output of composing course_pages"""
-    assert len(ocw_parser.parsed_json["course_pages"])
+    assert len(ocw_parser.parsed_json["course_pages"]) > 0
     page = ocw_parser.parsed_json["course_pages"][0]
     page_without_text = {**page}
     del page_without_text["text"]
     del page_without_text["description"]
     assert page_without_text == {
-        'order_index': 3,
-        'uid': 'ede17211bd49ea166ed701f09c1de288',
-        'parent_uid': 'aabc44bdb2e45374d62f30f2a6d4c63e',
-        'title': 'Syllabus',
-        'short_page_title': 'Syllabus',
-        'type': 'CourseSection',
-        'is_image_gallery': False,
-        'is_media_gallery': False,
-        'list_in_left_nav': False,
-        'file_location': 'ede17211bd49ea166ed701f09c1de288_syllabus.html',
-        'short_url': 'syllabus',
-        'url': '/courses/mathematics/18-06-linear-algebra-spring-2010/syllabus',
-        'bottomtext': '<p>Sample Bottom Text</p>'
+        "order_index": 3,
+        "uid": "ede17211bd49ea166ed701f09c1de288",
+        "parent_uid": "aabc44bdb2e45374d62f30f2a6d4c63e",
+        "title": "Syllabus",
+        "short_page_title": "Syllabus",
+        "type": "CourseSection",
+        "is_image_gallery": False,
+        "is_media_gallery": False,
+        "list_in_left_nav": False,
+        "file_location": "ede17211bd49ea166ed701f09c1de288_syllabus.html",
+        "short_url": "syllabus",
+        "url": "/courses/mathematics/18-06-linear-algebra-spring-2010/syllabus",
+        "bottomtext": "<p>Sample Bottom Text</p>",
     }
-    assert page["text"].startswith("<h2 class=\"subhead\">Course Meeting Times")
-    assert page["description"].startswith("This syllabus section provides information on course goals")
+    assert page["text"].startswith('<h2 class="subhead">Course Meeting Times')
+    assert page["description"].startswith(
+        "This syllabus section provides information on course goals"
+    )
 
 
 @pytest.mark.parametrize("has_instructors", [True, False])
@@ -356,7 +422,9 @@ def test_instructors(ocw_parser, has_instructors):
         ocw_parser.jsons[0]["instructors"] = None
     ocw_parser.generate_parsed_json()
     del expected_instructor["mit_id"]
-    assert ocw_parser.parsed_json["instructors"] == ([expected_instructor] if has_instructors else [])
+    assert ocw_parser.parsed_json["instructors"] == (
+        [expected_instructor] if has_instructors else []
+    )
 
 
 def test_course_features(ocw_parser):
@@ -367,36 +435,36 @@ def test_course_features(ocw_parser):
             "ocw_subfeature": "Tutorial",
             "ocw_feature_url": "./resolveuid/b5785e071ddb991cf3dfd7cc469e6397",
             "ocw_speciality": "",
-            "ocw_feature_notes": ""
+            "ocw_feature_notes": "",
         },
         {
             "ocw_feature": "AV lectures",
             "ocw_subfeature": "Video",
             "ocw_feature_url": "./resolveuid/6b1f662457366951bfe85945521b0299",
             "ocw_speciality": "",
-            "ocw_feature_notes": ""
+            "ocw_feature_notes": "",
         },
         {
             "ocw_feature": "Assignments",
             "ocw_subfeature": "problem sets with solutions",
             "ocw_feature_url": "./resolveuid/87609dbba9d13a6b234d62de21a20433",
             "ocw_speciality": "",
-            "ocw_feature_notes": ""
+            "ocw_feature_notes": "",
         },
         {
             "ocw_feature": "Exams",
             "ocw_subfeature": "Solutions",
             "ocw_feature_url": "./resolveuid/c13c4766c0cf1486f0cf6435c531eaad",
             "ocw_speciality": "",
-            "ocw_feature_notes": ""
+            "ocw_feature_notes": "",
         },
         {
             "ocw_feature": "Instructor Insights",
             "ocw_subfeature": "",
             "ocw_feature_url": "./resolveuid/3f3b7835cf477d3ba10b05fbe03cbffa",
             "ocw_speciality": "",
-            "ocw_feature_notes": ""
-        }
+            "ocw_feature_notes": "",
+        },
     ]
 
 
@@ -430,33 +498,33 @@ def test_course_embedded_media(ocw_parser):
     embedded_media = media_json["embedded_media"]
     del media_json["embedded_media"]
     assert media_json == {
-        'about_this_resource_text': '',
-        'inline_embed_id': '12700054aninterviewwithgilbertstrangonteachinglinearalgebra63021644',
-        'order_index': 10,
-        'parent_uid': '3f3b7835cf477d3ba10b05fbe03cbffa',
-        'related_resources_text': '',
-        'short_url': 'an-interview-with-gilbert-strang-on-teaching-linear-algebra',
-        'technical_location': 'https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/instructor-insights/an-interview-with-gilbert-strang-on-teaching-linear-algebra',
-        'title': 'An Interview with Gilbert Strang on Teaching Linear Algebra',
-        'uid': 'e21b71ff0fa975bfa9acb2a155aafc1d',
+        "about_this_resource_text": "",
+        "inline_embed_id": "12700054aninterviewwithgilbertstrangonteachinglinearalgebra63021644",
+        "order_index": 10,
+        "parent_uid": "3f3b7835cf477d3ba10b05fbe03cbffa",
+        "related_resources_text": "",
+        "short_url": "an-interview-with-gilbert-strang-on-teaching-linear-algebra",
+        "technical_location": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/instructor-insights/an-interview-with-gilbert-strang-on-teaching-linear-algebra",
+        "title": "An Interview with Gilbert Strang on Teaching Linear Algebra",
+        "uid": "e21b71ff0fa975bfa9acb2a155aafc1d",
     }
-    assert transcript.startswith("<p><span m=\'6840\'>SARAH HANSEN:")
+    assert transcript.startswith("<p><span m='6840'>SARAH HANSEN:")
     assert len(embedded_media) == 11
     assert embedded_media[1] == {  # important because it has a technical_location
-        'id': '18.06.jpg',
-        'parent_uid': 'e21b71ff0fa975bfa9acb2a155aafc1d',
-        'technical_location': 'https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/instructor-insights/an-interview-with-gilbert-strang-on-teaching-linear-algebra/18.06.jpg',
-        'title': '18.06.jpg',
-        'type': None,
-        'uid': 'f777380de6feec2c42ab6e159e05ddf2'
+        "id": "18.06.jpg",
+        "parent_uid": "e21b71ff0fa975bfa9acb2a155aafc1d",
+        "technical_location": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/instructor-insights/an-interview-with-gilbert-strang-on-teaching-linear-algebra/18.06.jpg",
+        "title": "18.06.jpg",
+        "type": None,
+        "uid": "f777380de6feec2c42ab6e159e05ddf2",
     }
     assert embedded_media[2] == {  # important because it has a media_location
-        'id': 'Thumbnail-YouTube-JPG',
-        'media_location': 'https://img.youtube.com/vi/7UJ4CFRGd-U/default.jpg',
-        'parent_uid': 'e21b71ff0fa975bfa9acb2a155aafc1d',
-        'title': 'Thumbnail-YouTube-JPG',
-        'type': 'Thumbnail',
-        'uid': '7cd0685535147aebd9d7c2e98dc68afd'
+        "id": "Thumbnail-YouTube-JPG",
+        "media_location": "https://img.youtube.com/vi/7UJ4CFRGd-U/default.jpg",
+        "parent_uid": "e21b71ff0fa975bfa9acb2a155aafc1d",
+        "title": "Thumbnail-YouTube-JPG",
+        "type": "Thumbnail",
+        "uid": "7cd0685535147aebd9d7c2e98dc68afd",
     }
 
 
@@ -464,8 +532,8 @@ def test_foreign_files(ocw_parser):
     """assert course_foreign_files output"""
     assert len(ocw_parser.parsed_json["course_foreign_files"]) == 20
     assert ocw_parser.parsed_json["course_foreign_files"][0] == {
-        'link': 'http://ocw.mit.edu/ans7870/18/18.06/tools/Applets_sound/uropmovie.html',
-        'parent_uid': 'b5785e071ddb991cf3dfd7cc469e6397',
+        "link": "http://ocw.mit.edu/ans7870/18/18.06/tools/Applets_sound/uropmovie.html",
+        "parent_uid": "b5785e071ddb991cf3dfd7cc469e6397",
     }
 
 
@@ -494,5 +562,11 @@ def test_extract_media_locally(ocw_parser):
 
 def test_publish_date(ocw_parser):
     """Assert that we get first_published_to_production and last_published_to_production"""
-    assert ocw_parser.parsed_json["first_published_to_production"] == "2010/09/10 10:23:13.887 GMT-4"
-    assert ocw_parser.parsed_json["last_published_to_production"] == "2019/09/25 17:47:34.670 Universal"
+    assert (
+        ocw_parser.parsed_json["first_published_to_production"]
+        == "2010/09/10 10:23:13.887 GMT-4"
+    )
+    assert (
+        ocw_parser.parsed_json["last_published_to_production"]
+        == "2019/09/25 17:47:34.670 Universal"
+    )

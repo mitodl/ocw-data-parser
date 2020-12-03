@@ -1,4 +1,6 @@
+black==20.8b1
 moto
 pytest-cov
+pylint==2.6.0
 codecov
 responses==0.12.0

@@ -1,3 +1,5 @@
+"""Utility functions for ocw-data-parser"""
+
 import os
 import shutil
 import json
@@ -7,19 +9,28 @@ from datetime import datetime
 
 import pytz
 
-import ocw_data_parser.ocw_data_parser
-
 log = logging.getLogger(__name__)
 
 
 def update_file_location(parsed_json, new_file_location, obj_uid=""):
+    """
+    Update file_location for an object.
+
+    If obj_uid is set, the function will look in course_pages and course_files for the content to update.
+    Otherwise, the function will look in course_foreign_files and see if the filename matches new_file_location.
+
+    Args:
+        parsed_json (dict): The parsed JSON output to be modified with the updated file_location
+        new_file_location (str): The new file_location to be set on the object
+        obj_uid
+    """
     if obj_uid:
-        for p in parsed_json["course_pages"]:
-            if p["uid"] == obj_uid:
-                p["file_location"] = new_file_location
-        for j in parsed_json["course_files"]:
-            if j["uid"] == obj_uid:
-                j["file_location"] = new_file_location
+        for page in parsed_json["course_pages"]:
+            if page["uid"] == obj_uid:
+                page["file_location"] = new_file_location
+        for course_file in parsed_json["course_files"]:
+            if course_file["uid"] == obj_uid:
+                course_file["file_location"] = new_file_location
     else:
         for media in parsed_json["course_foreign_files"]:
             original_filename = media["link"].split("/")[-1]
@@ -29,6 +40,15 @@ def update_file_location(parsed_json, new_file_location, obj_uid=""):
 
 
 def get_binary_data(json_obj):
+    """
+    Look in _datafield_image or _datafield_file for base64 encoded binary data
+
+    Args:
+        json_obj (dict): JSON from one of the input course files
+
+    Returns:
+        str or None: Base64 encoded data for a file, or None if it couldn't be found
+    """
     key = ""
     if "_datafield_image" in json_obj:
         key = "_datafield_image"
@@ -40,14 +60,26 @@ def get_binary_data(json_obj):
 
 
 def print_error(message):
+    """Print an error"""
     print("\x1b[0;31;40m Error:\x1b[0m " + message)
 
 
 def print_success(message):
+    """Print success message"""
     print("\x1b[0;32;40m Success:\x1b[0m " + message)
 
 
 def find_all_values_for_key(jsons, key="_content_type"):
+    """
+    Find all _content_type instances in each JSON which aren't text/plain or text/html.
+
+    Args:
+        jsons (list of dict): The input course JSON dicts
+        key (str): An alternative place to look for the content type
+
+    Returns:
+        list of str: A list of content types
+    """
     excluded_values = ["text/plain", "text/html"]
     result = set()
     for j in jsons:
@@ -62,6 +94,15 @@ def find_all_values_for_key(jsons, key="_content_type"):
 
 
 def htmlify(page):
+    """
+    Wrap contents of a page dict in basic HTML
+
+    Args:
+        page (dict): A course page dict
+
+    Returns:
+        tuple[str, str]: A new filename and the HTML, or None, None if the text is empty
+    """
     safe_text = page.get("text")
     if safe_text:
         file_name = page.get("uid") + "_" + page.get("short_url") + ".html"
@@ -75,9 +116,9 @@ def parse_date(date_str):
     Parse date string in a format like 2016/02/02 20:28:06 US/Eastern
 
     Args:
-        date_str (String): Datetime object as string in the following format (2016/02/02 20:28:06 US/Eastern)
+        date_str (str): Datetime object as string in the following format (2016/02/02 20:28:06 US/Eastern)
     Returns:
-        Datetime object if passed date is valid, otherwise None
+        datetime: Datetime object if passed date is valid, otherwise None
     """
     if date_str and date_str != "None":
         date_pieces = date_str.split(" ")  # e.g. 2016/02/02 20:28:06 US/Eastern
@@ -86,8 +127,12 @@ def parse_date(date_str):
         date_pieces[1] = (
             date_pieces[1][:-4] if "." in date_pieces[1] else date_pieces[1]
         )
-        tz = date_pieces.pop(2)
-        timezone = pytz.timezone(tz) if "GMT" not in tz else pytz.timezone("Etc/" + tz)
+        timezone_piece = date_pieces.pop(2)
+        timezone = (
+            pytz.timezone(timezone_piece)
+            if "GMT" not in timezone_piece
+            else pytz.timezone("Etc/" + timezone_piece)
+        )
         tz_stripped_date = datetime.strptime(" ".join(date_pieces), "%Y-%m-%d %H:%M:%S")
         tz_aware_date = timezone.localize(tz_stripped_date)
         tz_aware_date = tz_aware_date.astimezone(pytz.utc)
@@ -119,9 +164,7 @@ def is_course_published(source_path):
     last_published_to_production = parse_date(
         first_json.get("last_published_to_production", None)
     )
-    last_unpublishing_date = parse_date(
-        first_json.get("last_unpublishing_date", None)
-    )
+    last_unpublishing_date = parse_date(first_json.get("last_unpublishing_date", None))
     if last_published_to_production is None or (
         last_unpublishing_date
         and (last_unpublishing_date > last_published_to_production)
@@ -131,7 +174,7 @@ def is_course_published(source_path):
     return is_published
 
 
-def parse_all(
+def parse_all(  # pylint: disable=too-many-arguments, too-many-locals
     courses_dir,
     destination_dir,
     upload_parsed_json,
@@ -139,17 +182,32 @@ def parse_all(
     s3_links=False,
     overwrite=False,
     beautify_parsed_json=False,
-    courses_json_path=None
+    courses_json_path=None,
 ):
-    source_path = Path(courses_dir) if courses_dir else None
+    """
+    Convert multiple courses in a directory to the parsed JSON format in destination_dir
+
+    Args:
+        courses_dir (str or Path or None): The directory containing JSON from Plone for each course
+        destination_dir (str or Path or None): The directory to write courses to with the parsed JSON
+        upload_parsed_json (bool): Upload the parsed JSON to S3
+        s3_bucket (str): The S3 bucket to upload to
+        s3_links (bool): If true, upload media files as well
+        overwrite (bool): If true, erase the destination directory for each course first
+        beautify_parsed_json (bool): Pretty print JSON files which are created
+        courses_json_path (str or Path or None): If set, only convert courses listed in this file
+    """
+    import ocw_data_parser.ocw_data_parser  # pylint: disable=import-outside-toplevel
+
+    courses_dir = Path(courses_dir) if courses_dir else None
     destination_dir = Path(destination_dir) if destination_dir else None
 
     course_list = None
     if courses_json_path is not None:
-        with open(courses_json_path) as f:
-            course_list = json.load(f)['courses']
+        with open(courses_json_path) as file:
+            course_list = json.load(file)["courses"]
 
-    for first_json_path in source_path.rglob("1.json"):
+    for first_json_path in courses_dir.rglob("1.json"):
         source_path = first_json_path.parent.parent
         course_dir = source_path.name
 
