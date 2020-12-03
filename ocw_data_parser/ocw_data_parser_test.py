@@ -117,7 +117,7 @@ def test_upload_all_data_to_s3(ocw_parser_s3, s3_bucket):
                 if bucket_item.key in page["file_location"]:
                     assert (
                         bucket_item.key
-                        == f"{ocw_parser_s3.s3_target_folder}{page['uid']}_{page['short_url'].html}"
+                        == f"{ocw_parser_s3.s3_target_folder}{page['uid']}_{page['short_url']}.html"
                     )
     for course_file in parsed_json["course_files"]:
         for bucket_item in s3_bucket.objects.filter(
