@@ -363,7 +363,25 @@ def test_course_files(ocw_parser):
         'file_location': '182.png'
     }
 
-
+def test_course_files_s3(ocw_parser_s3):
+    """Make sure course_files include the right fields with the correct default values"""
+    ocw_parser_s3.generate_parsed_json()
+    assert ocw_parser_s3.parsed_json['course_files'][0] == {
+        'order_index': 6,
+        'uid': 'c24518ecda658185c40c2e5eeb72c7fa',
+        'id': '182.png',
+        'parent_uid': '3f3b7835cf477d3ba10b05fbe03cbffa',
+        'title': '182.png',
+        'caption': '',
+        'file_type': 'image/png',
+        'alt_text': '',
+        'credit': '',
+        'platform_requirements': '',
+        'description': '',
+        'type': 'OCWImage',
+        'file_location': 'https://testing.s3.amazonaws.com/course-1/182.png'
+    }
+    
 def test_course_foreign_files(ocw_parser):
     """Make sure course_foreign_files include the right fields with the correct default values"""
     assert ocw_parser.parsed_json["course_foreign_files"][0] == {
