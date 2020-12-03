@@ -7,6 +7,7 @@ from pathlib import Path
 from tempfile import TemporaryDirectory
 from unittest.mock import patch
 
+from requests.exceptions import HTTPError
 import responses
 import pytest
 
@@ -170,17 +171,20 @@ def test_upload_all_data_to_s3_no_binary_data(ocw_parser_s3, caplog):
         )
 
 
-def test_upload_all_data_to_s3_large_media_link_upload_error(ocw_parser_s3, caplog):
+def test_upload_all_data_to_s3_large_media_link_upload_error(
+    mocker, ocw_parser_s3, caplog
+):
     """
     Test that there is a descriptive error message when a large media file cannot be uploaded
     """
-
-    with patch("ocw_data_parser.ocw_data_parser.get", return_value=None):
-        ocw_parser_s3.upload_all_media_to_s3()
-        assert (
-            "Could NOT upload powerMethod.html for course 18-06-linear-algebra-spring-2010"
-            in [rec.message for rec in caplog.records]
-        )
+    get_mock = mocker.patch("requests.get")
+    get_mock.return_value.raise_for_status.side_effect = HTTPError()
+    ocw_parser_s3.upload_all_media_to_s3()
+    assert (
+        "Could NOT upload powerMethod.html for course 18-06-linear-algebra-spring-2010 "
+        "from link http://ocw.mit.edu/ans7870/18/18.06/javademo/power_method_applet/powerMethod.html"
+        in [rec.message for rec in caplog.records]
+    )
 
 
 def test_upload_parsed_json_to_s3_no_short_url(ocw_parser_s3, s3_bucket, caplog):
@@ -189,10 +193,9 @@ def test_upload_parsed_json_to_s3_no_short_url(ocw_parser_s3, s3_bucket, caplog)
 
     """
     ocw_parser_s3.parsed_json["short_url"] = None
-    ocw_parser_s3.upload_parsed_json_to_s3(s3_bucket)
-    assert "No short_url found in parsed_json" in [
-        rec.message for rec in caplog.records
-    ]
+    with pytest.raises(Exception) as ex:
+        ocw_parser_s3.upload_parsed_json_to_s3(s3_bucket)
+    assert str(ex.value) == "No short_url found in parsed_json"
 
 
 @responses.activate
@@ -585,6 +588,48 @@ def test_extract_media_locally(ocw_parser):
             counts[ext] = 0
         counts[ext] += 1
     assert counts == expected_counts
+
+
+def test_extract_foreign_media_locally(ocw_parser):
+    """
+    extract_foreign_media_locally should download and save foreign media files
+    """
+    with TemporaryDirectory() as tempdir:
+        tempdir = Path(tempdir)
+        ocw_parser.destination_dir = tempdir
+        ocw_parser.extract_foreign_media_locally()
+
+        static_files_dir = tempdir / "output" / "static_files"
+        with open(static_files_dir / "eigen_lecture_1.html") as file:
+            assert len(file.read()) == 839
+        assert len(list(static_files_dir.iterdir())) == 20
+
+
+def test_extract_foreign_media_locally_error(ocw_parser, mocker, caplog):
+    """
+    extract_foreign_media_locally should log and continue if there is an error
+    """
+    get_mock = mocker.patch("requests.get")
+    get_mock.return_value.content = b"somebytes"
+    first = True
+
+    def _raise_side_effect():
+        """Helper function to only error once"""
+        nonlocal first
+        if first:
+            first = False
+            raise HTTPError()
+
+    get_mock.return_value.raise_for_status.side_effect = _raise_side_effect
+    with TemporaryDirectory() as tempdir:
+        tempdir = Path(tempdir)
+        ocw_parser.destination_dir = tempdir
+        ocw_parser.extract_foreign_media_locally()
+
+    assert caplog.messages[0] == (
+        "Could not fetch link http://ocw.mit.edu/ans7870/18/18.06/tools/Applets_sound/uropmovie.html "
+        "for course 18-06-linear-algebra-spring-2010"
+    )
 
 
 def test_publish_date(ocw_parser):
