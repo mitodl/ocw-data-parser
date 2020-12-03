@@ -704,7 +704,7 @@ class OCWParser:  # pylint: disable=too-many-instance-attributes
                     media_jsons = [
                         media_json
                         for media_json in self.media_jsons
-                        if media_json in media_uid_filter
+                        if media_json.get("_uid") in media_uid_filter
                     ]
                 else:
                     media_jsons = self.media_jsons

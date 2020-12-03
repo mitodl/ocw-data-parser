@@ -7,6 +7,7 @@ from pathlib import Path
 from tempfile import TemporaryDirectory
 from unittest.mock import patch
 
+import responses
 import pytest
 
 from ocw_data_parser.ocw_data_parser import OCWParser, load_raw_jsons
@@ -194,27 +195,32 @@ def test_upload_parsed_json_to_s3_no_short_url(ocw_parser_s3, s3_bucket, caplog)
     ]
 
 
+@responses.activate
 def test_upload_course_image(ocw_parser_s3, s3_bucket):
     """
     Use moto (mock boto) to test s3 uploading
     """
     ocw_parser_s3.upload_course_image()
-    course_image_key = None
     parsed_json = ocw_parser_s3.get_parsed_json()
 
+    found_image_keys = []
+    found_parsed_json = False
     for bucket_item in s3_bucket.objects.filter(Prefix=ocw_parser_s3.s3_target_folder):
-        if bucket_item.key in ocw_parser_s3.course_image_s3_link:
-            course_image_key = bucket_item.key
-        elif (
+        if (
             bucket_item.key
             == ocw_parser_s3.s3_target_folder
             + parsed_json["short_url"]
             + "_parsed.json"
         ):
-            parsed_json_key = bucket_item.key
+            found_parsed_json = True
+        if bucket_item.key in [
+            ocw_parser_s3.s3_target_folder + os.path.basename(parsed_json[key])
+            for key in ["image_src", "thumbnail_image_src"]
+        ]:
+            found_image_keys.append(bucket_item.key)
 
-    assert course_image_key is not None
-    assert parsed_json_key is not None
+    assert len(found_image_keys) == 2
+    assert found_parsed_json is True
 
     assert ocw_parser_s3.parsed_json["image_src"] is not None
     assert ocw_parser_s3.parsed_json["thumbnail_image_src"] is not None
