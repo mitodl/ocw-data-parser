@@ -166,7 +166,7 @@ def _compose_media_dict(media_json, bucket_base_url):
         "platform_requirements": media_json.get("other_platform_requirements"),
         "description": media_json.get("description"),
         "type": media_json.get("_type"),
-        "file_location": file_location
+        "file_location": file_location,
     }
     return media_dict
 
@@ -188,7 +188,9 @@ def compose_media(jsons, bucket_base_url):
             # Keep track of the jsons that contain media in case we want to extract
             media_jsons.append(json_file)
 
-    return [_compose_media_dict(media_json, bucket_base_url) for media_json in media_jsons], media_jsons
+    return [
+        _compose_media_dict(media_json, bucket_base_url) for media_json in media_jsons
+    ], media_jsons
 
 
 def compose_embedded_media(jsons):
@@ -456,8 +458,8 @@ class OCWParser:  # pylint: disable=too-many-instance-attributes
         instructors = self.jsons[0].get("instructors")
         course_pages = compose_pages(self.jsons)
         course_files, self.media_jsons = compose_media(
-            self.jsons, 
-            self.get_s3_base_url())
+            self.jsons, self.get_s3_base_url()
+        )
         foreign_media = gather_foreign_media(self.jsons)
         self.large_media_links = foreign_media
 
