@@ -360,7 +360,7 @@ def test_course_files(ocw_parser):
         "platform_requirements": "",
         "description": "",
         "type": "OCWImage",
-        "file_location": "182.png",
+        "file_location": "c24518ecda658185c40c2e5eeb72c7fa_182.png",
     }
 
 
@@ -380,7 +380,7 @@ def test_course_files_s3(ocw_parser_s3):
         "platform_requirements": "",
         "description": "",
         "type": "OCWImage",
-        "file_location": "https://testing.s3.amazonaws.com/course-1/182.png",
+        "file_location": "https://testing.s3.amazonaws.com/course-1/c24518ecda658185c40c2e5eeb72c7fa_182.png",
     }
 
 

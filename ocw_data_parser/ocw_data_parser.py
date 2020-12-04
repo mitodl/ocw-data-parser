@@ -148,15 +148,18 @@ def compose_pages(jsons):
 
 
 def _compose_media_dict(media_json, bucket_base_url):
+    uid = media_json.get("_uid")
     file_name = media_json.get("id")
+    if not file_name.startswith(uid):
+        file_name = "{}_{}".format(uid, file_name)
     if bucket_base_url:
         file_location = urljoin(bucket_base_url, file_name)
     else:
         file_location = file_name
     media_dict = {
         "order_index": media_json.get("order_index"),
-        "uid": media_json.get("_uid"),
-        "id": file_name,
+        "uid": uid,
+        "id": media_json.get("id"),
         "parent_uid": media_json.get("parent_uid"),
         "title": media_json.get("title"),
         "caption": media_json.get("caption"),
