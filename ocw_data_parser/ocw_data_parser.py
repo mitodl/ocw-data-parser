@@ -147,10 +147,18 @@ def compose_pages(jsons):
     return pages
 
 
-def _compose_media_dict(media_json):
-    return {
+def _compose_media_dict(media_json, bucket_base_url):
+    uid = media_json.get("_uid")
+    file_name = media_json.get("id")
+    if not file_name.startswith(uid):
+        file_name = "{}_{}".format(uid, file_name)
+    if bucket_base_url:
+        file_location = urljoin(bucket_base_url, file_name)
+    else:
+        file_location = file_name
+    media_dict = {
         "order_index": media_json.get("order_index"),
-        "uid": media_json.get("_uid"),
+        "uid": uid,
         "id": media_json.get("id"),
         "parent_uid": media_json.get("parent_uid"),
         "title": media_json.get("title"),
@@ -161,10 +169,12 @@ def _compose_media_dict(media_json):
         "platform_requirements": media_json.get("other_platform_requirements"),
         "description": media_json.get("description"),
         "type": media_json.get("_type"),
+        "file_location": file_location,
     }
+    return media_dict
 
 
-def compose_media(jsons):
+def compose_media(jsons, bucket_base_url):
     """
     Create media dicts from course JSONs
 
@@ -181,7 +191,9 @@ def compose_media(jsons):
             # Keep track of the jsons that contain media in case we want to extract
             media_jsons.append(json_file)
 
-    return [_compose_media_dict(media_json) for media_json in media_jsons], media_jsons
+    return [
+        _compose_media_dict(media_json, bucket_base_url) for media_json in media_jsons
+    ], media_jsons
 
 
 def compose_embedded_media(jsons):
@@ -448,7 +460,9 @@ class OCWParser:  # pylint: disable=too-many-instance-attributes
         technical_location = self.jsons[0].get("technical_location")
         instructors = self.jsons[0].get("instructors")
         course_pages = compose_pages(self.jsons)
-        course_files, self.media_jsons = compose_media(self.jsons)
+        course_files, self.media_jsons = compose_media(
+            self.jsons, self.get_s3_base_url()
+        )
         foreign_media = gather_foreign_media(self.jsons)
         self.large_media_links = foreign_media
 
