@@ -1,7 +1,7 @@
 Release Notes
 =============
 
-Version 0.19.0
+Version 0.19.0 (Released December 09, 2020)
 --------------
 
 - fix file_location bug (#104)
