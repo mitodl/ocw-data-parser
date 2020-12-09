@@ -1,6 +1,16 @@
 Release Notes
 =============
 
+Version 0.19.0
+--------------
+
+- fix file_location bug (#104)
+- Fix media_uid_filter argument (#105)
+- Add black and pylint and run them in github actions (#99)
+- Switch to github actions (#98)
+- Refactor to use pathlib (#96)
+- Turn off codecov checks (#87)
+
 Version 0.18.0 (Released November 24, 2020)
 --------------
 
