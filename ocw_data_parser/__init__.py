@@ -1,5 +1,7 @@
 """ocw-data-parser top-level exports"""
 
+__version__ = "0.18.0"
+
 from ocw_data_parser.ocw_data_parser import CustomHTMLParser, OCWParser
 from ocw_data_parser.course_downloader import OCWDownloader
 from ocw_data_parser.utils import (
