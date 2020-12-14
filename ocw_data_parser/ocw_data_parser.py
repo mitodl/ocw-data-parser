@@ -1,6 +1,5 @@
 """OCWParser and related functions"""
 
-import base64
 import copy
 from html.parser import HTMLParser
 import json
@@ -181,6 +180,7 @@ def compose_media(jsons, bucket_base_url):
 
     Args:
         jsons (list of dict): Input from a course
+        bucket_base_url (str): Base URL to use for the filename
 
     Returns:
         list of dict: The media dicts from the course
@@ -548,24 +548,26 @@ class OCWParser:  # pylint: disable=too-many-instance-attributes
                 with open(path_to_containing_folder / filename, "w") as file:
                     file.write(html)
         for media_json in self.media_jsons:
-            file_name = media_json.get("_uid") + "_" + media_json.get("id")
-            b64_data = get_binary_data(media_json)
-            if b64_data:
+            uid = media_json.get("_uid")
+            file_name = uid + "_" + media_json.get("id")
+            binary_data = get_binary_data(media_json)
+            if binary_data is not None:
                 with open(path_to_containing_folder / file_name, "wb") as file:
-                    binary_data = base64.b64decode(b64_data)
                     file.write(binary_data)
                 update_file_location(
                     self.parsed_json,
                     urljoin(url_path_to_media, file_name),
-                    media_json.get("_uid"),
+                    uid,
                 )
                 log.info("Extracted %s", file_name)
             else:
                 json_file = media_json["actual_file_name"]
                 log.error(
-                    "Media file %s without either datafield key for course %s",
+                    "Media file %s without either datafield key and no working link "
+                    "to be fetched for course %s and UID %s",
                     json_file,
                     self.parsed_json.get("short_url"),
+                    uid,
                 )
         log.info("Done! extracted static media to %s", path_to_containing_folder)
         self.export_parsed_json()
@@ -739,8 +741,8 @@ class OCWParser:  # pylint: disable=too-many-instance-attributes
                 for file in media_jsons:
                     uid = file.get("_uid")
                     filename = uid + "_" + file.get("id")
-                    b64_data = get_binary_data(file)
-                    if not b64_data:
+                    binary_data = get_binary_data(file)
+                    if binary_data is None:
                         log.error(
                             "Could not load binary data for file %s in json file %s for course %s",
                             filename,
@@ -748,8 +750,7 @@ class OCWParser:  # pylint: disable=too-many-instance-attributes
                             self.parsed_json.get("short_url"),
                         )
                         continue
-                    binary_data = base64.b64decode(b64_data)
-                    if upload_to_s3 and binary_data:
+                    if upload_to_s3:
                         s3_bucket.put_object(
                             Key=self.s3_target_folder + filename,
                             Body=binary_data,
