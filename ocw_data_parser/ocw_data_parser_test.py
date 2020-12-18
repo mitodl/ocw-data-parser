@@ -416,7 +416,7 @@ def test_other_version_parent_uids(ocw_parser):
 def test_course_pages(ocw_parser):
     """assert the output of composing course_pages"""
     assert len(ocw_parser.parsed_json["course_pages"]) > 0
-    page = ocw_parser.parsed_json["course_pages"][0]
+    page = ocw_parser.parsed_json["course_pages"][1]
     page_without_text = {**page}
     del page_without_text["text"]
     del page_without_text["description"]
@@ -574,7 +574,7 @@ def test_extract_media_locally(ocw_parser):
     expected_counts = {
         ".pdf": 93,
         ".srt": 36,
-        ".html": 11,
+        ".html": 12,
         ".jpg": 42,
         ".png": 1,
     }
