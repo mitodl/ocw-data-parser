@@ -136,7 +136,10 @@ def compose_pages(jsons):
     pages = []
     for json_file in jsons:
         if (  # pylint: disable=too-many-boolean-expressions
-            json_file["_content_type"] == "text/html"
+            (
+                json_file["_content_type"] == "text/html"
+                or json_file["_content_type"] == "text/plain"
+            )
             and "technical_location" in json_file
             and json_file["technical_location"]
             and json_file["id"] != "page-not-found"
