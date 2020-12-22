@@ -1,7 +1,7 @@
 Release Notes
 =============
 
-Version 0.20.0
+Version 0.20.0 (Released December 22, 2020)
 --------------
 
 - accept `text/plain` format for course pages, and update tests to reflect that (#114)
