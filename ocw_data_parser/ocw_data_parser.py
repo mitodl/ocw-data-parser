@@ -10,7 +10,7 @@ from pathlib import Path
 from urllib.parse import urljoin
 
 import boto3
-from requests import get
+import requests
 from smart_open import smart_open
 
 from ocw_data_parser.utils import (
@@ -71,14 +71,11 @@ def load_raw_jsons(course_dir):
             file_path = path_to_subdir / f"{json_index}.json"
             with open(file_path) as file:
                 loaded_json = json.load(file)
-            if loaded_json:
-                # Add the json file name (used for error reporting)
-                loaded_json["actual_file_name"] = f"{json_index}.json"
-                # The only representation we have of ordering is the file name
-                loaded_json["order_index"] = int(json_index)
-                loaded_jsons.append(loaded_json)
-            else:
-                log.error("Failed to load %s", file_path)
+            # Add the json file name (used for error reporting)
+            loaded_json["actual_file_name"] = f"{json_index}.json"
+            # The only representation we have of ordering is the file name
+            loaded_json["order_index"] = int(json_index)
+            loaded_jsons.append(loaded_json)
 
     loaded_jsons = sorted(loaded_jsons, key=lambda d: d["order_index"])
     return loaded_jsons
@@ -564,7 +561,11 @@ class OCWParser:  # pylint: disable=too-many-instance-attributes
                 log.info("Extracted %s", file_name)
             else:
                 json_file = media_json["actual_file_name"]
-                log.error("Media file %s without either datafield key", json_file)
+                log.error(
+                    "Media file %s without either datafield key for course %s",
+                    json_file,
+                    self.parsed_json.get("short_url"),
+                )
         log.info("Done! extracted static media to %s", path_to_containing_folder)
         self.export_parsed_json()
 
@@ -587,8 +588,17 @@ class OCWParser:  # pylint: disable=too-many-instance-attributes
         os.makedirs(path_to_containing_folder, exist_ok=True)
         for media in self.large_media_links:
             file_name = media["link"].split("/")[-1]
+            response = requests.get(media["link"])
+            try:
+                response.raise_for_status()
+            except requests.exceptions.HTTPError:
+                log.exception(
+                    "Could not fetch link %s for course %s",
+                    media["link"],
+                    self.parsed_json.get("short_url"),
+                )
+                continue
             with open(path_to_containing_folder / file_name, "wb") as file:
-                response = get(media["link"])
                 file.write(response.content)
             update_file_location(self.parsed_json, url_path_to_media + file_name)
             log.info("Extracted %s", file_name)
@@ -770,28 +780,31 @@ class OCWParser:  # pylint: disable=too-many-instance-attributes
             if update_external_media:
                 for media in self.large_media_links:
                     filename = media["link"].split("/")[-1]
-                    response = get(media["link"], stream=True)
-                    if upload_to_s3 and response:
-                        s3_uri = (
-                            f"s3://{self.s3_bucket_access_key}:{self.s3_bucket_secret_access_key}@"
-                            f"{self.s3_bucket_name}/"
-                        )
-                        with smart_open(
-                            s3_uri + self.s3_target_folder + filename, "wb"
-                        ) as handle:
-                            for chunk in response.iter_content(chunk_size=chunk_size):
-                                handle.write(chunk)
-                        response.close()
-                        update_file_location(
-                            self.parsed_json, bucket_base_url + filename
-                        )
-                        log.info("Uploaded %s", filename)
-                    else:
-                        log.error(
-                            "Could NOT upload %s for course %s",
-                            filename,
-                            self.parsed_json.get("short_url"),
-                        )
+
+                    if upload_to_s3:
+                        try:
+                            response = requests.get(media["link"], stream=True)
+                            response.raise_for_status()
+                            s3_uri = (
+                                f"s3://{self.s3_bucket_access_key}:{self.s3_bucket_secret_access_key}@"
+                                f"{self.s3_bucket_name}/"
+                            )
+                            with smart_open(
+                                s3_uri + self.s3_target_folder + filename, "wb"
+                            ) as handle:
+                                for chunk in response.iter_content(
+                                    chunk_size=chunk_size
+                                ):
+                                    handle.write(chunk)
+                            response.close()
+                            log.info("Uploaded %s", filename)
+                        except requests.exceptions.HTTPError:
+                            log.exception(
+                                "Could NOT upload %s for course %s from link %s",
+                                filename,
+                                self.parsed_json.get("short_url"),
+                                media["link"],
+                            )
                     update_file_location(self.parsed_json, bucket_base_url + filename)
 
     def upload_all_media_to_s3(self, upload_parsed_json=False):
@@ -821,7 +834,7 @@ class OCWParser:  # pylint: disable=too-many-instance-attributes
                 ACL="private",
             )
         else:
-            log.error("No short_url found in parsed_json")
+            raise Exception("No short_url found in parsed_json")
 
     def upload_course_image(self):
         """

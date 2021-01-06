@@ -22,7 +22,7 @@ def update_file_location(parsed_json, new_file_location, obj_uid=""):
     Args:
         parsed_json (dict): The parsed JSON output to be modified with the updated file_location
         new_file_location (str): The new file_location to be set on the object
-        obj_uid
+        obj_uid (str): UID of the file to be updated
     """
     if obj_uid:
         for page in parsed_json["course_pages"]:
