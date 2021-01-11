@@ -125,6 +125,7 @@ def compose_pages(jsons):
     """
     page_types = [
         "CourseHomeSection",
+        "SRHomePage",
         "CourseSection",
         "DownloadSection",
         "ThisCourseAtMITSection",
