@@ -1,7 +1,7 @@
 Release Notes
 =============
 
-Version 0.21.0
+Version 0.21.0 (Released January 12, 2021)
 --------------
 
 - add SRHomePage to the types of pages that are parsed (#117)
