@@ -57,7 +57,8 @@ def load_raw_jsons(course_dir):
             for file in dir_in_question.iterdir():
                 if file.suffix == ".json":
                     # Turn file name to int to enforce sequential json loading later
-                    dict_of_all_course_dirs[dir_in_question.name].append(int(file.stem))
+                    dict_of_all_course_dirs[dir_in_question.name].append(
+                        int(file.stem))
             dict_of_all_course_dirs[dir_in_question.name] = sorted(
                 dict_of_all_course_dirs[dir_in_question.name]
             )
@@ -81,6 +82,17 @@ def load_raw_jsons(course_dir):
 
 
 def _compose_page_dict(json_file):
+    instructor_insights_sections = [
+        "courseoverviewtext",
+        "courseoutcomestext",
+        "instructorinsightstext",
+        "curriculuminformationtext",
+        "theclassroomtext",
+        "studentinformationtext",
+        "howstudenttimewasspenttext",
+        "courseteamrolestext",
+        "bottomtext",
+    ]
     url_data = json_file.get("technical_location")
     if url_data:
         url_data = url_data.split("ocw.mit.edu")[1]
@@ -101,6 +113,12 @@ def _compose_page_dict(json_file):
         "file_location": json_file.get("_uid") + "_" + json_file.get("id") + ".html",
         "bottomtext": json_file.get("bottomtext"),
     }
+    # handle divided instructor insights pages
+    if page_dict["short_page_title"] == "Instructor Insights":
+        first_level_keys = json_file.keys()
+        for section in instructor_insights_sections:
+            if section in first_level_keys:
+                page_dict["text"] += json_file.get(section) + "\n"
     if (
         "media_location" in json_file
         and json_file["media_location"]
@@ -271,7 +289,8 @@ def compose_course_features(jsons, course_pages):
                     ocw_feature_short_url = ocw_feature_url
                     if len(ocw_feature_url_parts) > 1:
                         ocw_feature_short_url = (
-                            ocw_feature_url_parts[-2] + "/" + ocw_feature_url_parts[-1]
+                            ocw_feature_url_parts[-2] +
+                            "/" + ocw_feature_url_parts[-1]
                         )
                     if (
                         page["short_url"] in ocw_feature_short_url
@@ -405,7 +424,8 @@ class OCWParser:  # pylint: disable=too-many-instance-attributes
         if self.jsons:
             self.parsed_json = self.generate_parsed_json()
             if self.destination_dir:
-                self.destination_dir = self.destination_dir / self.jsons[0].get("id")
+                self.destination_dir = self.destination_dir / \
+                    self.jsons[0].get("id")
         self.beautify_parsed_json = beautify_parsed_json
 
     def get_parsed_json(self):
@@ -504,7 +524,8 @@ class OCWParser:  # pylint: disable=too-many-instance-attributes
             "image_caption_text": self.jsons[1].get("image_caption_text"),
             "tags": [{"name": tag} for tag in self.jsons[0].get("subject")],
             "instructors": [
-                {key: value for key, value in instructor.items() if key != "mit_id"}
+                {key: value for key, value in instructor.items() if key !=
+                 "mit_id"}
                 for instructor in instructors
             ]
             if instructors
@@ -539,7 +560,8 @@ class OCWParser:  # pylint: disable=too-many-instance-attributes
             else self.destination_dir / "output" / "static_files"
         )
         url_path_to_media = (
-            self.static_prefix if self.static_prefix else str(path_to_containing_folder)
+            self.static_prefix if self.static_prefix else str(
+                path_to_containing_folder)
         )
         os.makedirs(path_to_containing_folder, exist_ok=True)
         for page in compose_pages(self.jsons):
@@ -569,7 +591,8 @@ class OCWParser:  # pylint: disable=too-many-instance-attributes
                     self.parsed_json.get("short_url"),
                     uid,
                 )
-        log.info("Done! extracted static media to %s", path_to_containing_folder)
+        log.info("Done! extracted static media to %s",
+                 path_to_containing_folder)
         self.export_parsed_json()
 
     def extract_foreign_media_locally(self):
@@ -586,7 +609,8 @@ class OCWParser:  # pylint: disable=too-many-instance-attributes
             else self.destination_dir / "output" / "static_files"
         )
         url_path_to_media = (
-            self.static_prefix if self.static_prefix else str(path_to_containing_folder)
+            self.static_prefix if self.static_prefix else str(
+                path_to_containing_folder)
         )
         os.makedirs(path_to_containing_folder, exist_ok=True)
         for media in self.large_media_links:
@@ -603,9 +627,11 @@ class OCWParser:  # pylint: disable=too-many-instance-attributes
                 continue
             with open(path_to_containing_folder / file_name, "wb") as file:
                 file.write(response.content)
-            update_file_location(self.parsed_json, url_path_to_media + file_name)
+            update_file_location(
+                self.parsed_json, url_path_to_media + file_name)
             log.info("Extracted %s", file_name)
-        log.info("Done! extracted foreign media to %s", path_to_containing_folder)
+        log.info("Done! extracted foreign media to %s",
+                 path_to_containing_folder)
         self.export_parsed_json()
 
     def export_parsed_json(self, s3_links=False, upload_parsed_json=False):
@@ -624,7 +650,8 @@ class OCWParser:  # pylint: disable=too-many-instance-attributes
         )
         with open(file_path, "w") as json_file:
             if self.beautify_parsed_json:
-                json.dump(self.parsed_json, json_file, sort_keys=True, indent=4)
+                json.dump(self.parsed_json, json_file,
+                          sort_keys=True, indent=4)
             else:
                 json.dump(self.parsed_json, json_file)
         log.info("Extracted %s", file_path)
@@ -649,7 +676,8 @@ class OCWParser:  # pylint: disable=too-many-instance-attributes
                     and uid == self.course_thumbnail_image_uid
                 ):
                     self.course_thumbnail_image_s3_link = bucket_base_url + filename
-                    self.course_thumbnail_image_alt_text = file.get("description")
+                    self.course_thumbnail_image_alt_text = file.get(
+                        "description")
                     self.parsed_json[
                         "thumbnail_image_src"
                     ] = self.course_thumbnail_image_s3_link
@@ -772,7 +800,8 @@ class OCWParser:  # pylint: disable=too-many-instance-attributes
                         and uid == self.course_thumbnail_image_uid
                     ):
                         self.course_thumbnail_image_s3_link = bucket_base_url + filename
-                        self.course_thumbnail_image_alt_text = file.get("description")
+                        self.course_thumbnail_image_alt_text = file.get(
+                            "description")
                         self.parsed_json[
                             "thumbnail_image_src"
                         ] = self.course_thumbnail_image_s3_link
@@ -807,7 +836,8 @@ class OCWParser:  # pylint: disable=too-many-instance-attributes
                                 self.parsed_json.get("short_url"),
                                 media["link"],
                             )
-                    update_file_location(self.parsed_json, bucket_base_url + filename)
+                    update_file_location(
+                        self.parsed_json, bucket_base_url + filename)
 
     def upload_all_media_to_s3(self, upload_parsed_json=False):
         """
