@@ -1,6 +1,12 @@
 Release Notes
 =============
 
+Version 0.21.0
+--------------
+
+- add SRHomePage to the types of pages that are parsed (#117)
+- Check for errors when downloading media (#106)
+
 Version 0.20.0 (Released December 22, 2020)
 --------------
 
