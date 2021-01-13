@@ -1,7 +1,7 @@
 Release Notes
 =============
 
-Version 0.21.1
+Version 0.21.1 (Released January 13, 2021)
 --------------
 
 - handle divided instructor insights sections (#119)
