@@ -3,6 +3,7 @@
 import json
 import logging
 import os
+from copy import deepcopy
 from pathlib import Path
 from tempfile import TemporaryDirectory
 from unittest.mock import patch
@@ -447,28 +448,29 @@ def test_course_pages(ocw_parser):
 def test_instructor_insights_divided_sections(ocw_parser_course_2):
     """assert that instructor insights pages with divided sections are parsed properly"""
     assert len(ocw_parser_course_2.parsed_json["course_pages"]) > 0
-    page = ocw_parser_course_2.parsed_json["course_pages"][4]
-    page_without_text = {**page}
+    original_page = ocw_parser_course_2.jsons[5]
+    page = ocw_parser_course_2.parsed_json["course_pages"][3]
+    page_without_text = deepcopy(page)
     keys = page_without_text.keys()
-    for section in constants.INSTRUCTOR_INSIGHTS_SECTIONS:
-        if section in keys:
-            del page_without_text[section]
     del page_without_text["text"]
     assert page_without_text == {
-        "description": "In this section, Prof. Perron shares insights about co-teaching.",
-        "file_location": "e843f795081ac616d0cebdff6e956e33_co-teaching.html",
+        "order_index": 6,
+        "uid": "1c2cb2ad1c70fd66f19e20103dc94595",
+        "parent_uid": "d9aad1541f1a9d3c0f7b0dcf9531a9a1",
+        "title": "Instructor Insights",
+        "short_page_title": "Instructor Insights",
+        "url": "/courses/earth-atmospheric-and-planetary-sciences/12-001-introduction-to-geology-fall-2013/instructor-insights",
+        "short_url": "instructor-insights",
+        "description": "This section provides insights and information about the course from the instructors.",
+        "type": "ThisCourseAtMITSection",
         "is_image_gallery": False,
         "is_media_gallery": False,
-        "list_in_left_nav": True,
-        "order_index": 11,
-        "parent_uid": "1c2cb2ad1c70fd66f19e20103dc94595",
-        "short_page_title": "Co-Teaching",
-        "short_url": "co-teaching",
-        "title": "Co-Teaching",
-        "type": "CourseSection",
-        "uid": "e843f795081ac616d0cebdff6e956e33",
-        "url": "/courses/earth-atmospheric-and-planetary-sciences/12-001-introduction-to-geology-fall-2013/instructor-insights/co-teaching",
+        "list_in_left_nav": False,
+        "file_location": "1c2cb2ad1c70fd66f19e20103dc94595_instructor-insights.html",
+        "bottomtext": "",
     }
+    for section in constants.INSTRUCTOR_INSIGHTS_SECTIONS:
+        assert original_page.get(section) in page.get("text")
 
 
 @pytest.mark.parametrize("has_instructors", [True, False])
