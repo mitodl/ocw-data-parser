@@ -1,11 +1,13 @@
 """Utility functions for ocw-data-parser"""
+from base64 import b64decode
+from pathlib import Path
+from datetime import datetime
 
 import os
 import shutil
 import json
 import logging
-from pathlib import Path
-from datetime import datetime
+import requests
 
 import pytz
 
@@ -41,13 +43,14 @@ def update_file_location(parsed_json, new_file_location, obj_uid=""):
 
 def get_binary_data(json_obj):
     """
-    Look in _datafield_image or _datafield_file for base64 encoded binary data
+    Look in _datafield_image or _datafield_file for base64 encoded binary data. If it's not present,
+    try to download it.
 
     Args:
         json_obj (dict): JSON from one of the input course files
 
     Returns:
-        str or None: Base64 encoded data for a file, or None if it couldn't be found
+        bytes or None: Binary data for a file, or None if it couldn't be found
     """
     key = ""
     if "_datafield_image" in json_obj:
@@ -55,7 +58,19 @@ def get_binary_data(json_obj):
     elif "_datafield_file" in json_obj:
         key = "_datafield_file"
     if key:
-        return json_obj[key]["data"]
+        b64_data = json_obj[key]["data"]
+        return b64decode(b64_data)
+
+    url = None
+    if "unique_identifier" in json_obj:
+        url = json_obj["unique_identifier"]
+    elif "technical_location" in json_obj:
+        url = json_obj["technical_location"]
+
+    if url:
+        resp = requests.get(url)
+        if resp.ok:
+            return resp.content
     return None
 
 

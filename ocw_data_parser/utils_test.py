@@ -1,5 +1,5 @@
 """Tests for utility functions"""
-
+from base64 import b64encode
 import os
 from tempfile import TemporaryDirectory
 from unittest.mock import patch
@@ -59,7 +59,42 @@ def test_update_foreign_file_location(ocw_parser):
     ), "failed to update foreign file location"
 
 
-def test_get_binary_data_none(ocw_parser):
+@pytest.mark.parametrize("base64_key", ["_datafield_image", "_datafield_file", None])
+@pytest.mark.parametrize("url_key", ["unique_identifier", "technical_location", None])
+@pytest.mark.parametrize("is_valid_request", [True, False])
+def test_get_binary_data(mocker, ocw_parser, base64_key, url_key, is_valid_request):
+    """
+    get_binary_data should look up base64 encoded values from certain addresses
+    """
+    data = b"abcde"
+    url = "http://example.mit.edu/a/url"
+    get_mock = mocker.patch("requests.get")
+    get_mock.return_value.ok = is_valid_request
+    get_mock.return_value.content = data
+
+    media = {}
+    if base64_key is not None:
+        media[base64_key] = {"data": b64encode(data)}
+    if url_key is not None:
+        media[url_key] = url
+
+    out_data = get_binary_data(media)
+    if base64_key is not None:
+        # data should be successfully fetched from base64 data
+        expected = data
+    elif url_key is not None and is_valid_request:
+        # data should be successfully fetched from the internet
+        expected = data
+    else:
+        expected = None
+
+    assert expected == out_data
+
+    if url_key is not None and base64_key is None:
+        get_mock.assert_called_once_with(url)
+
+
+def test_get_binary_data_url(ocw_parser):
     """
     Find the first file without a datafield property and attempt to get the binary data from it
     """
