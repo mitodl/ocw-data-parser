@@ -1,0 +1,348 @@
+{
+    "_ac_local_roles": {
+        "pgandhi3": [
+            "Owner"
+        ]
+    },
+    "_atbrefs": {
+        "isReferencing": [
+            "70b1498729283aad0ccfe229bcdce4cb"
+        ]
+    },
+    "_atrefs": {
+        "BelongsTo": [
+            "d9aad1541f1a9d3c0f7b0dcf9531a9a1"
+        ],
+        "isReferencing": [
+            "8db87a6963f491cfe68d61a2a1bcce51",
+            "86fd88ad15c8ddaa6a5a1bd6d54abece",
+            "95c6687a9ae75d050ae508d73e460fd0",
+            "c7d4cd78ba5cb48fec36606adc79a982",
+            "3d3af0ed4937792407dc4afdbfaf7dc8",
+            "bc1f0badc8039d4656e615342f468904",
+            "e2c78d0a4801f8e2fa4083dcec911330",
+            "0eff46847a090a37a7b8b458ac58598b",
+            "eec10bf7b06efbe4bc91e53910dc35ab",
+            "0c4d7880e5879d175bca39a38fb328b9",
+            "f3aeda08f561ec57e3d95aba7bd021d2",
+            "bc30d4d5d7fbfb851f1aea0d7dcf53de",
+            "13d6e7a49247800e1370e402928fea30",
+            "ca9d1d21763c564ad4fd651054c3d738",
+            "3178dffb389bc9b0e742da818e0507ce",
+            "7016ff5c52fad747655b3a8292ae9d6d",
+            "2c4f3e1ab6f372c79a3816e81f787507",
+            "9be0a05d3aff015cb375ebf8b9d1cb15",
+            "2602f2af3bdc7ed6813e081188a2546d",
+            "70b1498729283aad0ccfe229bcdce4cb",
+            "0e22c29fbaa64b0dcfb8ff17f5166e63",
+            "2c4b4b645197a77af712086bf661c981",
+            "eab54dbc48400f13cb273511bc2824f4"
+        ]
+    },
+    "_classname": "CourseSection",
+    "_content_type": "text/html",
+    "_content_type_ad_type": "text/plain",
+    "_content_type_course_identifier": "text/plain",
+    "_content_type_description": "text/plain",
+    "_content_type_id": "text/plain",
+    "_content_type_license": "text/plain",
+    "_content_type_materialtype": "text/plain",
+    "_content_type_publisher": "text/plain",
+    "_content_type_rights": "text/html",
+    "_content_type_short_page_title": "text/plain",
+    "_content_type_technical_location": "text/plain",
+    "_content_type_text": "text/html",
+    "_content_type_title": "text/plain",
+    "_content_type_unique_identifier": "text/plain",
+    "_defaultpage": "",
+    "_directly_provided": [
+        "Products.CMFEditions.interfaces.IVersioned"
+    ],
+    "_gopip": 6,
+    "_id": "labs-and-exercises",
+    "_layout": "custom_view",
+    "_owner": null,
+    "_path": "/Plone/courses/earth-atmospheric-and-planetary-sciences/12-001-introduction-to-geology-fall-2013/labs-and-exercises",
+    "_permissions": {
+        "Access contents information": {
+            "acquire": false,
+            "roles": [
+                "Authenticated"
+            ]
+        },
+        "Change portal events": {
+            "acquire": false,
+            "roles": [
+                "Editor",
+                "Manager",
+                "MetadataEditor",
+                "Owner"
+            ]
+        },
+        "List folder contents": {
+            "acquire": false,
+            "roles": [
+                "Editor",
+                "Manager",
+                "MetadataEditor",
+                "Owner"
+            ]
+        },
+        "Modify portal content": {
+            "acquire": false,
+            "roles": [
+                "Manager",
+                "MetadataEditor"
+            ]
+        },
+        "View": {
+            "acquire": false,
+            "roles": [
+                "Authenticated"
+            ]
+        }
+    },
+    "_properties": [
+        [
+            "title",
+            "Labs and Exercises",
+            "string"
+        ]
+    ],
+    "_type": "CourseSection",
+    "_uid": "70b1498729283aad0ccfe229bcdce4cb",
+    "_userdefined_roles": [],
+    "_workflow_history": {
+        "page_workflow": [
+            {
+                "action": null,
+                "actor": "pgandhi3",
+                "comments": "",
+                "review_state": "waiting_for_authoring",
+                "time": "2014/09/25 05:09:35.847 GMT-4"
+            },
+            {
+                "action": "approve_to_staging",
+                "actor": "rverma83",
+                "comments": "",
+                "review_state": "ready_for_staging",
+                "time": "2014/09/25 07:53:04.002 GMT-4"
+            },
+            {
+                "action": "decline",
+                "actor": "pgandhi3",
+                "comments": "",
+                "review_state": "waiting_for_authoring",
+                "time": "2014/09/25 11:52:04.791 GMT-4"
+            },
+            {
+                "action": "approve_to_staging",
+                "actor": "pgandhi3",
+                "comments": "",
+                "review_state": "ready_for_staging",
+                "time": "2014/09/25 12:02:18.785 GMT-4"
+            },
+            {
+                "action": "decline",
+                "actor": "vverma9",
+                "comments": "",
+                "review_state": "waiting_for_authoring",
+                "time": "2014/09/26 05:58:45.374 GMT-4"
+            },
+            {
+                "action": "approve_to_staging",
+                "actor": "vverma9",
+                "comments": "",
+                "review_state": "ready_for_staging",
+                "time": "2014/09/26 07:25:43.877 GMT-4"
+            },
+            {
+                "action": "decline",
+                "actor": "asingh33",
+                "comments": "",
+                "review_state": "waiting_for_authoring",
+                "time": "2014/11/21 02:12:25.220 US/Eastern"
+            },
+            {
+                "action": "approve_to_staging",
+                "actor": "asingh33",
+                "comments": "",
+                "review_state": "ready_for_staging",
+                "time": "2014/11/21 02:26:00.427 US/Eastern"
+            },
+            {
+                "action": "decline",
+                "actor": "rverma83",
+                "comments": "",
+                "review_state": "waiting_for_authoring",
+                "time": "2014/12/22 01:17:47.598 US/Eastern"
+            },
+            {
+                "action": "approve_to_staging",
+                "actor": "rverma83",
+                "comments": "",
+                "review_state": "ready_for_staging",
+                "time": "2014/12/22 02:18:20.301 US/Eastern"
+            },
+            {
+                "action": "decline",
+                "actor": "rverma83",
+                "comments": "",
+                "review_state": "waiting_for_authoring",
+                "time": "2014/12/22 02:50:23.584 US/Eastern"
+            },
+            {
+                "action": "approve_to_staging",
+                "actor": "rverma83",
+                "comments": "",
+                "review_state": "ready_for_staging",
+                "time": "2014/12/22 03:20:34.273 US/Eastern"
+            },
+            {
+                "action": "decline",
+                "actor": "rverma83",
+                "comments": "",
+                "review_state": "waiting_for_authoring",
+                "time": "2014/12/22 06:30:39.973 US/Eastern"
+            },
+            {
+                "action": "approve_to_staging",
+                "actor": "rverma83",
+                "comments": "",
+                "review_state": "ready_for_staging",
+                "time": "2014/12/22 06:35:13.643 US/Eastern"
+            },
+            {
+                "action": "decline",
+                "actor": "rverma83",
+                "comments": "",
+                "review_state": "waiting_for_authoring",
+                "time": "2014/12/22 06:36:30.185 US/Eastern"
+            },
+            {
+                "action": "approve_to_staging",
+                "actor": "rverma83",
+                "comments": "",
+                "review_state": "ready_for_staging",
+                "time": "2014/12/22 06:44:04.572 US/Eastern"
+            },
+            {
+                "action": "decline",
+                "actor": "rverma83",
+                "comments": "",
+                "review_state": "waiting_for_authoring",
+                "time": "2015/02/06 00:31:35.791 US/Eastern"
+            },
+            {
+                "action": "approve_to_staging",
+                "actor": "rverma83",
+                "comments": "",
+                "review_state": "ready_for_staging",
+                "time": "2015/02/06 00:37:08.639 US/Eastern"
+            }
+        ]
+    },
+    "ad_champion_text": "",
+    "ad_type": "HOUSE",
+    "aggregationlevel": 3,
+    "allowDiscussion": false,
+    "always_publish": false,
+    "bottomtext": "",
+    "category_features": [],
+    "constrainTypesMode": 0,
+    "contributor_list": [],
+    "contributors": [],
+    "course_identifier": "https://ocw.mit.edu/courses/earth-atmospheric-and-planetary-sciences/12-001-introduction-to-geology-fall-2013",
+    "course_linking": [],
+    "courselist_features": [],
+    "creation_date": "2014/09/25 05:09:35.835 GMT-4",
+    "creators": [
+        "pgandhi3"
+    ],
+    "description": "This section contains the exercises and laboratory assignments for the course along with supporting files.",
+    "duration": "",
+    "effectiveDate": "2014/09/25 07:53:02.703 GMT-4",
+    "excludeFromNav": false,
+    "expirationDate": "None",
+    "feature_requirements": [],
+    "features_tracking": [],
+    "firstTimeEdit": true,
+    "has_inline_embed": false,
+    "hide_Page_title": false,
+    "id": "labs-and-exercises",
+    "immediatelyAddableTypes": [
+        "OCWImage",
+        "CourseSection",
+        "OCWExtFile",
+        "OCWFile",
+        "MediaResource"
+    ],
+    "is_image_gallery": false,
+    "is_mathml_document": false,
+    "is_media_gallery": false,
+    "language": "",
+    "license": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/",
+    "list_in_left_nav": false,
+    "locallyAllowedTypes": [
+        "OCWImage",
+        "CourseSection",
+        "OCWExtFile",
+        "OCWFile",
+        "MediaResource"
+    ],
+    "location": "",
+    "materialtype": "Other",
+    "metadata_contributor_list": [],
+    "modification_date": "2016/09/24 06:42:06.115 GMT-4",
+    "nextPreviousEnabled": false,
+    "other_platform_requirements": "",
+    "parent_module": "d9aad1541f1a9d3c0f7b0dcf9531a9a1",
+    "parent_uid": "d9aad1541f1a9d3c0f7b0dcf9531a9a1",
+    "publisher": "MIT OpenCourseWare",
+    "related_mit_links": "",
+    "rights": "This site (c) Massachusetts Institute of Technology 2014.  Content within individual courses is (c) by the individual authors unless otherwise noted. The Massachusetts Institute of Technology is providing this Work (as defined below) under the terms of this Creative Commons public license (\"CCPL\" or \"license\") unless otherwise noted. The Work is protected by copyright and/or other applicable law. Any use of the work other than as authorized under this license is prohibited. By exercising any of the rights to the Work provided here, You (as defined below) accept and agree to be bound by the terms of this license. The Licensor, the Massachusetts Institute of Technology, grants You the rights contained here in consideration of Your acceptance of such terms and conditions.",
+    "section_identifier": null,
+    "short_name_tlp": "",
+    "short_page_title": "Labs and Exercises",
+    "software_requirements": [
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "40.0",
+            "software_name_col": "Chrome",
+            "software_type_col": "Browser"
+        },
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "8.0",
+            "software_name_col": "Safari",
+            "software_type_col": "Browser"
+        },
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "38.0",
+            "software_name_col": "Mozilla Firefox",
+            "software_type_col": "Browser"
+        },
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "9.0",
+            "software_name_col": "Internet Explorer",
+            "software_type_col": "Browser"
+        },
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "13.1",
+            "software_name_col": "Edge",
+            "software_type_col": "Browser"
+        }
+    ],
+    "subject": [],
+    "tcATmit_instructional_tags": [],
+    "tcATmit_subject_tags": [],
+    "technical_location": "https://ocw.mit.edu/courses/earth-atmospheric-and-planetary-sciences/12-001-introduction-to-geology-fall-2013/labs-and-exercises",
+    "text": "<div class=\"maintabletemplate\"><table summary=\"See table caption for summary.\" class=\"tablewidth75\">     <caption class=\"invisible\">Course labs and exercises files.</caption>  <!-- BEGIN TABLE HEADER (for MIT OCW Table Template 2.51) -->     <thead>         <tr>             <th scope=\"col\">SES&nbsp;#</th>             <th scope=\"col\">LABS&nbsp;AND&nbsp;EXERCISES</th>         </tr>     </thead>     <!-- END TABLE HEADER -->     <tbody>         <tr class=\"row\">             <td>2</td>             <td><a href=\"./resolveuid/3d3af0ed4937792407dc4afdbfaf7dc8\">Exercise 1: Composition of the Mantle (PDF)</a></td>         </tr>         <tr class=\"alt-row\">             <td>3&ndash;4</td>             <td><p><a href=\"./resolveuid/3178dffb389bc9b0e742da818e0507ce\">Lab 1: Mineral Identification (PDF)</a></p>             <ul>                 <li><a href=\"./resolveuid/ca9d1d21763c564ad4fd651054c3d738\">Mineral Identification Guide (PDF)</a></li>                 <li><a href=\"./resolveuid/0c4d7880e5879d175bca39a38fb328b9\">Blank Chart for Minerals (PDF)</a></li>             </ul></td>         </tr>         <tr class=\"row\">             <td>5&ndash;8</td>             <td><p><a href=\"./resolveuid/7016ff5c52fad747655b3a8292ae9d6d\">Lab 2: Rock Identification (PDF)</a></p>             <ul>                 <li><a href=\"./resolveuid/bc1f0badc8039d4656e615342f468904\">Blank Chart for Igneous Rocks (PDF)</a></li>                 <li><a href=\"./resolveuid/9be0a05d3aff015cb375ebf8b9d1cb15\">Blank Chart for Sedimentary Rocks (PDF)</a></li>                 <li><a href=\"./resolveuid/2c4f3e1ab6f372c79a3816e81f787507\">Blank Chart for Metamorphic Rocks (PDF)</a>                 <ul>                     <li><img src=\"/images/inacessible.gif\" alt=\"This resource may not render correctly in a screen reader.\" /><a href=\"./resolveuid/f3aeda08f561ec57e3d95aba7bd021d2\">Information about Metamorphic Rocks (PDF)</a></li>                 </ul></li>                 <li><a href=\"./resolveuid/13d6e7a49247800e1370e402928fea30\">Blank Chart for Unknown Rocks (PDF)</a></li>             </ul></td>         </tr>         <tr class=\"alt-row\">             <td>10</td>             <td><a href=\"./resolveuid/95c6687a9ae75d050ae508d73e460fd0\">Exercise 2: Rock Structure and Deformation (PDF)</a></td>         </tr>         <tr class=\"row\">             <td>11&ndash;12</td>             <td><img alt=\"This resource may not render correctly in a screen reader.\" src=\"/images/inacessible.gif\" /><a href=\"./resolveuid/bc30d4d5d7fbfb851f1aea0d7dcf53de\">Lab 3: Geochronology (PDF)</a></td>         </tr>         <tr class=\"alt-row\">             <td>13&ndash;15</td>             <td><p><a href=\"./resolveuid/eec10bf7b06efbe4bc91e53910dc35ab\">Lab 4: Plate Tectonics (PDF)</a></p>             <p>This lab is from <a href=\"http://plateboundary.rice.edu/home.html\">comprehensive work</a> by Dale S. Sawyer at Rice University. Used with permission. Additional materials used in the lab are available to download at his website.</p></td>         </tr>         <tr class=\"row\">             <td>19, 21</td>             <td><p>Lab 5: Earthquakes</p>             <ul>                 <li><a href=\"./resolveuid/2c4b4b645197a77af712086bf661c981\">Seismicity and Earthquakes, Part I (PDF)</a>                 <ul>                     <li>Wolfe, Cecily J., Sean C. Solomon, et al. &quot;<a href=\"http://dx.doi.org/10.1126/science.1180165\">Mantle Shear-wave Velocity Structure Beneath the Hawaiian Hot Spot</a>.&quot; <em>Science</em> 326, no. 5958 (2009): 1388&ndash;90.</li>                 </ul></li>                 <li><a href=\"./resolveuid/eab54dbc48400f13cb273511bc2824f4\">Seismicity and Earthquakes, Part II (PDF)</a></li>             </ul></td>         </tr>         <tr class=\"alt-row\">             <td>22</td>             <td><p><a href=\"./resolveuid/e2c78d0a4801f8e2fa4083dcec911330\">Exercise 3: Stereonets (PDF)</a></p>             <ul>                 <li>Stereonet Template</li>             </ul></td>         </tr>         <tr class=\"row\">             <td>24</td>             <td><img alt=\"This resource may not render correctly in a screen reader.\" src=\"/images/inacessible.gif\" /><a href=\"./resolveuid/8db87a6963f491cfe68d61a2a1bcce51\">Exercise 4: Reading Geological Maps (PDF)</a></td>         </tr>         <tr class=\"alt-row\">             <td>25&ndash;27</td>             <td><p><a href=\"./resolveuid/86fd88ad15c8ddaa6a5a1bd6d54abece\">Lab 6: Geologic Mapping (PDF)</a></p>             <ul>                 <li><img src=\"/images/inacessible.gif\" alt=\"This resource may not render correctly in a screen reader.\" /><a href=\"./resolveuid/c7d4cd78ba5cb48fec36606adc79a982\">Example Stratigraphic Column (PDF)</a></li>                 <li><img src=\"/images/inacessible.gif\" alt=\"This resource may not render correctly in a screen reader.\" /><a href=\"./resolveuid/2602f2af3bdc7ed6813e081188a2546d\">Base Map (PDF)</a></li>             </ul></td>         </tr>         <tr class=\"row\">             <td>28&ndash;29</td>             <td><a href=\"./resolveuid/0e22c29fbaa64b0dcfb8ff17f5166e63\">Lab 7: Rivers (PDF)</a></td>         </tr>         <tr class=\"alt-row\">             <td>35</td>             <td><a href=\"./resolveuid/0eff46847a090a37a7b8b458ac58598b\">Exercise 5: Science, Policy, and Public Opinion (PDF)</a></td>         </tr>         <!-- TEN ROWS -->     </tbody> </table></div><p>&nbsp;</p>",
+    "title": "Labs and Exercises",
+    "unique_identifier": "https://ocw.mit.edu/courses/earth-atmospheric-and-planetary-sciences/12-001-introduction-to-geology-fall-2013/labs-and-exercises",
+    "url_rewrite_patterns": [],
+    "widgets_features": []
+}

@@ -1,358 +1,358 @@
 {
-    "text": "<h2 class=\"subhead\">Interesting Links</h2>\r\n<h3 class=\"subsubhead\">Java&reg; Demos</h3>\r\n<p>The <em>Java&reg; Demos</em> were developed by <a href=\"http://www.drexel.edu/math/contact/facultyDirectory/PavelGrinfeld/\">Pavel Grinfeld</a>.</p>\r\n<ul>\r\n    <li><a href=\"http://ocw.mit.edu/ans7870/18/18.06/javademo/Eigen/\">Eigenvalues</a></li>\r\n    <li><a href=\"http://ocw.mit.edu/ans7870/18/18.06/javademo/SVD/\">SVD (Singular Value Decomposition)</a></li>\r\n    <li><a href=\"http://ocw.mit.edu/ans7870/18/18.06/javademo/GaussElim/\">Gaussian Elimination</a></li>\r\n    <li><a href=\"http://ocw.mit.edu/ans7870/18/18.06/javademo/Determinant/\">Determinants</a></li>\r\n    <li><a href=\"http://ocw.mit.edu/ans7870/18/18.06/javademo/Gram/\">Gram-Schmidt = Orthogonalization</a></li>\r\n    <li><a href=\"http://ocw.mit.edu/ans7870/18/18.06/javademo/InnerProduct/\">Inner Product of Functions</a></li>\r\n    <li><a href=\"http://ocw.mit.edu/ans7870/18/18.06/javademo/FourierSeries/\">Sum of Fourier Series</a></li>\r\n    <li><a href=\"http://ocw.mit.edu/ans7870/18/18.06/javademo/FourierSynthesis/\">Sum of Trigonometric Series</a></li>\r\n    <li><a href=\"http://ocw.mit.edu/ans7870/18/18.06/javademo/Gibbs/\">Gibbs Phenomenon</a></li>\r\n    <li><a href=\"http://ocw.mit.edu/ans7870/18/18.06/javademo/Aliasing/\">Aliasing</a></li>\r\n    <li><a href=\"http://ocw.mit.edu/ans7870/18/18.06/javademo/ColSpace/\">Column Spaces</a></li>\r\n    <li><a href=\"http://ocw.mit.edu/ans7870/18/18.06/javademo/LeastSqr/\">Least Squares</a></li>\r\n    <li><a href=\"http://ocw.mit.edu/ans7870/18/18.06/javademo/power_method_applet/powerMethod.html\">Power Method</a></li>\r\n</ul>\r\n<h3 class=\"subsubhead\">Other Demos</h3>\r\n<ul>\r\n    <li><a href=\"http://web.mit.edu/18.06/www/Links/demogj\">Gauss-Jordan Demo</a></li>\r\n    <li><a href=\"http://web.mit.edu/18.06/www/Demos/matlab-diaries/demolu\">LU Demo</a></li>\r\n    <li><a href=\"http://vismod.media.mit.edu/vismod/demos/facerec/basic.html\">The Media Lab's Eigenfaces Demo</a></li>\r\n    <li><a href=\"http://pages.uoregon.edu/koch/hypersolids/hypersolids.html\">Projections of Famous and not so Famous Three and Four Dimensional Solids</a></li>\r\n</ul>\r\n<h3 class=\"subsubhead\">MATLAB&reg; Information</h3>\r\n<ul>\r\n    <li>Best Guide to MATLAB&reg; (<img alt=\"This resource may not render correctly in a screen reader.\" src=\"/images/inacessible.gif\" /><a href=\"http://homen.vsb.cz/~lud0016/NM/matlab_guide.pdf\">PDF</a>)</li>\r\n    <li>Short MATLAB&reg; Tutorial (<a href=\"./resolveuid/a7d11b1b00c1c2bd2574c3f896ce4eb3\">PDF</a>) and Cool <a href=\"http://www.mathworks.com/products/demos/\">MATLAB&reg; demos</a> by Mathworks</li>\r\n    <li><a href=\"http://web.mit.edu/18.06/www/MATLAB/Recitation.html\">MATLAB&reg; Recitation Demos from 1997</a></li>\r\n    <li><a href=\"http://web.mit.edu/18.06/www/Course-Info/Tcodes.html\">MATLAB&reg; Teaching Codes</a></li>\r\n    <li>A MATLAB cheat sheet (<img alt=\"This resource may not render correctly in a screen reader.\" src=\"/images/inacessible.gif\" /><a href=\"http://web.mit.edu/18.06/www/Spring09/matlab-cheatsheet.pdf\">PDF</a>)</li>\r\n</ul>\r\n<h3 class=\"subsubhead\">Essays</h3>\r\n<ul>\r\n    <li>Pascal Matrices (<a href=\"./resolveuid/d61af89db7c6303dc024e52d8ff18f96\">PDF</a>)</li>\r\n    <li>A Basis for 3 by 3 Symmetric Matrices (<a href=\"./resolveuid/2c925bea168888404287bb6b848f79ca\">PDF</a>)</li>\r\n    <li>Gram-Schmidt in 9 Lines of MATLAB&reg; (<img alt=\"This resource may not render correctly in a screen reader.\" src=\"/images/inacessible.gif\" /><a href=\"./resolveuid/768d6fe735722547c3f5e74824532c53\">PDF</a>)</li>\r\n    <li>Linear Algebra and Music (<img alt=\"This resource may not render correctly in a screen reader.\" src=\"/images/inacessible.gif\" /><a href=\"http://web.mit.edu/18.06/www/Essays/linear-algebra-and-music.pdf\">PDF</a>)</li>\r\n</ul>\r\n<h3 class=\"subsubhead\">Essays on Teaching Linear Algebra</h3>\r\n<ul>\r\n    <li>Too Much Calculus (<img alt=\"This resource may not render correctly in a screen reader.\" src=\"/images/inacessible.gif\" /><a href=\"http://web.mit.edu/18.06/www/Essays/too-much-calculus.pdf\">PDF</a>)</li>\r\n    <li>Starting with Two Matrices (<img alt=\"This resource may not render correctly in a screen reader.\" src=\"/images/inacessible.gif\" /><a href=\"http://web.mit.edu/18.06/www/Essays/starting2matrices_ver5.pdf\">PDF</a>)</li>\r\n    <li>The Four Fundamental Subspaces: 4 Lines (<img alt=\"This resource may not render correctly in a screen reader.\" src=\"/images/inacessible.gif\" /><a href=\"http://web.mit.edu/18.06/www/Essays/newpaper_ver3.pdf\">PDF</a>)</li>\r\n    <li>Fourier Sine Series Examples (<img alt=\"This resource may not render correctly in a screen reader.\" src=\"/images/inacessible.gif\" /><a href=\"http://web.mit.edu/18.06/www/Fall07/sines.pdf\">PDF</a>)</li>\r\n    <li>Notes on function spaces, Hermitian operators, and Fourier series (<img alt=\"This resource may not render correctly in a screen reader.\" src=\"/images/inacessible.gif\" /><a href=\"http://web.mit.edu/18.06/www/Fall07/operators.pdf\">PDF</a>)</li>\r\n</ul>", 
-    "_content_type_license": "text/plain", 
-    "_uid": "6d4babc3884f613c593e2df8ac802a95", 
-    "title": "Related Resources", 
     "_ac_local_roles": {
         "cc_saror4": [
             "Owner"
         ]
-    }, 
-    "location": "", 
-    "_content_type_course_identifier": "text/plain", 
+    },
     "_atbrefs": {
         "isReferencing": [
-            "ede17211bd49ea166ed701f09c1de288", 
+            "ede17211bd49ea166ed701f09c1de288",
             "6d4babc3884f613c593e2df8ac802a95"
         ]
-    }, 
-    "constrainTypesMode": 0, 
-    "technical_location": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/related-resources", 
-    "software_requirements": [
-        {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "40.0", 
-            "software_name_col": "Chrome", 
-            "maximum_version_col": ""
-        }, 
-        {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "8.0", 
-            "software_name_col": "Safari", 
-            "maximum_version_col": ""
-        }, 
-        {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "38.0", 
-            "software_name_col": "Mozilla Firefox", 
-            "maximum_version_col": ""
-        }, 
-        {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "9.0", 
-            "software_name_col": "Internet Explorer", 
-            "maximum_version_col": ""
-        }, 
-        {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "13.1", 
-            "software_name_col": "Edge", 
-            "maximum_version_col": ""
-        }
-    ], 
-    "_content_type_technical_location": "text/plain", 
-    "_content_type_rights": "text/html", 
-    "_directly_provided": [
-        "Products.CMFEditions.interfaces.IVersioned"
-    ], 
-    "parent_uid": "aabc44bdb2e45374d62f30f2a6d4c63e", 
-    "excludeFromNav": false, 
-    "_content_type_unique_identifier": "text/plain", 
-    "allowDiscussion": false, 
-    "metadata_contributor_list": [], 
-    "locallyAllowedTypes": [
-        "OCWImage", 
-        "CourseSection", 
-        "OCWExtFile", 
-        "OCWFile"
-    ], 
-    "_content_type_text": "text/html", 
-    "ad_type": "HOUSE", 
-    "creation_date": "2010/05/14 12:22:13.937 GMT-4", 
-    "aggregationlevel": 3, 
-    "duration": "", 
-    "immediatelyAddableTypes": [
-        "OCWImage", 
-        "CourseSection", 
-        "OCWExtFile", 
-        "OCWFile"
-    ], 
-    "subject": [], 
-    "_content_type_short_page_title": "text/plain", 
-    "effectiveDate": "2010/09/03 05:44:36.400 GMT-4", 
-    "parent_module": "aabc44bdb2e45374d62f30f2a6d4c63e", 
-    "is_mathml_document": false, 
-    "bottomtext": "", 
-    "short_page_title": "Related Resources", 
-    "section_identifier": null, 
-    "related_mit_links": "", 
-    "_content_type_ad_type": "text/plain", 
-    "_layout": "custom_view", 
-    "_workflow_history": {
-        "page_workflow": [
-            {
-                "action": null, 
-                "review_state": "waiting_for_authoring", 
-                "actor": "admin", 
-                "comments": "", 
-                "time": "2010/05/14 12:22:13.943 GMT-4"
-            }, 
-            {
-                "action": "approve_to_staging", 
-                "review_state": "ready_for_staging", 
-                "comments": "", 
-                "actor": "admin", 
-                "time": "2010/05/16 11:42:29.766 GMT-4"
-            }, 
-            {
-                "action": null, 
-                "review_state": "waiting_for_authoring", 
-                "comments": "", 
-                "actor": "cc_saror4", 
-                "time": "2010/08/17 00:14:23.115 GMT-4"
-            }, 
-            {
-                "action": "approve_to_staging", 
-                "review_state": "ready_for_staging", 
-                "actor": "cc_gegrov", 
-                "comments": "", 
-                "time": "2010/09/03 05:44:36.428 GMT-4"
-            }, 
-            {
-                "action": "decline", 
-                "review_state": "waiting_for_authoring", 
-                "comments": "", 
-                "actor": "cc_ajsing", 
-                "time": "2010/09/03 08:07:50.881 GMT-4"
-            }, 
-            {
-                "action": "approve_to_staging", 
-                "review_state": "ready_for_staging", 
-                "actor": "cc_ajsing", 
-                "comments": "", 
-                "time": "2010/09/03 09:34:00.805 GMT-4"
-            }, 
-            {
-                "action": "decline", 
-                "review_state": "waiting_for_authoring", 
-                "comments": "", 
-                "actor": "cc_saror4", 
-                "time": "2010/09/10 01:08:56.507 GMT-4"
-            }, 
-            {
-                "action": "approve_to_staging", 
-                "review_state": "ready_for_staging", 
-                "actor": "cc_gegrov", 
-                "comments": "", 
-                "time": "2010/09/10 06:38:25.807 GMT-4"
-            }, 
-            {
-                "action": "decline", 
-                "review_state": "waiting_for_authoring", 
-                "comments": "", 
-                "actor": "cc_gegrov", 
-                "time": "2011/07/14 02:46:25.101 GMT-4"
-            }, 
-            {
-                "action": "approve_to_staging", 
-                "review_state": "ready_for_staging", 
-                "actor": "cc_gegrov", 
-                "comments": "", 
-                "time": "2011/07/14 02:48:49.768 GMT-4"
-            }, 
-            {
-                "action": "decline", 
-                "review_state": "waiting_for_authoring", 
-                "comments": "", 
-                "actor": "rsharma20", 
-                "time": "2014/07/26 12:17:38.905 GMT-4"
-            }, 
-            {
-                "action": "approve_to_staging", 
-                "review_state": "ready_for_staging", 
-                "comments": "", 
-                "actor": "rsharma20", 
-                "time": "2014/07/26 14:57:17.693 GMT-4"
-            }, 
-            {
-                "action": "decline", 
-                "review_state": "waiting_for_authoring", 
-                "actor": "asingh33", 
-                "comments": "", 
-                "time": "2014/09/05 04:10:16.780 GMT-4"
-            }, 
-            {
-                "action": "approve_to_staging", 
-                "review_state": "ready_for_staging", 
-                "actor": "asingh33", 
-                "comments": "", 
-                "time": "2014/09/05 04:12:07.242 GMT-4"
-            }, 
-            {
-                "action": "decline", 
-                "review_state": "waiting_for_authoring", 
-                "comments": "", 
-                "actor": "pgandhi3", 
-                "time": "2015/02/13 00:35:50.916 US/Eastern"
-            }, 
-            {
-                "action": "approve_to_staging", 
-                "review_state": "ready_for_staging", 
-                "comments": "", 
-                "actor": "pgandhi3", 
-                "time": "2015/02/13 00:36:34.586 US/Eastern"
-            }, 
-            {
-                "action": "decline", 
-                "review_state": "waiting_for_authoring", 
-                "actor": "vverma9", 
-                "comments": "", 
-                "time": "2015/07/21 00:18:10.635 GMT-4"
-            }, 
-            {
-                "action": "approve_to_staging", 
-                "review_state": "ready_for_staging", 
-                "comments": "", 
-                "actor": "vverma9", 
-                "time": "2015/07/21 00:25:39.625 GMT-4"
-            }, 
-            {
-                "action": "decline", 
-                "review_state": "waiting_for_authoring", 
-                "actor": "rnagar6", 
-                "comments": "", 
-                "time": "2016/10/13 06:52:41.384 GMT-4"
-            }, 
-            {
-                "action": "approve_to_staging", 
-                "review_state": "ready_for_staging", 
-                "comments": "", 
-                "actor": "rnagar6", 
-                "time": "2016/10/13 06:53:29.310 GMT-4"
-            }, 
-            {
-                "action": "decline", 
-                "review_state": "waiting_for_authoring", 
-                "actor": "ssingh286", 
-                "comments": "", 
-                "time": "2017/09/19 03:14:07.496 GMT-4"
-            }, 
-            {
-                "action": "approve_to_staging", 
-                "review_state": "ready_for_staging", 
-                "actor": "ssingh286", 
-                "comments": "", 
-                "time": "2017/09/19 03:14:59.945 GMT-4"
-            }
-        ]
-    }, 
-    "_classname": "CourseSection", 
-    "_content_type_materialtype": "text/plain", 
-    "_userdefined_roles": [], 
-    "publisher": "MIT OpenCourseWare", 
-    "nextPreviousEnabled": false, 
-    "language": "", 
-    "url_rewrite_patterns": [], 
-    "widgets_features": [], 
-    "category_features": [], 
-    "firstTimeEdit": true, 
-    "feature_requirements": [], 
-    "list_in_left_nav": false, 
-    "short_name_tlp": "Related Resources", 
-    "expirationDate": "None", 
-    "_content_type_id": "text/plain", 
-    "contributor_list": [], 
-    "is_media_gallery": false, 
-    "contributors": [], 
-    "_gopip": 10, 
-    "_content_type_title": "text/plain", 
-    "course_linking": [], 
+    },
     "_atrefs": {
         "BelongsTo": [
             "aabc44bdb2e45374d62f30f2a6d4c63e"
-        ], 
+        ],
         "isReferencing": [
-            "a7d11b1b00c1c2bd2574c3f896ce4eb3", 
-            "768d6fe735722547c3f5e74824532c53", 
-            "2c925bea168888404287bb6b848f79ca", 
-            "6d4babc3884f613c593e2df8ac802a95", 
+            "a7d11b1b00c1c2bd2574c3f896ce4eb3",
+            "768d6fe735722547c3f5e74824532c53",
+            "2c925bea168888404287bb6b848f79ca",
+            "6d4babc3884f613c593e2df8ac802a95",
             "d61af89db7c6303dc024e52d8ff18f96"
         ]
-    }, 
-    "other_platform_requirements": "", 
-    "license": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/", 
-    "rights": "This site (c) Massachusetts Institute of Technology 2010.  Content within individual courses is (c) by the individual authors unless otherwise noted. The Massachusetts Institute of Technology is providing this Work (as defined below) under the terms of this Creative Commons public license (\"CCPL\" or \"license\") unless otherwise noted. The Work is protected by copyright and/or other applicable law. Any use of the work other than as authorized under this license is prohibited. By exercising any of the rights to the Work provided here, You (as defined below) accept and agree to be bound by the terms of this license. The Licensor, the Massachusetts Institute of Technology, grants You the rights contained here in consideration of Your acceptance of such terms and conditions.", 
-    "hide_Page_title": false, 
-    "_defaultpage": "", 
-    "tcATmit_subject_tags": [], 
-    "features_tracking": [], 
-    "ad_champion_text": "", 
-    "has_inline_embed": false, 
-    "unique_identifier": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/related-resources", 
-    "is_image_gallery": false, 
-    "id": "related-resources", 
-    "materialtype": "Other", 
-    "_type": "CourseSection", 
-    "description": "This section contains links to content related to this course, including Java demos, essays, and MATLAB information.", 
-    "course_identifier": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010", 
-    "_content_type_publisher": "text/plain", 
-    "tcATmit_instructional_tags": [], 
-    "_content_type": "text/html", 
-    "creators": [
-        "admin"
-    ], 
-    "modification_date": "2017/09/19 03:14:59.899 GMT-4", 
-    "always_publish": false, 
-    "_content_type_description": "text/plain", 
-    "_owner": null, 
+    },
+    "_classname": "CourseSection",
+    "_content_type": "text/html",
+    "_content_type_ad_type": "text/plain",
+    "_content_type_course_identifier": "text/plain",
+    "_content_type_description": "text/plain",
+    "_content_type_id": "text/plain",
+    "_content_type_license": "text/plain",
+    "_content_type_materialtype": "text/plain",
+    "_content_type_publisher": "text/plain",
+    "_content_type_rights": "text/html",
+    "_content_type_short_name_tlp": "text/plain",
+    "_content_type_short_page_title": "text/plain",
+    "_content_type_technical_location": "text/plain",
+    "_content_type_text": "text/html",
+    "_content_type_title": "text/plain",
+    "_content_type_unique_identifier": "text/plain",
+    "_defaultpage": "",
+    "_directly_provided": [
+        "Products.CMFEditions.interfaces.IVersioned"
+    ],
+    "_gopip": 10,
+    "_id": "related-resources",
+    "_layout": "custom_view",
+    "_owner": null,
+    "_path": "/Plone/courses/mathematics/18-06-linear-algebra-spring-2010/related-resources",
     "_permissions": {
-        "Change portal events": {
-            "acquire": false, 
-            "roles": [
-                "Editor", 
-                "Manager", 
-                "MetadataEditor", 
-                "Owner"
-            ]
-        }, 
-        "Modify portal content": {
-            "acquire": false, 
-            "roles": [
-                "Manager", 
-                "MetadataEditor"
-            ]
-        }, 
         "Access contents information": {
-            "acquire": false, 
+            "acquire": false,
             "roles": [
                 "Authenticated"
             ]
-        }, 
-        "List folder contents": {
-            "acquire": false, 
+        },
+        "Change portal events": {
+            "acquire": false,
             "roles": [
-                "Editor", 
-                "Manager", 
-                "MetadataEditor", 
+                "Editor",
+                "Manager",
+                "MetadataEditor",
                 "Owner"
             ]
-        }, 
+        },
+        "List folder contents": {
+            "acquire": false,
+            "roles": [
+                "Editor",
+                "Manager",
+                "MetadataEditor",
+                "Owner"
+            ]
+        },
+        "Modify portal content": {
+            "acquire": false,
+            "roles": [
+                "Manager",
+                "MetadataEditor"
+            ]
+        },
         "View": {
-            "acquire": false, 
+            "acquire": false,
             "roles": [
                 "Authenticated"
             ]
         }
-    }, 
+    },
     "_properties": [
         [
-            "title", 
-            "Related Resources", 
+            "title",
+            "Related Resources",
             "string"
         ]
-    ], 
-    "_id": "related-resources", 
-    "courselist_features": [], 
-    "_content_type_short_name_tlp": "text/plain", 
-    "_path": "/Plone/courses/mathematics/18-06-linear-algebra-spring-2010/related-resources"
+    ],
+    "_type": "CourseSection",
+    "_uid": "6d4babc3884f613c593e2df8ac802a95",
+    "_userdefined_roles": [],
+    "_workflow_history": {
+        "page_workflow": [
+            {
+                "action": null,
+                "actor": "admin",
+                "comments": "",
+                "review_state": "waiting_for_authoring",
+                "time": "2010/05/14 12:22:13.943 GMT-4"
+            },
+            {
+                "action": "approve_to_staging",
+                "actor": "admin",
+                "comments": "",
+                "review_state": "ready_for_staging",
+                "time": "2010/05/16 11:42:29.766 GMT-4"
+            },
+            {
+                "action": null,
+                "actor": "cc_saror4",
+                "comments": "",
+                "review_state": "waiting_for_authoring",
+                "time": "2010/08/17 00:14:23.115 GMT-4"
+            },
+            {
+                "action": "approve_to_staging",
+                "actor": "cc_gegrov",
+                "comments": "",
+                "review_state": "ready_for_staging",
+                "time": "2010/09/03 05:44:36.428 GMT-4"
+            },
+            {
+                "action": "decline",
+                "actor": "cc_ajsing",
+                "comments": "",
+                "review_state": "waiting_for_authoring",
+                "time": "2010/09/03 08:07:50.881 GMT-4"
+            },
+            {
+                "action": "approve_to_staging",
+                "actor": "cc_ajsing",
+                "comments": "",
+                "review_state": "ready_for_staging",
+                "time": "2010/09/03 09:34:00.805 GMT-4"
+            },
+            {
+                "action": "decline",
+                "actor": "cc_saror4",
+                "comments": "",
+                "review_state": "waiting_for_authoring",
+                "time": "2010/09/10 01:08:56.507 GMT-4"
+            },
+            {
+                "action": "approve_to_staging",
+                "actor": "cc_gegrov",
+                "comments": "",
+                "review_state": "ready_for_staging",
+                "time": "2010/09/10 06:38:25.807 GMT-4"
+            },
+            {
+                "action": "decline",
+                "actor": "cc_gegrov",
+                "comments": "",
+                "review_state": "waiting_for_authoring",
+                "time": "2011/07/14 02:46:25.101 GMT-4"
+            },
+            {
+                "action": "approve_to_staging",
+                "actor": "cc_gegrov",
+                "comments": "",
+                "review_state": "ready_for_staging",
+                "time": "2011/07/14 02:48:49.768 GMT-4"
+            },
+            {
+                "action": "decline",
+                "actor": "rsharma20",
+                "comments": "",
+                "review_state": "waiting_for_authoring",
+                "time": "2014/07/26 12:17:38.905 GMT-4"
+            },
+            {
+                "action": "approve_to_staging",
+                "actor": "rsharma20",
+                "comments": "",
+                "review_state": "ready_for_staging",
+                "time": "2014/07/26 14:57:17.693 GMT-4"
+            },
+            {
+                "action": "decline",
+                "actor": "asingh33",
+                "comments": "",
+                "review_state": "waiting_for_authoring",
+                "time": "2014/09/05 04:10:16.780 GMT-4"
+            },
+            {
+                "action": "approve_to_staging",
+                "actor": "asingh33",
+                "comments": "",
+                "review_state": "ready_for_staging",
+                "time": "2014/09/05 04:12:07.242 GMT-4"
+            },
+            {
+                "action": "decline",
+                "actor": "pgandhi3",
+                "comments": "",
+                "review_state": "waiting_for_authoring",
+                "time": "2015/02/13 00:35:50.916 US/Eastern"
+            },
+            {
+                "action": "approve_to_staging",
+                "actor": "pgandhi3",
+                "comments": "",
+                "review_state": "ready_for_staging",
+                "time": "2015/02/13 00:36:34.586 US/Eastern"
+            },
+            {
+                "action": "decline",
+                "actor": "vverma9",
+                "comments": "",
+                "review_state": "waiting_for_authoring",
+                "time": "2015/07/21 00:18:10.635 GMT-4"
+            },
+            {
+                "action": "approve_to_staging",
+                "actor": "vverma9",
+                "comments": "",
+                "review_state": "ready_for_staging",
+                "time": "2015/07/21 00:25:39.625 GMT-4"
+            },
+            {
+                "action": "decline",
+                "actor": "rnagar6",
+                "comments": "",
+                "review_state": "waiting_for_authoring",
+                "time": "2016/10/13 06:52:41.384 GMT-4"
+            },
+            {
+                "action": "approve_to_staging",
+                "actor": "rnagar6",
+                "comments": "",
+                "review_state": "ready_for_staging",
+                "time": "2016/10/13 06:53:29.310 GMT-4"
+            },
+            {
+                "action": "decline",
+                "actor": "ssingh286",
+                "comments": "",
+                "review_state": "waiting_for_authoring",
+                "time": "2017/09/19 03:14:07.496 GMT-4"
+            },
+            {
+                "action": "approve_to_staging",
+                "actor": "ssingh286",
+                "comments": "",
+                "review_state": "ready_for_staging",
+                "time": "2017/09/19 03:14:59.945 GMT-4"
+            }
+        ]
+    },
+    "ad_champion_text": "",
+    "ad_type": "HOUSE",
+    "aggregationlevel": 3,
+    "allowDiscussion": false,
+    "always_publish": false,
+    "bottomtext": "",
+    "category_features": [],
+    "constrainTypesMode": 0,
+    "contributor_list": [],
+    "contributors": [],
+    "course_identifier": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010",
+    "course_linking": [],
+    "courselist_features": [],
+    "creation_date": "2010/05/14 12:22:13.937 GMT-4",
+    "creators": [
+        "admin"
+    ],
+    "description": "This section contains links to content related to this course, including Java demos, essays, and MATLAB information.",
+    "duration": "",
+    "effectiveDate": "2010/09/03 05:44:36.400 GMT-4",
+    "excludeFromNav": false,
+    "expirationDate": "None",
+    "feature_requirements": [],
+    "features_tracking": [],
+    "firstTimeEdit": true,
+    "has_inline_embed": false,
+    "hide_Page_title": false,
+    "id": "related-resources",
+    "immediatelyAddableTypes": [
+        "OCWImage",
+        "CourseSection",
+        "OCWExtFile",
+        "OCWFile"
+    ],
+    "is_image_gallery": false,
+    "is_mathml_document": false,
+    "is_media_gallery": false,
+    "language": "",
+    "license": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/",
+    "list_in_left_nav": false,
+    "locallyAllowedTypes": [
+        "OCWImage",
+        "CourseSection",
+        "OCWExtFile",
+        "OCWFile"
+    ],
+    "location": "",
+    "materialtype": "Other",
+    "metadata_contributor_list": [],
+    "modification_date": "2017/09/19 03:14:59.899 GMT-4",
+    "nextPreviousEnabled": false,
+    "other_platform_requirements": "",
+    "parent_module": "aabc44bdb2e45374d62f30f2a6d4c63e",
+    "parent_uid": "aabc44bdb2e45374d62f30f2a6d4c63e",
+    "publisher": "MIT OpenCourseWare",
+    "related_mit_links": "",
+    "rights": "This site (c) Massachusetts Institute of Technology 2010.  Content within individual courses is (c) by the individual authors unless otherwise noted. The Massachusetts Institute of Technology is providing this Work (as defined below) under the terms of this Creative Commons public license (\"CCPL\" or \"license\") unless otherwise noted. The Work is protected by copyright and/or other applicable law. Any use of the work other than as authorized under this license is prohibited. By exercising any of the rights to the Work provided here, You (as defined below) accept and agree to be bound by the terms of this license. The Licensor, the Massachusetts Institute of Technology, grants You the rights contained here in consideration of Your acceptance of such terms and conditions.",
+    "section_identifier": null,
+    "short_name_tlp": "Related Resources",
+    "short_page_title": "Related Resources",
+    "software_requirements": [
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "40.0",
+            "software_name_col": "Chrome",
+            "software_type_col": "Browser"
+        },
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "8.0",
+            "software_name_col": "Safari",
+            "software_type_col": "Browser"
+        },
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "38.0",
+            "software_name_col": "Mozilla Firefox",
+            "software_type_col": "Browser"
+        },
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "9.0",
+            "software_name_col": "Internet Explorer",
+            "software_type_col": "Browser"
+        },
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "13.1",
+            "software_name_col": "Edge",
+            "software_type_col": "Browser"
+        }
+    ],
+    "subject": [],
+    "tcATmit_instructional_tags": [],
+    "tcATmit_subject_tags": [],
+    "technical_location": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/related-resources",
+    "text": "<h2 class=\"subhead\">Interesting Links</h2>\r\n<h3 class=\"subsubhead\">Java&reg; Demos</h3>\r\n<p>The <em>Java&reg; Demos</em> were developed by <a href=\"http://www.drexel.edu/math/contact/facultyDirectory/PavelGrinfeld/\">Pavel Grinfeld</a>.</p>\r\n<ul>\r\n    <li><a href=\"http://ocw.mit.edu/ans7870/18/18.06/javademo/Eigen/\">Eigenvalues</a></li>\r\n    <li><a href=\"http://ocw.mit.edu/ans7870/18/18.06/javademo/SVD/\">SVD (Singular Value Decomposition)</a></li>\r\n    <li><a href=\"http://ocw.mit.edu/ans7870/18/18.06/javademo/GaussElim/\">Gaussian Elimination</a></li>\r\n    <li><a href=\"http://ocw.mit.edu/ans7870/18/18.06/javademo/Determinant/\">Determinants</a></li>\r\n    <li><a href=\"http://ocw.mit.edu/ans7870/18/18.06/javademo/Gram/\">Gram-Schmidt = Orthogonalization</a></li>\r\n    <li><a href=\"http://ocw.mit.edu/ans7870/18/18.06/javademo/InnerProduct/\">Inner Product of Functions</a></li>\r\n    <li><a href=\"http://ocw.mit.edu/ans7870/18/18.06/javademo/FourierSeries/\">Sum of Fourier Series</a></li>\r\n    <li><a href=\"http://ocw.mit.edu/ans7870/18/18.06/javademo/FourierSynthesis/\">Sum of Trigonometric Series</a></li>\r\n    <li><a href=\"http://ocw.mit.edu/ans7870/18/18.06/javademo/Gibbs/\">Gibbs Phenomenon</a></li>\r\n    <li><a href=\"http://ocw.mit.edu/ans7870/18/18.06/javademo/Aliasing/\">Aliasing</a></li>\r\n    <li><a href=\"http://ocw.mit.edu/ans7870/18/18.06/javademo/ColSpace/\">Column Spaces</a></li>\r\n    <li><a href=\"http://ocw.mit.edu/ans7870/18/18.06/javademo/LeastSqr/\">Least Squares</a></li>\r\n    <li><a href=\"http://ocw.mit.edu/ans7870/18/18.06/javademo/power_method_applet/powerMethod.html\">Power Method</a></li>\r\n</ul>\r\n<h3 class=\"subsubhead\">Other Demos</h3>\r\n<ul>\r\n    <li><a href=\"http://web.mit.edu/18.06/www/Links/demogj\">Gauss-Jordan Demo</a></li>\r\n    <li><a href=\"http://web.mit.edu/18.06/www/Demos/matlab-diaries/demolu\">LU Demo</a></li>\r\n    <li><a href=\"http://vismod.media.mit.edu/vismod/demos/facerec/basic.html\">The Media Lab's Eigenfaces Demo</a></li>\r\n    <li><a href=\"http://pages.uoregon.edu/koch/hypersolids/hypersolids.html\">Projections of Famous and not so Famous Three and Four Dimensional Solids</a></li>\r\n</ul>\r\n<h3 class=\"subsubhead\">MATLAB&reg; Information</h3>\r\n<ul>\r\n    <li>Best Guide to MATLAB&reg; (<img alt=\"This resource may not render correctly in a screen reader.\" src=\"/images/inacessible.gif\" /><a href=\"http://homen.vsb.cz/~lud0016/NM/matlab_guide.pdf\">PDF</a>)</li>\r\n    <li>Short MATLAB&reg; Tutorial (<a href=\"./resolveuid/a7d11b1b00c1c2bd2574c3f896ce4eb3\">PDF</a>) and Cool <a href=\"http://www.mathworks.com/products/demos/\">MATLAB&reg; demos</a> by Mathworks</li>\r\n    <li><a href=\"http://web.mit.edu/18.06/www/MATLAB/Recitation.html\">MATLAB&reg; Recitation Demos from 1997</a></li>\r\n    <li><a href=\"http://web.mit.edu/18.06/www/Course-Info/Tcodes.html\">MATLAB&reg; Teaching Codes</a></li>\r\n    <li>A MATLAB cheat sheet (<img alt=\"This resource may not render correctly in a screen reader.\" src=\"/images/inacessible.gif\" /><a href=\"http://web.mit.edu/18.06/www/Spring09/matlab-cheatsheet.pdf\">PDF</a>)</li>\r\n</ul>\r\n<h3 class=\"subsubhead\">Essays</h3>\r\n<ul>\r\n    <li>Pascal Matrices (<a href=\"./resolveuid/d61af89db7c6303dc024e52d8ff18f96\">PDF</a>)</li>\r\n    <li>A Basis for 3 by 3 Symmetric Matrices (<a href=\"./resolveuid/2c925bea168888404287bb6b848f79ca\">PDF</a>)</li>\r\n    <li>Gram-Schmidt in 9 Lines of MATLAB&reg; (<img alt=\"This resource may not render correctly in a screen reader.\" src=\"/images/inacessible.gif\" /><a href=\"./resolveuid/768d6fe735722547c3f5e74824532c53\">PDF</a>)</li>\r\n    <li>Linear Algebra and Music (<img alt=\"This resource may not render correctly in a screen reader.\" src=\"/images/inacessible.gif\" /><a href=\"http://web.mit.edu/18.06/www/Essays/linear-algebra-and-music.pdf\">PDF</a>)</li>\r\n</ul>\r\n<h3 class=\"subsubhead\">Essays on Teaching Linear Algebra</h3>\r\n<ul>\r\n    <li>Too Much Calculus (<img alt=\"This resource may not render correctly in a screen reader.\" src=\"/images/inacessible.gif\" /><a href=\"http://web.mit.edu/18.06/www/Essays/too-much-calculus.pdf\">PDF</a>)</li>\r\n    <li>Starting with Two Matrices (<img alt=\"This resource may not render correctly in a screen reader.\" src=\"/images/inacessible.gif\" /><a href=\"http://web.mit.edu/18.06/www/Essays/starting2matrices_ver5.pdf\">PDF</a>)</li>\r\n    <li>The Four Fundamental Subspaces: 4 Lines (<img alt=\"This resource may not render correctly in a screen reader.\" src=\"/images/inacessible.gif\" /><a href=\"http://web.mit.edu/18.06/www/Essays/newpaper_ver3.pdf\">PDF</a>)</li>\r\n    <li>Fourier Sine Series Examples (<img alt=\"This resource may not render correctly in a screen reader.\" src=\"/images/inacessible.gif\" /><a href=\"http://web.mit.edu/18.06/www/Fall07/sines.pdf\">PDF</a>)</li>\r\n    <li>Notes on function spaces, Hermitian operators, and Fourier series (<img alt=\"This resource may not render correctly in a screen reader.\" src=\"/images/inacessible.gif\" /><a href=\"http://web.mit.edu/18.06/www/Fall07/operators.pdf\">PDF</a>)</li>\r\n</ul>",
+    "title": "Related Resources",
+    "unique_identifier": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/related-resources",
+    "url_rewrite_patterns": [],
+    "widgets_features": []
 }

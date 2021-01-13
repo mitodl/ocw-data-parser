@@ -1,185 +1,185 @@
 {
-    "expanded_alternate_text": "", 
-    "features_tracking": [], 
-    "widgets_features": [], 
-    "contributors": [], 
-    "tcATmit_subject_tags": [], 
-    "unique_identifier": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-16-projection-matrices-and-least-squares/18.06_L16.jpg", 
-    "_content_type_publisher": "text/plain", 
-    "_content_type_license": "text/plain", 
-    "_datafield_image": {
-        "encoding": "base64", 
-        "data": "/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAcFBQYFBAcGBgYIBwcICxILCwoKCxYPEA0SGhYbGhkWGRgcICgiHB4mHhgZIzAkJiorLS4tGyIyNTEsNSgsLSwBBwgICwkLFQsLFSwdGR0sLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLP/AABEIAFoAeAMBIgACEQEDEQH/xAAcAAACAwEBAQEAAAAAAAAAAAAEBQMGBwIAAQj/xABKEAACAQIEAwMJAQsICwAAAAABAgMEEQAFEiEGMUETUWEUFSIycYGRscEHMzQ1QmJyc6Gys/AWIyVDdKPC0RcmUlNjhIWSouHx/8QAGAEAAwEBAAAAAAAAAAAAAAAAAAEDAgT/xAAgEQEBAAICAgMBAQAAAAAAAAAAAQMRAhIhMRMyQQQi/9oADAMBAAIRAxEAPwDL8m4HzavponSfKYVaJXUzZpTLe4G1tdwfAgYYQcDZ+AGFLSsD0Wup2v8AB8F0rUc+RZcsEqCq7OJWTQR+KN7254ZUsamJ6eriV2ifQNLHVyuSAPZz7rYemiSo4C4hZwy5arC3SpiP+LEK/Z7xMxOnJ3PsdD9cPFpqPthPKWmi03fbSpNjy5W3BtzvY4MjyyhleGmEJjlnJRCx3DEgX9YC3gfE9cBKyfs24rbcZDUn2AH64YcN/Z9xRS8XZPPNkFascVbC7N2VwoDgk4nzHJqOoiFTRAhFX01Itp9IL4m+4vf3bY74Hy/sPtK4flQbJXxK+3K7f+sGjXEZbNmMNTRU6qZqilqYkDMFF2gcC5Ow54zTKfs/q4KJQ9ZkzydbZnAR+1jYsmFs0j/RzfunxnOT5jRjsEOWxFrKut5iouCDc+35E4nj9LZvsAqfs7zWmYLUS5VAzC47SuiFx3+tiA/Z3XeifLcoAe+kivisbc7b4sWYSQVmZU8Jglj1JHrkExkY3QH8bla+I1hbzC9VFKssEEwjlWTbcqxBU9RsxtimkVcm+zysjaxzPJlI5g1yXxGvAU/Lzzki/wDOA/IYtVTBly0lG1HPT1D1EYJSSQWibUQb735b4T1LPDXNqp9LKySevfs056RbaxDDfACz+Qcmv8PZIB1IqGNvgmO6jgaOAjRxLksoPUNMLf3eJKyrWWJUUCIL3W38Tte/6vAY7y1KeSnrGnkBfsiEBF7eixv4bqo9+AEeZ8KrTZbUzefsqlMUbN2cfblmsL2F4gPiRj2GOa0lMmSVDpUNI3krM4UbK1uXs3Hv27ifYRU4y2gWTh6jq0eUSRRJb0G0iwFtwtr79+HtNoEtp6iMqyRSLJG6K8Y0sCtiNzuQeu3jgDIaih8z01GM4y6F3pQWE8EwKCylrt2Vvxe/2YPhlyiQxl84y1wkRjBXt4yb3sSWisSL/LGg5qcso44nhjrXNOyekmqNdQ16h1PI77DBKUdLLGlTLUskg1qGerVWZioUm+joABfwB8TIkNE1GreX5S0YsDI1SUBPQ3IG/PHGqgSIRLVZJJ6TEMczgFr8rEsOR7/C+AIO3jZJ3o2NM7l5GDOGDFRqJ5Dc3Nthuo903CVK449ykrVRyFa2B2EVyCC5J6cwd8fEJg7VYKnKjBLIjMgzekN0F7rvJfe+DOEMsrouOstqUp6WKkWpVmdMwhf0QTa4DknmNh1A54QWXKU/pBT/AMKb90+Mcy51CI7XNt7d+Nmy6SKCoMtRMkEKQzF5JDZUHZNuT0GMnpspo4ICp4h4fkboVzSL6kYnj9OjP9jSjr46XM6Wt8io6lBDYxVMwAPolN7n4bdBiCWWNdbRvThCismmoS6SjVpv6e43YczzGIEo4wymLNsiYrvfzvSj9RkxGcpn0MEqslkVhb8L0ht4/df4ucVQBauzqXZpYY45oyQBKHvv3hhY3XvH0wRlsyzT00zywDRGFKKyqT6RUAgm5PImwO3PBFPkNaDA0Hm55F1hjHmVLc3FhYiQ7i5wfQ8MVwlpxU0VI0Uceg6KuF7nWW1W1+P8dESvzUzQSlWETNHG6kKL7AEaiLbHe9zb44jo2WLLaqUMBZ1TcX9aOUYs1PwjWxV7MtG6R6mCmGoiZ9JOwsW7vG578QDhDN6emq6c0KlndSoaRdxpkW/P8sHACjsoqjhbMlWRJZI8vdmAFtKjWxHt1aMewbmmRZvQcJ5hrpJFCUcqtJddk9FiNjy9E/8Adj2AIKCWlqKHJqk5fOJI6fsZQZCVZhHdb3FwpUHYbHc7m9/VEOVx1pjlhk7OTVIssZ0iOPUeYtuwII7jYW54e5JTw0/DFM1MqODSjUJlP+xe4QcjudyTfoN74Dro6qCRzMYhOsZpZQL3AueZ77g/wcMFRrzMJKagWSnoYx/OdqFumrSrXJHM2Hjz5b4D8gpUMtq8zMqgqsSqS3fvqt8CfphrmEMlQwjlcSsjMxJXSQzG7Aj24vf+iykj4XSbM6oz1kaNNT0qx3VAwHrc78ibbc9+VsGrfQlm/LK5KdoZOyqA0UgAJV1sRcXwRkSRDjLIyCpIr4D/AHi4ZVNC1a/lgeMpLEsw02vY+F/afYMd0eRTw8T5PPAYp446yB30yLqVdablb3tuOV8L88ndb8NHgf0ZPCGTn+YcUDL+Lc3ekjM2ZL2zuQTIilVFgbkaPb16csXeJwI5f0Mg/wDA4y/JY4JJW7d0FkYxh/VZ+Sg+Fzf3Ynj9L5/a1T5/UsKqF5qCqIRDHI0UJUk2LbFDfr3cupsDwcwZoKdBk+UFnEqs4y2nZjIiatO6Ed3TvwnkoKZqPtIqm8vYJIRqAAcsdQPsXoN+vIYlpaSSaCmijqkM1WzRhi+6WOkjn1BW3W1x3Yqg4qMyjVUaTKcifWNVlyiluB4nssC+dqPrkWSn/pdP9EwNNRzwytHKoV0NiO7Azwul2wA6/lNSJTCmHD+RlFNx/RsQIN73uFBxA2bZZUyF34aySWQ8y9Luf14VNGtuVjiMchpFj34CE5xX5Q+TViJwzksMhhcLLHAysh0mxB18xj2FWaiRctqCbEGNvlj2ES85LDQnI6NlzDL1nMSalGaGPbSOd6c736b+3DVMugqFN2pZLkElM4p2JsLD1kXCTL6cPlVFoFj2Cbj80YZxUULIQUXV4i98Ldb1B9RlBq3Epop3a1tUVZRSE+J/nwTiw8T1GY+XvVBGXKxAlLHNFPdRvpPaBSefLu38MVNMnpGXU9PGxHeoODabL6ylhSoyysqIAo0SU6OwRxe+4H/z241OfUum1RyTyBciRs3lrYBBI0KtDT9orqrW2bV0HgcFrRZbU8SUNdk1bUSUlPURPaainudLKbF1Ur06lRy5Y+1VFFUdvVwDyQykyMtOTGpblfSDbe2A6eapiITzjVhC4uvaEhh3Yzu1rX4vlHKZ45AFJIjbkPDGb0dLNDFaogkht/vEK/PFy85zLQvJlldNR1NhplhYqw3Fx8MNcuzbiwr6efZgw/LdW+YxjhdRXNN1RBTxyeq6/HHa5efDGkNm/E+n8KxydbTUqN9MCedeIJD/AD8eT1A/LyyMk4r2R61RTRuOmBZ6NyPUxeZs8q0B1cNZBMwNt6QR/rGFdTmfnGVNfDFFTsu1qSVkB9oscLZdaqPkj2tpNsdx02m11xa0ly6gZ/LeGqqp1C4C1hTT7LWxE+fcKIbS8L5nCO8V2r/PD7QaqnZ6F8zVfocom39xx7Fhz/M+DKrh3MkpYc2gqTSydmrlWXVpNrm3K+PYVuyqLLKlvNdKo59inL80YL85TQp97TMe8xlfpjnLuGM9myKieLL/AEWhQg9qm40i3XCPirJc0oJcuSczUTSa/Va2q2nnY+OJc+XWbXx8e11Tps+nRgCVjB6MMTtn8wQoXhZfC4PxBGM5mkzWmaQRZtVjSw/rWt88ECrz0xzEZm5Ccgxv8xiHzR0fDr0uKZtrU6I0VBsOeO4MwUssHYqSzWvflilQ5hnnaovlMMmpbnVDGf8ADg8VGcIQwp6ViOojUfIjB88hfCvMFfTgMppQoG+xHT3Ya0vG+WRQCN6Sq9oCn64zM5xm631UcJ6ejrB/axAM4nU75WbjmRKw+YOCZYOWO3y10cY5MwG06+Dxjb4E4Los7ocyqEpqET1Mjf1cVPIx9uwxjXn1ALyUdSn5sqn5rj4OLqaE7CrjBFjdFPyYYpMsrFx2N4k4YzCaQ9ll8zXGq2ixHjbCs1FBSz9hUSxU8w5rIQj/AAOMoy3jGWF/K6DNKikeJAmqIPGVW/q3XpcnbHzMeJqnOKo1NfmRrJTtrmlZiPDcbDwxq5IxOFajX1sNbAYz2cgGwcNucVqrooCwIjvf1u7FJWpWU+iI39jr/nhhHmNVFRmnSmW179oqan+I6YXyQdKZ59R0i8OZg6Qqsgpn6fknfHzFczXMapsqrFZpQrxOCG1AAWO3PH3FJZUuc1X6O4aoYzwplLHcmjhPP8gYoH2xUtqzJdCHZJievVMaTw0T/JDKf7FD+wMZ99rhPnDJt+ccvzTHLk9V14vtGRy0ZNaysuzLe5x1S0zPTSHSQDvg+rJ8rj3/ABTiSl+9l9+ON2k1NHZkc3uDo/XhyVOkHcWwLCovGLC3ajDiw08uuM8jLNI1OTe4P0xEW0Odh78GKB2k3530GIqhRc7DCgqFSGW5JAIwjzSBZY9t7Hc25bYeR/c19mFGabIPf8sVx+OUT5/WpOH6ADL6qQaXjES3BW/pa1t9cFR01O4a8C7YO4YP+rebf2dP3yYgi/H9mKZ7/pLBJ1CSUFLK1tLC3QNgZsqp1kYxySIe/B4++B78Rt92b24j2q/WF1bSzpl1QVr5ioja6ljYi3Lnj2Cq78EVP6Nvlj5jt/ntsu3F/TJLH//Z", 
-        "content_type": "image/jpeg", 
-        "filename": "18.06_L16.jpg"
-    }, 
-    "aggregationlevel": 2, 
-    "_uid": "d5d3301356a9fd4380376b6572912446", 
-    "_workflow_history": {
-        "one_state_workflow": [
-            {
-                "action": null, 
-                "review_state": "published", 
-                "actor": "Jcplayer", 
-                "comments": "", 
-                "time": "2010/10/07 16:57:12.272 GMT-4"
-            }
-        ]
-    }, 
-    "expirationDate": "None", 
-    "_content_type_id": "text/plain", 
-    "duration": "", 
-    "contributor_list": [], 
-    "id": "18.06_L16.jpg", 
-    "related_mit_links": "", 
-    "thumb_height": "", 
-    "effectiveDate": "None", 
-    "title": "18.06_L16.jpg", 
-    "_layout": "view", 
-    "parent_module": "aabc44bdb2e45374d62f30f2a6d4c63e", 
-    "_content_type": "image/jpeg", 
-    "_userdefined_roles": [], 
-    "_gopip": 0, 
-    "location": "", 
-    "_atrefs": {
-        "BelongsTo": [
-            "aabc44bdb2e45374d62f30f2a6d4c63e"
-        ]
-    }, 
-    "_content_type_course_identifier": "text/plain", 
-    "_content_type_title": "text/plain", 
-    "section_identifier": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures", 
-    "_atbrefs": {
-        "thumbnail_image": [
-            "2577b6fca4536d02074f494d2f49dc3b"
-        ], 
-        "file_reference": [
-            "f5c1a6d864b8a487e629121912859d62"
-        ]
-    }, 
-    "creation_date": "2010/10/07 16:57:12.264 GMT-4", 
-    "_content_type_section_identifier": "text/plain", 
-    "_type": "OCWImage", 
-    "technical_location": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-16-projection-matrices-and-least-squares/18.06_L16.jpg", 
-    "description": "", 
-    "thumb_width": "", 
-    "software_requirements": [
-        {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "40.0", 
-            "software_name_col": "Chrome", 
-            "maximum_version_col": ""
-        }, 
-        {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "8.0", 
-            "software_name_col": "Safari", 
-            "maximum_version_col": ""
-        }, 
-        {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "38.0", 
-            "software_name_col": "Mozilla Firefox", 
-            "maximum_version_col": ""
-        }, 
-        {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "9.0", 
-            "software_name_col": "Internet Explorer", 
-            "maximum_version_col": ""
-        }, 
-        {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "13.1", 
-            "software_name_col": "Edge", 
-            "maximum_version_col": ""
-        }
-    ], 
-    "_content_type_technical_location": "text/plain", 
-    "alternate_text": "", 
-    "credit": "", 
-    "subject": [], 
-    "_content_type_rights": "text/html", 
-    "course_identifier": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010", 
-    "_directly_provided": [], 
-    "other_platform_requirements": "", 
-    "_id": "18.06_L16.jpg", 
-    "_classname": "OCWImage", 
-    "metadata_contributor_list": [
-        {
-            "md_contributor_uid": "", 
-            "md_contributor_entity": "Todd Rautenberg", 
-            "md_contributor_hide": "", 
-            "md_contributor_special_title": "", 
-            "md_contributor_role": "Validator"
-        }, 
-        {
-            "md_contributor_uid": "", 
-            "md_contributor_entity": "Todd Rautenberg", 
-            "md_contributor_hide": "", 
-            "md_contributor_special_title": "", 
-            "md_contributor_role": "Creator"
-        }
-    ], 
-    "tcATmit_instructional_tags": [], 
-    "caption": "", 
-    "parent_uid": "2577b6fca4536d02074f494d2f49dc3b", 
-    "modification_date": "2016/09/24 04:34:05.714 GMT-4", 
-    "course_linking": [], 
-    "publisher": "MIT OpenCourseWare", 
-    "excludeFromNav": false, 
-    "feature_requirements": [], 
-    "language": "", 
-    "license": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/", 
-    "rights": "This site (c) Massachusetts Institute of Technology 2010.  Content within individual courses is (c) by the individual authors unless otherwise noted. The Massachusetts Institute of Technology is providing this Work (as defined below) under the terms of this Creative Commons public license (\"CCPL\" or \"license\") unless otherwise noted. The Work is protected by copyright and/or other applicable law. Any use of the work other than as authorized under this license is prohibited. By exercising any of the rights to the Work provided here, You (as defined below) accept and agree to be bound by the terms of this license. The Licensor, the Massachusetts Institute of Technology, grants You the rights contained here in consideration of Your acceptance of such terms and conditions.", 
-    "always_publish": false, 
-    "popup_image_id": "", 
-    "materialtype": "Other", 
-    "_content_type_unique_identifier": "text/plain", 
-    "category_features": [], 
-    "is_pop_up_image": false, 
-    "_owner": null, 
-    "_defaultpage": "index_html", 
-    "firstTimeEdit": true, 
-    "_permissions": {
-        "Modify portal content": {
-            "acquire": false, 
-            "roles": [
-                "Editor", 
-                "Manager", 
-                "Owner"
-            ]
-        }, 
-        "Access contents information": {
-            "acquire": false, 
-            "roles": [
-                "Anonymous"
-            ]
-        }, 
-        "View": {
-            "acquire": false, 
-            "roles": [
-                "Anonymous"
-            ]
-        }
-    }, 
-    "_properties": [
-        [
-            "title", 
-            "18.06_L16.jpg", 
-            "string"
-        ]
-    ], 
-    "allowDiscussion": false, 
-    "_content_type_materialtype": "text/plain", 
-    "creators": [
-        "Jcplayer"
-    ], 
-    "courselist_features": [], 
     "_ac_local_roles": {
         "Jcplayer": [
             "Owner"
         ]
-    }, 
-    "_path": "/Plone/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-16-projection-matrices-and-least-squares/18.06_L16.jpg"
+    },
+    "_atbrefs": {
+        "file_reference": [
+            "f5c1a6d864b8a487e629121912859d62"
+        ],
+        "thumbnail_image": [
+            "2577b6fca4536d02074f494d2f49dc3b"
+        ]
+    },
+    "_atrefs": {
+        "BelongsTo": [
+            "aabc44bdb2e45374d62f30f2a6d4c63e"
+        ]
+    },
+    "_classname": "OCWImage",
+    "_content_type": "image/jpeg",
+    "_content_type_course_identifier": "text/plain",
+    "_content_type_id": "text/plain",
+    "_content_type_license": "text/plain",
+    "_content_type_materialtype": "text/plain",
+    "_content_type_publisher": "text/plain",
+    "_content_type_rights": "text/html",
+    "_content_type_section_identifier": "text/plain",
+    "_content_type_technical_location": "text/plain",
+    "_content_type_title": "text/plain",
+    "_content_type_unique_identifier": "text/plain",
+    "_datafield_image": {
+        "content_type": "image/jpeg",
+        "data": "ZW1wdHk=",
+        "encoding": "base64",
+        "filename": "18.06_L16.jpg"
+    },
+    "_defaultpage": "index_html",
+    "_directly_provided": [],
+    "_gopip": 0,
+    "_id": "18.06_L16.jpg",
+    "_layout": "view",
+    "_owner": null,
+    "_path": "/Plone/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-16-projection-matrices-and-least-squares/18.06_L16.jpg",
+    "_permissions": {
+        "Access contents information": {
+            "acquire": false,
+            "roles": [
+                "Anonymous"
+            ]
+        },
+        "Modify portal content": {
+            "acquire": false,
+            "roles": [
+                "Editor",
+                "Manager",
+                "Owner"
+            ]
+        },
+        "View": {
+            "acquire": false,
+            "roles": [
+                "Anonymous"
+            ]
+        }
+    },
+    "_properties": [
+        [
+            "title",
+            "18.06_L16.jpg",
+            "string"
+        ]
+    ],
+    "_type": "OCWImage",
+    "_uid": "d5d3301356a9fd4380376b6572912446",
+    "_userdefined_roles": [],
+    "_workflow_history": {
+        "one_state_workflow": [
+            {
+                "action": null,
+                "actor": "Jcplayer",
+                "comments": "",
+                "review_state": "published",
+                "time": "2010/10/07 16:57:12.272 GMT-4"
+            }
+        ]
+    },
+    "aggregationlevel": 2,
+    "allowDiscussion": false,
+    "alternate_text": "",
+    "always_publish": false,
+    "caption": "",
+    "category_features": [],
+    "contributor_list": [],
+    "contributors": [],
+    "course_identifier": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010",
+    "course_linking": [],
+    "courselist_features": [],
+    "creation_date": "2010/10/07 16:57:12.264 GMT-4",
+    "creators": [
+        "Jcplayer"
+    ],
+    "credit": "",
+    "description": "",
+    "duration": "",
+    "effectiveDate": "None",
+    "excludeFromNav": false,
+    "expanded_alternate_text": "",
+    "expirationDate": "None",
+    "feature_requirements": [],
+    "features_tracking": [],
+    "firstTimeEdit": true,
+    "id": "18.06_L16.jpg",
+    "is_pop_up_image": false,
+    "language": "",
+    "license": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/",
+    "location": "",
+    "materialtype": "Other",
+    "metadata_contributor_list": [
+        {
+            "md_contributor_entity": "Todd Rautenberg",
+            "md_contributor_hide": "",
+            "md_contributor_role": "Validator",
+            "md_contributor_special_title": "",
+            "md_contributor_uid": ""
+        },
+        {
+            "md_contributor_entity": "Todd Rautenberg",
+            "md_contributor_hide": "",
+            "md_contributor_role": "Creator",
+            "md_contributor_special_title": "",
+            "md_contributor_uid": ""
+        }
+    ],
+    "modification_date": "2016/09/24 04:34:05.714 GMT-4",
+    "other_platform_requirements": "",
+    "parent_module": "aabc44bdb2e45374d62f30f2a6d4c63e",
+    "parent_uid": "2577b6fca4536d02074f494d2f49dc3b",
+    "popup_image_id": "",
+    "publisher": "MIT OpenCourseWare",
+    "related_mit_links": "",
+    "rights": "This site (c) Massachusetts Institute of Technology 2010.  Content within individual courses is (c) by the individual authors unless otherwise noted. The Massachusetts Institute of Technology is providing this Work (as defined below) under the terms of this Creative Commons public license (\"CCPL\" or \"license\") unless otherwise noted. The Work is protected by copyright and/or other applicable law. Any use of the work other than as authorized under this license is prohibited. By exercising any of the rights to the Work provided here, You (as defined below) accept and agree to be bound by the terms of this license. The Licensor, the Massachusetts Institute of Technology, grants You the rights contained here in consideration of Your acceptance of such terms and conditions.",
+    "section_identifier": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures",
+    "software_requirements": [
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "40.0",
+            "software_name_col": "Chrome",
+            "software_type_col": "Browser"
+        },
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "8.0",
+            "software_name_col": "Safari",
+            "software_type_col": "Browser"
+        },
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "38.0",
+            "software_name_col": "Mozilla Firefox",
+            "software_type_col": "Browser"
+        },
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "9.0",
+            "software_name_col": "Internet Explorer",
+            "software_type_col": "Browser"
+        },
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "13.1",
+            "software_name_col": "Edge",
+            "software_type_col": "Browser"
+        }
+    ],
+    "subject": [],
+    "tcATmit_instructional_tags": [],
+    "tcATmit_subject_tags": [],
+    "technical_location": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-16-projection-matrices-and-least-squares/18.06_L16.jpg",
+    "thumb_height": "",
+    "thumb_width": "",
+    "title": "18.06_L16.jpg",
+    "unique_identifier": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-16-projection-matrices-and-least-squares/18.06_L16.jpg",
+    "widgets_features": []
 }

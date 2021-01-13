@@ -1,0 +1,177 @@
+{
+    "_ac_local_roles": {
+        "rverma83": [
+            "Owner"
+        ]
+    },
+    "_atbrefs": {
+        "isReferencing": [
+            "de36fe69cf33ddf238bc3896d0ce9eff"
+        ]
+    },
+    "_atrefs": {
+        "BelongsTo": [
+            "d9aad1541f1a9d3c0f7b0dcf9531a9a1"
+        ]
+    },
+    "_classname": "OCWFile",
+    "_content_type": "application/pdf",
+    "_content_type_course_identifier": "text/plain",
+    "_content_type_description": "text/plain",
+    "_content_type_id": "text/plain",
+    "_content_type_language": "text/plain",
+    "_content_type_license": "text/plain",
+    "_content_type_materialtype": "text/plain",
+    "_content_type_other_platform_requirements": "text/html",
+    "_content_type_publisher": "text/plain",
+    "_content_type_rights": "text/html",
+    "_content_type_section_identifier": "text/plain",
+    "_content_type_technical_location": "text/plain",
+    "_content_type_title": "text/plain",
+    "_content_type_unique_identifier": "text/plain",
+    "_datafield_file": {
+        "content_type": "application/pdf",
+        "data": "ZW1wdHk=",
+        "encoding": "base64",
+        "filename": "MIT12_001F14_Field_Trip.pdf"
+    },
+    "_defaultpage": "index_html",
+    "_directly_provided": [],
+    "_gopip": 0,
+    "_id": "MIT12_001F14_Field_Trip.pdf",
+    "_layout": "file_view",
+    "_owner": null,
+    "_path": "/Plone/courses/earth-atmospheric-and-planetary-sciences/12-001-introduction-to-geology-fall-2013/field-trip/MIT12_001F14_Field_Trip.pdf",
+    "_permissions": {
+        "Access contents information": {
+            "acquire": false,
+            "roles": [
+                "Anonymous"
+            ]
+        },
+        "Modify portal content": {
+            "acquire": false,
+            "roles": [
+                "Editor",
+                "Manager",
+                "Owner"
+            ]
+        },
+        "View": {
+            "acquire": false,
+            "roles": [
+                "Anonymous"
+            ]
+        }
+    },
+    "_properties": [
+        [
+            "title",
+            "A Field Trip to Ancient Plate Tectonics Structures in Massachusetts and New York",
+            "string"
+        ]
+    ],
+    "_type": "OCWFile",
+    "_uid": "f828208d0d04e1f39c1bb31d6fbe5f2d",
+    "_userdefined_roles": [],
+    "_workflow_history": {
+        "one_state_workflow": [
+            {
+                "action": null,
+                "actor": "rverma83",
+                "comments": "",
+                "review_state": "published",
+                "time": "2015/01/08 04:06:09.415 US/Eastern"
+            }
+        ]
+    },
+    "aggregationlevel": 2,
+    "allowDiscussion": false,
+    "always_publish": false,
+    "category_features": [],
+    "contributor_list": [
+        {
+            "contributor": "Perron, Taylor",
+            "contributor_role": "Creator"
+        },
+        {
+            "contributor": "Jagoutz, Oliver",
+            "contributor_role": "Creator"
+        }
+    ],
+    "contributors": [],
+    "course_identifier": "https://ocw.mit.edu/courses/earth-atmospheric-and-planetary-sciences/12-001-introduction-to-geology-fall-2013",
+    "course_linking": [],
+    "courselist_features": [],
+    "creation_date": "2015/01/08 04:06:09.402 US/Eastern",
+    "creators": [
+        "rverma83"
+    ],
+    "description": "This resource contains the information regarding a field trip to ancient plate tectonics structures in massachusetts and new york.",
+    "duration": "",
+    "effectiveDate": "None",
+    "excludeFromNav": false,
+    "expirationDate": "None",
+    "feature_requirements": [],
+    "features_tracking": [],
+    "firstTimeEdit": true,
+    "id": "MIT12_001F14_Field_Trip.pdf",
+    "language": "en-US",
+    "license": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/",
+    "location": "",
+    "materialtype": "Instructional Material | Lecture/Presentation",
+    "metadata_contributor_list": [],
+    "modification_date": "2016/09/24 12:35:00.049 GMT-4",
+    "other_platform_requirements": "Adobe Reader software is required to view this .pdf file.",
+    "parent_module": "d9aad1541f1a9d3c0f7b0dcf9531a9a1",
+    "parent_uid": "de36fe69cf33ddf238bc3896d0ce9eff",
+    "publisher": "MIT OpenCourseWare",
+    "related_mit_links": "",
+    "rights": "This site (c) Massachusetts Institute of Technology 2015.  Content within individual courses is (c) by the individual authors unless otherwise noted. The Massachusetts Institute of Technology is providing this Work (as defined below) under the terms of this Creative Commons public license (\"CCPL\" or \"license\") unless otherwise noted. The Work is protected by copyright and/or other applicable law. Any use of the work other than as authorized under this license is prohibited. By exercising any of the rights to the Work provided here, You (as defined below) accept and agree to be bound by the terms of this license. The Licensor, the Massachusetts Institute of Technology, grants You the rights contained here in consideration of Your acceptance of such terms and conditions.",
+    "section_identifier": "https://ocw.mit.edu/courses/earth-atmospheric-and-planetary-sciences/12-001-introduction-to-geology-fall-2013/field-trip",
+    "software_requirements": [
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "40.0",
+            "software_name_col": "Chrome",
+            "software_type_col": "Browser"
+        },
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "8.0",
+            "software_name_col": "Safari",
+            "software_type_col": "Browser"
+        },
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "38.0",
+            "software_name_col": "Mozilla Firefox",
+            "software_type_col": "Browser"
+        },
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "9.0",
+            "software_name_col": "Internet Explorer",
+            "software_type_col": "Browser"
+        },
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "13.1",
+            "software_name_col": "Edge",
+            "software_type_col": "Browser"
+        },
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "9.0",
+            "software_name_col": "Adobe Acrobat",
+            "software_type_col": "Others"
+        }
+    ],
+    "subject": [],
+    "tcATmit_instructional_tags": [],
+    "tcATmit_subject_tags": [],
+    "technical_location": "https://ocw.mit.edu/courses/earth-atmospheric-and-planetary-sciences/12-001-introduction-to-geology-fall-2013/field-trip/MIT12_001F14_Field_Trip.pdf",
+    "title": "A Field Trip to Ancient Plate Tectonics Structures in Massachusetts and New York",
+    "unique_identifier": "https://ocw.mit.edu/courses/earth-atmospheric-and-planetary-sciences/12-001-introduction-to-geology-fall-2013/field-trip/MIT12_001F14_Field_Trip.pdf",
+    "widgets_features": []
+}

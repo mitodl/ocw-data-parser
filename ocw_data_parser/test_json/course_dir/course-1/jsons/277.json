@@ -1,105 +1,105 @@
 {
-    "contributors": [], 
-    "text": "", 
-    "threeplay_api_json": "", 
-    "_content_type_license": "text/plain", 
-    "asset_language": "en-us", 
-    "media_location": "", 
-    "_uid": "6c4eb4ba68f6cbea24a51aab155ce775", 
-    "_workflow_history": {
-        "one_state_workflow": [
-            {
-                "action": null, 
-                "review_state": "published", 
-                "actor": "jasonplayer", 
-                "comments": "", 
-                "time": "2019/09/25 15:27:47.775 Universal"
-            }
-        ]
-    }, 
-    "expirationDate": "None", 
-    "_content_type_id": "text/plain", 
-    "id": "Caption-3Play YouTube id-SRT", 
-    "tableContents": false, 
-    "_path": "/Plone/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-17-orthogonal-matrices-and-gram-schmidt/Caption-3Play YouTube id-SRT", 
-    "media_asset_source": "3Play YouTube id", 
-    "effectiveDate": "None", 
-    "title": "Caption-3Play YouTube id-SRT-English - US", 
-    "media_asset_type": "Caption", 
     "_ac_local_roles": {
         "jasonplayer": [
             "Owner"
         ]
-    }, 
-    "_userdefined_roles": [], 
-    "_content_type_file_uid": "text/plain", 
-    "location": "", 
-    "_content_type_title": "text/plain", 
-    "excludeFromNav": false, 
-    "presentation": false, 
-    "_type": "OCWMediaAsset", 
-    "description": "", 
+    },
+    "_atbrefs": {},
     "_atrefs": {
         "file_reference": [
             "110c980c9d6e32d514c682d8b06b0e21"
         ]
-    }, 
-    "_layout": "custom_view", 
-    "subject": [], 
-    "_content_type_rights": "text/html", 
-    "_directly_provided": [], 
-    "language": "", 
-    "_content_type_asset_language": "text/plain", 
-    "_classname": "OCWMediaAsset", 
-    "_content_type_media_format": "text/plain", 
-    "creation_date": "2019/09/25 15:27:47.759 Universal", 
-    "parent_uid": "5e46844bdff61befcf306324290ba71c", 
-    "_content_type_media_asset_type": "text/plain", 
-    "modification_date": "2019/09/25 15:27:47.819 Universal", 
-    "_content_type": "text/html", 
-    "_id": "Caption-3Play YouTube id-SRT", 
-    "file_uid": "110c980c9d6e32d514c682d8b06b0e21", 
-    "license": "https://ocw.mit.edu/terms", 
-    "rights": "This site (c) Massachusetts Institute of Technology 2019.  Content within individual courses is (c) by the individual authors unless otherwise noted. The Massachusetts Institute of Technology is providing this Work (as defined below) under the terms of this Creative Commons public license (\"CCPL\" or \"license\") unless otherwise noted. The Work is protected by copyright and/or other applicable law. Any use of the work other than as authorized under this license is prohibited. By exercising any of the rights to the Work provided here, You (as defined below) accept and agree to be bound by the terms of this license. The Licensor, the Massachusetts Institute of Technology, grants You the rights contained here in consideration of Your acceptance of such terms and conditions.", 
-    "_atbrefs": {}, 
-    "media_size": "", 
-    "file_reference": "110c980c9d6e32d514c682d8b06b0e21", 
-    "_owner": "jasonplayer", 
-    "_defaultpage": "", 
+    },
+    "_classname": "OCWMediaAsset",
+    "_content_type": "text/html",
+    "_content_type_asset_language": "text/plain",
+    "_content_type_file_uid": "text/plain",
+    "_content_type_id": "text/plain",
+    "_content_type_license": "text/plain",
+    "_content_type_media_asset_source": "text/plain",
+    "_content_type_media_asset_type": "text/plain",
+    "_content_type_media_format": "text/plain",
+    "_content_type_rights": "text/html",
+    "_content_type_title": "text/plain",
+    "_defaultpage": "",
+    "_directly_provided": [],
+    "_gopip": 10,
+    "_id": "Caption-3Play YouTube id-SRT",
+    "_layout": "custom_view",
+    "_owner": "jasonplayer",
+    "_path": "/Plone/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-17-orthogonal-matrices-and-gram-schmidt/Caption-3Play YouTube id-SRT",
     "_permissions": {
-        "Modify portal content": {
-            "acquire": false, 
-            "roles": [
-                "Editor", 
-                "Manager", 
-                "Owner"
-            ]
-        }, 
         "Access contents information": {
-            "acquire": false, 
+            "acquire": false,
             "roles": [
                 "Anonymous"
             ]
-        }, 
+        },
+        "Modify portal content": {
+            "acquire": false,
+            "roles": [
+                "Editor",
+                "Manager",
+                "Owner"
+            ]
+        },
         "View": {
-            "acquire": false, 
+            "acquire": false,
             "roles": [
                 "Anonymous"
             ]
         }
-    }, 
-    "media_format": "SRT", 
+    },
     "_properties": [
         [
-            "title", 
-            "Caption-3Play YouTube id-SRT-English - US", 
+            "title",
+            "Caption-3Play YouTube id-SRT-English - US",
             "string"
         ]
-    ], 
-    "allowDiscussion": false, 
-    "_gopip": 10, 
+    ],
+    "_type": "OCWMediaAsset",
+    "_uid": "6c4eb4ba68f6cbea24a51aab155ce775",
+    "_userdefined_roles": [],
+    "_workflow_history": {
+        "one_state_workflow": [
+            {
+                "action": null,
+                "actor": "jasonplayer",
+                "comments": "",
+                "review_state": "published",
+                "time": "2019/09/25 15:27:47.775 Universal"
+            }
+        ]
+    },
+    "allowDiscussion": false,
+    "asset_language": "en-us",
+    "contributors": [],
+    "creation_date": "2019/09/25 15:27:47.759 Universal",
     "creators": [
         "jasonplayer"
-    ], 
-    "_content_type_media_asset_source": "text/plain"
+    ],
+    "description": "",
+    "effectiveDate": "None",
+    "excludeFromNav": false,
+    "expirationDate": "None",
+    "file_reference": "110c980c9d6e32d514c682d8b06b0e21",
+    "file_uid": "110c980c9d6e32d514c682d8b06b0e21",
+    "id": "Caption-3Play YouTube id-SRT",
+    "language": "",
+    "license": "https://ocw.mit.edu/terms",
+    "location": "",
+    "media_asset_source": "3Play YouTube id",
+    "media_asset_type": "Caption",
+    "media_format": "SRT",
+    "media_location": "",
+    "media_size": "",
+    "modification_date": "2019/09/25 15:27:47.819 Universal",
+    "parent_uid": "5e46844bdff61befcf306324290ba71c",
+    "presentation": false,
+    "rights": "This site (c) Massachusetts Institute of Technology 2019.  Content within individual courses is (c) by the individual authors unless otherwise noted. The Massachusetts Institute of Technology is providing this Work (as defined below) under the terms of this Creative Commons public license (\"CCPL\" or \"license\") unless otherwise noted. The Work is protected by copyright and/or other applicable law. Any use of the work other than as authorized under this license is prohibited. By exercising any of the rights to the Work provided here, You (as defined below) accept and agree to be bound by the terms of this license. The Licensor, the Massachusetts Institute of Technology, grants You the rights contained here in consideration of Your acceptance of such terms and conditions.",
+    "subject": [],
+    "tableContents": false,
+    "text": "",
+    "threeplay_api_json": "",
+    "title": "Caption-3Play YouTube id-SRT-English - US"
 }

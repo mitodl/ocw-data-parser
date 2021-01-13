@@ -1,105 +1,105 @@
 {
-    "contributors": [], 
-    "text": "", 
-    "threeplay_api_json": "", 
-    "_content_type_license": "text/plain", 
-    "asset_language": "en-us", 
-    "media_location": "", 
-    "_uid": "874e6c4cb8274bb5bee9843840c9bf7e", 
-    "_workflow_history": {
-        "one_state_workflow": [
-            {
-                "action": null, 
-                "review_state": "published", 
-                "actor": "sbabbar", 
-                "comments": "", 
-                "time": "2016/04/04 23:25:08.897 GMT-4"
-            }
-        ]
-    }, 
-    "expirationDate": "None", 
-    "_content_type_id": "text/plain", 
-    "id": "Caption-3Play YouTube id-SRT", 
-    "tableContents": false, 
-    "_path": "/Plone/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-11-matrix-spaces-rank-1-small-world-graphs/Caption-3Play YouTube id-SRT", 
-    "media_asset_source": "3Play YouTube id", 
-    "effectiveDate": "None", 
-    "title": "Caption-3Play YouTube id-SRT-English - US", 
-    "media_asset_type": "Caption", 
     "_ac_local_roles": {
         "sbabbar": [
             "Owner"
         ]
-    }, 
-    "_userdefined_roles": [], 
-    "_content_type_file_uid": "text/plain", 
-    "location": "", 
-    "_content_type_title": "text/plain", 
-    "excludeFromNav": false, 
-    "presentation": false, 
-    "_type": "OCWMediaAsset", 
-    "description": "", 
+    },
+    "_atbrefs": {},
     "_atrefs": {
         "file_reference": [
             "41f8f7424afeec8667b9785193ef19c5"
         ]
-    }, 
-    "_layout": "custom_view", 
-    "subject": [], 
-    "_content_type_rights": "text/html", 
-    "_directly_provided": [], 
-    "language": "", 
-    "_content_type_asset_language": "text/plain", 
-    "_classname": "OCWMediaAsset", 
-    "_content_type_media_format": "text/plain", 
-    "creation_date": "2016/04/04 23:25:08.880 GMT-4", 
-    "parent_uid": "c5986685265438d7dcfcfb053ece78f7", 
-    "_content_type_media_asset_type": "text/plain", 
-    "modification_date": "2018/06/15 09:20:29.536 GMT-4", 
-    "_content_type": "text/html", 
-    "_id": "Caption-3Play YouTube id-SRT", 
-    "file_uid": "41f8f7424afeec8667b9785193ef19c5", 
-    "license": "http://ocw.mit.edu/terms", 
-    "rights": "This site (c) Massachusetts Institute of Technology 2016.  Content within individual courses is (c) by the individual authors unless otherwise noted. The Massachusetts Institute of Technology is providing this Work (as defined below) under the terms of this Creative Commons public license (\"CCPL\" or \"license\") unless otherwise noted. The Work is protected by copyright and/or other applicable law. Any use of the work other than as authorized under this license is prohibited. By exercising any of the rights to the Work provided here, You (as defined below) accept and agree to be bound by the terms of this license. The Licensor, the Massachusetts Institute of Technology, grants You the rights contained here in consideration of Your acceptance of such terms and conditions.", 
-    "_atbrefs": {}, 
-    "media_size": "", 
-    "file_reference": "41f8f7424afeec8667b9785193ef19c5", 
-    "_owner": null, 
-    "_defaultpage": "", 
+    },
+    "_classname": "OCWMediaAsset",
+    "_content_type": "text/html",
+    "_content_type_asset_language": "text/plain",
+    "_content_type_file_uid": "text/plain",
+    "_content_type_id": "text/plain",
+    "_content_type_license": "text/plain",
+    "_content_type_media_asset_source": "text/plain",
+    "_content_type_media_asset_type": "text/plain",
+    "_content_type_media_format": "text/plain",
+    "_content_type_rights": "text/html",
+    "_content_type_title": "text/plain",
+    "_defaultpage": "",
+    "_directly_provided": [],
+    "_gopip": 10,
+    "_id": "Caption-3Play YouTube id-SRT",
+    "_layout": "custom_view",
+    "_owner": null,
+    "_path": "/Plone/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-11-matrix-spaces-rank-1-small-world-graphs/Caption-3Play YouTube id-SRT",
     "_permissions": {
-        "Modify portal content": {
-            "acquire": false, 
-            "roles": [
-                "Editor", 
-                "Manager", 
-                "Owner"
-            ]
-        }, 
         "Access contents information": {
-            "acquire": false, 
+            "acquire": false,
             "roles": [
                 "Anonymous"
             ]
-        }, 
+        },
+        "Modify portal content": {
+            "acquire": false,
+            "roles": [
+                "Editor",
+                "Manager",
+                "Owner"
+            ]
+        },
         "View": {
-            "acquire": false, 
+            "acquire": false,
             "roles": [
                 "Anonymous"
             ]
         }
-    }, 
-    "media_format": "SRT", 
+    },
     "_properties": [
         [
-            "title", 
-            "Caption-3Play YouTube id-SRT-English - US", 
+            "title",
+            "Caption-3Play YouTube id-SRT-English - US",
             "string"
         ]
-    ], 
-    "allowDiscussion": false, 
-    "_gopip": 10, 
+    ],
+    "_type": "OCWMediaAsset",
+    "_uid": "874e6c4cb8274bb5bee9843840c9bf7e",
+    "_userdefined_roles": [],
+    "_workflow_history": {
+        "one_state_workflow": [
+            {
+                "action": null,
+                "actor": "sbabbar",
+                "comments": "",
+                "review_state": "published",
+                "time": "2016/04/04 23:25:08.897 GMT-4"
+            }
+        ]
+    },
+    "allowDiscussion": false,
+    "asset_language": "en-us",
+    "contributors": [],
+    "creation_date": "2016/04/04 23:25:08.880 GMT-4",
     "creators": [
         "sbabbar"
-    ], 
-    "_content_type_media_asset_source": "text/plain"
+    ],
+    "description": "",
+    "effectiveDate": "None",
+    "excludeFromNav": false,
+    "expirationDate": "None",
+    "file_reference": "41f8f7424afeec8667b9785193ef19c5",
+    "file_uid": "41f8f7424afeec8667b9785193ef19c5",
+    "id": "Caption-3Play YouTube id-SRT",
+    "language": "",
+    "license": "http://ocw.mit.edu/terms",
+    "location": "",
+    "media_asset_source": "3Play YouTube id",
+    "media_asset_type": "Caption",
+    "media_format": "SRT",
+    "media_location": "",
+    "media_size": "",
+    "modification_date": "2018/06/15 09:20:29.536 GMT-4",
+    "parent_uid": "c5986685265438d7dcfcfb053ece78f7",
+    "presentation": false,
+    "rights": "This site (c) Massachusetts Institute of Technology 2016.  Content within individual courses is (c) by the individual authors unless otherwise noted. The Massachusetts Institute of Technology is providing this Work (as defined below) under the terms of this Creative Commons public license (\"CCPL\" or \"license\") unless otherwise noted. The Work is protected by copyright and/or other applicable law. Any use of the work other than as authorized under this license is prohibited. By exercising any of the rights to the Work provided here, You (as defined below) accept and agree to be bound by the terms of this license. The Licensor, the Massachusetts Institute of Technology, grants You the rights contained here in consideration of Your acceptance of such terms and conditions.",
+    "subject": [],
+    "tableContents": false,
+    "text": "",
+    "threeplay_api_json": "",
+    "title": "Caption-3Play YouTube id-SRT-English - US"
 }

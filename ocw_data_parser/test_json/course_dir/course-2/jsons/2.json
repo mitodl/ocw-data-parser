@@ -1,259 +1,274 @@
 {
-    "tcATmit_subject_tags": [], 
-    "features_tracking": [], 
-    "widgets_features": [], 
-    "chp_image": "9baf99f8ba6f704544d402380ff954e4", 
-    "_classname": "SRHomePage", 
-    "has_inline_embed": false, 
-    "_content_type_image_alternate_text": "text/plain", 
-    "text": "", 
-    "_content_type_publisher": "text/plain", 
-    "_content_type_license": "text/plain", 
-    "ad_type": "HOUSE", 
-    "other_information_text": "", 
-    "aggregationlevel": 4, 
-    "_uid": "a3b5dd9af8900999684c5696e1b017af", 
+    "_ac_local_roles": {
+        "pgandhi3": [
+            "Owner"
+        ]
+    },
+    "_atbrefs": {},
+    "_atrefs": {
+        "BelongsTo": [
+            "d9aad1541f1a9d3c0f7b0dcf9531a9a1"
+        ],
+        "chp_image": [
+            "76ea2d54123485055dd1e6621b9edf6a"
+        ],
+        "chp_image_thumb": [
+            "9c7d2d37144d9f570f3f70668e2bd681"
+        ]
+    },
+    "_classname": "CourseHomeSection",
+    "_content_type": "text/html",
+    "_content_type_ad_type": "text/plain",
+    "_content_type_description": "text/html",
+    "_content_type_id": "text/plain",
+    "_content_type_image_alternate_text": "text/plain",
+    "_content_type_image_caption_text": "text/html",
+    "_content_type_license": "text/plain",
+    "_content_type_materialtype": "text/plain",
+    "_content_type_publisher": "text/plain",
+    "_content_type_rights": "text/html",
+    "_content_type_technical_location": "text/plain",
+    "_content_type_title": "text/plain",
+    "_content_type_unique_identifier": "text/plain",
+    "_defaultpage": "",
+    "_directly_provided": [
+        "Products.CMFEditions.interfaces.IVersioned"
+    ],
+    "_gopip": 0,
+    "_id": "index.htm",
+    "_layout": "custom_view",
+    "_owner": null,
+    "_path": "/Plone/courses/earth-atmospheric-and-planetary-sciences/12-001-introduction-to-geology-fall-2013/index.htm",
+    "_permissions": {
+        "Access contents information": {
+            "acquire": false,
+            "roles": [
+                "Authenticated"
+            ]
+        },
+        "Modify portal content": {
+            "acquire": false,
+            "roles": [
+                "Manager",
+                "MetadataEditor"
+            ]
+        },
+        "View": {
+            "acquire": false,
+            "roles": [
+                "Authenticated"
+            ]
+        }
+    },
+    "_properties": [
+        [
+            "title",
+            "Course Home",
+            "string"
+        ]
+    ],
+    "_type": "CourseHomeSection",
+    "_uid": "4ba4f6f4059e9bd271b612edaf4e2157",
+    "_userdefined_roles": [],
     "_workflow_history": {
         "page_workflow": [
             {
-                "action": null, 
-                "review_state": "waiting_for_authoring", 
-                "actor": "asingh33", 
-                "comments": "", 
-                "time": "2016/03/01 05:54:26.769 US/Eastern"
-            }, 
+                "action": null,
+                "actor": "pgandhi3",
+                "comments": "",
+                "review_state": "waiting_for_authoring",
+                "time": "2014/09/25 02:11:03.652 GMT-4"
+            },
             {
-                "action": "approve_to_staging", 
-                "review_state": "ready_for_staging", 
-                "comments": "", 
-                "actor": "rsharma20", 
-                "time": "2016/03/07 00:06:16.457 US/Eastern"
-            }, 
+                "action": "approve_to_staging",
+                "actor": "rverma83",
+                "comments": "",
+                "review_state": "ready_for_staging",
+                "time": "2014/09/25 07:52:45.585 GMT-4"
+            },
             {
-                "action": "decline", 
-                "review_state": "waiting_for_authoring", 
-                "actor": "rsharma20", 
-                "comments": "", 
-                "time": "2016/03/08 23:34:38.159 US/Eastern"
-            }, 
+                "action": "decline",
+                "actor": "ndhamija",
+                "comments": "",
+                "review_state": "waiting_for_authoring",
+                "time": "2014/10/07 01:38:09.535 GMT-4"
+            },
             {
-                "action": "approve_to_staging", 
-                "review_state": "ready_for_staging", 
-                "comments": "", 
-                "actor": "rsharma20", 
-                "time": "2016/03/08 23:52:23.160 US/Eastern"
-            }, 
+                "action": "approve_to_staging",
+                "actor": "pgandhi3",
+                "comments": "",
+                "review_state": "ready_for_staging",
+                "time": "2014/10/10 07:19:24.287 GMT-4"
+            },
             {
-                "action": "decline", 
-                "review_state": "waiting_for_authoring", 
-                "actor": "srani11", 
-                "comments": "", 
-                "time": "2016/03/09 02:10:40.916 US/Eastern"
-            }, 
+                "action": "decline_to_qa",
+                "actor": "aimeeg",
+                "comments": "",
+                "review_state": "waiting_for_qa",
+                "time": "2014/12/15 12:14:54.552 US/Eastern"
+            },
             {
-                "action": "approve_to_staging", 
-                "review_state": "ready_for_staging", 
-                "comments": "", 
-                "actor": "rnagar6", 
-                "time": "2016/03/09 08:37:50.738 US/Eastern"
-            }, 
+                "action": "approve_to_staging",
+                "actor": "aimeeg",
+                "comments": "",
+                "review_state": "ready_for_staging",
+                "time": "2014/12/15 12:19:14.096 US/Eastern"
+            },
             {
-                "action": "decline", 
-                "review_state": "waiting_for_authoring", 
-                "actor": "rsharma20", 
-                "comments": "", 
-                "time": "2016/03/09 23:55:34.059 US/Eastern"
-            }, 
+                "action": "decline_to_qa",
+                "actor": "aimeeg",
+                "comments": "",
+                "review_state": "waiting_for_qa",
+                "time": "2015/02/10 10:00:19.570 US/Eastern"
+            },
             {
-                "action": "approve_to_staging", 
-                "review_state": "ready_for_staging", 
-                "comments": "", 
-                "actor": "rsharma20", 
-                "time": "2016/03/10 00:04:49.619 US/Eastern"
-            }, 
+                "action": "approve_to_staging",
+                "actor": "aimeeg",
+                "comments": "",
+                "review_state": "ready_for_staging",
+                "time": "2015/02/10 10:03:46.319 US/Eastern"
+            },
             {
-                "action": "decline_to_qa", 
-                "review_state": "waiting_for_qa", 
-                "actor": "brem", 
-                "comments": "", 
-                "time": "2016/03/14 12:13:01.386 GMT-4"
-            }, 
+                "action": "decline_to_qa",
+                "actor": "aimeeg",
+                "comments": "",
+                "review_state": "waiting_for_qa",
+                "time": "2015/02/10 10:23:01.552 US/Eastern"
+            },
             {
-                "action": "approve_to_staging", 
-                "review_state": "ready_for_staging", 
-                "actor": "brem", 
-                "comments": "", 
-                "time": "2016/03/14 12:18:04.357 GMT-4"
-            }, 
+                "action": "approve_to_staging",
+                "actor": "aimeeg",
+                "comments": "",
+                "review_state": "ready_for_staging",
+                "time": "2015/02/10 10:23:07.777 US/Eastern"
+            },
             {
-                "action": "decline_to_qa", 
-                "review_state": "waiting_for_qa", 
-                "actor": "brem", 
-                "comments": "", 
-                "time": "2016/03/15 11:01:34.874 GMT-4"
-            }, 
+                "action": "decline_to_qa",
+                "actor": "Jcplayer",
+                "comments": "",
+                "review_state": "waiting_for_qa",
+                "time": "2015/05/12 17:02:20.800 GMT-4"
+            },
             {
-                "action": "approve_to_staging", 
-                "review_state": "ready_for_staging", 
-                "comments": "", 
-                "actor": "brem", 
-                "time": "2016/03/15 11:39:48.470 GMT-4"
-            }, 
+                "action": "approve_to_staging",
+                "actor": "Jcplayer",
+                "comments": "",
+                "review_state": "ready_for_staging",
+                "time": "2015/05/12 17:03:28.425 GMT-4"
+            },
             {
-                "action": "decline_to_qa", 
-                "review_state": "waiting_for_qa", 
-                "actor": "brem", 
-                "comments": "", 
-                "time": "2016/03/22 10:02:19.339 GMT-4"
-            }, 
+                "action": "decline",
+                "actor": "vverma9",
+                "comments": "",
+                "review_state": "waiting_for_authoring",
+                "time": "2015/07/20 06:51:46.725 GMT-4"
+            },
             {
-                "action": "approve_to_staging", 
-                "review_state": "ready_for_staging", 
-                "actor": "brem", 
-                "comments": "", 
-                "time": "2016/03/22 10:02:23.024 GMT-4"
+                "action": "approve_to_staging",
+                "actor": "vverma9",
+                "comments": "",
+                "review_state": "ready_for_staging",
+                "time": "2015/07/20 06:54:22.888 GMT-4"
+            },
+            {
+                "action": "decline",
+                "actor": "asingh33",
+                "comments": "",
+                "review_state": "waiting_for_authoring",
+                "time": "2017/05/18 02:27:57.357 GMT-4"
+            },
+            {
+                "action": "approve_to_staging",
+                "actor": "asingh33",
+                "comments": "",
+                "review_state": "ready_for_staging",
+                "time": "2017/05/18 02:28:06.707 GMT-4"
             }
         ]
-    }, 
-    "expirationDate": "None", 
-    "_content_type_id": "text/plain", 
-    "category_features": [], 
-    "related_content": "", 
-    "id": "index.htm", 
-    "is_media_gallery": false, 
-    "related_mit_links": "", 
-    "rights": "This site (c) Massachusetts Institute of Technology 2016.  Content within individual courses is (c) by the individual authors unless otherwise noted. The Massachusetts Institute of Technology is providing this Work (as defined below) under the terms of this Creative Commons public license (\"CCPL\" or \"license\") unless otherwise noted. The Work is protected by copyright and/or other applicable law. Any use of the work other than as authorized under this license is prohibited. By exercising any of the rights to the Work provided here, You (as defined below) accept and agree to be bound by the terms of this license. The Licensor, the Massachusetts Institute of Technology, grants You the rights contained here in consideration of Your acceptance of such terms and conditions.", 
-    "contributors": [], 
-    "effectiveDate": "2016/03/07 00:06:16.429 US/Eastern", 
-    "title": "Resource Home", 
-    "parent_module": "236793a57f96cf26ea0aec0ca35bd118", 
-    "_content_type_ad_type": "text/plain", 
-    "_userdefined_roles": [], 
-    "curriculum_information": "", 
-    "unique_identifier": "https://ocw.mit.edu/resources/res-str-001-geographic-information-system-gis-tutorial-january-iap-2016/index.htm", 
-    "_gopip": 0, 
-    "location": "", 
-    "_atrefs": {
-        "chp_image": [
-            "9baf99f8ba6f704544d402380ff954e4"
-        ], 
-        "BelongsTo": [
-            "236793a57f96cf26ea0aec0ca35bd118"
-        ], 
-        "chp_image_thumb": [
-            "465756c723f415a4d346952796d589d4"
-        ]
-    }, 
-    "_content_type_title": "text/plain", 
-    "feature_requirements": [], 
-    "_atbrefs": {}, 
-    "_content_type": "text/html", 
-    "_type": "SRHomePage", 
-    "technical_location": "https://ocw.mit.edu/resources/res-str-001-geographic-information-system-gis-tutorial-january-iap-2016/index.htm", 
-    "other_versions": "", 
-    "description": "<p>The MIT GIS Services Group at the MIT Libraries hosts a number of tutorial workshops throughout the year. This resource gathers together some of those introductory workshop materials designed to accustom GIS novices to the various available software packages and introduce them to some of the many features included in GIS systems. Topics include an introduction to two GIS applications, spatial data analysis, and spatial statistics.</p>", 
+    },
+    "ad_champion_text": "",
+    "ad_type": "HOUSE",
+    "aggregationlevel": 4,
+    "allowDiscussion": false,
+    "always_publish": false,
+    "category_features": [],
+    "chp_image": "76ea2d54123485055dd1e6621b9edf6a",
+    "chp_image_thumb": "9c7d2d37144d9f570f3f70668e2bd681",
+    "contributors": [],
+    "course_linking": [],
+    "courselist_features": [],
+    "creation_date": "2014/09/25 02:11:03.615 GMT-4",
+    "creators": [
+        "pgandhi3"
+    ],
+    "curriculum_information": "",
+    "description": "<p>Geology is the core discipline of the earth sciences and encompasses many different phenomena, including plate tectonics and mountain building, volcanoes and earthquakes, and the long-term evolution of Earth&rsquo;s atmosphere, surface and life. Because of the ever-increasing demand for resources, the growing exposure to natural hazards, and the changing climate, geology is of considerable societal relevance. This course introduces students to the basics of geology. Through a combination of lectures, labs, and field observations, we will address topics ranging from mineral and rock identification to the origin of the continents, from geologic mapping to plate tectonics, and from erosion by rivers and glaciers to the history of life.</p>",
+    "effectiveDate": "2014/09/25 07:52:33.326 GMT-4",
+    "excludeFromNav": false,
+    "expirationDate": "None",
+    "feature_requirements": [],
+    "features_tracking": [],
+    "firstTimeEdit": true,
+    "has_inline_embed": false,
+    "highlights_text": "",
+    "id": "index.htm",
+    "image_alternate_text": "A map of North America with colors that represent the ages of the underlying rocks.",
+    "image_caption_text": "<p>The North America Tapestry of Time and Terrain. This map is a portrait of the land surface of North America and the ages of its underlying rock formations. This digital tapestry outlines the geologic story of continental collision and break-up, mountain-building, river erosion and deposition, ice-cap glaciation, volcanism, and other events and processes that have shaped the region over the last 2.6 billion years. (Image and text courtesy of the <a href=\"http://www.usgs.gov/\">U.S. Geological Survey</a>.)</p>",
+    "is_media_gallery": false,
+    "language": "",
+    "license": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/",
+    "location": "",
+    "materialtype": "Other",
+    "metadata_contributor_list": [],
+    "modification_date": "2017/05/18 02:28:06.591 GMT-4",
+    "other_information_text": "",
+    "other_versions": "",
+    "parent_module": "d9aad1541f1a9d3c0f7b0dcf9531a9a1",
+    "parent_uid": "d9aad1541f1a9d3c0f7b0dcf9531a9a1",
+    "publisher": "MIT OpenCourseWare",
+    "related_content": "",
+    "related_mit_links": "",
+    "rights": "This site (c) Massachusetts Institute of Technology 2014.  Content within individual courses is (c) by the individual authors unless otherwise noted. The Massachusetts Institute of Technology is providing this Work (as defined below) under the terms of this Creative Commons public license (\"CCPL\" or \"license\") unless otherwise noted. The Work is protected by copyright and/or other applicable law. Any use of the work other than as authorized under this license is prohibited. By exercising any of the rights to the Work provided here, You (as defined below) accept and agree to be bound by the terms of this license. The Licensor, the Massachusetts Institute of Technology, grants You the rights contained here in consideration of Your acceptance of such terms and conditions.",
     "software_requirements": [
         {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "40.0", 
-            "software_name_col": "Chrome", 
-            "maximum_version_col": ""
-        }, 
+            "maximum_version_col": "",
+            "minimum_version_col": "40.0",
+            "software_name_col": "Chrome",
+            "software_type_col": "Browser"
+        },
         {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "8.0", 
-            "software_name_col": "Safari", 
-            "maximum_version_col": ""
-        }, 
+            "maximum_version_col": "",
+            "minimum_version_col": "8.0",
+            "software_name_col": "Safari",
+            "software_type_col": "Browser"
+        },
         {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "38.0", 
-            "software_name_col": "Mozilla Firefox", 
-            "maximum_version_col": ""
-        }, 
+            "maximum_version_col": "",
+            "minimum_version_col": "38.0",
+            "software_name_col": "Mozilla Firefox",
+            "software_type_col": "Browser"
+        },
         {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "9.0", 
-            "software_name_col": "Internet Explorer", 
-            "maximum_version_col": ""
-        }, 
+            "maximum_version_col": "",
+            "minimum_version_col": "9.0",
+            "software_name_col": "Internet Explorer",
+            "software_type_col": "Browser"
+        },
         {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "13.1", 
-            "software_name_col": "Edge", 
-            "maximum_version_col": ""
+            "maximum_version_col": "",
+            "minimum_version_col": "13.1",
+            "software_name_col": "Edge",
+            "software_type_col": "Browser"
         }
-    ], 
-    "_content_type_technical_location": "text/plain", 
-    "_layout": "custom_view", 
-    "_properties": [
-        [
-            "title", 
-            "Resource Home", 
-            "string"
-        ]
-    ], 
-    "subject": [], 
-    "_content_type_rights": "text/html", 
-    "_directly_provided": [
-        "Products.CMFEditions.interfaces.IVersioned"
-    ], 
-    "image_caption_text": "<p>A map of Manhattan generated using GIS data. (Jennie Murack, MIT Geospatial Data Librarian.)</p>", 
-    "image_alternate_text": "A brightly colored image of virtually-generated buildings and streets.", 
-    "metadata_contributor_list": [], 
-    "tcATmit_instructional_tags": [], 
-    "creation_date": "2016/03/01 05:54:26.574 US/Eastern", 
-    "parent_uid": "236793a57f96cf26ea0aec0ca35bd118", 
-    "modification_date": "2016/09/23 23:59:53.733 GMT-4", 
-    "course_linking": [], 
-    "publisher": "MIT OpenCourseWare", 
-    "excludeFromNav": false, 
-    "language": "", 
-    "license": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/", 
-    "chp_image_thumb": "465756c723f415a4d346952796d589d4", 
-    "url_rewrite_patterns": [], 
-    "always_publish": false, 
-    "_id": "index.htm", 
-    "materialtype": "Other", 
-    "technical_requirements_text": "", 
-    "_content_type_unique_identifier": "text/plain", 
-    "_content_type_description": "text/html", 
-    "_owner": null, 
-    "_defaultpage": "", 
-    "firstTimeEdit": true, 
-    "_permissions": {
-        "Modify portal content": {
-            "acquire": false, 
-            "roles": [
-                "Manager", 
-                "MetadataEditor"
-            ]
-        }, 
-        "Access contents information": {
-            "acquire": false, 
-            "roles": [
-                "Authenticated"
-            ]
-        }, 
-        "View": {
-            "acquire": false, 
-            "roles": [
-                "Authenticated"
-            ]
-        }
-    }, 
-    "ad_champion_text": "", 
-    "allowDiscussion": false, 
-    "_content_type_materialtype": "text/plain", 
-    "_content_type_image_caption_text": "text/html", 
-    "creators": [
-        "asingh33"
-    ], 
-    "courselist_features": [], 
-    "_ac_local_roles": {
-        "asingh33": [
-            "Owner"
-        ]
-    }, 
-    "_path": "/Plone/resources/res-str-001-geographic-information-system-gis-tutorial-january-iap-2016/index.htm"
+    ],
+    "subject": [],
+    "tcATmit_instructional_tags": [],
+    "tcATmit_subject_tags": [],
+    "technical_location": "https://ocw.mit.edu/courses/earth-atmospheric-and-planetary-sciences/12-001-introduction-to-geology-fall-2013/index.htm",
+    "technical_requirements_text": "",
+    "text": "",
+    "title": "Course Home",
+    "unique_identifier": "https://ocw.mit.edu/courses/earth-atmospheric-and-planetary-sciences/12-001-introduction-to-geology-fall-2013/index.htm",
+    "url_rewrite_patterns": [],
+    "widgets_features": []
 }

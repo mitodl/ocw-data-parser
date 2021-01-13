@@ -81,6 +81,17 @@ def load_raw_jsons(course_dir):
 
 
 def _compose_page_dict(json_file):
+    instructor_insights_sections = [
+        "courseoverviewtext",
+        "courseoutcomestext",
+        "instructorinsightstext",
+        "curriculuminformationtext",
+        "theclassroomtext",
+        "studentinformationtext",
+        "howstudenttimewasspenttext",
+        "courseteamrolestext",
+        "bottomtext",
+    ]
     url_data = json_file.get("technical_location")
     if url_data:
         url_data = url_data.split("ocw.mit.edu")[1]
@@ -101,6 +112,12 @@ def _compose_page_dict(json_file):
         "file_location": json_file.get("_uid") + "_" + json_file.get("id") + ".html",
         "bottomtext": json_file.get("bottomtext"),
     }
+    # handle divided instructor insights pages
+    if page_dict["short_page_title"] == "Instructor Insights":
+        first_level_keys = json_file.keys()
+        for section in instructor_insights_sections:
+            if section in first_level_keys:
+                page_dict["text"] += json_file.get(section) + "\n"
     if (
         "media_location" in json_file
         and json_file["media_location"]

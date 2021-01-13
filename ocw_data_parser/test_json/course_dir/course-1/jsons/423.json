@@ -1,185 +1,185 @@
 {
-    "expanded_alternate_text": "", 
-    "features_tracking": [], 
-    "widgets_features": [], 
-    "contributors": [], 
-    "tcATmit_subject_tags": [], 
-    "unique_identifier": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-28-similar-matrices-and-jordan-form/18.06_L28.jpg", 
-    "_content_type_publisher": "text/plain", 
-    "_content_type_license": "text/plain", 
-    "_datafield_image": {
-        "encoding": "base64", 
-        "data": "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", 
-        "content_type": "image/jpeg", 
-        "filename": "18.06_L28.jpg"
-    }, 
-    "aggregationlevel": 2, 
-    "_uid": "139678477021a18e81ac0aaba4ddac6b", 
-    "_workflow_history": {
-        "one_state_workflow": [
-            {
-                "action": null, 
-                "review_state": "published", 
-                "actor": "Jcplayer", 
-                "comments": "", 
-                "time": "2010/10/08 13:40:59.506 GMT-4"
-            }
-        ]
-    }, 
-    "expirationDate": "None", 
-    "_content_type_id": "text/plain", 
-    "duration": "", 
-    "contributor_list": [], 
-    "id": "18.06_L28.jpg", 
-    "related_mit_links": "", 
-    "thumb_height": "", 
-    "effectiveDate": "None", 
-    "title": "18.06_L28.jpg", 
-    "_layout": "view", 
-    "parent_module": "aabc44bdb2e45374d62f30f2a6d4c63e", 
-    "_content_type": "image/jpeg", 
-    "_userdefined_roles": [], 
-    "_gopip": 0, 
-    "location": "", 
-    "_atrefs": {
-        "BelongsTo": [
-            "aabc44bdb2e45374d62f30f2a6d4c63e"
-        ]
-    }, 
-    "_content_type_course_identifier": "text/plain", 
-    "_content_type_title": "text/plain", 
-    "section_identifier": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures", 
-    "_atbrefs": {
-        "thumbnail_image": [
-            "7981f3c413e430369643531921892360"
-        ], 
-        "file_reference": [
-            "715d109d6e11f304e9d41c780275ff51"
-        ]
-    }, 
-    "creation_date": "2010/10/08 13:40:59.497 GMT-4", 
-    "_content_type_section_identifier": "text/plain", 
-    "_type": "OCWImage", 
-    "technical_location": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-28-similar-matrices-and-jordan-form/18.06_L28.jpg", 
-    "description": "", 
-    "thumb_width": "", 
-    "software_requirements": [
-        {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "40.0", 
-            "software_name_col": "Chrome", 
-            "maximum_version_col": ""
-        }, 
-        {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "8.0", 
-            "software_name_col": "Safari", 
-            "maximum_version_col": ""
-        }, 
-        {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "38.0", 
-            "software_name_col": "Mozilla Firefox", 
-            "maximum_version_col": ""
-        }, 
-        {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "9.0", 
-            "software_name_col": "Internet Explorer", 
-            "maximum_version_col": ""
-        }, 
-        {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "13.1", 
-            "software_name_col": "Edge", 
-            "maximum_version_col": ""
-        }
-    ], 
-    "_content_type_technical_location": "text/plain", 
-    "alternate_text": "", 
-    "credit": "", 
-    "subject": [], 
-    "_content_type_rights": "text/html", 
-    "course_identifier": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010", 
-    "_directly_provided": [], 
-    "other_platform_requirements": "", 
-    "_id": "18.06_L28.jpg", 
-    "_classname": "OCWImage", 
-    "metadata_contributor_list": [
-        {
-            "md_contributor_uid": "", 
-            "md_contributor_entity": "Todd Rautenberg", 
-            "md_contributor_hide": "", 
-            "md_contributor_special_title": "", 
-            "md_contributor_role": "Validator"
-        }, 
-        {
-            "md_contributor_uid": "", 
-            "md_contributor_entity": "Todd Rautenberg", 
-            "md_contributor_hide": "", 
-            "md_contributor_special_title": "", 
-            "md_contributor_role": "Creator"
-        }
-    ], 
-    "tcATmit_instructional_tags": [], 
-    "caption": "", 
-    "parent_uid": "7981f3c413e430369643531921892360", 
-    "modification_date": "2016/09/24 04:34:10.088 GMT-4", 
-    "course_linking": [], 
-    "publisher": "MIT OpenCourseWare", 
-    "excludeFromNav": false, 
-    "feature_requirements": [], 
-    "language": "", 
-    "license": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/", 
-    "rights": "This site (c) Massachusetts Institute of Technology 2010.  Content within individual courses is (c) by the individual authors unless otherwise noted. The Massachusetts Institute of Technology is providing this Work (as defined below) under the terms of this Creative Commons public license (\"CCPL\" or \"license\") unless otherwise noted. The Work is protected by copyright and/or other applicable law. Any use of the work other than as authorized under this license is prohibited. By exercising any of the rights to the Work provided here, You (as defined below) accept and agree to be bound by the terms of this license. The Licensor, the Massachusetts Institute of Technology, grants You the rights contained here in consideration of Your acceptance of such terms and conditions.", 
-    "always_publish": false, 
-    "popup_image_id": "", 
-    "materialtype": "Other", 
-    "_content_type_unique_identifier": "text/plain", 
-    "category_features": [], 
-    "is_pop_up_image": false, 
-    "_owner": null, 
-    "_defaultpage": "index_html", 
-    "firstTimeEdit": true, 
-    "_permissions": {
-        "Modify portal content": {
-            "acquire": false, 
-            "roles": [
-                "Editor", 
-                "Manager", 
-                "Owner"
-            ]
-        }, 
-        "Access contents information": {
-            "acquire": false, 
-            "roles": [
-                "Anonymous"
-            ]
-        }, 
-        "View": {
-            "acquire": false, 
-            "roles": [
-                "Anonymous"
-            ]
-        }
-    }, 
-    "_properties": [
-        [
-            "title", 
-            "18.06_L28.jpg", 
-            "string"
-        ]
-    ], 
-    "allowDiscussion": false, 
-    "_content_type_materialtype": "text/plain", 
-    "creators": [
-        "Jcplayer"
-    ], 
-    "courselist_features": [], 
     "_ac_local_roles": {
         "Jcplayer": [
             "Owner"
         ]
-    }, 
-    "_path": "/Plone/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-28-similar-matrices-and-jordan-form/18.06_L28.jpg"
+    },
+    "_atbrefs": {
+        "file_reference": [
+            "715d109d6e11f304e9d41c780275ff51"
+        ],
+        "thumbnail_image": [
+            "7981f3c413e430369643531921892360"
+        ]
+    },
+    "_atrefs": {
+        "BelongsTo": [
+            "aabc44bdb2e45374d62f30f2a6d4c63e"
+        ]
+    },
+    "_classname": "OCWImage",
+    "_content_type": "image/jpeg",
+    "_content_type_course_identifier": "text/plain",
+    "_content_type_id": "text/plain",
+    "_content_type_license": "text/plain",
+    "_content_type_materialtype": "text/plain",
+    "_content_type_publisher": "text/plain",
+    "_content_type_rights": "text/html",
+    "_content_type_section_identifier": "text/plain",
+    "_content_type_technical_location": "text/plain",
+    "_content_type_title": "text/plain",
+    "_content_type_unique_identifier": "text/plain",
+    "_datafield_image": {
+        "content_type": "image/jpeg",
+        "data": "ZW1wdHk=",
+        "encoding": "base64",
+        "filename": "18.06_L28.jpg"
+    },
+    "_defaultpage": "index_html",
+    "_directly_provided": [],
+    "_gopip": 0,
+    "_id": "18.06_L28.jpg",
+    "_layout": "view",
+    "_owner": null,
+    "_path": "/Plone/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-28-similar-matrices-and-jordan-form/18.06_L28.jpg",
+    "_permissions": {
+        "Access contents information": {
+            "acquire": false,
+            "roles": [
+                "Anonymous"
+            ]
+        },
+        "Modify portal content": {
+            "acquire": false,
+            "roles": [
+                "Editor",
+                "Manager",
+                "Owner"
+            ]
+        },
+        "View": {
+            "acquire": false,
+            "roles": [
+                "Anonymous"
+            ]
+        }
+    },
+    "_properties": [
+        [
+            "title",
+            "18.06_L28.jpg",
+            "string"
+        ]
+    ],
+    "_type": "OCWImage",
+    "_uid": "139678477021a18e81ac0aaba4ddac6b",
+    "_userdefined_roles": [],
+    "_workflow_history": {
+        "one_state_workflow": [
+            {
+                "action": null,
+                "actor": "Jcplayer",
+                "comments": "",
+                "review_state": "published",
+                "time": "2010/10/08 13:40:59.506 GMT-4"
+            }
+        ]
+    },
+    "aggregationlevel": 2,
+    "allowDiscussion": false,
+    "alternate_text": "",
+    "always_publish": false,
+    "caption": "",
+    "category_features": [],
+    "contributor_list": [],
+    "contributors": [],
+    "course_identifier": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010",
+    "course_linking": [],
+    "courselist_features": [],
+    "creation_date": "2010/10/08 13:40:59.497 GMT-4",
+    "creators": [
+        "Jcplayer"
+    ],
+    "credit": "",
+    "description": "",
+    "duration": "",
+    "effectiveDate": "None",
+    "excludeFromNav": false,
+    "expanded_alternate_text": "",
+    "expirationDate": "None",
+    "feature_requirements": [],
+    "features_tracking": [],
+    "firstTimeEdit": true,
+    "id": "18.06_L28.jpg",
+    "is_pop_up_image": false,
+    "language": "",
+    "license": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/",
+    "location": "",
+    "materialtype": "Other",
+    "metadata_contributor_list": [
+        {
+            "md_contributor_entity": "Todd Rautenberg",
+            "md_contributor_hide": "",
+            "md_contributor_role": "Validator",
+            "md_contributor_special_title": "",
+            "md_contributor_uid": ""
+        },
+        {
+            "md_contributor_entity": "Todd Rautenberg",
+            "md_contributor_hide": "",
+            "md_contributor_role": "Creator",
+            "md_contributor_special_title": "",
+            "md_contributor_uid": ""
+        }
+    ],
+    "modification_date": "2016/09/24 04:34:10.088 GMT-4",
+    "other_platform_requirements": "",
+    "parent_module": "aabc44bdb2e45374d62f30f2a6d4c63e",
+    "parent_uid": "7981f3c413e430369643531921892360",
+    "popup_image_id": "",
+    "publisher": "MIT OpenCourseWare",
+    "related_mit_links": "",
+    "rights": "This site (c) Massachusetts Institute of Technology 2010.  Content within individual courses is (c) by the individual authors unless otherwise noted. The Massachusetts Institute of Technology is providing this Work (as defined below) under the terms of this Creative Commons public license (\"CCPL\" or \"license\") unless otherwise noted. The Work is protected by copyright and/or other applicable law. Any use of the work other than as authorized under this license is prohibited. By exercising any of the rights to the Work provided here, You (as defined below) accept and agree to be bound by the terms of this license. The Licensor, the Massachusetts Institute of Technology, grants You the rights contained here in consideration of Your acceptance of such terms and conditions.",
+    "section_identifier": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures",
+    "software_requirements": [
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "40.0",
+            "software_name_col": "Chrome",
+            "software_type_col": "Browser"
+        },
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "8.0",
+            "software_name_col": "Safari",
+            "software_type_col": "Browser"
+        },
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "38.0",
+            "software_name_col": "Mozilla Firefox",
+            "software_type_col": "Browser"
+        },
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "9.0",
+            "software_name_col": "Internet Explorer",
+            "software_type_col": "Browser"
+        },
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "13.1",
+            "software_name_col": "Edge",
+            "software_type_col": "Browser"
+        }
+    ],
+    "subject": [],
+    "tcATmit_instructional_tags": [],
+    "tcATmit_subject_tags": [],
+    "technical_location": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-28-similar-matrices-and-jordan-form/18.06_L28.jpg",
+    "thumb_height": "",
+    "thumb_width": "",
+    "title": "18.06_L28.jpg",
+    "unique_identifier": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-28-similar-matrices-and-jordan-form/18.06_L28.jpg",
+    "widgets_features": []
 }

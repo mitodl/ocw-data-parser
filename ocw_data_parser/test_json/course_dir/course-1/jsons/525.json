@@ -1,273 +1,273 @@
 {
-    "text": "<p>There will be three one-hour exams at class times and a final exam.</p><div class=\"maintabletemplate\"><table summary=\"See table caption for summary.\" class=\"tablewidth50\"><caption class=\"invisible\">Exams files.</caption><thead><tr><th scope=\"col\">EXAMS</th><th scope=\"col\">SOLUTIONS</th></tr></thead><tbody><tr class=\"row\"><td>Exam 1 (<a href=\"./resolveuid/e9bbec7a9a25a87715e8edd75e21d7b9\">PDF</a>)</td><td>(<a href=\"./resolveuid/b7efef974f7a2c8b5c925f5ea8fc9152\">PDF</a>)</td></tr><tr class=\"alt-row\"><td>Exam 2 (<a href=\"./resolveuid/892238e7e16a658abd5813bea8399170\">PDF</a>)</td><td>(<a href=\"./resolveuid/d669bf89c103559d51427d0916c5db61\">PDF</a>)</td></tr><tr class=\"row\"><td>Exam 3 (<a href=\"./resolveuid/c72789c2ac2ccaf5568a024c662882d2\">PDF</a>)</td><td>(<a href=\"./resolveuid/edf08929f3b2b435c7d8ca85e8d5118d\">PDF</a>)</td></tr><tr class=\"alt-row\"><td>Final exam (<a href=\"./resolveuid/b799045edd80df18879088bcf872b214\">PDF</a>)</td><td>(<a href=\"./resolveuid/45790724487e46dcc02f55d0fc092ab7\">PDF</a>)</td></tr></tbody></table></div><p>Exams and quizzes from previous years can be found in the <a href=\"/courses/mathematics/18-06-linear-algebra-spring-2010/study-materials\">study materials</a> section.</p>", 
-    "_content_type_license": "text/plain", 
-    "_uid": "c13c4766c0cf1486f0cf6435c531eaad", 
-    "title": "Exams", 
     "_ac_local_roles": {
         "cc_saror4": [
             "Owner"
         ]
-    }, 
-    "location": "", 
-    "_content_type_course_identifier": "text/plain", 
-    "_atbrefs": {}, 
-    "constrainTypesMode": 0, 
-    "technical_location": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/exams", 
-    "software_requirements": [
-        {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "40.0", 
-            "software_name_col": "Chrome", 
-            "maximum_version_col": ""
-        }, 
-        {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "8.0", 
-            "software_name_col": "Safari", 
-            "maximum_version_col": ""
-        }, 
-        {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "38.0", 
-            "software_name_col": "Mozilla Firefox", 
-            "maximum_version_col": ""
-        }, 
-        {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "9.0", 
-            "software_name_col": "Internet Explorer", 
-            "maximum_version_col": ""
-        }, 
-        {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "13.1", 
-            "software_name_col": "Edge", 
-            "maximum_version_col": ""
-        }
-    ], 
-    "_content_type_technical_location": "text/plain", 
-    "_content_type_rights": "text/html", 
-    "_directly_provided": [
-        "Products.CMFEditions.interfaces.IVersioned"
-    ], 
-    "parent_uid": "aabc44bdb2e45374d62f30f2a6d4c63e", 
-    "excludeFromNav": false, 
-    "_content_type_unique_identifier": "text/plain", 
-    "allowDiscussion": false, 
-    "metadata_contributor_list": [], 
-    "locallyAllowedTypes": [
-        "OCWImage", 
-        "CourseSection", 
-        "OCWExtFile", 
-        "OCWFile"
-    ], 
-    "_content_type_text": "text/html", 
-    "ad_type": "HOUSE", 
-    "creation_date": "2010/05/14 12:21:49.043 GMT-4", 
-    "aggregationlevel": 3, 
-    "duration": "", 
-    "immediatelyAddableTypes": [
-        "OCWImage", 
-        "CourseSection", 
-        "OCWExtFile", 
-        "OCWFile"
-    ], 
-    "subject": [], 
-    "_content_type_short_page_title": "text/plain", 
-    "effectiveDate": "2010/05/21 05:47:01.939 GMT-4", 
-    "parent_module": "aabc44bdb2e45374d62f30f2a6d4c63e", 
-    "is_mathml_document": false, 
-    "bottomtext": "", 
-    "short_page_title": "Exams", 
-    "section_identifier": null, 
-    "related_mit_links": "", 
-    "_content_type_ad_type": "text/plain", 
-    "_layout": "custom_view", 
-    "_workflow_history": {
-        "page_workflow": [
-            {
-                "action": null, 
-                "review_state": "waiting_for_authoring", 
-                "actor": "admin", 
-                "comments": "", 
-                "time": "2010/05/14 12:21:49.049 GMT-4"
-            }, 
-            {
-                "action": "approve_to_staging", 
-                "review_state": "ready_for_staging", 
-                "comments": "", 
-                "actor": "admin", 
-                "time": "2010/05/16 11:42:28.964 GMT-4"
-            }, 
-            {
-                "action": "decline", 
-                "review_state": "waiting_for_authoring", 
-                "actor": "cc_gegrov", 
-                "comments": "", 
-                "time": "2010/05/21 05:47:01.950 GMT-4"
-            }, 
-            {
-                "action": "approve_to_staging", 
-                "review_state": "ready_for_staging", 
-                "actor": "cc_gegrov", 
-                "comments": "", 
-                "time": "2010/05/21 05:51:15.703 GMT-4"
-            }, 
-            {
-                "action": null, 
-                "review_state": "waiting_for_authoring", 
-                "actor": "cc_saror4", 
-                "comments": "", 
-                "time": "2010/08/17 00:14:20.126 GMT-4"
-            }, 
-            {
-                "action": "approve_to_staging", 
-                "review_state": "ready_for_staging", 
-                "comments": "", 
-                "actor": "cc_gegrov", 
-                "time": "2010/09/03 05:58:53.894 GMT-4"
-            }, 
-            {
-                "action": "decline", 
-                "review_state": "waiting_for_authoring", 
-                "actor": "cc_ajsing", 
-                "comments": "", 
-                "time": "2010/09/03 07:48:21.272 GMT-4"
-            }, 
-            {
-                "action": "approve_to_staging", 
-                "review_state": "ready_for_staging", 
-                "actor": "cc_ajsing", 
-                "comments": "", 
-                "time": "2010/09/03 09:34:10.834 GMT-4"
-            }, 
-            {
-                "action": "decline", 
-                "review_state": "waiting_for_authoring", 
-                "comments": "", 
-                "actor": "asingh33", 
-                "time": "2014/09/05 04:07:57.234 GMT-4"
-            }, 
-            {
-                "action": "approve_to_staging", 
-                "review_state": "ready_for_staging", 
-                "actor": "asingh33", 
-                "comments": "", 
-                "time": "2014/09/05 04:09:56.323 GMT-4"
-            }
-        ]
-    }, 
-    "_classname": "CourseSection", 
-    "_content_type_materialtype": "text/plain", 
-    "_userdefined_roles": [], 
-    "publisher": "MIT OpenCourseWare", 
-    "nextPreviousEnabled": false, 
-    "language": "", 
-    "url_rewrite_patterns": [], 
-    "widgets_features": [], 
-    "category_features": [], 
-    "firstTimeEdit": true, 
-    "feature_requirements": [], 
-    "list_in_left_nav": false, 
-    "short_name_tlp": "Exams", 
-    "expirationDate": "None", 
-    "_content_type_id": "text/plain", 
-    "contributor_list": [], 
-    "is_media_gallery": false, 
-    "contributors": [], 
-    "_gopip": 7, 
-    "_content_type_title": "text/plain", 
-    "course_linking": [], 
+    },
+    "_atbrefs": {},
     "_atrefs": {
         "BelongsTo": [
             "aabc44bdb2e45374d62f30f2a6d4c63e"
-        ], 
+        ],
         "isReferencing": [
-            "45790724487e46dcc02f55d0fc092ab7", 
-            "b799045edd80df18879088bcf872b214", 
-            "d669bf89c103559d51427d0916c5db61", 
-            "edf08929f3b2b435c7d8ca85e8d5118d", 
-            "892238e7e16a658abd5813bea8399170", 
-            "b7efef974f7a2c8b5c925f5ea8fc9152", 
-            "e9bbec7a9a25a87715e8edd75e21d7b9", 
-            "c72789c2ac2ccaf5568a024c662882d2", 
+            "45790724487e46dcc02f55d0fc092ab7",
+            "b799045edd80df18879088bcf872b214",
+            "d669bf89c103559d51427d0916c5db61",
+            "edf08929f3b2b435c7d8ca85e8d5118d",
+            "892238e7e16a658abd5813bea8399170",
+            "b7efef974f7a2c8b5c925f5ea8fc9152",
+            "e9bbec7a9a25a87715e8edd75e21d7b9",
+            "c72789c2ac2ccaf5568a024c662882d2",
             "554b504960907e6ae65566acc1c314b9"
         ]
-    }, 
-    "other_platform_requirements": "", 
-    "license": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/", 
-    "rights": "This site (c) Massachusetts Institute of Technology 2010.  Content within individual courses is (c) by the individual authors unless otherwise noted. The Massachusetts Institute of Technology is providing this Work (as defined below) under the terms of this Creative Commons public license (\"CCPL\" or \"license\") unless otherwise noted. The Work is protected by copyright and/or other applicable law. Any use of the work other than as authorized under this license is prohibited. By exercising any of the rights to the Work provided here, You (as defined below) accept and agree to be bound by the terms of this license. The Licensor, the Massachusetts Institute of Technology, grants You the rights contained here in consideration of Your acceptance of such terms and conditions.", 
-    "hide_Page_title": false, 
-    "_defaultpage": "", 
-    "tcATmit_subject_tags": [], 
-    "features_tracking": [], 
-    "ad_champion_text": "", 
-    "has_inline_embed": false, 
-    "unique_identifier": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/exams", 
-    "is_image_gallery": false, 
-    "id": "exams", 
-    "materialtype": "Other", 
-    "_type": "CourseSection", 
-    "description": "This section provides the exams for the course along with solutions.", 
-    "course_identifier": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010", 
-    "_content_type_publisher": "text/plain", 
-    "tcATmit_instructional_tags": [], 
-    "_content_type": "text/html", 
-    "creators": [
-        "admin"
-    ], 
-    "modification_date": "2016/09/24 07:52:20.061 GMT-4", 
-    "always_publish": false, 
-    "_content_type_description": "text/plain", 
-    "_owner": null, 
+    },
+    "_classname": "CourseSection",
+    "_content_type": "text/html",
+    "_content_type_ad_type": "text/plain",
+    "_content_type_course_identifier": "text/plain",
+    "_content_type_description": "text/plain",
+    "_content_type_id": "text/plain",
+    "_content_type_license": "text/plain",
+    "_content_type_materialtype": "text/plain",
+    "_content_type_publisher": "text/plain",
+    "_content_type_rights": "text/html",
+    "_content_type_short_name_tlp": "text/plain",
+    "_content_type_short_page_title": "text/plain",
+    "_content_type_technical_location": "text/plain",
+    "_content_type_text": "text/html",
+    "_content_type_title": "text/plain",
+    "_content_type_unique_identifier": "text/plain",
+    "_defaultpage": "",
+    "_directly_provided": [
+        "Products.CMFEditions.interfaces.IVersioned"
+    ],
+    "_gopip": 7,
+    "_id": "exams",
+    "_layout": "custom_view",
+    "_owner": null,
+    "_path": "/Plone/courses/mathematics/18-06-linear-algebra-spring-2010/exams",
     "_permissions": {
-        "Change portal events": {
-            "acquire": false, 
-            "roles": [
-                "Editor", 
-                "Manager", 
-                "MetadataEditor", 
-                "Owner"
-            ]
-        }, 
-        "Modify portal content": {
-            "acquire": false, 
-            "roles": [
-                "Manager", 
-                "MetadataEditor"
-            ]
-        }, 
         "Access contents information": {
-            "acquire": false, 
+            "acquire": false,
             "roles": [
                 "Authenticated"
             ]
-        }, 
-        "List folder contents": {
-            "acquire": false, 
+        },
+        "Change portal events": {
+            "acquire": false,
             "roles": [
-                "Editor", 
-                "Manager", 
-                "MetadataEditor", 
+                "Editor",
+                "Manager",
+                "MetadataEditor",
                 "Owner"
             ]
-        }, 
+        },
+        "List folder contents": {
+            "acquire": false,
+            "roles": [
+                "Editor",
+                "Manager",
+                "MetadataEditor",
+                "Owner"
+            ]
+        },
+        "Modify portal content": {
+            "acquire": false,
+            "roles": [
+                "Manager",
+                "MetadataEditor"
+            ]
+        },
         "View": {
-            "acquire": false, 
+            "acquire": false,
             "roles": [
                 "Authenticated"
             ]
         }
-    }, 
+    },
     "_properties": [
         [
-            "title", 
-            "Exams", 
+            "title",
+            "Exams",
             "string"
         ]
-    ], 
-    "_id": "exams", 
-    "courselist_features": [], 
-    "_content_type_short_name_tlp": "text/plain", 
-    "_path": "/Plone/courses/mathematics/18-06-linear-algebra-spring-2010/exams"
+    ],
+    "_type": "CourseSection",
+    "_uid": "c13c4766c0cf1486f0cf6435c531eaad",
+    "_userdefined_roles": [],
+    "_workflow_history": {
+        "page_workflow": [
+            {
+                "action": null,
+                "actor": "admin",
+                "comments": "",
+                "review_state": "waiting_for_authoring",
+                "time": "2010/05/14 12:21:49.049 GMT-4"
+            },
+            {
+                "action": "approve_to_staging",
+                "actor": "admin",
+                "comments": "",
+                "review_state": "ready_for_staging",
+                "time": "2010/05/16 11:42:28.964 GMT-4"
+            },
+            {
+                "action": "decline",
+                "actor": "cc_gegrov",
+                "comments": "",
+                "review_state": "waiting_for_authoring",
+                "time": "2010/05/21 05:47:01.950 GMT-4"
+            },
+            {
+                "action": "approve_to_staging",
+                "actor": "cc_gegrov",
+                "comments": "",
+                "review_state": "ready_for_staging",
+                "time": "2010/05/21 05:51:15.703 GMT-4"
+            },
+            {
+                "action": null,
+                "actor": "cc_saror4",
+                "comments": "",
+                "review_state": "waiting_for_authoring",
+                "time": "2010/08/17 00:14:20.126 GMT-4"
+            },
+            {
+                "action": "approve_to_staging",
+                "actor": "cc_gegrov",
+                "comments": "",
+                "review_state": "ready_for_staging",
+                "time": "2010/09/03 05:58:53.894 GMT-4"
+            },
+            {
+                "action": "decline",
+                "actor": "cc_ajsing",
+                "comments": "",
+                "review_state": "waiting_for_authoring",
+                "time": "2010/09/03 07:48:21.272 GMT-4"
+            },
+            {
+                "action": "approve_to_staging",
+                "actor": "cc_ajsing",
+                "comments": "",
+                "review_state": "ready_for_staging",
+                "time": "2010/09/03 09:34:10.834 GMT-4"
+            },
+            {
+                "action": "decline",
+                "actor": "asingh33",
+                "comments": "",
+                "review_state": "waiting_for_authoring",
+                "time": "2014/09/05 04:07:57.234 GMT-4"
+            },
+            {
+                "action": "approve_to_staging",
+                "actor": "asingh33",
+                "comments": "",
+                "review_state": "ready_for_staging",
+                "time": "2014/09/05 04:09:56.323 GMT-4"
+            }
+        ]
+    },
+    "ad_champion_text": "",
+    "ad_type": "HOUSE",
+    "aggregationlevel": 3,
+    "allowDiscussion": false,
+    "always_publish": false,
+    "bottomtext": "",
+    "category_features": [],
+    "constrainTypesMode": 0,
+    "contributor_list": [],
+    "contributors": [],
+    "course_identifier": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010",
+    "course_linking": [],
+    "courselist_features": [],
+    "creation_date": "2010/05/14 12:21:49.043 GMT-4",
+    "creators": [
+        "admin"
+    ],
+    "description": "This section provides the exams for the course along with solutions.",
+    "duration": "",
+    "effectiveDate": "2010/05/21 05:47:01.939 GMT-4",
+    "excludeFromNav": false,
+    "expirationDate": "None",
+    "feature_requirements": [],
+    "features_tracking": [],
+    "firstTimeEdit": true,
+    "has_inline_embed": false,
+    "hide_Page_title": false,
+    "id": "exams",
+    "immediatelyAddableTypes": [
+        "OCWImage",
+        "CourseSection",
+        "OCWExtFile",
+        "OCWFile"
+    ],
+    "is_image_gallery": false,
+    "is_mathml_document": false,
+    "is_media_gallery": false,
+    "language": "",
+    "license": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/",
+    "list_in_left_nav": false,
+    "locallyAllowedTypes": [
+        "OCWImage",
+        "CourseSection",
+        "OCWExtFile",
+        "OCWFile"
+    ],
+    "location": "",
+    "materialtype": "Other",
+    "metadata_contributor_list": [],
+    "modification_date": "2016/09/24 07:52:20.061 GMT-4",
+    "nextPreviousEnabled": false,
+    "other_platform_requirements": "",
+    "parent_module": "aabc44bdb2e45374d62f30f2a6d4c63e",
+    "parent_uid": "aabc44bdb2e45374d62f30f2a6d4c63e",
+    "publisher": "MIT OpenCourseWare",
+    "related_mit_links": "",
+    "rights": "This site (c) Massachusetts Institute of Technology 2010.  Content within individual courses is (c) by the individual authors unless otherwise noted. The Massachusetts Institute of Technology is providing this Work (as defined below) under the terms of this Creative Commons public license (\"CCPL\" or \"license\") unless otherwise noted. The Work is protected by copyright and/or other applicable law. Any use of the work other than as authorized under this license is prohibited. By exercising any of the rights to the Work provided here, You (as defined below) accept and agree to be bound by the terms of this license. The Licensor, the Massachusetts Institute of Technology, grants You the rights contained here in consideration of Your acceptance of such terms and conditions.",
+    "section_identifier": null,
+    "short_name_tlp": "Exams",
+    "short_page_title": "Exams",
+    "software_requirements": [
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "40.0",
+            "software_name_col": "Chrome",
+            "software_type_col": "Browser"
+        },
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "8.0",
+            "software_name_col": "Safari",
+            "software_type_col": "Browser"
+        },
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "38.0",
+            "software_name_col": "Mozilla Firefox",
+            "software_type_col": "Browser"
+        },
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "9.0",
+            "software_name_col": "Internet Explorer",
+            "software_type_col": "Browser"
+        },
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "13.1",
+            "software_name_col": "Edge",
+            "software_type_col": "Browser"
+        }
+    ],
+    "subject": [],
+    "tcATmit_instructional_tags": [],
+    "tcATmit_subject_tags": [],
+    "technical_location": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/exams",
+    "text": "<p>There will be three one-hour exams at class times and a final exam.</p><div class=\"maintabletemplate\"><table summary=\"See table caption for summary.\" class=\"tablewidth50\"><caption class=\"invisible\">Exams files.</caption><thead><tr><th scope=\"col\">EXAMS</th><th scope=\"col\">SOLUTIONS</th></tr></thead><tbody><tr class=\"row\"><td>Exam 1 (<a href=\"./resolveuid/e9bbec7a9a25a87715e8edd75e21d7b9\">PDF</a>)</td><td>(<a href=\"./resolveuid/b7efef974f7a2c8b5c925f5ea8fc9152\">PDF</a>)</td></tr><tr class=\"alt-row\"><td>Exam 2 (<a href=\"./resolveuid/892238e7e16a658abd5813bea8399170\">PDF</a>)</td><td>(<a href=\"./resolveuid/d669bf89c103559d51427d0916c5db61\">PDF</a>)</td></tr><tr class=\"row\"><td>Exam 3 (<a href=\"./resolveuid/c72789c2ac2ccaf5568a024c662882d2\">PDF</a>)</td><td>(<a href=\"./resolveuid/edf08929f3b2b435c7d8ca85e8d5118d\">PDF</a>)</td></tr><tr class=\"alt-row\"><td>Final exam (<a href=\"./resolveuid/b799045edd80df18879088bcf872b214\">PDF</a>)</td><td>(<a href=\"./resolveuid/45790724487e46dcc02f55d0fc092ab7\">PDF</a>)</td></tr></tbody></table></div><p>Exams and quizzes from previous years can be found in the <a href=\"/courses/mathematics/18-06-linear-algebra-spring-2010/study-materials\">study materials</a> section.</p>",
+    "title": "Exams",
+    "unique_identifier": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/exams",
+    "url_rewrite_patterns": [],
+    "widgets_features": []
 }

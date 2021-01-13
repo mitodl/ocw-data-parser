@@ -1,185 +1,185 @@
 {
-    "expanded_alternate_text": "", 
-    "features_tracking": [], 
-    "widgets_features": [], 
-    "contributors": [], 
-    "tcATmit_subject_tags": [], 
-    "unique_identifier": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-4-factorization-into-a-lu/18.06_L04.jpg", 
-    "_content_type_publisher": "text/plain", 
-    "_content_type_license": "text/plain", 
-    "_datafield_image": {
-        "encoding": "base64", 
-        "data": "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", 
-        "content_type": "image/jpeg", 
-        "filename": "18.06_L04.jpg"
-    }, 
-    "aggregationlevel": 2, 
-    "_uid": "089169f7c399c4f8a41ea155966537e4", 
-    "_workflow_history": {
-        "one_state_workflow": [
-            {
-                "action": null, 
-                "review_state": "published", 
-                "actor": "Jcplayer", 
-                "comments": "", 
-                "time": "2010/10/07 14:12:03.848 GMT-4"
-            }
-        ]
-    }, 
-    "expirationDate": "None", 
-    "_content_type_id": "text/plain", 
-    "duration": "", 
-    "contributor_list": [], 
-    "id": "18.06_L04.jpg", 
-    "related_mit_links": "", 
-    "thumb_height": "", 
-    "effectiveDate": "None", 
-    "title": "18.06_L04.jpg", 
-    "_layout": "view", 
-    "parent_module": "aabc44bdb2e45374d62f30f2a6d4c63e", 
-    "_content_type": "image/jpeg", 
-    "_userdefined_roles": [], 
-    "_gopip": 0, 
-    "location": "", 
-    "_atrefs": {
-        "BelongsTo": [
-            "aabc44bdb2e45374d62f30f2a6d4c63e"
-        ]
-    }, 
-    "_content_type_course_identifier": "text/plain", 
-    "_content_type_title": "text/plain", 
-    "section_identifier": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures", 
-    "_atbrefs": {
-        "thumbnail_image": [
-            "aee7c474318a3fa46126207c1b107c15"
-        ], 
-        "file_reference": [
-            "d26ce8991aa2955f63ef11da856f0c02"
-        ]
-    }, 
-    "creation_date": "2010/10/07 14:12:03.840 GMT-4", 
-    "_content_type_section_identifier": "text/plain", 
-    "_type": "OCWImage", 
-    "technical_location": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-4-factorization-into-a-lu/18.06_L04.jpg", 
-    "description": "", 
-    "thumb_width": "", 
-    "software_requirements": [
-        {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "40.0", 
-            "software_name_col": "Chrome", 
-            "maximum_version_col": ""
-        }, 
-        {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "8.0", 
-            "software_name_col": "Safari", 
-            "maximum_version_col": ""
-        }, 
-        {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "38.0", 
-            "software_name_col": "Mozilla Firefox", 
-            "maximum_version_col": ""
-        }, 
-        {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "9.0", 
-            "software_name_col": "Internet Explorer", 
-            "maximum_version_col": ""
-        }, 
-        {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "13.1", 
-            "software_name_col": "Edge", 
-            "maximum_version_col": ""
-        }
-    ], 
-    "_content_type_technical_location": "text/plain", 
-    "alternate_text": "", 
-    "credit": "", 
-    "subject": [], 
-    "_content_type_rights": "text/html", 
-    "course_identifier": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010", 
-    "_directly_provided": [], 
-    "other_platform_requirements": "", 
-    "_id": "18.06_L04.jpg", 
-    "_classname": "OCWImage", 
-    "metadata_contributor_list": [
-        {
-            "md_contributor_uid": "", 
-            "md_contributor_entity": "Todd Rautenberg", 
-            "md_contributor_hide": "", 
-            "md_contributor_special_title": "", 
-            "md_contributor_role": "Validator"
-        }, 
-        {
-            "md_contributor_uid": "", 
-            "md_contributor_entity": "Todd Rautenberg", 
-            "md_contributor_hide": "", 
-            "md_contributor_special_title": "", 
-            "md_contributor_role": "Creator"
-        }
-    ], 
-    "tcATmit_instructional_tags": [], 
-    "caption": "", 
-    "parent_uid": "aee7c474318a3fa46126207c1b107c15", 
-    "modification_date": "2016/09/24 04:30:32.248 GMT-4", 
-    "course_linking": [], 
-    "publisher": "MIT OpenCourseWare", 
-    "excludeFromNav": false, 
-    "feature_requirements": [], 
-    "language": "", 
-    "license": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/", 
-    "rights": "This site (c) Massachusetts Institute of Technology 2010.  Content within individual courses is (c) by the individual authors unless otherwise noted. The Massachusetts Institute of Technology is providing this Work (as defined below) under the terms of this Creative Commons public license (\"CCPL\" or \"license\") unless otherwise noted. The Work is protected by copyright and/or other applicable law. Any use of the work other than as authorized under this license is prohibited. By exercising any of the rights to the Work provided here, You (as defined below) accept and agree to be bound by the terms of this license. The Licensor, the Massachusetts Institute of Technology, grants You the rights contained here in consideration of Your acceptance of such terms and conditions.", 
-    "always_publish": false, 
-    "popup_image_id": "", 
-    "materialtype": "Other", 
-    "_content_type_unique_identifier": "text/plain", 
-    "category_features": [], 
-    "is_pop_up_image": false, 
-    "_owner": null, 
-    "_defaultpage": "index_html", 
-    "firstTimeEdit": true, 
-    "_permissions": {
-        "Modify portal content": {
-            "acquire": false, 
-            "roles": [
-                "Editor", 
-                "Manager", 
-                "Owner"
-            ]
-        }, 
-        "Access contents information": {
-            "acquire": false, 
-            "roles": [
-                "Anonymous"
-            ]
-        }, 
-        "View": {
-            "acquire": false, 
-            "roles": [
-                "Anonymous"
-            ]
-        }
-    }, 
-    "_properties": [
-        [
-            "title", 
-            "18.06_L04.jpg", 
-            "string"
-        ]
-    ], 
-    "allowDiscussion": false, 
-    "_content_type_materialtype": "text/plain", 
-    "creators": [
-        "Jcplayer"
-    ], 
-    "courselist_features": [], 
     "_ac_local_roles": {
         "Jcplayer": [
             "Owner"
         ]
-    }, 
-    "_path": "/Plone/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-4-factorization-into-a-lu/18.06_L04.jpg"
+    },
+    "_atbrefs": {
+        "file_reference": [
+            "d26ce8991aa2955f63ef11da856f0c02"
+        ],
+        "thumbnail_image": [
+            "aee7c474318a3fa46126207c1b107c15"
+        ]
+    },
+    "_atrefs": {
+        "BelongsTo": [
+            "aabc44bdb2e45374d62f30f2a6d4c63e"
+        ]
+    },
+    "_classname": "OCWImage",
+    "_content_type": "image/jpeg",
+    "_content_type_course_identifier": "text/plain",
+    "_content_type_id": "text/plain",
+    "_content_type_license": "text/plain",
+    "_content_type_materialtype": "text/plain",
+    "_content_type_publisher": "text/plain",
+    "_content_type_rights": "text/html",
+    "_content_type_section_identifier": "text/plain",
+    "_content_type_technical_location": "text/plain",
+    "_content_type_title": "text/plain",
+    "_content_type_unique_identifier": "text/plain",
+    "_datafield_image": {
+        "content_type": "image/jpeg",
+        "data": "ZW1wdHk=",
+        "encoding": "base64",
+        "filename": "18.06_L04.jpg"
+    },
+    "_defaultpage": "index_html",
+    "_directly_provided": [],
+    "_gopip": 0,
+    "_id": "18.06_L04.jpg",
+    "_layout": "view",
+    "_owner": null,
+    "_path": "/Plone/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-4-factorization-into-a-lu/18.06_L04.jpg",
+    "_permissions": {
+        "Access contents information": {
+            "acquire": false,
+            "roles": [
+                "Anonymous"
+            ]
+        },
+        "Modify portal content": {
+            "acquire": false,
+            "roles": [
+                "Editor",
+                "Manager",
+                "Owner"
+            ]
+        },
+        "View": {
+            "acquire": false,
+            "roles": [
+                "Anonymous"
+            ]
+        }
+    },
+    "_properties": [
+        [
+            "title",
+            "18.06_L04.jpg",
+            "string"
+        ]
+    ],
+    "_type": "OCWImage",
+    "_uid": "089169f7c399c4f8a41ea155966537e4",
+    "_userdefined_roles": [],
+    "_workflow_history": {
+        "one_state_workflow": [
+            {
+                "action": null,
+                "actor": "Jcplayer",
+                "comments": "",
+                "review_state": "published",
+                "time": "2010/10/07 14:12:03.848 GMT-4"
+            }
+        ]
+    },
+    "aggregationlevel": 2,
+    "allowDiscussion": false,
+    "alternate_text": "",
+    "always_publish": false,
+    "caption": "",
+    "category_features": [],
+    "contributor_list": [],
+    "contributors": [],
+    "course_identifier": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010",
+    "course_linking": [],
+    "courselist_features": [],
+    "creation_date": "2010/10/07 14:12:03.840 GMT-4",
+    "creators": [
+        "Jcplayer"
+    ],
+    "credit": "",
+    "description": "",
+    "duration": "",
+    "effectiveDate": "None",
+    "excludeFromNav": false,
+    "expanded_alternate_text": "",
+    "expirationDate": "None",
+    "feature_requirements": [],
+    "features_tracking": [],
+    "firstTimeEdit": true,
+    "id": "18.06_L04.jpg",
+    "is_pop_up_image": false,
+    "language": "",
+    "license": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/",
+    "location": "",
+    "materialtype": "Other",
+    "metadata_contributor_list": [
+        {
+            "md_contributor_entity": "Todd Rautenberg",
+            "md_contributor_hide": "",
+            "md_contributor_role": "Validator",
+            "md_contributor_special_title": "",
+            "md_contributor_uid": ""
+        },
+        {
+            "md_contributor_entity": "Todd Rautenberg",
+            "md_contributor_hide": "",
+            "md_contributor_role": "Creator",
+            "md_contributor_special_title": "",
+            "md_contributor_uid": ""
+        }
+    ],
+    "modification_date": "2016/09/24 04:30:32.248 GMT-4",
+    "other_platform_requirements": "",
+    "parent_module": "aabc44bdb2e45374d62f30f2a6d4c63e",
+    "parent_uid": "aee7c474318a3fa46126207c1b107c15",
+    "popup_image_id": "",
+    "publisher": "MIT OpenCourseWare",
+    "related_mit_links": "",
+    "rights": "This site (c) Massachusetts Institute of Technology 2010.  Content within individual courses is (c) by the individual authors unless otherwise noted. The Massachusetts Institute of Technology is providing this Work (as defined below) under the terms of this Creative Commons public license (\"CCPL\" or \"license\") unless otherwise noted. The Work is protected by copyright and/or other applicable law. Any use of the work other than as authorized under this license is prohibited. By exercising any of the rights to the Work provided here, You (as defined below) accept and agree to be bound by the terms of this license. The Licensor, the Massachusetts Institute of Technology, grants You the rights contained here in consideration of Your acceptance of such terms and conditions.",
+    "section_identifier": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures",
+    "software_requirements": [
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "40.0",
+            "software_name_col": "Chrome",
+            "software_type_col": "Browser"
+        },
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "8.0",
+            "software_name_col": "Safari",
+            "software_type_col": "Browser"
+        },
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "38.0",
+            "software_name_col": "Mozilla Firefox",
+            "software_type_col": "Browser"
+        },
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "9.0",
+            "software_name_col": "Internet Explorer",
+            "software_type_col": "Browser"
+        },
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "13.1",
+            "software_name_col": "Edge",
+            "software_type_col": "Browser"
+        }
+    ],
+    "subject": [],
+    "tcATmit_instructional_tags": [],
+    "tcATmit_subject_tags": [],
+    "technical_location": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-4-factorization-into-a-lu/18.06_L04.jpg",
+    "thumb_height": "",
+    "thumb_width": "",
+    "title": "18.06_L04.jpg",
+    "unique_identifier": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-4-factorization-into-a-lu/18.06_L04.jpg",
+    "widgets_features": []
 }

@@ -1,185 +1,185 @@
 {
-    "expanded_alternate_text": "", 
-    "features_tracking": [], 
-    "widgets_features": [], 
-    "contributors": [], 
-    "tcATmit_subject_tags": [], 
-    "unique_identifier": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-12-graphs-networks-incidence-matrices/18.06_L12.jpg", 
-    "_content_type_publisher": "text/plain", 
-    "_content_type_license": "text/plain", 
-    "_datafield_image": {
-        "encoding": "base64", 
-        "data": "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", 
-        "content_type": "image/jpeg", 
-        "filename": "18.06_L12.jpg"
-    }, 
-    "aggregationlevel": 2, 
-    "_uid": "e6e49ea6a18091873744aca4d536b321", 
-    "_workflow_history": {
-        "one_state_workflow": [
-            {
-                "action": null, 
-                "review_state": "published", 
-                "actor": "Jcplayer", 
-                "comments": "", 
-                "time": "2010/10/07 16:22:17.732 GMT-4"
-            }
-        ]
-    }, 
-    "expirationDate": "None", 
-    "_content_type_id": "text/plain", 
-    "duration": "", 
-    "contributor_list": [], 
-    "id": "18.06_L12.jpg", 
-    "related_mit_links": "", 
-    "thumb_height": "", 
-    "effectiveDate": "None", 
-    "title": "18.06_L12.jpg", 
-    "_layout": "view", 
-    "parent_module": "aabc44bdb2e45374d62f30f2a6d4c63e", 
-    "_content_type": "image/jpeg", 
-    "_userdefined_roles": [], 
-    "_gopip": 0, 
-    "location": "", 
-    "_atrefs": {
-        "BelongsTo": [
-            "aabc44bdb2e45374d62f30f2a6d4c63e"
-        ]
-    }, 
-    "_content_type_course_identifier": "text/plain", 
-    "_content_type_title": "text/plain", 
-    "section_identifier": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures", 
-    "_atbrefs": {
-        "thumbnail_image": [
-            "12a27cb2360fd3c7f6891dd079e441f5"
-        ], 
-        "file_reference": [
-            "4a541a83ada740bd3db7e86bd2d351f3"
-        ]
-    }, 
-    "creation_date": "2010/10/07 16:22:17.725 GMT-4", 
-    "_content_type_section_identifier": "text/plain", 
-    "_type": "OCWImage", 
-    "technical_location": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-12-graphs-networks-incidence-matrices/18.06_L12.jpg", 
-    "description": "", 
-    "thumb_width": "", 
-    "software_requirements": [
-        {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "40.0", 
-            "software_name_col": "Chrome", 
-            "maximum_version_col": ""
-        }, 
-        {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "8.0", 
-            "software_name_col": "Safari", 
-            "maximum_version_col": ""
-        }, 
-        {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "38.0", 
-            "software_name_col": "Mozilla Firefox", 
-            "maximum_version_col": ""
-        }, 
-        {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "9.0", 
-            "software_name_col": "Internet Explorer", 
-            "maximum_version_col": ""
-        }, 
-        {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "13.1", 
-            "software_name_col": "Edge", 
-            "maximum_version_col": ""
-        }
-    ], 
-    "_content_type_technical_location": "text/plain", 
-    "alternate_text": "", 
-    "credit": "", 
-    "subject": [], 
-    "_content_type_rights": "text/html", 
-    "course_identifier": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010", 
-    "_directly_provided": [], 
-    "other_platform_requirements": "", 
-    "_id": "18.06_L12.jpg", 
-    "_classname": "OCWImage", 
-    "metadata_contributor_list": [
-        {
-            "md_contributor_uid": "", 
-            "md_contributor_entity": "Todd Rautenberg", 
-            "md_contributor_hide": "", 
-            "md_contributor_special_title": "", 
-            "md_contributor_role": "Validator"
-        }, 
-        {
-            "md_contributor_uid": "", 
-            "md_contributor_entity": "Todd Rautenberg", 
-            "md_contributor_hide": "", 
-            "md_contributor_special_title": "", 
-            "md_contributor_role": "Creator"
-        }
-    ], 
-    "tcATmit_instructional_tags": [], 
-    "caption": "", 
-    "parent_uid": "12a27cb2360fd3c7f6891dd079e441f5", 
-    "modification_date": "2016/09/24 04:34:04.732 GMT-4", 
-    "course_linking": [], 
-    "publisher": "MIT OpenCourseWare", 
-    "excludeFromNav": false, 
-    "feature_requirements": [], 
-    "language": "", 
-    "license": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/", 
-    "rights": "This site (c) Massachusetts Institute of Technology 2010.  Content within individual courses is (c) by the individual authors unless otherwise noted. The Massachusetts Institute of Technology is providing this Work (as defined below) under the terms of this Creative Commons public license (\"CCPL\" or \"license\") unless otherwise noted. The Work is protected by copyright and/or other applicable law. Any use of the work other than as authorized under this license is prohibited. By exercising any of the rights to the Work provided here, You (as defined below) accept and agree to be bound by the terms of this license. The Licensor, the Massachusetts Institute of Technology, grants You the rights contained here in consideration of Your acceptance of such terms and conditions.", 
-    "always_publish": false, 
-    "popup_image_id": "", 
-    "materialtype": "Other", 
-    "_content_type_unique_identifier": "text/plain", 
-    "category_features": [], 
-    "is_pop_up_image": false, 
-    "_owner": null, 
-    "_defaultpage": "index_html", 
-    "firstTimeEdit": true, 
-    "_permissions": {
-        "Modify portal content": {
-            "acquire": false, 
-            "roles": [
-                "Editor", 
-                "Manager", 
-                "Owner"
-            ]
-        }, 
-        "Access contents information": {
-            "acquire": false, 
-            "roles": [
-                "Anonymous"
-            ]
-        }, 
-        "View": {
-            "acquire": false, 
-            "roles": [
-                "Anonymous"
-            ]
-        }
-    }, 
-    "_properties": [
-        [
-            "title", 
-            "18.06_L12.jpg", 
-            "string"
-        ]
-    ], 
-    "allowDiscussion": false, 
-    "_content_type_materialtype": "text/plain", 
-    "creators": [
-        "Jcplayer"
-    ], 
-    "courselist_features": [], 
     "_ac_local_roles": {
         "Jcplayer": [
             "Owner"
         ]
-    }, 
-    "_path": "/Plone/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-12-graphs-networks-incidence-matrices/18.06_L12.jpg"
+    },
+    "_atbrefs": {
+        "file_reference": [
+            "4a541a83ada740bd3db7e86bd2d351f3"
+        ],
+        "thumbnail_image": [
+            "12a27cb2360fd3c7f6891dd079e441f5"
+        ]
+    },
+    "_atrefs": {
+        "BelongsTo": [
+            "aabc44bdb2e45374d62f30f2a6d4c63e"
+        ]
+    },
+    "_classname": "OCWImage",
+    "_content_type": "image/jpeg",
+    "_content_type_course_identifier": "text/plain",
+    "_content_type_id": "text/plain",
+    "_content_type_license": "text/plain",
+    "_content_type_materialtype": "text/plain",
+    "_content_type_publisher": "text/plain",
+    "_content_type_rights": "text/html",
+    "_content_type_section_identifier": "text/plain",
+    "_content_type_technical_location": "text/plain",
+    "_content_type_title": "text/plain",
+    "_content_type_unique_identifier": "text/plain",
+    "_datafield_image": {
+        "content_type": "image/jpeg",
+        "data": "ZW1wdHk=",
+        "encoding": "base64",
+        "filename": "18.06_L12.jpg"
+    },
+    "_defaultpage": "index_html",
+    "_directly_provided": [],
+    "_gopip": 0,
+    "_id": "18.06_L12.jpg",
+    "_layout": "view",
+    "_owner": null,
+    "_path": "/Plone/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-12-graphs-networks-incidence-matrices/18.06_L12.jpg",
+    "_permissions": {
+        "Access contents information": {
+            "acquire": false,
+            "roles": [
+                "Anonymous"
+            ]
+        },
+        "Modify portal content": {
+            "acquire": false,
+            "roles": [
+                "Editor",
+                "Manager",
+                "Owner"
+            ]
+        },
+        "View": {
+            "acquire": false,
+            "roles": [
+                "Anonymous"
+            ]
+        }
+    },
+    "_properties": [
+        [
+            "title",
+            "18.06_L12.jpg",
+            "string"
+        ]
+    ],
+    "_type": "OCWImage",
+    "_uid": "e6e49ea6a18091873744aca4d536b321",
+    "_userdefined_roles": [],
+    "_workflow_history": {
+        "one_state_workflow": [
+            {
+                "action": null,
+                "actor": "Jcplayer",
+                "comments": "",
+                "review_state": "published",
+                "time": "2010/10/07 16:22:17.732 GMT-4"
+            }
+        ]
+    },
+    "aggregationlevel": 2,
+    "allowDiscussion": false,
+    "alternate_text": "",
+    "always_publish": false,
+    "caption": "",
+    "category_features": [],
+    "contributor_list": [],
+    "contributors": [],
+    "course_identifier": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010",
+    "course_linking": [],
+    "courselist_features": [],
+    "creation_date": "2010/10/07 16:22:17.725 GMT-4",
+    "creators": [
+        "Jcplayer"
+    ],
+    "credit": "",
+    "description": "",
+    "duration": "",
+    "effectiveDate": "None",
+    "excludeFromNav": false,
+    "expanded_alternate_text": "",
+    "expirationDate": "None",
+    "feature_requirements": [],
+    "features_tracking": [],
+    "firstTimeEdit": true,
+    "id": "18.06_L12.jpg",
+    "is_pop_up_image": false,
+    "language": "",
+    "license": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/",
+    "location": "",
+    "materialtype": "Other",
+    "metadata_contributor_list": [
+        {
+            "md_contributor_entity": "Todd Rautenberg",
+            "md_contributor_hide": "",
+            "md_contributor_role": "Validator",
+            "md_contributor_special_title": "",
+            "md_contributor_uid": ""
+        },
+        {
+            "md_contributor_entity": "Todd Rautenberg",
+            "md_contributor_hide": "",
+            "md_contributor_role": "Creator",
+            "md_contributor_special_title": "",
+            "md_contributor_uid": ""
+        }
+    ],
+    "modification_date": "2016/09/24 04:34:04.732 GMT-4",
+    "other_platform_requirements": "",
+    "parent_module": "aabc44bdb2e45374d62f30f2a6d4c63e",
+    "parent_uid": "12a27cb2360fd3c7f6891dd079e441f5",
+    "popup_image_id": "",
+    "publisher": "MIT OpenCourseWare",
+    "related_mit_links": "",
+    "rights": "This site (c) Massachusetts Institute of Technology 2010.  Content within individual courses is (c) by the individual authors unless otherwise noted. The Massachusetts Institute of Technology is providing this Work (as defined below) under the terms of this Creative Commons public license (\"CCPL\" or \"license\") unless otherwise noted. The Work is protected by copyright and/or other applicable law. Any use of the work other than as authorized under this license is prohibited. By exercising any of the rights to the Work provided here, You (as defined below) accept and agree to be bound by the terms of this license. The Licensor, the Massachusetts Institute of Technology, grants You the rights contained here in consideration of Your acceptance of such terms and conditions.",
+    "section_identifier": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures",
+    "software_requirements": [
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "40.0",
+            "software_name_col": "Chrome",
+            "software_type_col": "Browser"
+        },
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "8.0",
+            "software_name_col": "Safari",
+            "software_type_col": "Browser"
+        },
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "38.0",
+            "software_name_col": "Mozilla Firefox",
+            "software_type_col": "Browser"
+        },
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "9.0",
+            "software_name_col": "Internet Explorer",
+            "software_type_col": "Browser"
+        },
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "13.1",
+            "software_name_col": "Edge",
+            "software_type_col": "Browser"
+        }
+    ],
+    "subject": [],
+    "tcATmit_instructional_tags": [],
+    "tcATmit_subject_tags": [],
+    "technical_location": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-12-graphs-networks-incidence-matrices/18.06_L12.jpg",
+    "thumb_height": "",
+    "thumb_width": "",
+    "title": "18.06_L12.jpg",
+    "unique_identifier": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-12-graphs-networks-incidence-matrices/18.06_L12.jpg",
+    "widgets_features": []
 }

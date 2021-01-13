@@ -1,0 +1,284 @@
+{
+    "_ac_local_roles": {
+        "pgandhi3": [
+            "Owner"
+        ]
+    },
+    "_atbrefs": {
+        "isReferencing": [
+            "4a73573a388780b627ddf6ad95ed8c72"
+        ]
+    },
+    "_atrefs": {
+        "BelongsTo": [
+            "d9aad1541f1a9d3c0f7b0dcf9531a9a1"
+        ],
+        "isReferencing": [
+            "4a73573a388780b627ddf6ad95ed8c72"
+        ]
+    },
+    "_classname": "CourseSection",
+    "_content_type": "text/html",
+    "_content_type_ad_type": "text/plain",
+    "_content_type_course_identifier": "text/plain",
+    "_content_type_description": "text/plain",
+    "_content_type_id": "text/plain",
+    "_content_type_license": "text/plain",
+    "_content_type_materialtype": "text/plain",
+    "_content_type_publisher": "text/plain",
+    "_content_type_rights": "text/html",
+    "_content_type_short_page_title": "text/plain",
+    "_content_type_technical_location": "text/plain",
+    "_content_type_text": "text/html",
+    "_content_type_title": "text/plain",
+    "_content_type_unique_identifier": "text/plain",
+    "_defaultpage": "",
+    "_directly_provided": [
+        "Products.CMFEditions.interfaces.IVersioned"
+    ],
+    "_gopip": 4,
+    "_id": "readings",
+    "_layout": "custom_view",
+    "_owner": null,
+    "_path": "/Plone/courses/earth-atmospheric-and-planetary-sciences/12-001-introduction-to-geology-fall-2013/readings",
+    "_permissions": {
+        "Access contents information": {
+            "acquire": false,
+            "roles": [
+                "Authenticated"
+            ]
+        },
+        "Change portal events": {
+            "acquire": false,
+            "roles": [
+                "Editor",
+                "Manager",
+                "MetadataEditor",
+                "Owner"
+            ]
+        },
+        "List folder contents": {
+            "acquire": false,
+            "roles": [
+                "Editor",
+                "Manager",
+                "MetadataEditor",
+                "Owner"
+            ]
+        },
+        "Modify portal content": {
+            "acquire": false,
+            "roles": [
+                "Manager",
+                "MetadataEditor"
+            ]
+        },
+        "View": {
+            "acquire": false,
+            "roles": [
+                "Authenticated"
+            ]
+        }
+    },
+    "_properties": [
+        [
+            "title",
+            "Readings",
+            "string"
+        ]
+    ],
+    "_type": "CourseSection",
+    "_uid": "4a73573a388780b627ddf6ad95ed8c72",
+    "_userdefined_roles": [],
+    "_workflow_history": {
+        "page_workflow": [
+            {
+                "action": null,
+                "actor": "pgandhi3",
+                "comments": "",
+                "review_state": "waiting_for_authoring",
+                "time": "2014/09/25 03:21:54.253 GMT-4"
+            },
+            {
+                "action": "approve_to_staging",
+                "actor": "rverma83",
+                "comments": "",
+                "review_state": "ready_for_staging",
+                "time": "2014/09/25 07:52:57.423 GMT-4"
+            },
+            {
+                "action": "decline",
+                "actor": "pgandhi3",
+                "comments": "",
+                "review_state": "waiting_for_authoring",
+                "time": "2014/09/25 11:48:21.212 GMT-4"
+            },
+            {
+                "action": "approve_to_staging",
+                "actor": "pgandhi3",
+                "comments": "",
+                "review_state": "ready_for_staging",
+                "time": "2014/09/25 11:49:51.487 GMT-4"
+            },
+            {
+                "action": "decline",
+                "actor": "pgandhi3",
+                "comments": "",
+                "review_state": "waiting_for_authoring",
+                "time": "2014/09/30 23:35:41.740 GMT-4"
+            },
+            {
+                "action": "approve_to_staging",
+                "actor": "pgandhi3",
+                "comments": "",
+                "review_state": "ready_for_staging",
+                "time": "2014/09/30 23:43:25.893 GMT-4"
+            },
+            {
+                "action": "decline",
+                "actor": "ndhamija",
+                "comments": "",
+                "review_state": "waiting_for_authoring",
+                "time": "2014/10/07 01:54:26.783 GMT-4"
+            },
+            {
+                "action": "approve_to_staging",
+                "actor": "ndhamija",
+                "comments": "",
+                "review_state": "ready_for_staging",
+                "time": "2014/10/07 01:57:54.863 GMT-4"
+            },
+            {
+                "action": "decline",
+                "actor": "rverma83",
+                "comments": "",
+                "review_state": "waiting_for_authoring",
+                "time": "2014/12/22 02:15:04.183 US/Eastern"
+            },
+            {
+                "action": "approve_to_staging",
+                "actor": "rverma83",
+                "comments": "",
+                "review_state": "ready_for_staging",
+                "time": "2014/12/22 02:17:56.175 US/Eastern"
+            },
+            {
+                "action": "decline",
+                "actor": "rverma83",
+                "comments": "",
+                "review_state": "waiting_for_authoring",
+                "time": "2014/12/22 06:19:49.303 US/Eastern"
+            },
+            {
+                "action": "approve_to_staging",
+                "actor": "rverma83",
+                "comments": "",
+                "review_state": "ready_for_staging",
+                "time": "2014/12/22 06:20:07.472 US/Eastern"
+            }
+        ]
+    },
+    "ad_champion_text": "",
+    "ad_type": "HOUSE",
+    "aggregationlevel": 3,
+    "allowDiscussion": false,
+    "always_publish": false,
+    "bottomtext": "",
+    "category_features": [],
+    "constrainTypesMode": 0,
+    "contributor_list": [],
+    "contributors": [],
+    "course_identifier": "https://ocw.mit.edu/courses/earth-atmospheric-and-planetary-sciences/12-001-introduction-to-geology-fall-2013",
+    "course_linking": [],
+    "courselist_features": [],
+    "creation_date": "2014/09/25 03:21:54.243 GMT-4",
+    "creators": [
+        "pgandhi3"
+    ],
+    "description": "This section contains the reading assignments for the course.",
+    "duration": "",
+    "effectiveDate": "2014/09/25 07:52:57.381 GMT-4",
+    "excludeFromNav": false,
+    "expirationDate": "None",
+    "feature_requirements": [],
+    "features_tracking": [],
+    "firstTimeEdit": true,
+    "has_inline_embed": false,
+    "hide_Page_title": false,
+    "id": "readings",
+    "immediatelyAddableTypes": [
+        "OCWImage",
+        "CourseSection",
+        "OCWExtFile",
+        "OCWFile",
+        "MediaResource"
+    ],
+    "is_image_gallery": false,
+    "is_mathml_document": false,
+    "is_media_gallery": false,
+    "language": "",
+    "license": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/",
+    "list_in_left_nav": false,
+    "locallyAllowedTypes": [
+        "OCWImage",
+        "CourseSection",
+        "OCWExtFile",
+        "OCWFile",
+        "MediaResource"
+    ],
+    "location": "",
+    "materialtype": "Other",
+    "metadata_contributor_list": [],
+    "modification_date": "2016/09/24 06:42:07.199 GMT-4",
+    "nextPreviousEnabled": false,
+    "other_platform_requirements": "",
+    "parent_module": "d9aad1541f1a9d3c0f7b0dcf9531a9a1",
+    "parent_uid": "d9aad1541f1a9d3c0f7b0dcf9531a9a1",
+    "publisher": "MIT OpenCourseWare",
+    "related_mit_links": "",
+    "rights": "This site (c) Massachusetts Institute of Technology 2014.  Content within individual courses is (c) by the individual authors unless otherwise noted. The Massachusetts Institute of Technology is providing this Work (as defined below) under the terms of this Creative Commons public license (\"CCPL\" or \"license\") unless otherwise noted. The Work is protected by copyright and/or other applicable law. Any use of the work other than as authorized under this license is prohibited. By exercising any of the rights to the Work provided here, You (as defined below) accept and agree to be bound by the terms of this license. The Licensor, the Massachusetts Institute of Technology, grants You the rights contained here in consideration of Your acceptance of such terms and conditions.",
+    "section_identifier": null,
+    "short_name_tlp": "",
+    "short_page_title": "Readings",
+    "software_requirements": [
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "40.0",
+            "software_name_col": "Chrome",
+            "software_type_col": "Browser"
+        },
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "8.0",
+            "software_name_col": "Safari",
+            "software_type_col": "Browser"
+        },
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "38.0",
+            "software_name_col": "Mozilla Firefox",
+            "software_type_col": "Browser"
+        },
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "9.0",
+            "software_name_col": "Internet Explorer",
+            "software_type_col": "Browser"
+        },
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "13.1",
+            "software_name_col": "Edge",
+            "software_type_col": "Browser"
+        }
+    ],
+    "subject": [],
+    "tcATmit_instructional_tags": [],
+    "tcATmit_subject_tags": [],
+    "technical_location": "https://ocw.mit.edu/courses/earth-atmospheric-and-planetary-sciences/12-001-introduction-to-geology-fall-2013/readings",
+    "text": "<h2 class=\"subhead\">Textbook</h2> <p>[GZ] = <a href=\"http://www.amazon.com/exec/obidos/ASIN/0716766825/ref=nosim/mitopencourse-20\"><img border=\"0\" align=\"absMiddle\" src=\"/images/a_logo_17.gif\" alt=\"Amazon logo\" /></a> Grotzinger, \ufeffJohn, and Thomas H. Jordan. <em>Understanding Earth</em>. W. H. Freeman and Company, 2006. ISBN: 9780716766827.\ufeff</p> <p>Not every session had a reading assignment. Only sessions with reading assignments are listed below.</p> <div class=\"maintabletemplate\"><table summary=\"See table caption for summary.\" class=\"tablewidth75\">     <caption class=\"invisible\">Course readings.</caption>  <!-- BEGIN TABLE HEADER (for MIT OCW Table Template 2.51) -->     <thead>         <tr>             <th scope=\"col\">SES&nbsp;#</th>             <th scope=\"col\">LECTURE&nbsp;TOPICS</th>             <th scope=\"col\">READINGS</th>         </tr>     </thead>     <!-- END TABLE HEADER -->     <tbody>         <tr class=\"row\">             <td>1</td>             <td>Overview: Introduction to the Introduction of Geology</td>             <td>[GZ] Chapter 1.</td>         </tr>         <tr class=\"alt-row\">             <td>2</td>             <td>Origin and Age of the Earth</td>             <td>[GZ] Chapters 9 and 14.</td>         </tr>         <tr class=\"row\">             <td>3</td>             <td>Introduction to Minerals</td>             <td>[GZ] Chapter 3.</td>         </tr>         <tr class=\"alt-row\">             <td>4</td>             <td>Igneous Rocks</td>             <td>[GZ] Chapter 4.</td>         </tr>         <tr class=\"row\">             <td>5</td>             <td>Metamorphic Rocks</td>             <td>[GZ] Chapter 6.</td>         </tr>         <tr class=\"alt-row\">             <td>6</td>             <td>Sedimentary Rocks</td>             <td>[GZ] Chapter 5.</td>         </tr>         <tr class=\"row\">             <td>8</td>             <td>Rock Structure and Deformation</td>             <td>[GZ] Chapter 7.</td>         </tr>         <tr class=\"alt-row\">             <td>11</td>             <td>Geologic Time: Relative versus Absolute Dating</td>             <td>[GZ] Chapter 8.</td>         </tr>         <tr class=\"row\">             <td>12</td>             <td>Volcanoes</td>             <td>[GZ] Chapter 12.</td>         </tr>         <tr class=\"alt-row\">             <td>13</td>             <td>Plate Tectonics</td>             <td>[GZ] Chapter 2.</td>         </tr>         <tr class=\"row\">             <td>14</td>             <td>Plate Tectonics (cont.)</td>             <td>[GZ] Chapters 10 and 14.</td>         </tr>         <tr class=\"alt-row\">             <td>17</td>             <td>Continental Crust Formation</td>             <td>[GZ] Chapter 10.</td>         </tr>         <tr class=\"row\">             <td>18</td>             <td>Oceanic Crust Formation</td>             <td>[GZ] Chapter 4.</td>         </tr>         <tr class=\"alt-row\">             <td>19</td>             <td>Earthquakes</td>             <td>[GZ] Chapters 13 and 14.</td>         </tr>         <tr class=\"row\">             <td>22</td>             <td>Field Techniques</td>             <td>D &amp; R Reading.</td>         </tr>         <tr class=\"alt-row\">             <td>28</td>             <td>Rivers</td>             <td>[GZ] Chapter 18.</td>         </tr>         <tr class=\"row\">             <td>31</td>             <td>Landslides and Debris Flows</td>             <td>[GZ] Chapter 16.</td>         </tr>         <tr class=\"alt-row\">             <td>32</td>             <td>Glaciers</td>             <td>[GZ] Chapter 21.</td>         </tr>         <tr class=\"row\">             <td>33</td>             <td>Climate through Geologic History</td>             <td>[GZ] Chapter 22.</td>         </tr>         <tr class=\"alt-row\">             <td>34</td>             <td>Earth History and Geobiology</td>             <td>[GZ] Chapter 11.</td>         </tr>         <tr class=\"row\">             <td>35</td>             <td>Earth Science and Society</td>             <td>[GZ] Chapter 23.</td>         </tr>         <tr class=\"alt-row\">             <td>36</td>             <td>Comparative Planetology</td>             <td>[GZ] Chapter 9.</td>         </tr>         <!-- TEN ROWS -->     </tbody> </table></div>",
+    "title": "Readings",
+    "unique_identifier": "https://ocw.mit.edu/courses/earth-atmospheric-and-planetary-sciences/12-001-introduction-to-geology-fall-2013/readings",
+    "url_rewrite_patterns": [],
+    "widgets_features": []
+}

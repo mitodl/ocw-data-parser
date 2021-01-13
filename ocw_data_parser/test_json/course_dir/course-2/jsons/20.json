@@ -1,197 +1,271 @@
 {
-    "list_in_left_nav": false, 
-    "tcATmit_subject_tags": [], 
-    "features_tracking": [], 
-    "widgets_features": [], 
-    "locallyAllowedTypes": [
-        "OCWImage", 
-        "OCWExtFile", 
-        "OCWFile"
-    ], 
-    "has_inline_embed": false, 
-    "_content_type_text": "text/html", 
-    "unique_identifier": "https://ocw.mit.edu/resources/res-str-001-geographic-information-system-gis-tutorial-january-iap-2016/download-resource-materials", 
-    "text": "<div id=\"download_inner_main\"><p class=\"ptext\">This package contains the same content as the online version of the course, except for any audio/video materials and other interactive file types.</p><p class=\"ptext\">For help downloading and using course materials, read our <a href=\"http://ocw.mit.edu/help/faq-technology/\">frequently asked questions</a>.</p></div>", 
-    "_content_type_publisher": "text/plain", 
-    "_content_type_license": "text/plain", 
-    "ad_type": "HOUSE", 
-    "creation_date": "2016/03/01 11:53:58.070 US/Eastern", 
-    "aggregationlevel": 3, 
-    "is_image_gallery": false, 
-    "_uid": "f8ae706639dd475d2d475c2481375ccb", 
+    "_ac_local_roles": {
+        "Kcanavan": [
+            "Owner"
+        ]
+    },
+    "_atbrefs": {
+        "isReferencing": [
+            "1c2cb2ad1c70fd66f19e20103dc94595"
+        ]
+    },
+    "_atrefs": {
+        "BelongsTo": [
+            "d9aad1541f1a9d3c0f7b0dcf9531a9a1"
+        ],
+        "isReferencing": [
+            "bfa2d132364d489cf9450c584b71ec1e"
+        ]
+    },
+    "_classname": "CourseSection",
+    "_content_type": "text/html",
+    "_content_type_ad_type": "text/plain",
+    "_content_type_course_identifier": "text/plain",
+    "_content_type_description": "text/plain",
+    "_content_type_id": "text/plain",
+    "_content_type_license": "text/plain",
+    "_content_type_materialtype": "text/plain",
+    "_content_type_publisher": "text/plain",
+    "_content_type_rights": "text/html",
+    "_content_type_section_identifier": "text/plain",
+    "_content_type_short_page_title": "text/plain",
+    "_content_type_technical_location": "text/plain",
+    "_content_type_text": "text/html",
+    "_content_type_title": "text/plain",
+    "_content_type_unique_identifier": "text/plain",
+    "_defaultpage": "",
+    "_directly_provided": [
+        "Products.CMFEditions.interfaces.IVersioned"
+    ],
+    "_gopip": 7,
+    "_id": "making-sense-of-messiness",
+    "_layout": "custom_view",
+    "_owner": null,
+    "_path": "/Plone/courses/earth-atmospheric-and-planetary-sciences/12-001-introduction-to-geology-fall-2013/instructor-insights/making-sense-of-messiness",
+    "_permissions": {
+        "Access contents information": {
+            "acquire": false,
+            "roles": [
+                "Authenticated"
+            ]
+        },
+        "Change portal events": {
+            "acquire": false,
+            "roles": [
+                "Editor",
+                "Manager",
+                "MetadataEditor",
+                "Owner"
+            ]
+        },
+        "List folder contents": {
+            "acquire": false,
+            "roles": [
+                "Editor",
+                "Manager",
+                "MetadataEditor",
+                "Owner"
+            ]
+        },
+        "Modify portal content": {
+            "acquire": false,
+            "roles": [
+                "Manager",
+                "MetadataEditor"
+            ]
+        },
+        "View": {
+            "acquire": false,
+            "roles": [
+                "Authenticated"
+            ]
+        }
+    },
+    "_properties": [
+        [
+            "title",
+            "Making Sense of Messiness",
+            "string"
+        ]
+    ],
+    "_type": "CourseSection",
+    "_uid": "abd48cefe43d11ae8b573e0d4a6872b9",
+    "_userdefined_roles": [],
     "_workflow_history": {
         "page_workflow": [
             {
-                "action": null, 
-                "review_state": "waiting_for_authoring", 
-                "actor": "rsharma20", 
-                "comments": "", 
-                "time": "2016/03/01 11:53:58.081 US/Eastern"
-            }, 
+                "action": null,
+                "actor": "Kcanavan",
+                "comments": "",
+                "review_state": "waiting_for_authoring",
+                "time": "2014/12/03 16:46:48.311 US/Eastern"
+            },
             {
-                "action": "approve_to_staging", 
-                "review_state": "ready_for_staging", 
-                "actor": "rsharma20", 
-                "comments": "", 
-                "time": "2016/03/07 00:06:13.078 US/Eastern"
+                "action": "approve_to_staging",
+                "actor": "Kcanavan",
+                "comments": "",
+                "review_state": "ready_for_staging",
+                "time": "2014/12/03 17:12:42.853 US/Eastern"
+            },
+            {
+                "action": "decline_to_qa",
+                "actor": "Kcanavan",
+                "comments": "",
+                "review_state": "waiting_for_qa",
+                "time": "2014/12/09 16:40:06.064 US/Eastern"
+            },
+            {
+                "action": "approve_to_staging",
+                "actor": "Kcanavan",
+                "comments": "",
+                "review_state": "ready_for_staging",
+                "time": "2014/12/09 16:42:04.497 US/Eastern"
+            },
+            {
+                "action": "decline_to_qa",
+                "actor": "Kcanavan",
+                "comments": "",
+                "review_state": "waiting_for_qa",
+                "time": "2014/12/11 13:19:14.208 US/Eastern"
+            },
+            {
+                "action": "approve_to_staging",
+                "actor": "Kcanavan",
+                "comments": "",
+                "review_state": "ready_for_staging",
+                "time": "2014/12/11 13:20:18.667 US/Eastern"
+            },
+            {
+                "action": "decline_to_qa",
+                "actor": "sehansen",
+                "comments": "",
+                "review_state": "waiting_for_qa",
+                "time": "2014/12/11 15:26:16.067 US/Eastern"
+            },
+            {
+                "action": "approve_to_staging",
+                "actor": "sehansen",
+                "comments": "",
+                "review_state": "ready_for_staging",
+                "time": "2014/12/11 15:28:47.753 US/Eastern"
+            },
+            {
+                "action": "decline_to_qa",
+                "actor": "aimeeg",
+                "comments": "",
+                "review_state": "waiting_for_qa",
+                "time": "2014/12/13 16:42:53.511 US/Eastern"
+            },
+            {
+                "action": "approve_to_staging",
+                "actor": "aimeeg",
+                "comments": "",
+                "review_state": "ready_for_staging",
+                "time": "2014/12/13 16:45:06.313 US/Eastern"
             }
         ]
-    }, 
-    "hide_Page_title": false, 
-    "_content_type_id": "text/plain", 
+    },
+    "ad_champion_text": "",
+    "ad_type": "HOUSE",
+    "aggregationlevel": 3,
+    "allowDiscussion": false,
+    "always_publish": false,
+    "bottomtext": "",
+    "category_features": [],
+    "constrainTypesMode": 0,
+    "contributor_list": [],
+    "contributors": [],
+    "course_identifier": "https://ocw.mit.edu/courses/earth-atmospheric-and-planetary-sciences/12-001-introduction-to-geology-fall-2013",
+    "course_linking": [],
+    "courselist_features": [],
+    "creation_date": "2014/12/03 16:46:48.301 US/Eastern",
+    "creators": [
+        "Kcanavan"
+    ],
+    "description": "In this section, Prof. Perron discusses how the course challenges students to make sense of complexities in the field.",
+    "duration": "",
+    "effectiveDate": "2014/12/03 17:12:42.832 US/Eastern",
+    "excludeFromNav": false,
+    "expirationDate": "None",
+    "feature_requirements": [],
+    "features_tracking": [],
+    "firstTimeEdit": true,
+    "has_inline_embed": false,
+    "hide_Page_title": false,
+    "id": "making-sense-of-messiness",
     "immediatelyAddableTypes": [
-        "OCWImage", 
-        "OCWExtFile", 
-        "OCWFile"
-    ], 
-    "id": "download-resource-materials", 
-    "is_media_gallery": false, 
-    "related_mit_links": "", 
-    "_content_type_short_page_title": "text/plain", 
-    "_userdefined_roles": [], 
-    "contributors": [], 
-    "effectiveDate": "2016/03/07 00:06:13.031 US/Eastern", 
-    "title": "Download Resource Materials", 
-    "parent_module": "236793a57f96cf26ea0aec0ca35bd118", 
-    "_content_type_ad_type": "text/plain", 
-    "_gopip": 4, 
-    "is_mathml_document": false, 
-    "_ac_local_roles": {
-        "rsharma20": [
-            "Owner"
-        ]
-    }, 
-    "location": "", 
-    "bottomtext": "", 
-    "short_page_title": "Download Resource Materials", 
-    "_content_type_title": "text/plain", 
-    "feature_requirements": [], 
-    "_atbrefs": {}, 
-    "constrainTypesMode": 0, 
-    "_content_type": "text/html", 
-    "_type": "SRDownloadSection", 
-    "technical_location": "https://ocw.mit.edu/resources/res-str-001-geographic-information-system-gis-tutorial-january-iap-2016/download-resource-materials", 
-    "description": "", 
-    "short_name_tlp": "Download Resource Materials", 
+        "OCWImage",
+        "CourseSection",
+        "OCWExtFile",
+        "OCWFile",
+        "MediaResource"
+    ],
+    "is_image_gallery": false,
+    "is_mathml_document": false,
+    "is_media_gallery": false,
+    "language": "",
+    "license": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/",
+    "list_in_left_nav": true,
+    "locallyAllowedTypes": [
+        "OCWImage",
+        "CourseSection",
+        "OCWExtFile",
+        "OCWFile",
+        "MediaResource"
+    ],
+    "location": "",
+    "materialtype": "Other",
+    "metadata_contributor_list": [],
+    "modification_date": "2016/09/24 06:41:51.805 GMT-4",
+    "nextPreviousEnabled": false,
+    "other_platform_requirements": "",
+    "parent_module": "d9aad1541f1a9d3c0f7b0dcf9531a9a1",
+    "parent_uid": "1c2cb2ad1c70fd66f19e20103dc94595",
+    "publisher": "MIT OpenCourseWare",
+    "related_mit_links": "",
+    "rights": "This site (c) Massachusetts Institute of Technology 2014.  Content within individual courses is (c) by the individual authors unless otherwise noted. The Massachusetts Institute of Technology is providing this Work (as defined below) under the terms of this Creative Commons public license (\"CCPL\" or \"license\") unless otherwise noted. The Work is protected by copyright and/or other applicable law. Any use of the work other than as authorized under this license is prohibited. By exercising any of the rights to the Work provided here, You (as defined below) accept and agree to be bound by the terms of this license. The Licensor, the Massachusetts Institute of Technology, grants You the rights contained here in consideration of Your acceptance of such terms and conditions.",
+    "section_identifier": "https://ocw.mit.edu/courses/earth-atmospheric-and-planetary-sciences/12-001-introduction-to-geology-fall-2013/instructor-insights",
+    "short_name_tlp": "",
+    "short_page_title": "Making Sense of Messiness",
     "software_requirements": [
         {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "40.0", 
-            "software_name_col": "Chrome", 
-            "maximum_version_col": ""
-        }, 
+            "maximum_version_col": "",
+            "minimum_version_col": "40.0",
+            "software_name_col": "Chrome",
+            "software_type_col": "Browser"
+        },
         {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "8.0", 
-            "software_name_col": "Safari", 
-            "maximum_version_col": ""
-        }, 
+            "maximum_version_col": "",
+            "minimum_version_col": "8.0",
+            "software_name_col": "Safari",
+            "software_type_col": "Browser"
+        },
         {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "38.0", 
-            "software_name_col": "Mozilla Firefox", 
-            "maximum_version_col": ""
-        }, 
+            "maximum_version_col": "",
+            "minimum_version_col": "38.0",
+            "software_name_col": "Mozilla Firefox",
+            "software_type_col": "Browser"
+        },
         {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "9.0", 
-            "software_name_col": "Internet Explorer", 
-            "maximum_version_col": ""
-        }, 
+            "maximum_version_col": "",
+            "minimum_version_col": "9.0",
+            "software_name_col": "Internet Explorer",
+            "software_type_col": "Browser"
+        },
         {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "13.1", 
-            "software_name_col": "Edge", 
-            "maximum_version_col": ""
+            "maximum_version_col": "",
+            "minimum_version_col": "13.1",
+            "software_name_col": "Edge",
+            "software_type_col": "Browser"
         }
-    ], 
-    "_content_type_technical_location": "text/plain", 
-    "_layout": "custom_view", 
-    "_properties": [
-        [
-            "title", 
-            "Download Resource Materials", 
-            "string"
-        ]
-    ], 
-    "subject": [], 
-    "_content_type_rights": "text/html", 
-    "_atrefs": {
-        "BelongsTo": [
-            "236793a57f96cf26ea0aec0ca35bd118"
-        ]
-    }, 
-    "_directly_provided": [
-        "Products.CMFEditions.interfaces.IVersioned"
-    ], 
-    "_path": "/Plone/resources/res-str-001-geographic-information-system-gis-tutorial-january-iap-2016/download-resource-materials", 
-    "_classname": "SRDownloadSection", 
-    "metadata_contributor_list": [], 
-    "tcATmit_instructional_tags": [], 
-    "parent_uid": "236793a57f96cf26ea0aec0ca35bd118", 
-    "modification_date": "2016/09/24 00:21:05.609 GMT-4", 
-    "course_linking": [], 
-    "publisher": "MIT OpenCourseWare", 
-    "excludeFromNav": false, 
-    "nextPreviousEnabled": false, 
-    "language": "", 
-    "license": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/", 
-    "rights": "This site (c) Massachusetts Institute of Technology 2016.  Content within individual courses is (c) by the individual authors unless otherwise noted. The Massachusetts Institute of Technology is providing this Work (as defined below) under the terms of this Creative Commons public license (\"CCPL\" or \"license\") unless otherwise noted. The Work is protected by copyright and/or other applicable law. Any use of the work other than as authorized under this license is prohibited. By exercising any of the rights to the Work provided here, You (as defined below) accept and agree to be bound by the terms of this license. The Licensor, the Massachusetts Institute of Technology, grants You the rights contained here in consideration of Your acceptance of such terms and conditions.", 
-    "url_rewrite_patterns": [], 
-    "always_publish": false, 
-    "_id": "download-resource-materials", 
-    "materialtype": "Other", 
-    "_content_type_unique_identifier": "text/plain", 
-    "category_features": [], 
-    "_owner": null, 
-    "_defaultpage": "", 
-    "firstTimeEdit": true, 
-    "_permissions": {
-        "Change portal events": {
-            "acquire": false, 
-            "roles": [
-                "Editor", 
-                "Manager", 
-                "MetadataEditor", 
-                "Owner"
-            ]
-        }, 
-        "Modify portal content": {
-            "acquire": false, 
-            "roles": [
-                "Manager", 
-                "MetadataEditor"
-            ]
-        }, 
-        "Access contents information": {
-            "acquire": false, 
-            "roles": [
-                "Authenticated"
-            ]
-        }, 
-        "List folder contents": {
-            "acquire": false, 
-            "roles": [
-                "Editor", 
-                "Manager", 
-                "MetadataEditor", 
-                "Owner"
-            ]
-        }, 
-        "View": {
-            "acquire": false, 
-            "roles": [
-                "Authenticated"
-            ]
-        }
-    }, 
-    "ad_champion_text": "", 
-    "allowDiscussion": false, 
-    "_content_type_materialtype": "text/plain", 
-    "creators": [
-        "rsharma20"
-    ], 
-    "courselist_features": [], 
-    "_content_type_short_name_tlp": "text/plain", 
-    "expirationDate": "None"
+    ],
+    "subject": [],
+    "tcATmit_instructional_tags": [],
+    "tcATmit_subject_tags": [],
+    "technical_location": "https://ocw.mit.edu/courses/earth-atmospheric-and-planetary-sciences/12-001-introduction-to-geology-fall-2013/instructor-insights/making-sense-of-messiness",
+    "text": "<p><i>In this section, Prof. Perron discusses how the course challenges students to make sense of complexities in the field.</i></p> <div class=\"pullquote\" style=\"float: right; margin: -4px 0 auto 20px; padding-left: 20px; width: 150px; border-right: none; border-left: 1px solid #D5C9BA;\"><p class=\"quote\">The real world is messy, and we&rsquo;re asking them to make sense of that messiness. That comes as a shock for many students.</p> <p class=\"sig\">&mdash;Taylor Perron</p></div> <p>Many of our students are accustomed to classes that have assignments in which the problems are clear-cut and have precise answers. The earth sciences are not like that. For example, we might ask students to identify three different rock hand samples that all appear rough and grayish. Students don&rsquo;t always know how to approach a problem like that.</p> <div style=\"float: left; margin: 0 20px 5px 0; width: 320px;\"><img width=\"320\" height=\"213\" src=\"./resolveuid/bfa2d132364d489cf9450c584b71ec1e\" alt=\"Boxes of rock and mineral hand samples.\" /><br /> <p class=\"instruction\">Students learn to identify rocks and minerals in the first two labs of the course. (Image by MIT OpenCourseWare.)</p></div> <p>Similarly, some become easily frustrated when they approach a road cut and the rock is partly covered with soil, broken up, weathered, and has minerals that are not as well exposed as they might be. The real world is messy, and we&rsquo;re asking them to make sense of that messiness. That comes as a shock for many students. Geology is not plug and chug. There&rsquo;s always extraneous information in the field. And the good stuff<span class=\"st\">&mdash;</span>critical details<span class=\"st\">&mdash;</span>is always missing!</p> <p>Although we do have students solve equations, we emphasize problems that involve critical thinking and incomplete evidence because that is what students will encounter in the field. In 12.001 we strive to help students feel okay about dealing with the uncertainties involved in making measurements in the field and using incomplete sets of observations to piece together a story. Once they get the hang of it, the students do really well!</p>",
+    "title": "Making Sense of Messiness",
+    "unique_identifier": "https://ocw.mit.edu/courses/earth-atmospheric-and-planetary-sciences/12-001-introduction-to-geology-fall-2013/instructor-insights/making-sense-of-messiness",
+    "url_rewrite_patterns": [],
+    "widgets_features": []
 }

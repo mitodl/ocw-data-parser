@@ -1,185 +1,185 @@
 {
-    "expanded_alternate_text": "", 
-    "features_tracking": [], 
-    "widgets_features": [], 
-    "contributors": [], 
-    "tcATmit_subject_tags": [], 
-    "unique_identifier": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-24b-quiz-2-review/18.06_L24b.jpg", 
-    "_content_type_publisher": "text/plain", 
-    "_content_type_license": "text/plain", 
-    "_datafield_image": {
-        "encoding": "base64", 
-        "data": "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", 
-        "content_type": "image/jpeg", 
-        "filename": "18.06_L24b.jpg"
-    }, 
-    "aggregationlevel": 2, 
-    "_uid": "cc1d0f6b87c82ba3201b46ed97bac3fa", 
-    "_workflow_history": {
-        "one_state_workflow": [
-            {
-                "action": null, 
-                "review_state": "published", 
-                "actor": "Jcplayer", 
-                "comments": "", 
-                "time": "2010/10/08 11:47:15.951 GMT-4"
-            }
-        ]
-    }, 
-    "expirationDate": "None", 
-    "_content_type_id": "text/plain", 
-    "duration": "", 
-    "contributor_list": [], 
-    "id": "18.06_L24b.jpg", 
-    "related_mit_links": "", 
-    "thumb_height": "", 
-    "effectiveDate": "None", 
-    "title": "18.06_L24b.jpg", 
-    "_layout": "view", 
-    "parent_module": "aabc44bdb2e45374d62f30f2a6d4c63e", 
-    "_content_type": "image/jpeg", 
-    "_userdefined_roles": [], 
-    "_gopip": 0, 
-    "location": "", 
-    "_atrefs": {
-        "BelongsTo": [
-            "aabc44bdb2e45374d62f30f2a6d4c63e"
-        ]
-    }, 
-    "_content_type_course_identifier": "text/plain", 
-    "_content_type_title": "text/plain", 
-    "section_identifier": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures", 
-    "_atbrefs": {
-        "thumbnail_image": [
-            "3da625db9fd7f62f3a3fb2a6d0dcc4c8"
-        ], 
-        "file_reference": [
-            "970d499924d91a075f0331f6c8a75dfe"
-        ]
-    }, 
-    "creation_date": "2010/10/08 11:47:15.943 GMT-4", 
-    "_content_type_section_identifier": "text/plain", 
-    "_type": "OCWImage", 
-    "technical_location": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-24b-quiz-2-review/18.06_L24b.jpg", 
-    "description": "", 
-    "thumb_width": "", 
-    "software_requirements": [
-        {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "40.0", 
-            "software_name_col": "Chrome", 
-            "maximum_version_col": ""
-        }, 
-        {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "8.0", 
-            "software_name_col": "Safari", 
-            "maximum_version_col": ""
-        }, 
-        {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "38.0", 
-            "software_name_col": "Mozilla Firefox", 
-            "maximum_version_col": ""
-        }, 
-        {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "9.0", 
-            "software_name_col": "Internet Explorer", 
-            "maximum_version_col": ""
-        }, 
-        {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "13.1", 
-            "software_name_col": "Edge", 
-            "maximum_version_col": ""
-        }
-    ], 
-    "_content_type_technical_location": "text/plain", 
-    "alternate_text": "", 
-    "credit": "", 
-    "subject": [], 
-    "_content_type_rights": "text/html", 
-    "course_identifier": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010", 
-    "_directly_provided": [], 
-    "other_platform_requirements": "", 
-    "_id": "18.06_L24b.jpg", 
-    "_classname": "OCWImage", 
-    "metadata_contributor_list": [
-        {
-            "md_contributor_uid": "", 
-            "md_contributor_entity": "Todd Rautenberg", 
-            "md_contributor_hide": "", 
-            "md_contributor_special_title": "", 
-            "md_contributor_role": "Validator"
-        }, 
-        {
-            "md_contributor_uid": "", 
-            "md_contributor_entity": "Todd Rautenberg", 
-            "md_contributor_hide": "", 
-            "md_contributor_special_title": "", 
-            "md_contributor_role": "Creator"
-        }
-    ], 
-    "tcATmit_instructional_tags": [], 
-    "caption": "", 
-    "parent_uid": "3da625db9fd7f62f3a3fb2a6d0dcc4c8", 
-    "modification_date": "2016/09/24 04:34:08.973 GMT-4", 
-    "course_linking": [], 
-    "publisher": "MIT OpenCourseWare", 
-    "excludeFromNav": false, 
-    "feature_requirements": [], 
-    "language": "", 
-    "license": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/", 
-    "rights": "This site (c) Massachusetts Institute of Technology 2010.  Content within individual courses is (c) by the individual authors unless otherwise noted. The Massachusetts Institute of Technology is providing this Work (as defined below) under the terms of this Creative Commons public license (\"CCPL\" or \"license\") unless otherwise noted. The Work is protected by copyright and/or other applicable law. Any use of the work other than as authorized under this license is prohibited. By exercising any of the rights to the Work provided here, You (as defined below) accept and agree to be bound by the terms of this license. The Licensor, the Massachusetts Institute of Technology, grants You the rights contained here in consideration of Your acceptance of such terms and conditions.", 
-    "always_publish": false, 
-    "popup_image_id": "", 
-    "materialtype": "Other", 
-    "_content_type_unique_identifier": "text/plain", 
-    "category_features": [], 
-    "is_pop_up_image": false, 
-    "_owner": null, 
-    "_defaultpage": "index_html", 
-    "firstTimeEdit": true, 
-    "_permissions": {
-        "Modify portal content": {
-            "acquire": false, 
-            "roles": [
-                "Editor", 
-                "Manager", 
-                "Owner"
-            ]
-        }, 
-        "Access contents information": {
-            "acquire": false, 
-            "roles": [
-                "Anonymous"
-            ]
-        }, 
-        "View": {
-            "acquire": false, 
-            "roles": [
-                "Anonymous"
-            ]
-        }
-    }, 
-    "_properties": [
-        [
-            "title", 
-            "18.06_L24b.jpg", 
-            "string"
-        ]
-    ], 
-    "allowDiscussion": false, 
-    "_content_type_materialtype": "text/plain", 
-    "creators": [
-        "Jcplayer"
-    ], 
-    "courselist_features": [], 
     "_ac_local_roles": {
         "Jcplayer": [
             "Owner"
         ]
-    }, 
-    "_path": "/Plone/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-24b-quiz-2-review/18.06_L24b.jpg"
+    },
+    "_atbrefs": {
+        "file_reference": [
+            "970d499924d91a075f0331f6c8a75dfe"
+        ],
+        "thumbnail_image": [
+            "3da625db9fd7f62f3a3fb2a6d0dcc4c8"
+        ]
+    },
+    "_atrefs": {
+        "BelongsTo": [
+            "aabc44bdb2e45374d62f30f2a6d4c63e"
+        ]
+    },
+    "_classname": "OCWImage",
+    "_content_type": "image/jpeg",
+    "_content_type_course_identifier": "text/plain",
+    "_content_type_id": "text/plain",
+    "_content_type_license": "text/plain",
+    "_content_type_materialtype": "text/plain",
+    "_content_type_publisher": "text/plain",
+    "_content_type_rights": "text/html",
+    "_content_type_section_identifier": "text/plain",
+    "_content_type_technical_location": "text/plain",
+    "_content_type_title": "text/plain",
+    "_content_type_unique_identifier": "text/plain",
+    "_datafield_image": {
+        "content_type": "image/jpeg",
+        "data": "ZW1wdHk=",
+        "encoding": "base64",
+        "filename": "18.06_L24b.jpg"
+    },
+    "_defaultpage": "index_html",
+    "_directly_provided": [],
+    "_gopip": 0,
+    "_id": "18.06_L24b.jpg",
+    "_layout": "view",
+    "_owner": null,
+    "_path": "/Plone/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-24b-quiz-2-review/18.06_L24b.jpg",
+    "_permissions": {
+        "Access contents information": {
+            "acquire": false,
+            "roles": [
+                "Anonymous"
+            ]
+        },
+        "Modify portal content": {
+            "acquire": false,
+            "roles": [
+                "Editor",
+                "Manager",
+                "Owner"
+            ]
+        },
+        "View": {
+            "acquire": false,
+            "roles": [
+                "Anonymous"
+            ]
+        }
+    },
+    "_properties": [
+        [
+            "title",
+            "18.06_L24b.jpg",
+            "string"
+        ]
+    ],
+    "_type": "OCWImage",
+    "_uid": "cc1d0f6b87c82ba3201b46ed97bac3fa",
+    "_userdefined_roles": [],
+    "_workflow_history": {
+        "one_state_workflow": [
+            {
+                "action": null,
+                "actor": "Jcplayer",
+                "comments": "",
+                "review_state": "published",
+                "time": "2010/10/08 11:47:15.951 GMT-4"
+            }
+        ]
+    },
+    "aggregationlevel": 2,
+    "allowDiscussion": false,
+    "alternate_text": "",
+    "always_publish": false,
+    "caption": "",
+    "category_features": [],
+    "contributor_list": [],
+    "contributors": [],
+    "course_identifier": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010",
+    "course_linking": [],
+    "courselist_features": [],
+    "creation_date": "2010/10/08 11:47:15.943 GMT-4",
+    "creators": [
+        "Jcplayer"
+    ],
+    "credit": "",
+    "description": "",
+    "duration": "",
+    "effectiveDate": "None",
+    "excludeFromNav": false,
+    "expanded_alternate_text": "",
+    "expirationDate": "None",
+    "feature_requirements": [],
+    "features_tracking": [],
+    "firstTimeEdit": true,
+    "id": "18.06_L24b.jpg",
+    "is_pop_up_image": false,
+    "language": "",
+    "license": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/",
+    "location": "",
+    "materialtype": "Other",
+    "metadata_contributor_list": [
+        {
+            "md_contributor_entity": "Todd Rautenberg",
+            "md_contributor_hide": "",
+            "md_contributor_role": "Validator",
+            "md_contributor_special_title": "",
+            "md_contributor_uid": ""
+        },
+        {
+            "md_contributor_entity": "Todd Rautenberg",
+            "md_contributor_hide": "",
+            "md_contributor_role": "Creator",
+            "md_contributor_special_title": "",
+            "md_contributor_uid": ""
+        }
+    ],
+    "modification_date": "2016/09/24 04:34:08.973 GMT-4",
+    "other_platform_requirements": "",
+    "parent_module": "aabc44bdb2e45374d62f30f2a6d4c63e",
+    "parent_uid": "3da625db9fd7f62f3a3fb2a6d0dcc4c8",
+    "popup_image_id": "",
+    "publisher": "MIT OpenCourseWare",
+    "related_mit_links": "",
+    "rights": "This site (c) Massachusetts Institute of Technology 2010.  Content within individual courses is (c) by the individual authors unless otherwise noted. The Massachusetts Institute of Technology is providing this Work (as defined below) under the terms of this Creative Commons public license (\"CCPL\" or \"license\") unless otherwise noted. The Work is protected by copyright and/or other applicable law. Any use of the work other than as authorized under this license is prohibited. By exercising any of the rights to the Work provided here, You (as defined below) accept and agree to be bound by the terms of this license. The Licensor, the Massachusetts Institute of Technology, grants You the rights contained here in consideration of Your acceptance of such terms and conditions.",
+    "section_identifier": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures",
+    "software_requirements": [
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "40.0",
+            "software_name_col": "Chrome",
+            "software_type_col": "Browser"
+        },
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "8.0",
+            "software_name_col": "Safari",
+            "software_type_col": "Browser"
+        },
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "38.0",
+            "software_name_col": "Mozilla Firefox",
+            "software_type_col": "Browser"
+        },
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "9.0",
+            "software_name_col": "Internet Explorer",
+            "software_type_col": "Browser"
+        },
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "13.1",
+            "software_name_col": "Edge",
+            "software_type_col": "Browser"
+        }
+    ],
+    "subject": [],
+    "tcATmit_instructional_tags": [],
+    "tcATmit_subject_tags": [],
+    "technical_location": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-24b-quiz-2-review/18.06_L24b.jpg",
+    "thumb_height": "",
+    "thumb_width": "",
+    "title": "18.06_L24b.jpg",
+    "unique_identifier": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-24b-quiz-2-review/18.06_L24b.jpg",
+    "widgets_features": []
 }

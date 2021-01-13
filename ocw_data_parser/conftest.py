@@ -64,6 +64,19 @@ def ocw_parser():
 
 
 @pytest.fixture(autouse=True, scope="function")
+def ocw_parser_course_2():
+    """
+    Instantiate an OCWParser object based on course-2
+    """
+    with TemporaryDirectory() as destination_dir:
+        yield OCWParser(
+            course_dir="ocw_data_parser/test_json/course_dir/course-2",
+            destination_dir=destination_dir,
+            static_prefix="static_files/",
+        )
+
+
+@pytest.fixture(autouse=True, scope="function")
 def ocw_parser_s3(ocw_parser):
     """OCWParser for testing with fake values for S3"""
     ocw_parser.setup_s3_uploading(

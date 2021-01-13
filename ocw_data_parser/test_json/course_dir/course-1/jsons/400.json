@@ -1,101 +1,101 @@
 {
-    "contributors": [], 
-    "text": "", 
-    "threeplay_api_json": "", 
-    "_content_type_license": "text/plain", 
-    "asset_language": "en-us", 
-    "media_location": "https://itunes.apple.com/us/itunes-u/id354869137", 
-    "_uid": "8b5193ef691e89b5e9735c42b91bc892", 
-    "_workflow_history": {
-        "one_state_workflow": [
-            {
-                "action": null, 
-                "review_state": "published", 
-                "actor": "samehn", 
-                "comments": "", 
-                "time": "2011/05/07 01:21:51.398 GMT-4"
-            }
-        ]
-    }, 
-    "expirationDate": "None", 
-    "_content_type_id": "text/plain", 
-    "id": "Video-iTunesU-MP4", 
-    "tableContents": false, 
-    "_path": "/Plone/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-26-complex-matrices-fast-fourier-transform/Video-iTunesU-MP4", 
-    "media_asset_source": "iTunes U", 
-    "effectiveDate": "None", 
-    "title": "Video-iTunes U-MP4", 
-    "media_asset_type": "Video", 
     "_ac_local_roles": {
         "samehn": [
             "Owner"
         ]
-    }, 
-    "_userdefined_roles": [], 
-    "_content_type_media_size": "text/plain", 
-    "_gopip": 3, 
-    "location": "", 
-    "_content_type_title": "text/plain", 
-    "excludeFromNav": false, 
-    "presentation": false, 
-    "_content_type_media_location": "text/plain", 
-    "_type": "OCWMediaAsset", 
-    "description": "", 
-    "_atrefs": {}, 
-    "_layout": "custom_view", 
-    "subject": [], 
-    "_content_type_rights": "text/html", 
-    "_directly_provided": [], 
-    "language": "", 
-    "_content_type_asset_language": "text/plain", 
-    "_classname": "OCWMediaAsset", 
-    "_content_type_media_format": "text/plain", 
-    "creation_date": "2011/05/07 01:21:51.381 GMT-4", 
-    "parent_uid": "7da4985ac0765564c8aa3eccb1a1e97e", 
-    "_content_type_media_asset_type": "text/plain", 
-    "modification_date": "2016/01/05 05:40:43.206 US/Eastern", 
-    "_content_type": "text/html", 
-    "_id": "Video-iTunesU-MP4", 
-    "file_uid": "", 
-    "license": "http://ocw.mit.edu/terms", 
-    "rights": "This site (c) Massachusetts Institute of Technology 2010.  Content within individual courses is (c) by the individual authors unless otherwise noted. The Massachusetts Institute of Technology is providing this Work (as defined below) under the terms of this Creative Commons public license (\"CCPL\" or \"license\") unless otherwise noted. The Work is protected by copyright and/or other applicable law. Any use of the work other than as authorized under this license is prohibited. By exercising any of the rights to the Work provided here, You (as defined below) accept and agree to be bound by the terms of this license. The Licensor, the Massachusetts Institute of Technology, grants You the rights contained here in consideration of Your acceptance of such terms and conditions.", 
-    "_atbrefs": {}, 
-    "media_size": "102MB", 
-    "_owner": null, 
-    "_defaultpage": "", 
+    },
+    "_atbrefs": {},
+    "_atrefs": {},
+    "_classname": "OCWMediaAsset",
+    "_content_type": "text/html",
+    "_content_type_asset_language": "text/plain",
+    "_content_type_id": "text/plain",
+    "_content_type_license": "text/plain",
+    "_content_type_media_asset_source": "text/plain",
+    "_content_type_media_asset_type": "text/plain",
+    "_content_type_media_format": "text/plain",
+    "_content_type_media_location": "text/plain",
+    "_content_type_media_size": "text/plain",
+    "_content_type_rights": "text/html",
+    "_content_type_title": "text/plain",
+    "_defaultpage": "",
+    "_directly_provided": [],
+    "_gopip": 3,
+    "_id": "Video-iTunesU-MP4",
+    "_layout": "custom_view",
+    "_owner": null,
+    "_path": "/Plone/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-26-complex-matrices-fast-fourier-transform/Video-iTunesU-MP4",
     "_permissions": {
-        "Modify portal content": {
-            "acquire": false, 
-            "roles": [
-                "Editor", 
-                "Manager", 
-                "Owner"
-            ]
-        }, 
         "Access contents information": {
-            "acquire": false, 
+            "acquire": false,
             "roles": [
                 "Anonymous"
             ]
-        }, 
+        },
+        "Modify portal content": {
+            "acquire": false,
+            "roles": [
+                "Editor",
+                "Manager",
+                "Owner"
+            ]
+        },
         "View": {
-            "acquire": false, 
+            "acquire": false,
             "roles": [
                 "Anonymous"
             ]
         }
-    }, 
-    "media_format": "MP4", 
+    },
     "_properties": [
         [
-            "title", 
-            "Video-iTunes U-MP4", 
+            "title",
+            "Video-iTunes U-MP4",
             "string"
         ]
-    ], 
-    "allowDiscussion": false, 
+    ],
+    "_type": "OCWMediaAsset",
+    "_uid": "8b5193ef691e89b5e9735c42b91bc892",
+    "_userdefined_roles": [],
+    "_workflow_history": {
+        "one_state_workflow": [
+            {
+                "action": null,
+                "actor": "samehn",
+                "comments": "",
+                "review_state": "published",
+                "time": "2011/05/07 01:21:51.398 GMT-4"
+            }
+        ]
+    },
+    "allowDiscussion": false,
+    "asset_language": "en-us",
+    "contributors": [],
+    "creation_date": "2011/05/07 01:21:51.381 GMT-4",
     "creators": [
         "samehn"
-    ], 
-    "_content_type_media_asset_source": "text/plain"
+    ],
+    "description": "",
+    "effectiveDate": "None",
+    "excludeFromNav": false,
+    "expirationDate": "None",
+    "file_uid": "",
+    "id": "Video-iTunesU-MP4",
+    "language": "",
+    "license": "http://ocw.mit.edu/terms",
+    "location": "",
+    "media_asset_source": "iTunes U",
+    "media_asset_type": "Video",
+    "media_format": "MP4",
+    "media_location": "https://itunes.apple.com/us/itunes-u/id354869137",
+    "media_size": "102MB",
+    "modification_date": "2016/01/05 05:40:43.206 US/Eastern",
+    "parent_uid": "7da4985ac0765564c8aa3eccb1a1e97e",
+    "presentation": false,
+    "rights": "This site (c) Massachusetts Institute of Technology 2010.  Content within individual courses is (c) by the individual authors unless otherwise noted. The Massachusetts Institute of Technology is providing this Work (as defined below) under the terms of this Creative Commons public license (\"CCPL\" or \"license\") unless otherwise noted. The Work is protected by copyright and/or other applicable law. Any use of the work other than as authorized under this license is prohibited. By exercising any of the rights to the Work provided here, You (as defined below) accept and agree to be bound by the terms of this license. The Licensor, the Massachusetts Institute of Technology, grants You the rights contained here in consideration of Your acceptance of such terms and conditions.",
+    "subject": [],
+    "tableContents": false,
+    "text": "",
+    "threeplay_api_json": "",
+    "title": "Video-iTunes U-MP4"
 }

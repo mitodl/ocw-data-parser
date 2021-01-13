@@ -1,185 +1,185 @@
 {
-    "expanded_alternate_text": "", 
-    "features_tracking": [], 
-    "widgets_features": [], 
-    "contributors": [], 
-    "tcATmit_subject_tags": [], 
-    "unique_identifier": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-11-matrix-spaces-rank-1-small-world-graphs/18.06_L11.jpg", 
-    "_content_type_publisher": "text/plain", 
-    "_content_type_license": "text/plain", 
-    "_datafield_image": {
-        "encoding": "base64", 
-        "data": "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", 
-        "content_type": "image/jpeg", 
-        "filename": "18.06_L11.jpg"
-    }, 
-    "aggregationlevel": 2, 
-    "_uid": "9fdd0e23eb45987690b015be1dd2cb6a", 
-    "_workflow_history": {
-        "one_state_workflow": [
-            {
-                "action": null, 
-                "review_state": "published", 
-                "actor": "Jcplayer", 
-                "comments": "", 
-                "time": "2010/10/07 16:17:52.353 GMT-4"
-            }
-        ]
-    }, 
-    "expirationDate": "None", 
-    "_content_type_id": "text/plain", 
-    "duration": "", 
-    "contributor_list": [], 
-    "id": "18.06_L11.jpg", 
-    "related_mit_links": "", 
-    "thumb_height": "", 
-    "effectiveDate": "None", 
-    "title": "18.06_L11.jpg", 
-    "_layout": "view", 
-    "parent_module": "aabc44bdb2e45374d62f30f2a6d4c63e", 
-    "_content_type": "image/jpeg", 
-    "_userdefined_roles": [], 
-    "_gopip": 0, 
-    "location": "", 
-    "_atrefs": {
-        "BelongsTo": [
-            "aabc44bdb2e45374d62f30f2a6d4c63e"
-        ]
-    }, 
-    "_content_type_course_identifier": "text/plain", 
-    "_content_type_title": "text/plain", 
-    "section_identifier": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures", 
-    "_atbrefs": {
-        "thumbnail_image": [
-            "c5986685265438d7dcfcfb053ece78f7"
-        ], 
-        "file_reference": [
-            "a75af6bac9971c7dde04d58b9a06f7f0"
-        ]
-    }, 
-    "creation_date": "2010/10/07 16:17:52.345 GMT-4", 
-    "_content_type_section_identifier": "text/plain", 
-    "_type": "OCWImage", 
-    "technical_location": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-11-matrix-spaces-rank-1-small-world-graphs/18.06_L11.jpg", 
-    "description": "", 
-    "thumb_width": "", 
-    "software_requirements": [
-        {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "40.0", 
-            "software_name_col": "Chrome", 
-            "maximum_version_col": ""
-        }, 
-        {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "8.0", 
-            "software_name_col": "Safari", 
-            "maximum_version_col": ""
-        }, 
-        {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "38.0", 
-            "software_name_col": "Mozilla Firefox", 
-            "maximum_version_col": ""
-        }, 
-        {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "9.0", 
-            "software_name_col": "Internet Explorer", 
-            "maximum_version_col": ""
-        }, 
-        {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "13.1", 
-            "software_name_col": "Edge", 
-            "maximum_version_col": ""
-        }
-    ], 
-    "_content_type_technical_location": "text/plain", 
-    "alternate_text": "", 
-    "credit": "", 
-    "subject": [], 
-    "_content_type_rights": "text/html", 
-    "course_identifier": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010", 
-    "_directly_provided": [], 
-    "other_platform_requirements": "", 
-    "_id": "18.06_L11.jpg", 
-    "_classname": "OCWImage", 
-    "metadata_contributor_list": [
-        {
-            "md_contributor_uid": "", 
-            "md_contributor_entity": "Todd Rautenberg", 
-            "md_contributor_hide": "", 
-            "md_contributor_special_title": "", 
-            "md_contributor_role": "Validator"
-        }, 
-        {
-            "md_contributor_uid": "", 
-            "md_contributor_entity": "Todd Rautenberg", 
-            "md_contributor_hide": "", 
-            "md_contributor_special_title": "", 
-            "md_contributor_role": "Creator"
-        }
-    ], 
-    "tcATmit_instructional_tags": [], 
-    "caption": "", 
-    "parent_uid": "c5986685265438d7dcfcfb053ece78f7", 
-    "modification_date": "2016/09/24 04:34:04.487 GMT-4", 
-    "course_linking": [], 
-    "publisher": "MIT OpenCourseWare", 
-    "excludeFromNav": false, 
-    "feature_requirements": [], 
-    "language": "", 
-    "license": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/", 
-    "rights": "This site (c) Massachusetts Institute of Technology 2010.  Content within individual courses is (c) by the individual authors unless otherwise noted. The Massachusetts Institute of Technology is providing this Work (as defined below) under the terms of this Creative Commons public license (\"CCPL\" or \"license\") unless otherwise noted. The Work is protected by copyright and/or other applicable law. Any use of the work other than as authorized under this license is prohibited. By exercising any of the rights to the Work provided here, You (as defined below) accept and agree to be bound by the terms of this license. The Licensor, the Massachusetts Institute of Technology, grants You the rights contained here in consideration of Your acceptance of such terms and conditions.", 
-    "always_publish": false, 
-    "popup_image_id": "", 
-    "materialtype": "Other", 
-    "_content_type_unique_identifier": "text/plain", 
-    "category_features": [], 
-    "is_pop_up_image": false, 
-    "_owner": null, 
-    "_defaultpage": "index_html", 
-    "firstTimeEdit": true, 
-    "_permissions": {
-        "Modify portal content": {
-            "acquire": false, 
-            "roles": [
-                "Editor", 
-                "Manager", 
-                "Owner"
-            ]
-        }, 
-        "Access contents information": {
-            "acquire": false, 
-            "roles": [
-                "Anonymous"
-            ]
-        }, 
-        "View": {
-            "acquire": false, 
-            "roles": [
-                "Anonymous"
-            ]
-        }
-    }, 
-    "_properties": [
-        [
-            "title", 
-            "18.06_L11.jpg", 
-            "string"
-        ]
-    ], 
-    "allowDiscussion": false, 
-    "_content_type_materialtype": "text/plain", 
-    "creators": [
-        "Jcplayer"
-    ], 
-    "courselist_features": [], 
     "_ac_local_roles": {
         "Jcplayer": [
             "Owner"
         ]
-    }, 
-    "_path": "/Plone/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-11-matrix-spaces-rank-1-small-world-graphs/18.06_L11.jpg"
+    },
+    "_atbrefs": {
+        "file_reference": [
+            "a75af6bac9971c7dde04d58b9a06f7f0"
+        ],
+        "thumbnail_image": [
+            "c5986685265438d7dcfcfb053ece78f7"
+        ]
+    },
+    "_atrefs": {
+        "BelongsTo": [
+            "aabc44bdb2e45374d62f30f2a6d4c63e"
+        ]
+    },
+    "_classname": "OCWImage",
+    "_content_type": "image/jpeg",
+    "_content_type_course_identifier": "text/plain",
+    "_content_type_id": "text/plain",
+    "_content_type_license": "text/plain",
+    "_content_type_materialtype": "text/plain",
+    "_content_type_publisher": "text/plain",
+    "_content_type_rights": "text/html",
+    "_content_type_section_identifier": "text/plain",
+    "_content_type_technical_location": "text/plain",
+    "_content_type_title": "text/plain",
+    "_content_type_unique_identifier": "text/plain",
+    "_datafield_image": {
+        "content_type": "image/jpeg",
+        "data": "ZW1wdHk=",
+        "encoding": "base64",
+        "filename": "18.06_L11.jpg"
+    },
+    "_defaultpage": "index_html",
+    "_directly_provided": [],
+    "_gopip": 0,
+    "_id": "18.06_L11.jpg",
+    "_layout": "view",
+    "_owner": null,
+    "_path": "/Plone/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-11-matrix-spaces-rank-1-small-world-graphs/18.06_L11.jpg",
+    "_permissions": {
+        "Access contents information": {
+            "acquire": false,
+            "roles": [
+                "Anonymous"
+            ]
+        },
+        "Modify portal content": {
+            "acquire": false,
+            "roles": [
+                "Editor",
+                "Manager",
+                "Owner"
+            ]
+        },
+        "View": {
+            "acquire": false,
+            "roles": [
+                "Anonymous"
+            ]
+        }
+    },
+    "_properties": [
+        [
+            "title",
+            "18.06_L11.jpg",
+            "string"
+        ]
+    ],
+    "_type": "OCWImage",
+    "_uid": "9fdd0e23eb45987690b015be1dd2cb6a",
+    "_userdefined_roles": [],
+    "_workflow_history": {
+        "one_state_workflow": [
+            {
+                "action": null,
+                "actor": "Jcplayer",
+                "comments": "",
+                "review_state": "published",
+                "time": "2010/10/07 16:17:52.353 GMT-4"
+            }
+        ]
+    },
+    "aggregationlevel": 2,
+    "allowDiscussion": false,
+    "alternate_text": "",
+    "always_publish": false,
+    "caption": "",
+    "category_features": [],
+    "contributor_list": [],
+    "contributors": [],
+    "course_identifier": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010",
+    "course_linking": [],
+    "courselist_features": [],
+    "creation_date": "2010/10/07 16:17:52.345 GMT-4",
+    "creators": [
+        "Jcplayer"
+    ],
+    "credit": "",
+    "description": "",
+    "duration": "",
+    "effectiveDate": "None",
+    "excludeFromNav": false,
+    "expanded_alternate_text": "",
+    "expirationDate": "None",
+    "feature_requirements": [],
+    "features_tracking": [],
+    "firstTimeEdit": true,
+    "id": "18.06_L11.jpg",
+    "is_pop_up_image": false,
+    "language": "",
+    "license": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/",
+    "location": "",
+    "materialtype": "Other",
+    "metadata_contributor_list": [
+        {
+            "md_contributor_entity": "Todd Rautenberg",
+            "md_contributor_hide": "",
+            "md_contributor_role": "Validator",
+            "md_contributor_special_title": "",
+            "md_contributor_uid": ""
+        },
+        {
+            "md_contributor_entity": "Todd Rautenberg",
+            "md_contributor_hide": "",
+            "md_contributor_role": "Creator",
+            "md_contributor_special_title": "",
+            "md_contributor_uid": ""
+        }
+    ],
+    "modification_date": "2016/09/24 04:34:04.487 GMT-4",
+    "other_platform_requirements": "",
+    "parent_module": "aabc44bdb2e45374d62f30f2a6d4c63e",
+    "parent_uid": "c5986685265438d7dcfcfb053ece78f7",
+    "popup_image_id": "",
+    "publisher": "MIT OpenCourseWare",
+    "related_mit_links": "",
+    "rights": "This site (c) Massachusetts Institute of Technology 2010.  Content within individual courses is (c) by the individual authors unless otherwise noted. The Massachusetts Institute of Technology is providing this Work (as defined below) under the terms of this Creative Commons public license (\"CCPL\" or \"license\") unless otherwise noted. The Work is protected by copyright and/or other applicable law. Any use of the work other than as authorized under this license is prohibited. By exercising any of the rights to the Work provided here, You (as defined below) accept and agree to be bound by the terms of this license. The Licensor, the Massachusetts Institute of Technology, grants You the rights contained here in consideration of Your acceptance of such terms and conditions.",
+    "section_identifier": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures",
+    "software_requirements": [
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "40.0",
+            "software_name_col": "Chrome",
+            "software_type_col": "Browser"
+        },
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "8.0",
+            "software_name_col": "Safari",
+            "software_type_col": "Browser"
+        },
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "38.0",
+            "software_name_col": "Mozilla Firefox",
+            "software_type_col": "Browser"
+        },
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "9.0",
+            "software_name_col": "Internet Explorer",
+            "software_type_col": "Browser"
+        },
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "13.1",
+            "software_name_col": "Edge",
+            "software_type_col": "Browser"
+        }
+    ],
+    "subject": [],
+    "tcATmit_instructional_tags": [],
+    "tcATmit_subject_tags": [],
+    "technical_location": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-11-matrix-spaces-rank-1-small-world-graphs/18.06_L11.jpg",
+    "thumb_height": "",
+    "thumb_width": "",
+    "title": "18.06_L11.jpg",
+    "unique_identifier": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-11-matrix-spaces-rank-1-small-world-graphs/18.06_L11.jpg",
+    "widgets_features": []
 }

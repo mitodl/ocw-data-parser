@@ -1,185 +1,185 @@
 {
-    "expanded_alternate_text": "", 
-    "features_tracking": [], 
-    "widgets_features": [], 
-    "contributors": [], 
-    "tcATmit_subject_tags": [], 
-    "unique_identifier": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-18-properties-of-determinants/18.06_L18.jpg", 
-    "_content_type_publisher": "text/plain", 
-    "_content_type_license": "text/plain", 
-    "_datafield_image": {
-        "encoding": "base64", 
-        "data": "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", 
-        "content_type": "image/jpeg", 
-        "filename": "18.06_L18.jpg"
-    }, 
-    "aggregationlevel": 2, 
-    "_uid": "1832957244e20707da7da3c1fef63342", 
-    "_workflow_history": {
-        "one_state_workflow": [
-            {
-                "action": null, 
-                "review_state": "published", 
-                "actor": "Jcplayer", 
-                "comments": "", 
-                "time": "2010/10/07 17:07:49.193 GMT-4"
-            }
-        ]
-    }, 
-    "expirationDate": "None", 
-    "_content_type_id": "text/plain", 
-    "duration": "", 
-    "contributor_list": [], 
-    "id": "18.06_L18.jpg", 
-    "related_mit_links": "", 
-    "thumb_height": "", 
-    "effectiveDate": "None", 
-    "title": "18.06_L18.jpg", 
-    "_layout": "view", 
-    "parent_module": "aabc44bdb2e45374d62f30f2a6d4c63e", 
-    "_content_type": "image/jpeg", 
-    "_userdefined_roles": [], 
-    "_gopip": 0, 
-    "location": "", 
-    "_atrefs": {
-        "BelongsTo": [
-            "aabc44bdb2e45374d62f30f2a6d4c63e"
-        ]
-    }, 
-    "_content_type_course_identifier": "text/plain", 
-    "_content_type_title": "text/plain", 
-    "section_identifier": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures", 
-    "_atbrefs": {
-        "thumbnail_image": [
-            "3249e5e2f0159ecd5dd9c524465320f6"
-        ], 
-        "file_reference": [
-            "d2c714ea268ebf558171381069151ad1"
-        ]
-    }, 
-    "creation_date": "2010/10/07 17:07:49.185 GMT-4", 
-    "_content_type_section_identifier": "text/plain", 
-    "_type": "OCWImage", 
-    "technical_location": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-18-properties-of-determinants/18.06_L18.jpg", 
-    "description": "", 
-    "thumb_width": "", 
-    "software_requirements": [
-        {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "40.0", 
-            "software_name_col": "Chrome", 
-            "maximum_version_col": ""
-        }, 
-        {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "8.0", 
-            "software_name_col": "Safari", 
-            "maximum_version_col": ""
-        }, 
-        {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "38.0", 
-            "software_name_col": "Mozilla Firefox", 
-            "maximum_version_col": ""
-        }, 
-        {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "9.0", 
-            "software_name_col": "Internet Explorer", 
-            "maximum_version_col": ""
-        }, 
-        {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "13.1", 
-            "software_name_col": "Edge", 
-            "maximum_version_col": ""
-        }
-    ], 
-    "_content_type_technical_location": "text/plain", 
-    "alternate_text": "", 
-    "credit": "", 
-    "subject": [], 
-    "_content_type_rights": "text/html", 
-    "course_identifier": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010", 
-    "_directly_provided": [], 
-    "other_platform_requirements": "", 
-    "_id": "18.06_L18.jpg", 
-    "_classname": "OCWImage", 
-    "metadata_contributor_list": [
-        {
-            "md_contributor_uid": "", 
-            "md_contributor_entity": "Todd Rautenberg", 
-            "md_contributor_hide": "", 
-            "md_contributor_special_title": "", 
-            "md_contributor_role": "Validator"
-        }, 
-        {
-            "md_contributor_uid": "", 
-            "md_contributor_entity": "Todd Rautenberg", 
-            "md_contributor_hide": "", 
-            "md_contributor_special_title": "", 
-            "md_contributor_role": "Creator"
-        }
-    ], 
-    "tcATmit_instructional_tags": [], 
-    "caption": "", 
-    "parent_uid": "3249e5e2f0159ecd5dd9c524465320f6", 
-    "modification_date": "2016/09/24 04:34:06.265 GMT-4", 
-    "course_linking": [], 
-    "publisher": "MIT OpenCourseWare", 
-    "excludeFromNav": false, 
-    "feature_requirements": [], 
-    "language": "", 
-    "license": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/", 
-    "rights": "This site (c) Massachusetts Institute of Technology 2010.  Content within individual courses is (c) by the individual authors unless otherwise noted. The Massachusetts Institute of Technology is providing this Work (as defined below) under the terms of this Creative Commons public license (\"CCPL\" or \"license\") unless otherwise noted. The Work is protected by copyright and/or other applicable law. Any use of the work other than as authorized under this license is prohibited. By exercising any of the rights to the Work provided here, You (as defined below) accept and agree to be bound by the terms of this license. The Licensor, the Massachusetts Institute of Technology, grants You the rights contained here in consideration of Your acceptance of such terms and conditions.", 
-    "always_publish": false, 
-    "popup_image_id": "", 
-    "materialtype": "Other", 
-    "_content_type_unique_identifier": "text/plain", 
-    "category_features": [], 
-    "is_pop_up_image": false, 
-    "_owner": null, 
-    "_defaultpage": "index_html", 
-    "firstTimeEdit": true, 
-    "_permissions": {
-        "Modify portal content": {
-            "acquire": false, 
-            "roles": [
-                "Editor", 
-                "Manager", 
-                "Owner"
-            ]
-        }, 
-        "Access contents information": {
-            "acquire": false, 
-            "roles": [
-                "Anonymous"
-            ]
-        }, 
-        "View": {
-            "acquire": false, 
-            "roles": [
-                "Anonymous"
-            ]
-        }
-    }, 
-    "_properties": [
-        [
-            "title", 
-            "18.06_L18.jpg", 
-            "string"
-        ]
-    ], 
-    "allowDiscussion": false, 
-    "_content_type_materialtype": "text/plain", 
-    "creators": [
-        "Jcplayer"
-    ], 
-    "courselist_features": [], 
     "_ac_local_roles": {
         "Jcplayer": [
             "Owner"
         ]
-    }, 
-    "_path": "/Plone/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-18-properties-of-determinants/18.06_L18.jpg"
+    },
+    "_atbrefs": {
+        "file_reference": [
+            "d2c714ea268ebf558171381069151ad1"
+        ],
+        "thumbnail_image": [
+            "3249e5e2f0159ecd5dd9c524465320f6"
+        ]
+    },
+    "_atrefs": {
+        "BelongsTo": [
+            "aabc44bdb2e45374d62f30f2a6d4c63e"
+        ]
+    },
+    "_classname": "OCWImage",
+    "_content_type": "image/jpeg",
+    "_content_type_course_identifier": "text/plain",
+    "_content_type_id": "text/plain",
+    "_content_type_license": "text/plain",
+    "_content_type_materialtype": "text/plain",
+    "_content_type_publisher": "text/plain",
+    "_content_type_rights": "text/html",
+    "_content_type_section_identifier": "text/plain",
+    "_content_type_technical_location": "text/plain",
+    "_content_type_title": "text/plain",
+    "_content_type_unique_identifier": "text/plain",
+    "_datafield_image": {
+        "content_type": "image/jpeg",
+        "data": "ZW1wdHk=",
+        "encoding": "base64",
+        "filename": "18.06_L18.jpg"
+    },
+    "_defaultpage": "index_html",
+    "_directly_provided": [],
+    "_gopip": 0,
+    "_id": "18.06_L18.jpg",
+    "_layout": "view",
+    "_owner": null,
+    "_path": "/Plone/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-18-properties-of-determinants/18.06_L18.jpg",
+    "_permissions": {
+        "Access contents information": {
+            "acquire": false,
+            "roles": [
+                "Anonymous"
+            ]
+        },
+        "Modify portal content": {
+            "acquire": false,
+            "roles": [
+                "Editor",
+                "Manager",
+                "Owner"
+            ]
+        },
+        "View": {
+            "acquire": false,
+            "roles": [
+                "Anonymous"
+            ]
+        }
+    },
+    "_properties": [
+        [
+            "title",
+            "18.06_L18.jpg",
+            "string"
+        ]
+    ],
+    "_type": "OCWImage",
+    "_uid": "1832957244e20707da7da3c1fef63342",
+    "_userdefined_roles": [],
+    "_workflow_history": {
+        "one_state_workflow": [
+            {
+                "action": null,
+                "actor": "Jcplayer",
+                "comments": "",
+                "review_state": "published",
+                "time": "2010/10/07 17:07:49.193 GMT-4"
+            }
+        ]
+    },
+    "aggregationlevel": 2,
+    "allowDiscussion": false,
+    "alternate_text": "",
+    "always_publish": false,
+    "caption": "",
+    "category_features": [],
+    "contributor_list": [],
+    "contributors": [],
+    "course_identifier": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010",
+    "course_linking": [],
+    "courselist_features": [],
+    "creation_date": "2010/10/07 17:07:49.185 GMT-4",
+    "creators": [
+        "Jcplayer"
+    ],
+    "credit": "",
+    "description": "",
+    "duration": "",
+    "effectiveDate": "None",
+    "excludeFromNav": false,
+    "expanded_alternate_text": "",
+    "expirationDate": "None",
+    "feature_requirements": [],
+    "features_tracking": [],
+    "firstTimeEdit": true,
+    "id": "18.06_L18.jpg",
+    "is_pop_up_image": false,
+    "language": "",
+    "license": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/",
+    "location": "",
+    "materialtype": "Other",
+    "metadata_contributor_list": [
+        {
+            "md_contributor_entity": "Todd Rautenberg",
+            "md_contributor_hide": "",
+            "md_contributor_role": "Validator",
+            "md_contributor_special_title": "",
+            "md_contributor_uid": ""
+        },
+        {
+            "md_contributor_entity": "Todd Rautenberg",
+            "md_contributor_hide": "",
+            "md_contributor_role": "Creator",
+            "md_contributor_special_title": "",
+            "md_contributor_uid": ""
+        }
+    ],
+    "modification_date": "2016/09/24 04:34:06.265 GMT-4",
+    "other_platform_requirements": "",
+    "parent_module": "aabc44bdb2e45374d62f30f2a6d4c63e",
+    "parent_uid": "3249e5e2f0159ecd5dd9c524465320f6",
+    "popup_image_id": "",
+    "publisher": "MIT OpenCourseWare",
+    "related_mit_links": "",
+    "rights": "This site (c) Massachusetts Institute of Technology 2010.  Content within individual courses is (c) by the individual authors unless otherwise noted. The Massachusetts Institute of Technology is providing this Work (as defined below) under the terms of this Creative Commons public license (\"CCPL\" or \"license\") unless otherwise noted. The Work is protected by copyright and/or other applicable law. Any use of the work other than as authorized under this license is prohibited. By exercising any of the rights to the Work provided here, You (as defined below) accept and agree to be bound by the terms of this license. The Licensor, the Massachusetts Institute of Technology, grants You the rights contained here in consideration of Your acceptance of such terms and conditions.",
+    "section_identifier": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures",
+    "software_requirements": [
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "40.0",
+            "software_name_col": "Chrome",
+            "software_type_col": "Browser"
+        },
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "8.0",
+            "software_name_col": "Safari",
+            "software_type_col": "Browser"
+        },
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "38.0",
+            "software_name_col": "Mozilla Firefox",
+            "software_type_col": "Browser"
+        },
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "9.0",
+            "software_name_col": "Internet Explorer",
+            "software_type_col": "Browser"
+        },
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "13.1",
+            "software_name_col": "Edge",
+            "software_type_col": "Browser"
+        }
+    ],
+    "subject": [],
+    "tcATmit_instructional_tags": [],
+    "tcATmit_subject_tags": [],
+    "technical_location": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-18-properties-of-determinants/18.06_L18.jpg",
+    "thumb_height": "",
+    "thumb_width": "",
+    "title": "18.06_L18.jpg",
+    "unique_identifier": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-18-properties-of-determinants/18.06_L18.jpg",
+    "widgets_features": []
 }

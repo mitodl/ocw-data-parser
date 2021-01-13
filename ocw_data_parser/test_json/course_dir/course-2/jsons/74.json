@@ -1,0 +1,177 @@
+{
+    "_ac_local_roles": {
+        "vverma9": [
+            "Owner"
+        ]
+    },
+    "_atbrefs": {
+        "isReferencing": [
+            "70b1498729283aad0ccfe229bcdce4cb"
+        ]
+    },
+    "_atrefs": {
+        "BelongsTo": [
+            "d9aad1541f1a9d3c0f7b0dcf9531a9a1"
+        ]
+    },
+    "_classname": "OCWFile",
+    "_content_type": "application/pdf",
+    "_content_type_course_identifier": "text/plain",
+    "_content_type_description": "text/plain",
+    "_content_type_id": "text/plain",
+    "_content_type_language": "text/plain",
+    "_content_type_license": "text/plain",
+    "_content_type_materialtype": "text/plain",
+    "_content_type_other_platform_requirements": "text/html",
+    "_content_type_publisher": "text/plain",
+    "_content_type_rights": "text/html",
+    "_content_type_section_identifier": "text/plain",
+    "_content_type_technical_location": "text/plain",
+    "_content_type_title": "text/plain",
+    "_content_type_unique_identifier": "text/plain",
+    "_datafield_file": {
+        "content_type": "application/pdf",
+        "data": "ZW1wdHk=",
+        "encoding": "base64",
+        "filename": "MIT12_001F13_Lab2_Igneous.pdf"
+    },
+    "_defaultpage": "index_html",
+    "_directly_provided": [],
+    "_gopip": 11,
+    "_id": "MIT12_001F13_Lab2_Igneous.pdf",
+    "_layout": "file_view",
+    "_owner": null,
+    "_path": "/Plone/courses/earth-atmospheric-and-planetary-sciences/12-001-introduction-to-geology-fall-2013/labs-and-exercises/MIT12_001F13_Lab2_Igneous.pdf",
+    "_permissions": {
+        "Access contents information": {
+            "acquire": false,
+            "roles": [
+                "Anonymous"
+            ]
+        },
+        "Modify portal content": {
+            "acquire": false,
+            "roles": [
+                "Editor",
+                "Manager",
+                "Owner"
+            ]
+        },
+        "View": {
+            "acquire": false,
+            "roles": [
+                "Anonymous"
+            ]
+        }
+    },
+    "_properties": [
+        [
+            "title",
+            "12.001 Introduction to Geology, Blank Chart for Igneous Rocks",
+            "string"
+        ]
+    ],
+    "_type": "OCWFile",
+    "_uid": "bc1f0badc8039d4656e615342f468904",
+    "_userdefined_roles": [],
+    "_workflow_history": {
+        "one_state_workflow": [
+            {
+                "action": null,
+                "actor": "vverma9",
+                "comments": "",
+                "review_state": "published",
+                "time": "2014/09/26 06:31:17.599 GMT-4"
+            }
+        ]
+    },
+    "aggregationlevel": 2,
+    "allowDiscussion": false,
+    "always_publish": false,
+    "category_features": [],
+    "contributor_list": [
+        {
+            "contributor": "Perron, Taylor",
+            "contributor_role": "Creator"
+        },
+        {
+            "contributor": "Jagoutz, Oliver",
+            "contributor_role": "Creator"
+        }
+    ],
+    "contributors": [],
+    "course_identifier": "https://ocw.mit.edu/courses/earth-atmospheric-and-planetary-sciences/12-001-introduction-to-geology-fall-2013",
+    "course_linking": [],
+    "courselist_features": [],
+    "creation_date": "2014/09/26 06:31:17.564 GMT-4",
+    "creators": [
+        "vverma9"
+    ],
+    "description": "This file contains information regarding blank chart for igneous rocks.",
+    "duration": "",
+    "effectiveDate": "None",
+    "excludeFromNav": false,
+    "expirationDate": "None",
+    "feature_requirements": [],
+    "features_tracking": [],
+    "firstTimeEdit": true,
+    "id": "MIT12_001F13_Lab2_Igneous.pdf",
+    "language": "en-US",
+    "license": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/",
+    "location": "",
+    "materialtype": "Instructional Material | Problem Set",
+    "metadata_contributor_list": [],
+    "modification_date": "2016/09/24 12:39:05.674 GMT-4",
+    "other_platform_requirements": "Adobe Reader software is required to view this .pdf file.",
+    "parent_module": "d9aad1541f1a9d3c0f7b0dcf9531a9a1",
+    "parent_uid": "70b1498729283aad0ccfe229bcdce4cb",
+    "publisher": "MIT OpenCourseWare",
+    "related_mit_links": "",
+    "rights": "This site (c) Massachusetts Institute of Technology 2014.  Content within individual courses is (c) by the individual authors unless otherwise noted. The Massachusetts Institute of Technology is providing this Work (as defined below) under the terms of this Creative Commons public license (\"CCPL\" or \"license\") unless otherwise noted. The Work is protected by copyright and/or other applicable law. Any use of the work other than as authorized under this license is prohibited. By exercising any of the rights to the Work provided here, You (as defined below) accept and agree to be bound by the terms of this license. The Licensor, the Massachusetts Institute of Technology, grants You the rights contained here in consideration of Your acceptance of such terms and conditions.",
+    "section_identifier": "https://ocw.mit.edu/courses/earth-atmospheric-and-planetary-sciences/12-001-introduction-to-geology-fall-2013/labs-and-exercises",
+    "software_requirements": [
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "40.0",
+            "software_name_col": "Chrome",
+            "software_type_col": "Browser"
+        },
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "8.0",
+            "software_name_col": "Safari",
+            "software_type_col": "Browser"
+        },
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "38.0",
+            "software_name_col": "Mozilla Firefox",
+            "software_type_col": "Browser"
+        },
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "9.0",
+            "software_name_col": "Internet Explorer",
+            "software_type_col": "Browser"
+        },
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "13.1",
+            "software_name_col": "Edge",
+            "software_type_col": "Browser"
+        },
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "9.0",
+            "software_name_col": "Adobe Acrobat",
+            "software_type_col": "Others"
+        }
+    ],
+    "subject": [],
+    "tcATmit_instructional_tags": [],
+    "tcATmit_subject_tags": [],
+    "technical_location": "https://ocw.mit.edu/courses/earth-atmospheric-and-planetary-sciences/12-001-introduction-to-geology-fall-2013/labs-and-exercises/MIT12_001F13_Lab2_Igneous.pdf",
+    "title": "12.001 Introduction to Geology, Blank Chart for Igneous Rocks",
+    "unique_identifier": "https://ocw.mit.edu/courses/earth-atmospheric-and-planetary-sciences/12-001-introduction-to-geology-fall-2013/labs-and-exercises/MIT12_001F13_Lab2_Igneous.pdf",
+    "widgets_features": []
+}

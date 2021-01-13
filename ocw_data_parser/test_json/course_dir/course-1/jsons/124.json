@@ -1,185 +1,185 @@
 {
-    "expanded_alternate_text": "", 
-    "features_tracking": [], 
-    "widgets_features": [], 
-    "contributors": [], 
-    "tcATmit_subject_tags": [], 
-    "unique_identifier": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-6-column-space-and-nullspace/18.06_L06.jpg", 
-    "_content_type_publisher": "text/plain", 
-    "_content_type_license": "text/plain", 
-    "_datafield_image": {
-        "encoding": "base64", 
-        "data": "/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAcFBQYFBAcGBgYIBwcICxILCwoKCxYPEA0SGhYbGhkWGRgcICgiHB4mHhgZIzAkJiorLS4tGyIyNTEsNSgsLSwBBwgICwkLFQsLFSwdGR0sLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLP/AABEIAFoAeAMBIgACEQEDEQH/xAAbAAACAgMBAAAAAAAAAAAAAAAFBgQHAAIDAf/EAEwQAAIBAwIDBAYFBwUQAwAAAAECAwQFEQASBiExEyJBUQcUYYGx0TJxkaHBFRYjQlJywjNTgpSiJDVDRVViY3N0hJKy0uHw8RclJv/EABgBAAMBAQAAAAAAAAAAAAAAAAACAwEE/8QAIxEAAgICAQMFAQAAAAAAAAAAAAECEQMSIQQxURMUIjJBof/aAAwDAQACEQMRAD8Aoem4ZulVSxzxUTyJIoZShByPqzrr+aF6/wAj1rfuwsfgNFbXTK1uplaSMAoGw+4ZyB7PPlqaaGGVSoCKABtIcEE7sZJPTr4+WrJcC2DbHwleob/b5XslxVI6mNmY0r4ADA56acuKLDWXPhqamoKSaplFZEWWJCxCgSAnl4ZI0EtlIKa/2twQc1MecHOCHHI/H36e72gTh27ZC4E0X0un8pqU18kUj9WVn/8AH91A52W5n2ilf5a5twLcwOVjuf8AVX+WmiMwdmMvQHkDz3jA8frOuTLEmRK8IJKkAPhceP4fbqlErFj8yrqP8RXM/wC6yfLXqcD3iR9qWK6EnwFNJ8tMS1Ec7djCoAZQe7gnIBP4/drFkjWkLCKMgnr3s5wfL6tbQWLD8GXcdLNcwfL1aT5a1Xgy8swVbLcyx8BTSfLTciO8UaRxK8khO0jdnBAx4+G7x119Vd4SrwzKyuOSIX57eYODyHQ6KCxJbg+8KSDZ7iCOWDTSfLXJuEbx4We4f1aT5abkWSRCy0vagDmwZsfaDjxH2a4qjSc1h7rrkBSeRBznmfZjRRtiqeEryvWzXH+qv8tenhK8leVmuOf9lk+WmOop3eczNDJHApHdwAQuf++ozCjWMmT9ID1IXBHPmPeMDry0UFhoW+Wl4co6aeN45ko8OjrtZSSxwR4ddZo1WwgMkI+jHTxx/ZGNZrlrlnQ+EgRZqCpqrDb3jgqGPYJzjQMMbQPr/wDXt0aW13Ewgfk+4uSMNinIBGPMDJ540j2mkqDZKeWmpe1DDa5eIN0CnHPl4/XqbTClL7JYaY97/CQlfLpt6dPHz11rscw1RWe5G40KmhuhRJ43BejOFw33eHP2aO3mjnq7DeIqeCWeQuhCRIWY/pPIc9IU/wDcsFQY0MTYYgQncq4BPVTkdfdjnp/vtQ8NsvEtO2yVZlMZ5HH6Qjx9h1LJ9kVh9ZCmLLfEpViFsq1Tfv507ZzjHl5ajvT3ymiMfZVUaYxgxnl92p0l+u9OjZqoXCZ7ypG4IAPPkD5akW3iO91sMZSqjQzE9nmJAOoC9VHnp264ZNKwBQwVyXVKlxIr8wXZemRj8dYIZDTlJiQzOWJZCc5wPhuOmY8VXxMn10tEM94RIM4DcumP1T9o1GbjS+Kskb3XY6MVx2QGce0Dz1tswF7jFSU+zaxQbWVwcc+vQ55bR9utiZJI45D6uEV2Aft2UEDnjBYE+Hn1Giacb3liga5qEI7x2nun3DW/553GQtG10j29Q22TWgAjFUOdgEBKAd8TNh+nPO7Hw17LDVnG1KcmPB7s5Pu+nz8tHjxZWmEN69BkgMFdpvq54Y46ajvxfXujHNDKVUNhu15+zm3UaOQF6SeWKSSN4lA3YZd7naPEfS56ih6eQyR1JaGDYwTsh3j3twB00DiSpnljDrZ1Dnmzwu20Z8eeoNRxLMUQC32h5CwBU0YwPfnRZoeuSYrqoAc1jfGPYh+Ws1Jq4mNyrQ2NyrLnp4KdZrkidE01QpWOBjZreVqIAOwQj+6Y1IOPFSw/DRGWz1U6qVVJ3/ajlV/hrOGZq5eHKBY7lWxRiBMJHUuoHLyB0cFRc+z/AL71p898m/4510KRz6i69lukNNPGtmq5jKu3csLHA8eg8jpkvwY2m8KeWDn7HzrWcV8sJzWRSZGcyUkL/FNe1FxuFHiSkkjWSV8OXhSQMMHwYEddJOVtFIL4s5ej2lgkuc1TUQJUdki7EcbhuOTnH9HRXiy9W6hv9PWT21WkRhLuhXaWYdN3geg6jWkd0utHI71i07RhDvNPAsL+zDKARpf4rnmr66CbsIqiHvEJOC2Dy55BBJPmc9NWWZVqS9N3YNoSlQsscsaQpnugAkKCW9vhvP2a1qber1DuOrgO2Om4gE/eTo/bKieCJez4es0meuYpM/e50TqK96eBJJeF7Y6nxjkZc+zodLujdRGe2jszzIwM6iwUTNktnlpxF+oXbEnCClc8zHWMP4NbJcbDINrcKzL+7XMfwGjdBQlijZ5SBnaPHXRaNfbpxWu4cXcG4buEQ/14P3lvw1olXwtNn/6y6w4/ZKSfxDH36N0GrFFqPy1x9XxUwjrmRR9+m6Sfg/ozXuH2mnXH3E6i/wD5AVSMK+5ho2DjfBgZHT9Tpo2QUydc3MVJdph1SnnYf8J1mtL04/JlyaCvWjaSNhHNJGWHMjIIAPVcj3691CHYvl7iRZ77FDaaRC1QvZxqh/Rd3OPMNogOKIguVrGAxnmj/gNCaKldbJAVU47NH5Dr3Qfx13hpXCyoAcBcfjrjlnkm0dkMEXFMLw8WKVIFbE3hzjk5f2dSn4jhkjJ9bQ+K+B+8aCUEZ3c1yWGcEe7UpoELANGvQ/qjzGpvqZWN7eI1w8d2yRljntVtkhKFJd9W4dwRjkwk7p9uNB7jeKepqQ9K8McSE9nGsofavlnPP69BGhhDEGFRzx9HUSuo4GT6AX24xp49S26oR9OkrGqDiSrQdyKPYD12MfgdbS8TSyt30j5nwyNL9PZ6WPhGjqcmV5KiRdpXAGEjOc/0vu1r6rCrALvTP7DEaefUaPUSGDZWg2LxBzJYKW6jOua3NUbcHWRc9BnOPeNBTEwbC1VWvP8AnTqFdJ5qOlMi1rgnkO0wefv1sOo2dIJ9PqrY1PfoZVKMjj3jXOK5wBArAYBzyHM6H3S2VdGlFNvpVjqacSxvEqusg8+YyPqOhTTViShQ9OwPXuY+GNUeZJ0xI4HJWhna6UbHH0B45BI1Glmo5ZFWDBYnHTGl9nqlAbsqd+eOrf8AVrtBPUx7ZRRoWBz3ZMfHOj14h7eQ3XSogktU4jmQ4jJP2azSpU107W+dPUXw6HcRLnH9nWa3HOLXAuSDvkdrTwhcLlw9Ya6h9TUfk5VaOZQVdiowxAHMgeeoB9GXGInlkWoozvOQqMVA92MaWr/fbzVcC8OpbmqaWghhEMjJMqmWQDb9FW3bRg9Rp14M9IFBQ8OUtFerjO9dFuUuYJH3Lk7e8Ac8saZxFjIF/mDxrS5MdPE5H7L5+I1Gn4f41h5mzM5HLIK/PVjx8fcNyID+WIkB/nN0Y+8DU6m4tslUwWnv1Ax8AtSufjpHFfsf4OpPyU5LQcWRAmSxSMR4hQ2fsOh9wS9y05g/ItUk7f6FlA9uTy1dlx46s1rrUpKm5jtWAJ7MGQKD0yRoxHUJU06TRtHPFINyuACGB1mi76m7y8lCWeprpbYlvuU4jWi7scTADbnr0HXpqeIIGkGJoiw9p+WrqNNRTpiegppP3ol1V1+494boOJKi3pwzbp4KaUxSyMmyRmHJtvLwORqU8LnKx4ZdI0ApLeRJuBAyc57QD8dBuI6do7Zuc4TdzOQfH/zpq8pOFOGpBj8mJGP8x2X4aTr9JwBaL/Fa6takTcix3l44t3Tdk+3yOlx4mpWPPMpRoUrtxHS3entjdsIvVKRKdnZCgdh1bn+GhLzRTOWjq4358sMDq2Lp6OOHrhThVMsBP60fL46At6GLVuyl2qlzz/VH8OrPHGTsnHLKKoR03O6jtFYDXdA4p2BIHgDpsf0Lx5/QXlx+8oPy1Fb0NXWJ90N4gfBz9Aj+LSPBHyUXUPwL0xY0cuT3WQnl9Ws0TuHo24npaKYpNBJGqEnErDljny1mnhi1Xcnky7PsJdvmamoe4pIlUBsqGGB4aYeFOC7zxRN67aaWNvVijsjTLGWBJwQG69NJOT6unPw06y3e5W30gEUNwqqQOsQYQzMmR2a8jg6791Ja0ciTX6L90imsd3qrbNLPBPTSGOREYEKR1GVbB15bLvJb7lHVConbAYNnrggjz59dT69EqLjPNOolldyzO43Mxz1JPXXbhukp5eJAklPE6CPcFZARnevPUGUQFFNcq+sdglRUEKCzZPTAxknpqTbqmrW5oGq2ig3bGMc20A4x9IHz9um30wMRUUCgkBu0LAeONuM6SuGHf8tpBuPYzK6yR57rjaTgjx56s4UT2JNPxbxHTPujulYy/s+suR9gbXS2XS2U9RLcq6hqZboakTJuXfDtzlsgkHdnmCdw9mj/AKTrdQ2+l4cNHR09KZqMtIYY1Ted3U4HM6RV66i2MkXjQ13Hd/pVuHD8VLW0LLu/lISw88qXQr79VpxvTVh4qp6i9pHDU1aq0ojHLaO6DyZvAeB0r08jxPujdkbnzU4OurVVRUPumnklZOSl3JK/VnWqlwa7ZcnEHpFHCzUtIyUVwmMeZI6eV17LpgElTnI564Rel2jkjDSW1wDzOyoU/wDNjVLzSyTTNJK7SOTzZjknW0R5aHXgxSdl5QelWyum9qetjQEKWKoQCfqbUSi9LlI96eCsiWKjZsRyLuLr5Fh459nT26rKnA/NaqbHMVMfP3HQZudX/S0qSY7dF9X/AIyparhqtWx1cNRXNHhInBUkE976WOi5Pu1mqZs7MIakgkHZ1z7RrNNVCSfJ/9k=", 
-        "content_type": "image/jpeg", 
-        "filename": "18.06_L06.jpg"
-    }, 
-    "aggregationlevel": 2, 
-    "_uid": "6491a67d10b20176a009007dfa7181bf", 
-    "_workflow_history": {
-        "one_state_workflow": [
-            {
-                "action": null, 
-                "review_state": "published", 
-                "actor": "Jcplayer", 
-                "comments": "", 
-                "time": "2010/10/07 14:37:17.652 GMT-4"
-            }
-        ]
-    }, 
-    "expirationDate": "None", 
-    "_content_type_id": "text/plain", 
-    "duration": "", 
-    "contributor_list": [], 
-    "id": "18.06_L06.jpg", 
-    "related_mit_links": "", 
-    "thumb_height": "", 
-    "effectiveDate": "None", 
-    "title": "18.06_L06.jpg", 
-    "_layout": "view", 
-    "parent_module": "aabc44bdb2e45374d62f30f2a6d4c63e", 
-    "_content_type": "image/jpeg", 
-    "_userdefined_roles": [], 
-    "_gopip": 0, 
-    "location": "", 
-    "_atrefs": {
-        "BelongsTo": [
-            "aabc44bdb2e45374d62f30f2a6d4c63e"
-        ]
-    }, 
-    "_content_type_course_identifier": "text/plain", 
-    "_content_type_title": "text/plain", 
-    "section_identifier": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures", 
-    "_atbrefs": {
-        "thumbnail_image": [
-            "59e845e037568e3e86afc5ac4d33890a"
-        ], 
-        "file_reference": [
-            "5180c0f54fe4d2bcb21a5601889bbec6"
-        ]
-    }, 
-    "creation_date": "2010/10/07 14:37:17.644 GMT-4", 
-    "_content_type_section_identifier": "text/plain", 
-    "_type": "OCWImage", 
-    "technical_location": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-6-column-space-and-nullspace/18.06_L06.jpg", 
-    "description": "", 
-    "thumb_width": "", 
-    "software_requirements": [
-        {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "40.0", 
-            "software_name_col": "Chrome", 
-            "maximum_version_col": ""
-        }, 
-        {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "8.0", 
-            "software_name_col": "Safari", 
-            "maximum_version_col": ""
-        }, 
-        {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "38.0", 
-            "software_name_col": "Mozilla Firefox", 
-            "maximum_version_col": ""
-        }, 
-        {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "9.0", 
-            "software_name_col": "Internet Explorer", 
-            "maximum_version_col": ""
-        }, 
-        {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "13.1", 
-            "software_name_col": "Edge", 
-            "maximum_version_col": ""
-        }
-    ], 
-    "_content_type_technical_location": "text/plain", 
-    "alternate_text": "", 
-    "credit": "", 
-    "subject": [], 
-    "_content_type_rights": "text/html", 
-    "course_identifier": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010", 
-    "_directly_provided": [], 
-    "other_platform_requirements": "", 
-    "_id": "18.06_L06.jpg", 
-    "_classname": "OCWImage", 
-    "metadata_contributor_list": [
-        {
-            "md_contributor_uid": "", 
-            "md_contributor_entity": "Todd Rautenberg", 
-            "md_contributor_hide": "", 
-            "md_contributor_special_title": "", 
-            "md_contributor_role": "Validator"
-        }, 
-        {
-            "md_contributor_uid": "", 
-            "md_contributor_entity": "Todd Rautenberg", 
-            "md_contributor_hide": "", 
-            "md_contributor_special_title": "", 
-            "md_contributor_role": "Creator"
-        }
-    ], 
-    "tcATmit_instructional_tags": [], 
-    "caption": "", 
-    "parent_uid": "59e845e037568e3e86afc5ac4d33890a", 
-    "modification_date": "2016/09/24 04:30:33.042 GMT-4", 
-    "course_linking": [], 
-    "publisher": "MIT OpenCourseWare", 
-    "excludeFromNav": false, 
-    "feature_requirements": [], 
-    "language": "", 
-    "license": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/", 
-    "rights": "This site (c) Massachusetts Institute of Technology 2010.  Content within individual courses is (c) by the individual authors unless otherwise noted. The Massachusetts Institute of Technology is providing this Work (as defined below) under the terms of this Creative Commons public license (\"CCPL\" or \"license\") unless otherwise noted. The Work is protected by copyright and/or other applicable law. Any use of the work other than as authorized under this license is prohibited. By exercising any of the rights to the Work provided here, You (as defined below) accept and agree to be bound by the terms of this license. The Licensor, the Massachusetts Institute of Technology, grants You the rights contained here in consideration of Your acceptance of such terms and conditions.", 
-    "always_publish": false, 
-    "popup_image_id": "", 
-    "materialtype": "Other", 
-    "_content_type_unique_identifier": "text/plain", 
-    "category_features": [], 
-    "is_pop_up_image": false, 
-    "_owner": null, 
-    "_defaultpage": "index_html", 
-    "firstTimeEdit": true, 
-    "_permissions": {
-        "Modify portal content": {
-            "acquire": false, 
-            "roles": [
-                "Editor", 
-                "Manager", 
-                "Owner"
-            ]
-        }, 
-        "Access contents information": {
-            "acquire": false, 
-            "roles": [
-                "Anonymous"
-            ]
-        }, 
-        "View": {
-            "acquire": false, 
-            "roles": [
-                "Anonymous"
-            ]
-        }
-    }, 
-    "_properties": [
-        [
-            "title", 
-            "18.06_L06.jpg", 
-            "string"
-        ]
-    ], 
-    "allowDiscussion": false, 
-    "_content_type_materialtype": "text/plain", 
-    "creators": [
-        "Jcplayer"
-    ], 
-    "courselist_features": [], 
     "_ac_local_roles": {
         "Jcplayer": [
             "Owner"
         ]
-    }, 
-    "_path": "/Plone/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-6-column-space-and-nullspace/18.06_L06.jpg"
+    },
+    "_atbrefs": {
+        "file_reference": [
+            "5180c0f54fe4d2bcb21a5601889bbec6"
+        ],
+        "thumbnail_image": [
+            "59e845e037568e3e86afc5ac4d33890a"
+        ]
+    },
+    "_atrefs": {
+        "BelongsTo": [
+            "aabc44bdb2e45374d62f30f2a6d4c63e"
+        ]
+    },
+    "_classname": "OCWImage",
+    "_content_type": "image/jpeg",
+    "_content_type_course_identifier": "text/plain",
+    "_content_type_id": "text/plain",
+    "_content_type_license": "text/plain",
+    "_content_type_materialtype": "text/plain",
+    "_content_type_publisher": "text/plain",
+    "_content_type_rights": "text/html",
+    "_content_type_section_identifier": "text/plain",
+    "_content_type_technical_location": "text/plain",
+    "_content_type_title": "text/plain",
+    "_content_type_unique_identifier": "text/plain",
+    "_datafield_image": {
+        "content_type": "image/jpeg",
+        "data": "ZW1wdHk=",
+        "encoding": "base64",
+        "filename": "18.06_L06.jpg"
+    },
+    "_defaultpage": "index_html",
+    "_directly_provided": [],
+    "_gopip": 0,
+    "_id": "18.06_L06.jpg",
+    "_layout": "view",
+    "_owner": null,
+    "_path": "/Plone/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-6-column-space-and-nullspace/18.06_L06.jpg",
+    "_permissions": {
+        "Access contents information": {
+            "acquire": false,
+            "roles": [
+                "Anonymous"
+            ]
+        },
+        "Modify portal content": {
+            "acquire": false,
+            "roles": [
+                "Editor",
+                "Manager",
+                "Owner"
+            ]
+        },
+        "View": {
+            "acquire": false,
+            "roles": [
+                "Anonymous"
+            ]
+        }
+    },
+    "_properties": [
+        [
+            "title",
+            "18.06_L06.jpg",
+            "string"
+        ]
+    ],
+    "_type": "OCWImage",
+    "_uid": "6491a67d10b20176a009007dfa7181bf",
+    "_userdefined_roles": [],
+    "_workflow_history": {
+        "one_state_workflow": [
+            {
+                "action": null,
+                "actor": "Jcplayer",
+                "comments": "",
+                "review_state": "published",
+                "time": "2010/10/07 14:37:17.652 GMT-4"
+            }
+        ]
+    },
+    "aggregationlevel": 2,
+    "allowDiscussion": false,
+    "alternate_text": "",
+    "always_publish": false,
+    "caption": "",
+    "category_features": [],
+    "contributor_list": [],
+    "contributors": [],
+    "course_identifier": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010",
+    "course_linking": [],
+    "courselist_features": [],
+    "creation_date": "2010/10/07 14:37:17.644 GMT-4",
+    "creators": [
+        "Jcplayer"
+    ],
+    "credit": "",
+    "description": "",
+    "duration": "",
+    "effectiveDate": "None",
+    "excludeFromNav": false,
+    "expanded_alternate_text": "",
+    "expirationDate": "None",
+    "feature_requirements": [],
+    "features_tracking": [],
+    "firstTimeEdit": true,
+    "id": "18.06_L06.jpg",
+    "is_pop_up_image": false,
+    "language": "",
+    "license": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/",
+    "location": "",
+    "materialtype": "Other",
+    "metadata_contributor_list": [
+        {
+            "md_contributor_entity": "Todd Rautenberg",
+            "md_contributor_hide": "",
+            "md_contributor_role": "Validator",
+            "md_contributor_special_title": "",
+            "md_contributor_uid": ""
+        },
+        {
+            "md_contributor_entity": "Todd Rautenberg",
+            "md_contributor_hide": "",
+            "md_contributor_role": "Creator",
+            "md_contributor_special_title": "",
+            "md_contributor_uid": ""
+        }
+    ],
+    "modification_date": "2016/09/24 04:30:33.042 GMT-4",
+    "other_platform_requirements": "",
+    "parent_module": "aabc44bdb2e45374d62f30f2a6d4c63e",
+    "parent_uid": "59e845e037568e3e86afc5ac4d33890a",
+    "popup_image_id": "",
+    "publisher": "MIT OpenCourseWare",
+    "related_mit_links": "",
+    "rights": "This site (c) Massachusetts Institute of Technology 2010.  Content within individual courses is (c) by the individual authors unless otherwise noted. The Massachusetts Institute of Technology is providing this Work (as defined below) under the terms of this Creative Commons public license (\"CCPL\" or \"license\") unless otherwise noted. The Work is protected by copyright and/or other applicable law. Any use of the work other than as authorized under this license is prohibited. By exercising any of the rights to the Work provided here, You (as defined below) accept and agree to be bound by the terms of this license. The Licensor, the Massachusetts Institute of Technology, grants You the rights contained here in consideration of Your acceptance of such terms and conditions.",
+    "section_identifier": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures",
+    "software_requirements": [
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "40.0",
+            "software_name_col": "Chrome",
+            "software_type_col": "Browser"
+        },
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "8.0",
+            "software_name_col": "Safari",
+            "software_type_col": "Browser"
+        },
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "38.0",
+            "software_name_col": "Mozilla Firefox",
+            "software_type_col": "Browser"
+        },
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "9.0",
+            "software_name_col": "Internet Explorer",
+            "software_type_col": "Browser"
+        },
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "13.1",
+            "software_name_col": "Edge",
+            "software_type_col": "Browser"
+        }
+    ],
+    "subject": [],
+    "tcATmit_instructional_tags": [],
+    "tcATmit_subject_tags": [],
+    "technical_location": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-6-column-space-and-nullspace/18.06_L06.jpg",
+    "thumb_height": "",
+    "thumb_width": "",
+    "title": "18.06_L06.jpg",
+    "unique_identifier": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-6-column-space-and-nullspace/18.06_L06.jpg",
+    "widgets_features": []
 }

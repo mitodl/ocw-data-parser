@@ -3,6 +3,7 @@
 import json
 import logging
 import os
+from copy import deepcopy
 from pathlib import Path
 from tempfile import TemporaryDirectory
 from unittest.mock import patch
@@ -442,6 +443,33 @@ def test_course_pages(ocw_parser):
     assert page["description"].startswith(
         "This syllabus section provides information on course goals"
     )
+
+
+def test_instructor_insights_divided_sections(ocw_parser_course_2):
+    """assert that instructor insights pages with divided sections are parsed properly"""
+    assert len(ocw_parser_course_2.parsed_json["course_pages"]) > 0
+    original_page = ocw_parser_course_2.jsons[5]
+    page = ocw_parser_course_2.parsed_json["course_pages"][3]
+    page_without_text = deepcopy(page)
+    del page_without_text["text"]
+    assert page_without_text == {
+        "order_index": 6,
+        "uid": "1c2cb2ad1c70fd66f19e20103dc94595",
+        "parent_uid": "d9aad1541f1a9d3c0f7b0dcf9531a9a1",
+        "title": "Instructor Insights",
+        "short_page_title": "Instructor Insights",
+        "url": "/courses/earth-atmospheric-and-planetary-sciences/12-001-introduction-to-geology-fall-2013/instructor-insights",
+        "short_url": "instructor-insights",
+        "description": "This section provides insights and information about the course from the instructors.",
+        "type": "ThisCourseAtMITSection",
+        "is_image_gallery": False,
+        "is_media_gallery": False,
+        "list_in_left_nav": False,
+        "file_location": "1c2cb2ad1c70fd66f19e20103dc94595_instructor-insights.html",
+        "bottomtext": "",
+    }
+    for section in constants.INSTRUCTOR_INSIGHTS_SECTIONS:
+        assert original_page.get(section) in page.get("text")
 
 
 @pytest.mark.parametrize("has_instructors", [True, False])

@@ -1,395 +1,272 @@
 {
-    "list_in_left_nav": false, 
-    "tcATmit_subject_tags": [], 
-    "features_tracking": [], 
-    "widgets_features": [], 
-    "locallyAllowedTypes": [
-        "OCWImage", 
-        "SupplementalResourceSection", 
-        "OCWExtFile", 
-        "OCWFile", 
-        "MediaResource"
-    ], 
-    "has_inline_embed": false, 
-    "_content_type_text": "text/html", 
-    "unique_identifier": "https://ocw.mit.edu/resources/res-str-001-geographic-information-system-gis-tutorial-january-iap-2016/spatial-statistics", 
-    "text": "<p>The following material was drawn from a workshop on Spatial Statistics given at MIT during IAP 2016 <img src=\"/images/educator/icon-question-iap.png\" class=\"question\" alt=\"\" />. It provides an introduction to spatial statistics and information on spatial autocorrelation, different conceptual models, data value measurement, regression analysis, and an exploration of problems that may arise. The workshop also featured two practice exercises, which can be found below.</p> <p><a href=\"./resolveuid/ae9e1c3e67ee9d1b572a124dc922ec42\">Introduction to Spatial Statistics (PDF - 3.5MB)</a></p> <p><em>Note: <a href=\"https://www.arcgis.com/features/\">ArcGIS</a> is a paid program available to the MIT Community. Geoda is a free program available from <a href=\"https://geodacenter.asu.edu/\">Arizona State University</a>.</em></p> <div class=\"maintabletemplate\"><table class=\"tablewidth50\" summary=\"See table caption for summary.\">     <caption class=\"invisible\">Course handout and data.</caption>  <!-- BEGIN TABLE HEADER (for MIT OCW Table Template 2.51) -->     <thead>         <tr>             <th scope=\"col\">EXERCISE&nbsp;HANDOUT</th>             <th scope=\"col\">Sample DATA</th>         </tr>     </thead>     <!-- END TABLE HEADER -->     <tbody>         <tr class=\"row\">             <td><a href=\"./resolveuid/5c8d404ffdf1ba9b351ba07757966fb8\">Autocorrelation Exercise (PDF)</a></td>             <td><span class=\"nobr\"><a href=\"./resolveuid/b9f4b649fce4d327c2c925a4f0ec11d0\">Regression Exercise (PDF - 1.7MB)</a></span></td>         </tr>         <tr class=\"alt-row\">             <td><a href=\"./resolveuid/cac893d6dd6c462005ea99eafc8b2394\">Autocorrelation Sample Data (ZIP)</a> (This zip file contains 1.dbf, 1.prj, 1sbn, 1.sbx, 1.shp and 1.shx files.)</td>             <td><a href=\"./resolveuid/8d31ebc2a1b54e79784920a025b2e08a\">Regression Sample Data (ZIP)</a> (This zip file contains 1.dbf, 1.prj, 1sbn, 1.sbx, 2.shp, 1.shx and 1 .data base files.)</td>         </tr>         <!-- TEN ROWS -->     </tbody> </table></div>", 
-    "_content_type_publisher": "text/plain", 
-    "_content_type_license": "text/plain", 
-    "ad_type": "HOUSE", 
-    "creation_date": "2016/03/01 11:53:20.567 US/Eastern", 
-    "aggregationlevel": 3, 
-    "is_image_gallery": false, 
-    "_uid": "e50033f149a6f59d6646e17cae4d4fc2", 
-    "hide_Page_title": false, 
-    "_content_type_id": "text/plain", 
-    "immediatelyAddableTypes": [
-        "OCWImage", 
-        "SupplementalResourceSection", 
-        "OCWExtFile", 
-        "OCWFile", 
-        "MediaResource"
-    ], 
-    "category_features": [], 
-    "id": "spatial-statistics", 
-    "is_media_gallery": false, 
-    "subject": [], 
-    "_content_type_short_page_title": "text/plain", 
-    "related_mit_links": "", 
-    "contributors": [], 
-    "effectiveDate": "2016/03/07 00:06:10.545 US/Eastern", 
-    "title": "Spatial Statistics", 
-    "parent_module": "236793a57f96cf26ea0aec0ca35bd118", 
-    "_content_type_ad_type": "text/plain", 
-    "_userdefined_roles": [], 
-    "is_mathml_document": false, 
-    "_gopip": 3, 
-    "location": "", 
-    "bottomtext": "", 
-    "short_page_title": "Spatial Statistics", 
-    "_content_type_title": "text/plain", 
-    "feature_requirements": [], 
+    "_ac_local_roles": {
+        "Kcanavan": [
+            "Owner"
+        ]
+    },
     "_atbrefs": {
         "isReferencing": [
-            "e50033f149a6f59d6646e17cae4d4fc2"
+            "1c2cb2ad1c70fd66f19e20103dc94595",
+            "de36fe69cf33ddf238bc3896d0ce9eff"
         ]
-    }, 
-    "constrainTypesMode": 0, 
-    "_content_type": "text/html", 
-    "_type": "SupplementalResourceSection", 
-    "technical_location": "https://ocw.mit.edu/resources/res-str-001-geographic-information-system-gis-tutorial-january-iap-2016/spatial-statistics", 
-    "description": "This section contains an introduction to spatial statistics and two practice exercises.", 
-    "short_name_tlp": "", 
-    "software_requirements": [
-        {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "40.0", 
-            "software_name_col": "Chrome", 
-            "maximum_version_col": ""
-        }, 
-        {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "8.0", 
-            "software_name_col": "Safari", 
-            "maximum_version_col": ""
-        }, 
-        {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "38.0", 
-            "software_name_col": "Mozilla Firefox", 
-            "maximum_version_col": ""
-        }, 
-        {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "9.0", 
-            "software_name_col": "Internet Explorer", 
-            "maximum_version_col": ""
-        }, 
-        {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "13.1", 
-            "software_name_col": "Edge", 
-            "maximum_version_col": ""
+    },
+    "_atrefs": {
+        "BelongsTo": [
+            "d9aad1541f1a9d3c0f7b0dcf9531a9a1"
+        ],
+        "isReferencing": [
+            "ac6c04d57955b585a812bd1d38d542b3"
+        ]
+    },
+    "_classname": "CourseSection",
+    "_content_type": "text/html",
+    "_content_type_ad_type": "text/plain",
+    "_content_type_course_identifier": "text/plain",
+    "_content_type_description": "text/plain",
+    "_content_type_id": "text/plain",
+    "_content_type_license": "text/plain",
+    "_content_type_materialtype": "text/plain",
+    "_content_type_publisher": "text/plain",
+    "_content_type_rights": "text/html",
+    "_content_type_section_identifier": "text/plain",
+    "_content_type_short_page_title": "text/plain",
+    "_content_type_technical_location": "text/plain",
+    "_content_type_text": "text/html",
+    "_content_type_title": "text/plain",
+    "_content_type_unique_identifier": "text/plain",
+    "_defaultpage": "",
+    "_directly_provided": [
+        "Products.CMFEditions.interfaces.IVersioned"
+    ],
+    "_gopip": 5,
+    "_id": "planning-a-good-field-trip",
+    "_layout": "custom_view",
+    "_owner": null,
+    "_path": "/Plone/courses/earth-atmospheric-and-planetary-sciences/12-001-introduction-to-geology-fall-2013/instructor-insights/planning-a-good-field-trip",
+    "_permissions": {
+        "Access contents information": {
+            "acquire": false,
+            "roles": [
+                "Authenticated"
+            ]
+        },
+        "Change portal events": {
+            "acquire": false,
+            "roles": [
+                "Editor",
+                "Manager",
+                "MetadataEditor",
+                "Owner"
+            ]
+        },
+        "List folder contents": {
+            "acquire": false,
+            "roles": [
+                "Editor",
+                "Manager",
+                "MetadataEditor",
+                "Owner"
+            ]
+        },
+        "Modify portal content": {
+            "acquire": false,
+            "roles": [
+                "Manager",
+                "MetadataEditor"
+            ]
+        },
+        "View": {
+            "acquire": false,
+            "roles": [
+                "Authenticated"
+            ]
         }
-    ], 
-    "_content_type_technical_location": "text/plain", 
-    "_layout": "custom_view", 
+    },
     "_properties": [
         [
-            "title", 
-            "Spatial Statistics", 
+            "title",
+            "Planning a Good Field Trip",
             "string"
         ]
-    ], 
+    ],
+    "_type": "CourseSection",
+    "_uid": "ef6931d2c8e6bc0b8e9a5572a78fe125",
+    "_userdefined_roles": [],
     "_workflow_history": {
         "page_workflow": [
             {
-                "action": null, 
-                "review_state": "waiting_for_authoring", 
-                "actor": "rsharma20", 
-                "comments": "", 
-                "time": "2016/03/01 11:53:20.575 US/Eastern"
-            }, 
+                "action": null,
+                "actor": "Kcanavan",
+                "comments": "",
+                "review_state": "waiting_for_authoring",
+                "time": "2014/12/03 16:45:50.721 US/Eastern"
+            },
             {
-                "action": "approve_to_staging", 
-                "review_state": "ready_for_staging", 
-                "actor": "rsharma20", 
-                "comments": "", 
-                "time": "2016/03/07 00:06:10.642 US/Eastern"
-            }, 
+                "action": "approve_to_staging",
+                "actor": "Kcanavan",
+                "comments": "",
+                "review_state": "ready_for_staging",
+                "time": "2014/12/03 17:06:29.114 US/Eastern"
+            },
             {
-                "action": "decline", 
-                "review_state": "waiting_for_authoring", 
-                "comments": "", 
-                "actor": "rsharma20", 
-                "time": "2016/03/08 23:52:20.182 US/Eastern"
-            }, 
+                "action": "decline_to_qa",
+                "actor": "Kcanavan",
+                "comments": "",
+                "review_state": "waiting_for_qa",
+                "time": "2014/12/09 16:30:56.480 US/Eastern"
+            },
             {
-                "action": "approve_to_staging", 
-                "review_state": "ready_for_staging", 
-                "comments": "", 
-                "actor": "rsharma20", 
-                "time": "2016/03/08 23:54:29.274 US/Eastern"
-            }, 
+                "action": "approve_to_staging",
+                "actor": "Kcanavan",
+                "comments": "",
+                "review_state": "ready_for_staging",
+                "time": "2014/12/09 16:36:33.985 US/Eastern"
+            },
             {
-                "action": "decline", 
-                "review_state": "waiting_for_authoring", 
-                "comments": "", 
-                "actor": "rsharma20", 
-                "time": "2016/03/08 23:58:55.282 US/Eastern"
-            }, 
+                "action": "decline_to_qa",
+                "actor": "Kcanavan",
+                "comments": "",
+                "review_state": "waiting_for_qa",
+                "time": "2014/12/11 13:14:52.916 US/Eastern"
+            },
             {
-                "action": "approve_to_staging", 
-                "review_state": "ready_for_staging", 
-                "comments": "", 
-                "actor": "rsharma20", 
-                "time": "2016/03/09 00:03:24.356 US/Eastern"
-            }, 
+                "action": "approve_to_staging",
+                "actor": "Kcanavan",
+                "comments": "",
+                "review_state": "ready_for_staging",
+                "time": "2014/12/11 13:17:18.438 US/Eastern"
+            },
             {
-                "action": "decline", 
-                "review_state": "waiting_for_authoring", 
-                "actor": "rsharma20", 
-                "comments": "", 
-                "time": "2016/03/09 23:14:26.717 US/Eastern"
-            }, 
+                "action": "decline_to_qa",
+                "actor": "sehansen",
+                "comments": "",
+                "review_state": "waiting_for_qa",
+                "time": "2014/12/11 15:04:23.995 US/Eastern"
+            },
             {
-                "action": "approve_to_staging", 
-                "review_state": "ready_for_staging", 
-                "comments": "", 
-                "actor": "rsharma20", 
-                "time": "2016/03/09 23:24:29.795 US/Eastern"
-            }, 
+                "action": "approve_to_staging",
+                "actor": "sehansen",
+                "comments": "",
+                "review_state": "ready_for_staging",
+                "time": "2014/12/11 15:23:29.468 US/Eastern"
+            },
             {
-                "action": "decline", 
-                "review_state": "waiting_for_authoring", 
-                "actor": "srani11", 
-                "comments": "", 
-                "time": "2016/03/10 03:13:54.990 US/Eastern"
-            }, 
+                "action": "decline_to_qa",
+                "actor": "aimeeg",
+                "comments": "",
+                "review_state": "waiting_for_qa",
+                "time": "2014/12/13 16:37:13.482 US/Eastern"
+            },
             {
-                "action": "approve_to_staging", 
-                "review_state": "ready_for_staging", 
-                "actor": "srani11", 
-                "comments": "", 
-                "time": "2016/03/10 04:32:04.423 US/Eastern"
-            }, 
-            {
-                "action": "decline", 
-                "review_state": "waiting_for_authoring", 
-                "comments": "", 
-                "actor": "rsharma20", 
-                "time": "2016/03/10 23:17:53.031 US/Eastern"
-            }, 
-            {
-                "action": "approve_to_staging", 
-                "review_state": "ready_for_staging", 
-                "comments": "", 
-                "actor": "rsharma20", 
-                "time": "2016/03/10 23:17:59.353 US/Eastern"
-            }, 
-            {
-                "action": "decline", 
-                "review_state": "waiting_for_authoring", 
-                "actor": "srani11", 
-                "comments": "", 
-                "time": "2016/03/11 04:48:10.659 US/Eastern"
-            }, 
-            {
-                "action": "approve_to_staging", 
-                "review_state": "ready_for_staging", 
-                "comments": "", 
-                "actor": "srani11", 
-                "time": "2016/03/11 04:52:36.780 US/Eastern"
-            }, 
-            {
-                "action": "decline", 
-                "review_state": "waiting_for_authoring", 
-                "actor": "srani11", 
-                "comments": "", 
-                "time": "2016/03/11 04:54:56.283 US/Eastern"
-            }, 
-            {
-                "action": "approve_to_staging", 
-                "review_state": "ready_for_staging", 
-                "actor": "srani11", 
-                "comments": "", 
-                "time": "2016/03/11 05:12:59.512 US/Eastern"
-            }, 
-            {
-                "action": "decline", 
-                "review_state": "waiting_for_authoring", 
-                "actor": "asingh33", 
-                "comments": "", 
-                "time": "2016/03/11 05:35:53.198 US/Eastern"
-            }, 
-            {
-                "action": "approve_to_staging", 
-                "review_state": "ready_for_staging", 
-                "comments": "", 
-                "actor": "asingh33", 
-                "time": "2016/03/11 05:39:27.035 US/Eastern"
-            }, 
-            {
-                "action": "decline", 
-                "review_state": "waiting_for_authoring", 
-                "actor": "asingh33", 
-                "comments": "", 
-                "time": "2016/03/11 06:11:35.680 US/Eastern"
-            }, 
-            {
-                "action": "approve_to_staging", 
-                "review_state": "ready_for_staging", 
-                "actor": "asingh33", 
-                "comments": "", 
-                "time": "2016/03/11 06:23:51.712 US/Eastern"
-            }, 
-            {
-                "action": "decline_to_qa", 
-                "review_state": "waiting_for_qa", 
-                "comments": "", 
-                "actor": "brem", 
-                "time": "2016/03/14 12:11:40.098 GMT-4"
-            }, 
-            {
-                "action": "approve_to_staging", 
-                "review_state": "ready_for_staging", 
-                "actor": "brem", 
-                "comments": "", 
-                "time": "2016/03/14 12:20:55.222 GMT-4"
-            }, 
-            {
-                "action": "decline_to_qa", 
-                "review_state": "waiting_for_qa", 
-                "comments": "", 
-                "actor": "brem", 
-                "time": "2016/03/15 11:03:35.098 GMT-4"
-            }, 
-            {
-                "action": "approve_to_staging", 
-                "review_state": "ready_for_staging", 
-                "actor": "brem", 
-                "comments": "", 
-                "time": "2016/03/15 11:04:48.549 GMT-4"
-            }, 
-            {
-                "action": "decline_to_qa", 
-                "review_state": "waiting_for_qa", 
-                "comments": "", 
-                "actor": "brem", 
-                "time": "2016/03/16 15:58:27.696 GMT-4"
-            }, 
-            {
-                "action": "approve_to_staging", 
-                "review_state": "ready_for_staging", 
-                "actor": "brem", 
-                "comments": "", 
-                "time": "2016/03/16 15:59:05.600 GMT-4"
-            }, 
-            {
-                "action": "decline", 
-                "review_state": "waiting_for_authoring", 
-                "comments": "", 
-                "actor": "vverma9", 
-                "time": "2016/03/28 03:29:29.718 GMT-4"
-            }, 
-            {
-                "action": "approve_to_staging", 
-                "review_state": "ready_for_staging", 
-                "actor": "vverma9", 
-                "comments": "", 
-                "time": "2016/03/28 03:32:31.025 GMT-4"
+                "action": "approve_to_staging",
+                "actor": "aimeeg",
+                "comments": "",
+                "review_state": "ready_for_staging",
+                "time": "2014/12/13 16:39:51.172 US/Eastern"
             }
         ]
-    }, 
-    "_content_type_rights": "text/html", 
-    "_atrefs": {
-        "BelongsTo": [
-            "236793a57f96cf26ea0aec0ca35bd118"
-        ], 
-        "isReferencing": [
-            "e50033f149a6f59d6646e17cae4d4fc2", 
-            "ae9e1c3e67ee9d1b572a124dc922ec42", 
-            "8d31ebc2a1b54e79784920a025b2e08a", 
-            "cac893d6dd6c462005ea99eafc8b2394", 
-            "5c8d404ffdf1ba9b351ba07757966fb8", 
-            "b9f4b649fce4d327c2c925a4f0ec11d0"
-        ]
-    }, 
-    "_directly_provided": [
-        "Products.CMFEditions.interfaces.IVersioned"
-    ], 
-    "_path": "/Plone/resources/res-str-001-geographic-information-system-gis-tutorial-january-iap-2016/spatial-statistics", 
-    "_classname": "SupplementalResourceSection", 
-    "metadata_contributor_list": [], 
-    "tcATmit_instructional_tags": [], 
-    "parent_uid": "236793a57f96cf26ea0aec0ca35bd118", 
-    "modification_date": "2016/09/24 00:09:41.277 GMT-4", 
-    "course_linking": [], 
-    "publisher": "MIT OpenCourseWare", 
-    "excludeFromNav": false, 
-    "nextPreviousEnabled": false, 
-    "language": "", 
-    "license": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/", 
-    "rights": "This site (c) Massachusetts Institute of Technology 2016.  Content within individual courses is (c) by the individual authors unless otherwise noted. The Massachusetts Institute of Technology is providing this Work (as defined below) under the terms of this Creative Commons public license (\"CCPL\" or \"license\") unless otherwise noted. The Work is protected by copyright and/or other applicable law. Any use of the work other than as authorized under this license is prohibited. By exercising any of the rights to the Work provided here, You (as defined below) accept and agree to be bound by the terms of this license. The Licensor, the Massachusetts Institute of Technology, grants You the rights contained here in consideration of Your acceptance of such terms and conditions.", 
-    "url_rewrite_patterns": [], 
-    "always_publish": false, 
-    "_id": "spatial-statistics", 
-    "materialtype": "Other", 
-    "_content_type_unique_identifier": "text/plain", 
-    "_content_type_description": "text/plain", 
-    "_owner": null, 
-    "_defaultpage": "", 
-    "firstTimeEdit": true, 
-    "_permissions": {
-        "Change portal events": {
-            "acquire": false, 
-            "roles": [
-                "Editor", 
-                "Manager", 
-                "MetadataEditor", 
-                "Owner"
-            ]
-        }, 
-        "Modify portal content": {
-            "acquire": false, 
-            "roles": [
-                "Manager", 
-                "MetadataEditor"
-            ]
-        }, 
-        "Access contents information": {
-            "acquire": false, 
-            "roles": [
-                "Authenticated"
-            ]
-        }, 
-        "List folder contents": {
-            "acquire": false, 
-            "roles": [
-                "Editor", 
-                "Manager", 
-                "MetadataEditor", 
-                "Owner"
-            ]
-        }, 
-        "View": {
-            "acquire": false, 
-            "roles": [
-                "Authenticated"
-            ]
-        }
-    }, 
-    "ad_champion_text": "", 
-    "allowDiscussion": false, 
-    "_content_type_materialtype": "text/plain", 
+    },
+    "ad_champion_text": "",
+    "ad_type": "HOUSE",
+    "aggregationlevel": 3,
+    "allowDiscussion": false,
+    "always_publish": false,
+    "bottomtext": "",
+    "category_features": [],
+    "constrainTypesMode": 0,
+    "contributor_list": [],
+    "contributors": [],
+    "course_identifier": "https://ocw.mit.edu/courses/earth-atmospheric-and-planetary-sciences/12-001-introduction-to-geology-fall-2013",
+    "course_linking": [],
+    "courselist_features": [],
+    "creation_date": "2014/12/03 16:45:50.711 US/Eastern",
     "creators": [
-        "rsharma20"
-    ], 
-    "courselist_features": [], 
-    "_ac_local_roles": {
-        "rsharma20": [
-            "Owner"
-        ]
-    }, 
-    "expirationDate": "None"
+        "Kcanavan"
+    ],
+    "description": "In this section, Prof. Perron shares insights about planning a good field trip.",
+    "duration": "",
+    "effectiveDate": "2014/12/03 17:06:29.092 US/Eastern",
+    "excludeFromNav": false,
+    "expirationDate": "None",
+    "feature_requirements": [],
+    "features_tracking": [],
+    "firstTimeEdit": true,
+    "has_inline_embed": false,
+    "hide_Page_title": false,
+    "id": "planning-a-good-field-trip",
+    "immediatelyAddableTypes": [
+        "OCWImage",
+        "CourseSection",
+        "OCWExtFile",
+        "OCWFile",
+        "MediaResource"
+    ],
+    "is_image_gallery": false,
+    "is_mathml_document": false,
+    "is_media_gallery": false,
+    "language": "",
+    "license": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/",
+    "list_in_left_nav": true,
+    "locallyAllowedTypes": [
+        "OCWImage",
+        "CourseSection",
+        "OCWExtFile",
+        "OCWFile",
+        "MediaResource"
+    ],
+    "location": "",
+    "materialtype": "Other",
+    "metadata_contributor_list": [],
+    "modification_date": "2016/09/24 06:40:07.908 GMT-4",
+    "nextPreviousEnabled": false,
+    "other_platform_requirements": "",
+    "parent_module": "d9aad1541f1a9d3c0f7b0dcf9531a9a1",
+    "parent_uid": "1c2cb2ad1c70fd66f19e20103dc94595",
+    "publisher": "MIT OpenCourseWare",
+    "related_mit_links": "",
+    "rights": "This site (c) Massachusetts Institute of Technology 2014.  Content within individual courses is (c) by the individual authors unless otherwise noted. The Massachusetts Institute of Technology is providing this Work (as defined below) under the terms of this Creative Commons public license (\"CCPL\" or \"license\") unless otherwise noted. The Work is protected by copyright and/or other applicable law. Any use of the work other than as authorized under this license is prohibited. By exercising any of the rights to the Work provided here, You (as defined below) accept and agree to be bound by the terms of this license. The Licensor, the Massachusetts Institute of Technology, grants You the rights contained here in consideration of Your acceptance of such terms and conditions.",
+    "section_identifier": "https://ocw.mit.edu/courses/earth-atmospheric-and-planetary-sciences/12-001-introduction-to-geology-fall-2013/instructor-insights",
+    "short_name_tlp": "",
+    "short_page_title": "Planning a Good Field Trip",
+    "software_requirements": [
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "40.0",
+            "software_name_col": "Chrome",
+            "software_type_col": "Browser"
+        },
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "8.0",
+            "software_name_col": "Safari",
+            "software_type_col": "Browser"
+        },
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "38.0",
+            "software_name_col": "Mozilla Firefox",
+            "software_type_col": "Browser"
+        },
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "9.0",
+            "software_name_col": "Internet Explorer",
+            "software_type_col": "Browser"
+        },
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "13.1",
+            "software_name_col": "Edge",
+            "software_type_col": "Browser"
+        }
+    ],
+    "subject": [],
+    "tcATmit_instructional_tags": [],
+    "tcATmit_subject_tags": [],
+    "technical_location": "https://ocw.mit.edu/courses/earth-atmospheric-and-planetary-sciences/12-001-introduction-to-geology-fall-2013/instructor-insights/planning-a-good-field-trip",
+    "text": "<p><i>In this section, Prof. Perron shares insights about planning a good field trip.</i></p> <div class=\"pullquote\" style=\"float: right; margin: -4px 0 auto 20px; padding-left: 20px; width: 150px; border-right: none; border-left: 1px solid #D5C9BA;\"><p class=\"quote\">The most important thing we do in planning a good field trip is providing students with a good story&mdash;a story that unfolds over the course of the field experience.</p> <p class=\"sig\" style=\"margin-top: 0;\">&mdash;Taylor Perron</p></div> <p>The most important thing we do in planning a good field trip is providing students with a good story&mdash;a story that unfolds over the course of the field experience. The story that we tell through our field trip to upstate New York is how supercontinents assemble and break apart. It&rsquo;s also the story of how oceans open and close. The theme of the trip is this cyclical process. We see two full cycles of the opening and closing of ocean basins on our drive from upstate New York to western Massachusetts.</p> <div style=\"float: left; margin: 0 20px 5px 0; width: 320px;\"><img width=\"320\" height=\"213\" src=\"./resolveuid/ac6c04d57955b585a812bd1d38d542b3\" alt=\"A mineral with a shiny luster and flaky cleavage.\" /><br /> <p class=\"instruction\">The luster and cleavage of this mica make it an easy mineral to identify. (Image by MIT OpenCourseWare.)</p></div> <p>We&rsquo;ve learned that it&rsquo;s important to give students enough of the story in advance, or at least in a companion guide, so that they realize how everything they observe, at each stop of the vans, fits into the big picture.  If students don&rsquo;t have enough of the story ahead of time, they become confused as they attempt to interpret various geological settings while also learning to read the rocks.  It can be challenging to see the &ldquo;big picture.&rdquo; So we try to give them the story and help them understand how everything they see fits together.  This helps students grasp the idea that geology is more than just picking up pieces of granite, in their hands, in the classroom and identifying minerals&mdash;but that being able to do so will help them tell the stories about processes that have happened over billions of years.</p> <p>So that&rsquo;s the first important thing about planning a good field trip: making sure there is a good story. Then, of course, there are the logistics. You want to make sure that you have time to make all of the stops on your itinerary.  You also need to ensure that the number of stops you&rsquo;re going to make will be enough to tell the story&mdash;and that the campground can accommodate the number of students and instructors in the class. If you&rsquo;re wet and hungry, the big picture story becomes less exciting.</p>",
+    "title": "Planning a Good Field Trip",
+    "unique_identifier": "https://ocw.mit.edu/courses/earth-atmospheric-and-planetary-sciences/12-001-introduction-to-geology-fall-2013/instructor-insights/planning-a-good-field-trip",
+    "url_rewrite_patterns": [],
+    "widgets_features": []
 }

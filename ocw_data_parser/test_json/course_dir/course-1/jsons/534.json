@@ -1,312 +1,312 @@
 {
-    "text": "<h2 class=\"subhead\">Additional Materials from the Textbook</h2> <p>The textbook for this course is:  <a href=\"http://www.amazon.com/exec/obidos/ASIN/0980232716/ref=nosim/mitopencourse-20\"><img src=\"/images/a_logo_17.gif\" alt=\"Buy at Amazon\" align=\"absMiddle\" border=\"0\" /></a> Strang, Gilbert. <em>Introduction to Linear Algebra</em>. 4th ed. <a href=\"http://www.wellesleycambridge.com/\">Wellesley-Cambridge Press</a>, 2009. ISBN: 9780980232714.</p> <p>The Table of Contents, Preface, and selected chapters are <a href=\"http://math.mit.edu/linearalgebra/\">freely available online</a>.</p> <p>There is newer edition of the book: <a href=\"http://www.amazon.com/exec/obidos/ASIN/0980232775/ref=nosim/mitopencourse-20\"><img alt=\"Buy at Amazon\" src=\"/images/a_logo_17.gif\" align=\"absmiddle\" border=\"0\" /></a> Strang, Gilbert. <em>Introduction to Linear Algebra</em>. 5th ed. <a href=\"http://www.wellesleycambridge.com/\">Wellesley-Cambridge Press</a>, 2016. ISBN: 9780980232776.</p> <p>NOTE: More material on linear algebra (and much more about differential equations) is in Professor Strang's 2014 textbook  <em><a href=\"http://www-math.mit.edu/~gs/dela\">Differential Equations and Linear Algebra</a></em>. In 2016, the textbook was developed into a series of 55 short videos,&nbsp;<em><a href=\"http://ocw.mit.edu/resources/res-18-009-learn-differential-equations-up-close-with-gilbert-strang-and-cleve-moler-fall-2015/index.htm\">Learn Differential Equations: Up Close with Gilbert Strang and Cleve Moler</a>.</em></p> <h2 class=\"subhead\">Previous Years' Problem Sets and Exams</h2> <p>Problem sets, quizzes, and exams from <a href=\"http://web.mit.edu/18.06/www/old.shtml\">previous years are also available</a>.</p>", 
-    "_content_type_license": "text/plain", 
-    "_uid": "554b504960907e6ae65566acc1c314b9", 
-    "title": "Study Materials", 
     "_ac_local_roles": {
         "cc_saror4": [
             "Owner"
         ]
-    }, 
-    "location": "", 
-    "_content_type_course_identifier": "text/plain", 
+    },
     "_atbrefs": {
         "isReferencing": [
-            "c13c4766c0cf1486f0cf6435c531eaad", 
+            "c13c4766c0cf1486f0cf6435c531eaad",
             "554b504960907e6ae65566acc1c314b9"
         ]
-    }, 
-    "constrainTypesMode": 0, 
-    "technical_location": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/study-materials", 
-    "software_requirements": [
-        {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "40.0", 
-            "software_name_col": "Chrome", 
-            "maximum_version_col": ""
-        }, 
-        {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "8.0", 
-            "software_name_col": "Safari", 
-            "maximum_version_col": ""
-        }, 
-        {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "38.0", 
-            "software_name_col": "Mozilla Firefox", 
-            "maximum_version_col": ""
-        }, 
-        {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "9.0", 
-            "software_name_col": "Internet Explorer", 
-            "maximum_version_col": ""
-        }, 
-        {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "13.1", 
-            "software_name_col": "Edge", 
-            "maximum_version_col": ""
-        }
-    ], 
-    "_content_type_technical_location": "text/plain", 
-    "_content_type_rights": "text/html", 
-    "_directly_provided": [
-        "Products.CMFEditions.interfaces.IVersioned"
-    ], 
-    "parent_uid": "aabc44bdb2e45374d62f30f2a6d4c63e", 
-    "excludeFromNav": false, 
-    "_content_type_unique_identifier": "text/plain", 
-    "allowDiscussion": false, 
-    "metadata_contributor_list": [], 
-    "locallyAllowedTypes": [
-        "OCWImage", 
-        "CourseSection", 
-        "OCWExtFile", 
-        "OCWFile"
-    ], 
-    "_content_type_text": "text/html", 
-    "ad_type": "HOUSE", 
-    "creation_date": "2010/05/14 12:21:50 GMT-4", 
-    "aggregationlevel": 3, 
-    "duration": "", 
-    "immediatelyAddableTypes": [
-        "OCWImage", 
-        "CourseSection", 
-        "OCWExtFile", 
-        "OCWFile"
-    ], 
-    "subject": [], 
-    "_content_type_short_page_title": "text/plain", 
-    "effectiveDate": "2010/05/26 14:44:08.310 GMT-4", 
-    "parent_module": "aabc44bdb2e45374d62f30f2a6d4c63e", 
-    "is_mathml_document": false, 
-    "bottomtext": "", 
-    "short_page_title": "Study Materials", 
-    "section_identifier": null, 
-    "related_mit_links": "", 
-    "_content_type_ad_type": "text/plain", 
-    "_layout": "custom_view", 
-    "_workflow_history": {
-        "page_workflow": [
-            {
-                "action": null, 
-                "review_state": "waiting_for_authoring", 
-                "actor": "admin", 
-                "comments": "", 
-                "time": "2010/05/14 12:21:50.005 GMT-4"
-            }, 
-            {
-                "action": "approve_to_staging", 
-                "review_state": "ready_for_staging", 
-                "comments": "", 
-                "actor": "admin", 
-                "time": "2010/05/16 11:42:29.406 GMT-4"
-            }, 
-            {
-                "action": "decline", 
-                "review_state": "waiting_for_authoring", 
-                "actor": "cc_acheta", 
-                "comments": "", 
-                "time": "2010/05/26 14:44:08.333 GMT-4"
-            }, 
-            {
-                "action": "approve_to_staging", 
-                "review_state": "ready_for_staging", 
-                "comments": "", 
-                "actor": "cc_acheta", 
-                "time": "2010/05/26 15:14:12.535 GMT-4"
-            }, 
-            {
-                "action": null, 
-                "review_state": "waiting_for_authoring", 
-                "comments": "", 
-                "actor": "cc_saror4", 
-                "time": "2010/08/17 00:14:22.900 GMT-4"
-            }, 
-            {
-                "action": "approve_to_staging", 
-                "review_state": "ready_for_staging", 
-                "actor": "cc_gegrov", 
-                "comments": "", 
-                "time": "2010/09/03 03:16:17.149 GMT-4"
-            }, 
-            {
-                "action": "decline", 
-                "review_state": "waiting_for_authoring", 
-                "actor": "cc_ajsing", 
-                "comments": "", 
-                "time": "2010/09/03 07:50:23.975 GMT-4"
-            }, 
-            {
-                "action": "approve_to_staging", 
-                "review_state": "ready_for_staging", 
-                "comments": "", 
-                "actor": "cc_ajsing", 
-                "time": "2010/09/03 09:34:13.078 GMT-4"
-            }, 
-            {
-                "action": "decline", 
-                "review_state": "waiting_for_authoring", 
-                "actor": "cc_saror4", 
-                "comments": "", 
-                "time": "2010/09/10 01:35:25.378 GMT-4"
-            }, 
-            {
-                "action": "approve_to_staging", 
-                "review_state": "ready_for_staging", 
-                "comments": "", 
-                "actor": "cc_gegrov", 
-                "time": "2010/09/10 06:06:08.225 GMT-4"
-            }, 
-            {
-                "action": "decline_to_qa", 
-                "review_state": "waiting_for_qa", 
-                "actor": "shellyu", 
-                "comments": "", 
-                "time": "2011/10/19 15:02:35.407 GMT-4"
-            }, 
-            {
-                "action": "approve_to_staging", 
-                "review_state": "ready_for_staging", 
-                "comments": "", 
-                "actor": "shellyu", 
-                "time": "2011/10/19 15:04:13.103 GMT-4"
-            }, 
-            {
-                "action": "decline_to_qa", 
-                "review_state": "waiting_for_qa", 
-                "actor": "eliz", 
-                "comments": "", 
-                "time": "2017/08/28 10:32:24.300 GMT-4"
-            }, 
-            {
-                "action": "approve_to_staging", 
-                "review_state": "ready_for_staging", 
-                "comments": "", 
-                "actor": "eliz", 
-                "time": "2017/08/28 11:10:18.835 GMT-4"
-            }, 
-            {
-                "action": "decline", 
-                "review_state": "waiting_for_authoring", 
-                "actor": "asingh33", 
-                "comments": "", 
-                "time": "2017/08/30 00:42:46.158 GMT-4"
-            }, 
-            {
-                "action": "approve_to_staging", 
-                "review_state": "ready_for_staging", 
-                "actor": "asingh33", 
-                "comments": "", 
-                "time": "2017/08/30 01:04:05.650 GMT-4"
-            }
-        ]
-    }, 
-    "_classname": "CourseSection", 
-    "_content_type_materialtype": "text/plain", 
-    "_userdefined_roles": [], 
-    "publisher": "MIT OpenCourseWare", 
-    "nextPreviousEnabled": false, 
-    "language": "", 
-    "url_rewrite_patterns": [], 
-    "widgets_features": [], 
-    "category_features": [], 
-    "firstTimeEdit": true, 
-    "feature_requirements": [], 
-    "list_in_left_nav": false, 
-    "short_name_tlp": "Study Materials", 
-    "expirationDate": "None", 
-    "_content_type_id": "text/plain", 
-    "contributor_list": [], 
-    "is_media_gallery": false, 
-    "contributors": [], 
-    "_gopip": 8, 
-    "_content_type_title": "text/plain", 
-    "course_linking": [], 
+    },
     "_atrefs": {
         "BelongsTo": [
             "aabc44bdb2e45374d62f30f2a6d4c63e"
-        ], 
+        ],
         "isReferencing": [
             "554b504960907e6ae65566acc1c314b9"
         ]
-    }, 
-    "other_platform_requirements": "", 
-    "license": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/", 
-    "rights": "This site (c) Massachusetts Institute of Technology 2010.  Content within individual courses is (c) by the individual authors unless otherwise noted. The Massachusetts Institute of Technology is providing this Work (as defined below) under the terms of this Creative Commons public license (\"CCPL\" or \"license\") unless otherwise noted. The Work is protected by copyright and/or other applicable law. Any use of the work other than as authorized under this license is prohibited. By exercising any of the rights to the Work provided here, You (as defined below) accept and agree to be bound by the terms of this license. The Licensor, the Massachusetts Institute of Technology, grants You the rights contained here in consideration of Your acceptance of such terms and conditions.", 
-    "hide_Page_title": false, 
-    "_defaultpage": "", 
-    "tcATmit_subject_tags": [], 
-    "features_tracking": [], 
-    "ad_champion_text": "", 
-    "has_inline_embed": false, 
-    "unique_identifier": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/study-materials", 
-    "is_image_gallery": false, 
-    "id": "study-materials", 
-    "materialtype": "Other", 
-    "_type": "CourseSection", 
-    "description": "This section provides information on additional materials from the course textbook and problem sets and exams from previous years.", 
-    "course_identifier": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010", 
-    "_content_type_publisher": "text/plain", 
-    "tcATmit_instructional_tags": [], 
-    "_content_type": "text/html", 
-    "creators": [
-        "admin"
-    ], 
-    "modification_date": "2017/08/30 01:04:05.619 GMT-4", 
-    "always_publish": false, 
-    "_content_type_description": "text/plain", 
-    "_owner": null, 
+    },
+    "_classname": "CourseSection",
+    "_content_type": "text/html",
+    "_content_type_ad_type": "text/plain",
+    "_content_type_course_identifier": "text/plain",
+    "_content_type_description": "text/plain",
+    "_content_type_id": "text/plain",
+    "_content_type_license": "text/plain",
+    "_content_type_materialtype": "text/plain",
+    "_content_type_publisher": "text/plain",
+    "_content_type_rights": "text/html",
+    "_content_type_short_name_tlp": "text/plain",
+    "_content_type_short_page_title": "text/plain",
+    "_content_type_technical_location": "text/plain",
+    "_content_type_text": "text/html",
+    "_content_type_title": "text/plain",
+    "_content_type_unique_identifier": "text/plain",
+    "_defaultpage": "",
+    "_directly_provided": [
+        "Products.CMFEditions.interfaces.IVersioned"
+    ],
+    "_gopip": 8,
+    "_id": "study-materials",
+    "_layout": "custom_view",
+    "_owner": null,
+    "_path": "/Plone/courses/mathematics/18-06-linear-algebra-spring-2010/study-materials",
     "_permissions": {
-        "Change portal events": {
-            "acquire": false, 
-            "roles": [
-                "Editor", 
-                "Manager", 
-                "MetadataEditor", 
-                "Owner"
-            ]
-        }, 
-        "Modify portal content": {
-            "acquire": false, 
-            "roles": [
-                "Manager", 
-                "MetadataEditor"
-            ]
-        }, 
         "Access contents information": {
-            "acquire": false, 
+            "acquire": false,
             "roles": [
                 "Authenticated"
             ]
-        }, 
-        "List folder contents": {
-            "acquire": false, 
+        },
+        "Change portal events": {
+            "acquire": false,
             "roles": [
-                "Editor", 
-                "Manager", 
-                "MetadataEditor", 
+                "Editor",
+                "Manager",
+                "MetadataEditor",
                 "Owner"
             ]
-        }, 
+        },
+        "List folder contents": {
+            "acquire": false,
+            "roles": [
+                "Editor",
+                "Manager",
+                "MetadataEditor",
+                "Owner"
+            ]
+        },
+        "Modify portal content": {
+            "acquire": false,
+            "roles": [
+                "Manager",
+                "MetadataEditor"
+            ]
+        },
         "View": {
-            "acquire": false, 
+            "acquire": false,
             "roles": [
                 "Authenticated"
             ]
         }
-    }, 
+    },
     "_properties": [
         [
-            "title", 
-            "Study Materials", 
+            "title",
+            "Study Materials",
             "string"
         ]
-    ], 
-    "_id": "study-materials", 
-    "courselist_features": [], 
-    "_content_type_short_name_tlp": "text/plain", 
-    "_path": "/Plone/courses/mathematics/18-06-linear-algebra-spring-2010/study-materials"
+    ],
+    "_type": "CourseSection",
+    "_uid": "554b504960907e6ae65566acc1c314b9",
+    "_userdefined_roles": [],
+    "_workflow_history": {
+        "page_workflow": [
+            {
+                "action": null,
+                "actor": "admin",
+                "comments": "",
+                "review_state": "waiting_for_authoring",
+                "time": "2010/05/14 12:21:50.005 GMT-4"
+            },
+            {
+                "action": "approve_to_staging",
+                "actor": "admin",
+                "comments": "",
+                "review_state": "ready_for_staging",
+                "time": "2010/05/16 11:42:29.406 GMT-4"
+            },
+            {
+                "action": "decline",
+                "actor": "cc_acheta",
+                "comments": "",
+                "review_state": "waiting_for_authoring",
+                "time": "2010/05/26 14:44:08.333 GMT-4"
+            },
+            {
+                "action": "approve_to_staging",
+                "actor": "cc_acheta",
+                "comments": "",
+                "review_state": "ready_for_staging",
+                "time": "2010/05/26 15:14:12.535 GMT-4"
+            },
+            {
+                "action": null,
+                "actor": "cc_saror4",
+                "comments": "",
+                "review_state": "waiting_for_authoring",
+                "time": "2010/08/17 00:14:22.900 GMT-4"
+            },
+            {
+                "action": "approve_to_staging",
+                "actor": "cc_gegrov",
+                "comments": "",
+                "review_state": "ready_for_staging",
+                "time": "2010/09/03 03:16:17.149 GMT-4"
+            },
+            {
+                "action": "decline",
+                "actor": "cc_ajsing",
+                "comments": "",
+                "review_state": "waiting_for_authoring",
+                "time": "2010/09/03 07:50:23.975 GMT-4"
+            },
+            {
+                "action": "approve_to_staging",
+                "actor": "cc_ajsing",
+                "comments": "",
+                "review_state": "ready_for_staging",
+                "time": "2010/09/03 09:34:13.078 GMT-4"
+            },
+            {
+                "action": "decline",
+                "actor": "cc_saror4",
+                "comments": "",
+                "review_state": "waiting_for_authoring",
+                "time": "2010/09/10 01:35:25.378 GMT-4"
+            },
+            {
+                "action": "approve_to_staging",
+                "actor": "cc_gegrov",
+                "comments": "",
+                "review_state": "ready_for_staging",
+                "time": "2010/09/10 06:06:08.225 GMT-4"
+            },
+            {
+                "action": "decline_to_qa",
+                "actor": "shellyu",
+                "comments": "",
+                "review_state": "waiting_for_qa",
+                "time": "2011/10/19 15:02:35.407 GMT-4"
+            },
+            {
+                "action": "approve_to_staging",
+                "actor": "shellyu",
+                "comments": "",
+                "review_state": "ready_for_staging",
+                "time": "2011/10/19 15:04:13.103 GMT-4"
+            },
+            {
+                "action": "decline_to_qa",
+                "actor": "eliz",
+                "comments": "",
+                "review_state": "waiting_for_qa",
+                "time": "2017/08/28 10:32:24.300 GMT-4"
+            },
+            {
+                "action": "approve_to_staging",
+                "actor": "eliz",
+                "comments": "",
+                "review_state": "ready_for_staging",
+                "time": "2017/08/28 11:10:18.835 GMT-4"
+            },
+            {
+                "action": "decline",
+                "actor": "asingh33",
+                "comments": "",
+                "review_state": "waiting_for_authoring",
+                "time": "2017/08/30 00:42:46.158 GMT-4"
+            },
+            {
+                "action": "approve_to_staging",
+                "actor": "asingh33",
+                "comments": "",
+                "review_state": "ready_for_staging",
+                "time": "2017/08/30 01:04:05.650 GMT-4"
+            }
+        ]
+    },
+    "ad_champion_text": "",
+    "ad_type": "HOUSE",
+    "aggregationlevel": 3,
+    "allowDiscussion": false,
+    "always_publish": false,
+    "bottomtext": "",
+    "category_features": [],
+    "constrainTypesMode": 0,
+    "contributor_list": [],
+    "contributors": [],
+    "course_identifier": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010",
+    "course_linking": [],
+    "courselist_features": [],
+    "creation_date": "2010/05/14 12:21:50 GMT-4",
+    "creators": [
+        "admin"
+    ],
+    "description": "This section provides information on additional materials from the course textbook and problem sets and exams from previous years.",
+    "duration": "",
+    "effectiveDate": "2010/05/26 14:44:08.310 GMT-4",
+    "excludeFromNav": false,
+    "expirationDate": "None",
+    "feature_requirements": [],
+    "features_tracking": [],
+    "firstTimeEdit": true,
+    "has_inline_embed": false,
+    "hide_Page_title": false,
+    "id": "study-materials",
+    "immediatelyAddableTypes": [
+        "OCWImage",
+        "CourseSection",
+        "OCWExtFile",
+        "OCWFile"
+    ],
+    "is_image_gallery": false,
+    "is_mathml_document": false,
+    "is_media_gallery": false,
+    "language": "",
+    "license": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/",
+    "list_in_left_nav": false,
+    "locallyAllowedTypes": [
+        "OCWImage",
+        "CourseSection",
+        "OCWExtFile",
+        "OCWFile"
+    ],
+    "location": "",
+    "materialtype": "Other",
+    "metadata_contributor_list": [],
+    "modification_date": "2017/08/30 01:04:05.619 GMT-4",
+    "nextPreviousEnabled": false,
+    "other_platform_requirements": "",
+    "parent_module": "aabc44bdb2e45374d62f30f2a6d4c63e",
+    "parent_uid": "aabc44bdb2e45374d62f30f2a6d4c63e",
+    "publisher": "MIT OpenCourseWare",
+    "related_mit_links": "",
+    "rights": "This site (c) Massachusetts Institute of Technology 2010.  Content within individual courses is (c) by the individual authors unless otherwise noted. The Massachusetts Institute of Technology is providing this Work (as defined below) under the terms of this Creative Commons public license (\"CCPL\" or \"license\") unless otherwise noted. The Work is protected by copyright and/or other applicable law. Any use of the work other than as authorized under this license is prohibited. By exercising any of the rights to the Work provided here, You (as defined below) accept and agree to be bound by the terms of this license. The Licensor, the Massachusetts Institute of Technology, grants You the rights contained here in consideration of Your acceptance of such terms and conditions.",
+    "section_identifier": null,
+    "short_name_tlp": "Study Materials",
+    "short_page_title": "Study Materials",
+    "software_requirements": [
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "40.0",
+            "software_name_col": "Chrome",
+            "software_type_col": "Browser"
+        },
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "8.0",
+            "software_name_col": "Safari",
+            "software_type_col": "Browser"
+        },
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "38.0",
+            "software_name_col": "Mozilla Firefox",
+            "software_type_col": "Browser"
+        },
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "9.0",
+            "software_name_col": "Internet Explorer",
+            "software_type_col": "Browser"
+        },
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "13.1",
+            "software_name_col": "Edge",
+            "software_type_col": "Browser"
+        }
+    ],
+    "subject": [],
+    "tcATmit_instructional_tags": [],
+    "tcATmit_subject_tags": [],
+    "technical_location": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/study-materials",
+    "text": "<h2 class=\"subhead\">Additional Materials from the Textbook</h2> <p>The textbook for this course is:  <a href=\"http://www.amazon.com/exec/obidos/ASIN/0980232716/ref=nosim/mitopencourse-20\"><img src=\"/images/a_logo_17.gif\" alt=\"Buy at Amazon\" align=\"absMiddle\" border=\"0\" /></a> Strang, Gilbert. <em>Introduction to Linear Algebra</em>. 4th ed. <a href=\"http://www.wellesleycambridge.com/\">Wellesley-Cambridge Press</a>, 2009. ISBN: 9780980232714.</p> <p>The Table of Contents, Preface, and selected chapters are <a href=\"http://math.mit.edu/linearalgebra/\">freely available online</a>.</p> <p>There is newer edition of the book: <a href=\"http://www.amazon.com/exec/obidos/ASIN/0980232775/ref=nosim/mitopencourse-20\"><img alt=\"Buy at Amazon\" src=\"/images/a_logo_17.gif\" align=\"absmiddle\" border=\"0\" /></a> Strang, Gilbert. <em>Introduction to Linear Algebra</em>. 5th ed. <a href=\"http://www.wellesleycambridge.com/\">Wellesley-Cambridge Press</a>, 2016. ISBN: 9780980232776.</p> <p>NOTE: More material on linear algebra (and much more about differential equations) is in Professor Strang's 2014 textbook  <em><a href=\"http://www-math.mit.edu/~gs/dela\">Differential Equations and Linear Algebra</a></em>. In 2016, the textbook was developed into a series of 55 short videos,&nbsp;<em><a href=\"http://ocw.mit.edu/resources/res-18-009-learn-differential-equations-up-close-with-gilbert-strang-and-cleve-moler-fall-2015/index.htm\">Learn Differential Equations: Up Close with Gilbert Strang and Cleve Moler</a>.</em></p> <h2 class=\"subhead\">Previous Years' Problem Sets and Exams</h2> <p>Problem sets, quizzes, and exams from <a href=\"http://web.mit.edu/18.06/www/old.shtml\">previous years are also available</a>.</p>",
+    "title": "Study Materials",
+    "unique_identifier": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/study-materials",
+    "url_rewrite_patterns": [],
+    "widgets_features": []
 }
