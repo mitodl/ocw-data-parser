@@ -451,7 +451,6 @@ def test_instructor_insights_divided_sections(ocw_parser_course_2):
     original_page = ocw_parser_course_2.jsons[5]
     page = ocw_parser_course_2.parsed_json["course_pages"][3]
     page_without_text = deepcopy(page)
-    keys = page_without_text.keys()
     del page_without_text["text"]
     assert page_without_text == {
         "order_index": 6,
