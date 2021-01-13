@@ -455,26 +455,17 @@ def test_instructor_insights_divided_sections(ocw_parser_course_2):
             del page_without_text[section]
     del page_without_text["text"]
     assert page_without_text == {
-        "file_location": "ede17211bd49ea166ed701f09c1de288_syllabus.html",
         "description": "In this section, Prof. Perron shares insights about co-teaching.",
         "file_location": "e843f795081ac616d0cebdff6e956e33_co-teaching.html",
         "is_image_gallery": False,
         "is_media_gallery": False,
-        "list_in_left_nav": False,
         "list_in_left_nav": True,
-        "order_index": 3,
         "order_index": 11,
-        "parent_uid": "aabc44bdb2e45374d62f30f2a6d4c63e",
-        "short_page_title": "Syllabus",
-        "short_url": "syllabus",
-        "title": "Syllabus",
         "parent_uid": "1c2cb2ad1c70fd66f19e20103dc94595",
         "short_page_title": "Co-Teaching",
         "short_url": "co-teaching",
         "title": "Co-Teaching",
         "type": "CourseSection",
-        "uid": "ede17211bd49ea166ed701f09c1de288",
-        "url": "/courses/mathematics/18-06-linear-algebra-spring-2010/syllabus",
         "uid": "e843f795081ac616d0cebdff6e956e33",
         "url": "/courses/earth-atmospheric-and-planetary-sciences/12-001-introduction-to-geology-fall-2013/instructor-insights/co-teaching",
     }
