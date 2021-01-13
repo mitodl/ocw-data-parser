@@ -62,6 +62,7 @@ def ocw_parser():
             static_prefix="static_files/",
         )
 
+
 @pytest.fixture(autouse=True, scope="function")
 def ocw_parser_course_2():
     """
