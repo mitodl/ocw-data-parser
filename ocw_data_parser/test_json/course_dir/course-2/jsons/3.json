@@ -1,65 +1,22 @@
 {
-    "list_in_left_nav": false, 
-    "tcATmit_subject_tags": [], 
-    "features_tracking": [], 
-    "widgets_features": [], 
-    "locallyAllowedTypes": [
-        "OCWImage", 
-        "SupplementalResourceSection", 
-        "OCWExtFile", 
-        "OCWFile", 
-        "MediaResource"
-    ], 
-    "has_inline_embed": false, 
-    "_content_type_text": "text/html", 
-    "unique_identifier": "https://ocw.mit.edu/resources/res-str-001-geographic-information-system-gis-tutorial-january-iap-2016/introduction-to-gis", 
-    "text": "<p>The following materials were drawn from two introductory GIS workshops given at MIT during IAP 2016 <img src=\"/images/educator/icon-question-iap.png\" class=\"question\" alt=\"\" />. They cover the basics of GIS, including data types, metadata, data sources, various GIS software options, multi-step GIS analysis, and automation.</p> <p><em>Note: QGIS is a free and open source Geographic Information System maintained by the </em><a href=\"http://www.qgis.org/en/site/\"><em>QGIS Project</em></a><em> and is available to OCW users. </em><a href=\"https://www.arcgis.com/features/\"><em>ArcGIS</em></a><em> is paid software available to the MIT community but not freely available to OCW users.</em></p> <div class=\"maintabletemplate\"><table summary=\"See table caption for summary.\">     <caption class=\"invisible\">Course workshop.</caption>  <!-- BEGIN TABLE HEADER (for MIT OCW Table Template 2.51) -->     <thead>         <tr>             <th scope=\"col\">WORKSHOP&nbsp;PRESENTATION</th>             <th scope=\"col\">ARCGIS&nbsp;EXERCISE</th>             <th scope=\"col\">QGIS&nbsp;EXERCISE</th>             <th scope=\"col\">SAMPLE&nbsp;DATA</th>         </tr>     </thead>     <!-- END TABLE HEADER -->     <tbody>         <tr class=\"row\">             <td><span class=\"nobr\"><a href=\"./resolveuid/5b24f942b9d6359381d3934a9afa7377\">Introduction to GIS I (PDF - 4.7MB)</a></span></td>             <td><a href=\"./resolveuid/1dad9efd1e84ee7d3fcb235dae091841\">ArcGIS Exercise I (PDF - 1.1MB)</a></td>             <td><a href=\"./resolveuid/a29f5c524fb3f11120c88124905ec45e\">QGIS Exercise I (PDF - 1.3MB)</a></td>             <td><a href=\"http://ocw.mit.edu/ans7870/RES/RES.STR-001/SampleDataI.zip\">Sample Data I (ZIP - 33.4MB)</a> (This zip file contains 2.cts, 6.dbf, 6.prj, 8.shp, 4.xml, 6.shx, 4.sbn and .4sbx file.)</td>         </tr>         <tr class=\"alt-row\">             <td><span class=\"nobr\"><a href=\"./resolveuid/a50b6e6b6d8e88e9e653fb02085724b1\">Introduction to GIS II (PDF - 1.4MB)</a></span></td>             <td><a href=\"./resolveuid/d96872203a1900a59560b3007abd03e3\">ArcGIS Exercise II (PDF - 1.1MB)</a></td>             <td><a href=\"./resolveuid/d023fa54e6b4f869ecbf1d7519621f68\">QGIS Exercise II (PDF - 1.4MB)</a></td>             <td><p><a href=\"http://ocw.mit.edu/ans7870/RES/RES.STR-001/SampleDataIIa.zip\">Sample Data IIa (ZIP - 11.6MB)</a> (This zip files contains 3.cpj, 4.dbf, 4.prj, 3.sbn, 3.sbx, 4.shp, 3.xml, , 3.shx, 2.cpg and 1 Microsoft Excel Comma SperatedValue file.)</p>             <p><a href=\"./resolveuid/def0c1483f1ad7da6f9bb9fc616ffe1c\">Sample Data IIb (ZIP - 2.4MB)</a> (This zip file contains 2.dbf, 2.prj, 3.shp, 2.shx, 1.sbn, 1.sbx. file.)</p></td>         </tr>         <!-- TEN ROWS -->     </tbody> </table></div>", 
-    "_content_type_publisher": "text/plain", 
+    "text": "<p><img width=\"780\" height=\"284\" alt=\"A U-shaped valley.\" src=\"./resolveuid/4f199a18bc4ad7f0f6e8ffa79ece47e6\" /></p>  <p class=\"instruction\">The Ordesa Valley in the Spanish Pyrenees was carved by a glacier. (Photograph courtesy of Taylor Perron.)</p> <h2 class=\"subhead\">Course Meeting Times</h2> <p>Lectures and Labs: 3 sessions per week, 2 hour per session</p> <h2 class=\"subhead\">Description</h2> <p>Continents collide, oceans form and disappear, new land is constantly created and old land constantly destroyed. The Earth freezes over, volcanoes give lava to the land and gases to the atmosphere. The ice melts, glaciers turn into rivers, which cut through mountains as those mountains fall apart in landslides and debris flows. Life begins and everything changes. These are physical, chemical and biological problems, but understanding them requires us to constantly think in four dimensions, on time and length scales from atoms and nanoseconds to thousands of miles and billions of years. We will apply the fundamental sciences to the Earth system, and learn to read the history of the Earth in its rocks and their mineral constituents.</p> <p>Geology is the core discipline of the earth sciences and encompasses many different phenomena, including plate tectonics and mountain building, volcanoes and earthquakes, and the long-term evolution of Earth&rsquo;s atmosphere, surface and life. Because of the ever-increasing demand for resources, the growing exposure to natural hazards, and the changing climate, geology is of considerable societal relevance. This course introduces students to the basics of geology. Through a combination of lectures, labs, and field observations, we will address topics ranging from mineral and rock identification to the origin of the continents, from geologic mapping to plate tectonics, and from erosion by rivers and glaciers to the history of life.</p> <h2 class=\"subhead\">Prerequisites</h2> <p>The course is designed to be accessible to students from all disciplines. No geology background is assumed.</p> <h2 class=\"subhead\">Course Structure</h2> <p>The course consists of lectures, laboratory exercises, and one weekend field trip, all of which are mandatory. The material presented in lectures roughly parallels the topics of the field trip and lab exercises. Some labs will be used to prepare for the field trip and subsequently analyze field observations and measurements. There are four quizzes in the course.</p> <h2 class=\"subhead\">Assessment</h2> <h3 class=\"subsubhead\">Grading</h3> <div class=\"maintabletemplate\"><table summary=\"See table caption for summary.\" class=\"tablewidth50\">     <caption class=\"invisible\">Grading criteria.</caption>  <!-- BEGIN TABLE HEADER (for MIT OCW Table Template 2.51) -->     <thead>         <tr>             <th scope=\"col\">ACTIVITIES</th>             <th scope=\"col\">PERCENTAGES</th>         </tr>     </thead>     <!-- END TABLE HEADER -->     <tbody>         <tr class=\"row\">             <td>Field Trip Report, Lab Reports, and Exercises</td>             <td>60</td>         </tr>         <tr class=\"alt-row\">             <td>Quizzes (4)</td>             <td>35</td>         </tr>         <tr class=\"row\">             <td>Class Participation</td>             <td>5</td>         </tr>         <!-- TEN ROWS -->     </tbody> </table></div> <p>The first quiz and the field trip exercise together count for one quiz. Reports will be evaluated on clarity of presentation as well as soundness of analysis. The &quot;rock of the week&quot; exercises distributed every Friday throughout the semester will be equivalent to one lab.</p> <h3 class=\"subsubhead\">Collaboration</h3> <p>Students are encouraged to collaborate on laboratory exercises, but each student must perform all the required calculations and write his / her own reports. Students who submit work that is not their own will receive no credit for the assignment.</p> <h3 class=\"subsubhead\">Late Assignments and Missed Field Trips</h3> <p>Late assignments will be penalized one fractional letter grade (a +/- unit) per day late. Missed field trips must be excused in advance, and students must instead prepare a major written report and oral presentation on a related topic that will be assigned.</p> <h2 class=\"subhead\">Course Materials</h2> <h3 class=\"subsubhead\">Textbook</h3> <p><a href=\"http://www.amazon.com/exec/obidos/ASIN/0716766825/ref=nosim/mitopencourse-20\"><img border=\"0\" align=\"absMiddle\" alt=\"Amazon logo\" src=\"/images/a_logo_17.gif\" /></a> Grotzinger, \ufeffJohn and Thomas H. Jordan. <em>Understanding Earth</em>. W. H. Freeman and Company, 2006. ISBN: 9780716766827.\ufeff</p> <p>Quizzes may include material from assigned readings, even if it is not covered in lecture.</p> <h3 class=\"subsubhead\">Labs</h3> <p>Colored pencils, ruler, and calculator. Hand lenses for mineral identification will be made available to students for the labs.</p> <h3 class=\"subsubhead\">Field Trip</h3> <p>All students will need sufficient clothing and footwear to stay warm and (mostly) dry in changeable weather conditions.</p>", 
     "_content_type_license": "text/plain", 
-    "ad_type": "HOUSE", 
-    "creation_date": "2016/03/01 11:50:43.123 US/Eastern", 
-    "aggregationlevel": 3, 
-    "is_image_gallery": false, 
-    "_uid": "b500ca0acd5e89c3277a5218c379bbb8", 
-    "hide_Page_title": false, 
-    "_content_type_id": "text/plain", 
-    "immediatelyAddableTypes": [
-        "OCWImage", 
-        "SupplementalResourceSection", 
-        "OCWExtFile", 
-        "OCWFile", 
-        "MediaResource"
-    ], 
-    "category_features": [], 
-    "id": "introduction-to-gis", 
-    "is_media_gallery": false, 
-    "subject": [], 
-    "_content_type_short_page_title": "text/plain", 
-    "related_mit_links": "", 
-    "contributors": [], 
-    "effectiveDate": "2016/03/07 00:06:05.265 US/Eastern", 
-    "title": "Introduction to GIS", 
-    "parent_module": "236793a57f96cf26ea0aec0ca35bd118", 
-    "_content_type_ad_type": "text/plain", 
-    "_userdefined_roles": [], 
-    "is_mathml_document": false, 
-    "_gopip": 1, 
+    "_uid": "ce088e3778d0b7c9c849d4b38b029687", 
+    "title": "Syllabus", 
+    "_ac_local_roles": {
+        "pgandhi3": [
+            "Owner"
+        ]
+    }, 
     "location": "", 
-    "bottomtext": "", 
-    "short_page_title": "Introduction to GIS", 
-    "_content_type_title": "text/plain", 
-    "feature_requirements": [], 
+    "_content_type_course_identifier": "text/plain", 
     "_atbrefs": {
         "isReferencing": [
-            "b500ca0acd5e89c3277a5218c379bbb8"
+            "ce088e3778d0b7c9c849d4b38b029687"
         ]
     }, 
     "constrainTypesMode": 0, 
-    "_content_type": "text/html", 
-    "_type": "SupplementalResourceSection", 
-    "technical_location": "https://ocw.mit.edu/resources/res-str-001-geographic-information-system-gis-tutorial-january-iap-2016/introduction-to-gis", 
-    "description": "This section contains two presentations introducing GIS and two practice exercises for different software packages.", 
-    "short_name_tlp": "", 
+    "technical_location": "https://ocw.mit.edu/courses/earth-atmospheric-and-planetary-sciences/12-001-introduction-to-geology-fall-2013/syllabus", 
     "software_requirements": [
         {
             "software_type_col": "Browser", 
@@ -93,290 +50,329 @@
         }
     ], 
     "_content_type_technical_location": "text/plain", 
-    "_layout": "custom_view", 
-    "_properties": [
-        [
-            "title", 
-            "Introduction to GIS", 
-            "string"
-        ]
+    "_content_type_rights": "text/html", 
+    "_directly_provided": [
+        "Products.CMFEditions.interfaces.IVersioned"
     ], 
+    "parent_uid": "d9aad1541f1a9d3c0f7b0dcf9531a9a1", 
+    "excludeFromNav": false, 
+    "_content_type_unique_identifier": "text/plain", 
+    "allowDiscussion": false, 
+    "metadata_contributor_list": [], 
+    "locallyAllowedTypes": [
+        "OCWImage", 
+        "CourseSection", 
+        "OCWExtFile", 
+        "OCWFile", 
+        "MediaResource"
+    ], 
+    "_content_type_text": "text/html", 
+    "ad_type": "HOUSE", 
+    "creation_date": "2014/09/25 02:11:03.872 GMT-4", 
+    "aggregationlevel": 3, 
+    "duration": "", 
+    "immediatelyAddableTypes": [
+        "OCWImage", 
+        "CourseSection", 
+        "OCWExtFile", 
+        "OCWFile", 
+        "MediaResource"
+    ], 
+    "subject": [], 
+    "_content_type_short_page_title": "text/plain", 
+    "effectiveDate": "2014/09/25 07:52:56.719 GMT-4", 
+    "parent_module": "d9aad1541f1a9d3c0f7b0dcf9531a9a1", 
+    "is_mathml_document": false, 
+    "bottomtext": "", 
+    "short_page_title": "Syllabus", 
+    "section_identifier": null, 
+    "related_mit_links": "", 
+    "_content_type_ad_type": "text/plain", 
+    "_layout": "custom_view", 
     "_workflow_history": {
         "page_workflow": [
             {
                 "action": null, 
                 "review_state": "waiting_for_authoring", 
                 "comments": "", 
-                "actor": "rsharma20", 
-                "time": "2016/03/01 11:50:43.133 US/Eastern"
+                "actor": "pgandhi3", 
+                "time": "2014/09/25 02:11:03.908 GMT-4"
             }, 
             {
                 "action": "approve_to_staging", 
                 "review_state": "ready_for_staging", 
+                "actor": "rverma83", 
                 "comments": "", 
-                "actor": "rsharma20", 
-                "time": "2016/03/07 00:06:05.340 US/Eastern"
-            }, 
-            {
-                "action": "decline", 
-                "review_state": "waiting_for_authoring", 
-                "actor": "rsharma20", 
-                "comments": "", 
-                "time": "2016/03/07 23:54:45.650 US/Eastern"
-            }, 
-            {
-                "action": "approve_to_staging", 
-                "review_state": "ready_for_staging", 
-                "comments": "", 
-                "actor": "rsharma20", 
-                "time": "2016/03/07 23:58:31.551 US/Eastern"
+                "time": "2014/09/25 07:52:56.883 GMT-4"
             }, 
             {
                 "action": "decline", 
                 "review_state": "waiting_for_authoring", 
                 "comments": "", 
-                "actor": "rsharma20", 
-                "time": "2016/03/09 00:03:32.535 US/Eastern"
+                "actor": "pgandhi3", 
+                "time": "2014/09/25 11:34:53.113 GMT-4"
             }, 
             {
                 "action": "approve_to_staging", 
                 "review_state": "ready_for_staging", 
+                "actor": "pgandhi3", 
                 "comments": "", 
-                "actor": "rsharma20", 
-                "time": "2016/03/09 00:07:38.159 US/Eastern"
-            }, 
-            {
-                "action": "decline", 
-                "review_state": "waiting_for_authoring", 
-                "actor": "rnagar6", 
-                "comments": "", 
-                "time": "2016/03/09 08:17:25.627 US/Eastern"
-            }, 
-            {
-                "action": "approve_to_staging", 
-                "review_state": "ready_for_staging", 
-                "comments": "", 
-                "actor": "rnagar6", 
-                "time": "2016/03/09 08:37:33.539 US/Eastern"
+                "time": "2014/09/25 11:43:16.005 GMT-4"
             }, 
             {
                 "action": "decline", 
                 "review_state": "waiting_for_authoring", 
                 "comments": "", 
-                "actor": "rsharma20", 
-                "time": "2016/03/09 23:09:49.762 US/Eastern"
+                "actor": "pgandhi3", 
+                "time": "2014/09/30 23:23:03.443 GMT-4"
             }, 
             {
                 "action": "approve_to_staging", 
                 "review_state": "ready_for_staging", 
                 "comments": "", 
-                "actor": "rsharma20", 
-                "time": "2016/03/09 23:12:54.339 US/Eastern"
+                "actor": "pgandhi3", 
+                "time": "2014/09/30 23:42:10.875 GMT-4"
             }, 
             {
                 "action": "decline", 
                 "review_state": "waiting_for_authoring", 
-                "actor": "rsharma20", 
+                "actor": "pgandhi3", 
                 "comments": "", 
-                "time": "2016/03/09 23:24:59.844 US/Eastern"
+                "time": "2014/10/01 03:25:52.276 GMT-4"
             }, 
             {
                 "action": "approve_to_staging", 
                 "review_state": "ready_for_staging", 
                 "comments": "", 
-                "actor": "rsharma20", 
-                "time": "2016/03/10 00:04:21.757 US/Eastern"
+                "actor": "pgandhi3", 
+                "time": "2014/10/01 03:55:03.005 GMT-4"
             }, 
             {
                 "action": "decline", 
                 "review_state": "waiting_for_authoring", 
-                "actor": "srani11", 
+                "actor": "ndhamija", 
                 "comments": "", 
-                "time": "2016/03/10 02:11:49.116 US/Eastern"
+                "time": "2014/10/07 01:41:26.798 GMT-4"
             }, 
             {
                 "action": "approve_to_staging", 
                 "review_state": "ready_for_staging", 
                 "comments": "", 
-                "actor": "srani11", 
-                "time": "2016/03/10 03:00:41.173 US/Eastern"
+                "actor": "pgandhi3", 
+                "time": "2014/10/08 09:23:11.116 GMT-4"
             }, 
             {
                 "action": "decline", 
                 "review_state": "waiting_for_authoring", 
-                "actor": "srani11", 
+                "actor": "ndhamija", 
                 "comments": "", 
-                "time": "2016/03/11 01:50:43.512 US/Eastern"
+                "time": "2014/10/22 01:52:29.239 GMT-4"
             }, 
             {
                 "action": "approve_to_staging", 
                 "review_state": "ready_for_staging", 
-                "actor": "srani11", 
                 "comments": "", 
-                "time": "2016/03/11 01:53:12.459 US/Eastern"
+                "actor": "ndhamija", 
+                "time": "2014/10/22 01:57:08.113 GMT-4"
+            }, 
+            {
+                "action": "decline", 
+                "review_state": "waiting_for_authoring", 
+                "actor": "ndhamija", 
+                "comments": "", 
+                "time": "2014/10/22 02:09:59.840 GMT-4"
+            }, 
+            {
+                "action": "approve_to_staging", 
+                "review_state": "ready_for_staging", 
+                "comments": "", 
+                "actor": "ndhamija", 
+                "time": "2014/10/22 02:11:03.199 GMT-4"
+            }, 
+            {
+                "action": "decline", 
+                "review_state": "waiting_for_authoring", 
+                "actor": "ndhamija", 
+                "comments": "", 
+                "time": "2014/10/22 02:29:25.074 GMT-4"
+            }, 
+            {
+                "action": "approve_to_staging", 
+                "review_state": "ready_for_staging", 
+                "comments": "", 
+                "actor": "ndhamija", 
+                "time": "2014/10/22 02:58:48.421 GMT-4"
             }, 
             {
                 "action": "decline", 
                 "review_state": "waiting_for_authoring", 
                 "comments": "", 
-                "actor": "srani11", 
-                "time": "2016/03/11 04:48:04.984 US/Eastern"
+                "actor": "ndhamija", 
+                "time": "2014/10/22 03:14:31.639 GMT-4"
             }, 
             {
                 "action": "approve_to_staging", 
                 "review_state": "ready_for_staging", 
+                "actor": "ndhamija", 
                 "comments": "", 
-                "actor": "srani11", 
-                "time": "2016/03/11 05:12:43.909 US/Eastern"
+                "time": "2014/10/22 03:36:21.312 GMT-4"
             }, 
             {
                 "action": "decline", 
                 "review_state": "waiting_for_authoring", 
-                "actor": "asingh33", 
                 "comments": "", 
-                "time": "2016/03/11 05:33:22.555 US/Eastern"
+                "actor": "ndhamija", 
+                "time": "2014/10/30 07:22:32.826 GMT-4"
             }, 
             {
                 "action": "approve_to_staging", 
                 "review_state": "ready_for_staging", 
                 "comments": "", 
-                "actor": "asingh33", 
-                "time": "2016/03/11 05:35:02.372 US/Eastern"
-            }, 
-            {
-                "action": "decline", 
-                "review_state": "waiting_for_authoring", 
-                "actor": "sbabbar", 
-                "comments": "", 
-                "time": "2016/03/11 06:10:19.729 US/Eastern"
-            }, 
-            {
-                "action": "approve_to_staging", 
-                "review_state": "ready_for_staging", 
-                "comments": "", 
-                "actor": "asingh33", 
-                "time": "2016/03/11 06:23:47.451 US/Eastern"
+                "actor": "ndhamija", 
+                "time": "2014/10/30 07:23:06.259 GMT-4"
             }, 
             {
                 "action": "decline_to_qa", 
                 "review_state": "waiting_for_qa", 
-                "actor": "brem", 
+                "actor": "aimeeg", 
                 "comments": "", 
-                "time": "2016/03/14 12:08:31.042 GMT-4"
+                "time": "2014/11/03 14:12:17.724 US/Eastern"
+            }, 
+            {
+                "action": "approve_to_staging", 
+                "review_state": "ready_for_staging", 
+                "actor": "aimeeg", 
+                "comments": "", 
+                "time": "2014/11/03 14:15:00.461 US/Eastern"
+            }, 
+            {
+                "action": "decline_to_qa", 
+                "review_state": "waiting_for_qa", 
+                "actor": "aimeeg", 
+                "comments": "", 
+                "time": "2014/11/03 14:27:17.319 US/Eastern"
+            }, 
+            {
+                "action": "approve_to_staging", 
+                "review_state": "ready_for_staging", 
+                "comments": "", 
+                "actor": "aimeeg", 
+                "time": "2014/11/03 14:41:12.341 US/Eastern"
+            }, 
+            {
+                "action": "decline", 
+                "review_state": "waiting_for_authoring", 
+                "actor": "pgandhi3", 
+                "comments": "", 
+                "time": "2014/11/04 01:51:52.669 US/Eastern"
+            }, 
+            {
+                "action": "approve_to_staging", 
+                "review_state": "ready_for_staging", 
+                "actor": "pgandhi3", 
+                "comments": "", 
+                "time": "2014/11/04 01:51:58.783 US/Eastern"
             }, 
             {
                 "action": "decline", 
                 "review_state": "waiting_for_authoring", 
                 "comments": "", 
-                "actor": "brem", 
-                "time": "2016/03/14 12:18:16.983 GMT-4"
+                "actor": "ndhamija", 
+                "time": "2014/11/04 04:12:50.922 US/Eastern"
             }, 
             {
                 "action": "approve_to_staging", 
                 "review_state": "ready_for_staging", 
-                "actor": "brem", 
+                "actor": "ndhamija", 
                 "comments": "", 
-                "time": "2016/03/14 12:19:59.724 GMT-4"
+                "time": "2014/11/04 04:36:40.064 US/Eastern"
             }, 
             {
-                "action": "decline_to_qa", 
-                "review_state": "waiting_for_qa", 
-                "actor": "brem", 
+                "action": "decline", 
+                "review_state": "waiting_for_authoring", 
                 "comments": "", 
-                "time": "2016/03/14 12:20:03.573 GMT-4"
-            }, 
-            {
-                "action": "approve_to_staging", 
-                "review_state": "ready_for_staging", 
-                "actor": "brem", 
-                "comments": "", 
-                "time": "2016/03/14 12:20:45.095 GMT-4"
-            }, 
-            {
-                "action": "decline_to_qa", 
-                "review_state": "waiting_for_qa", 
-                "actor": "brem", 
-                "comments": "", 
-                "time": "2016/03/15 11:02:30.596 GMT-4"
+                "actor": "ndhamija", 
+                "time": "2014/11/04 05:12:45.257 US/Eastern"
             }, 
             {
                 "action": "approve_to_staging", 
                 "review_state": "ready_for_staging", 
                 "comments": "", 
-                "actor": "brem", 
-                "time": "2016/03/15 11:02:56.438 GMT-4"
+                "actor": "ndhamija", 
+                "time": "2014/11/04 05:14:15.638 US/Eastern"
             }, 
             {
-                "action": "decline_to_qa", 
-                "review_state": "waiting_for_qa", 
-                "actor": "brem", 
+                "action": "decline", 
+                "review_state": "waiting_for_authoring", 
                 "comments": "", 
-                "time": "2016/03/15 11:05:00.308 GMT-4"
-            }, 
-            {
-                "action": "approve_to_staging", 
-                "review_state": "ready_for_staging", 
-                "comments": "", 
-                "actor": "brem", 
-                "time": "2016/03/15 11:06:15.873 GMT-4"
-            }, 
-            {
-                "action": "decline_to_qa", 
-                "review_state": "waiting_for_qa", 
-                "actor": "brem", 
-                "comments": "", 
-                "time": "2016/03/23 15:40:55.103 GMT-4"
+                "actor": "ndhamija", 
+                "time": "2014/11/05 02:05:30.940 US/Eastern"
             }, 
             {
                 "action": "approve_to_staging", 
                 "review_state": "ready_for_staging", 
-                "actor": "brem", 
+                "actor": "ndhamija", 
                 "comments": "", 
-                "time": "2016/03/23 15:41:03.738 GMT-4"
+                "time": "2014/11/05 02:07:21.783 US/Eastern"
             }
         ]
     }, 
-    "_content_type_rights": "text/html", 
-    "_atrefs": {
-        "BelongsTo": [
-            "236793a57f96cf26ea0aec0ca35bd118"
-        ], 
-        "isReferencing": [
-            "1dad9efd1e84ee7d3fcb235dae091841", 
-            "a50b6e6b6d8e88e9e653fb02085724b1", 
-            "d96872203a1900a59560b3007abd03e3", 
-            "d023fa54e6b4f869ecbf1d7519621f68", 
-            "5b24f942b9d6359381d3934a9afa7377", 
-            "a29f5c524fb3f11120c88124905ec45e", 
-            "b500ca0acd5e89c3277a5218c379bbb8", 
-            "def0c1483f1ad7da6f9bb9fc616ffe1c"
-        ]
-    }, 
-    "_directly_provided": [
-        "Products.CMFEditions.interfaces.IVersioned"
-    ], 
-    "_path": "/Plone/resources/res-str-001-geographic-information-system-gis-tutorial-january-iap-2016/introduction-to-gis", 
-    "_classname": "SupplementalResourceSection", 
-    "metadata_contributor_list": [], 
-    "tcATmit_instructional_tags": [], 
-    "parent_uid": "236793a57f96cf26ea0aec0ca35bd118", 
-    "modification_date": "2016/09/24 00:08:22.946 GMT-4", 
-    "course_linking": [], 
+    "_classname": "CourseSection", 
+    "_content_type_materialtype": "text/plain", 
+    "_userdefined_roles": [], 
     "publisher": "MIT OpenCourseWare", 
-    "excludeFromNav": false, 
     "nextPreviousEnabled": false, 
     "language": "", 
-    "license": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/", 
-    "rights": "This site (c) Massachusetts Institute of Technology 2016.  Content within individual courses is (c) by the individual authors unless otherwise noted. The Massachusetts Institute of Technology is providing this Work (as defined below) under the terms of this Creative Commons public license (\"CCPL\" or \"license\") unless otherwise noted. The Work is protected by copyright and/or other applicable law. Any use of the work other than as authorized under this license is prohibited. By exercising any of the rights to the Work provided here, You (as defined below) accept and agree to be bound by the terms of this license. The Licensor, the Massachusetts Institute of Technology, grants You the rights contained here in consideration of Your acceptance of such terms and conditions.", 
     "url_rewrite_patterns": [], 
-    "always_publish": false, 
-    "_id": "introduction-to-gis", 
+    "widgets_features": [], 
+    "category_features": [], 
+    "firstTimeEdit": true, 
+    "feature_requirements": [], 
+    "list_in_left_nav": false, 
+    "short_name_tlp": "", 
+    "expirationDate": "None", 
+    "_content_type_id": "text/plain", 
+    "contributor_list": [], 
+    "is_media_gallery": false, 
+    "contributors": [], 
+    "_gopip": 1, 
+    "_content_type_title": "text/plain", 
+    "course_linking": [], 
+    "_atrefs": {
+        "BelongsTo": [
+            "d9aad1541f1a9d3c0f7b0dcf9531a9a1"
+        ], 
+        "isReferencing": [
+            "ce088e3778d0b7c9c849d4b38b029687", 
+            "4f199a18bc4ad7f0f6e8ffa79ece47e6"
+        ]
+    }, 
+    "other_platform_requirements": "", 
+    "license": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/", 
+    "rights": "This site (c) Massachusetts Institute of Technology 2014.  Content within individual courses is (c) by the individual authors unless otherwise noted. The Massachusetts Institute of Technology is providing this Work (as defined below) under the terms of this Creative Commons public license (\"CCPL\" or \"license\") unless otherwise noted. The Work is protected by copyright and/or other applicable law. Any use of the work other than as authorized under this license is prohibited. By exercising any of the rights to the Work provided here, You (as defined below) accept and agree to be bound by the terms of this license. The Licensor, the Massachusetts Institute of Technology, grants You the rights contained here in consideration of Your acceptance of such terms and conditions.", 
+    "hide_Page_title": false, 
+    "_defaultpage": "", 
+    "tcATmit_subject_tags": [], 
+    "features_tracking": [], 
+    "ad_champion_text": "", 
+    "has_inline_embed": false, 
+    "unique_identifier": "https://ocw.mit.edu/courses/earth-atmospheric-and-planetary-sciences/12-001-introduction-to-geology-fall-2013/syllabus", 
+    "is_image_gallery": false, 
+    "id": "syllabus", 
     "materialtype": "Other", 
-    "_content_type_unique_identifier": "text/plain", 
+    "_type": "CourseSection", 
+    "description": "This syllabus section provides the course description and information on meeting times, prerequisites, course structure, assessment, and course materials.", 
+    "course_identifier": "https://ocw.mit.edu/courses/earth-atmospheric-and-planetary-sciences/12-001-introduction-to-geology-fall-2013", 
+    "_content_type_publisher": "text/plain", 
+    "tcATmit_instructional_tags": [], 
+    "_content_type": "text/html", 
+    "creators": [
+        "pgandhi3"
+    ], 
+    "modification_date": "2017/04/13 01:23:27.482 GMT-4", 
+    "always_publish": false, 
     "_content_type_description": "text/plain", 
     "_owner": null, 
-    "_defaultpage": "", 
-    "firstTimeEdit": true, 
     "_permissions": {
         "Change portal events": {
             "acquire": false, 
@@ -416,17 +412,14 @@
             ]
         }
     }, 
-    "ad_champion_text": "", 
-    "allowDiscussion": false, 
-    "_content_type_materialtype": "text/plain", 
-    "creators": [
-        "rsharma20"
-    ], 
-    "courselist_features": [], 
-    "_ac_local_roles": {
-        "rsharma20": [
-            "Owner"
+    "_properties": [
+        [
+            "title", 
+            "Syllabus", 
+            "string"
         ]
-    }, 
-    "expirationDate": "None"
+    ], 
+    "_id": "syllabus", 
+    "courselist_features": [], 
+    "_path": "/Plone/courses/earth-atmospheric-and-planetary-sciences/12-001-introduction-to-geology-fall-2013/syllabus"
 }

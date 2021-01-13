@@ -1,65 +1,23 @@
 {
-    "list_in_left_nav": false, 
-    "tcATmit_subject_tags": [], 
-    "features_tracking": [], 
-    "widgets_features": [], 
-    "locallyAllowedTypes": [
-        "OCWImage", 
-        "SupplementalResourceSection", 
-        "OCWExtFile", 
-        "OCWFile", 
-        "MediaResource"
-    ], 
-    "has_inline_embed": false, 
-    "_content_type_text": "text/html", 
-    "unique_identifier": "https://ocw.mit.edu/resources/res-str-001-geographic-information-system-gis-tutorial-january-iap-2016/spatial-data", 
-    "text": "<p>The following material was drawn from a workshop on Spatial Data and Spatial Data Sources given at MIT during IAP 2016 <img src=\"/images/educator/icon-question-iap.png\" class=\"question\" alt=\"\" />. It covers spatial data definitions, formats, and sources as well as metadata, and data management.</p> <div class=\"maintabletemplate\"><table summary=\"See table caption for summary.\" class=\"tablewidth50\">     <caption class=\"invisible\">Course data.</caption>  <!-- BEGIN TABLE HEADER (for MIT OCW Table Template 2.51) -->     <thead>         <tr>             <th scope=\"col\">RESOURCES</th>         </tr>     </thead>     <!-- END TABLE HEADER -->     <tbody>         <tr class=\"row\">             <td><a href=\"./resolveuid/23b7c5bd5aa8b062f654045b94ba2abf\">Introduction to Spatial Data (PDF - 3.1MB)</a></td>         </tr>         <tr class=\"alt-row\">             <td><a href=\"./resolveuid/a8dcf343da76c175462947a68cd92d2a\">Sources of Spatial Data (PDF)</a></td>         </tr>         <!-- TEN ROWS -->     </tbody> </table></div>", 
-    "_content_type_publisher": "text/plain", 
+    "text": "<p><i>In this section, Prof. Perron shares insights about co-teaching.</i></p> <div style=\"float: right; margin: -4px 0 auto 20px; padding-left: 20px; width: 150px; border-right: none; border-left: 1px solid #D5C9BA;\" class=\"pullquote\"><p class=\"quote\">The ability to observe instructors having a scientific repartee enhances the learning experience for undergraduate students.</p> <p class=\"sig\">&mdash;Taylor Perron</p></div> <p><em>Introduction to Geology</em> has evolved over the years to become a more active experience for students and instructors. As co-teachers, we&rsquo;ve reduced some of the traditional lecture time and have included more interactive hands-on activities. This is in recognition of the fact that so many things in earth science are tangible. During classes, we make a big effort to expose students to hand samples. We teach them how to identify rocks and minerals. We take them out into the field. In fact, the in-depth field trip we developed two years ago, which involves driving students to Upstate New York and back through western Massachusetts, has now become an integral part of the class.</p> <div style=\"float: left; margin: 0 20px 5px 0; width: 320px;\"><img width=\"320\" height=\"213\" src=\"./resolveuid/884ed8a126caebc0bc2a972fb7db9f04\" alt=\"A box of small brown minerals.\" /><br /> <p class=\"instruction\">A box of minerals to be identified by the students in the mineral identification lab. (Image by MIT OpenCourseWare.)</p></div> <p>One of the best things about co-teaching 12.001 is our balance of interests and expertise. Oliver Jagoutz is what we in the business call a &ldquo;hard rock&rdquo; geologist and I&rsquo;m what some people would call a &ldquo;soft rock&rdquo; geologist. Oliver studies the formation and evolution of the continental crust, while I study the earth&rsquo;s surface and all the processes that shape that surface. Oliver tends to work over longer time scales and looks a bit deeper down into the earth than I do, while I think more about the interface between the solid earth and the atmosphere. Our different lenses provide students with a glimpse into the variety of specialties within the field of geology and allow us to divide the teaching of topics in the syllabus along lines of expertise. This is helpful because it enables us to provide students with more in-depth answers to their questions.</p> <p>Importantly, co-teaching also allows us to have a repartee while working with students. Although we do not typically lecture together, we do play off of each other during field trips. We have spirited discussions about phenomena we&rsquo;re observing.  These discussions help students realize that not all of the details about how geologic stories unfold are entirely understood.  The ability to observe instructors having a scientific repartee enhances the learning experience for undergraduate students.</p>", 
     "_content_type_license": "text/plain", 
-    "ad_type": "HOUSE", 
-    "creation_date": "2016/03/01 11:52:12.175 US/Eastern", 
-    "aggregationlevel": 3, 
-    "is_image_gallery": false, 
-    "_uid": "cd4865266db27a4c6d2a83b8b78cef23", 
-    "hide_Page_title": false, 
-    "_content_type_id": "text/plain", 
-    "immediatelyAddableTypes": [
-        "OCWImage", 
-        "SupplementalResourceSection", 
-        "OCWExtFile", 
-        "OCWFile", 
-        "MediaResource"
-    ], 
-    "category_features": [], 
-    "id": "spatial-data", 
-    "is_media_gallery": false, 
-    "subject": [], 
-    "_content_type_short_page_title": "text/plain", 
-    "related_mit_links": "", 
-    "contributors": [], 
-    "effectiveDate": "2016/03/07 00:06:08.505 US/Eastern", 
-    "title": "Spatial Data", 
-    "parent_module": "236793a57f96cf26ea0aec0ca35bd118", 
-    "_content_type_ad_type": "text/plain", 
-    "_userdefined_roles": [], 
-    "is_mathml_document": false, 
-    "_gopip": 2, 
+    "_uid": "e843f795081ac616d0cebdff6e956e33", 
+    "title": "Co-Teaching", 
+    "_ac_local_roles": {
+        "Kcanavan": [
+            "Owner"
+        ]
+    }, 
     "location": "", 
-    "bottomtext": "", 
-    "short_page_title": "Spatial Data", 
-    "_content_type_title": "text/plain", 
-    "feature_requirements": [], 
+    "_content_type_course_identifier": "text/plain", 
     "_atbrefs": {
         "isReferencing": [
-            "cd4865266db27a4c6d2a83b8b78cef23"
+            "1c2cb2ad1c70fd66f19e20103dc94595"
         ]
     }, 
     "constrainTypesMode": 0, 
-    "_content_type": "text/html", 
-    "_type": "SupplementalResourceSection", 
-    "technical_location": "https://ocw.mit.edu/resources/res-str-001-geographic-information-system-gis-tutorial-january-iap-2016/spatial-data", 
-    "description": "his section contains an introduction to spatial data and a list of online resources for obtaining spatial data.", 
-    "short_name_tlp": "", 
+    "_content_type_section_identifier": "text/plain", 
+    "technical_location": "https://ocw.mit.edu/courses/earth-atmospheric-and-planetary-sciences/12-001-introduction-to-geology-fall-2013/instructor-insights/co-teaching", 
     "software_requirements": [
         {
             "software_type_col": "Browser", 
@@ -93,180 +51,174 @@
         }
     ], 
     "_content_type_technical_location": "text/plain", 
-    "_layout": "custom_view", 
-    "_properties": [
-        [
-            "title", 
-            "Spatial Data", 
-            "string"
-        ]
+    "_content_type_rights": "text/html", 
+    "_directly_provided": [
+        "Products.CMFEditions.interfaces.IVersioned"
     ], 
+    "parent_uid": "1c2cb2ad1c70fd66f19e20103dc94595", 
+    "excludeFromNav": false, 
+    "_content_type_unique_identifier": "text/plain", 
+    "allowDiscussion": false, 
+    "metadata_contributor_list": [], 
+    "locallyAllowedTypes": [
+        "OCWImage", 
+        "CourseSection", 
+        "OCWExtFile", 
+        "OCWFile", 
+        "MediaResource"
+    ], 
+    "_content_type_text": "text/html", 
+    "ad_type": "HOUSE", 
+    "creation_date": "2014/12/03 16:45:19.262 US/Eastern", 
+    "aggregationlevel": 3, 
+    "duration": "", 
+    "immediatelyAddableTypes": [
+        "OCWImage", 
+        "CourseSection", 
+        "OCWExtFile", 
+        "OCWFile", 
+        "MediaResource"
+    ], 
+    "subject": [], 
+    "_content_type_short_page_title": "text/plain", 
+    "effectiveDate": "2014/12/03 17:03:20.627 US/Eastern", 
+    "parent_module": "d9aad1541f1a9d3c0f7b0dcf9531a9a1", 
+    "is_mathml_document": false, 
+    "bottomtext": "", 
+    "short_page_title": "Co-Teaching", 
+    "section_identifier": "https://ocw.mit.edu/courses/earth-atmospheric-and-planetary-sciences/12-001-introduction-to-geology-fall-2013/instructor-insights", 
+    "related_mit_links": "", 
+    "_content_type_ad_type": "text/plain", 
+    "_layout": "custom_view", 
     "_workflow_history": {
         "page_workflow": [
             {
                 "action": null, 
                 "review_state": "waiting_for_authoring", 
-                "actor": "rsharma20", 
+                "actor": "Kcanavan", 
                 "comments": "", 
-                "time": "2016/03/01 11:52:12.184 US/Eastern"
+                "time": "2014/12/03 16:45:19.271 US/Eastern"
             }, 
             {
                 "action": "approve_to_staging", 
                 "review_state": "ready_for_staging", 
                 "comments": "", 
-                "actor": "rsharma20", 
-                "time": "2016/03/07 00:06:08.543 US/Eastern"
-            }, 
-            {
-                "action": "decline", 
-                "review_state": "waiting_for_authoring", 
-                "actor": "rsharma20", 
-                "comments": "", 
-                "time": "2016/03/08 23:54:33.352 US/Eastern"
-            }, 
-            {
-                "action": "approve_to_staging", 
-                "review_state": "ready_for_staging", 
-                "actor": "rsharma20", 
-                "comments": "", 
-                "time": "2016/03/08 23:58:29.365 US/Eastern"
-            }, 
-            {
-                "action": "decline", 
-                "review_state": "waiting_for_authoring", 
-                "comments": "", 
-                "actor": "rsharma20", 
-                "time": "2016/03/09 23:13:24.011 US/Eastern"
-            }, 
-            {
-                "action": "approve_to_staging", 
-                "review_state": "ready_for_staging", 
-                "actor": "rsharma20", 
-                "comments": "", 
-                "time": "2016/03/09 23:14:20.214 US/Eastern"
-            }, 
-            {
-                "action": "decline", 
-                "review_state": "waiting_for_authoring", 
-                "comments": "", 
-                "actor": "srani11", 
-                "time": "2016/03/10 03:05:01.088 US/Eastern"
-            }, 
-            {
-                "action": "approve_to_staging", 
-                "review_state": "ready_for_staging", 
-                "comments": "", 
-                "actor": "srani11", 
-                "time": "2016/03/10 03:05:27.901 US/Eastern"
-            }, 
-            {
-                "action": "decline", 
-                "review_state": "waiting_for_authoring", 
-                "actor": "rsharma20", 
-                "comments": "", 
-                "time": "2016/03/10 23:17:55.653 US/Eastern"
-            }, 
-            {
-                "action": "approve_to_staging", 
-                "review_state": "ready_for_staging", 
-                "actor": "rsharma20", 
-                "comments": "", 
-                "time": "2016/03/10 23:18:11.091 US/Eastern"
-            }, 
-            {
-                "action": "decline", 
-                "review_state": "waiting_for_authoring", 
-                "actor": "srani11", 
-                "comments": "", 
-                "time": "2016/03/11 01:29:10.685 US/Eastern"
-            }, 
-            {
-                "action": "approve_to_staging", 
-                "review_state": "ready_for_staging", 
-                "actor": "srani11", 
-                "comments": "", 
-                "time": "2016/03/11 01:29:32.076 US/Eastern"
+                "actor": "Kcanavan", 
+                "time": "2014/12/03 17:03:20.650 US/Eastern"
             }, 
             {
                 "action": "decline_to_qa", 
                 "review_state": "waiting_for_qa", 
+                "actor": "Kcanavan", 
                 "comments": "", 
-                "actor": "brem", 
-                "time": "2016/03/14 12:11:11.361 GMT-4"
+                "time": "2014/12/09 16:24:46.575 US/Eastern"
             }, 
             {
                 "action": "approve_to_staging", 
                 "review_state": "ready_for_staging", 
-                "actor": "brem", 
                 "comments": "", 
-                "time": "2016/03/14 12:20:50.295 GMT-4"
+                "actor": "Kcanavan", 
+                "time": "2014/12/09 16:30:47.005 US/Eastern"
             }, 
             {
                 "action": "decline_to_qa", 
                 "review_state": "waiting_for_qa", 
+                "actor": "Kcanavan", 
                 "comments": "", 
-                "actor": "brem", 
-                "time": "2016/03/15 11:03:12.185 GMT-4"
+                "time": "2014/12/11 13:11:54.795 US/Eastern"
             }, 
             {
                 "action": "approve_to_staging", 
                 "review_state": "ready_for_staging", 
                 "comments": "", 
-                "actor": "brem", 
-                "time": "2016/03/15 11:03:29.893 GMT-4"
+                "actor": "Kcanavan", 
+                "time": "2014/12/11 13:14:23.510 US/Eastern"
             }, 
             {
                 "action": "decline_to_qa", 
                 "review_state": "waiting_for_qa", 
-                "actor": "brem", 
+                "actor": "sehansen", 
                 "comments": "", 
-                "time": "2016/03/23 11:09:32.548 GMT-4"
+                "time": "2014/12/11 14:59:28.610 US/Eastern"
             }, 
             {
                 "action": "approve_to_staging", 
                 "review_state": "ready_for_staging", 
-                "actor": "brem", 
                 "comments": "", 
-                "time": "2016/03/23 11:10:33.155 GMT-4"
+                "actor": "sehansen", 
+                "time": "2014/12/11 15:03:53.400 US/Eastern"
+            }, 
+            {
+                "action": "decline_to_qa", 
+                "review_state": "waiting_for_qa", 
+                "actor": "aimeeg", 
+                "comments": "", 
+                "time": "2014/12/13 16:32:39.226 US/Eastern"
+            }, 
+            {
+                "action": "approve_to_staging", 
+                "review_state": "ready_for_staging", 
+                "actor": "aimeeg", 
+                "comments": "", 
+                "time": "2014/12/13 16:36:53.066 US/Eastern"
             }
         ]
     }, 
-    "_content_type_rights": "text/html", 
-    "_atrefs": {
-        "BelongsTo": [
-            "236793a57f96cf26ea0aec0ca35bd118"
-        ], 
-        "isReferencing": [
-            "cd4865266db27a4c6d2a83b8b78cef23", 
-            "a8dcf343da76c175462947a68cd92d2a", 
-            "23b7c5bd5aa8b062f654045b94ba2abf"
-        ]
-    }, 
-    "_directly_provided": [
-        "Products.CMFEditions.interfaces.IVersioned"
-    ], 
-    "_path": "/Plone/resources/res-str-001-geographic-information-system-gis-tutorial-january-iap-2016/spatial-data", 
-    "_classname": "SupplementalResourceSection", 
-    "metadata_contributor_list": [], 
-    "tcATmit_instructional_tags": [], 
-    "parent_uid": "236793a57f96cf26ea0aec0ca35bd118", 
-    "modification_date": "2016/09/24 00:09:41.037 GMT-4", 
-    "course_linking": [], 
+    "_classname": "CourseSection", 
+    "_content_type_materialtype": "text/plain", 
+    "_userdefined_roles": [], 
     "publisher": "MIT OpenCourseWare", 
-    "excludeFromNav": false, 
     "nextPreviousEnabled": false, 
     "language": "", 
-    "license": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/", 
-    "rights": "This site (c) Massachusetts Institute of Technology 2016.  Content within individual courses is (c) by the individual authors unless otherwise noted. The Massachusetts Institute of Technology is providing this Work (as defined below) under the terms of this Creative Commons public license (\"CCPL\" or \"license\") unless otherwise noted. The Work is protected by copyright and/or other applicable law. Any use of the work other than as authorized under this license is prohibited. By exercising any of the rights to the Work provided here, You (as defined below) accept and agree to be bound by the terms of this license. The Licensor, the Massachusetts Institute of Technology, grants You the rights contained here in consideration of Your acceptance of such terms and conditions.", 
     "url_rewrite_patterns": [], 
-    "always_publish": false, 
-    "_id": "spatial-data", 
+    "widgets_features": [], 
+    "category_features": [], 
+    "firstTimeEdit": true, 
+    "feature_requirements": [], 
+    "list_in_left_nav": true, 
+    "short_name_tlp": "", 
+    "expirationDate": "None", 
+    "_content_type_id": "text/plain", 
+    "contributor_list": [], 
+    "is_media_gallery": false, 
+    "contributors": [], 
+    "_gopip": 4, 
+    "_content_type_title": "text/plain", 
+    "course_linking": [], 
+    "_atrefs": {
+        "BelongsTo": [
+            "d9aad1541f1a9d3c0f7b0dcf9531a9a1"
+        ], 
+        "isReferencing": [
+            "884ed8a126caebc0bc2a972fb7db9f04"
+        ]
+    }, 
+    "other_platform_requirements": "", 
+    "license": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/", 
+    "rights": "This site (c) Massachusetts Institute of Technology 2014.  Content within individual courses is (c) by the individual authors unless otherwise noted. The Massachusetts Institute of Technology is providing this Work (as defined below) under the terms of this Creative Commons public license (\"CCPL\" or \"license\") unless otherwise noted. The Work is protected by copyright and/or other applicable law. Any use of the work other than as authorized under this license is prohibited. By exercising any of the rights to the Work provided here, You (as defined below) accept and agree to be bound by the terms of this license. The Licensor, the Massachusetts Institute of Technology, grants You the rights contained here in consideration of Your acceptance of such terms and conditions.", 
+    "hide_Page_title": false, 
+    "_defaultpage": "", 
+    "tcATmit_subject_tags": [], 
+    "features_tracking": [], 
+    "ad_champion_text": "", 
+    "has_inline_embed": false, 
+    "unique_identifier": "https://ocw.mit.edu/courses/earth-atmospheric-and-planetary-sciences/12-001-introduction-to-geology-fall-2013/instructor-insights/co-teaching", 
+    "is_image_gallery": false, 
+    "id": "co-teaching", 
     "materialtype": "Other", 
-    "_content_type_unique_identifier": "text/plain", 
+    "_type": "CourseSection", 
+    "description": "In this section, Prof. Perron shares insights about co-teaching.", 
+    "course_identifier": "https://ocw.mit.edu/courses/earth-atmospheric-and-planetary-sciences/12-001-introduction-to-geology-fall-2013", 
+    "_content_type_publisher": "text/plain", 
+    "tcATmit_instructional_tags": [], 
+    "_content_type": "text/html", 
+    "creators": [
+        "Kcanavan"
+    ], 
+    "modification_date": "2016/09/24 06:41:58.161 GMT-4", 
+    "always_publish": false, 
     "_content_type_description": "text/plain", 
     "_owner": null, 
-    "_defaultpage": "", 
-    "firstTimeEdit": true, 
     "_permissions": {
         "Change portal events": {
             "acquire": false, 
@@ -306,17 +258,14 @@
             ]
         }
     }, 
-    "ad_champion_text": "", 
-    "allowDiscussion": false, 
-    "_content_type_materialtype": "text/plain", 
-    "creators": [
-        "rsharma20"
-    ], 
-    "courselist_features": [], 
-    "_ac_local_roles": {
-        "rsharma20": [
-            "Owner"
+    "_properties": [
+        [
+            "title", 
+            "Co-Teaching", 
+            "string"
         ]
-    }, 
-    "expirationDate": "None"
+    ], 
+    "_id": "co-teaching", 
+    "courselist_features": [], 
+    "_path": "/Plone/courses/earth-atmospheric-and-planetary-sciences/12-001-introduction-to-geology-fall-2013/instructor-insights/co-teaching"
 }
