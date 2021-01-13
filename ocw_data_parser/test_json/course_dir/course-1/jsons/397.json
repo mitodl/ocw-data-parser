@@ -1,185 +1,185 @@
 {
-    "expanded_alternate_text": "", 
-    "features_tracking": [], 
-    "widgets_features": [], 
-    "contributors": [], 
-    "tcATmit_subject_tags": [], 
-    "unique_identifier": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-26-complex-matrices-fast-fourier-transform/18.06_L26.jpg", 
-    "_content_type_publisher": "text/plain", 
-    "_content_type_license": "text/plain", 
-    "_datafield_image": {
-        "encoding": "base64", 
-        "data": "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", 
-        "content_type": "image/jpeg", 
-        "filename": "18.06_L26.jpg"
-    }, 
-    "aggregationlevel": 2, 
-    "_uid": "a8c49f44efc6179967c8710a4a3303cf", 
-    "_workflow_history": {
-        "one_state_workflow": [
-            {
-                "action": null, 
-                "review_state": "published", 
-                "actor": "Jcplayer", 
-                "comments": "", 
-                "time": "2010/10/08 13:26:59.637 GMT-4"
-            }
-        ]
-    }, 
-    "expirationDate": "None", 
-    "_content_type_id": "text/plain", 
-    "duration": "", 
-    "contributor_list": [], 
-    "id": "18.06_L26.jpg", 
-    "related_mit_links": "", 
-    "thumb_height": "", 
-    "effectiveDate": "None", 
-    "title": "18.06_L26.jpg", 
-    "_layout": "view", 
-    "parent_module": "aabc44bdb2e45374d62f30f2a6d4c63e", 
-    "_content_type": "image/jpeg", 
-    "_userdefined_roles": [], 
-    "_gopip": 0, 
-    "location": "", 
-    "_atrefs": {
-        "BelongsTo": [
-            "aabc44bdb2e45374d62f30f2a6d4c63e"
-        ]
-    }, 
-    "_content_type_course_identifier": "text/plain", 
-    "_content_type_title": "text/plain", 
-    "section_identifier": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures", 
-    "_atbrefs": {
-        "thumbnail_image": [
-            "7da4985ac0765564c8aa3eccb1a1e97e"
-        ], 
-        "file_reference": [
-            "3c0e1d75e52e5e0a25bc866178dcaad7"
-        ]
-    }, 
-    "creation_date": "2010/10/08 13:26:59.629 GMT-4", 
-    "_content_type_section_identifier": "text/plain", 
-    "_type": "OCWImage", 
-    "technical_location": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-26-complex-matrices-fast-fourier-transform/18.06_L26.jpg", 
-    "description": "", 
-    "thumb_width": "", 
-    "software_requirements": [
-        {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "40.0", 
-            "software_name_col": "Chrome", 
-            "maximum_version_col": ""
-        }, 
-        {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "8.0", 
-            "software_name_col": "Safari", 
-            "maximum_version_col": ""
-        }, 
-        {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "38.0", 
-            "software_name_col": "Mozilla Firefox", 
-            "maximum_version_col": ""
-        }, 
-        {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "9.0", 
-            "software_name_col": "Internet Explorer", 
-            "maximum_version_col": ""
-        }, 
-        {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "13.1", 
-            "software_name_col": "Edge", 
-            "maximum_version_col": ""
-        }
-    ], 
-    "_content_type_technical_location": "text/plain", 
-    "alternate_text": "", 
-    "credit": "", 
-    "subject": [], 
-    "_content_type_rights": "text/html", 
-    "course_identifier": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010", 
-    "_directly_provided": [], 
-    "other_platform_requirements": "", 
-    "_id": "18.06_L26.jpg", 
-    "_classname": "OCWImage", 
-    "metadata_contributor_list": [
-        {
-            "md_contributor_uid": "", 
-            "md_contributor_entity": "Todd Rautenberg", 
-            "md_contributor_hide": "", 
-            "md_contributor_special_title": "", 
-            "md_contributor_role": "Validator"
-        }, 
-        {
-            "md_contributor_uid": "", 
-            "md_contributor_entity": "Todd Rautenberg", 
-            "md_contributor_hide": "", 
-            "md_contributor_special_title": "", 
-            "md_contributor_role": "Creator"
-        }
-    ], 
-    "tcATmit_instructional_tags": [], 
-    "caption": "", 
-    "parent_uid": "7da4985ac0765564c8aa3eccb1a1e97e", 
-    "modification_date": "2016/09/24 04:34:09.620 GMT-4", 
-    "course_linking": [], 
-    "publisher": "MIT OpenCourseWare", 
-    "excludeFromNav": false, 
-    "feature_requirements": [], 
-    "language": "", 
-    "license": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/", 
-    "rights": "This site (c) Massachusetts Institute of Technology 2010.  Content within individual courses is (c) by the individual authors unless otherwise noted. The Massachusetts Institute of Technology is providing this Work (as defined below) under the terms of this Creative Commons public license (\"CCPL\" or \"license\") unless otherwise noted. The Work is protected by copyright and/or other applicable law. Any use of the work other than as authorized under this license is prohibited. By exercising any of the rights to the Work provided here, You (as defined below) accept and agree to be bound by the terms of this license. The Licensor, the Massachusetts Institute of Technology, grants You the rights contained here in consideration of Your acceptance of such terms and conditions.", 
-    "always_publish": false, 
-    "popup_image_id": "", 
-    "materialtype": "Other", 
-    "_content_type_unique_identifier": "text/plain", 
-    "category_features": [], 
-    "is_pop_up_image": false, 
-    "_owner": null, 
-    "_defaultpage": "index_html", 
-    "firstTimeEdit": true, 
-    "_permissions": {
-        "Modify portal content": {
-            "acquire": false, 
-            "roles": [
-                "Editor", 
-                "Manager", 
-                "Owner"
-            ]
-        }, 
-        "Access contents information": {
-            "acquire": false, 
-            "roles": [
-                "Anonymous"
-            ]
-        }, 
-        "View": {
-            "acquire": false, 
-            "roles": [
-                "Anonymous"
-            ]
-        }
-    }, 
-    "_properties": [
-        [
-            "title", 
-            "18.06_L26.jpg", 
-            "string"
-        ]
-    ], 
-    "allowDiscussion": false, 
-    "_content_type_materialtype": "text/plain", 
-    "creators": [
-        "Jcplayer"
-    ], 
-    "courselist_features": [], 
     "_ac_local_roles": {
         "Jcplayer": [
             "Owner"
         ]
-    }, 
-    "_path": "/Plone/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-26-complex-matrices-fast-fourier-transform/18.06_L26.jpg"
+    },
+    "_atbrefs": {
+        "file_reference": [
+            "3c0e1d75e52e5e0a25bc866178dcaad7"
+        ],
+        "thumbnail_image": [
+            "7da4985ac0765564c8aa3eccb1a1e97e"
+        ]
+    },
+    "_atrefs": {
+        "BelongsTo": [
+            "aabc44bdb2e45374d62f30f2a6d4c63e"
+        ]
+    },
+    "_classname": "OCWImage",
+    "_content_type": "image/jpeg",
+    "_content_type_course_identifier": "text/plain",
+    "_content_type_id": "text/plain",
+    "_content_type_license": "text/plain",
+    "_content_type_materialtype": "text/plain",
+    "_content_type_publisher": "text/plain",
+    "_content_type_rights": "text/html",
+    "_content_type_section_identifier": "text/plain",
+    "_content_type_technical_location": "text/plain",
+    "_content_type_title": "text/plain",
+    "_content_type_unique_identifier": "text/plain",
+    "_datafield_image": {
+        "content_type": "image/jpeg",
+        "data": "ZW1wdHk=",
+        "encoding": "base64",
+        "filename": "18.06_L26.jpg"
+    },
+    "_defaultpage": "index_html",
+    "_directly_provided": [],
+    "_gopip": 0,
+    "_id": "18.06_L26.jpg",
+    "_layout": "view",
+    "_owner": null,
+    "_path": "/Plone/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-26-complex-matrices-fast-fourier-transform/18.06_L26.jpg",
+    "_permissions": {
+        "Access contents information": {
+            "acquire": false,
+            "roles": [
+                "Anonymous"
+            ]
+        },
+        "Modify portal content": {
+            "acquire": false,
+            "roles": [
+                "Editor",
+                "Manager",
+                "Owner"
+            ]
+        },
+        "View": {
+            "acquire": false,
+            "roles": [
+                "Anonymous"
+            ]
+        }
+    },
+    "_properties": [
+        [
+            "title",
+            "18.06_L26.jpg",
+            "string"
+        ]
+    ],
+    "_type": "OCWImage",
+    "_uid": "a8c49f44efc6179967c8710a4a3303cf",
+    "_userdefined_roles": [],
+    "_workflow_history": {
+        "one_state_workflow": [
+            {
+                "action": null,
+                "actor": "Jcplayer",
+                "comments": "",
+                "review_state": "published",
+                "time": "2010/10/08 13:26:59.637 GMT-4"
+            }
+        ]
+    },
+    "aggregationlevel": 2,
+    "allowDiscussion": false,
+    "alternate_text": "",
+    "always_publish": false,
+    "caption": "",
+    "category_features": [],
+    "contributor_list": [],
+    "contributors": [],
+    "course_identifier": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010",
+    "course_linking": [],
+    "courselist_features": [],
+    "creation_date": "2010/10/08 13:26:59.629 GMT-4",
+    "creators": [
+        "Jcplayer"
+    ],
+    "credit": "",
+    "description": "",
+    "duration": "",
+    "effectiveDate": "None",
+    "excludeFromNav": false,
+    "expanded_alternate_text": "",
+    "expirationDate": "None",
+    "feature_requirements": [],
+    "features_tracking": [],
+    "firstTimeEdit": true,
+    "id": "18.06_L26.jpg",
+    "is_pop_up_image": false,
+    "language": "",
+    "license": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/",
+    "location": "",
+    "materialtype": "Other",
+    "metadata_contributor_list": [
+        {
+            "md_contributor_entity": "Todd Rautenberg",
+            "md_contributor_hide": "",
+            "md_contributor_role": "Validator",
+            "md_contributor_special_title": "",
+            "md_contributor_uid": ""
+        },
+        {
+            "md_contributor_entity": "Todd Rautenberg",
+            "md_contributor_hide": "",
+            "md_contributor_role": "Creator",
+            "md_contributor_special_title": "",
+            "md_contributor_uid": ""
+        }
+    ],
+    "modification_date": "2016/09/24 04:34:09.620 GMT-4",
+    "other_platform_requirements": "",
+    "parent_module": "aabc44bdb2e45374d62f30f2a6d4c63e",
+    "parent_uid": "7da4985ac0765564c8aa3eccb1a1e97e",
+    "popup_image_id": "",
+    "publisher": "MIT OpenCourseWare",
+    "related_mit_links": "",
+    "rights": "This site (c) Massachusetts Institute of Technology 2010.  Content within individual courses is (c) by the individual authors unless otherwise noted. The Massachusetts Institute of Technology is providing this Work (as defined below) under the terms of this Creative Commons public license (\"CCPL\" or \"license\") unless otherwise noted. The Work is protected by copyright and/or other applicable law. Any use of the work other than as authorized under this license is prohibited. By exercising any of the rights to the Work provided here, You (as defined below) accept and agree to be bound by the terms of this license. The Licensor, the Massachusetts Institute of Technology, grants You the rights contained here in consideration of Your acceptance of such terms and conditions.",
+    "section_identifier": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures",
+    "software_requirements": [
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "40.0",
+            "software_name_col": "Chrome",
+            "software_type_col": "Browser"
+        },
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "8.0",
+            "software_name_col": "Safari",
+            "software_type_col": "Browser"
+        },
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "38.0",
+            "software_name_col": "Mozilla Firefox",
+            "software_type_col": "Browser"
+        },
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "9.0",
+            "software_name_col": "Internet Explorer",
+            "software_type_col": "Browser"
+        },
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "13.1",
+            "software_name_col": "Edge",
+            "software_type_col": "Browser"
+        }
+    ],
+    "subject": [],
+    "tcATmit_instructional_tags": [],
+    "tcATmit_subject_tags": [],
+    "technical_location": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-26-complex-matrices-fast-fourier-transform/18.06_L26.jpg",
+    "thumb_height": "",
+    "thumb_width": "",
+    "title": "18.06_L26.jpg",
+    "unique_identifier": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-26-complex-matrices-fast-fourier-transform/18.06_L26.jpg",
+    "widgets_features": []
 }

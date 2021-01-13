@@ -1,271 +1,271 @@
 {
-    "text": "<p><i>In this section, Prof. Perron discusses how the course challenges students to make sense of complexities in the field.</i></p> <div class=\"pullquote\" style=\"float: right; margin: -4px 0 auto 20px; padding-left: 20px; width: 150px; border-right: none; border-left: 1px solid #D5C9BA;\"><p class=\"quote\">The real world is messy, and we&rsquo;re asking them to make sense of that messiness. That comes as a shock for many students.</p> <p class=\"sig\">&mdash;Taylor Perron</p></div> <p>Many of our students are accustomed to classes that have assignments in which the problems are clear-cut and have precise answers. The earth sciences are not like that. For example, we might ask students to identify three different rock hand samples that all appear rough and grayish. Students don&rsquo;t always know how to approach a problem like that.</p> <div style=\"float: left; margin: 0 20px 5px 0; width: 320px;\"><img width=\"320\" height=\"213\" src=\"./resolveuid/bfa2d132364d489cf9450c584b71ec1e\" alt=\"Boxes of rock and mineral hand samples.\" /><br /> <p class=\"instruction\">Students learn to identify rocks and minerals in the first two labs of the course. (Image by MIT OpenCourseWare.)</p></div> <p>Similarly, some become easily frustrated when they approach a road cut and the rock is partly covered with soil, broken up, weathered, and has minerals that are not as well exposed as they might be. The real world is messy, and we&rsquo;re asking them to make sense of that messiness. That comes as a shock for many students. Geology is not plug and chug. There&rsquo;s always extraneous information in the field. And the good stuff<span class=\"st\">&mdash;</span>critical details<span class=\"st\">&mdash;</span>is always missing!</p> <p>Although we do have students solve equations, we emphasize problems that involve critical thinking and incomplete evidence because that is what students will encounter in the field. In 12.001 we strive to help students feel okay about dealing with the uncertainties involved in making measurements in the field and using incomplete sets of observations to piece together a story. Once they get the hang of it, the students do really well!</p>", 
-    "_content_type_license": "text/plain", 
-    "_uid": "abd48cefe43d11ae8b573e0d4a6872b9", 
-    "title": "Making Sense of Messiness", 
     "_ac_local_roles": {
         "Kcanavan": [
             "Owner"
         ]
-    }, 
-    "location": "", 
-    "_content_type_course_identifier": "text/plain", 
+    },
     "_atbrefs": {
         "isReferencing": [
             "1c2cb2ad1c70fd66f19e20103dc94595"
         ]
-    }, 
-    "constrainTypesMode": 0, 
-    "_content_type_section_identifier": "text/plain", 
-    "technical_location": "https://ocw.mit.edu/courses/earth-atmospheric-and-planetary-sciences/12-001-introduction-to-geology-fall-2013/instructor-insights/making-sense-of-messiness", 
-    "software_requirements": [
-        {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "40.0", 
-            "software_name_col": "Chrome", 
-            "maximum_version_col": ""
-        }, 
-        {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "8.0", 
-            "software_name_col": "Safari", 
-            "maximum_version_col": ""
-        }, 
-        {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "38.0", 
-            "software_name_col": "Mozilla Firefox", 
-            "maximum_version_col": ""
-        }, 
-        {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "9.0", 
-            "software_name_col": "Internet Explorer", 
-            "maximum_version_col": ""
-        }, 
-        {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "13.1", 
-            "software_name_col": "Edge", 
-            "maximum_version_col": ""
-        }
-    ], 
-    "_content_type_technical_location": "text/plain", 
-    "_content_type_rights": "text/html", 
-    "_directly_provided": [
-        "Products.CMFEditions.interfaces.IVersioned"
-    ], 
-    "parent_uid": "1c2cb2ad1c70fd66f19e20103dc94595", 
-    "excludeFromNav": false, 
-    "_content_type_unique_identifier": "text/plain", 
-    "allowDiscussion": false, 
-    "metadata_contributor_list": [], 
-    "locallyAllowedTypes": [
-        "OCWImage", 
-        "CourseSection", 
-        "OCWExtFile", 
-        "OCWFile", 
-        "MediaResource"
-    ], 
-    "_content_type_text": "text/html", 
-    "ad_type": "HOUSE", 
-    "creation_date": "2014/12/03 16:46:48.301 US/Eastern", 
-    "aggregationlevel": 3, 
-    "duration": "", 
-    "immediatelyAddableTypes": [
-        "OCWImage", 
-        "CourseSection", 
-        "OCWExtFile", 
-        "OCWFile", 
-        "MediaResource"
-    ], 
-    "subject": [], 
-    "_content_type_short_page_title": "text/plain", 
-    "effectiveDate": "2014/12/03 17:12:42.832 US/Eastern", 
-    "parent_module": "d9aad1541f1a9d3c0f7b0dcf9531a9a1", 
-    "is_mathml_document": false, 
-    "bottomtext": "", 
-    "short_page_title": "Making Sense of Messiness", 
-    "section_identifier": "https://ocw.mit.edu/courses/earth-atmospheric-and-planetary-sciences/12-001-introduction-to-geology-fall-2013/instructor-insights", 
-    "related_mit_links": "", 
-    "_content_type_ad_type": "text/plain", 
-    "_layout": "custom_view", 
-    "_workflow_history": {
-        "page_workflow": [
-            {
-                "action": null, 
-                "review_state": "waiting_for_authoring", 
-                "comments": "", 
-                "actor": "Kcanavan", 
-                "time": "2014/12/03 16:46:48.311 US/Eastern"
-            }, 
-            {
-                "action": "approve_to_staging", 
-                "review_state": "ready_for_staging", 
-                "actor": "Kcanavan", 
-                "comments": "", 
-                "time": "2014/12/03 17:12:42.853 US/Eastern"
-            }, 
-            {
-                "action": "decline_to_qa", 
-                "review_state": "waiting_for_qa", 
-                "comments": "", 
-                "actor": "Kcanavan", 
-                "time": "2014/12/09 16:40:06.064 US/Eastern"
-            }, 
-            {
-                "action": "approve_to_staging", 
-                "review_state": "ready_for_staging", 
-                "actor": "Kcanavan", 
-                "comments": "", 
-                "time": "2014/12/09 16:42:04.497 US/Eastern"
-            }, 
-            {
-                "action": "decline_to_qa", 
-                "review_state": "waiting_for_qa", 
-                "actor": "Kcanavan", 
-                "comments": "", 
-                "time": "2014/12/11 13:19:14.208 US/Eastern"
-            }, 
-            {
-                "action": "approve_to_staging", 
-                "review_state": "ready_for_staging", 
-                "actor": "Kcanavan", 
-                "comments": "", 
-                "time": "2014/12/11 13:20:18.667 US/Eastern"
-            }, 
-            {
-                "action": "decline_to_qa", 
-                "review_state": "waiting_for_qa", 
-                "actor": "sehansen", 
-                "comments": "", 
-                "time": "2014/12/11 15:26:16.067 US/Eastern"
-            }, 
-            {
-                "action": "approve_to_staging", 
-                "review_state": "ready_for_staging", 
-                "actor": "sehansen", 
-                "comments": "", 
-                "time": "2014/12/11 15:28:47.753 US/Eastern"
-            }, 
-            {
-                "action": "decline_to_qa", 
-                "review_state": "waiting_for_qa", 
-                "actor": "aimeeg", 
-                "comments": "", 
-                "time": "2014/12/13 16:42:53.511 US/Eastern"
-            }, 
-            {
-                "action": "approve_to_staging", 
-                "review_state": "ready_for_staging", 
-                "actor": "aimeeg", 
-                "comments": "", 
-                "time": "2014/12/13 16:45:06.313 US/Eastern"
-            }
-        ]
-    }, 
-    "_classname": "CourseSection", 
-    "_content_type_materialtype": "text/plain", 
-    "_userdefined_roles": [], 
-    "publisher": "MIT OpenCourseWare", 
-    "nextPreviousEnabled": false, 
-    "language": "", 
-    "url_rewrite_patterns": [], 
-    "widgets_features": [], 
-    "category_features": [], 
-    "firstTimeEdit": true, 
-    "feature_requirements": [], 
-    "list_in_left_nav": true, 
-    "short_name_tlp": "", 
-    "expirationDate": "None", 
-    "_content_type_id": "text/plain", 
-    "contributor_list": [], 
-    "is_media_gallery": false, 
-    "contributors": [], 
-    "_gopip": 7, 
-    "_content_type_title": "text/plain", 
-    "course_linking": [], 
+    },
     "_atrefs": {
         "BelongsTo": [
             "d9aad1541f1a9d3c0f7b0dcf9531a9a1"
-        ], 
+        ],
         "isReferencing": [
             "bfa2d132364d489cf9450c584b71ec1e"
         ]
-    }, 
-    "other_platform_requirements": "", 
-    "license": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/", 
-    "rights": "This site (c) Massachusetts Institute of Technology 2014.  Content within individual courses is (c) by the individual authors unless otherwise noted. The Massachusetts Institute of Technology is providing this Work (as defined below) under the terms of this Creative Commons public license (\"CCPL\" or \"license\") unless otherwise noted. The Work is protected by copyright and/or other applicable law. Any use of the work other than as authorized under this license is prohibited. By exercising any of the rights to the Work provided here, You (as defined below) accept and agree to be bound by the terms of this license. The Licensor, the Massachusetts Institute of Technology, grants You the rights contained here in consideration of Your acceptance of such terms and conditions.", 
-    "hide_Page_title": false, 
-    "_defaultpage": "", 
-    "tcATmit_subject_tags": [], 
-    "features_tracking": [], 
-    "ad_champion_text": "", 
-    "has_inline_embed": false, 
-    "unique_identifier": "https://ocw.mit.edu/courses/earth-atmospheric-and-planetary-sciences/12-001-introduction-to-geology-fall-2013/instructor-insights/making-sense-of-messiness", 
-    "is_image_gallery": false, 
-    "id": "making-sense-of-messiness", 
-    "materialtype": "Other", 
-    "_type": "CourseSection", 
-    "description": "In this section, Prof. Perron discusses how the course challenges students to make sense of complexities in the field.", 
-    "course_identifier": "https://ocw.mit.edu/courses/earth-atmospheric-and-planetary-sciences/12-001-introduction-to-geology-fall-2013", 
-    "_content_type_publisher": "text/plain", 
-    "tcATmit_instructional_tags": [], 
-    "_content_type": "text/html", 
-    "creators": [
-        "Kcanavan"
-    ], 
-    "modification_date": "2016/09/24 06:41:51.805 GMT-4", 
-    "always_publish": false, 
-    "_content_type_description": "text/plain", 
-    "_owner": null, 
+    },
+    "_classname": "CourseSection",
+    "_content_type": "text/html",
+    "_content_type_ad_type": "text/plain",
+    "_content_type_course_identifier": "text/plain",
+    "_content_type_description": "text/plain",
+    "_content_type_id": "text/plain",
+    "_content_type_license": "text/plain",
+    "_content_type_materialtype": "text/plain",
+    "_content_type_publisher": "text/plain",
+    "_content_type_rights": "text/html",
+    "_content_type_section_identifier": "text/plain",
+    "_content_type_short_page_title": "text/plain",
+    "_content_type_technical_location": "text/plain",
+    "_content_type_text": "text/html",
+    "_content_type_title": "text/plain",
+    "_content_type_unique_identifier": "text/plain",
+    "_defaultpage": "",
+    "_directly_provided": [
+        "Products.CMFEditions.interfaces.IVersioned"
+    ],
+    "_gopip": 7,
+    "_id": "making-sense-of-messiness",
+    "_layout": "custom_view",
+    "_owner": null,
+    "_path": "/Plone/courses/earth-atmospheric-and-planetary-sciences/12-001-introduction-to-geology-fall-2013/instructor-insights/making-sense-of-messiness",
     "_permissions": {
-        "Change portal events": {
-            "acquire": false, 
-            "roles": [
-                "Editor", 
-                "Manager", 
-                "MetadataEditor", 
-                "Owner"
-            ]
-        }, 
-        "Modify portal content": {
-            "acquire": false, 
-            "roles": [
-                "Manager", 
-                "MetadataEditor"
-            ]
-        }, 
         "Access contents information": {
-            "acquire": false, 
+            "acquire": false,
             "roles": [
                 "Authenticated"
             ]
-        }, 
-        "List folder contents": {
-            "acquire": false, 
+        },
+        "Change portal events": {
+            "acquire": false,
             "roles": [
-                "Editor", 
-                "Manager", 
-                "MetadataEditor", 
+                "Editor",
+                "Manager",
+                "MetadataEditor",
                 "Owner"
             ]
-        }, 
+        },
+        "List folder contents": {
+            "acquire": false,
+            "roles": [
+                "Editor",
+                "Manager",
+                "MetadataEditor",
+                "Owner"
+            ]
+        },
+        "Modify portal content": {
+            "acquire": false,
+            "roles": [
+                "Manager",
+                "MetadataEditor"
+            ]
+        },
         "View": {
-            "acquire": false, 
+            "acquire": false,
             "roles": [
                 "Authenticated"
             ]
         }
-    }, 
+    },
     "_properties": [
         [
-            "title", 
-            "Making Sense of Messiness", 
+            "title",
+            "Making Sense of Messiness",
             "string"
         ]
-    ], 
-    "_id": "making-sense-of-messiness", 
-    "courselist_features": [], 
-    "_path": "/Plone/courses/earth-atmospheric-and-planetary-sciences/12-001-introduction-to-geology-fall-2013/instructor-insights/making-sense-of-messiness"
+    ],
+    "_type": "CourseSection",
+    "_uid": "abd48cefe43d11ae8b573e0d4a6872b9",
+    "_userdefined_roles": [],
+    "_workflow_history": {
+        "page_workflow": [
+            {
+                "action": null,
+                "actor": "Kcanavan",
+                "comments": "",
+                "review_state": "waiting_for_authoring",
+                "time": "2014/12/03 16:46:48.311 US/Eastern"
+            },
+            {
+                "action": "approve_to_staging",
+                "actor": "Kcanavan",
+                "comments": "",
+                "review_state": "ready_for_staging",
+                "time": "2014/12/03 17:12:42.853 US/Eastern"
+            },
+            {
+                "action": "decline_to_qa",
+                "actor": "Kcanavan",
+                "comments": "",
+                "review_state": "waiting_for_qa",
+                "time": "2014/12/09 16:40:06.064 US/Eastern"
+            },
+            {
+                "action": "approve_to_staging",
+                "actor": "Kcanavan",
+                "comments": "",
+                "review_state": "ready_for_staging",
+                "time": "2014/12/09 16:42:04.497 US/Eastern"
+            },
+            {
+                "action": "decline_to_qa",
+                "actor": "Kcanavan",
+                "comments": "",
+                "review_state": "waiting_for_qa",
+                "time": "2014/12/11 13:19:14.208 US/Eastern"
+            },
+            {
+                "action": "approve_to_staging",
+                "actor": "Kcanavan",
+                "comments": "",
+                "review_state": "ready_for_staging",
+                "time": "2014/12/11 13:20:18.667 US/Eastern"
+            },
+            {
+                "action": "decline_to_qa",
+                "actor": "sehansen",
+                "comments": "",
+                "review_state": "waiting_for_qa",
+                "time": "2014/12/11 15:26:16.067 US/Eastern"
+            },
+            {
+                "action": "approve_to_staging",
+                "actor": "sehansen",
+                "comments": "",
+                "review_state": "ready_for_staging",
+                "time": "2014/12/11 15:28:47.753 US/Eastern"
+            },
+            {
+                "action": "decline_to_qa",
+                "actor": "aimeeg",
+                "comments": "",
+                "review_state": "waiting_for_qa",
+                "time": "2014/12/13 16:42:53.511 US/Eastern"
+            },
+            {
+                "action": "approve_to_staging",
+                "actor": "aimeeg",
+                "comments": "",
+                "review_state": "ready_for_staging",
+                "time": "2014/12/13 16:45:06.313 US/Eastern"
+            }
+        ]
+    },
+    "ad_champion_text": "",
+    "ad_type": "HOUSE",
+    "aggregationlevel": 3,
+    "allowDiscussion": false,
+    "always_publish": false,
+    "bottomtext": "",
+    "category_features": [],
+    "constrainTypesMode": 0,
+    "contributor_list": [],
+    "contributors": [],
+    "course_identifier": "https://ocw.mit.edu/courses/earth-atmospheric-and-planetary-sciences/12-001-introduction-to-geology-fall-2013",
+    "course_linking": [],
+    "courselist_features": [],
+    "creation_date": "2014/12/03 16:46:48.301 US/Eastern",
+    "creators": [
+        "Kcanavan"
+    ],
+    "description": "In this section, Prof. Perron discusses how the course challenges students to make sense of complexities in the field.",
+    "duration": "",
+    "effectiveDate": "2014/12/03 17:12:42.832 US/Eastern",
+    "excludeFromNav": false,
+    "expirationDate": "None",
+    "feature_requirements": [],
+    "features_tracking": [],
+    "firstTimeEdit": true,
+    "has_inline_embed": false,
+    "hide_Page_title": false,
+    "id": "making-sense-of-messiness",
+    "immediatelyAddableTypes": [
+        "OCWImage",
+        "CourseSection",
+        "OCWExtFile",
+        "OCWFile",
+        "MediaResource"
+    ],
+    "is_image_gallery": false,
+    "is_mathml_document": false,
+    "is_media_gallery": false,
+    "language": "",
+    "license": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/",
+    "list_in_left_nav": true,
+    "locallyAllowedTypes": [
+        "OCWImage",
+        "CourseSection",
+        "OCWExtFile",
+        "OCWFile",
+        "MediaResource"
+    ],
+    "location": "",
+    "materialtype": "Other",
+    "metadata_contributor_list": [],
+    "modification_date": "2016/09/24 06:41:51.805 GMT-4",
+    "nextPreviousEnabled": false,
+    "other_platform_requirements": "",
+    "parent_module": "d9aad1541f1a9d3c0f7b0dcf9531a9a1",
+    "parent_uid": "1c2cb2ad1c70fd66f19e20103dc94595",
+    "publisher": "MIT OpenCourseWare",
+    "related_mit_links": "",
+    "rights": "This site (c) Massachusetts Institute of Technology 2014.  Content within individual courses is (c) by the individual authors unless otherwise noted. The Massachusetts Institute of Technology is providing this Work (as defined below) under the terms of this Creative Commons public license (\"CCPL\" or \"license\") unless otherwise noted. The Work is protected by copyright and/or other applicable law. Any use of the work other than as authorized under this license is prohibited. By exercising any of the rights to the Work provided here, You (as defined below) accept and agree to be bound by the terms of this license. The Licensor, the Massachusetts Institute of Technology, grants You the rights contained here in consideration of Your acceptance of such terms and conditions.",
+    "section_identifier": "https://ocw.mit.edu/courses/earth-atmospheric-and-planetary-sciences/12-001-introduction-to-geology-fall-2013/instructor-insights",
+    "short_name_tlp": "",
+    "short_page_title": "Making Sense of Messiness",
+    "software_requirements": [
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "40.0",
+            "software_name_col": "Chrome",
+            "software_type_col": "Browser"
+        },
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "8.0",
+            "software_name_col": "Safari",
+            "software_type_col": "Browser"
+        },
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "38.0",
+            "software_name_col": "Mozilla Firefox",
+            "software_type_col": "Browser"
+        },
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "9.0",
+            "software_name_col": "Internet Explorer",
+            "software_type_col": "Browser"
+        },
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "13.1",
+            "software_name_col": "Edge",
+            "software_type_col": "Browser"
+        }
+    ],
+    "subject": [],
+    "tcATmit_instructional_tags": [],
+    "tcATmit_subject_tags": [],
+    "technical_location": "https://ocw.mit.edu/courses/earth-atmospheric-and-planetary-sciences/12-001-introduction-to-geology-fall-2013/instructor-insights/making-sense-of-messiness",
+    "text": "<p><i>In this section, Prof. Perron discusses how the course challenges students to make sense of complexities in the field.</i></p> <div class=\"pullquote\" style=\"float: right; margin: -4px 0 auto 20px; padding-left: 20px; width: 150px; border-right: none; border-left: 1px solid #D5C9BA;\"><p class=\"quote\">The real world is messy, and we&rsquo;re asking them to make sense of that messiness. That comes as a shock for many students.</p> <p class=\"sig\">&mdash;Taylor Perron</p></div> <p>Many of our students are accustomed to classes that have assignments in which the problems are clear-cut and have precise answers. The earth sciences are not like that. For example, we might ask students to identify three different rock hand samples that all appear rough and grayish. Students don&rsquo;t always know how to approach a problem like that.</p> <div style=\"float: left; margin: 0 20px 5px 0; width: 320px;\"><img width=\"320\" height=\"213\" src=\"./resolveuid/bfa2d132364d489cf9450c584b71ec1e\" alt=\"Boxes of rock and mineral hand samples.\" /><br /> <p class=\"instruction\">Students learn to identify rocks and minerals in the first two labs of the course. (Image by MIT OpenCourseWare.)</p></div> <p>Similarly, some become easily frustrated when they approach a road cut and the rock is partly covered with soil, broken up, weathered, and has minerals that are not as well exposed as they might be. The real world is messy, and we&rsquo;re asking them to make sense of that messiness. That comes as a shock for many students. Geology is not plug and chug. There&rsquo;s always extraneous information in the field. And the good stuff<span class=\"st\">&mdash;</span>critical details<span class=\"st\">&mdash;</span>is always missing!</p> <p>Although we do have students solve equations, we emphasize problems that involve critical thinking and incomplete evidence because that is what students will encounter in the field. In 12.001 we strive to help students feel okay about dealing with the uncertainties involved in making measurements in the field and using incomplete sets of observations to piece together a story. Once they get the hang of it, the students do really well!</p>",
+    "title": "Making Sense of Messiness",
+    "unique_identifier": "https://ocw.mit.edu/courses/earth-atmospheric-and-planetary-sciences/12-001-introduction-to-geology-fall-2013/instructor-insights/making-sense-of-messiness",
+    "url_rewrite_patterns": [],
+    "widgets_features": []
 }

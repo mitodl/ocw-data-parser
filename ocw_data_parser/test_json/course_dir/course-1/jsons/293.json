@@ -1,185 +1,185 @@
 {
-    "expanded_alternate_text": "", 
-    "features_tracking": [], 
-    "widgets_features": [], 
-    "contributors": [], 
-    "tcATmit_subject_tags": [], 
-    "unique_identifier": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-19-determinant-formulas-and-cofactors/18.06_L19.jpg", 
-    "_content_type_publisher": "text/plain", 
-    "_content_type_license": "text/plain", 
-    "_datafield_image": {
-        "encoding": "base64", 
-        "data": "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", 
-        "content_type": "image/jpeg", 
-        "filename": "18.06_L19.jpg"
-    }, 
-    "aggregationlevel": 2, 
-    "_uid": "044fe7952192dabe8f4a4536d45bb50a", 
-    "_workflow_history": {
-        "one_state_workflow": [
-            {
-                "action": null, 
-                "review_state": "published", 
-                "actor": "Jcplayer", 
-                "comments": "", 
-                "time": "2010/10/08 11:18:57.564 GMT-4"
-            }
-        ]
-    }, 
-    "expirationDate": "None", 
-    "_content_type_id": "text/plain", 
-    "duration": "", 
-    "contributor_list": [], 
-    "id": "18.06_L19.jpg", 
-    "related_mit_links": "", 
-    "thumb_height": "", 
-    "effectiveDate": "None", 
-    "title": "18.06_L19.jpg", 
-    "_layout": "view", 
-    "parent_module": "aabc44bdb2e45374d62f30f2a6d4c63e", 
-    "_content_type": "image/jpeg", 
-    "_userdefined_roles": [], 
-    "_gopip": 0, 
-    "location": "", 
-    "_atrefs": {
-        "BelongsTo": [
-            "aabc44bdb2e45374d62f30f2a6d4c63e"
-        ]
-    }, 
-    "_content_type_course_identifier": "text/plain", 
-    "_content_type_title": "text/plain", 
-    "section_identifier": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures", 
-    "_atbrefs": {
-        "thumbnail_image": [
-            "52ef65a06611f530adcdff80f3d56e4e"
-        ], 
-        "file_reference": [
-            "7c99a0e5a5b8e8997b915e0ac5141d17"
-        ]
-    }, 
-    "creation_date": "2010/10/08 11:18:57.556 GMT-4", 
-    "_content_type_section_identifier": "text/plain", 
-    "_type": "OCWImage", 
-    "technical_location": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-19-determinant-formulas-and-cofactors/18.06_L19.jpg", 
-    "description": "", 
-    "thumb_width": "", 
-    "software_requirements": [
-        {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "40.0", 
-            "software_name_col": "Chrome", 
-            "maximum_version_col": ""
-        }, 
-        {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "8.0", 
-            "software_name_col": "Safari", 
-            "maximum_version_col": ""
-        }, 
-        {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "38.0", 
-            "software_name_col": "Mozilla Firefox", 
-            "maximum_version_col": ""
-        }, 
-        {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "9.0", 
-            "software_name_col": "Internet Explorer", 
-            "maximum_version_col": ""
-        }, 
-        {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "13.1", 
-            "software_name_col": "Edge", 
-            "maximum_version_col": ""
-        }
-    ], 
-    "_content_type_technical_location": "text/plain", 
-    "alternate_text": "", 
-    "credit": "", 
-    "subject": [], 
-    "_content_type_rights": "text/html", 
-    "course_identifier": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010", 
-    "_directly_provided": [], 
-    "other_platform_requirements": "", 
-    "_id": "18.06_L19.jpg", 
-    "_classname": "OCWImage", 
-    "metadata_contributor_list": [
-        {
-            "md_contributor_uid": "", 
-            "md_contributor_entity": "Todd Rautenberg", 
-            "md_contributor_hide": "", 
-            "md_contributor_special_title": "", 
-            "md_contributor_role": "Validator"
-        }, 
-        {
-            "md_contributor_uid": "", 
-            "md_contributor_entity": "Todd Rautenberg", 
-            "md_contributor_hide": "", 
-            "md_contributor_special_title": "", 
-            "md_contributor_role": "Creator"
-        }
-    ], 
-    "tcATmit_instructional_tags": [], 
-    "caption": "", 
-    "parent_uid": "52ef65a06611f530adcdff80f3d56e4e", 
-    "modification_date": "2016/09/24 04:34:06.601 GMT-4", 
-    "course_linking": [], 
-    "publisher": "MIT OpenCourseWare", 
-    "excludeFromNav": false, 
-    "feature_requirements": [], 
-    "language": "", 
-    "license": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/", 
-    "rights": "This site (c) Massachusetts Institute of Technology 2010.  Content within individual courses is (c) by the individual authors unless otherwise noted. The Massachusetts Institute of Technology is providing this Work (as defined below) under the terms of this Creative Commons public license (\"CCPL\" or \"license\") unless otherwise noted. The Work is protected by copyright and/or other applicable law. Any use of the work other than as authorized under this license is prohibited. By exercising any of the rights to the Work provided here, You (as defined below) accept and agree to be bound by the terms of this license. The Licensor, the Massachusetts Institute of Technology, grants You the rights contained here in consideration of Your acceptance of such terms and conditions.", 
-    "always_publish": false, 
-    "popup_image_id": "", 
-    "materialtype": "Other", 
-    "_content_type_unique_identifier": "text/plain", 
-    "category_features": [], 
-    "is_pop_up_image": false, 
-    "_owner": null, 
-    "_defaultpage": "index_html", 
-    "firstTimeEdit": true, 
-    "_permissions": {
-        "Modify portal content": {
-            "acquire": false, 
-            "roles": [
-                "Editor", 
-                "Manager", 
-                "Owner"
-            ]
-        }, 
-        "Access contents information": {
-            "acquire": false, 
-            "roles": [
-                "Anonymous"
-            ]
-        }, 
-        "View": {
-            "acquire": false, 
-            "roles": [
-                "Anonymous"
-            ]
-        }
-    }, 
-    "_properties": [
-        [
-            "title", 
-            "18.06_L19.jpg", 
-            "string"
-        ]
-    ], 
-    "allowDiscussion": false, 
-    "_content_type_materialtype": "text/plain", 
-    "creators": [
-        "Jcplayer"
-    ], 
-    "courselist_features": [], 
     "_ac_local_roles": {
         "Jcplayer": [
             "Owner"
         ]
-    }, 
-    "_path": "/Plone/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-19-determinant-formulas-and-cofactors/18.06_L19.jpg"
+    },
+    "_atbrefs": {
+        "file_reference": [
+            "7c99a0e5a5b8e8997b915e0ac5141d17"
+        ],
+        "thumbnail_image": [
+            "52ef65a06611f530adcdff80f3d56e4e"
+        ]
+    },
+    "_atrefs": {
+        "BelongsTo": [
+            "aabc44bdb2e45374d62f30f2a6d4c63e"
+        ]
+    },
+    "_classname": "OCWImage",
+    "_content_type": "image/jpeg",
+    "_content_type_course_identifier": "text/plain",
+    "_content_type_id": "text/plain",
+    "_content_type_license": "text/plain",
+    "_content_type_materialtype": "text/plain",
+    "_content_type_publisher": "text/plain",
+    "_content_type_rights": "text/html",
+    "_content_type_section_identifier": "text/plain",
+    "_content_type_technical_location": "text/plain",
+    "_content_type_title": "text/plain",
+    "_content_type_unique_identifier": "text/plain",
+    "_datafield_image": {
+        "content_type": "image/jpeg",
+        "data": "ZW1wdHk=",
+        "encoding": "base64",
+        "filename": "18.06_L19.jpg"
+    },
+    "_defaultpage": "index_html",
+    "_directly_provided": [],
+    "_gopip": 0,
+    "_id": "18.06_L19.jpg",
+    "_layout": "view",
+    "_owner": null,
+    "_path": "/Plone/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-19-determinant-formulas-and-cofactors/18.06_L19.jpg",
+    "_permissions": {
+        "Access contents information": {
+            "acquire": false,
+            "roles": [
+                "Anonymous"
+            ]
+        },
+        "Modify portal content": {
+            "acquire": false,
+            "roles": [
+                "Editor",
+                "Manager",
+                "Owner"
+            ]
+        },
+        "View": {
+            "acquire": false,
+            "roles": [
+                "Anonymous"
+            ]
+        }
+    },
+    "_properties": [
+        [
+            "title",
+            "18.06_L19.jpg",
+            "string"
+        ]
+    ],
+    "_type": "OCWImage",
+    "_uid": "044fe7952192dabe8f4a4536d45bb50a",
+    "_userdefined_roles": [],
+    "_workflow_history": {
+        "one_state_workflow": [
+            {
+                "action": null,
+                "actor": "Jcplayer",
+                "comments": "",
+                "review_state": "published",
+                "time": "2010/10/08 11:18:57.564 GMT-4"
+            }
+        ]
+    },
+    "aggregationlevel": 2,
+    "allowDiscussion": false,
+    "alternate_text": "",
+    "always_publish": false,
+    "caption": "",
+    "category_features": [],
+    "contributor_list": [],
+    "contributors": [],
+    "course_identifier": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010",
+    "course_linking": [],
+    "courselist_features": [],
+    "creation_date": "2010/10/08 11:18:57.556 GMT-4",
+    "creators": [
+        "Jcplayer"
+    ],
+    "credit": "",
+    "description": "",
+    "duration": "",
+    "effectiveDate": "None",
+    "excludeFromNav": false,
+    "expanded_alternate_text": "",
+    "expirationDate": "None",
+    "feature_requirements": [],
+    "features_tracking": [],
+    "firstTimeEdit": true,
+    "id": "18.06_L19.jpg",
+    "is_pop_up_image": false,
+    "language": "",
+    "license": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/",
+    "location": "",
+    "materialtype": "Other",
+    "metadata_contributor_list": [
+        {
+            "md_contributor_entity": "Todd Rautenberg",
+            "md_contributor_hide": "",
+            "md_contributor_role": "Validator",
+            "md_contributor_special_title": "",
+            "md_contributor_uid": ""
+        },
+        {
+            "md_contributor_entity": "Todd Rautenberg",
+            "md_contributor_hide": "",
+            "md_contributor_role": "Creator",
+            "md_contributor_special_title": "",
+            "md_contributor_uid": ""
+        }
+    ],
+    "modification_date": "2016/09/24 04:34:06.601 GMT-4",
+    "other_platform_requirements": "",
+    "parent_module": "aabc44bdb2e45374d62f30f2a6d4c63e",
+    "parent_uid": "52ef65a06611f530adcdff80f3d56e4e",
+    "popup_image_id": "",
+    "publisher": "MIT OpenCourseWare",
+    "related_mit_links": "",
+    "rights": "This site (c) Massachusetts Institute of Technology 2010.  Content within individual courses is (c) by the individual authors unless otherwise noted. The Massachusetts Institute of Technology is providing this Work (as defined below) under the terms of this Creative Commons public license (\"CCPL\" or \"license\") unless otherwise noted. The Work is protected by copyright and/or other applicable law. Any use of the work other than as authorized under this license is prohibited. By exercising any of the rights to the Work provided here, You (as defined below) accept and agree to be bound by the terms of this license. The Licensor, the Massachusetts Institute of Technology, grants You the rights contained here in consideration of Your acceptance of such terms and conditions.",
+    "section_identifier": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures",
+    "software_requirements": [
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "40.0",
+            "software_name_col": "Chrome",
+            "software_type_col": "Browser"
+        },
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "8.0",
+            "software_name_col": "Safari",
+            "software_type_col": "Browser"
+        },
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "38.0",
+            "software_name_col": "Mozilla Firefox",
+            "software_type_col": "Browser"
+        },
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "9.0",
+            "software_name_col": "Internet Explorer",
+            "software_type_col": "Browser"
+        },
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "13.1",
+            "software_name_col": "Edge",
+            "software_type_col": "Browser"
+        }
+    ],
+    "subject": [],
+    "tcATmit_instructional_tags": [],
+    "tcATmit_subject_tags": [],
+    "technical_location": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-19-determinant-formulas-and-cofactors/18.06_L19.jpg",
+    "thumb_height": "",
+    "thumb_width": "",
+    "title": "18.06_L19.jpg",
+    "unique_identifier": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-19-determinant-formulas-and-cofactors/18.06_L19.jpg",
+    "widgets_features": []
 }

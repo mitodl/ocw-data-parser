@@ -1,185 +1,185 @@
 {
-    "expanded_alternate_text": "", 
-    "features_tracking": [], 
-    "widgets_features": [], 
-    "contributors": [], 
-    "tcATmit_subject_tags": [], 
-    "unique_identifier": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-7-solving-ax-0-pivot-variables-special-solutions/18.06_L07.jpg", 
-    "_content_type_publisher": "text/plain", 
-    "_content_type_license": "text/plain", 
-    "_datafield_image": {
-        "encoding": "base64", 
-        "data": "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", 
-        "content_type": "image/jpeg", 
-        "filename": "18.06_L07.jpg"
-    }, 
-    "aggregationlevel": 2, 
-    "_uid": "3fbafafdf5a7327d995f5162cf94a869", 
-    "_workflow_history": {
-        "one_state_workflow": [
-            {
-                "action": null, 
-                "review_state": "published", 
-                "actor": "Jcplayer", 
-                "comments": "", 
-                "time": "2010/10/07 14:43:26.881 GMT-4"
-            }
-        ]
-    }, 
-    "expirationDate": "None", 
-    "_content_type_id": "text/plain", 
-    "duration": "", 
-    "contributor_list": [], 
-    "id": "18.06_L07.jpg", 
-    "related_mit_links": "", 
-    "thumb_height": "", 
-    "effectiveDate": "None", 
-    "title": "18.06_L07.jpg", 
-    "_layout": "view", 
-    "parent_module": "aabc44bdb2e45374d62f30f2a6d4c63e", 
-    "_content_type": "image/jpeg", 
-    "_userdefined_roles": [], 
-    "_gopip": 0, 
-    "location": "", 
-    "_atrefs": {
-        "BelongsTo": [
-            "aabc44bdb2e45374d62f30f2a6d4c63e"
-        ]
-    }, 
-    "_content_type_course_identifier": "text/plain", 
-    "_content_type_title": "text/plain", 
-    "section_identifier": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures", 
-    "_atbrefs": {
-        "thumbnail_image": [
-            "fde5877ab540a31330a1ef06c5e1127d"
-        ], 
-        "file_reference": [
-            "76970470466813a7721ec7973b61274f"
-        ]
-    }, 
-    "creation_date": "2010/10/07 14:43:26.873 GMT-4", 
-    "_content_type_section_identifier": "text/plain", 
-    "_type": "OCWImage", 
-    "technical_location": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-7-solving-ax-0-pivot-variables-special-solutions/18.06_L07.jpg", 
-    "description": "", 
-    "thumb_width": "", 
-    "software_requirements": [
-        {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "40.0", 
-            "software_name_col": "Chrome", 
-            "maximum_version_col": ""
-        }, 
-        {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "8.0", 
-            "software_name_col": "Safari", 
-            "maximum_version_col": ""
-        }, 
-        {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "38.0", 
-            "software_name_col": "Mozilla Firefox", 
-            "maximum_version_col": ""
-        }, 
-        {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "9.0", 
-            "software_name_col": "Internet Explorer", 
-            "maximum_version_col": ""
-        }, 
-        {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "13.1", 
-            "software_name_col": "Edge", 
-            "maximum_version_col": ""
-        }
-    ], 
-    "_content_type_technical_location": "text/plain", 
-    "alternate_text": "", 
-    "credit": "", 
-    "subject": [], 
-    "_content_type_rights": "text/html", 
-    "course_identifier": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010", 
-    "_directly_provided": [], 
-    "other_platform_requirements": "", 
-    "_id": "18.06_L07.jpg", 
-    "_classname": "OCWImage", 
-    "metadata_contributor_list": [
-        {
-            "md_contributor_uid": "", 
-            "md_contributor_entity": "Todd Rautenberg", 
-            "md_contributor_hide": "", 
-            "md_contributor_special_title": "", 
-            "md_contributor_role": "Validator"
-        }, 
-        {
-            "md_contributor_uid": "", 
-            "md_contributor_entity": "Todd Rautenberg", 
-            "md_contributor_hide": "", 
-            "md_contributor_special_title": "", 
-            "md_contributor_role": "Creator"
-        }
-    ], 
-    "tcATmit_instructional_tags": [], 
-    "caption": "", 
-    "parent_uid": "fde5877ab540a31330a1ef06c5e1127d", 
-    "modification_date": "2016/09/24 04:30:33.331 GMT-4", 
-    "course_linking": [], 
-    "publisher": "MIT OpenCourseWare", 
-    "excludeFromNav": false, 
-    "feature_requirements": [], 
-    "language": "", 
-    "license": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/", 
-    "rights": "This site (c) Massachusetts Institute of Technology 2010.  Content within individual courses is (c) by the individual authors unless otherwise noted. The Massachusetts Institute of Technology is providing this Work (as defined below) under the terms of this Creative Commons public license (\"CCPL\" or \"license\") unless otherwise noted. The Work is protected by copyright and/or other applicable law. Any use of the work other than as authorized under this license is prohibited. By exercising any of the rights to the Work provided here, You (as defined below) accept and agree to be bound by the terms of this license. The Licensor, the Massachusetts Institute of Technology, grants You the rights contained here in consideration of Your acceptance of such terms and conditions.", 
-    "always_publish": false, 
-    "popup_image_id": "", 
-    "materialtype": "Other", 
-    "_content_type_unique_identifier": "text/plain", 
-    "category_features": [], 
-    "is_pop_up_image": false, 
-    "_owner": null, 
-    "_defaultpage": "index_html", 
-    "firstTimeEdit": true, 
-    "_permissions": {
-        "Modify portal content": {
-            "acquire": false, 
-            "roles": [
-                "Editor", 
-                "Manager", 
-                "Owner"
-            ]
-        }, 
-        "Access contents information": {
-            "acquire": false, 
-            "roles": [
-                "Anonymous"
-            ]
-        }, 
-        "View": {
-            "acquire": false, 
-            "roles": [
-                "Anonymous"
-            ]
-        }
-    }, 
-    "_properties": [
-        [
-            "title", 
-            "18.06_L07.jpg", 
-            "string"
-        ]
-    ], 
-    "allowDiscussion": false, 
-    "_content_type_materialtype": "text/plain", 
-    "creators": [
-        "Jcplayer"
-    ], 
-    "courselist_features": [], 
     "_ac_local_roles": {
         "Jcplayer": [
             "Owner"
         ]
-    }, 
-    "_path": "/Plone/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-7-solving-ax-0-pivot-variables-special-solutions/18.06_L07.jpg"
+    },
+    "_atbrefs": {
+        "file_reference": [
+            "76970470466813a7721ec7973b61274f"
+        ],
+        "thumbnail_image": [
+            "fde5877ab540a31330a1ef06c5e1127d"
+        ]
+    },
+    "_atrefs": {
+        "BelongsTo": [
+            "aabc44bdb2e45374d62f30f2a6d4c63e"
+        ]
+    },
+    "_classname": "OCWImage",
+    "_content_type": "image/jpeg",
+    "_content_type_course_identifier": "text/plain",
+    "_content_type_id": "text/plain",
+    "_content_type_license": "text/plain",
+    "_content_type_materialtype": "text/plain",
+    "_content_type_publisher": "text/plain",
+    "_content_type_rights": "text/html",
+    "_content_type_section_identifier": "text/plain",
+    "_content_type_technical_location": "text/plain",
+    "_content_type_title": "text/plain",
+    "_content_type_unique_identifier": "text/plain",
+    "_datafield_image": {
+        "content_type": "image/jpeg",
+        "data": "ZW1wdHk=",
+        "encoding": "base64",
+        "filename": "18.06_L07.jpg"
+    },
+    "_defaultpage": "index_html",
+    "_directly_provided": [],
+    "_gopip": 0,
+    "_id": "18.06_L07.jpg",
+    "_layout": "view",
+    "_owner": null,
+    "_path": "/Plone/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-7-solving-ax-0-pivot-variables-special-solutions/18.06_L07.jpg",
+    "_permissions": {
+        "Access contents information": {
+            "acquire": false,
+            "roles": [
+                "Anonymous"
+            ]
+        },
+        "Modify portal content": {
+            "acquire": false,
+            "roles": [
+                "Editor",
+                "Manager",
+                "Owner"
+            ]
+        },
+        "View": {
+            "acquire": false,
+            "roles": [
+                "Anonymous"
+            ]
+        }
+    },
+    "_properties": [
+        [
+            "title",
+            "18.06_L07.jpg",
+            "string"
+        ]
+    ],
+    "_type": "OCWImage",
+    "_uid": "3fbafafdf5a7327d995f5162cf94a869",
+    "_userdefined_roles": [],
+    "_workflow_history": {
+        "one_state_workflow": [
+            {
+                "action": null,
+                "actor": "Jcplayer",
+                "comments": "",
+                "review_state": "published",
+                "time": "2010/10/07 14:43:26.881 GMT-4"
+            }
+        ]
+    },
+    "aggregationlevel": 2,
+    "allowDiscussion": false,
+    "alternate_text": "",
+    "always_publish": false,
+    "caption": "",
+    "category_features": [],
+    "contributor_list": [],
+    "contributors": [],
+    "course_identifier": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010",
+    "course_linking": [],
+    "courselist_features": [],
+    "creation_date": "2010/10/07 14:43:26.873 GMT-4",
+    "creators": [
+        "Jcplayer"
+    ],
+    "credit": "",
+    "description": "",
+    "duration": "",
+    "effectiveDate": "None",
+    "excludeFromNav": false,
+    "expanded_alternate_text": "",
+    "expirationDate": "None",
+    "feature_requirements": [],
+    "features_tracking": [],
+    "firstTimeEdit": true,
+    "id": "18.06_L07.jpg",
+    "is_pop_up_image": false,
+    "language": "",
+    "license": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/",
+    "location": "",
+    "materialtype": "Other",
+    "metadata_contributor_list": [
+        {
+            "md_contributor_entity": "Todd Rautenberg",
+            "md_contributor_hide": "",
+            "md_contributor_role": "Validator",
+            "md_contributor_special_title": "",
+            "md_contributor_uid": ""
+        },
+        {
+            "md_contributor_entity": "Todd Rautenberg",
+            "md_contributor_hide": "",
+            "md_contributor_role": "Creator",
+            "md_contributor_special_title": "",
+            "md_contributor_uid": ""
+        }
+    ],
+    "modification_date": "2016/09/24 04:30:33.331 GMT-4",
+    "other_platform_requirements": "",
+    "parent_module": "aabc44bdb2e45374d62f30f2a6d4c63e",
+    "parent_uid": "fde5877ab540a31330a1ef06c5e1127d",
+    "popup_image_id": "",
+    "publisher": "MIT OpenCourseWare",
+    "related_mit_links": "",
+    "rights": "This site (c) Massachusetts Institute of Technology 2010.  Content within individual courses is (c) by the individual authors unless otherwise noted. The Massachusetts Institute of Technology is providing this Work (as defined below) under the terms of this Creative Commons public license (\"CCPL\" or \"license\") unless otherwise noted. The Work is protected by copyright and/or other applicable law. Any use of the work other than as authorized under this license is prohibited. By exercising any of the rights to the Work provided here, You (as defined below) accept and agree to be bound by the terms of this license. The Licensor, the Massachusetts Institute of Technology, grants You the rights contained here in consideration of Your acceptance of such terms and conditions.",
+    "section_identifier": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures",
+    "software_requirements": [
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "40.0",
+            "software_name_col": "Chrome",
+            "software_type_col": "Browser"
+        },
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "8.0",
+            "software_name_col": "Safari",
+            "software_type_col": "Browser"
+        },
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "38.0",
+            "software_name_col": "Mozilla Firefox",
+            "software_type_col": "Browser"
+        },
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "9.0",
+            "software_name_col": "Internet Explorer",
+            "software_type_col": "Browser"
+        },
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "13.1",
+            "software_name_col": "Edge",
+            "software_type_col": "Browser"
+        }
+    ],
+    "subject": [],
+    "tcATmit_instructional_tags": [],
+    "tcATmit_subject_tags": [],
+    "technical_location": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-7-solving-ax-0-pivot-variables-special-solutions/18.06_L07.jpg",
+    "thumb_height": "",
+    "thumb_width": "",
+    "title": "18.06_L07.jpg",
+    "unique_identifier": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-7-solving-ax-0-pivot-variables-special-solutions/18.06_L07.jpg",
+    "widgets_features": []
 }

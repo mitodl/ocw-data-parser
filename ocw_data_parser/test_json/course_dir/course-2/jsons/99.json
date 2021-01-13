@@ -1,205 +1,205 @@
 {
-    "text": "<div id=\"download_inner_main\"><p class=\"ptext\">This package contains the same content as the online version of the course, except for any audio/video materials and other interactive file types.</p><p class=\"ptext\">For help downloading and using course materials, read our <a href=\"http://ocw.mit.edu/help/faq-technology/\">frequently asked questions</a>.</p></div>", 
-    "_content_type_license": "text/plain", 
-    "_uid": "474689ca2d43657f79afc2ae8a8e8787", 
-    "title": "Download Course Materials", 
     "_ac_local_roles": {
         "pgandhi3": [
             "Owner"
         ]
-    }, 
-    "location": "", 
-    "_content_type_course_identifier": "text/plain", 
-    "_atbrefs": {}, 
-    "constrainTypesMode": 0, 
-    "technical_location": "https://ocw.mit.edu/courses/earth-atmospheric-and-planetary-sciences/12-001-introduction-to-geology-fall-2013/download-course-materials", 
-    "software_requirements": [
-        {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "40.0", 
-            "software_name_col": "Chrome", 
-            "maximum_version_col": ""
-        }, 
-        {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "8.0", 
-            "software_name_col": "Safari", 
-            "maximum_version_col": ""
-        }, 
-        {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "38.0", 
-            "software_name_col": "Mozilla Firefox", 
-            "maximum_version_col": ""
-        }, 
-        {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "9.0", 
-            "software_name_col": "Internet Explorer", 
-            "maximum_version_col": ""
-        }, 
-        {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "13.1", 
-            "software_name_col": "Edge", 
-            "maximum_version_col": ""
-        }
-    ], 
-    "_content_type_technical_location": "text/plain", 
-    "_content_type_rights": "text/html", 
-    "_directly_provided": [
-        "Products.CMFEditions.interfaces.IVersioned"
-    ], 
-    "parent_uid": "d9aad1541f1a9d3c0f7b0dcf9531a9a1", 
-    "excludeFromNav": false, 
-    "_content_type_unique_identifier": "text/plain", 
-    "allowDiscussion": false, 
-    "metadata_contributor_list": [], 
-    "locallyAllowedTypes": [
-        "OCWImage", 
-        "CourseSection", 
-        "OCWExtFile", 
-        "OCWFile"
-    ], 
-    "_content_type_text": "text/html", 
-    "ad_type": "HOUSE", 
-    "creation_date": "2014/09/25 05:12:03.601 GMT-4", 
-    "aggregationlevel": 3, 
-    "duration": "", 
-    "immediatelyAddableTypes": [
-        "OCWImage", 
-        "CourseSection", 
-        "OCWExtFile", 
-        "OCWFile"
-    ], 
-    "subject": [], 
-    "_content_type_short_page_title": "text/plain", 
-    "effectiveDate": "2014/09/25 07:53:09.209 GMT-4", 
-    "parent_module": "d9aad1541f1a9d3c0f7b0dcf9531a9a1", 
-    "is_mathml_document": false, 
-    "bottomtext": "", 
-    "short_page_title": "Download Course Materials", 
-    "section_identifier": null, 
-    "related_mit_links": "", 
-    "_content_type_ad_type": "text/plain", 
-    "_layout": "custom_view", 
-    "_workflow_history": {
-        "page_workflow": [
-            {
-                "action": null, 
-                "review_state": "waiting_for_authoring", 
-                "actor": "pgandhi3", 
-                "comments": "", 
-                "time": "2014/09/25 05:12:03.611 GMT-4"
-            }, 
-            {
-                "action": "approve_to_staging", 
-                "review_state": "ready_for_staging", 
-                "actor": "rverma83", 
-                "comments": "", 
-                "time": "2014/09/25 07:53:09.272 GMT-4"
-            }
-        ]
-    }, 
-    "_classname": "DownloadSection", 
-    "_content_type_materialtype": "text/plain", 
-    "_userdefined_roles": [], 
-    "publisher": "MIT OpenCourseWare", 
-    "nextPreviousEnabled": false, 
-    "language": "", 
-    "url_rewrite_patterns": [], 
-    "widgets_features": [], 
-    "category_features": [], 
-    "firstTimeEdit": true, 
-    "feature_requirements": [], 
-    "list_in_left_nav": false, 
-    "short_name_tlp": "Download Course Materials", 
-    "expirationDate": "None", 
-    "_content_type_id": "text/plain", 
-    "contributor_list": [], 
-    "is_media_gallery": false, 
-    "contributors": [], 
-    "_gopip": 8, 
-    "_content_type_title": "text/plain", 
-    "course_linking": [], 
+    },
+    "_atbrefs": {},
     "_atrefs": {
         "BelongsTo": [
             "d9aad1541f1a9d3c0f7b0dcf9531a9a1"
         ]
-    }, 
-    "other_platform_requirements": "", 
-    "license": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/", 
-    "rights": "This site (c) Massachusetts Institute of Technology 2014.  Content within individual courses is (c) by the individual authors unless otherwise noted. The Massachusetts Institute of Technology is providing this Work (as defined below) under the terms of this Creative Commons public license (\"CCPL\" or \"license\") unless otherwise noted. The Work is protected by copyright and/or other applicable law. Any use of the work other than as authorized under this license is prohibited. By exercising any of the rights to the Work provided here, You (as defined below) accept and agree to be bound by the terms of this license. The Licensor, the Massachusetts Institute of Technology, grants You the rights contained here in consideration of Your acceptance of such terms and conditions.", 
-    "hide_Page_title": false, 
-    "_defaultpage": "", 
-    "tcATmit_subject_tags": [], 
-    "features_tracking": [], 
-    "ad_champion_text": "", 
-    "has_inline_embed": false, 
-    "unique_identifier": "https://ocw.mit.edu/courses/earth-atmospheric-and-planetary-sciences/12-001-introduction-to-geology-fall-2013/download-course-materials", 
-    "is_image_gallery": false, 
-    "id": "download-course-materials", 
-    "materialtype": "Other", 
-    "_type": "DownloadSection", 
-    "description": "", 
-    "course_identifier": "https://ocw.mit.edu/courses/earth-atmospheric-and-planetary-sciences/12-001-introduction-to-geology-fall-2013", 
-    "_content_type_publisher": "text/plain", 
-    "tcATmit_instructional_tags": [], 
-    "_content_type": "text/html", 
-    "creators": [
-        "pgandhi3"
-    ], 
-    "modification_date": "2016/09/24 01:39:36.982 GMT-4", 
-    "always_publish": false, 
-    "_owner": null, 
+    },
+    "_classname": "DownloadSection",
+    "_content_type": "text/html",
+    "_content_type_ad_type": "text/plain",
+    "_content_type_course_identifier": "text/plain",
+    "_content_type_id": "text/plain",
+    "_content_type_license": "text/plain",
+    "_content_type_materialtype": "text/plain",
+    "_content_type_publisher": "text/plain",
+    "_content_type_rights": "text/html",
+    "_content_type_short_name_tlp": "text/plain",
+    "_content_type_short_page_title": "text/plain",
+    "_content_type_technical_location": "text/plain",
+    "_content_type_text": "text/html",
+    "_content_type_title": "text/plain",
+    "_content_type_unique_identifier": "text/plain",
+    "_defaultpage": "",
+    "_directly_provided": [
+        "Products.CMFEditions.interfaces.IVersioned"
+    ],
+    "_gopip": 8,
+    "_id": "download-course-materials",
+    "_layout": "custom_view",
+    "_owner": null,
+    "_path": "/Plone/courses/earth-atmospheric-and-planetary-sciences/12-001-introduction-to-geology-fall-2013/download-course-materials",
     "_permissions": {
-        "Change portal events": {
-            "acquire": false, 
-            "roles": [
-                "Editor", 
-                "Manager", 
-                "MetadataEditor", 
-                "Owner"
-            ]
-        }, 
-        "Modify portal content": {
-            "acquire": false, 
-            "roles": [
-                "Manager", 
-                "MetadataEditor"
-            ]
-        }, 
         "Access contents information": {
-            "acquire": false, 
+            "acquire": false,
             "roles": [
                 "Authenticated"
             ]
-        }, 
-        "List folder contents": {
-            "acquire": false, 
+        },
+        "Change portal events": {
+            "acquire": false,
             "roles": [
-                "Editor", 
-                "Manager", 
-                "MetadataEditor", 
+                "Editor",
+                "Manager",
+                "MetadataEditor",
                 "Owner"
             ]
-        }, 
+        },
+        "List folder contents": {
+            "acquire": false,
+            "roles": [
+                "Editor",
+                "Manager",
+                "MetadataEditor",
+                "Owner"
+            ]
+        },
+        "Modify portal content": {
+            "acquire": false,
+            "roles": [
+                "Manager",
+                "MetadataEditor"
+            ]
+        },
         "View": {
-            "acquire": false, 
+            "acquire": false,
             "roles": [
                 "Authenticated"
             ]
         }
-    }, 
+    },
     "_properties": [
         [
-            "title", 
-            "Download Course Materials", 
+            "title",
+            "Download Course Materials",
             "string"
         ]
-    ], 
-    "_id": "download-course-materials", 
-    "courselist_features": [], 
-    "_content_type_short_name_tlp": "text/plain", 
-    "_path": "/Plone/courses/earth-atmospheric-and-planetary-sciences/12-001-introduction-to-geology-fall-2013/download-course-materials"
+    ],
+    "_type": "DownloadSection",
+    "_uid": "474689ca2d43657f79afc2ae8a8e8787",
+    "_userdefined_roles": [],
+    "_workflow_history": {
+        "page_workflow": [
+            {
+                "action": null,
+                "actor": "pgandhi3",
+                "comments": "",
+                "review_state": "waiting_for_authoring",
+                "time": "2014/09/25 05:12:03.611 GMT-4"
+            },
+            {
+                "action": "approve_to_staging",
+                "actor": "rverma83",
+                "comments": "",
+                "review_state": "ready_for_staging",
+                "time": "2014/09/25 07:53:09.272 GMT-4"
+            }
+        ]
+    },
+    "ad_champion_text": "",
+    "ad_type": "HOUSE",
+    "aggregationlevel": 3,
+    "allowDiscussion": false,
+    "always_publish": false,
+    "bottomtext": "",
+    "category_features": [],
+    "constrainTypesMode": 0,
+    "contributor_list": [],
+    "contributors": [],
+    "course_identifier": "https://ocw.mit.edu/courses/earth-atmospheric-and-planetary-sciences/12-001-introduction-to-geology-fall-2013",
+    "course_linking": [],
+    "courselist_features": [],
+    "creation_date": "2014/09/25 05:12:03.601 GMT-4",
+    "creators": [
+        "pgandhi3"
+    ],
+    "description": "",
+    "duration": "",
+    "effectiveDate": "2014/09/25 07:53:09.209 GMT-4",
+    "excludeFromNav": false,
+    "expirationDate": "None",
+    "feature_requirements": [],
+    "features_tracking": [],
+    "firstTimeEdit": true,
+    "has_inline_embed": false,
+    "hide_Page_title": false,
+    "id": "download-course-materials",
+    "immediatelyAddableTypes": [
+        "OCWImage",
+        "CourseSection",
+        "OCWExtFile",
+        "OCWFile"
+    ],
+    "is_image_gallery": false,
+    "is_mathml_document": false,
+    "is_media_gallery": false,
+    "language": "",
+    "license": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/",
+    "list_in_left_nav": false,
+    "locallyAllowedTypes": [
+        "OCWImage",
+        "CourseSection",
+        "OCWExtFile",
+        "OCWFile"
+    ],
+    "location": "",
+    "materialtype": "Other",
+    "metadata_contributor_list": [],
+    "modification_date": "2016/09/24 01:39:36.982 GMT-4",
+    "nextPreviousEnabled": false,
+    "other_platform_requirements": "",
+    "parent_module": "d9aad1541f1a9d3c0f7b0dcf9531a9a1",
+    "parent_uid": "d9aad1541f1a9d3c0f7b0dcf9531a9a1",
+    "publisher": "MIT OpenCourseWare",
+    "related_mit_links": "",
+    "rights": "This site (c) Massachusetts Institute of Technology 2014.  Content within individual courses is (c) by the individual authors unless otherwise noted. The Massachusetts Institute of Technology is providing this Work (as defined below) under the terms of this Creative Commons public license (\"CCPL\" or \"license\") unless otherwise noted. The Work is protected by copyright and/or other applicable law. Any use of the work other than as authorized under this license is prohibited. By exercising any of the rights to the Work provided here, You (as defined below) accept and agree to be bound by the terms of this license. The Licensor, the Massachusetts Institute of Technology, grants You the rights contained here in consideration of Your acceptance of such terms and conditions.",
+    "section_identifier": null,
+    "short_name_tlp": "Download Course Materials",
+    "short_page_title": "Download Course Materials",
+    "software_requirements": [
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "40.0",
+            "software_name_col": "Chrome",
+            "software_type_col": "Browser"
+        },
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "8.0",
+            "software_name_col": "Safari",
+            "software_type_col": "Browser"
+        },
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "38.0",
+            "software_name_col": "Mozilla Firefox",
+            "software_type_col": "Browser"
+        },
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "9.0",
+            "software_name_col": "Internet Explorer",
+            "software_type_col": "Browser"
+        },
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "13.1",
+            "software_name_col": "Edge",
+            "software_type_col": "Browser"
+        }
+    ],
+    "subject": [],
+    "tcATmit_instructional_tags": [],
+    "tcATmit_subject_tags": [],
+    "technical_location": "https://ocw.mit.edu/courses/earth-atmospheric-and-planetary-sciences/12-001-introduction-to-geology-fall-2013/download-course-materials",
+    "text": "<div id=\"download_inner_main\"><p class=\"ptext\">This package contains the same content as the online version of the course, except for any audio/video materials and other interactive file types.</p><p class=\"ptext\">For help downloading and using course materials, read our <a href=\"http://ocw.mit.edu/help/faq-technology/\">frequently asked questions</a>.</p></div>",
+    "title": "Download Course Materials",
+    "unique_identifier": "https://ocw.mit.edu/courses/earth-atmospheric-and-planetary-sciences/12-001-introduction-to-geology-fall-2013/download-course-materials",
+    "url_rewrite_patterns": [],
+    "widgets_features": []
 }

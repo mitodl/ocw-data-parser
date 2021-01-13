@@ -1,271 +1,271 @@
 {
-    "text": "<p><i>In this section, Prof. Perron shares insights about co-teaching.</i></p> <div style=\"float: right; margin: -4px 0 auto 20px; padding-left: 20px; width: 150px; border-right: none; border-left: 1px solid #D5C9BA;\" class=\"pullquote\"><p class=\"quote\">The ability to observe instructors having a scientific repartee enhances the learning experience for undergraduate students.</p> <p class=\"sig\">&mdash;Taylor Perron</p></div> <p><em>Introduction to Geology</em> has evolved over the years to become a more active experience for students and instructors. As co-teachers, we&rsquo;ve reduced some of the traditional lecture time and have included more interactive hands-on activities. This is in recognition of the fact that so many things in earth science are tangible. During classes, we make a big effort to expose students to hand samples. We teach them how to identify rocks and minerals. We take them out into the field. In fact, the in-depth field trip we developed two years ago, which involves driving students to Upstate New York and back through western Massachusetts, has now become an integral part of the class.</p> <div style=\"float: left; margin: 0 20px 5px 0; width: 320px;\"><img width=\"320\" height=\"213\" src=\"./resolveuid/884ed8a126caebc0bc2a972fb7db9f04\" alt=\"A box of small brown minerals.\" /><br /> <p class=\"instruction\">A box of minerals to be identified by the students in the mineral identification lab. (Image by MIT OpenCourseWare.)</p></div> <p>One of the best things about co-teaching 12.001 is our balance of interests and expertise. Oliver Jagoutz is what we in the business call a &ldquo;hard rock&rdquo; geologist and I&rsquo;m what some people would call a &ldquo;soft rock&rdquo; geologist. Oliver studies the formation and evolution of the continental crust, while I study the earth&rsquo;s surface and all the processes that shape that surface. Oliver tends to work over longer time scales and looks a bit deeper down into the earth than I do, while I think more about the interface between the solid earth and the atmosphere. Our different lenses provide students with a glimpse into the variety of specialties within the field of geology and allow us to divide the teaching of topics in the syllabus along lines of expertise. This is helpful because it enables us to provide students with more in-depth answers to their questions.</p> <p>Importantly, co-teaching also allows us to have a repartee while working with students. Although we do not typically lecture together, we do play off of each other during field trips. We have spirited discussions about phenomena we&rsquo;re observing.  These discussions help students realize that not all of the details about how geologic stories unfold are entirely understood.  The ability to observe instructors having a scientific repartee enhances the learning experience for undergraduate students.</p>", 
-    "_content_type_license": "text/plain", 
-    "_uid": "e843f795081ac616d0cebdff6e956e33", 
-    "title": "Co-Teaching", 
     "_ac_local_roles": {
         "Kcanavan": [
             "Owner"
         ]
-    }, 
-    "location": "", 
-    "_content_type_course_identifier": "text/plain", 
+    },
     "_atbrefs": {
         "isReferencing": [
             "1c2cb2ad1c70fd66f19e20103dc94595"
         ]
-    }, 
-    "constrainTypesMode": 0, 
-    "_content_type_section_identifier": "text/plain", 
-    "technical_location": "https://ocw.mit.edu/courses/earth-atmospheric-and-planetary-sciences/12-001-introduction-to-geology-fall-2013/instructor-insights/co-teaching", 
-    "software_requirements": [
-        {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "40.0", 
-            "software_name_col": "Chrome", 
-            "maximum_version_col": ""
-        }, 
-        {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "8.0", 
-            "software_name_col": "Safari", 
-            "maximum_version_col": ""
-        }, 
-        {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "38.0", 
-            "software_name_col": "Mozilla Firefox", 
-            "maximum_version_col": ""
-        }, 
-        {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "9.0", 
-            "software_name_col": "Internet Explorer", 
-            "maximum_version_col": ""
-        }, 
-        {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "13.1", 
-            "software_name_col": "Edge", 
-            "maximum_version_col": ""
-        }
-    ], 
-    "_content_type_technical_location": "text/plain", 
-    "_content_type_rights": "text/html", 
-    "_directly_provided": [
-        "Products.CMFEditions.interfaces.IVersioned"
-    ], 
-    "parent_uid": "1c2cb2ad1c70fd66f19e20103dc94595", 
-    "excludeFromNav": false, 
-    "_content_type_unique_identifier": "text/plain", 
-    "allowDiscussion": false, 
-    "metadata_contributor_list": [], 
-    "locallyAllowedTypes": [
-        "OCWImage", 
-        "CourseSection", 
-        "OCWExtFile", 
-        "OCWFile", 
-        "MediaResource"
-    ], 
-    "_content_type_text": "text/html", 
-    "ad_type": "HOUSE", 
-    "creation_date": "2014/12/03 16:45:19.262 US/Eastern", 
-    "aggregationlevel": 3, 
-    "duration": "", 
-    "immediatelyAddableTypes": [
-        "OCWImage", 
-        "CourseSection", 
-        "OCWExtFile", 
-        "OCWFile", 
-        "MediaResource"
-    ], 
-    "subject": [], 
-    "_content_type_short_page_title": "text/plain", 
-    "effectiveDate": "2014/12/03 17:03:20.627 US/Eastern", 
-    "parent_module": "d9aad1541f1a9d3c0f7b0dcf9531a9a1", 
-    "is_mathml_document": false, 
-    "bottomtext": "", 
-    "short_page_title": "Co-Teaching", 
-    "section_identifier": "https://ocw.mit.edu/courses/earth-atmospheric-and-planetary-sciences/12-001-introduction-to-geology-fall-2013/instructor-insights", 
-    "related_mit_links": "", 
-    "_content_type_ad_type": "text/plain", 
-    "_layout": "custom_view", 
-    "_workflow_history": {
-        "page_workflow": [
-            {
-                "action": null, 
-                "review_state": "waiting_for_authoring", 
-                "actor": "Kcanavan", 
-                "comments": "", 
-                "time": "2014/12/03 16:45:19.271 US/Eastern"
-            }, 
-            {
-                "action": "approve_to_staging", 
-                "review_state": "ready_for_staging", 
-                "comments": "", 
-                "actor": "Kcanavan", 
-                "time": "2014/12/03 17:03:20.650 US/Eastern"
-            }, 
-            {
-                "action": "decline_to_qa", 
-                "review_state": "waiting_for_qa", 
-                "actor": "Kcanavan", 
-                "comments": "", 
-                "time": "2014/12/09 16:24:46.575 US/Eastern"
-            }, 
-            {
-                "action": "approve_to_staging", 
-                "review_state": "ready_for_staging", 
-                "comments": "", 
-                "actor": "Kcanavan", 
-                "time": "2014/12/09 16:30:47.005 US/Eastern"
-            }, 
-            {
-                "action": "decline_to_qa", 
-                "review_state": "waiting_for_qa", 
-                "actor": "Kcanavan", 
-                "comments": "", 
-                "time": "2014/12/11 13:11:54.795 US/Eastern"
-            }, 
-            {
-                "action": "approve_to_staging", 
-                "review_state": "ready_for_staging", 
-                "comments": "", 
-                "actor": "Kcanavan", 
-                "time": "2014/12/11 13:14:23.510 US/Eastern"
-            }, 
-            {
-                "action": "decline_to_qa", 
-                "review_state": "waiting_for_qa", 
-                "actor": "sehansen", 
-                "comments": "", 
-                "time": "2014/12/11 14:59:28.610 US/Eastern"
-            }, 
-            {
-                "action": "approve_to_staging", 
-                "review_state": "ready_for_staging", 
-                "comments": "", 
-                "actor": "sehansen", 
-                "time": "2014/12/11 15:03:53.400 US/Eastern"
-            }, 
-            {
-                "action": "decline_to_qa", 
-                "review_state": "waiting_for_qa", 
-                "actor": "aimeeg", 
-                "comments": "", 
-                "time": "2014/12/13 16:32:39.226 US/Eastern"
-            }, 
-            {
-                "action": "approve_to_staging", 
-                "review_state": "ready_for_staging", 
-                "actor": "aimeeg", 
-                "comments": "", 
-                "time": "2014/12/13 16:36:53.066 US/Eastern"
-            }
-        ]
-    }, 
-    "_classname": "CourseSection", 
-    "_content_type_materialtype": "text/plain", 
-    "_userdefined_roles": [], 
-    "publisher": "MIT OpenCourseWare", 
-    "nextPreviousEnabled": false, 
-    "language": "", 
-    "url_rewrite_patterns": [], 
-    "widgets_features": [], 
-    "category_features": [], 
-    "firstTimeEdit": true, 
-    "feature_requirements": [], 
-    "list_in_left_nav": true, 
-    "short_name_tlp": "", 
-    "expirationDate": "None", 
-    "_content_type_id": "text/plain", 
-    "contributor_list": [], 
-    "is_media_gallery": false, 
-    "contributors": [], 
-    "_gopip": 4, 
-    "_content_type_title": "text/plain", 
-    "course_linking": [], 
+    },
     "_atrefs": {
         "BelongsTo": [
             "d9aad1541f1a9d3c0f7b0dcf9531a9a1"
-        ], 
+        ],
         "isReferencing": [
             "884ed8a126caebc0bc2a972fb7db9f04"
         ]
-    }, 
-    "other_platform_requirements": "", 
-    "license": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/", 
-    "rights": "This site (c) Massachusetts Institute of Technology 2014.  Content within individual courses is (c) by the individual authors unless otherwise noted. The Massachusetts Institute of Technology is providing this Work (as defined below) under the terms of this Creative Commons public license (\"CCPL\" or \"license\") unless otherwise noted. The Work is protected by copyright and/or other applicable law. Any use of the work other than as authorized under this license is prohibited. By exercising any of the rights to the Work provided here, You (as defined below) accept and agree to be bound by the terms of this license. The Licensor, the Massachusetts Institute of Technology, grants You the rights contained here in consideration of Your acceptance of such terms and conditions.", 
-    "hide_Page_title": false, 
-    "_defaultpage": "", 
-    "tcATmit_subject_tags": [], 
-    "features_tracking": [], 
-    "ad_champion_text": "", 
-    "has_inline_embed": false, 
-    "unique_identifier": "https://ocw.mit.edu/courses/earth-atmospheric-and-planetary-sciences/12-001-introduction-to-geology-fall-2013/instructor-insights/co-teaching", 
-    "is_image_gallery": false, 
-    "id": "co-teaching", 
-    "materialtype": "Other", 
-    "_type": "CourseSection", 
-    "description": "In this section, Prof. Perron shares insights about co-teaching.", 
-    "course_identifier": "https://ocw.mit.edu/courses/earth-atmospheric-and-planetary-sciences/12-001-introduction-to-geology-fall-2013", 
-    "_content_type_publisher": "text/plain", 
-    "tcATmit_instructional_tags": [], 
-    "_content_type": "text/html", 
-    "creators": [
-        "Kcanavan"
-    ], 
-    "modification_date": "2016/09/24 06:41:58.161 GMT-4", 
-    "always_publish": false, 
-    "_content_type_description": "text/plain", 
-    "_owner": null, 
+    },
+    "_classname": "CourseSection",
+    "_content_type": "text/html",
+    "_content_type_ad_type": "text/plain",
+    "_content_type_course_identifier": "text/plain",
+    "_content_type_description": "text/plain",
+    "_content_type_id": "text/plain",
+    "_content_type_license": "text/plain",
+    "_content_type_materialtype": "text/plain",
+    "_content_type_publisher": "text/plain",
+    "_content_type_rights": "text/html",
+    "_content_type_section_identifier": "text/plain",
+    "_content_type_short_page_title": "text/plain",
+    "_content_type_technical_location": "text/plain",
+    "_content_type_text": "text/html",
+    "_content_type_title": "text/plain",
+    "_content_type_unique_identifier": "text/plain",
+    "_defaultpage": "",
+    "_directly_provided": [
+        "Products.CMFEditions.interfaces.IVersioned"
+    ],
+    "_gopip": 4,
+    "_id": "co-teaching",
+    "_layout": "custom_view",
+    "_owner": null,
+    "_path": "/Plone/courses/earth-atmospheric-and-planetary-sciences/12-001-introduction-to-geology-fall-2013/instructor-insights/co-teaching",
     "_permissions": {
-        "Change portal events": {
-            "acquire": false, 
-            "roles": [
-                "Editor", 
-                "Manager", 
-                "MetadataEditor", 
-                "Owner"
-            ]
-        }, 
-        "Modify portal content": {
-            "acquire": false, 
-            "roles": [
-                "Manager", 
-                "MetadataEditor"
-            ]
-        }, 
         "Access contents information": {
-            "acquire": false, 
+            "acquire": false,
             "roles": [
                 "Authenticated"
             ]
-        }, 
-        "List folder contents": {
-            "acquire": false, 
+        },
+        "Change portal events": {
+            "acquire": false,
             "roles": [
-                "Editor", 
-                "Manager", 
-                "MetadataEditor", 
+                "Editor",
+                "Manager",
+                "MetadataEditor",
                 "Owner"
             ]
-        }, 
+        },
+        "List folder contents": {
+            "acquire": false,
+            "roles": [
+                "Editor",
+                "Manager",
+                "MetadataEditor",
+                "Owner"
+            ]
+        },
+        "Modify portal content": {
+            "acquire": false,
+            "roles": [
+                "Manager",
+                "MetadataEditor"
+            ]
+        },
         "View": {
-            "acquire": false, 
+            "acquire": false,
             "roles": [
                 "Authenticated"
             ]
         }
-    }, 
+    },
     "_properties": [
         [
-            "title", 
-            "Co-Teaching", 
+            "title",
+            "Co-Teaching",
             "string"
         ]
-    ], 
-    "_id": "co-teaching", 
-    "courselist_features": [], 
-    "_path": "/Plone/courses/earth-atmospheric-and-planetary-sciences/12-001-introduction-to-geology-fall-2013/instructor-insights/co-teaching"
+    ],
+    "_type": "CourseSection",
+    "_uid": "e843f795081ac616d0cebdff6e956e33",
+    "_userdefined_roles": [],
+    "_workflow_history": {
+        "page_workflow": [
+            {
+                "action": null,
+                "actor": "Kcanavan",
+                "comments": "",
+                "review_state": "waiting_for_authoring",
+                "time": "2014/12/03 16:45:19.271 US/Eastern"
+            },
+            {
+                "action": "approve_to_staging",
+                "actor": "Kcanavan",
+                "comments": "",
+                "review_state": "ready_for_staging",
+                "time": "2014/12/03 17:03:20.650 US/Eastern"
+            },
+            {
+                "action": "decline_to_qa",
+                "actor": "Kcanavan",
+                "comments": "",
+                "review_state": "waiting_for_qa",
+                "time": "2014/12/09 16:24:46.575 US/Eastern"
+            },
+            {
+                "action": "approve_to_staging",
+                "actor": "Kcanavan",
+                "comments": "",
+                "review_state": "ready_for_staging",
+                "time": "2014/12/09 16:30:47.005 US/Eastern"
+            },
+            {
+                "action": "decline_to_qa",
+                "actor": "Kcanavan",
+                "comments": "",
+                "review_state": "waiting_for_qa",
+                "time": "2014/12/11 13:11:54.795 US/Eastern"
+            },
+            {
+                "action": "approve_to_staging",
+                "actor": "Kcanavan",
+                "comments": "",
+                "review_state": "ready_for_staging",
+                "time": "2014/12/11 13:14:23.510 US/Eastern"
+            },
+            {
+                "action": "decline_to_qa",
+                "actor": "sehansen",
+                "comments": "",
+                "review_state": "waiting_for_qa",
+                "time": "2014/12/11 14:59:28.610 US/Eastern"
+            },
+            {
+                "action": "approve_to_staging",
+                "actor": "sehansen",
+                "comments": "",
+                "review_state": "ready_for_staging",
+                "time": "2014/12/11 15:03:53.400 US/Eastern"
+            },
+            {
+                "action": "decline_to_qa",
+                "actor": "aimeeg",
+                "comments": "",
+                "review_state": "waiting_for_qa",
+                "time": "2014/12/13 16:32:39.226 US/Eastern"
+            },
+            {
+                "action": "approve_to_staging",
+                "actor": "aimeeg",
+                "comments": "",
+                "review_state": "ready_for_staging",
+                "time": "2014/12/13 16:36:53.066 US/Eastern"
+            }
+        ]
+    },
+    "ad_champion_text": "",
+    "ad_type": "HOUSE",
+    "aggregationlevel": 3,
+    "allowDiscussion": false,
+    "always_publish": false,
+    "bottomtext": "",
+    "category_features": [],
+    "constrainTypesMode": 0,
+    "contributor_list": [],
+    "contributors": [],
+    "course_identifier": "https://ocw.mit.edu/courses/earth-atmospheric-and-planetary-sciences/12-001-introduction-to-geology-fall-2013",
+    "course_linking": [],
+    "courselist_features": [],
+    "creation_date": "2014/12/03 16:45:19.262 US/Eastern",
+    "creators": [
+        "Kcanavan"
+    ],
+    "description": "In this section, Prof. Perron shares insights about co-teaching.",
+    "duration": "",
+    "effectiveDate": "2014/12/03 17:03:20.627 US/Eastern",
+    "excludeFromNav": false,
+    "expirationDate": "None",
+    "feature_requirements": [],
+    "features_tracking": [],
+    "firstTimeEdit": true,
+    "has_inline_embed": false,
+    "hide_Page_title": false,
+    "id": "co-teaching",
+    "immediatelyAddableTypes": [
+        "OCWImage",
+        "CourseSection",
+        "OCWExtFile",
+        "OCWFile",
+        "MediaResource"
+    ],
+    "is_image_gallery": false,
+    "is_mathml_document": false,
+    "is_media_gallery": false,
+    "language": "",
+    "license": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/",
+    "list_in_left_nav": true,
+    "locallyAllowedTypes": [
+        "OCWImage",
+        "CourseSection",
+        "OCWExtFile",
+        "OCWFile",
+        "MediaResource"
+    ],
+    "location": "",
+    "materialtype": "Other",
+    "metadata_contributor_list": [],
+    "modification_date": "2016/09/24 06:41:58.161 GMT-4",
+    "nextPreviousEnabled": false,
+    "other_platform_requirements": "",
+    "parent_module": "d9aad1541f1a9d3c0f7b0dcf9531a9a1",
+    "parent_uid": "1c2cb2ad1c70fd66f19e20103dc94595",
+    "publisher": "MIT OpenCourseWare",
+    "related_mit_links": "",
+    "rights": "This site (c) Massachusetts Institute of Technology 2014.  Content within individual courses is (c) by the individual authors unless otherwise noted. The Massachusetts Institute of Technology is providing this Work (as defined below) under the terms of this Creative Commons public license (\"CCPL\" or \"license\") unless otherwise noted. The Work is protected by copyright and/or other applicable law. Any use of the work other than as authorized under this license is prohibited. By exercising any of the rights to the Work provided here, You (as defined below) accept and agree to be bound by the terms of this license. The Licensor, the Massachusetts Institute of Technology, grants You the rights contained here in consideration of Your acceptance of such terms and conditions.",
+    "section_identifier": "https://ocw.mit.edu/courses/earth-atmospheric-and-planetary-sciences/12-001-introduction-to-geology-fall-2013/instructor-insights",
+    "short_name_tlp": "",
+    "short_page_title": "Co-Teaching",
+    "software_requirements": [
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "40.0",
+            "software_name_col": "Chrome",
+            "software_type_col": "Browser"
+        },
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "8.0",
+            "software_name_col": "Safari",
+            "software_type_col": "Browser"
+        },
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "38.0",
+            "software_name_col": "Mozilla Firefox",
+            "software_type_col": "Browser"
+        },
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "9.0",
+            "software_name_col": "Internet Explorer",
+            "software_type_col": "Browser"
+        },
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "13.1",
+            "software_name_col": "Edge",
+            "software_type_col": "Browser"
+        }
+    ],
+    "subject": [],
+    "tcATmit_instructional_tags": [],
+    "tcATmit_subject_tags": [],
+    "technical_location": "https://ocw.mit.edu/courses/earth-atmospheric-and-planetary-sciences/12-001-introduction-to-geology-fall-2013/instructor-insights/co-teaching",
+    "text": "<p><i>In this section, Prof. Perron shares insights about co-teaching.</i></p> <div style=\"float: right; margin: -4px 0 auto 20px; padding-left: 20px; width: 150px; border-right: none; border-left: 1px solid #D5C9BA;\" class=\"pullquote\"><p class=\"quote\">The ability to observe instructors having a scientific repartee enhances the learning experience for undergraduate students.</p> <p class=\"sig\">&mdash;Taylor Perron</p></div> <p><em>Introduction to Geology</em> has evolved over the years to become a more active experience for students and instructors. As co-teachers, we&rsquo;ve reduced some of the traditional lecture time and have included more interactive hands-on activities. This is in recognition of the fact that so many things in earth science are tangible. During classes, we make a big effort to expose students to hand samples. We teach them how to identify rocks and minerals. We take them out into the field. In fact, the in-depth field trip we developed two years ago, which involves driving students to Upstate New York and back through western Massachusetts, has now become an integral part of the class.</p> <div style=\"float: left; margin: 0 20px 5px 0; width: 320px;\"><img width=\"320\" height=\"213\" src=\"./resolveuid/884ed8a126caebc0bc2a972fb7db9f04\" alt=\"A box of small brown minerals.\" /><br /> <p class=\"instruction\">A box of minerals to be identified by the students in the mineral identification lab. (Image by MIT OpenCourseWare.)</p></div> <p>One of the best things about co-teaching 12.001 is our balance of interests and expertise. Oliver Jagoutz is what we in the business call a &ldquo;hard rock&rdquo; geologist and I&rsquo;m what some people would call a &ldquo;soft rock&rdquo; geologist. Oliver studies the formation and evolution of the continental crust, while I study the earth&rsquo;s surface and all the processes that shape that surface. Oliver tends to work over longer time scales and looks a bit deeper down into the earth than I do, while I think more about the interface between the solid earth and the atmosphere. Our different lenses provide students with a glimpse into the variety of specialties within the field of geology and allow us to divide the teaching of topics in the syllabus along lines of expertise. This is helpful because it enables us to provide students with more in-depth answers to their questions.</p> <p>Importantly, co-teaching also allows us to have a repartee while working with students. Although we do not typically lecture together, we do play off of each other during field trips. We have spirited discussions about phenomena we&rsquo;re observing.  These discussions help students realize that not all of the details about how geologic stories unfold are entirely understood.  The ability to observe instructors having a scientific repartee enhances the learning experience for undergraduate students.</p>",
+    "title": "Co-Teaching",
+    "unique_identifier": "https://ocw.mit.edu/courses/earth-atmospheric-and-planetary-sciences/12-001-introduction-to-geology-fall-2013/instructor-insights/co-teaching",
+    "url_rewrite_patterns": [],
+    "widgets_features": []
 }

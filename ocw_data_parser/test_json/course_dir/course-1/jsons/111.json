@@ -1,185 +1,185 @@
 {
-    "expanded_alternate_text": "", 
-    "features_tracking": [], 
-    "widgets_features": [], 
-    "contributors": [], 
-    "tcATmit_subject_tags": [], 
-    "unique_identifier": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-5-transposes-permutations-spaces-r-n/18.06_L05.jpg", 
-    "_content_type_publisher": "text/plain", 
-    "_content_type_license": "text/plain", 
-    "_datafield_image": {
-        "encoding": "base64", 
-        "data": "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", 
-        "content_type": "image/jpeg", 
-        "filename": "18.06_L05.jpg"
-    }, 
-    "aggregationlevel": 2, 
-    "_uid": "538e4610dcc90eade3c934cfb89f1926", 
-    "_workflow_history": {
-        "one_state_workflow": [
-            {
-                "action": null, 
-                "review_state": "published", 
-                "actor": "Jcplayer", 
-                "comments": "", 
-                "time": "2010/10/07 14:28:01.894 GMT-4"
-            }
-        ]
-    }, 
-    "expirationDate": "None", 
-    "_content_type_id": "text/plain", 
-    "duration": "", 
-    "contributor_list": [], 
-    "id": "18.06_L05.jpg", 
-    "related_mit_links": "", 
-    "thumb_height": "", 
-    "effectiveDate": "None", 
-    "title": "18.06_L05.jpg", 
-    "_layout": "view", 
-    "parent_module": "aabc44bdb2e45374d62f30f2a6d4c63e", 
-    "_content_type": "image/jpeg", 
-    "_userdefined_roles": [], 
-    "_gopip": 0, 
-    "location": "", 
-    "_atrefs": {
-        "BelongsTo": [
-            "aabc44bdb2e45374d62f30f2a6d4c63e"
-        ]
-    }, 
-    "_content_type_course_identifier": "text/plain", 
-    "_content_type_title": "text/plain", 
-    "section_identifier": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures", 
-    "_atbrefs": {
-        "thumbnail_image": [
-            "acdf48e0f7efb66b9eef7e5408c39569"
-        ], 
-        "file_reference": [
-            "0d3524be38d4e82f4ab4652d7a2e082c"
-        ]
-    }, 
-    "creation_date": "2010/10/07 14:28:01.886 GMT-4", 
-    "_content_type_section_identifier": "text/plain", 
-    "_type": "OCWImage", 
-    "technical_location": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-5-transposes-permutations-spaces-r-n/18.06_L05.jpg", 
-    "description": "", 
-    "thumb_width": "", 
-    "software_requirements": [
-        {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "40.0", 
-            "software_name_col": "Chrome", 
-            "maximum_version_col": ""
-        }, 
-        {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "8.0", 
-            "software_name_col": "Safari", 
-            "maximum_version_col": ""
-        }, 
-        {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "38.0", 
-            "software_name_col": "Mozilla Firefox", 
-            "maximum_version_col": ""
-        }, 
-        {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "9.0", 
-            "software_name_col": "Internet Explorer", 
-            "maximum_version_col": ""
-        }, 
-        {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "13.1", 
-            "software_name_col": "Edge", 
-            "maximum_version_col": ""
-        }
-    ], 
-    "_content_type_technical_location": "text/plain", 
-    "alternate_text": "", 
-    "credit": "", 
-    "subject": [], 
-    "_content_type_rights": "text/html", 
-    "course_identifier": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010", 
-    "_directly_provided": [], 
-    "other_platform_requirements": "", 
-    "_id": "18.06_L05.jpg", 
-    "_classname": "OCWImage", 
-    "metadata_contributor_list": [
-        {
-            "md_contributor_uid": "", 
-            "md_contributor_entity": "Todd Rautenberg", 
-            "md_contributor_hide": "", 
-            "md_contributor_special_title": "", 
-            "md_contributor_role": "Validator"
-        }, 
-        {
-            "md_contributor_uid": "", 
-            "md_contributor_entity": "Todd Rautenberg", 
-            "md_contributor_hide": "", 
-            "md_contributor_special_title": "", 
-            "md_contributor_role": "Creator"
-        }
-    ], 
-    "tcATmit_instructional_tags": [], 
-    "caption": "", 
-    "parent_uid": "acdf48e0f7efb66b9eef7e5408c39569", 
-    "modification_date": "2016/09/24 04:30:32.683 GMT-4", 
-    "course_linking": [], 
-    "publisher": "MIT OpenCourseWare", 
-    "excludeFromNav": false, 
-    "feature_requirements": [], 
-    "language": "", 
-    "license": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/", 
-    "rights": "This site (c) Massachusetts Institute of Technology 2010.  Content within individual courses is (c) by the individual authors unless otherwise noted. The Massachusetts Institute of Technology is providing this Work (as defined below) under the terms of this Creative Commons public license (\"CCPL\" or \"license\") unless otherwise noted. The Work is protected by copyright and/or other applicable law. Any use of the work other than as authorized under this license is prohibited. By exercising any of the rights to the Work provided here, You (as defined below) accept and agree to be bound by the terms of this license. The Licensor, the Massachusetts Institute of Technology, grants You the rights contained here in consideration of Your acceptance of such terms and conditions.", 
-    "always_publish": false, 
-    "popup_image_id": "", 
-    "materialtype": "Other", 
-    "_content_type_unique_identifier": "text/plain", 
-    "category_features": [], 
-    "is_pop_up_image": false, 
-    "_owner": null, 
-    "_defaultpage": "index_html", 
-    "firstTimeEdit": true, 
-    "_permissions": {
-        "Modify portal content": {
-            "acquire": false, 
-            "roles": [
-                "Editor", 
-                "Manager", 
-                "Owner"
-            ]
-        }, 
-        "Access contents information": {
-            "acquire": false, 
-            "roles": [
-                "Anonymous"
-            ]
-        }, 
-        "View": {
-            "acquire": false, 
-            "roles": [
-                "Anonymous"
-            ]
-        }
-    }, 
-    "_properties": [
-        [
-            "title", 
-            "18.06_L05.jpg", 
-            "string"
-        ]
-    ], 
-    "allowDiscussion": false, 
-    "_content_type_materialtype": "text/plain", 
-    "creators": [
-        "Jcplayer"
-    ], 
-    "courselist_features": [], 
     "_ac_local_roles": {
         "Jcplayer": [
             "Owner"
         ]
-    }, 
-    "_path": "/Plone/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-5-transposes-permutations-spaces-r-n/18.06_L05.jpg"
+    },
+    "_atbrefs": {
+        "file_reference": [
+            "0d3524be38d4e82f4ab4652d7a2e082c"
+        ],
+        "thumbnail_image": [
+            "acdf48e0f7efb66b9eef7e5408c39569"
+        ]
+    },
+    "_atrefs": {
+        "BelongsTo": [
+            "aabc44bdb2e45374d62f30f2a6d4c63e"
+        ]
+    },
+    "_classname": "OCWImage",
+    "_content_type": "image/jpeg",
+    "_content_type_course_identifier": "text/plain",
+    "_content_type_id": "text/plain",
+    "_content_type_license": "text/plain",
+    "_content_type_materialtype": "text/plain",
+    "_content_type_publisher": "text/plain",
+    "_content_type_rights": "text/html",
+    "_content_type_section_identifier": "text/plain",
+    "_content_type_technical_location": "text/plain",
+    "_content_type_title": "text/plain",
+    "_content_type_unique_identifier": "text/plain",
+    "_datafield_image": {
+        "content_type": "image/jpeg",
+        "data": "ZW1wdHk=",
+        "encoding": "base64",
+        "filename": "18.06_L05.jpg"
+    },
+    "_defaultpage": "index_html",
+    "_directly_provided": [],
+    "_gopip": 0,
+    "_id": "18.06_L05.jpg",
+    "_layout": "view",
+    "_owner": null,
+    "_path": "/Plone/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-5-transposes-permutations-spaces-r-n/18.06_L05.jpg",
+    "_permissions": {
+        "Access contents information": {
+            "acquire": false,
+            "roles": [
+                "Anonymous"
+            ]
+        },
+        "Modify portal content": {
+            "acquire": false,
+            "roles": [
+                "Editor",
+                "Manager",
+                "Owner"
+            ]
+        },
+        "View": {
+            "acquire": false,
+            "roles": [
+                "Anonymous"
+            ]
+        }
+    },
+    "_properties": [
+        [
+            "title",
+            "18.06_L05.jpg",
+            "string"
+        ]
+    ],
+    "_type": "OCWImage",
+    "_uid": "538e4610dcc90eade3c934cfb89f1926",
+    "_userdefined_roles": [],
+    "_workflow_history": {
+        "one_state_workflow": [
+            {
+                "action": null,
+                "actor": "Jcplayer",
+                "comments": "",
+                "review_state": "published",
+                "time": "2010/10/07 14:28:01.894 GMT-4"
+            }
+        ]
+    },
+    "aggregationlevel": 2,
+    "allowDiscussion": false,
+    "alternate_text": "",
+    "always_publish": false,
+    "caption": "",
+    "category_features": [],
+    "contributor_list": [],
+    "contributors": [],
+    "course_identifier": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010",
+    "course_linking": [],
+    "courselist_features": [],
+    "creation_date": "2010/10/07 14:28:01.886 GMT-4",
+    "creators": [
+        "Jcplayer"
+    ],
+    "credit": "",
+    "description": "",
+    "duration": "",
+    "effectiveDate": "None",
+    "excludeFromNav": false,
+    "expanded_alternate_text": "",
+    "expirationDate": "None",
+    "feature_requirements": [],
+    "features_tracking": [],
+    "firstTimeEdit": true,
+    "id": "18.06_L05.jpg",
+    "is_pop_up_image": false,
+    "language": "",
+    "license": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/",
+    "location": "",
+    "materialtype": "Other",
+    "metadata_contributor_list": [
+        {
+            "md_contributor_entity": "Todd Rautenberg",
+            "md_contributor_hide": "",
+            "md_contributor_role": "Validator",
+            "md_contributor_special_title": "",
+            "md_contributor_uid": ""
+        },
+        {
+            "md_contributor_entity": "Todd Rautenberg",
+            "md_contributor_hide": "",
+            "md_contributor_role": "Creator",
+            "md_contributor_special_title": "",
+            "md_contributor_uid": ""
+        }
+    ],
+    "modification_date": "2016/09/24 04:30:32.683 GMT-4",
+    "other_platform_requirements": "",
+    "parent_module": "aabc44bdb2e45374d62f30f2a6d4c63e",
+    "parent_uid": "acdf48e0f7efb66b9eef7e5408c39569",
+    "popup_image_id": "",
+    "publisher": "MIT OpenCourseWare",
+    "related_mit_links": "",
+    "rights": "This site (c) Massachusetts Institute of Technology 2010.  Content within individual courses is (c) by the individual authors unless otherwise noted. The Massachusetts Institute of Technology is providing this Work (as defined below) under the terms of this Creative Commons public license (\"CCPL\" or \"license\") unless otherwise noted. The Work is protected by copyright and/or other applicable law. Any use of the work other than as authorized under this license is prohibited. By exercising any of the rights to the Work provided here, You (as defined below) accept and agree to be bound by the terms of this license. The Licensor, the Massachusetts Institute of Technology, grants You the rights contained here in consideration of Your acceptance of such terms and conditions.",
+    "section_identifier": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures",
+    "software_requirements": [
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "40.0",
+            "software_name_col": "Chrome",
+            "software_type_col": "Browser"
+        },
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "8.0",
+            "software_name_col": "Safari",
+            "software_type_col": "Browser"
+        },
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "38.0",
+            "software_name_col": "Mozilla Firefox",
+            "software_type_col": "Browser"
+        },
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "9.0",
+            "software_name_col": "Internet Explorer",
+            "software_type_col": "Browser"
+        },
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "13.1",
+            "software_name_col": "Edge",
+            "software_type_col": "Browser"
+        }
+    ],
+    "subject": [],
+    "tcATmit_instructional_tags": [],
+    "tcATmit_subject_tags": [],
+    "technical_location": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-5-transposes-permutations-spaces-r-n/18.06_L05.jpg",
+    "thumb_height": "",
+    "thumb_width": "",
+    "title": "18.06_L05.jpg",
+    "unique_identifier": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-5-transposes-permutations-spaces-r-n/18.06_L05.jpg",
+    "widgets_features": []
 }

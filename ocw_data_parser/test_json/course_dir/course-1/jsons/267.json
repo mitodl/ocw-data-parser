@@ -1,185 +1,185 @@
 {
-    "expanded_alternate_text": "", 
-    "features_tracking": [], 
-    "widgets_features": [], 
-    "contributors": [], 
-    "tcATmit_subject_tags": [], 
-    "unique_identifier": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-17-orthogonal-matrices-and-gram-schmidt/18.06_L17.jpg", 
-    "_content_type_publisher": "text/plain", 
-    "_content_type_license": "text/plain", 
-    "_datafield_image": {
-        "encoding": "base64", 
-        "data": "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", 
-        "content_type": "image/jpeg", 
-        "filename": "18.06_L17.jpg"
-    }, 
-    "aggregationlevel": 2, 
-    "_uid": "62aed92b9a25ab3a18d4cfbdd8aa7b57", 
-    "_workflow_history": {
-        "one_state_workflow": [
-            {
-                "action": null, 
-                "review_state": "published", 
-                "actor": "Jcplayer", 
-                "comments": "", 
-                "time": "2010/10/07 17:02:29.494 GMT-4"
-            }
-        ]
-    }, 
-    "expirationDate": "None", 
-    "_content_type_id": "text/plain", 
-    "duration": "", 
-    "contributor_list": [], 
-    "id": "18.06_L17.jpg", 
-    "related_mit_links": "", 
-    "thumb_height": "", 
-    "effectiveDate": "None", 
-    "title": "18.06_L17.jpg", 
-    "_layout": "view", 
-    "parent_module": "aabc44bdb2e45374d62f30f2a6d4c63e", 
-    "_content_type": "image/jpeg", 
-    "_userdefined_roles": [], 
-    "_gopip": 0, 
-    "location": "", 
-    "_atrefs": {
-        "BelongsTo": [
-            "aabc44bdb2e45374d62f30f2a6d4c63e"
-        ]
-    }, 
-    "_content_type_course_identifier": "text/plain", 
-    "_content_type_title": "text/plain", 
-    "section_identifier": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures", 
-    "_atbrefs": {
-        "thumbnail_image": [
-            "5e46844bdff61befcf306324290ba71c"
-        ], 
-        "file_reference": [
-            "b3aa99ca092bb145833f18d09b473764"
-        ]
-    }, 
-    "creation_date": "2010/10/07 17:02:29.486 GMT-4", 
-    "_content_type_section_identifier": "text/plain", 
-    "_type": "OCWImage", 
-    "technical_location": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-17-orthogonal-matrices-and-gram-schmidt/18.06_L17.jpg", 
-    "description": "", 
-    "thumb_width": "", 
-    "software_requirements": [
-        {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "40.0", 
-            "software_name_col": "Chrome", 
-            "maximum_version_col": ""
-        }, 
-        {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "8.0", 
-            "software_name_col": "Safari", 
-            "maximum_version_col": ""
-        }, 
-        {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "38.0", 
-            "software_name_col": "Mozilla Firefox", 
-            "maximum_version_col": ""
-        }, 
-        {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "9.0", 
-            "software_name_col": "Internet Explorer", 
-            "maximum_version_col": ""
-        }, 
-        {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "13.1", 
-            "software_name_col": "Edge", 
-            "maximum_version_col": ""
-        }
-    ], 
-    "_content_type_technical_location": "text/plain", 
-    "alternate_text": "", 
-    "credit": "", 
-    "subject": [], 
-    "_content_type_rights": "text/html", 
-    "course_identifier": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010", 
-    "_directly_provided": [], 
-    "other_platform_requirements": "", 
-    "_id": "18.06_L17.jpg", 
-    "_classname": "OCWImage", 
-    "metadata_contributor_list": [
-        {
-            "md_contributor_uid": "", 
-            "md_contributor_entity": "Todd Rautenberg", 
-            "md_contributor_hide": "", 
-            "md_contributor_special_title": "", 
-            "md_contributor_role": "Validator"
-        }, 
-        {
-            "md_contributor_uid": "", 
-            "md_contributor_entity": "Todd Rautenberg", 
-            "md_contributor_hide": "", 
-            "md_contributor_special_title": "", 
-            "md_contributor_role": "Creator"
-        }
-    ], 
-    "tcATmit_instructional_tags": [], 
-    "caption": "", 
-    "parent_uid": "5e46844bdff61befcf306324290ba71c", 
-    "modification_date": "2016/09/24 04:34:05.952 GMT-4", 
-    "course_linking": [], 
-    "publisher": "MIT OpenCourseWare", 
-    "excludeFromNav": false, 
-    "feature_requirements": [], 
-    "language": "", 
-    "license": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/", 
-    "rights": "This site (c) Massachusetts Institute of Technology 2010.  Content within individual courses is (c) by the individual authors unless otherwise noted. The Massachusetts Institute of Technology is providing this Work (as defined below) under the terms of this Creative Commons public license (\"CCPL\" or \"license\") unless otherwise noted. The Work is protected by copyright and/or other applicable law. Any use of the work other than as authorized under this license is prohibited. By exercising any of the rights to the Work provided here, You (as defined below) accept and agree to be bound by the terms of this license. The Licensor, the Massachusetts Institute of Technology, grants You the rights contained here in consideration of Your acceptance of such terms and conditions.", 
-    "always_publish": false, 
-    "popup_image_id": "", 
-    "materialtype": "Other", 
-    "_content_type_unique_identifier": "text/plain", 
-    "category_features": [], 
-    "is_pop_up_image": false, 
-    "_owner": null, 
-    "_defaultpage": "index_html", 
-    "firstTimeEdit": true, 
-    "_permissions": {
-        "Modify portal content": {
-            "acquire": false, 
-            "roles": [
-                "Editor", 
-                "Manager", 
-                "Owner"
-            ]
-        }, 
-        "Access contents information": {
-            "acquire": false, 
-            "roles": [
-                "Anonymous"
-            ]
-        }, 
-        "View": {
-            "acquire": false, 
-            "roles": [
-                "Anonymous"
-            ]
-        }
-    }, 
-    "_properties": [
-        [
-            "title", 
-            "18.06_L17.jpg", 
-            "string"
-        ]
-    ], 
-    "allowDiscussion": false, 
-    "_content_type_materialtype": "text/plain", 
-    "creators": [
-        "Jcplayer"
-    ], 
-    "courselist_features": [], 
     "_ac_local_roles": {
         "Jcplayer": [
             "Owner"
         ]
-    }, 
-    "_path": "/Plone/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-17-orthogonal-matrices-and-gram-schmidt/18.06_L17.jpg"
+    },
+    "_atbrefs": {
+        "file_reference": [
+            "b3aa99ca092bb145833f18d09b473764"
+        ],
+        "thumbnail_image": [
+            "5e46844bdff61befcf306324290ba71c"
+        ]
+    },
+    "_atrefs": {
+        "BelongsTo": [
+            "aabc44bdb2e45374d62f30f2a6d4c63e"
+        ]
+    },
+    "_classname": "OCWImage",
+    "_content_type": "image/jpeg",
+    "_content_type_course_identifier": "text/plain",
+    "_content_type_id": "text/plain",
+    "_content_type_license": "text/plain",
+    "_content_type_materialtype": "text/plain",
+    "_content_type_publisher": "text/plain",
+    "_content_type_rights": "text/html",
+    "_content_type_section_identifier": "text/plain",
+    "_content_type_technical_location": "text/plain",
+    "_content_type_title": "text/plain",
+    "_content_type_unique_identifier": "text/plain",
+    "_datafield_image": {
+        "content_type": "image/jpeg",
+        "data": "ZW1wdHk=",
+        "encoding": "base64",
+        "filename": "18.06_L17.jpg"
+    },
+    "_defaultpage": "index_html",
+    "_directly_provided": [],
+    "_gopip": 0,
+    "_id": "18.06_L17.jpg",
+    "_layout": "view",
+    "_owner": null,
+    "_path": "/Plone/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-17-orthogonal-matrices-and-gram-schmidt/18.06_L17.jpg",
+    "_permissions": {
+        "Access contents information": {
+            "acquire": false,
+            "roles": [
+                "Anonymous"
+            ]
+        },
+        "Modify portal content": {
+            "acquire": false,
+            "roles": [
+                "Editor",
+                "Manager",
+                "Owner"
+            ]
+        },
+        "View": {
+            "acquire": false,
+            "roles": [
+                "Anonymous"
+            ]
+        }
+    },
+    "_properties": [
+        [
+            "title",
+            "18.06_L17.jpg",
+            "string"
+        ]
+    ],
+    "_type": "OCWImage",
+    "_uid": "62aed92b9a25ab3a18d4cfbdd8aa7b57",
+    "_userdefined_roles": [],
+    "_workflow_history": {
+        "one_state_workflow": [
+            {
+                "action": null,
+                "actor": "Jcplayer",
+                "comments": "",
+                "review_state": "published",
+                "time": "2010/10/07 17:02:29.494 GMT-4"
+            }
+        ]
+    },
+    "aggregationlevel": 2,
+    "allowDiscussion": false,
+    "alternate_text": "",
+    "always_publish": false,
+    "caption": "",
+    "category_features": [],
+    "contributor_list": [],
+    "contributors": [],
+    "course_identifier": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010",
+    "course_linking": [],
+    "courselist_features": [],
+    "creation_date": "2010/10/07 17:02:29.486 GMT-4",
+    "creators": [
+        "Jcplayer"
+    ],
+    "credit": "",
+    "description": "",
+    "duration": "",
+    "effectiveDate": "None",
+    "excludeFromNav": false,
+    "expanded_alternate_text": "",
+    "expirationDate": "None",
+    "feature_requirements": [],
+    "features_tracking": [],
+    "firstTimeEdit": true,
+    "id": "18.06_L17.jpg",
+    "is_pop_up_image": false,
+    "language": "",
+    "license": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/",
+    "location": "",
+    "materialtype": "Other",
+    "metadata_contributor_list": [
+        {
+            "md_contributor_entity": "Todd Rautenberg",
+            "md_contributor_hide": "",
+            "md_contributor_role": "Validator",
+            "md_contributor_special_title": "",
+            "md_contributor_uid": ""
+        },
+        {
+            "md_contributor_entity": "Todd Rautenberg",
+            "md_contributor_hide": "",
+            "md_contributor_role": "Creator",
+            "md_contributor_special_title": "",
+            "md_contributor_uid": ""
+        }
+    ],
+    "modification_date": "2016/09/24 04:34:05.952 GMT-4",
+    "other_platform_requirements": "",
+    "parent_module": "aabc44bdb2e45374d62f30f2a6d4c63e",
+    "parent_uid": "5e46844bdff61befcf306324290ba71c",
+    "popup_image_id": "",
+    "publisher": "MIT OpenCourseWare",
+    "related_mit_links": "",
+    "rights": "This site (c) Massachusetts Institute of Technology 2010.  Content within individual courses is (c) by the individual authors unless otherwise noted. The Massachusetts Institute of Technology is providing this Work (as defined below) under the terms of this Creative Commons public license (\"CCPL\" or \"license\") unless otherwise noted. The Work is protected by copyright and/or other applicable law. Any use of the work other than as authorized under this license is prohibited. By exercising any of the rights to the Work provided here, You (as defined below) accept and agree to be bound by the terms of this license. The Licensor, the Massachusetts Institute of Technology, grants You the rights contained here in consideration of Your acceptance of such terms and conditions.",
+    "section_identifier": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures",
+    "software_requirements": [
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "40.0",
+            "software_name_col": "Chrome",
+            "software_type_col": "Browser"
+        },
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "8.0",
+            "software_name_col": "Safari",
+            "software_type_col": "Browser"
+        },
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "38.0",
+            "software_name_col": "Mozilla Firefox",
+            "software_type_col": "Browser"
+        },
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "9.0",
+            "software_name_col": "Internet Explorer",
+            "software_type_col": "Browser"
+        },
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "13.1",
+            "software_name_col": "Edge",
+            "software_type_col": "Browser"
+        }
+    ],
+    "subject": [],
+    "tcATmit_instructional_tags": [],
+    "tcATmit_subject_tags": [],
+    "technical_location": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-17-orthogonal-matrices-and-gram-schmidt/18.06_L17.jpg",
+    "thumb_height": "",
+    "thumb_width": "",
+    "title": "18.06_L17.jpg",
+    "unique_identifier": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-17-orthogonal-matrices-and-gram-schmidt/18.06_L17.jpg",
+    "widgets_features": []
 }

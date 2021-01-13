@@ -1,345 +1,345 @@
 {
-    "text": "<h2 class=\"subhead\"><strong>Field Trip to Upstate New York: Assembly and Breakup of Supercontinents</strong></h2><p><strong>Field Trip Resources</strong></p>  <ul><li><a href=\"./resolveuid/97f28b51c2d76bbffa1213260d56c281\">A Google Earth file with field trip stops (KML)</a></li><li><a href=\"./resolveuid/f828208d0d04e1f39c1bb31d6fbe5f2d\">Field Trip Guide (PDF - 4.2MB)</a></li><li>Prof. Taylor Perron discusses the process of <a href=\"./resolveuid/ef6931d2c8e6bc0b8e9a5572a78fe125\">planning a good field trip</a>.</li></ul><p><strong>Photographs from the Fall 2014 Field Trip</strong></p><p>All images are courtesy of Taylor Perron and used with permission.</p>", 
-    "_content_type_license": "text/plain", 
-    "_uid": "de36fe69cf33ddf238bc3896d0ce9eff", 
-    "title": "Field Trip", 
     "_ac_local_roles": {
         "rverma83": [
             "Owner"
         ]
-    }, 
-    "location": "", 
-    "_content_type_course_identifier": "text/plain", 
-    "_atbrefs": {}, 
-    "constrainTypesMode": 0, 
-    "technical_location": "https://ocw.mit.edu/courses/earth-atmospheric-and-planetary-sciences/12-001-introduction-to-geology-fall-2013/field-trip", 
-    "software_requirements": [
-        {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "40.0", 
-            "software_name_col": "Chrome", 
-            "maximum_version_col": ""
-        }, 
-        {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "8.0", 
-            "software_name_col": "Safari", 
-            "maximum_version_col": ""
-        }, 
-        {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "38.0", 
-            "software_name_col": "Mozilla Firefox", 
-            "maximum_version_col": ""
-        }, 
-        {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "9.0", 
-            "software_name_col": "Internet Explorer", 
-            "maximum_version_col": ""
-        }, 
-        {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "13.1", 
-            "software_name_col": "Edge", 
-            "maximum_version_col": ""
-        }
-    ], 
-    "_content_type_technical_location": "text/plain", 
-    "_content_type_rights": "text/html", 
-    "_directly_provided": [
-        "Products.CMFEditions.interfaces.IVersioned"
-    ], 
-    "parent_uid": "d9aad1541f1a9d3c0f7b0dcf9531a9a1", 
-    "excludeFromNav": false, 
-    "_content_type_unique_identifier": "text/plain", 
-    "allowDiscussion": false, 
-    "metadata_contributor_list": [], 
-    "locallyAllowedTypes": [
-        "OCWImage", 
-        "CourseSection", 
-        "OCWExtFile", 
-        "OCWFile", 
-        "MediaResource"
-    ], 
-    "_content_type_text": "text/html", 
-    "ad_type": "HOUSE", 
-    "creation_date": "2015/01/08 04:03:58.277 US/Eastern", 
-    "aggregationlevel": 3, 
-    "duration": "", 
-    "immediatelyAddableTypes": [
-        "OCWImage", 
-        "CourseSection", 
-        "OCWExtFile", 
-        "OCWFile", 
-        "MediaResource"
-    ], 
-    "subject": [], 
-    "_content_type_short_page_title": "text/plain", 
-    "effectiveDate": "2015/01/08 05:59:01.439 US/Eastern", 
-    "parent_module": "d9aad1541f1a9d3c0f7b0dcf9531a9a1", 
-    "is_mathml_document": false, 
-    "bottomtext": "", 
-    "short_page_title": "Field Trip", 
-    "section_identifier": null, 
-    "related_mit_links": "", 
-    "_content_type_ad_type": "text/plain", 
-    "_layout": "custom_view", 
-    "_workflow_history": {
-        "page_workflow": [
-            {
-                "action": null, 
-                "review_state": "waiting_for_authoring", 
-                "comments": "", 
-                "actor": "rverma83", 
-                "time": "2015/01/08 04:03:58.287 US/Eastern"
-            }, 
-            {
-                "action": "approve_to_staging", 
-                "review_state": "ready_for_staging", 
-                "actor": "asingh33", 
-                "comments": "", 
-                "time": "2015/01/08 05:59:01.478 US/Eastern"
-            }, 
-            {
-                "action": "decline", 
-                "review_state": "waiting_for_authoring", 
-                "comments": "", 
-                "actor": "rverma83", 
-                "time": "2015/01/08 06:20:18.693 US/Eastern"
-            }, 
-            {
-                "action": "approve_to_staging", 
-                "review_state": "ready_for_staging", 
-                "comments": "", 
-                "actor": "asingh33", 
-                "time": "2015/01/08 06:22:08.737 US/Eastern"
-            }, 
-            {
-                "action": "decline", 
-                "review_state": "waiting_for_authoring", 
-                "comments": "", 
-                "actor": "rverma83", 
-                "time": "2015/01/08 22:48:04.261 US/Eastern"
-            }, 
-            {
-                "action": "approve_to_staging", 
-                "review_state": "ready_for_staging", 
-                "actor": "rverma83", 
-                "comments": "", 
-                "time": "2015/01/08 22:55:24.229 US/Eastern"
-            }, 
-            {
-                "action": "decline", 
-                "review_state": "waiting_for_authoring", 
-                "actor": "rverma83", 
-                "comments": "", 
-                "time": "2015/01/09 00:36:11.637 US/Eastern"
-            }, 
-            {
-                "action": "approve_to_staging", 
-                "review_state": "ready_for_staging", 
-                "comments": "", 
-                "actor": "rverma83", 
-                "time": "2015/01/09 04:47:33.349 US/Eastern"
-            }, 
-            {
-                "action": "decline_to_qa", 
-                "review_state": "waiting_for_qa", 
-                "actor": "aimeeg", 
-                "comments": "", 
-                "time": "2015/01/14 15:09:50.084 US/Eastern"
-            }, 
-            {
-                "action": "decline", 
-                "review_state": "waiting_for_authoring", 
-                "comments": "", 
-                "actor": "asingh33", 
-                "time": "2015/01/27 03:30:45.364 US/Eastern"
-            }, 
-            {
-                "action": "approve_to_staging", 
-                "review_state": "ready_for_staging", 
-                "actor": "asingh33", 
-                "comments": "", 
-                "time": "2015/01/27 05:26:00.388 US/Eastern"
-            }, 
-            {
-                "action": "decline", 
-                "review_state": "waiting_for_authoring", 
-                "comments": "", 
-                "actor": "asingh33", 
-                "time": "2015/01/27 06:08:58.540 US/Eastern"
-            }, 
-            {
-                "action": "approve_to_staging", 
-                "review_state": "ready_for_staging", 
-                "actor": "asingh33", 
-                "comments": "", 
-                "time": "2015/01/27 06:12:32.591 US/Eastern"
-            }, 
-            {
-                "action": "decline_to_qa", 
-                "review_state": "waiting_for_qa", 
-                "comments": "", 
-                "actor": "aimeeg", 
-                "time": "2015/01/28 11:08:18.308 US/Eastern"
-            }, 
-            {
-                "action": "approve_to_staging", 
-                "review_state": "ready_for_staging", 
-                "actor": "aimeeg", 
-                "comments": "", 
-                "time": "2015/01/28 11:08:59.652 US/Eastern"
-            }, 
-            {
-                "action": "decline", 
-                "review_state": "waiting_for_authoring", 
-                "actor": "rverma83", 
-                "comments": "", 
-                "time": "2015/01/28 23:28:42.857 US/Eastern"
-            }, 
-            {
-                "action": "approve_to_staging", 
-                "review_state": "ready_for_staging", 
-                "comments": "", 
-                "actor": "rverma83", 
-                "time": "2015/01/28 23:29:48.881 US/Eastern"
-            }, 
-            {
-                "action": "decline", 
-                "review_state": "waiting_for_authoring", 
-                "actor": "rverma83", 
-                "comments": "", 
-                "time": "2015/01/28 23:31:20.595 US/Eastern"
-            }, 
-            {
-                "action": "approve_to_staging", 
-                "review_state": "ready_for_staging", 
-                "comments": "", 
-                "actor": "rverma83", 
-                "time": "2015/01/28 23:32:10.011 US/Eastern"
-            }, 
-            {
-                "action": "decline", 
-                "review_state": "waiting_for_authoring", 
-                "actor": "rverma83", 
-                "comments": "", 
-                "time": "2015/02/03 00:42:52.333 US/Eastern"
-            }, 
-            {
-                "action": "approve_to_staging", 
-                "review_state": "ready_for_staging", 
-                "actor": "rverma83", 
-                "comments": "", 
-                "time": "2015/02/03 00:58:55.723 US/Eastern"
-            }
-        ]
-    }, 
-    "_classname": "CourseSection", 
-    "_content_type_materialtype": "text/plain", 
-    "_userdefined_roles": [], 
-    "publisher": "MIT OpenCourseWare", 
-    "nextPreviousEnabled": false, 
-    "language": "", 
-    "url_rewrite_patterns": [], 
-    "widgets_features": [], 
-    "category_features": [], 
-    "firstTimeEdit": true, 
-    "feature_requirements": [], 
-    "list_in_left_nav": false, 
-    "short_name_tlp": "", 
-    "expirationDate": "None", 
-    "_content_type_id": "text/plain", 
-    "contributor_list": [], 
-    "is_media_gallery": false, 
-    "contributors": [], 
-    "_gopip": 7, 
-    "_content_type_title": "text/plain", 
-    "course_linking": [], 
+    },
+    "_atbrefs": {},
     "_atrefs": {
         "BelongsTo": [
             "d9aad1541f1a9d3c0f7b0dcf9531a9a1"
-        ], 
+        ],
         "isReferencing": [
-            "ef6931d2c8e6bc0b8e9a5572a78fe125", 
-            "97f28b51c2d76bbffa1213260d56c281", 
+            "ef6931d2c8e6bc0b8e9a5572a78fe125",
+            "97f28b51c2d76bbffa1213260d56c281",
             "f828208d0d04e1f39c1bb31d6fbe5f2d"
         ]
-    }, 
-    "other_platform_requirements": "", 
-    "license": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/", 
-    "rights": "This site (c) Massachusetts Institute of Technology 2015.  Content within individual courses is (c) by the individual authors unless otherwise noted. The Massachusetts Institute of Technology is providing this Work (as defined below) under the terms of this Creative Commons public license (\"CCPL\" or \"license\") unless otherwise noted. The Work is protected by copyright and/or other applicable law. Any use of the work other than as authorized under this license is prohibited. By exercising any of the rights to the Work provided here, You (as defined below) accept and agree to be bound by the terms of this license. The Licensor, the Massachusetts Institute of Technology, grants You the rights contained here in consideration of Your acceptance of such terms and conditions.", 
-    "hide_Page_title": false, 
-    "_defaultpage": "", 
-    "tcATmit_subject_tags": [], 
-    "features_tracking": [], 
-    "ad_champion_text": "", 
-    "has_inline_embed": false, 
-    "unique_identifier": "https://ocw.mit.edu/courses/earth-atmospheric-and-planetary-sciences/12-001-introduction-to-geology-fall-2013/field-trip", 
-    "is_image_gallery": true, 
-    "id": "field-trip", 
-    "materialtype": "Other", 
-    "_type": "CourseSection", 
-    "description": "This section provides information on the class field trip to upstate New York, field trip resources, and photographs from the Fall 2014 field trip.", 
-    "course_identifier": "https://ocw.mit.edu/courses/earth-atmospheric-and-planetary-sciences/12-001-introduction-to-geology-fall-2013", 
-    "_content_type_publisher": "text/plain", 
-    "tcATmit_instructional_tags": [], 
-    "_content_type": "text/html", 
-    "creators": [
-        "rverma83"
-    ], 
-    "modification_date": "2016/09/24 06:40:07.190 GMT-4", 
-    "always_publish": false, 
-    "_content_type_description": "text/plain", 
-    "_owner": null, 
+    },
+    "_classname": "CourseSection",
+    "_content_type": "text/html",
+    "_content_type_ad_type": "text/plain",
+    "_content_type_course_identifier": "text/plain",
+    "_content_type_description": "text/plain",
+    "_content_type_id": "text/plain",
+    "_content_type_license": "text/plain",
+    "_content_type_materialtype": "text/plain",
+    "_content_type_publisher": "text/plain",
+    "_content_type_rights": "text/html",
+    "_content_type_short_page_title": "text/plain",
+    "_content_type_technical_location": "text/plain",
+    "_content_type_text": "text/html",
+    "_content_type_title": "text/plain",
+    "_content_type_unique_identifier": "text/plain",
+    "_defaultpage": "",
+    "_directly_provided": [
+        "Products.CMFEditions.interfaces.IVersioned"
+    ],
+    "_gopip": 7,
+    "_id": "field-trip",
+    "_layout": "custom_view",
+    "_owner": null,
+    "_path": "/Plone/courses/earth-atmospheric-and-planetary-sciences/12-001-introduction-to-geology-fall-2013/field-trip",
     "_permissions": {
-        "Change portal events": {
-            "acquire": false, 
-            "roles": [
-                "Editor", 
-                "Manager", 
-                "MetadataEditor", 
-                "Owner"
-            ]
-        }, 
-        "Modify portal content": {
-            "acquire": false, 
-            "roles": [
-                "Manager", 
-                "MetadataEditor"
-            ]
-        }, 
         "Access contents information": {
-            "acquire": false, 
+            "acquire": false,
             "roles": [
                 "Authenticated"
             ]
-        }, 
-        "List folder contents": {
-            "acquire": false, 
+        },
+        "Change portal events": {
+            "acquire": false,
             "roles": [
-                "Editor", 
-                "Manager", 
-                "MetadataEditor", 
+                "Editor",
+                "Manager",
+                "MetadataEditor",
                 "Owner"
             ]
-        }, 
+        },
+        "List folder contents": {
+            "acquire": false,
+            "roles": [
+                "Editor",
+                "Manager",
+                "MetadataEditor",
+                "Owner"
+            ]
+        },
+        "Modify portal content": {
+            "acquire": false,
+            "roles": [
+                "Manager",
+                "MetadataEditor"
+            ]
+        },
         "View": {
-            "acquire": false, 
+            "acquire": false,
             "roles": [
                 "Authenticated"
             ]
         }
-    }, 
+    },
     "_properties": [
         [
-            "title", 
-            "Field Trip", 
+            "title",
+            "Field Trip",
             "string"
         ]
-    ], 
-    "_id": "field-trip", 
-    "courselist_features": [], 
-    "_path": "/Plone/courses/earth-atmospheric-and-planetary-sciences/12-001-introduction-to-geology-fall-2013/field-trip"
+    ],
+    "_type": "CourseSection",
+    "_uid": "de36fe69cf33ddf238bc3896d0ce9eff",
+    "_userdefined_roles": [],
+    "_workflow_history": {
+        "page_workflow": [
+            {
+                "action": null,
+                "actor": "rverma83",
+                "comments": "",
+                "review_state": "waiting_for_authoring",
+                "time": "2015/01/08 04:03:58.287 US/Eastern"
+            },
+            {
+                "action": "approve_to_staging",
+                "actor": "asingh33",
+                "comments": "",
+                "review_state": "ready_for_staging",
+                "time": "2015/01/08 05:59:01.478 US/Eastern"
+            },
+            {
+                "action": "decline",
+                "actor": "rverma83",
+                "comments": "",
+                "review_state": "waiting_for_authoring",
+                "time": "2015/01/08 06:20:18.693 US/Eastern"
+            },
+            {
+                "action": "approve_to_staging",
+                "actor": "asingh33",
+                "comments": "",
+                "review_state": "ready_for_staging",
+                "time": "2015/01/08 06:22:08.737 US/Eastern"
+            },
+            {
+                "action": "decline",
+                "actor": "rverma83",
+                "comments": "",
+                "review_state": "waiting_for_authoring",
+                "time": "2015/01/08 22:48:04.261 US/Eastern"
+            },
+            {
+                "action": "approve_to_staging",
+                "actor": "rverma83",
+                "comments": "",
+                "review_state": "ready_for_staging",
+                "time": "2015/01/08 22:55:24.229 US/Eastern"
+            },
+            {
+                "action": "decline",
+                "actor": "rverma83",
+                "comments": "",
+                "review_state": "waiting_for_authoring",
+                "time": "2015/01/09 00:36:11.637 US/Eastern"
+            },
+            {
+                "action": "approve_to_staging",
+                "actor": "rverma83",
+                "comments": "",
+                "review_state": "ready_for_staging",
+                "time": "2015/01/09 04:47:33.349 US/Eastern"
+            },
+            {
+                "action": "decline_to_qa",
+                "actor": "aimeeg",
+                "comments": "",
+                "review_state": "waiting_for_qa",
+                "time": "2015/01/14 15:09:50.084 US/Eastern"
+            },
+            {
+                "action": "decline",
+                "actor": "asingh33",
+                "comments": "",
+                "review_state": "waiting_for_authoring",
+                "time": "2015/01/27 03:30:45.364 US/Eastern"
+            },
+            {
+                "action": "approve_to_staging",
+                "actor": "asingh33",
+                "comments": "",
+                "review_state": "ready_for_staging",
+                "time": "2015/01/27 05:26:00.388 US/Eastern"
+            },
+            {
+                "action": "decline",
+                "actor": "asingh33",
+                "comments": "",
+                "review_state": "waiting_for_authoring",
+                "time": "2015/01/27 06:08:58.540 US/Eastern"
+            },
+            {
+                "action": "approve_to_staging",
+                "actor": "asingh33",
+                "comments": "",
+                "review_state": "ready_for_staging",
+                "time": "2015/01/27 06:12:32.591 US/Eastern"
+            },
+            {
+                "action": "decline_to_qa",
+                "actor": "aimeeg",
+                "comments": "",
+                "review_state": "waiting_for_qa",
+                "time": "2015/01/28 11:08:18.308 US/Eastern"
+            },
+            {
+                "action": "approve_to_staging",
+                "actor": "aimeeg",
+                "comments": "",
+                "review_state": "ready_for_staging",
+                "time": "2015/01/28 11:08:59.652 US/Eastern"
+            },
+            {
+                "action": "decline",
+                "actor": "rverma83",
+                "comments": "",
+                "review_state": "waiting_for_authoring",
+                "time": "2015/01/28 23:28:42.857 US/Eastern"
+            },
+            {
+                "action": "approve_to_staging",
+                "actor": "rverma83",
+                "comments": "",
+                "review_state": "ready_for_staging",
+                "time": "2015/01/28 23:29:48.881 US/Eastern"
+            },
+            {
+                "action": "decline",
+                "actor": "rverma83",
+                "comments": "",
+                "review_state": "waiting_for_authoring",
+                "time": "2015/01/28 23:31:20.595 US/Eastern"
+            },
+            {
+                "action": "approve_to_staging",
+                "actor": "rverma83",
+                "comments": "",
+                "review_state": "ready_for_staging",
+                "time": "2015/01/28 23:32:10.011 US/Eastern"
+            },
+            {
+                "action": "decline",
+                "actor": "rverma83",
+                "comments": "",
+                "review_state": "waiting_for_authoring",
+                "time": "2015/02/03 00:42:52.333 US/Eastern"
+            },
+            {
+                "action": "approve_to_staging",
+                "actor": "rverma83",
+                "comments": "",
+                "review_state": "ready_for_staging",
+                "time": "2015/02/03 00:58:55.723 US/Eastern"
+            }
+        ]
+    },
+    "ad_champion_text": "",
+    "ad_type": "HOUSE",
+    "aggregationlevel": 3,
+    "allowDiscussion": false,
+    "always_publish": false,
+    "bottomtext": "",
+    "category_features": [],
+    "constrainTypesMode": 0,
+    "contributor_list": [],
+    "contributors": [],
+    "course_identifier": "https://ocw.mit.edu/courses/earth-atmospheric-and-planetary-sciences/12-001-introduction-to-geology-fall-2013",
+    "course_linking": [],
+    "courselist_features": [],
+    "creation_date": "2015/01/08 04:03:58.277 US/Eastern",
+    "creators": [
+        "rverma83"
+    ],
+    "description": "This section provides information on the class field trip to upstate New York, field trip resources, and photographs from the Fall 2014 field trip.",
+    "duration": "",
+    "effectiveDate": "2015/01/08 05:59:01.439 US/Eastern",
+    "excludeFromNav": false,
+    "expirationDate": "None",
+    "feature_requirements": [],
+    "features_tracking": [],
+    "firstTimeEdit": true,
+    "has_inline_embed": false,
+    "hide_Page_title": false,
+    "id": "field-trip",
+    "immediatelyAddableTypes": [
+        "OCWImage",
+        "CourseSection",
+        "OCWExtFile",
+        "OCWFile",
+        "MediaResource"
+    ],
+    "is_image_gallery": true,
+    "is_mathml_document": false,
+    "is_media_gallery": false,
+    "language": "",
+    "license": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/",
+    "list_in_left_nav": false,
+    "locallyAllowedTypes": [
+        "OCWImage",
+        "CourseSection",
+        "OCWExtFile",
+        "OCWFile",
+        "MediaResource"
+    ],
+    "location": "",
+    "materialtype": "Other",
+    "metadata_contributor_list": [],
+    "modification_date": "2016/09/24 06:40:07.190 GMT-4",
+    "nextPreviousEnabled": false,
+    "other_platform_requirements": "",
+    "parent_module": "d9aad1541f1a9d3c0f7b0dcf9531a9a1",
+    "parent_uid": "d9aad1541f1a9d3c0f7b0dcf9531a9a1",
+    "publisher": "MIT OpenCourseWare",
+    "related_mit_links": "",
+    "rights": "This site (c) Massachusetts Institute of Technology 2015.  Content within individual courses is (c) by the individual authors unless otherwise noted. The Massachusetts Institute of Technology is providing this Work (as defined below) under the terms of this Creative Commons public license (\"CCPL\" or \"license\") unless otherwise noted. The Work is protected by copyright and/or other applicable law. Any use of the work other than as authorized under this license is prohibited. By exercising any of the rights to the Work provided here, You (as defined below) accept and agree to be bound by the terms of this license. The Licensor, the Massachusetts Institute of Technology, grants You the rights contained here in consideration of Your acceptance of such terms and conditions.",
+    "section_identifier": null,
+    "short_name_tlp": "",
+    "short_page_title": "Field Trip",
+    "software_requirements": [
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "40.0",
+            "software_name_col": "Chrome",
+            "software_type_col": "Browser"
+        },
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "8.0",
+            "software_name_col": "Safari",
+            "software_type_col": "Browser"
+        },
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "38.0",
+            "software_name_col": "Mozilla Firefox",
+            "software_type_col": "Browser"
+        },
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "9.0",
+            "software_name_col": "Internet Explorer",
+            "software_type_col": "Browser"
+        },
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "13.1",
+            "software_name_col": "Edge",
+            "software_type_col": "Browser"
+        }
+    ],
+    "subject": [],
+    "tcATmit_instructional_tags": [],
+    "tcATmit_subject_tags": [],
+    "technical_location": "https://ocw.mit.edu/courses/earth-atmospheric-and-planetary-sciences/12-001-introduction-to-geology-fall-2013/field-trip",
+    "text": "<h2 class=\"subhead\"><strong>Field Trip to Upstate New York: Assembly and Breakup of Supercontinents</strong></h2><p><strong>Field Trip Resources</strong></p>  <ul><li><a href=\"./resolveuid/97f28b51c2d76bbffa1213260d56c281\">A Google Earth file with field trip stops (KML)</a></li><li><a href=\"./resolveuid/f828208d0d04e1f39c1bb31d6fbe5f2d\">Field Trip Guide (PDF - 4.2MB)</a></li><li>Prof. Taylor Perron discusses the process of <a href=\"./resolveuid/ef6931d2c8e6bc0b8e9a5572a78fe125\">planning a good field trip</a>.</li></ul><p><strong>Photographs from the Fall 2014 Field Trip</strong></p><p>All images are courtesy of Taylor Perron and used with permission.</p>",
+    "title": "Field Trip",
+    "unique_identifier": "https://ocw.mit.edu/courses/earth-atmospheric-and-planetary-sciences/12-001-introduction-to-geology-fall-2013/field-trip",
+    "url_rewrite_patterns": [],
+    "widgets_features": []
 }

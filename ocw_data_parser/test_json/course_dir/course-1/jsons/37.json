@@ -1,185 +1,185 @@
 {
-    "expanded_alternate_text": "", 
-    "features_tracking": [], 
-    "widgets_features": [], 
-    "contributors": [], 
-    "tcATmit_subject_tags": [], 
-    "unique_identifier": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-2-elimination-with-matrices/18.06_L02.jpg", 
-    "_content_type_publisher": "text/plain", 
-    "_content_type_license": "text/plain", 
-    "_datafield_image": {
-        "encoding": "base64", 
-        "data": "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", 
-        "content_type": "image/jpeg", 
-        "filename": "18.06_L02.jpg"
-    }, 
-    "aggregationlevel": 2, 
-    "_uid": "1ca73b9e193b6574e450202acb6877eb", 
-    "_workflow_history": {
-        "one_state_workflow": [
-            {
-                "action": null, 
-                "review_state": "published", 
-                "actor": "Jcplayer", 
-                "comments": "", 
-                "time": "2010/10/07 13:27:35.175 GMT-4"
-            }
-        ]
-    }, 
-    "expirationDate": "None", 
-    "_content_type_id": "text/plain", 
-    "duration": "", 
-    "contributor_list": [], 
-    "id": "18.06_L02.jpg", 
-    "related_mit_links": "", 
-    "thumb_height": "", 
-    "effectiveDate": "None", 
-    "title": "18.06_L02.jpg", 
-    "_layout": "view", 
-    "parent_module": "aabc44bdb2e45374d62f30f2a6d4c63e", 
-    "_content_type": "image/jpeg", 
-    "_userdefined_roles": [], 
-    "_gopip": 0, 
-    "location": "", 
-    "_atrefs": {
-        "BelongsTo": [
-            "aabc44bdb2e45374d62f30f2a6d4c63e"
-        ]
-    }, 
-    "_content_type_course_identifier": "text/plain", 
-    "_content_type_title": "text/plain", 
-    "section_identifier": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures", 
-    "_atbrefs": {
-        "thumbnail_image": [
-            "1397ead489c31027c5409f06c4243950"
-        ], 
-        "file_reference": [
-            "4e7365fcec0002da321693b9463dce4f"
-        ]
-    }, 
-    "creation_date": "2010/10/07 13:27:35.166 GMT-4", 
-    "_content_type_section_identifier": "text/plain", 
-    "_type": "OCWImage", 
-    "technical_location": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-2-elimination-with-matrices/18.06_L02.jpg", 
-    "description": "", 
-    "thumb_width": "", 
-    "software_requirements": [
-        {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "40.0", 
-            "software_name_col": "Chrome", 
-            "maximum_version_col": ""
-        }, 
-        {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "8.0", 
-            "software_name_col": "Safari", 
-            "maximum_version_col": ""
-        }, 
-        {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "38.0", 
-            "software_name_col": "Mozilla Firefox", 
-            "maximum_version_col": ""
-        }, 
-        {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "9.0", 
-            "software_name_col": "Internet Explorer", 
-            "maximum_version_col": ""
-        }, 
-        {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "13.1", 
-            "software_name_col": "Edge", 
-            "maximum_version_col": ""
-        }
-    ], 
-    "_content_type_technical_location": "text/plain", 
-    "alternate_text": "", 
-    "credit": "", 
-    "subject": [], 
-    "_content_type_rights": "text/html", 
-    "course_identifier": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010", 
-    "_directly_provided": [], 
-    "other_platform_requirements": "", 
-    "_id": "18.06_L02.jpg", 
-    "_classname": "OCWImage", 
-    "metadata_contributor_list": [
-        {
-            "md_contributor_uid": "", 
-            "md_contributor_entity": "Todd Rautenberg", 
-            "md_contributor_hide": "", 
-            "md_contributor_special_title": "", 
-            "md_contributor_role": "Validator"
-        }, 
-        {
-            "md_contributor_uid": "", 
-            "md_contributor_entity": "Todd Rautenberg", 
-            "md_contributor_hide": "", 
-            "md_contributor_special_title": "", 
-            "md_contributor_role": "Creator"
-        }
-    ], 
-    "tcATmit_instructional_tags": [], 
-    "caption": "", 
-    "parent_uid": "1397ead489c31027c5409f06c4243950", 
-    "modification_date": "2016/09/24 04:30:31.521 GMT-4", 
-    "course_linking": [], 
-    "publisher": "MIT OpenCourseWare", 
-    "excludeFromNav": false, 
-    "feature_requirements": [], 
-    "language": "", 
-    "license": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/", 
-    "rights": "This site (c) Massachusetts Institute of Technology 2010.  Content within individual courses is (c) by the individual authors unless otherwise noted. The Massachusetts Institute of Technology is providing this Work (as defined below) under the terms of this Creative Commons public license (\"CCPL\" or \"license\") unless otherwise noted. The Work is protected by copyright and/or other applicable law. Any use of the work other than as authorized under this license is prohibited. By exercising any of the rights to the Work provided here, You (as defined below) accept and agree to be bound by the terms of this license. The Licensor, the Massachusetts Institute of Technology, grants You the rights contained here in consideration of Your acceptance of such terms and conditions.", 
-    "always_publish": false, 
-    "popup_image_id": "", 
-    "materialtype": "Other", 
-    "_content_type_unique_identifier": "text/plain", 
-    "category_features": [], 
-    "is_pop_up_image": false, 
-    "_owner": null, 
-    "_defaultpage": "index_html", 
-    "firstTimeEdit": true, 
-    "_permissions": {
-        "Modify portal content": {
-            "acquire": false, 
-            "roles": [
-                "Editor", 
-                "Manager", 
-                "Owner"
-            ]
-        }, 
-        "Access contents information": {
-            "acquire": false, 
-            "roles": [
-                "Anonymous"
-            ]
-        }, 
-        "View": {
-            "acquire": false, 
-            "roles": [
-                "Anonymous"
-            ]
-        }
-    }, 
-    "_properties": [
-        [
-            "title", 
-            "18.06_L02.jpg", 
-            "string"
-        ]
-    ], 
-    "allowDiscussion": false, 
-    "_content_type_materialtype": "text/plain", 
-    "creators": [
-        "Jcplayer"
-    ], 
-    "courselist_features": [], 
     "_ac_local_roles": {
         "Jcplayer": [
             "Owner"
         ]
-    }, 
-    "_path": "/Plone/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-2-elimination-with-matrices/18.06_L02.jpg"
+    },
+    "_atbrefs": {
+        "file_reference": [
+            "4e7365fcec0002da321693b9463dce4f"
+        ],
+        "thumbnail_image": [
+            "1397ead489c31027c5409f06c4243950"
+        ]
+    },
+    "_atrefs": {
+        "BelongsTo": [
+            "aabc44bdb2e45374d62f30f2a6d4c63e"
+        ]
+    },
+    "_classname": "OCWImage",
+    "_content_type": "image/jpeg",
+    "_content_type_course_identifier": "text/plain",
+    "_content_type_id": "text/plain",
+    "_content_type_license": "text/plain",
+    "_content_type_materialtype": "text/plain",
+    "_content_type_publisher": "text/plain",
+    "_content_type_rights": "text/html",
+    "_content_type_section_identifier": "text/plain",
+    "_content_type_technical_location": "text/plain",
+    "_content_type_title": "text/plain",
+    "_content_type_unique_identifier": "text/plain",
+    "_datafield_image": {
+        "content_type": "image/jpeg",
+        "data": "ZW1wdHk=",
+        "encoding": "base64",
+        "filename": "18.06_L02.jpg"
+    },
+    "_defaultpage": "index_html",
+    "_directly_provided": [],
+    "_gopip": 0,
+    "_id": "18.06_L02.jpg",
+    "_layout": "view",
+    "_owner": null,
+    "_path": "/Plone/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-2-elimination-with-matrices/18.06_L02.jpg",
+    "_permissions": {
+        "Access contents information": {
+            "acquire": false,
+            "roles": [
+                "Anonymous"
+            ]
+        },
+        "Modify portal content": {
+            "acquire": false,
+            "roles": [
+                "Editor",
+                "Manager",
+                "Owner"
+            ]
+        },
+        "View": {
+            "acquire": false,
+            "roles": [
+                "Anonymous"
+            ]
+        }
+    },
+    "_properties": [
+        [
+            "title",
+            "18.06_L02.jpg",
+            "string"
+        ]
+    ],
+    "_type": "OCWImage",
+    "_uid": "1ca73b9e193b6574e450202acb6877eb",
+    "_userdefined_roles": [],
+    "_workflow_history": {
+        "one_state_workflow": [
+            {
+                "action": null,
+                "actor": "Jcplayer",
+                "comments": "",
+                "review_state": "published",
+                "time": "2010/10/07 13:27:35.175 GMT-4"
+            }
+        ]
+    },
+    "aggregationlevel": 2,
+    "allowDiscussion": false,
+    "alternate_text": "",
+    "always_publish": false,
+    "caption": "",
+    "category_features": [],
+    "contributor_list": [],
+    "contributors": [],
+    "course_identifier": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010",
+    "course_linking": [],
+    "courselist_features": [],
+    "creation_date": "2010/10/07 13:27:35.166 GMT-4",
+    "creators": [
+        "Jcplayer"
+    ],
+    "credit": "",
+    "description": "",
+    "duration": "",
+    "effectiveDate": "None",
+    "excludeFromNav": false,
+    "expanded_alternate_text": "",
+    "expirationDate": "None",
+    "feature_requirements": [],
+    "features_tracking": [],
+    "firstTimeEdit": true,
+    "id": "18.06_L02.jpg",
+    "is_pop_up_image": false,
+    "language": "",
+    "license": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/",
+    "location": "",
+    "materialtype": "Other",
+    "metadata_contributor_list": [
+        {
+            "md_contributor_entity": "Todd Rautenberg",
+            "md_contributor_hide": "",
+            "md_contributor_role": "Validator",
+            "md_contributor_special_title": "",
+            "md_contributor_uid": ""
+        },
+        {
+            "md_contributor_entity": "Todd Rautenberg",
+            "md_contributor_hide": "",
+            "md_contributor_role": "Creator",
+            "md_contributor_special_title": "",
+            "md_contributor_uid": ""
+        }
+    ],
+    "modification_date": "2016/09/24 04:30:31.521 GMT-4",
+    "other_platform_requirements": "",
+    "parent_module": "aabc44bdb2e45374d62f30f2a6d4c63e",
+    "parent_uid": "1397ead489c31027c5409f06c4243950",
+    "popup_image_id": "",
+    "publisher": "MIT OpenCourseWare",
+    "related_mit_links": "",
+    "rights": "This site (c) Massachusetts Institute of Technology 2010.  Content within individual courses is (c) by the individual authors unless otherwise noted. The Massachusetts Institute of Technology is providing this Work (as defined below) under the terms of this Creative Commons public license (\"CCPL\" or \"license\") unless otherwise noted. The Work is protected by copyright and/or other applicable law. Any use of the work other than as authorized under this license is prohibited. By exercising any of the rights to the Work provided here, You (as defined below) accept and agree to be bound by the terms of this license. The Licensor, the Massachusetts Institute of Technology, grants You the rights contained here in consideration of Your acceptance of such terms and conditions.",
+    "section_identifier": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures",
+    "software_requirements": [
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "40.0",
+            "software_name_col": "Chrome",
+            "software_type_col": "Browser"
+        },
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "8.0",
+            "software_name_col": "Safari",
+            "software_type_col": "Browser"
+        },
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "38.0",
+            "software_name_col": "Mozilla Firefox",
+            "software_type_col": "Browser"
+        },
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "9.0",
+            "software_name_col": "Internet Explorer",
+            "software_type_col": "Browser"
+        },
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "13.1",
+            "software_name_col": "Edge",
+            "software_type_col": "Browser"
+        }
+    ],
+    "subject": [],
+    "tcATmit_instructional_tags": [],
+    "tcATmit_subject_tags": [],
+    "technical_location": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-2-elimination-with-matrices/18.06_L02.jpg",
+    "thumb_height": "",
+    "thumb_width": "",
+    "title": "18.06_L02.jpg",
+    "unique_identifier": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-2-elimination-with-matrices/18.06_L02.jpg",
+    "widgets_features": []
 }

@@ -1,100 +1,100 @@
 {
-    "contributors": [], 
-    "text": "", 
-    "threeplay_api_json": "", 
-    "_content_type_license": "text/plain", 
-    "asset_language": "en-us", 
-    "media_location": "http://videolectures.net/mit1806s05_linear_algebra/", 
-    "_uid": "90eb03540ece760e6fcb0d6b9e5c7b61", 
-    "_workflow_history": {
-        "one_state_workflow": [
-            {
-                "action": null, 
-                "review_state": "published", 
-                "actor": "samehn", 
-                "comments": "", 
-                "time": "2011/05/07 01:21:44.206 GMT-4"
-            }
-        ]
-    }, 
-    "expirationDate": "None", 
-    "_content_type_id": "text/plain", 
-    "id": "Video-VideoLecturesnet-Stream", 
-    "tableContents": false, 
-    "_path": "/Plone/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-14-orthogonal-vectors-and-subspaces/Video-VideoLecturesnet-Stream", 
-    "media_asset_source": "VideoLectures.net", 
-    "effectiveDate": "None", 
-    "title": "Video-VideoLectures.net-Stream", 
-    "media_asset_type": "Video", 
     "_ac_local_roles": {
         "samehn": [
             "Owner"
         ]
-    }, 
-    "_userdefined_roles": [], 
-    "_gopip": 5, 
-    "location": "", 
-    "_content_type_title": "text/plain", 
-    "excludeFromNav": false, 
-    "presentation": false, 
-    "_content_type_media_location": "text/plain", 
-    "_type": "OCWMediaAsset", 
-    "description": "", 
-    "_atrefs": {}, 
-    "_layout": "custom_view", 
-    "subject": [], 
-    "_content_type_rights": "text/html", 
-    "_directly_provided": [], 
-    "language": "", 
-    "_content_type_asset_language": "text/plain", 
-    "_classname": "OCWMediaAsset", 
-    "_content_type_media_format": "text/plain", 
-    "creation_date": "2011/05/07 01:21:44.188 GMT-4", 
-    "parent_uid": "70a8aa5c146f5edff5e1c040db373113", 
-    "_content_type_media_asset_type": "text/plain", 
-    "modification_date": "2012/12/01 16:40:46.138 US/Eastern", 
-    "_content_type": "text/html", 
-    "_id": "Video-VideoLecturesnet-Stream", 
-    "file_uid": "", 
-    "license": "http://ocw.mit.edu/terms", 
-    "rights": "This site (c) Massachusetts Institute of Technology 2010.  Content within individual courses is (c) by the individual authors unless otherwise noted. The Massachusetts Institute of Technology is providing this Work (as defined below) under the terms of this Creative Commons public license (\"CCPL\" or \"license\") unless otherwise noted. The Work is protected by copyright and/or other applicable law. Any use of the work other than as authorized under this license is prohibited. By exercising any of the rights to the Work provided here, You (as defined below) accept and agree to be bound by the terms of this license. The Licensor, the Massachusetts Institute of Technology, grants You the rights contained here in consideration of Your acceptance of such terms and conditions.", 
-    "_atbrefs": {}, 
-    "media_size": "", 
-    "_owner": null, 
-    "_defaultpage": "", 
+    },
+    "_atbrefs": {},
+    "_atrefs": {},
+    "_classname": "OCWMediaAsset",
+    "_content_type": "text/html",
+    "_content_type_asset_language": "text/plain",
+    "_content_type_id": "text/plain",
+    "_content_type_license": "text/plain",
+    "_content_type_media_asset_source": "text/plain",
+    "_content_type_media_asset_type": "text/plain",
+    "_content_type_media_format": "text/plain",
+    "_content_type_media_location": "text/plain",
+    "_content_type_rights": "text/html",
+    "_content_type_title": "text/plain",
+    "_defaultpage": "",
+    "_directly_provided": [],
+    "_gopip": 5,
+    "_id": "Video-VideoLecturesnet-Stream",
+    "_layout": "custom_view",
+    "_owner": null,
+    "_path": "/Plone/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-14-orthogonal-vectors-and-subspaces/Video-VideoLecturesnet-Stream",
     "_permissions": {
-        "Modify portal content": {
-            "acquire": false, 
-            "roles": [
-                "Editor", 
-                "Manager", 
-                "Owner"
-            ]
-        }, 
         "Access contents information": {
-            "acquire": false, 
+            "acquire": false,
             "roles": [
                 "Anonymous"
             ]
-        }, 
+        },
+        "Modify portal content": {
+            "acquire": false,
+            "roles": [
+                "Editor",
+                "Manager",
+                "Owner"
+            ]
+        },
         "View": {
-            "acquire": false, 
+            "acquire": false,
             "roles": [
                 "Anonymous"
             ]
         }
-    }, 
-    "media_format": "Stream", 
+    },
     "_properties": [
         [
-            "title", 
-            "Video-VideoLectures.net-Stream", 
+            "title",
+            "Video-VideoLectures.net-Stream",
             "string"
         ]
-    ], 
-    "allowDiscussion": false, 
+    ],
+    "_type": "OCWMediaAsset",
+    "_uid": "90eb03540ece760e6fcb0d6b9e5c7b61",
+    "_userdefined_roles": [],
+    "_workflow_history": {
+        "one_state_workflow": [
+            {
+                "action": null,
+                "actor": "samehn",
+                "comments": "",
+                "review_state": "published",
+                "time": "2011/05/07 01:21:44.206 GMT-4"
+            }
+        ]
+    },
+    "allowDiscussion": false,
+    "asset_language": "en-us",
+    "contributors": [],
+    "creation_date": "2011/05/07 01:21:44.188 GMT-4",
     "creators": [
         "samehn"
-    ], 
-    "_content_type_media_asset_source": "text/plain"
+    ],
+    "description": "",
+    "effectiveDate": "None",
+    "excludeFromNav": false,
+    "expirationDate": "None",
+    "file_uid": "",
+    "id": "Video-VideoLecturesnet-Stream",
+    "language": "",
+    "license": "http://ocw.mit.edu/terms",
+    "location": "",
+    "media_asset_source": "VideoLectures.net",
+    "media_asset_type": "Video",
+    "media_format": "Stream",
+    "media_location": "http://videolectures.net/mit1806s05_linear_algebra/",
+    "media_size": "",
+    "modification_date": "2012/12/01 16:40:46.138 US/Eastern",
+    "parent_uid": "70a8aa5c146f5edff5e1c040db373113",
+    "presentation": false,
+    "rights": "This site (c) Massachusetts Institute of Technology 2010.  Content within individual courses is (c) by the individual authors unless otherwise noted. The Massachusetts Institute of Technology is providing this Work (as defined below) under the terms of this Creative Commons public license (\"CCPL\" or \"license\") unless otherwise noted. The Work is protected by copyright and/or other applicable law. Any use of the work other than as authorized under this license is prohibited. By exercising any of the rights to the Work provided here, You (as defined below) accept and agree to be bound by the terms of this license. The Licensor, the Massachusetts Institute of Technology, grants You the rights contained here in consideration of Your acceptance of such terms and conditions.",
+    "subject": [],
+    "tableContents": false,
+    "text": "",
+    "threeplay_api_json": "",
+    "title": "Video-VideoLectures.net-Stream"
 }

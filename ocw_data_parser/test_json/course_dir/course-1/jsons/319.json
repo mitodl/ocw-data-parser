@@ -1,185 +1,185 @@
 {
-    "expanded_alternate_text": "", 
-    "features_tracking": [], 
-    "widgets_features": [], 
-    "contributors": [], 
-    "tcATmit_subject_tags": [], 
-    "unique_identifier": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-21-eigenvalues-and-eigenvectors/18.06_L21.jpg", 
-    "_content_type_publisher": "text/plain", 
-    "_content_type_license": "text/plain", 
-    "_datafield_image": {
-        "encoding": "base64", 
-        "data": "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", 
-        "content_type": "image/jpeg", 
-        "filename": "18.06_L21.jpg"
-    }, 
-    "aggregationlevel": 2, 
-    "_uid": "790f6b2cd4f41c93f5187de068ce65dc", 
-    "_workflow_history": {
-        "one_state_workflow": [
-            {
-                "action": null, 
-                "review_state": "published", 
-                "actor": "Jcplayer", 
-                "comments": "", 
-                "time": "2010/10/08 11:28:13.683 GMT-4"
-            }
-        ]
-    }, 
-    "expirationDate": "None", 
-    "_content_type_id": "text/plain", 
-    "duration": "", 
-    "contributor_list": [], 
-    "id": "18.06_L21.jpg", 
-    "related_mit_links": "", 
-    "thumb_height": "", 
-    "effectiveDate": "None", 
-    "title": "18.06_L21.jpg", 
-    "_layout": "view", 
-    "parent_module": "aabc44bdb2e45374d62f30f2a6d4c63e", 
-    "_content_type": "image/jpeg", 
-    "_userdefined_roles": [], 
-    "_gopip": 0, 
-    "location": "", 
-    "_atrefs": {
-        "BelongsTo": [
-            "aabc44bdb2e45374d62f30f2a6d4c63e"
-        ]
-    }, 
-    "_content_type_course_identifier": "text/plain", 
-    "_content_type_title": "text/plain", 
-    "section_identifier": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures", 
-    "_atbrefs": {
-        "thumbnail_image": [
-            "67a7b936c6ab017d69906a3d24837506"
-        ], 
-        "file_reference": [
-            "5d6b215c7c7f5c3db03e1a00841610bd"
-        ]
-    }, 
-    "creation_date": "2010/10/08 11:28:13.675 GMT-4", 
-    "_content_type_section_identifier": "text/plain", 
-    "_type": "OCWImage", 
-    "technical_location": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-21-eigenvalues-and-eigenvectors/18.06_L21.jpg", 
-    "description": "", 
-    "thumb_width": "", 
-    "software_requirements": [
-        {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "40.0", 
-            "software_name_col": "Chrome", 
-            "maximum_version_col": ""
-        }, 
-        {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "8.0", 
-            "software_name_col": "Safari", 
-            "maximum_version_col": ""
-        }, 
-        {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "38.0", 
-            "software_name_col": "Mozilla Firefox", 
-            "maximum_version_col": ""
-        }, 
-        {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "9.0", 
-            "software_name_col": "Internet Explorer", 
-            "maximum_version_col": ""
-        }, 
-        {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "13.1", 
-            "software_name_col": "Edge", 
-            "maximum_version_col": ""
-        }
-    ], 
-    "_content_type_technical_location": "text/plain", 
-    "alternate_text": "", 
-    "credit": "", 
-    "subject": [], 
-    "_content_type_rights": "text/html", 
-    "course_identifier": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010", 
-    "_directly_provided": [], 
-    "other_platform_requirements": "", 
-    "_id": "18.06_L21.jpg", 
-    "_classname": "OCWImage", 
-    "metadata_contributor_list": [
-        {
-            "md_contributor_uid": "", 
-            "md_contributor_entity": "Todd Rautenberg", 
-            "md_contributor_hide": "", 
-            "md_contributor_special_title": "", 
-            "md_contributor_role": "Validator"
-        }, 
-        {
-            "md_contributor_uid": "", 
-            "md_contributor_entity": "Todd Rautenberg", 
-            "md_contributor_hide": "", 
-            "md_contributor_special_title": "", 
-            "md_contributor_role": "Creator"
-        }
-    ], 
-    "tcATmit_instructional_tags": [], 
-    "caption": "", 
-    "parent_uid": "67a7b936c6ab017d69906a3d24837506", 
-    "modification_date": "2016/09/24 04:34:07.285 GMT-4", 
-    "course_linking": [], 
-    "publisher": "MIT OpenCourseWare", 
-    "excludeFromNav": false, 
-    "feature_requirements": [], 
-    "language": "", 
-    "license": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/", 
-    "rights": "This site (c) Massachusetts Institute of Technology 2010.  Content within individual courses is (c) by the individual authors unless otherwise noted. The Massachusetts Institute of Technology is providing this Work (as defined below) under the terms of this Creative Commons public license (\"CCPL\" or \"license\") unless otherwise noted. The Work is protected by copyright and/or other applicable law. Any use of the work other than as authorized under this license is prohibited. By exercising any of the rights to the Work provided here, You (as defined below) accept and agree to be bound by the terms of this license. The Licensor, the Massachusetts Institute of Technology, grants You the rights contained here in consideration of Your acceptance of such terms and conditions.", 
-    "always_publish": false, 
-    "popup_image_id": "", 
-    "materialtype": "Other", 
-    "_content_type_unique_identifier": "text/plain", 
-    "category_features": [], 
-    "is_pop_up_image": false, 
-    "_owner": null, 
-    "_defaultpage": "index_html", 
-    "firstTimeEdit": true, 
-    "_permissions": {
-        "Modify portal content": {
-            "acquire": false, 
-            "roles": [
-                "Editor", 
-                "Manager", 
-                "Owner"
-            ]
-        }, 
-        "Access contents information": {
-            "acquire": false, 
-            "roles": [
-                "Anonymous"
-            ]
-        }, 
-        "View": {
-            "acquire": false, 
-            "roles": [
-                "Anonymous"
-            ]
-        }
-    }, 
-    "_properties": [
-        [
-            "title", 
-            "18.06_L21.jpg", 
-            "string"
-        ]
-    ], 
-    "allowDiscussion": false, 
-    "_content_type_materialtype": "text/plain", 
-    "creators": [
-        "Jcplayer"
-    ], 
-    "courselist_features": [], 
     "_ac_local_roles": {
         "Jcplayer": [
             "Owner"
         ]
-    }, 
-    "_path": "/Plone/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-21-eigenvalues-and-eigenvectors/18.06_L21.jpg"
+    },
+    "_atbrefs": {
+        "file_reference": [
+            "5d6b215c7c7f5c3db03e1a00841610bd"
+        ],
+        "thumbnail_image": [
+            "67a7b936c6ab017d69906a3d24837506"
+        ]
+    },
+    "_atrefs": {
+        "BelongsTo": [
+            "aabc44bdb2e45374d62f30f2a6d4c63e"
+        ]
+    },
+    "_classname": "OCWImage",
+    "_content_type": "image/jpeg",
+    "_content_type_course_identifier": "text/plain",
+    "_content_type_id": "text/plain",
+    "_content_type_license": "text/plain",
+    "_content_type_materialtype": "text/plain",
+    "_content_type_publisher": "text/plain",
+    "_content_type_rights": "text/html",
+    "_content_type_section_identifier": "text/plain",
+    "_content_type_technical_location": "text/plain",
+    "_content_type_title": "text/plain",
+    "_content_type_unique_identifier": "text/plain",
+    "_datafield_image": {
+        "content_type": "image/jpeg",
+        "data": "ZW1wdHk=",
+        "encoding": "base64",
+        "filename": "18.06_L21.jpg"
+    },
+    "_defaultpage": "index_html",
+    "_directly_provided": [],
+    "_gopip": 0,
+    "_id": "18.06_L21.jpg",
+    "_layout": "view",
+    "_owner": null,
+    "_path": "/Plone/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-21-eigenvalues-and-eigenvectors/18.06_L21.jpg",
+    "_permissions": {
+        "Access contents information": {
+            "acquire": false,
+            "roles": [
+                "Anonymous"
+            ]
+        },
+        "Modify portal content": {
+            "acquire": false,
+            "roles": [
+                "Editor",
+                "Manager",
+                "Owner"
+            ]
+        },
+        "View": {
+            "acquire": false,
+            "roles": [
+                "Anonymous"
+            ]
+        }
+    },
+    "_properties": [
+        [
+            "title",
+            "18.06_L21.jpg",
+            "string"
+        ]
+    ],
+    "_type": "OCWImage",
+    "_uid": "790f6b2cd4f41c93f5187de068ce65dc",
+    "_userdefined_roles": [],
+    "_workflow_history": {
+        "one_state_workflow": [
+            {
+                "action": null,
+                "actor": "Jcplayer",
+                "comments": "",
+                "review_state": "published",
+                "time": "2010/10/08 11:28:13.683 GMT-4"
+            }
+        ]
+    },
+    "aggregationlevel": 2,
+    "allowDiscussion": false,
+    "alternate_text": "",
+    "always_publish": false,
+    "caption": "",
+    "category_features": [],
+    "contributor_list": [],
+    "contributors": [],
+    "course_identifier": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010",
+    "course_linking": [],
+    "courselist_features": [],
+    "creation_date": "2010/10/08 11:28:13.675 GMT-4",
+    "creators": [
+        "Jcplayer"
+    ],
+    "credit": "",
+    "description": "",
+    "duration": "",
+    "effectiveDate": "None",
+    "excludeFromNav": false,
+    "expanded_alternate_text": "",
+    "expirationDate": "None",
+    "feature_requirements": [],
+    "features_tracking": [],
+    "firstTimeEdit": true,
+    "id": "18.06_L21.jpg",
+    "is_pop_up_image": false,
+    "language": "",
+    "license": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/",
+    "location": "",
+    "materialtype": "Other",
+    "metadata_contributor_list": [
+        {
+            "md_contributor_entity": "Todd Rautenberg",
+            "md_contributor_hide": "",
+            "md_contributor_role": "Validator",
+            "md_contributor_special_title": "",
+            "md_contributor_uid": ""
+        },
+        {
+            "md_contributor_entity": "Todd Rautenberg",
+            "md_contributor_hide": "",
+            "md_contributor_role": "Creator",
+            "md_contributor_special_title": "",
+            "md_contributor_uid": ""
+        }
+    ],
+    "modification_date": "2016/09/24 04:34:07.285 GMT-4",
+    "other_platform_requirements": "",
+    "parent_module": "aabc44bdb2e45374d62f30f2a6d4c63e",
+    "parent_uid": "67a7b936c6ab017d69906a3d24837506",
+    "popup_image_id": "",
+    "publisher": "MIT OpenCourseWare",
+    "related_mit_links": "",
+    "rights": "This site (c) Massachusetts Institute of Technology 2010.  Content within individual courses is (c) by the individual authors unless otherwise noted. The Massachusetts Institute of Technology is providing this Work (as defined below) under the terms of this Creative Commons public license (\"CCPL\" or \"license\") unless otherwise noted. The Work is protected by copyright and/or other applicable law. Any use of the work other than as authorized under this license is prohibited. By exercising any of the rights to the Work provided here, You (as defined below) accept and agree to be bound by the terms of this license. The Licensor, the Massachusetts Institute of Technology, grants You the rights contained here in consideration of Your acceptance of such terms and conditions.",
+    "section_identifier": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures",
+    "software_requirements": [
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "40.0",
+            "software_name_col": "Chrome",
+            "software_type_col": "Browser"
+        },
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "8.0",
+            "software_name_col": "Safari",
+            "software_type_col": "Browser"
+        },
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "38.0",
+            "software_name_col": "Mozilla Firefox",
+            "software_type_col": "Browser"
+        },
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "9.0",
+            "software_name_col": "Internet Explorer",
+            "software_type_col": "Browser"
+        },
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "13.1",
+            "software_name_col": "Edge",
+            "software_type_col": "Browser"
+        }
+    ],
+    "subject": [],
+    "tcATmit_instructional_tags": [],
+    "tcATmit_subject_tags": [],
+    "technical_location": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-21-eigenvalues-and-eigenvectors/18.06_L21.jpg",
+    "thumb_height": "",
+    "thumb_width": "",
+    "title": "18.06_L21.jpg",
+    "unique_identifier": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-21-eigenvalues-and-eigenvectors/18.06_L21.jpg",
+    "widgets_features": []
 }

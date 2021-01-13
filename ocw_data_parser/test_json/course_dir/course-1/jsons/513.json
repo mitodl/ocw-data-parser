@@ -1,360 +1,360 @@
 {
-    "text": "<p>The readings are assigned in: <a href=\"http://www.amazon.com/exec/obidos/ASIN/0980232716/ref=nosim/mitopencourse-20\"><img src=\"/images/a_logo_17.gif\" alt=\"Buy at Amazon\" align=\"absMiddle\" border=\"0\" /></a> Strang, Gilbert. <em>Introduction to Linear Algebra</em>. 4th ed. <a href=\"http://www.wellesleycambridge.com/\">Wellesley-Cambridge Press</a>, 2009. ISBN: 9780980232714.</p> <p>Reading assignments are also provided for the newer edition: <a href=\"http://www.amazon.com/exec/obidos/ASIN/0980232775/ref=nosim/mitopencourse-20\"><img alt=\"Buy at Amazon\" src=\"/images/a_logo_17.gif\" align=\"absmiddle\" border=\"0\" /></a> Strang, Gilbert. <em>Introduction to Linear Algebra</em>. 5th ed. <a href=\"http://www.wellesleycambridge.com/\">Wellesley-Cambridge Press</a>, 2016. ISBN: 9780980232776.</p> <div class=\"maintabletemplate\"><table class=\"tablewidth50\" summary=\"See table caption for summary.\">     <caption class=\"invisible\">Course readings.</caption>     <thead>         <tr>             <th id=\"tbl446id0_0\" scope=\"col\">SES&nbsp;#</th>             <th id=\"tbl446id0_1\" scope=\"col\">TOPICS</th>             <th id=\"tbl446id0_2\" scope=\"col\">READINGS in 4<font size=\"1\">th&nbsp;</font>Edition</th>             <th id=\"tbl446id0_2\" scope=\"col\"><span style=\"font-size: 11.2314px;\">READINGS IN 5TH EDITION</span></th>         </tr>     </thead>     <tbody>         <tr class=\"row\">             <td headers=\"tbl446id0_0\">1</td>             <td headers=\"tbl446id0_1\">The geometry of linear equations</td>             <td headers=\"tbl446id0_2\">1.1-2.1</td>             <td headers=\"tbl446id0_2\">\ufeff1.1-2.1</td>         </tr>         <tr class=\"alt-row\">             <td headers=\"tbl446id0_0\">2</td>             <td headers=\"tbl446id0_1\">Elimination with matrices</td>             <td headers=\"tbl446id0_2\">2.2-2.3</td>             <td headers=\"tbl446id0_2\">2.2-2.3</td>         </tr>         <tr class=\"row\">             <td headers=\"tbl446id0_0\">3</td>             <td headers=\"tbl446id0_1\">Matrix operations and inverses</td>             <td headers=\"tbl446id0_2\">2.4-2.5</td>             <td headers=\"tbl446id0_2\">\ufeff2.4-2.5<a id=\"fck_paste_padding\">\ufeff</a></td>         </tr>         <tr class=\"alt-row\">             <td headers=\"tbl446id0_0\">4</td>             <td headers=\"tbl446id0_1\"><em>LU</em> and <em>LDU </em>factorization</td>             <td headers=\"tbl446id0_2\">2.6</td>             <td headers=\"tbl446id0_2\">\ufeff2.6<a id=\"fck_paste_padding\">\ufeff</a></td>         </tr>         <tr class=\"row\">             <td headers=\"tbl446id0_0\">5</td>             <td headers=\"tbl446id0_1\">Transposes and permutations</td>             <td headers=\"tbl446id0_2\">2.7</td>             <td headers=\"tbl446id0_2\">\ufeff2.7<a id=\"fck_paste_padding\">\ufeff</a></td>         </tr>         <tr class=\"alt-row\">             <td headers=\"tbl446id0_0\">6</td>             <td headers=\"tbl446id0_1\">Vector spaces and subspaces</td>             <td headers=\"tbl446id0_2\">3.1</td>             <td headers=\"tbl446id0_2\">\ufeff3.1<a id=\"fck_paste_padding\">\ufeff</a></td>         </tr>         <tr class=\"row\">             <td headers=\"tbl446id0_0\">7</td>             <td headers=\"tbl446id0_1\">The nullspace: Solving Ax = 0</td>             <td headers=\"tbl446id0_2\">3.2</td>             <td headers=\"tbl446id0_2\">\ufeff3.2<a id=\"fck_paste_padding\">\ufeff</a></td>         </tr>         <tr class=\"alt-row\">             <td headers=\"tbl446id0_0\">8</td>             <td headers=\"tbl446id0_1\">Rectangular <em>PA </em>= <em>LU</em> and Ax = b</td>             <td headers=\"tbl446id0_2\">3.3-3.4</td>             <td headers=\"tbl446id0_2\">3.3</td>         </tr>         <tr class=\"row\">             <td headers=\"tbl446id0_0\">9</td>             <td headers=\"tbl446id0_1\">Row reduced echelon form</td>             <td headers=\"tbl446id0_2\">3.3-3.4</td>             <td headers=\"tbl446id0_2\">3.3</td>         </tr>         <tr class=\"alt-row\">             <td headers=\"tbl446id0_0\">10</td>             <td headers=\"tbl446id0_1\">Basis and dimension</td>             <td headers=\"tbl446id0_2\">3.5</td>             <td headers=\"tbl446id0_2\">3.4</td>         </tr>         <tr class=\"row\">             <td headers=\"tbl446id0_0\">11</td>             <td headers=\"tbl446id0_1\">The four fundamental subspaces</td>             <td headers=\"tbl446id0_2\">3.6</td>             <td headers=\"tbl446id0_2\">3.5</td>         </tr>         <tr class=\"alt-row\">             <td headers=\"tbl446id0_0\">12</td>             <td headers=\"tbl446id0_1\">Exam 1: Chapters 1 to 3.4</td>             <td headers=\"tbl446id0_2\">&nbsp;</td>             <td headers=\"tbl446id0_2\">&nbsp;</td>         </tr>         <tr class=\"row\">             <td headers=\"tbl446id0_0\">13</td>             <td headers=\"tbl446id0_1\">Graphs and networks</td>             <td headers=\"tbl446id0_2\">8.2</td>             <td headers=\"tbl446id0_2\">3.5, 10.1</td>         </tr>         <tr class=\"alt-row\">             <td headers=\"tbl446id0_0\">14</td>             <td headers=\"tbl446id0_1\">Orthogonality</td>             <td headers=\"tbl446id0_2\">4.1</td>             <td headers=\"tbl446id0_2\">4.1</td>         </tr>         <tr class=\"row\">             <td headers=\"tbl446id0_0\">15</td>             <td headers=\"tbl446id0_1\">Projections and subspaces</td>             <td headers=\"tbl446id0_2\">4.2</td>             <td headers=\"tbl446id0_2\">4.2</td>         </tr>         <tr class=\"alt-row\">             <td headers=\"tbl446id0_0\">16</td>             <td headers=\"tbl446id0_1\">Least squares approximations</td>             <td headers=\"tbl446id0_2\">4.3</td>             <td headers=\"tbl446id0_2\">4.3</td>         </tr>         <tr class=\"row\">             <td headers=\"tbl446id0_0\">17</td>             <td headers=\"tbl446id0_1\">Gram-Schmidt and <em>A</em> = <em>QR</em></td>             <td headers=\"tbl446id0_2\">4.4</td>             <td headers=\"tbl446id0_2\">4.4</td>         </tr>         <tr class=\"alt-row\">             <td headers=\"tbl446id0_0\">18</td>             <td headers=\"tbl446id0_1\">Properties of determinants</td>             <td headers=\"tbl446id0_2\">5.1</td>             <td headers=\"tbl446id0_2\">5.1</td>         </tr>         <tr class=\"row\">             <td headers=\"tbl446id0_0\">19</td>             <td headers=\"tbl446id0_1\">Formulas for determinants</td>             <td headers=\"tbl446id0_2\">5.2</td>             <td headers=\"tbl446id0_2\">5.2</td>         </tr>         <tr class=\"alt-row\">             <td headers=\"tbl446id0_0\">20</td>             <td headers=\"tbl446id0_1\">Applications of determinants</td>             <td headers=\"tbl446id0_2\">5.3</td>             <td headers=\"tbl446id0_2\">5.3</td>         </tr>         <tr class=\"row\">             <td headers=\"tbl446id0_0\">21</td>             <td headers=\"tbl446id0_1\">Eigenvalues and eigenvectors</td>             <td headers=\"tbl446id0_2\">6.1</td>             <td headers=\"tbl446id0_2\">6.1</td>         </tr>         <tr class=\"alt-row\">             <td headers=\"tbl446id0_0\">22</td>             <td headers=\"tbl446id0_1\">Diagonalization</td>             <td headers=\"tbl446id0_2\">6.2</td>             <td headers=\"tbl446id0_2\">6.2</td>         </tr>         <tr class=\"row\">             <td headers=\"tbl446id0_0\">23</td>             <td headers=\"tbl446id0_1\">Markov matrices</td>             <td headers=\"tbl446id0_2\">8.3</td>             <td headers=\"tbl446id0_2\">10.3</td>         </tr>         <tr class=\"alt-row\">             <td headers=\"tbl446id0_0\">24</td>             <td headers=\"tbl446id0_1\"><em>Review for exam 2</em></td>             <td headers=\"tbl446id0_2\">&nbsp;</td>             <td headers=\"tbl446id0_2\">&nbsp;</td>         </tr>         <tr class=\"row\">             <td headers=\"tbl446id0_0\">25</td>             <td headers=\"tbl446id0_1\">Exam 2: Chapters 1-5, 6.1-6.2, 8.2</td>             <td headers=\"tbl446id0_2\">&nbsp;</td>             <td headers=\"tbl446id0_2\">&nbsp;</td>         </tr>         <tr class=\"alt-row\">             <td headers=\"tbl446id0_0\">26</td>             <td headers=\"tbl446id0_1\">Differential equations</td>             <td headers=\"tbl446id0_2\">6.3</td>             <td headers=\"tbl446id0_2\">6.3</td>         </tr>         <tr class=\"row\">             <td headers=\"tbl446id0_0\">27</td>             <td headers=\"tbl446id0_1\">Symmetric matrices</td>             <td headers=\"tbl446id0_2\">6.4</td>             <td headers=\"tbl446id0_2\">6.4</td>         </tr>         <tr class=\"alt-row\">             <td headers=\"tbl446id0_0\">28</td>             <td headers=\"tbl446id0_1\">Positive definite matrices</td>             <td headers=\"tbl446id0_2\">6.5</td>             <td headers=\"tbl446id0_2\">6.5</td>         </tr>         <tr class=\"row\">             <td headers=\"tbl446id0_0\">29</td>             <td headers=\"tbl446id0_1\">Matrices in engineering</td>             <td headers=\"tbl446id0_2\">8.1</td>             <td headers=\"tbl446id0_2\">10.2</td>         </tr>         <tr class=\"alt-row\">             <td headers=\"tbl446id0_0\">30</td>             <td headers=\"tbl446id0_1\">Similar matrices</td>             <td headers=\"tbl446id0_2\">6.6</td>             <td headers=\"tbl446id0_2\">6.2</td>         </tr>         <tr class=\"row\">             <td headers=\"tbl446id0_0\">31</td>             <td headers=\"tbl446id0_1\">Singular value decomposition</td>             <td headers=\"tbl446id0_2\">6.7</td>             <td headers=\"tbl446id0_2\">7.1-7.2</td>         </tr>         <tr class=\"alt-row\">             <td headers=\"tbl446id0_0\">32</td>             <td headers=\"tbl446id0_1\">Fourier series, FFT, complex matrices</td>             <td headers=\"tbl446id0_2\">8.5, 10.2-10.3</td>             <td headers=\"tbl446id0_2\">10.5, 9.2-9.3</td>         </tr>         <tr class=\"row\">             <td headers=\"tbl446id0_0\">33</td>             <td headers=\"tbl446id0_1\">Linear transformations</td>             <td headers=\"tbl446id0_2\">7.1-7.2</td>             <td headers=\"tbl446id0_2\">8.1-8.2</td>         </tr>         <tr class=\"alt-row\">             <td headers=\"tbl446id0_0\">34</td>             <td headers=\"tbl446id0_1\">Choice of basis</td>             <td headers=\"tbl446id0_2\">7.3</td>             <td headers=\"tbl446id0_2\">8.3</td>         </tr>         <tr class=\"row\">             <td headers=\"tbl446id0_0\">35</td>             <td headers=\"tbl446id0_1\">Linear programming</td>             <td headers=\"tbl446id0_2\">8.4</td>             <td headers=\"tbl446id0_2\">10.4</td>         </tr>         <tr class=\"alt-row\">             <td headers=\"tbl446id0_0\">36</td>             <td headers=\"tbl446id0_1\"><em>Course review</em></td>             <td headers=\"tbl446id0_2\">&nbsp;</td>             <td headers=\"tbl446id0_2\">&nbsp;</td>         </tr>         <tr class=\"row\">             <td headers=\"tbl446id0_0\">37</td>             <td headers=\"tbl446id0_1\">Exam 3: Chapters 1-8 (8.1, 2, 3, 5)</td>             <td headers=\"tbl446id0_2\">&nbsp;</td>             <td headers=\"tbl446id0_2\">&nbsp;</td>         </tr>         <tr class=\"alt-row\">             <td headers=\"tbl446id0_0\">38</td>             <td headers=\"tbl446id0_1\">Numerical linear algebra</td>             <td headers=\"tbl446id0_2\">9.1-9.3</td>             <td headers=\"tbl446id0_2\">11.1-11.3</td>         </tr>         <tr class=\"row\">             <td headers=\"tbl446id0_0\">39</td>             <td headers=\"tbl446id0_1\">Computational science</td>             <td headers=\"tbl446id0_2\">See the Web site for <a href=\"http://ocw.mit.edu/courses/mathematics/18-085-computational-science-and-engineering-i-fall-2008/\">18.085</a></td>             <td headers=\"tbl446id0_2\">&nbsp;</td>         </tr>         <tr class=\"alt-row\">             <td headers=\"tbl446id0_0\">40</td>             <td headers=\"tbl446id0_1\">Final exam</td>             <td headers=\"tbl446id0_2\">&nbsp;</td>             <td headers=\"tbl446id0_2\">&nbsp;</td>         </tr>     </tbody> </table></div> <p>&nbsp;</p>", 
-    "_content_type_license": "text/plain", 
-    "_uid": "81d6a1cd707c29b29d6540b3e79d5433", 
-    "title": "Readings", 
     "_ac_local_roles": {
         "cc_saror4": [
             "Owner"
         ]
-    }, 
-    "location": "", 
-    "_content_type_course_identifier": "text/plain", 
+    },
     "_atbrefs": {
         "isReferencing": [
-            "e6719967cc0a48ef7c122ec203472574", 
-            "3249e5e2f0159ecd5dd9c524465320f6", 
-            "67a7b936c6ab017d69906a3d24837506", 
-            "c1a00d74b214d09a59cef50cd2cec554", 
-            "f4caeb4f5cbc108c5335e31427987a7e", 
-            "81d6a1cd707c29b29d6540b3e79d5433", 
-            "b39b3ec50faab61ab04d8285b5fd89d8", 
-            "12a27cb2360fd3c7f6891dd079e441f5", 
-            "05e98eb5937aa5c6346b20da0d9c7f68", 
-            "aee7c474318a3fa46126207c1b107c15", 
-            "1397ead489c31027c5409f06c4243950", 
-            "acdf48e0f7efb66b9eef7e5408c39569", 
-            "5e46844bdff61befcf306324290ba71c", 
-            "52ef65a06611f530adcdff80f3d56e4e", 
-            "ef71d23ef71361c63a2c3d359e754031", 
-            "7da4985ac0765564c8aa3eccb1a1e97e", 
-            "96b25d78b0d8cfe4046c78eb978b65b8", 
-            "c024f510dfb0bd83ff16f804d5983c27", 
-            "22064b22590e8a1b4468e146c455f121", 
-            "91874a0f258aeadf12ff66ed84bd4f8f", 
-            "59e845e037568e3e86afc5ac4d33890a", 
-            "fde5877ab540a31330a1ef06c5e1127d", 
-            "11f8e0fcbb9df3ed3a53fa822ef7724f", 
-            "a8f2e55a61ed246993e8e771b35766e1", 
-            "c5986685265438d7dcfcfb053ece78f7", 
-            "1029e95f3f239767c20931244079c32b", 
-            "70a8aa5c146f5edff5e1c040db373113", 
-            "2577b6fca4536d02074f494d2f49dc3b", 
-            "5092adda6bc7b604ee9d1077d5764166", 
-            "1568af1ffb9ec83bdfedb41742aab02b", 
-            "f7be9e0b3fedac90071a0f982ac10293", 
-            "8afb3c53a168a8428bf83a2ddb72a3f1", 
-            "4371dc4a06f111ab06b96f4db31262c0", 
-            "3da625db9fd7f62f3a3fb2a6d0dcc4c8", 
-            "7981f3c413e430369643531921892360", 
+            "e6719967cc0a48ef7c122ec203472574",
+            "3249e5e2f0159ecd5dd9c524465320f6",
+            "67a7b936c6ab017d69906a3d24837506",
+            "c1a00d74b214d09a59cef50cd2cec554",
+            "f4caeb4f5cbc108c5335e31427987a7e",
+            "81d6a1cd707c29b29d6540b3e79d5433",
+            "b39b3ec50faab61ab04d8285b5fd89d8",
+            "12a27cb2360fd3c7f6891dd079e441f5",
+            "05e98eb5937aa5c6346b20da0d9c7f68",
+            "aee7c474318a3fa46126207c1b107c15",
+            "1397ead489c31027c5409f06c4243950",
+            "acdf48e0f7efb66b9eef7e5408c39569",
+            "5e46844bdff61befcf306324290ba71c",
+            "52ef65a06611f530adcdff80f3d56e4e",
+            "ef71d23ef71361c63a2c3d359e754031",
+            "7da4985ac0765564c8aa3eccb1a1e97e",
+            "96b25d78b0d8cfe4046c78eb978b65b8",
+            "c024f510dfb0bd83ff16f804d5983c27",
+            "22064b22590e8a1b4468e146c455f121",
+            "91874a0f258aeadf12ff66ed84bd4f8f",
+            "59e845e037568e3e86afc5ac4d33890a",
+            "fde5877ab540a31330a1ef06c5e1127d",
+            "11f8e0fcbb9df3ed3a53fa822ef7724f",
+            "a8f2e55a61ed246993e8e771b35766e1",
+            "c5986685265438d7dcfcfb053ece78f7",
+            "1029e95f3f239767c20931244079c32b",
+            "70a8aa5c146f5edff5e1c040db373113",
+            "2577b6fca4536d02074f494d2f49dc3b",
+            "5092adda6bc7b604ee9d1077d5764166",
+            "1568af1ffb9ec83bdfedb41742aab02b",
+            "f7be9e0b3fedac90071a0f982ac10293",
+            "8afb3c53a168a8428bf83a2ddb72a3f1",
+            "4371dc4a06f111ab06b96f4db31262c0",
+            "3da625db9fd7f62f3a3fb2a6d0dcc4c8",
+            "7981f3c413e430369643531921892360",
             "a82722664f6b388a5669608db531d81a"
         ]
-    }, 
-    "constrainTypesMode": 0, 
-    "technical_location": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/readings", 
-    "software_requirements": [
-        {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "40.0", 
-            "software_name_col": "Chrome", 
-            "maximum_version_col": ""
-        }, 
-        {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "8.0", 
-            "software_name_col": "Safari", 
-            "maximum_version_col": ""
-        }, 
-        {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "38.0", 
-            "software_name_col": "Mozilla Firefox", 
-            "maximum_version_col": ""
-        }, 
-        {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "9.0", 
-            "software_name_col": "Internet Explorer", 
-            "maximum_version_col": ""
-        }, 
-        {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "13.1", 
-            "software_name_col": "Edge", 
-            "maximum_version_col": ""
-        }
-    ], 
-    "_content_type_technical_location": "text/plain", 
-    "_content_type_rights": "text/html", 
-    "_directly_provided": [
-        "Products.CMFEditions.interfaces.IVersioned"
-    ], 
-    "parent_uid": "aabc44bdb2e45374d62f30f2a6d4c63e", 
-    "excludeFromNav": false, 
-    "_content_type_unique_identifier": "text/plain", 
-    "allowDiscussion": false, 
-    "metadata_contributor_list": [], 
-    "locallyAllowedTypes": [
-        "OCWImage", 
-        "CourseSection", 
-        "OCWExtFile", 
-        "OCWFile"
-    ], 
-    "_content_type_text": "text/html", 
-    "ad_type": "HOUSE", 
-    "creation_date": "2010/05/14 12:21:47.286 GMT-4", 
-    "aggregationlevel": 3, 
-    "duration": "", 
-    "immediatelyAddableTypes": [
-        "OCWImage", 
-        "CourseSection", 
-        "OCWExtFile", 
-        "OCWFile"
-    ], 
-    "subject": [], 
-    "_content_type_short_page_title": "text/plain", 
-    "effectiveDate": "2010/09/03 03:13:41.638 GMT-4", 
-    "parent_module": "aabc44bdb2e45374d62f30f2a6d4c63e", 
-    "is_mathml_document": false, 
-    "bottomtext": "", 
-    "short_page_title": "Readings", 
-    "section_identifier": null, 
-    "related_mit_links": "", 
-    "_content_type_ad_type": "text/plain", 
-    "_layout": "custom_view", 
-    "_workflow_history": {
-        "page_workflow": [
-            {
-                "action": null, 
-                "review_state": "waiting_for_authoring", 
-                "actor": "admin", 
-                "comments": "", 
-                "time": "2010/05/14 12:21:47.291 GMT-4"
-            }, 
-            {
-                "action": "approve_to_staging", 
-                "review_state": "ready_for_staging", 
-                "comments": "", 
-                "actor": "admin", 
-                "time": "2010/05/16 11:42:28.519 GMT-4"
-            }, 
-            {
-                "action": null, 
-                "review_state": "waiting_for_authoring", 
-                "comments": "", 
-                "actor": "cc_saror4", 
-                "time": "2010/08/17 00:14:19.553 GMT-4"
-            }, 
-            {
-                "action": "approve_to_staging", 
-                "review_state": "ready_for_staging", 
-                "actor": "cc_gegrov", 
-                "comments": "", 
-                "time": "2010/09/03 03:13:41.670 GMT-4"
-            }, 
-            {
-                "action": "decline_to_qa", 
-                "review_state": "waiting_for_qa", 
-                "comments": "", 
-                "actor": "eliz", 
-                "time": "2010/09/05 13:22:46.601 GMT-4"
-            }, 
-            {
-                "action": "approve_to_staging", 
-                "review_state": "ready_for_staging", 
-                "actor": "eliz", 
-                "comments": "", 
-                "time": "2010/09/05 13:39:42.049 GMT-4"
-            }, 
-            {
-                "action": "decline_to_qa", 
-                "review_state": "waiting_for_qa", 
-                "comments": "", 
-                "actor": "eliz", 
-                "time": "2016/05/10 15:08:08.332 GMT-4"
-            }, 
-            {
-                "action": "approve_to_staging", 
-                "review_state": "ready_for_staging", 
-                "actor": "eliz", 
-                "comments": "", 
-                "time": "2016/05/10 15:38:18.759 GMT-4"
-            }, 
-            {
-                "action": "decline_to_qa", 
-                "review_state": "waiting_for_qa", 
-                "comments": "", 
-                "actor": "eliz", 
-                "time": "2016/05/10 16:04:28.440 GMT-4"
-            }, 
-            {
-                "action": "approve_to_staging", 
-                "review_state": "ready_for_staging", 
-                "actor": "eliz", 
-                "comments": "", 
-                "time": "2016/05/10 16:07:50.062 GMT-4"
-            }, 
-            {
-                "action": "decline_to_qa", 
-                "review_state": "waiting_for_qa", 
-                "comments": "", 
-                "actor": "eliz", 
-                "time": "2016/06/14 11:00:57.728 GMT-4"
-            }, 
-            {
-                "action": "approve_to_staging", 
-                "review_state": "ready_for_staging", 
-                "comments": "", 
-                "actor": "eliz", 
-                "time": "2016/06/14 11:06:47.250 GMT-4"
-            }, 
-            {
-                "action": "decline_to_qa", 
-                "review_state": "waiting_for_qa", 
-                "actor": "eliz", 
-                "comments": "", 
-                "time": "2017/01/03 11:24:01.758 US/Eastern"
-            }, 
-            {
-                "action": "approve_to_staging", 
-                "review_state": "ready_for_staging", 
-                "comments": "", 
-                "actor": "eliz", 
-                "time": "2017/01/03 11:24:54.648 US/Eastern"
-            }, 
-            {
-                "action": "decline_to_qa", 
-                "review_state": "waiting_for_qa", 
-                "actor": "eliz", 
-                "comments": "", 
-                "time": "2017/08/21 13:50:23.868 GMT-4"
-            }, 
-            {
-                "action": "approve_to_staging", 
-                "review_state": "ready_for_staging", 
-                "comments": "", 
-                "actor": "eliz", 
-                "time": "2017/08/28 11:10:09.933 GMT-4"
-            }, 
-            {
-                "action": "decline", 
-                "review_state": "waiting_for_authoring", 
-                "actor": "asingh33", 
-                "comments": "", 
-                "time": "2017/08/30 00:42:32.093 GMT-4"
-            }, 
-            {
-                "action": "approve_to_staging", 
-                "review_state": "ready_for_staging", 
-                "actor": "asingh33", 
-                "comments": "", 
-                "time": "2017/08/30 01:05:34.149 GMT-4"
-            }
-        ]
-    }, 
-    "_classname": "CourseSection", 
-    "_content_type_materialtype": "text/plain", 
-    "_userdefined_roles": [], 
-    "publisher": "MIT OpenCourseWare", 
-    "nextPreviousEnabled": false, 
-    "language": "", 
-    "url_rewrite_patterns": [], 
-    "widgets_features": [], 
-    "category_features": [], 
-    "firstTimeEdit": true, 
-    "feature_requirements": [], 
-    "list_in_left_nav": false, 
-    "short_name_tlp": "Readings", 
-    "expirationDate": "None", 
-    "_content_type_id": "text/plain", 
-    "contributor_list": [], 
-    "is_media_gallery": false, 
-    "contributors": [], 
-    "_gopip": 5, 
-    "_content_type_title": "text/plain", 
-    "course_linking": [], 
+    },
     "_atrefs": {
         "BelongsTo": [
             "aabc44bdb2e45374d62f30f2a6d4c63e"
-        ], 
+        ],
         "isReferencing": [
             "81d6a1cd707c29b29d6540b3e79d5433"
         ]
-    }, 
-    "other_platform_requirements": "", 
-    "license": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/", 
-    "rights": "This site (c) Massachusetts Institute of Technology 2010.  Content within individual courses is (c) by the individual authors unless otherwise noted. The Massachusetts Institute of Technology is providing this Work (as defined below) under the terms of this Creative Commons public license (\"CCPL\" or \"license\") unless otherwise noted. The Work is protected by copyright and/or other applicable law. Any use of the work other than as authorized under this license is prohibited. By exercising any of the rights to the Work provided here, You (as defined below) accept and agree to be bound by the terms of this license. The Licensor, the Massachusetts Institute of Technology, grants You the rights contained here in consideration of Your acceptance of such terms and conditions.", 
-    "hide_Page_title": false, 
-    "_defaultpage": "", 
-    "tcATmit_subject_tags": [], 
-    "features_tracking": [], 
-    "ad_champion_text": "", 
-    "has_inline_embed": false, 
-    "unique_identifier": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/readings", 
-    "is_image_gallery": false, 
-    "id": "readings", 
-    "materialtype": "Other", 
-    "_type": "CourseSection", 
-    "description": "This section provides the schedule of readings assigned from the course textbook along with the table of contents.", 
-    "course_identifier": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010", 
-    "_content_type_publisher": "text/plain", 
-    "tcATmit_instructional_tags": [], 
-    "_content_type": "text/html", 
-    "creators": [
-        "admin"
-    ], 
-    "modification_date": "2017/08/30 01:05:34.103 GMT-4", 
-    "always_publish": false, 
-    "_content_type_description": "text/plain", 
-    "_owner": null, 
+    },
+    "_classname": "CourseSection",
+    "_content_type": "text/html",
+    "_content_type_ad_type": "text/plain",
+    "_content_type_course_identifier": "text/plain",
+    "_content_type_description": "text/plain",
+    "_content_type_id": "text/plain",
+    "_content_type_license": "text/plain",
+    "_content_type_materialtype": "text/plain",
+    "_content_type_publisher": "text/plain",
+    "_content_type_rights": "text/html",
+    "_content_type_short_name_tlp": "text/plain",
+    "_content_type_short_page_title": "text/plain",
+    "_content_type_technical_location": "text/plain",
+    "_content_type_text": "text/html",
+    "_content_type_title": "text/plain",
+    "_content_type_unique_identifier": "text/plain",
+    "_defaultpage": "",
+    "_directly_provided": [
+        "Products.CMFEditions.interfaces.IVersioned"
+    ],
+    "_gopip": 5,
+    "_id": "readings",
+    "_layout": "custom_view",
+    "_owner": null,
+    "_path": "/Plone/courses/mathematics/18-06-linear-algebra-spring-2010/readings",
     "_permissions": {
-        "Change portal events": {
-            "acquire": false, 
-            "roles": [
-                "Editor", 
-                "Manager", 
-                "MetadataEditor", 
-                "Owner"
-            ]
-        }, 
-        "Modify portal content": {
-            "acquire": false, 
-            "roles": [
-                "Manager", 
-                "MetadataEditor"
-            ]
-        }, 
         "Access contents information": {
-            "acquire": false, 
+            "acquire": false,
             "roles": [
                 "Authenticated"
             ]
-        }, 
-        "List folder contents": {
-            "acquire": false, 
+        },
+        "Change portal events": {
+            "acquire": false,
             "roles": [
-                "Editor", 
-                "Manager", 
-                "MetadataEditor", 
+                "Editor",
+                "Manager",
+                "MetadataEditor",
                 "Owner"
             ]
-        }, 
+        },
+        "List folder contents": {
+            "acquire": false,
+            "roles": [
+                "Editor",
+                "Manager",
+                "MetadataEditor",
+                "Owner"
+            ]
+        },
+        "Modify portal content": {
+            "acquire": false,
+            "roles": [
+                "Manager",
+                "MetadataEditor"
+            ]
+        },
         "View": {
-            "acquire": false, 
+            "acquire": false,
             "roles": [
                 "Authenticated"
             ]
         }
-    }, 
+    },
     "_properties": [
         [
-            "title", 
-            "Readings", 
+            "title",
+            "Readings",
             "string"
         ]
-    ], 
-    "_id": "readings", 
-    "courselist_features": [], 
-    "_content_type_short_name_tlp": "text/plain", 
-    "_path": "/Plone/courses/mathematics/18-06-linear-algebra-spring-2010/readings"
+    ],
+    "_type": "CourseSection",
+    "_uid": "81d6a1cd707c29b29d6540b3e79d5433",
+    "_userdefined_roles": [],
+    "_workflow_history": {
+        "page_workflow": [
+            {
+                "action": null,
+                "actor": "admin",
+                "comments": "",
+                "review_state": "waiting_for_authoring",
+                "time": "2010/05/14 12:21:47.291 GMT-4"
+            },
+            {
+                "action": "approve_to_staging",
+                "actor": "admin",
+                "comments": "",
+                "review_state": "ready_for_staging",
+                "time": "2010/05/16 11:42:28.519 GMT-4"
+            },
+            {
+                "action": null,
+                "actor": "cc_saror4",
+                "comments": "",
+                "review_state": "waiting_for_authoring",
+                "time": "2010/08/17 00:14:19.553 GMT-4"
+            },
+            {
+                "action": "approve_to_staging",
+                "actor": "cc_gegrov",
+                "comments": "",
+                "review_state": "ready_for_staging",
+                "time": "2010/09/03 03:13:41.670 GMT-4"
+            },
+            {
+                "action": "decline_to_qa",
+                "actor": "eliz",
+                "comments": "",
+                "review_state": "waiting_for_qa",
+                "time": "2010/09/05 13:22:46.601 GMT-4"
+            },
+            {
+                "action": "approve_to_staging",
+                "actor": "eliz",
+                "comments": "",
+                "review_state": "ready_for_staging",
+                "time": "2010/09/05 13:39:42.049 GMT-4"
+            },
+            {
+                "action": "decline_to_qa",
+                "actor": "eliz",
+                "comments": "",
+                "review_state": "waiting_for_qa",
+                "time": "2016/05/10 15:08:08.332 GMT-4"
+            },
+            {
+                "action": "approve_to_staging",
+                "actor": "eliz",
+                "comments": "",
+                "review_state": "ready_for_staging",
+                "time": "2016/05/10 15:38:18.759 GMT-4"
+            },
+            {
+                "action": "decline_to_qa",
+                "actor": "eliz",
+                "comments": "",
+                "review_state": "waiting_for_qa",
+                "time": "2016/05/10 16:04:28.440 GMT-4"
+            },
+            {
+                "action": "approve_to_staging",
+                "actor": "eliz",
+                "comments": "",
+                "review_state": "ready_for_staging",
+                "time": "2016/05/10 16:07:50.062 GMT-4"
+            },
+            {
+                "action": "decline_to_qa",
+                "actor": "eliz",
+                "comments": "",
+                "review_state": "waiting_for_qa",
+                "time": "2016/06/14 11:00:57.728 GMT-4"
+            },
+            {
+                "action": "approve_to_staging",
+                "actor": "eliz",
+                "comments": "",
+                "review_state": "ready_for_staging",
+                "time": "2016/06/14 11:06:47.250 GMT-4"
+            },
+            {
+                "action": "decline_to_qa",
+                "actor": "eliz",
+                "comments": "",
+                "review_state": "waiting_for_qa",
+                "time": "2017/01/03 11:24:01.758 US/Eastern"
+            },
+            {
+                "action": "approve_to_staging",
+                "actor": "eliz",
+                "comments": "",
+                "review_state": "ready_for_staging",
+                "time": "2017/01/03 11:24:54.648 US/Eastern"
+            },
+            {
+                "action": "decline_to_qa",
+                "actor": "eliz",
+                "comments": "",
+                "review_state": "waiting_for_qa",
+                "time": "2017/08/21 13:50:23.868 GMT-4"
+            },
+            {
+                "action": "approve_to_staging",
+                "actor": "eliz",
+                "comments": "",
+                "review_state": "ready_for_staging",
+                "time": "2017/08/28 11:10:09.933 GMT-4"
+            },
+            {
+                "action": "decline",
+                "actor": "asingh33",
+                "comments": "",
+                "review_state": "waiting_for_authoring",
+                "time": "2017/08/30 00:42:32.093 GMT-4"
+            },
+            {
+                "action": "approve_to_staging",
+                "actor": "asingh33",
+                "comments": "",
+                "review_state": "ready_for_staging",
+                "time": "2017/08/30 01:05:34.149 GMT-4"
+            }
+        ]
+    },
+    "ad_champion_text": "",
+    "ad_type": "HOUSE",
+    "aggregationlevel": 3,
+    "allowDiscussion": false,
+    "always_publish": false,
+    "bottomtext": "",
+    "category_features": [],
+    "constrainTypesMode": 0,
+    "contributor_list": [],
+    "contributors": [],
+    "course_identifier": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010",
+    "course_linking": [],
+    "courselist_features": [],
+    "creation_date": "2010/05/14 12:21:47.286 GMT-4",
+    "creators": [
+        "admin"
+    ],
+    "description": "This section provides the schedule of readings assigned from the course textbook along with the table of contents.",
+    "duration": "",
+    "effectiveDate": "2010/09/03 03:13:41.638 GMT-4",
+    "excludeFromNav": false,
+    "expirationDate": "None",
+    "feature_requirements": [],
+    "features_tracking": [],
+    "firstTimeEdit": true,
+    "has_inline_embed": false,
+    "hide_Page_title": false,
+    "id": "readings",
+    "immediatelyAddableTypes": [
+        "OCWImage",
+        "CourseSection",
+        "OCWExtFile",
+        "OCWFile"
+    ],
+    "is_image_gallery": false,
+    "is_mathml_document": false,
+    "is_media_gallery": false,
+    "language": "",
+    "license": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/",
+    "list_in_left_nav": false,
+    "locallyAllowedTypes": [
+        "OCWImage",
+        "CourseSection",
+        "OCWExtFile",
+        "OCWFile"
+    ],
+    "location": "",
+    "materialtype": "Other",
+    "metadata_contributor_list": [],
+    "modification_date": "2017/08/30 01:05:34.103 GMT-4",
+    "nextPreviousEnabled": false,
+    "other_platform_requirements": "",
+    "parent_module": "aabc44bdb2e45374d62f30f2a6d4c63e",
+    "parent_uid": "aabc44bdb2e45374d62f30f2a6d4c63e",
+    "publisher": "MIT OpenCourseWare",
+    "related_mit_links": "",
+    "rights": "This site (c) Massachusetts Institute of Technology 2010.  Content within individual courses is (c) by the individual authors unless otherwise noted. The Massachusetts Institute of Technology is providing this Work (as defined below) under the terms of this Creative Commons public license (\"CCPL\" or \"license\") unless otherwise noted. The Work is protected by copyright and/or other applicable law. Any use of the work other than as authorized under this license is prohibited. By exercising any of the rights to the Work provided here, You (as defined below) accept and agree to be bound by the terms of this license. The Licensor, the Massachusetts Institute of Technology, grants You the rights contained here in consideration of Your acceptance of such terms and conditions.",
+    "section_identifier": null,
+    "short_name_tlp": "Readings",
+    "short_page_title": "Readings",
+    "software_requirements": [
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "40.0",
+            "software_name_col": "Chrome",
+            "software_type_col": "Browser"
+        },
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "8.0",
+            "software_name_col": "Safari",
+            "software_type_col": "Browser"
+        },
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "38.0",
+            "software_name_col": "Mozilla Firefox",
+            "software_type_col": "Browser"
+        },
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "9.0",
+            "software_name_col": "Internet Explorer",
+            "software_type_col": "Browser"
+        },
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "13.1",
+            "software_name_col": "Edge",
+            "software_type_col": "Browser"
+        }
+    ],
+    "subject": [],
+    "tcATmit_instructional_tags": [],
+    "tcATmit_subject_tags": [],
+    "technical_location": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/readings",
+    "text": "<p>The readings are assigned in: <a href=\"http://www.amazon.com/exec/obidos/ASIN/0980232716/ref=nosim/mitopencourse-20\"><img src=\"/images/a_logo_17.gif\" alt=\"Buy at Amazon\" align=\"absMiddle\" border=\"0\" /></a> Strang, Gilbert. <em>Introduction to Linear Algebra</em>. 4th ed. <a href=\"http://www.wellesleycambridge.com/\">Wellesley-Cambridge Press</a>, 2009. ISBN: 9780980232714.</p> <p>Reading assignments are also provided for the newer edition: <a href=\"http://www.amazon.com/exec/obidos/ASIN/0980232775/ref=nosim/mitopencourse-20\"><img alt=\"Buy at Amazon\" src=\"/images/a_logo_17.gif\" align=\"absmiddle\" border=\"0\" /></a> Strang, Gilbert. <em>Introduction to Linear Algebra</em>. 5th ed. <a href=\"http://www.wellesleycambridge.com/\">Wellesley-Cambridge Press</a>, 2016. ISBN: 9780980232776.</p> <div class=\"maintabletemplate\"><table class=\"tablewidth50\" summary=\"See table caption for summary.\">     <caption class=\"invisible\">Course readings.</caption>     <thead>         <tr>             <th id=\"tbl446id0_0\" scope=\"col\">SES&nbsp;#</th>             <th id=\"tbl446id0_1\" scope=\"col\">TOPICS</th>             <th id=\"tbl446id0_2\" scope=\"col\">READINGS in 4<font size=\"1\">th&nbsp;</font>Edition</th>             <th id=\"tbl446id0_2\" scope=\"col\"><span style=\"font-size: 11.2314px;\">READINGS IN 5TH EDITION</span></th>         </tr>     </thead>     <tbody>         <tr class=\"row\">             <td headers=\"tbl446id0_0\">1</td>             <td headers=\"tbl446id0_1\">The geometry of linear equations</td>             <td headers=\"tbl446id0_2\">1.1-2.1</td>             <td headers=\"tbl446id0_2\">\ufeff1.1-2.1</td>         </tr>         <tr class=\"alt-row\">             <td headers=\"tbl446id0_0\">2</td>             <td headers=\"tbl446id0_1\">Elimination with matrices</td>             <td headers=\"tbl446id0_2\">2.2-2.3</td>             <td headers=\"tbl446id0_2\">2.2-2.3</td>         </tr>         <tr class=\"row\">             <td headers=\"tbl446id0_0\">3</td>             <td headers=\"tbl446id0_1\">Matrix operations and inverses</td>             <td headers=\"tbl446id0_2\">2.4-2.5</td>             <td headers=\"tbl446id0_2\">\ufeff2.4-2.5<a id=\"fck_paste_padding\">\ufeff</a></td>         </tr>         <tr class=\"alt-row\">             <td headers=\"tbl446id0_0\">4</td>             <td headers=\"tbl446id0_1\"><em>LU</em> and <em>LDU </em>factorization</td>             <td headers=\"tbl446id0_2\">2.6</td>             <td headers=\"tbl446id0_2\">\ufeff2.6<a id=\"fck_paste_padding\">\ufeff</a></td>         </tr>         <tr class=\"row\">             <td headers=\"tbl446id0_0\">5</td>             <td headers=\"tbl446id0_1\">Transposes and permutations</td>             <td headers=\"tbl446id0_2\">2.7</td>             <td headers=\"tbl446id0_2\">\ufeff2.7<a id=\"fck_paste_padding\">\ufeff</a></td>         </tr>         <tr class=\"alt-row\">             <td headers=\"tbl446id0_0\">6</td>             <td headers=\"tbl446id0_1\">Vector spaces and subspaces</td>             <td headers=\"tbl446id0_2\">3.1</td>             <td headers=\"tbl446id0_2\">\ufeff3.1<a id=\"fck_paste_padding\">\ufeff</a></td>         </tr>         <tr class=\"row\">             <td headers=\"tbl446id0_0\">7</td>             <td headers=\"tbl446id0_1\">The nullspace: Solving Ax = 0</td>             <td headers=\"tbl446id0_2\">3.2</td>             <td headers=\"tbl446id0_2\">\ufeff3.2<a id=\"fck_paste_padding\">\ufeff</a></td>         </tr>         <tr class=\"alt-row\">             <td headers=\"tbl446id0_0\">8</td>             <td headers=\"tbl446id0_1\">Rectangular <em>PA </em>= <em>LU</em> and Ax = b</td>             <td headers=\"tbl446id0_2\">3.3-3.4</td>             <td headers=\"tbl446id0_2\">3.3</td>         </tr>         <tr class=\"row\">             <td headers=\"tbl446id0_0\">9</td>             <td headers=\"tbl446id0_1\">Row reduced echelon form</td>             <td headers=\"tbl446id0_2\">3.3-3.4</td>             <td headers=\"tbl446id0_2\">3.3</td>         </tr>         <tr class=\"alt-row\">             <td headers=\"tbl446id0_0\">10</td>             <td headers=\"tbl446id0_1\">Basis and dimension</td>             <td headers=\"tbl446id0_2\">3.5</td>             <td headers=\"tbl446id0_2\">3.4</td>         </tr>         <tr class=\"row\">             <td headers=\"tbl446id0_0\">11</td>             <td headers=\"tbl446id0_1\">The four fundamental subspaces</td>             <td headers=\"tbl446id0_2\">3.6</td>             <td headers=\"tbl446id0_2\">3.5</td>         </tr>         <tr class=\"alt-row\">             <td headers=\"tbl446id0_0\">12</td>             <td headers=\"tbl446id0_1\">Exam 1: Chapters 1 to 3.4</td>             <td headers=\"tbl446id0_2\">&nbsp;</td>             <td headers=\"tbl446id0_2\">&nbsp;</td>         </tr>         <tr class=\"row\">             <td headers=\"tbl446id0_0\">13</td>             <td headers=\"tbl446id0_1\">Graphs and networks</td>             <td headers=\"tbl446id0_2\">8.2</td>             <td headers=\"tbl446id0_2\">3.5, 10.1</td>         </tr>         <tr class=\"alt-row\">             <td headers=\"tbl446id0_0\">14</td>             <td headers=\"tbl446id0_1\">Orthogonality</td>             <td headers=\"tbl446id0_2\">4.1</td>             <td headers=\"tbl446id0_2\">4.1</td>         </tr>         <tr class=\"row\">             <td headers=\"tbl446id0_0\">15</td>             <td headers=\"tbl446id0_1\">Projections and subspaces</td>             <td headers=\"tbl446id0_2\">4.2</td>             <td headers=\"tbl446id0_2\">4.2</td>         </tr>         <tr class=\"alt-row\">             <td headers=\"tbl446id0_0\">16</td>             <td headers=\"tbl446id0_1\">Least squares approximations</td>             <td headers=\"tbl446id0_2\">4.3</td>             <td headers=\"tbl446id0_2\">4.3</td>         </tr>         <tr class=\"row\">             <td headers=\"tbl446id0_0\">17</td>             <td headers=\"tbl446id0_1\">Gram-Schmidt and <em>A</em> = <em>QR</em></td>             <td headers=\"tbl446id0_2\">4.4</td>             <td headers=\"tbl446id0_2\">4.4</td>         </tr>         <tr class=\"alt-row\">             <td headers=\"tbl446id0_0\">18</td>             <td headers=\"tbl446id0_1\">Properties of determinants</td>             <td headers=\"tbl446id0_2\">5.1</td>             <td headers=\"tbl446id0_2\">5.1</td>         </tr>         <tr class=\"row\">             <td headers=\"tbl446id0_0\">19</td>             <td headers=\"tbl446id0_1\">Formulas for determinants</td>             <td headers=\"tbl446id0_2\">5.2</td>             <td headers=\"tbl446id0_2\">5.2</td>         </tr>         <tr class=\"alt-row\">             <td headers=\"tbl446id0_0\">20</td>             <td headers=\"tbl446id0_1\">Applications of determinants</td>             <td headers=\"tbl446id0_2\">5.3</td>             <td headers=\"tbl446id0_2\">5.3</td>         </tr>         <tr class=\"row\">             <td headers=\"tbl446id0_0\">21</td>             <td headers=\"tbl446id0_1\">Eigenvalues and eigenvectors</td>             <td headers=\"tbl446id0_2\">6.1</td>             <td headers=\"tbl446id0_2\">6.1</td>         </tr>         <tr class=\"alt-row\">             <td headers=\"tbl446id0_0\">22</td>             <td headers=\"tbl446id0_1\">Diagonalization</td>             <td headers=\"tbl446id0_2\">6.2</td>             <td headers=\"tbl446id0_2\">6.2</td>         </tr>         <tr class=\"row\">             <td headers=\"tbl446id0_0\">23</td>             <td headers=\"tbl446id0_1\">Markov matrices</td>             <td headers=\"tbl446id0_2\">8.3</td>             <td headers=\"tbl446id0_2\">10.3</td>         </tr>         <tr class=\"alt-row\">             <td headers=\"tbl446id0_0\">24</td>             <td headers=\"tbl446id0_1\"><em>Review for exam 2</em></td>             <td headers=\"tbl446id0_2\">&nbsp;</td>             <td headers=\"tbl446id0_2\">&nbsp;</td>         </tr>         <tr class=\"row\">             <td headers=\"tbl446id0_0\">25</td>             <td headers=\"tbl446id0_1\">Exam 2: Chapters 1-5, 6.1-6.2, 8.2</td>             <td headers=\"tbl446id0_2\">&nbsp;</td>             <td headers=\"tbl446id0_2\">&nbsp;</td>         </tr>         <tr class=\"alt-row\">             <td headers=\"tbl446id0_0\">26</td>             <td headers=\"tbl446id0_1\">Differential equations</td>             <td headers=\"tbl446id0_2\">6.3</td>             <td headers=\"tbl446id0_2\">6.3</td>         </tr>         <tr class=\"row\">             <td headers=\"tbl446id0_0\">27</td>             <td headers=\"tbl446id0_1\">Symmetric matrices</td>             <td headers=\"tbl446id0_2\">6.4</td>             <td headers=\"tbl446id0_2\">6.4</td>         </tr>         <tr class=\"alt-row\">             <td headers=\"tbl446id0_0\">28</td>             <td headers=\"tbl446id0_1\">Positive definite matrices</td>             <td headers=\"tbl446id0_2\">6.5</td>             <td headers=\"tbl446id0_2\">6.5</td>         </tr>         <tr class=\"row\">             <td headers=\"tbl446id0_0\">29</td>             <td headers=\"tbl446id0_1\">Matrices in engineering</td>             <td headers=\"tbl446id0_2\">8.1</td>             <td headers=\"tbl446id0_2\">10.2</td>         </tr>         <tr class=\"alt-row\">             <td headers=\"tbl446id0_0\">30</td>             <td headers=\"tbl446id0_1\">Similar matrices</td>             <td headers=\"tbl446id0_2\">6.6</td>             <td headers=\"tbl446id0_2\">6.2</td>         </tr>         <tr class=\"row\">             <td headers=\"tbl446id0_0\">31</td>             <td headers=\"tbl446id0_1\">Singular value decomposition</td>             <td headers=\"tbl446id0_2\">6.7</td>             <td headers=\"tbl446id0_2\">7.1-7.2</td>         </tr>         <tr class=\"alt-row\">             <td headers=\"tbl446id0_0\">32</td>             <td headers=\"tbl446id0_1\">Fourier series, FFT, complex matrices</td>             <td headers=\"tbl446id0_2\">8.5, 10.2-10.3</td>             <td headers=\"tbl446id0_2\">10.5, 9.2-9.3</td>         </tr>         <tr class=\"row\">             <td headers=\"tbl446id0_0\">33</td>             <td headers=\"tbl446id0_1\">Linear transformations</td>             <td headers=\"tbl446id0_2\">7.1-7.2</td>             <td headers=\"tbl446id0_2\">8.1-8.2</td>         </tr>         <tr class=\"alt-row\">             <td headers=\"tbl446id0_0\">34</td>             <td headers=\"tbl446id0_1\">Choice of basis</td>             <td headers=\"tbl446id0_2\">7.3</td>             <td headers=\"tbl446id0_2\">8.3</td>         </tr>         <tr class=\"row\">             <td headers=\"tbl446id0_0\">35</td>             <td headers=\"tbl446id0_1\">Linear programming</td>             <td headers=\"tbl446id0_2\">8.4</td>             <td headers=\"tbl446id0_2\">10.4</td>         </tr>         <tr class=\"alt-row\">             <td headers=\"tbl446id0_0\">36</td>             <td headers=\"tbl446id0_1\"><em>Course review</em></td>             <td headers=\"tbl446id0_2\">&nbsp;</td>             <td headers=\"tbl446id0_2\">&nbsp;</td>         </tr>         <tr class=\"row\">             <td headers=\"tbl446id0_0\">37</td>             <td headers=\"tbl446id0_1\">Exam 3: Chapters 1-8 (8.1, 2, 3, 5)</td>             <td headers=\"tbl446id0_2\">&nbsp;</td>             <td headers=\"tbl446id0_2\">&nbsp;</td>         </tr>         <tr class=\"alt-row\">             <td headers=\"tbl446id0_0\">38</td>             <td headers=\"tbl446id0_1\">Numerical linear algebra</td>             <td headers=\"tbl446id0_2\">9.1-9.3</td>             <td headers=\"tbl446id0_2\">11.1-11.3</td>         </tr>         <tr class=\"row\">             <td headers=\"tbl446id0_0\">39</td>             <td headers=\"tbl446id0_1\">Computational science</td>             <td headers=\"tbl446id0_2\">See the Web site for <a href=\"http://ocw.mit.edu/courses/mathematics/18-085-computational-science-and-engineering-i-fall-2008/\">18.085</a></td>             <td headers=\"tbl446id0_2\">&nbsp;</td>         </tr>         <tr class=\"alt-row\">             <td headers=\"tbl446id0_0\">40</td>             <td headers=\"tbl446id0_1\">Final exam</td>             <td headers=\"tbl446id0_2\">&nbsp;</td>             <td headers=\"tbl446id0_2\">&nbsp;</td>         </tr>     </tbody> </table></div> <p>&nbsp;</p>",
+    "title": "Readings",
+    "unique_identifier": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/readings",
+    "url_rewrite_patterns": [],
+    "widgets_features": []
 }

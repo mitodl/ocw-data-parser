@@ -1,272 +1,272 @@
 {
-    "text": "<p><i>In this section, Prof. Perron shares insights about planning a good field trip.</i></p> <div class=\"pullquote\" style=\"float: right; margin: -4px 0 auto 20px; padding-left: 20px; width: 150px; border-right: none; border-left: 1px solid #D5C9BA;\"><p class=\"quote\">The most important thing we do in planning a good field trip is providing students with a good story&mdash;a story that unfolds over the course of the field experience.</p> <p class=\"sig\" style=\"margin-top: 0;\">&mdash;Taylor Perron</p></div> <p>The most important thing we do in planning a good field trip is providing students with a good story&mdash;a story that unfolds over the course of the field experience. The story that we tell through our field trip to upstate New York is how supercontinents assemble and break apart. It&rsquo;s also the story of how oceans open and close. The theme of the trip is this cyclical process. We see two full cycles of the opening and closing of ocean basins on our drive from upstate New York to western Massachusetts.</p> <div style=\"float: left; margin: 0 20px 5px 0; width: 320px;\"><img width=\"320\" height=\"213\" src=\"./resolveuid/ac6c04d57955b585a812bd1d38d542b3\" alt=\"A mineral with a shiny luster and flaky cleavage.\" /><br /> <p class=\"instruction\">The luster and cleavage of this mica make it an easy mineral to identify. (Image by MIT OpenCourseWare.)</p></div> <p>We&rsquo;ve learned that it&rsquo;s important to give students enough of the story in advance, or at least in a companion guide, so that they realize how everything they observe, at each stop of the vans, fits into the big picture.  If students don&rsquo;t have enough of the story ahead of time, they become confused as they attempt to interpret various geological settings while also learning to read the rocks.  It can be challenging to see the &ldquo;big picture.&rdquo; So we try to give them the story and help them understand how everything they see fits together.  This helps students grasp the idea that geology is more than just picking up pieces of granite, in their hands, in the classroom and identifying minerals&mdash;but that being able to do so will help them tell the stories about processes that have happened over billions of years.</p> <p>So that&rsquo;s the first important thing about planning a good field trip: making sure there is a good story. Then, of course, there are the logistics. You want to make sure that you have time to make all of the stops on your itinerary.  You also need to ensure that the number of stops you&rsquo;re going to make will be enough to tell the story&mdash;and that the campground can accommodate the number of students and instructors in the class. If you&rsquo;re wet and hungry, the big picture story becomes less exciting.</p>", 
-    "_content_type_license": "text/plain", 
-    "_uid": "ef6931d2c8e6bc0b8e9a5572a78fe125", 
-    "title": "Planning a Good Field Trip", 
     "_ac_local_roles": {
         "Kcanavan": [
             "Owner"
         ]
-    }, 
-    "location": "", 
-    "_content_type_course_identifier": "text/plain", 
+    },
     "_atbrefs": {
         "isReferencing": [
-            "1c2cb2ad1c70fd66f19e20103dc94595", 
+            "1c2cb2ad1c70fd66f19e20103dc94595",
             "de36fe69cf33ddf238bc3896d0ce9eff"
         ]
-    }, 
-    "constrainTypesMode": 0, 
-    "_content_type_section_identifier": "text/plain", 
-    "technical_location": "https://ocw.mit.edu/courses/earth-atmospheric-and-planetary-sciences/12-001-introduction-to-geology-fall-2013/instructor-insights/planning-a-good-field-trip", 
-    "software_requirements": [
-        {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "40.0", 
-            "software_name_col": "Chrome", 
-            "maximum_version_col": ""
-        }, 
-        {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "8.0", 
-            "software_name_col": "Safari", 
-            "maximum_version_col": ""
-        }, 
-        {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "38.0", 
-            "software_name_col": "Mozilla Firefox", 
-            "maximum_version_col": ""
-        }, 
-        {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "9.0", 
-            "software_name_col": "Internet Explorer", 
-            "maximum_version_col": ""
-        }, 
-        {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "13.1", 
-            "software_name_col": "Edge", 
-            "maximum_version_col": ""
-        }
-    ], 
-    "_content_type_technical_location": "text/plain", 
-    "_content_type_rights": "text/html", 
-    "_directly_provided": [
-        "Products.CMFEditions.interfaces.IVersioned"
-    ], 
-    "parent_uid": "1c2cb2ad1c70fd66f19e20103dc94595", 
-    "excludeFromNav": false, 
-    "_content_type_unique_identifier": "text/plain", 
-    "allowDiscussion": false, 
-    "metadata_contributor_list": [], 
-    "locallyAllowedTypes": [
-        "OCWImage", 
-        "CourseSection", 
-        "OCWExtFile", 
-        "OCWFile", 
-        "MediaResource"
-    ], 
-    "_content_type_text": "text/html", 
-    "ad_type": "HOUSE", 
-    "creation_date": "2014/12/03 16:45:50.711 US/Eastern", 
-    "aggregationlevel": 3, 
-    "duration": "", 
-    "immediatelyAddableTypes": [
-        "OCWImage", 
-        "CourseSection", 
-        "OCWExtFile", 
-        "OCWFile", 
-        "MediaResource"
-    ], 
-    "subject": [], 
-    "_content_type_short_page_title": "text/plain", 
-    "effectiveDate": "2014/12/03 17:06:29.092 US/Eastern", 
-    "parent_module": "d9aad1541f1a9d3c0f7b0dcf9531a9a1", 
-    "is_mathml_document": false, 
-    "bottomtext": "", 
-    "short_page_title": "Planning a Good Field Trip", 
-    "section_identifier": "https://ocw.mit.edu/courses/earth-atmospheric-and-planetary-sciences/12-001-introduction-to-geology-fall-2013/instructor-insights", 
-    "related_mit_links": "", 
-    "_content_type_ad_type": "text/plain", 
-    "_layout": "custom_view", 
-    "_workflow_history": {
-        "page_workflow": [
-            {
-                "action": null, 
-                "review_state": "waiting_for_authoring", 
-                "comments": "", 
-                "actor": "Kcanavan", 
-                "time": "2014/12/03 16:45:50.721 US/Eastern"
-            }, 
-            {
-                "action": "approve_to_staging", 
-                "review_state": "ready_for_staging", 
-                "actor": "Kcanavan", 
-                "comments": "", 
-                "time": "2014/12/03 17:06:29.114 US/Eastern"
-            }, 
-            {
-                "action": "decline_to_qa", 
-                "review_state": "waiting_for_qa", 
-                "comments": "", 
-                "actor": "Kcanavan", 
-                "time": "2014/12/09 16:30:56.480 US/Eastern"
-            }, 
-            {
-                "action": "approve_to_staging", 
-                "review_state": "ready_for_staging", 
-                "actor": "Kcanavan", 
-                "comments": "", 
-                "time": "2014/12/09 16:36:33.985 US/Eastern"
-            }, 
-            {
-                "action": "decline_to_qa", 
-                "review_state": "waiting_for_qa", 
-                "comments": "", 
-                "actor": "Kcanavan", 
-                "time": "2014/12/11 13:14:52.916 US/Eastern"
-            }, 
-            {
-                "action": "approve_to_staging", 
-                "review_state": "ready_for_staging", 
-                "actor": "Kcanavan", 
-                "comments": "", 
-                "time": "2014/12/11 13:17:18.438 US/Eastern"
-            }, 
-            {
-                "action": "decline_to_qa", 
-                "review_state": "waiting_for_qa", 
-                "actor": "sehansen", 
-                "comments": "", 
-                "time": "2014/12/11 15:04:23.995 US/Eastern"
-            }, 
-            {
-                "action": "approve_to_staging", 
-                "review_state": "ready_for_staging", 
-                "comments": "", 
-                "actor": "sehansen", 
-                "time": "2014/12/11 15:23:29.468 US/Eastern"
-            }, 
-            {
-                "action": "decline_to_qa", 
-                "review_state": "waiting_for_qa", 
-                "actor": "aimeeg", 
-                "comments": "", 
-                "time": "2014/12/13 16:37:13.482 US/Eastern"
-            }, 
-            {
-                "action": "approve_to_staging", 
-                "review_state": "ready_for_staging", 
-                "actor": "aimeeg", 
-                "comments": "", 
-                "time": "2014/12/13 16:39:51.172 US/Eastern"
-            }
-        ]
-    }, 
-    "_classname": "CourseSection", 
-    "_content_type_materialtype": "text/plain", 
-    "_userdefined_roles": [], 
-    "publisher": "MIT OpenCourseWare", 
-    "nextPreviousEnabled": false, 
-    "language": "", 
-    "url_rewrite_patterns": [], 
-    "widgets_features": [], 
-    "category_features": [], 
-    "firstTimeEdit": true, 
-    "feature_requirements": [], 
-    "list_in_left_nav": true, 
-    "short_name_tlp": "", 
-    "expirationDate": "None", 
-    "_content_type_id": "text/plain", 
-    "contributor_list": [], 
-    "is_media_gallery": false, 
-    "contributors": [], 
-    "_gopip": 5, 
-    "_content_type_title": "text/plain", 
-    "course_linking": [], 
+    },
     "_atrefs": {
         "BelongsTo": [
             "d9aad1541f1a9d3c0f7b0dcf9531a9a1"
-        ], 
+        ],
         "isReferencing": [
             "ac6c04d57955b585a812bd1d38d542b3"
         ]
-    }, 
-    "other_platform_requirements": "", 
-    "license": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/", 
-    "rights": "This site (c) Massachusetts Institute of Technology 2014.  Content within individual courses is (c) by the individual authors unless otherwise noted. The Massachusetts Institute of Technology is providing this Work (as defined below) under the terms of this Creative Commons public license (\"CCPL\" or \"license\") unless otherwise noted. The Work is protected by copyright and/or other applicable law. Any use of the work other than as authorized under this license is prohibited. By exercising any of the rights to the Work provided here, You (as defined below) accept and agree to be bound by the terms of this license. The Licensor, the Massachusetts Institute of Technology, grants You the rights contained here in consideration of Your acceptance of such terms and conditions.", 
-    "hide_Page_title": false, 
-    "_defaultpage": "", 
-    "tcATmit_subject_tags": [], 
-    "features_tracking": [], 
-    "ad_champion_text": "", 
-    "has_inline_embed": false, 
-    "unique_identifier": "https://ocw.mit.edu/courses/earth-atmospheric-and-planetary-sciences/12-001-introduction-to-geology-fall-2013/instructor-insights/planning-a-good-field-trip", 
-    "is_image_gallery": false, 
-    "id": "planning-a-good-field-trip", 
-    "materialtype": "Other", 
-    "_type": "CourseSection", 
-    "description": "In this section, Prof. Perron shares insights about planning a good field trip.", 
-    "course_identifier": "https://ocw.mit.edu/courses/earth-atmospheric-and-planetary-sciences/12-001-introduction-to-geology-fall-2013", 
-    "_content_type_publisher": "text/plain", 
-    "tcATmit_instructional_tags": [], 
-    "_content_type": "text/html", 
-    "creators": [
-        "Kcanavan"
-    ], 
-    "modification_date": "2016/09/24 06:40:07.908 GMT-4", 
-    "always_publish": false, 
-    "_content_type_description": "text/plain", 
-    "_owner": null, 
+    },
+    "_classname": "CourseSection",
+    "_content_type": "text/html",
+    "_content_type_ad_type": "text/plain",
+    "_content_type_course_identifier": "text/plain",
+    "_content_type_description": "text/plain",
+    "_content_type_id": "text/plain",
+    "_content_type_license": "text/plain",
+    "_content_type_materialtype": "text/plain",
+    "_content_type_publisher": "text/plain",
+    "_content_type_rights": "text/html",
+    "_content_type_section_identifier": "text/plain",
+    "_content_type_short_page_title": "text/plain",
+    "_content_type_technical_location": "text/plain",
+    "_content_type_text": "text/html",
+    "_content_type_title": "text/plain",
+    "_content_type_unique_identifier": "text/plain",
+    "_defaultpage": "",
+    "_directly_provided": [
+        "Products.CMFEditions.interfaces.IVersioned"
+    ],
+    "_gopip": 5,
+    "_id": "planning-a-good-field-trip",
+    "_layout": "custom_view",
+    "_owner": null,
+    "_path": "/Plone/courses/earth-atmospheric-and-planetary-sciences/12-001-introduction-to-geology-fall-2013/instructor-insights/planning-a-good-field-trip",
     "_permissions": {
-        "Change portal events": {
-            "acquire": false, 
-            "roles": [
-                "Editor", 
-                "Manager", 
-                "MetadataEditor", 
-                "Owner"
-            ]
-        }, 
-        "Modify portal content": {
-            "acquire": false, 
-            "roles": [
-                "Manager", 
-                "MetadataEditor"
-            ]
-        }, 
         "Access contents information": {
-            "acquire": false, 
+            "acquire": false,
             "roles": [
                 "Authenticated"
             ]
-        }, 
-        "List folder contents": {
-            "acquire": false, 
+        },
+        "Change portal events": {
+            "acquire": false,
             "roles": [
-                "Editor", 
-                "Manager", 
-                "MetadataEditor", 
+                "Editor",
+                "Manager",
+                "MetadataEditor",
                 "Owner"
             ]
-        }, 
+        },
+        "List folder contents": {
+            "acquire": false,
+            "roles": [
+                "Editor",
+                "Manager",
+                "MetadataEditor",
+                "Owner"
+            ]
+        },
+        "Modify portal content": {
+            "acquire": false,
+            "roles": [
+                "Manager",
+                "MetadataEditor"
+            ]
+        },
         "View": {
-            "acquire": false, 
+            "acquire": false,
             "roles": [
                 "Authenticated"
             ]
         }
-    }, 
+    },
     "_properties": [
         [
-            "title", 
-            "Planning a Good Field Trip", 
+            "title",
+            "Planning a Good Field Trip",
             "string"
         ]
-    ], 
-    "_id": "planning-a-good-field-trip", 
-    "courselist_features": [], 
-    "_path": "/Plone/courses/earth-atmospheric-and-planetary-sciences/12-001-introduction-to-geology-fall-2013/instructor-insights/planning-a-good-field-trip"
+    ],
+    "_type": "CourseSection",
+    "_uid": "ef6931d2c8e6bc0b8e9a5572a78fe125",
+    "_userdefined_roles": [],
+    "_workflow_history": {
+        "page_workflow": [
+            {
+                "action": null,
+                "actor": "Kcanavan",
+                "comments": "",
+                "review_state": "waiting_for_authoring",
+                "time": "2014/12/03 16:45:50.721 US/Eastern"
+            },
+            {
+                "action": "approve_to_staging",
+                "actor": "Kcanavan",
+                "comments": "",
+                "review_state": "ready_for_staging",
+                "time": "2014/12/03 17:06:29.114 US/Eastern"
+            },
+            {
+                "action": "decline_to_qa",
+                "actor": "Kcanavan",
+                "comments": "",
+                "review_state": "waiting_for_qa",
+                "time": "2014/12/09 16:30:56.480 US/Eastern"
+            },
+            {
+                "action": "approve_to_staging",
+                "actor": "Kcanavan",
+                "comments": "",
+                "review_state": "ready_for_staging",
+                "time": "2014/12/09 16:36:33.985 US/Eastern"
+            },
+            {
+                "action": "decline_to_qa",
+                "actor": "Kcanavan",
+                "comments": "",
+                "review_state": "waiting_for_qa",
+                "time": "2014/12/11 13:14:52.916 US/Eastern"
+            },
+            {
+                "action": "approve_to_staging",
+                "actor": "Kcanavan",
+                "comments": "",
+                "review_state": "ready_for_staging",
+                "time": "2014/12/11 13:17:18.438 US/Eastern"
+            },
+            {
+                "action": "decline_to_qa",
+                "actor": "sehansen",
+                "comments": "",
+                "review_state": "waiting_for_qa",
+                "time": "2014/12/11 15:04:23.995 US/Eastern"
+            },
+            {
+                "action": "approve_to_staging",
+                "actor": "sehansen",
+                "comments": "",
+                "review_state": "ready_for_staging",
+                "time": "2014/12/11 15:23:29.468 US/Eastern"
+            },
+            {
+                "action": "decline_to_qa",
+                "actor": "aimeeg",
+                "comments": "",
+                "review_state": "waiting_for_qa",
+                "time": "2014/12/13 16:37:13.482 US/Eastern"
+            },
+            {
+                "action": "approve_to_staging",
+                "actor": "aimeeg",
+                "comments": "",
+                "review_state": "ready_for_staging",
+                "time": "2014/12/13 16:39:51.172 US/Eastern"
+            }
+        ]
+    },
+    "ad_champion_text": "",
+    "ad_type": "HOUSE",
+    "aggregationlevel": 3,
+    "allowDiscussion": false,
+    "always_publish": false,
+    "bottomtext": "",
+    "category_features": [],
+    "constrainTypesMode": 0,
+    "contributor_list": [],
+    "contributors": [],
+    "course_identifier": "https://ocw.mit.edu/courses/earth-atmospheric-and-planetary-sciences/12-001-introduction-to-geology-fall-2013",
+    "course_linking": [],
+    "courselist_features": [],
+    "creation_date": "2014/12/03 16:45:50.711 US/Eastern",
+    "creators": [
+        "Kcanavan"
+    ],
+    "description": "In this section, Prof. Perron shares insights about planning a good field trip.",
+    "duration": "",
+    "effectiveDate": "2014/12/03 17:06:29.092 US/Eastern",
+    "excludeFromNav": false,
+    "expirationDate": "None",
+    "feature_requirements": [],
+    "features_tracking": [],
+    "firstTimeEdit": true,
+    "has_inline_embed": false,
+    "hide_Page_title": false,
+    "id": "planning-a-good-field-trip",
+    "immediatelyAddableTypes": [
+        "OCWImage",
+        "CourseSection",
+        "OCWExtFile",
+        "OCWFile",
+        "MediaResource"
+    ],
+    "is_image_gallery": false,
+    "is_mathml_document": false,
+    "is_media_gallery": false,
+    "language": "",
+    "license": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/",
+    "list_in_left_nav": true,
+    "locallyAllowedTypes": [
+        "OCWImage",
+        "CourseSection",
+        "OCWExtFile",
+        "OCWFile",
+        "MediaResource"
+    ],
+    "location": "",
+    "materialtype": "Other",
+    "metadata_contributor_list": [],
+    "modification_date": "2016/09/24 06:40:07.908 GMT-4",
+    "nextPreviousEnabled": false,
+    "other_platform_requirements": "",
+    "parent_module": "d9aad1541f1a9d3c0f7b0dcf9531a9a1",
+    "parent_uid": "1c2cb2ad1c70fd66f19e20103dc94595",
+    "publisher": "MIT OpenCourseWare",
+    "related_mit_links": "",
+    "rights": "This site (c) Massachusetts Institute of Technology 2014.  Content within individual courses is (c) by the individual authors unless otherwise noted. The Massachusetts Institute of Technology is providing this Work (as defined below) under the terms of this Creative Commons public license (\"CCPL\" or \"license\") unless otherwise noted. The Work is protected by copyright and/or other applicable law. Any use of the work other than as authorized under this license is prohibited. By exercising any of the rights to the Work provided here, You (as defined below) accept and agree to be bound by the terms of this license. The Licensor, the Massachusetts Institute of Technology, grants You the rights contained here in consideration of Your acceptance of such terms and conditions.",
+    "section_identifier": "https://ocw.mit.edu/courses/earth-atmospheric-and-planetary-sciences/12-001-introduction-to-geology-fall-2013/instructor-insights",
+    "short_name_tlp": "",
+    "short_page_title": "Planning a Good Field Trip",
+    "software_requirements": [
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "40.0",
+            "software_name_col": "Chrome",
+            "software_type_col": "Browser"
+        },
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "8.0",
+            "software_name_col": "Safari",
+            "software_type_col": "Browser"
+        },
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "38.0",
+            "software_name_col": "Mozilla Firefox",
+            "software_type_col": "Browser"
+        },
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "9.0",
+            "software_name_col": "Internet Explorer",
+            "software_type_col": "Browser"
+        },
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "13.1",
+            "software_name_col": "Edge",
+            "software_type_col": "Browser"
+        }
+    ],
+    "subject": [],
+    "tcATmit_instructional_tags": [],
+    "tcATmit_subject_tags": [],
+    "technical_location": "https://ocw.mit.edu/courses/earth-atmospheric-and-planetary-sciences/12-001-introduction-to-geology-fall-2013/instructor-insights/planning-a-good-field-trip",
+    "text": "<p><i>In this section, Prof. Perron shares insights about planning a good field trip.</i></p> <div class=\"pullquote\" style=\"float: right; margin: -4px 0 auto 20px; padding-left: 20px; width: 150px; border-right: none; border-left: 1px solid #D5C9BA;\"><p class=\"quote\">The most important thing we do in planning a good field trip is providing students with a good story&mdash;a story that unfolds over the course of the field experience.</p> <p class=\"sig\" style=\"margin-top: 0;\">&mdash;Taylor Perron</p></div> <p>The most important thing we do in planning a good field trip is providing students with a good story&mdash;a story that unfolds over the course of the field experience. The story that we tell through our field trip to upstate New York is how supercontinents assemble and break apart. It&rsquo;s also the story of how oceans open and close. The theme of the trip is this cyclical process. We see two full cycles of the opening and closing of ocean basins on our drive from upstate New York to western Massachusetts.</p> <div style=\"float: left; margin: 0 20px 5px 0; width: 320px;\"><img width=\"320\" height=\"213\" src=\"./resolveuid/ac6c04d57955b585a812bd1d38d542b3\" alt=\"A mineral with a shiny luster and flaky cleavage.\" /><br /> <p class=\"instruction\">The luster and cleavage of this mica make it an easy mineral to identify. (Image by MIT OpenCourseWare.)</p></div> <p>We&rsquo;ve learned that it&rsquo;s important to give students enough of the story in advance, or at least in a companion guide, so that they realize how everything they observe, at each stop of the vans, fits into the big picture.  If students don&rsquo;t have enough of the story ahead of time, they become confused as they attempt to interpret various geological settings while also learning to read the rocks.  It can be challenging to see the &ldquo;big picture.&rdquo; So we try to give them the story and help them understand how everything they see fits together.  This helps students grasp the idea that geology is more than just picking up pieces of granite, in their hands, in the classroom and identifying minerals&mdash;but that being able to do so will help them tell the stories about processes that have happened over billions of years.</p> <p>So that&rsquo;s the first important thing about planning a good field trip: making sure there is a good story. Then, of course, there are the logistics. You want to make sure that you have time to make all of the stops on your itinerary.  You also need to ensure that the number of stops you&rsquo;re going to make will be enough to tell the story&mdash;and that the campground can accommodate the number of students and instructors in the class. If you&rsquo;re wet and hungry, the big picture story becomes less exciting.</p>",
+    "title": "Planning a Good Field Trip",
+    "unique_identifier": "https://ocw.mit.edu/courses/earth-atmospheric-and-planetary-sciences/12-001-introduction-to-geology-fall-2013/instructor-insights/planning-a-good-field-trip",
+    "url_rewrite_patterns": [],
+    "widgets_features": []
 }

@@ -1,319 +1,319 @@
 {
-    "text": "<h2 class=\"subhead\">Instructor Key</h2> <p>[TP] = Taylor Perron<br /> [OJ] = Oliver Jagoutz<br /> [TA] = Teaching Assistants</p> <div class=\"maintabletemplate\"><table summary=\"See table caption for summary.\" class=\"tablewidth75\">     <caption class=\"invisible\">Course calendar.</caption>  <!-- BEGIN TABLE HEADER (for MIT OCW Table Template 2.51) -->     <thead>         <tr>             <th scope=\"col\">SES&nbsp;#</th>             <th scope=\"col\">INSTRUCTORS</th>             <th scope=\"col\">LECTURES, Labs, and Exercises</th>             <th scope=\"col\">KEY&nbsp;DATES</th>         </tr>     </thead>     <!-- END TABLE HEADER -->     <tbody>         <tr class=\"row\">             <td>1</td>             <td>TP, OJ</td>             <td><p>Overview: Introduction to the Introduction of Geology Earthquake Predictions</p></td>             <td>&nbsp;</td>         </tr>         <tr class=\"alt-row\">             <td>2</td>             <td>TP</td>             <td><p>Origin and Age of the Earth</p>             <p>Exercise 1: Composition of the Mantle</p></td>             <td>&nbsp;</td>         </tr>         <tr class=\"row\">             <td>3</td>             <td>OJ</td>             <td><p>Introduction to Minerals</p>             <p>Lab 1: Mineral Identification</p></td>             <td>Earthquake Predictions Due</td>         </tr>         <tr class=\"alt-row\">             <td>4</td>             <td>OJ</td>             <td><p>Igneous Rocks</p>             <p>Lab 1: Mineral Identification (cont.)</p></td>             <td>&nbsp;</td>         </tr>         <tr class=\"row\">             <td>5</td>             <td>OJ</td>             <td><p>Metamorphic Rocks</p>             <p>Lab 2: Rock Identification</p></td>             <td>&nbsp;</td>         </tr>         <tr class=\"alt-row\">             <td>6</td>             <td>TP</td>             <td><p>Sedimentary Rocks</p>             <p>Lab 2: Rock Identification (cont.)</p></td>             <td>&nbsp;</td>         </tr>         <tr class=\"row\">             <td>7</td>             <td>TA</td>             <td>Lab 2: Rock Identification (cont.)</td>             <td>Lab 1 Due</td>         </tr>         <tr class=\"alt-row\">             <td>8</td>             <td>OJ</td>             <td><p>Rock Structure and Deformation</p>             <p>Lab 2: Rock Identification (cont.)</p></td>             <td>&nbsp;</td>         </tr>         <tr class=\"row\">             <td>9</td>             <td>OJ</td>             <td colspan=\"2\">Quiz 1: Rocks and Minerals (No lecture or lab)</td>         </tr>         <tr class=\"alt-row\">             <td>10</td>             <td>TA</td>             <td>Exercise 2: Rock Structure and Deformation</td>             <td>&nbsp;</td>         </tr>         <tr class=\"row\">             <td>11</td>             <td>OJ</td>             <td><p>Geologic Time: Relative versus Absolute Dating</p>             <p>Lab 3: Geochronology</p></td>             <td>Lab 2 Due</td>         </tr>         <tr class=\"alt-row\">             <td>12</td>             <td>OJ</td>             <td><p>Volcanoes</p>             <p>Lab 3: Geochronology (cont.)</p></td>             <td>&nbsp;</td>         </tr>         <tr class=\"row\">             <td>13</td>             <td>TP</td>             <td><p>Plate Tectonics</p>             <p>Lab 4: Plate Tectonics</p></td>             <td>&nbsp;</td>         </tr>         <tr class=\"alt-row\">             <td>14</td>             <td>TP</td>             <td><p>Plate Tectonics (cont.)</p>             <p>Lab 4: Plate Tectonics (cont.)</p></td>             <td>Lab 3 Due</td>         </tr>         <tr class=\"row\">             <td>15</td>             <td>TP</td>             <td><p>Plate Tectonics (cont.)</p>             <p>Lab 4: Plate Tectonics (cont.)</p></td>             <td>&nbsp;</td>         </tr>         <tr class=\"alt-row\">             <td>16</td>             <td>TP, OJ, TA</td>             <td colspan=\"2\">Field Trip to Upstate New York: Assembly and Breakup of Supercontinents</td>         </tr>         <tr class=\"row\">             <td>17</td>             <td>OJ</td>             <td><p>Continental Crust Formation</p>             <p>Field Trip Report</p></td>             <td>&nbsp;</td>         </tr>         <tr class=\"alt-row\">             <td>18</td>             <td>OJ</td>             <td><p>Oceanic Crust Formation</p>             <p>Field Trip Report (cont.)</p></td>             <td>Lab 4 Due</td>         </tr>         <tr class=\"row\">             <td>19</td>             <td>TP</td>             <td><p>Earthquakes</p>             <p>Lab 5: Earthquakes</p></td>             <td>&nbsp;</td>         </tr>         <tr class=\"alt-row\">             <td>20</td>             <td>TA</td>             <td colspan=\"2\">Quiz 2: Rock Deformation through Plate Tectonics (No lecture or lab)</td>         </tr>         <tr class=\"row\">             <td>21</td>             <td>TP</td>             <td><p>Topography</p>             <p>Lab 5: Earthquakes (cont.)</p></td>             <td>Field Trip Report Due</td>         </tr>         <tr class=\"alt-row\">             <td>22</td>             <td>OJ</td>             <td><p>Field Techniques</p>             <p>Exercise 3: Stereonets</p></td>             <td>&nbsp;</td>         </tr>         <tr class=\"row\">             <td>23</td>             <td>TA</td>             <td>Tours of Laboratories in the Department of Earth, Atmospheric, and Planetary Sciences</td>             <td>&nbsp;</td>         </tr>         <tr class=\"alt-row\">             <td>24</td>             <td>OJ</td>             <td><p>Introduction to Geologic Mapping</p>             <p>Exercise 4: Reading Geological Maps</p></td>             <td>Lab 5 Due</td>         </tr>         <tr class=\"row\">             <td>25</td>             <td>OJ</td>             <td>Lab 6: Geologic Mapping</td>             <td>&nbsp;</td>         </tr>         <tr class=\"alt-row\">             <td>26</td>             <td>OJ</td>             <td>Lab 6: Geologic Mapping (cont.)</td>             <td>&nbsp;</td>         </tr>         <tr class=\"row\">             <td>27</td>             <td>OJ</td>             <td>Lab 6: Geologic Mapping (cont.)</td>             <td>&nbsp;</td>         </tr>         <tr class=\"alt-row\">             <td>28</td>             <td>TP</td>             <td><p>Rivers</p>             <p>Lab 7: Rivers</p></td>             <td>&nbsp;</td>         </tr>         <tr class=\"row\">             <td>29</td>             <td>TP</td>             <td>Lab 7: Rivers (cont.)</td>             <td>Lab 6 Due</td>         </tr>         <tr class=\"alt-row\">             <td>30</td>             <td>TA</td>             <td colspan=\"2\">Quiz 3: Crust Formation through Geologic Mapping</td>         </tr>         <tr class=\"row\">             <td>31</td>             <td>TP</td>             <td>Landslides and Debris Flows</td>             <td>&nbsp;</td>         </tr>         <tr class=\"alt-row\">             <td>32</td>             <td>TP</td>             <td>Glaciers</td>             <td>Lab 7 Due</td>         </tr>         <tr class=\"row\">             <td>33</td>             <td>TP</td>             <td>Climate through Geologic History</td>             <td>&nbsp;</td>         </tr>         <tr class=\"alt-row\">             <td>34</td>             <td>TP</td>             <td>Earth History and Geobiology</td>             <td>&nbsp;</td>         </tr>         <tr class=\"row\">             <td>35</td>             <td>TP</td>             <td><p>Earth Science and Society</p>             <p>Exercise 5: Science, Policy, and Public Opinion</p></td>             <td>&nbsp;</td>         </tr>         <tr class=\"alt-row\">             <td>36</td>             <td>TP</td>             <td>Comparative Planetology</td>             <td>&nbsp;</td>         </tr>         <tr class=\"row\">             <td>37</td>             <td>TA</td>             <td colspan=\"2\">Quiz 4: Surface Processes and Earth History</td>         </tr>         <tr class=\"alt-row\">             <td>38</td>             <td>TP, OJ</td>             <td><p>Wrap Up</p>             <p>Prize for Earthquake Predictions</p></td>             <td>&nbsp;</td>         </tr>         <!-- TEN ROWS -->     </tbody> </table></div>", 
-    "_content_type_license": "text/plain", 
-    "_uid": "e9e621faf3861c1e4282d3854377dc3c", 
-    "title": "Calendar", 
     "_ac_local_roles": {
         "pgandhi3": [
             "Owner"
         ]
-    }, 
-    "location": "", 
-    "_content_type_course_identifier": "text/plain", 
-    "_atbrefs": {}, 
-    "constrainTypesMode": 0, 
-    "technical_location": "https://ocw.mit.edu/courses/earth-atmospheric-and-planetary-sciences/12-001-introduction-to-geology-fall-2013/calendar", 
-    "software_requirements": [
-        {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "40.0", 
-            "software_name_col": "Chrome", 
-            "maximum_version_col": ""
-        }, 
-        {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "8.0", 
-            "software_name_col": "Safari", 
-            "maximum_version_col": ""
-        }, 
-        {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "38.0", 
-            "software_name_col": "Mozilla Firefox", 
-            "maximum_version_col": ""
-        }, 
-        {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "9.0", 
-            "software_name_col": "Internet Explorer", 
-            "maximum_version_col": ""
-        }, 
-        {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "13.1", 
-            "software_name_col": "Edge", 
-            "maximum_version_col": ""
-        }
-    ], 
-    "_content_type_technical_location": "text/plain", 
-    "_content_type_rights": "text/html", 
-    "_directly_provided": [
-        "Products.CMFEditions.interfaces.IVersioned"
-    ], 
-    "parent_uid": "d9aad1541f1a9d3c0f7b0dcf9531a9a1", 
-    "excludeFromNav": false, 
-    "_content_type_unique_identifier": "text/plain", 
-    "allowDiscussion": false, 
-    "metadata_contributor_list": [], 
-    "locallyAllowedTypes": [
-        "OCWImage", 
-        "CourseSection", 
-        "OCWExtFile", 
-        "OCWFile", 
-        "MediaResource"
-    ], 
-    "_content_type_text": "text/html", 
-    "ad_type": "HOUSE", 
-    "creation_date": "2014/09/25 03:10:27.235 GMT-4", 
-    "aggregationlevel": 3, 
-    "duration": "", 
-    "immediatelyAddableTypes": [
-        "OCWImage", 
-        "CourseSection", 
-        "OCWExtFile", 
-        "OCWFile", 
-        "MediaResource"
-    ], 
-    "subject": [], 
-    "_content_type_short_page_title": "text/plain", 
-    "effectiveDate": "2014/09/25 07:52:57.153 GMT-4", 
-    "parent_module": "d9aad1541f1a9d3c0f7b0dcf9531a9a1", 
-    "is_mathml_document": false, 
-    "bottomtext": "", 
-    "short_page_title": "Calendar", 
-    "section_identifier": null, 
-    "related_mit_links": "", 
-    "_content_type_ad_type": "text/plain", 
-    "_layout": "custom_view", 
-    "_workflow_history": {
-        "page_workflow": [
-            {
-                "action": null, 
-                "review_state": "waiting_for_authoring", 
-                "comments": "", 
-                "actor": "pgandhi3", 
-                "time": "2014/09/25 03:10:27.247 GMT-4"
-            }, 
-            {
-                "action": "approve_to_staging", 
-                "review_state": "ready_for_staging", 
-                "actor": "rverma83", 
-                "comments": "", 
-                "time": "2014/09/25 07:52:57.203 GMT-4"
-            }, 
-            {
-                "action": "decline", 
-                "review_state": "waiting_for_authoring", 
-                "actor": "pgandhi3", 
-                "comments": "", 
-                "time": "2014/09/25 11:43:25.645 GMT-4"
-            }, 
-            {
-                "action": "approve_to_staging", 
-                "review_state": "ready_for_staging", 
-                "actor": "pgandhi3", 
-                "comments": "", 
-                "time": "2014/09/25 11:48:10.922 GMT-4"
-            }, 
-            {
-                "action": "decline", 
-                "review_state": "waiting_for_authoring", 
-                "comments": "", 
-                "actor": "pgandhi3", 
-                "time": "2014/09/30 23:34:25.662 GMT-4"
-            }, 
-            {
-                "action": "approve_to_staging", 
-                "review_state": "ready_for_staging", 
-                "actor": "pgandhi3", 
-                "comments": "", 
-                "time": "2014/09/30 23:43:15.999 GMT-4"
-            }, 
-            {
-                "action": "decline", 
-                "review_state": "waiting_for_authoring", 
-                "comments": "", 
-                "actor": "ndhamija", 
-                "time": "2014/10/07 01:47:16.604 GMT-4"
-            }, 
-            {
-                "action": "approve_to_staging", 
-                "review_state": "ready_for_staging", 
-                "comments": "", 
-                "actor": "ndhamija", 
-                "time": "2014/10/07 01:49:34.702 GMT-4"
-            }, 
-            {
-                "action": "decline", 
-                "review_state": "waiting_for_authoring", 
-                "actor": "pgandhi3", 
-                "comments": "", 
-                "time": "2014/10/10 07:18:38.803 GMT-4"
-            }, 
-            {
-                "action": "approve_to_staging", 
-                "review_state": "ready_for_staging", 
-                "actor": "pgandhi3", 
-                "comments": "", 
-                "time": "2014/10/10 07:19:27.190 GMT-4"
-            }, 
-            {
-                "action": "decline_to_qa", 
-                "review_state": "waiting_for_qa", 
-                "comments": "", 
-                "actor": "aimeeg", 
-                "time": "2014/10/21 11:33:13.156 GMT-4"
-            }, 
-            {
-                "action": "approve_to_staging", 
-                "review_state": "ready_for_staging", 
-                "actor": "aimeeg", 
-                "comments": "", 
-                "time": "2014/10/21 11:34:12.617 GMT-4"
-            }, 
-            {
-                "action": "decline_to_qa", 
-                "review_state": "waiting_for_qa", 
-                "actor": "aimeeg", 
-                "comments": "", 
-                "time": "2014/10/22 15:08:25.806 GMT-4"
-            }, 
-            {
-                "action": "approve_to_staging", 
-                "review_state": "ready_for_staging", 
-                "actor": "aimeeg", 
-                "comments": "", 
-                "time": "2014/10/22 15:10:36.654 GMT-4"
-            }, 
-            {
-                "action": "decline_to_qa", 
-                "review_state": "waiting_for_qa", 
-                "comments": "", 
-                "actor": "aimeeg", 
-                "time": "2014/11/03 14:15:36.887 US/Eastern"
-            }, 
-            {
-                "action": "approve_to_staging", 
-                "review_state": "ready_for_staging", 
-                "actor": "aimeeg", 
-                "comments": "", 
-                "time": "2014/11/03 14:22:33.747 US/Eastern"
-            }, 
-            {
-                "action": "decline", 
-                "review_state": "waiting_for_authoring", 
-                "comments": "", 
-                "actor": "rverma83", 
-                "time": "2015/01/07 23:31:44.013 US/Eastern"
-            }, 
-            {
-                "action": "approve_to_staging", 
-                "review_state": "ready_for_staging", 
-                "actor": "asingh33", 
-                "comments": "", 
-                "time": "2015/01/08 05:57:06.255 US/Eastern"
-            }
-        ]
-    }, 
-    "_classname": "CourseSection", 
-    "_content_type_materialtype": "text/plain", 
-    "_userdefined_roles": [], 
-    "publisher": "MIT OpenCourseWare", 
-    "nextPreviousEnabled": false, 
-    "language": "", 
-    "url_rewrite_patterns": [], 
-    "widgets_features": [], 
-    "category_features": [], 
-    "firstTimeEdit": true, 
-    "feature_requirements": [], 
-    "list_in_left_nav": false, 
-    "short_name_tlp": "", 
-    "expirationDate": "None", 
-    "_content_type_id": "text/plain", 
-    "contributor_list": [], 
-    "is_media_gallery": false, 
-    "contributors": [], 
-    "_gopip": 2, 
-    "_content_type_title": "text/plain", 
-    "course_linking": [], 
+    },
+    "_atbrefs": {},
     "_atrefs": {
         "BelongsTo": [
             "d9aad1541f1a9d3c0f7b0dcf9531a9a1"
         ]
-    }, 
-    "other_platform_requirements": "", 
-    "license": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/", 
-    "rights": "This site (c) Massachusetts Institute of Technology 2014.  Content within individual courses is (c) by the individual authors unless otherwise noted. The Massachusetts Institute of Technology is providing this Work (as defined below) under the terms of this Creative Commons public license (\"CCPL\" or \"license\") unless otherwise noted. The Work is protected by copyright and/or other applicable law. Any use of the work other than as authorized under this license is prohibited. By exercising any of the rights to the Work provided here, You (as defined below) accept and agree to be bound by the terms of this license. The Licensor, the Massachusetts Institute of Technology, grants You the rights contained here in consideration of Your acceptance of such terms and conditions.", 
-    "hide_Page_title": false, 
-    "_defaultpage": "", 
-    "tcATmit_subject_tags": [], 
-    "features_tracking": [], 
-    "ad_champion_text": "", 
-    "has_inline_embed": false, 
-    "unique_identifier": "https://ocw.mit.edu/courses/earth-atmospheric-and-planetary-sciences/12-001-introduction-to-geology-fall-2013/calendar", 
-    "is_image_gallery": false, 
-    "id": "calendar", 
-    "materialtype": "Other", 
-    "_type": "CourseSection", 
-    "description": "This section provides the schedule of lectures, labs, exercises, quizzes, instructors, and assignment due dates for the course.", 
-    "course_identifier": "https://ocw.mit.edu/courses/earth-atmospheric-and-planetary-sciences/12-001-introduction-to-geology-fall-2013", 
-    "_content_type_publisher": "text/plain", 
-    "tcATmit_instructional_tags": [], 
-    "_content_type": "text/html", 
-    "creators": [
-        "pgandhi3"
-    ], 
-    "modification_date": "2016/09/24 06:42:07.085 GMT-4", 
-    "always_publish": false, 
-    "_content_type_description": "text/plain", 
-    "_owner": null, 
+    },
+    "_classname": "CourseSection",
+    "_content_type": "text/html",
+    "_content_type_ad_type": "text/plain",
+    "_content_type_course_identifier": "text/plain",
+    "_content_type_description": "text/plain",
+    "_content_type_id": "text/plain",
+    "_content_type_license": "text/plain",
+    "_content_type_materialtype": "text/plain",
+    "_content_type_publisher": "text/plain",
+    "_content_type_rights": "text/html",
+    "_content_type_short_page_title": "text/plain",
+    "_content_type_technical_location": "text/plain",
+    "_content_type_text": "text/html",
+    "_content_type_title": "text/plain",
+    "_content_type_unique_identifier": "text/plain",
+    "_defaultpage": "",
+    "_directly_provided": [
+        "Products.CMFEditions.interfaces.IVersioned"
+    ],
+    "_gopip": 2,
+    "_id": "calendar",
+    "_layout": "custom_view",
+    "_owner": null,
+    "_path": "/Plone/courses/earth-atmospheric-and-planetary-sciences/12-001-introduction-to-geology-fall-2013/calendar",
     "_permissions": {
-        "Change portal events": {
-            "acquire": false, 
-            "roles": [
-                "Editor", 
-                "Manager", 
-                "MetadataEditor", 
-                "Owner"
-            ]
-        }, 
-        "Modify portal content": {
-            "acquire": false, 
-            "roles": [
-                "Manager", 
-                "MetadataEditor"
-            ]
-        }, 
         "Access contents information": {
-            "acquire": false, 
+            "acquire": false,
             "roles": [
                 "Authenticated"
             ]
-        }, 
-        "List folder contents": {
-            "acquire": false, 
+        },
+        "Change portal events": {
+            "acquire": false,
             "roles": [
-                "Editor", 
-                "Manager", 
-                "MetadataEditor", 
+                "Editor",
+                "Manager",
+                "MetadataEditor",
                 "Owner"
             ]
-        }, 
+        },
+        "List folder contents": {
+            "acquire": false,
+            "roles": [
+                "Editor",
+                "Manager",
+                "MetadataEditor",
+                "Owner"
+            ]
+        },
+        "Modify portal content": {
+            "acquire": false,
+            "roles": [
+                "Manager",
+                "MetadataEditor"
+            ]
+        },
         "View": {
-            "acquire": false, 
+            "acquire": false,
             "roles": [
                 "Authenticated"
             ]
         }
-    }, 
+    },
     "_properties": [
         [
-            "title", 
-            "Calendar", 
+            "title",
+            "Calendar",
             "string"
         ]
-    ], 
-    "_id": "calendar", 
-    "courselist_features": [], 
-    "_path": "/Plone/courses/earth-atmospheric-and-planetary-sciences/12-001-introduction-to-geology-fall-2013/calendar"
+    ],
+    "_type": "CourseSection",
+    "_uid": "e9e621faf3861c1e4282d3854377dc3c",
+    "_userdefined_roles": [],
+    "_workflow_history": {
+        "page_workflow": [
+            {
+                "action": null,
+                "actor": "pgandhi3",
+                "comments": "",
+                "review_state": "waiting_for_authoring",
+                "time": "2014/09/25 03:10:27.247 GMT-4"
+            },
+            {
+                "action": "approve_to_staging",
+                "actor": "rverma83",
+                "comments": "",
+                "review_state": "ready_for_staging",
+                "time": "2014/09/25 07:52:57.203 GMT-4"
+            },
+            {
+                "action": "decline",
+                "actor": "pgandhi3",
+                "comments": "",
+                "review_state": "waiting_for_authoring",
+                "time": "2014/09/25 11:43:25.645 GMT-4"
+            },
+            {
+                "action": "approve_to_staging",
+                "actor": "pgandhi3",
+                "comments": "",
+                "review_state": "ready_for_staging",
+                "time": "2014/09/25 11:48:10.922 GMT-4"
+            },
+            {
+                "action": "decline",
+                "actor": "pgandhi3",
+                "comments": "",
+                "review_state": "waiting_for_authoring",
+                "time": "2014/09/30 23:34:25.662 GMT-4"
+            },
+            {
+                "action": "approve_to_staging",
+                "actor": "pgandhi3",
+                "comments": "",
+                "review_state": "ready_for_staging",
+                "time": "2014/09/30 23:43:15.999 GMT-4"
+            },
+            {
+                "action": "decline",
+                "actor": "ndhamija",
+                "comments": "",
+                "review_state": "waiting_for_authoring",
+                "time": "2014/10/07 01:47:16.604 GMT-4"
+            },
+            {
+                "action": "approve_to_staging",
+                "actor": "ndhamija",
+                "comments": "",
+                "review_state": "ready_for_staging",
+                "time": "2014/10/07 01:49:34.702 GMT-4"
+            },
+            {
+                "action": "decline",
+                "actor": "pgandhi3",
+                "comments": "",
+                "review_state": "waiting_for_authoring",
+                "time": "2014/10/10 07:18:38.803 GMT-4"
+            },
+            {
+                "action": "approve_to_staging",
+                "actor": "pgandhi3",
+                "comments": "",
+                "review_state": "ready_for_staging",
+                "time": "2014/10/10 07:19:27.190 GMT-4"
+            },
+            {
+                "action": "decline_to_qa",
+                "actor": "aimeeg",
+                "comments": "",
+                "review_state": "waiting_for_qa",
+                "time": "2014/10/21 11:33:13.156 GMT-4"
+            },
+            {
+                "action": "approve_to_staging",
+                "actor": "aimeeg",
+                "comments": "",
+                "review_state": "ready_for_staging",
+                "time": "2014/10/21 11:34:12.617 GMT-4"
+            },
+            {
+                "action": "decline_to_qa",
+                "actor": "aimeeg",
+                "comments": "",
+                "review_state": "waiting_for_qa",
+                "time": "2014/10/22 15:08:25.806 GMT-4"
+            },
+            {
+                "action": "approve_to_staging",
+                "actor": "aimeeg",
+                "comments": "",
+                "review_state": "ready_for_staging",
+                "time": "2014/10/22 15:10:36.654 GMT-4"
+            },
+            {
+                "action": "decline_to_qa",
+                "actor": "aimeeg",
+                "comments": "",
+                "review_state": "waiting_for_qa",
+                "time": "2014/11/03 14:15:36.887 US/Eastern"
+            },
+            {
+                "action": "approve_to_staging",
+                "actor": "aimeeg",
+                "comments": "",
+                "review_state": "ready_for_staging",
+                "time": "2014/11/03 14:22:33.747 US/Eastern"
+            },
+            {
+                "action": "decline",
+                "actor": "rverma83",
+                "comments": "",
+                "review_state": "waiting_for_authoring",
+                "time": "2015/01/07 23:31:44.013 US/Eastern"
+            },
+            {
+                "action": "approve_to_staging",
+                "actor": "asingh33",
+                "comments": "",
+                "review_state": "ready_for_staging",
+                "time": "2015/01/08 05:57:06.255 US/Eastern"
+            }
+        ]
+    },
+    "ad_champion_text": "",
+    "ad_type": "HOUSE",
+    "aggregationlevel": 3,
+    "allowDiscussion": false,
+    "always_publish": false,
+    "bottomtext": "",
+    "category_features": [],
+    "constrainTypesMode": 0,
+    "contributor_list": [],
+    "contributors": [],
+    "course_identifier": "https://ocw.mit.edu/courses/earth-atmospheric-and-planetary-sciences/12-001-introduction-to-geology-fall-2013",
+    "course_linking": [],
+    "courselist_features": [],
+    "creation_date": "2014/09/25 03:10:27.235 GMT-4",
+    "creators": [
+        "pgandhi3"
+    ],
+    "description": "This section provides the schedule of lectures, labs, exercises, quizzes, instructors, and assignment due dates for the course.",
+    "duration": "",
+    "effectiveDate": "2014/09/25 07:52:57.153 GMT-4",
+    "excludeFromNav": false,
+    "expirationDate": "None",
+    "feature_requirements": [],
+    "features_tracking": [],
+    "firstTimeEdit": true,
+    "has_inline_embed": false,
+    "hide_Page_title": false,
+    "id": "calendar",
+    "immediatelyAddableTypes": [
+        "OCWImage",
+        "CourseSection",
+        "OCWExtFile",
+        "OCWFile",
+        "MediaResource"
+    ],
+    "is_image_gallery": false,
+    "is_mathml_document": false,
+    "is_media_gallery": false,
+    "language": "",
+    "license": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/",
+    "list_in_left_nav": false,
+    "locallyAllowedTypes": [
+        "OCWImage",
+        "CourseSection",
+        "OCWExtFile",
+        "OCWFile",
+        "MediaResource"
+    ],
+    "location": "",
+    "materialtype": "Other",
+    "metadata_contributor_list": [],
+    "modification_date": "2016/09/24 06:42:07.085 GMT-4",
+    "nextPreviousEnabled": false,
+    "other_platform_requirements": "",
+    "parent_module": "d9aad1541f1a9d3c0f7b0dcf9531a9a1",
+    "parent_uid": "d9aad1541f1a9d3c0f7b0dcf9531a9a1",
+    "publisher": "MIT OpenCourseWare",
+    "related_mit_links": "",
+    "rights": "This site (c) Massachusetts Institute of Technology 2014.  Content within individual courses is (c) by the individual authors unless otherwise noted. The Massachusetts Institute of Technology is providing this Work (as defined below) under the terms of this Creative Commons public license (\"CCPL\" or \"license\") unless otherwise noted. The Work is protected by copyright and/or other applicable law. Any use of the work other than as authorized under this license is prohibited. By exercising any of the rights to the Work provided here, You (as defined below) accept and agree to be bound by the terms of this license. The Licensor, the Massachusetts Institute of Technology, grants You the rights contained here in consideration of Your acceptance of such terms and conditions.",
+    "section_identifier": null,
+    "short_name_tlp": "",
+    "short_page_title": "Calendar",
+    "software_requirements": [
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "40.0",
+            "software_name_col": "Chrome",
+            "software_type_col": "Browser"
+        },
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "8.0",
+            "software_name_col": "Safari",
+            "software_type_col": "Browser"
+        },
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "38.0",
+            "software_name_col": "Mozilla Firefox",
+            "software_type_col": "Browser"
+        },
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "9.0",
+            "software_name_col": "Internet Explorer",
+            "software_type_col": "Browser"
+        },
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "13.1",
+            "software_name_col": "Edge",
+            "software_type_col": "Browser"
+        }
+    ],
+    "subject": [],
+    "tcATmit_instructional_tags": [],
+    "tcATmit_subject_tags": [],
+    "technical_location": "https://ocw.mit.edu/courses/earth-atmospheric-and-planetary-sciences/12-001-introduction-to-geology-fall-2013/calendar",
+    "text": "<h2 class=\"subhead\">Instructor Key</h2> <p>[TP] = Taylor Perron<br /> [OJ] = Oliver Jagoutz<br /> [TA] = Teaching Assistants</p> <div class=\"maintabletemplate\"><table summary=\"See table caption for summary.\" class=\"tablewidth75\">     <caption class=\"invisible\">Course calendar.</caption>  <!-- BEGIN TABLE HEADER (for MIT OCW Table Template 2.51) -->     <thead>         <tr>             <th scope=\"col\">SES&nbsp;#</th>             <th scope=\"col\">INSTRUCTORS</th>             <th scope=\"col\">LECTURES, Labs, and Exercises</th>             <th scope=\"col\">KEY&nbsp;DATES</th>         </tr>     </thead>     <!-- END TABLE HEADER -->     <tbody>         <tr class=\"row\">             <td>1</td>             <td>TP, OJ</td>             <td><p>Overview: Introduction to the Introduction of Geology Earthquake Predictions</p></td>             <td>&nbsp;</td>         </tr>         <tr class=\"alt-row\">             <td>2</td>             <td>TP</td>             <td><p>Origin and Age of the Earth</p>             <p>Exercise 1: Composition of the Mantle</p></td>             <td>&nbsp;</td>         </tr>         <tr class=\"row\">             <td>3</td>             <td>OJ</td>             <td><p>Introduction to Minerals</p>             <p>Lab 1: Mineral Identification</p></td>             <td>Earthquake Predictions Due</td>         </tr>         <tr class=\"alt-row\">             <td>4</td>             <td>OJ</td>             <td><p>Igneous Rocks</p>             <p>Lab 1: Mineral Identification (cont.)</p></td>             <td>&nbsp;</td>         </tr>         <tr class=\"row\">             <td>5</td>             <td>OJ</td>             <td><p>Metamorphic Rocks</p>             <p>Lab 2: Rock Identification</p></td>             <td>&nbsp;</td>         </tr>         <tr class=\"alt-row\">             <td>6</td>             <td>TP</td>             <td><p>Sedimentary Rocks</p>             <p>Lab 2: Rock Identification (cont.)</p></td>             <td>&nbsp;</td>         </tr>         <tr class=\"row\">             <td>7</td>             <td>TA</td>             <td>Lab 2: Rock Identification (cont.)</td>             <td>Lab 1 Due</td>         </tr>         <tr class=\"alt-row\">             <td>8</td>             <td>OJ</td>             <td><p>Rock Structure and Deformation</p>             <p>Lab 2: Rock Identification (cont.)</p></td>             <td>&nbsp;</td>         </tr>         <tr class=\"row\">             <td>9</td>             <td>OJ</td>             <td colspan=\"2\">Quiz 1: Rocks and Minerals (No lecture or lab)</td>         </tr>         <tr class=\"alt-row\">             <td>10</td>             <td>TA</td>             <td>Exercise 2: Rock Structure and Deformation</td>             <td>&nbsp;</td>         </tr>         <tr class=\"row\">             <td>11</td>             <td>OJ</td>             <td><p>Geologic Time: Relative versus Absolute Dating</p>             <p>Lab 3: Geochronology</p></td>             <td>Lab 2 Due</td>         </tr>         <tr class=\"alt-row\">             <td>12</td>             <td>OJ</td>             <td><p>Volcanoes</p>             <p>Lab 3: Geochronology (cont.)</p></td>             <td>&nbsp;</td>         </tr>         <tr class=\"row\">             <td>13</td>             <td>TP</td>             <td><p>Plate Tectonics</p>             <p>Lab 4: Plate Tectonics</p></td>             <td>&nbsp;</td>         </tr>         <tr class=\"alt-row\">             <td>14</td>             <td>TP</td>             <td><p>Plate Tectonics (cont.)</p>             <p>Lab 4: Plate Tectonics (cont.)</p></td>             <td>Lab 3 Due</td>         </tr>         <tr class=\"row\">             <td>15</td>             <td>TP</td>             <td><p>Plate Tectonics (cont.)</p>             <p>Lab 4: Plate Tectonics (cont.)</p></td>             <td>&nbsp;</td>         </tr>         <tr class=\"alt-row\">             <td>16</td>             <td>TP, OJ, TA</td>             <td colspan=\"2\">Field Trip to Upstate New York: Assembly and Breakup of Supercontinents</td>         </tr>         <tr class=\"row\">             <td>17</td>             <td>OJ</td>             <td><p>Continental Crust Formation</p>             <p>Field Trip Report</p></td>             <td>&nbsp;</td>         </tr>         <tr class=\"alt-row\">             <td>18</td>             <td>OJ</td>             <td><p>Oceanic Crust Formation</p>             <p>Field Trip Report (cont.)</p></td>             <td>Lab 4 Due</td>         </tr>         <tr class=\"row\">             <td>19</td>             <td>TP</td>             <td><p>Earthquakes</p>             <p>Lab 5: Earthquakes</p></td>             <td>&nbsp;</td>         </tr>         <tr class=\"alt-row\">             <td>20</td>             <td>TA</td>             <td colspan=\"2\">Quiz 2: Rock Deformation through Plate Tectonics (No lecture or lab)</td>         </tr>         <tr class=\"row\">             <td>21</td>             <td>TP</td>             <td><p>Topography</p>             <p>Lab 5: Earthquakes (cont.)</p></td>             <td>Field Trip Report Due</td>         </tr>         <tr class=\"alt-row\">             <td>22</td>             <td>OJ</td>             <td><p>Field Techniques</p>             <p>Exercise 3: Stereonets</p></td>             <td>&nbsp;</td>         </tr>         <tr class=\"row\">             <td>23</td>             <td>TA</td>             <td>Tours of Laboratories in the Department of Earth, Atmospheric, and Planetary Sciences</td>             <td>&nbsp;</td>         </tr>         <tr class=\"alt-row\">             <td>24</td>             <td>OJ</td>             <td><p>Introduction to Geologic Mapping</p>             <p>Exercise 4: Reading Geological Maps</p></td>             <td>Lab 5 Due</td>         </tr>         <tr class=\"row\">             <td>25</td>             <td>OJ</td>             <td>Lab 6: Geologic Mapping</td>             <td>&nbsp;</td>         </tr>         <tr class=\"alt-row\">             <td>26</td>             <td>OJ</td>             <td>Lab 6: Geologic Mapping (cont.)</td>             <td>&nbsp;</td>         </tr>         <tr class=\"row\">             <td>27</td>             <td>OJ</td>             <td>Lab 6: Geologic Mapping (cont.)</td>             <td>&nbsp;</td>         </tr>         <tr class=\"alt-row\">             <td>28</td>             <td>TP</td>             <td><p>Rivers</p>             <p>Lab 7: Rivers</p></td>             <td>&nbsp;</td>         </tr>         <tr class=\"row\">             <td>29</td>             <td>TP</td>             <td>Lab 7: Rivers (cont.)</td>             <td>Lab 6 Due</td>         </tr>         <tr class=\"alt-row\">             <td>30</td>             <td>TA</td>             <td colspan=\"2\">Quiz 3: Crust Formation through Geologic Mapping</td>         </tr>         <tr class=\"row\">             <td>31</td>             <td>TP</td>             <td>Landslides and Debris Flows</td>             <td>&nbsp;</td>         </tr>         <tr class=\"alt-row\">             <td>32</td>             <td>TP</td>             <td>Glaciers</td>             <td>Lab 7 Due</td>         </tr>         <tr class=\"row\">             <td>33</td>             <td>TP</td>             <td>Climate through Geologic History</td>             <td>&nbsp;</td>         </tr>         <tr class=\"alt-row\">             <td>34</td>             <td>TP</td>             <td>Earth History and Geobiology</td>             <td>&nbsp;</td>         </tr>         <tr class=\"row\">             <td>35</td>             <td>TP</td>             <td><p>Earth Science and Society</p>             <p>Exercise 5: Science, Policy, and Public Opinion</p></td>             <td>&nbsp;</td>         </tr>         <tr class=\"alt-row\">             <td>36</td>             <td>TP</td>             <td>Comparative Planetology</td>             <td>&nbsp;</td>         </tr>         <tr class=\"row\">             <td>37</td>             <td>TA</td>             <td colspan=\"2\">Quiz 4: Surface Processes and Earth History</td>         </tr>         <tr class=\"alt-row\">             <td>38</td>             <td>TP, OJ</td>             <td><p>Wrap Up</p>             <p>Prize for Earthquake Predictions</p></td>             <td>&nbsp;</td>         </tr>         <!-- TEN ROWS -->     </tbody> </table></div>",
+    "title": "Calendar",
+    "unique_identifier": "https://ocw.mit.edu/courses/earth-atmospheric-and-planetary-sciences/12-001-introduction-to-geology-fall-2013/calendar",
+    "url_rewrite_patterns": [],
+    "widgets_features": []
 }

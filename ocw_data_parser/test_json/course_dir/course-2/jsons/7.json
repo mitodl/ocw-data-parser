@@ -1,168 +1,168 @@
 {
-    "expanded_alternate_text": "", 
-    "features_tracking": [], 
-    "widgets_features": [], 
-    "contributors": [], 
-    "tcATmit_subject_tags": [], 
-    "unique_identifier": "https://ocw.mit.edu/courses/earth-atmospheric-and-planetary-sciences/12-001-introduction-to-geology-fall-2013/instructor-insights/12-001_stat-students.png", 
-    "_content_type_publisher": "text/plain", 
-    "_content_type_license": "text/plain", 
-    "_datafield_image": {
-        "encoding": "base64", 
-        "data": "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", 
-        "content_type": "image/png", 
-        "filename": "12-001_stat-students.png"
-    }, 
-    "aggregationlevel": 2, 
-    "_uid": "5f25559e94913a6a8708d0bff5661b1c", 
-    "_workflow_history": {
-        "one_state_workflow": [
-            {
-                "action": null, 
-                "review_state": "published", 
-                "actor": "Kcanavan", 
-                "comments": "", 
-                "time": "2014/12/03 16:35:53.829 US/Eastern"
-            }
-        ]
-    }, 
-    "expirationDate": "None", 
-    "_content_type_id": "text/plain", 
-    "duration": "", 
-    "contributor_list": [], 
-    "id": "12-001_stat-students.png", 
-    "related_mit_links": "", 
-    "thumb_height": "", 
-    "effectiveDate": "None", 
-    "title": "12-001_stat-students.png", 
-    "_layout": "view", 
-    "parent_module": "d9aad1541f1a9d3c0f7b0dcf9531a9a1", 
-    "_content_type": "image/png", 
-    "_userdefined_roles": [], 
-    "_content_type_language": "text/plain", 
-    "_gopip": 0, 
-    "location": "", 
-    "_atrefs": {
-        "BelongsTo": [
-            "d9aad1541f1a9d3c0f7b0dcf9531a9a1"
-        ]
-    }, 
-    "_content_type_course_identifier": "text/plain", 
-    "_content_type_title": "text/plain", 
-    "section_identifier": "https://ocw.mit.edu/courses/earth-atmospheric-and-planetary-sciences/12-001-introduction-to-geology-fall-2013/instructor-insights", 
-    "_atbrefs": {
-        "isReferencing": [
-            "1c2cb2ad1c70fd66f19e20103dc94595"
-        ]
-    }, 
-    "creation_date": "2014/12/03 16:35:53.820 US/Eastern", 
-    "_content_type_section_identifier": "text/plain", 
-    "_type": "OCWImage", 
-    "technical_location": "https://ocw.mit.edu/courses/earth-atmospheric-and-planetary-sciences/12-001-introduction-to-geology-fall-2013/instructor-insights/12-001_stat-students.png", 
-    "description": "", 
-    "thumb_width": "", 
-    "software_requirements": [
-        {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "40.0", 
-            "software_name_col": "Chrome", 
-            "maximum_version_col": ""
-        }, 
-        {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "8.0", 
-            "software_name_col": "Safari", 
-            "maximum_version_col": ""
-        }, 
-        {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "38.0", 
-            "software_name_col": "Mozilla Firefox", 
-            "maximum_version_col": ""
-        }, 
-        {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "9.0", 
-            "software_name_col": "Internet Explorer", 
-            "maximum_version_col": ""
-        }, 
-        {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "13.1", 
-            "software_name_col": "Edge", 
-            "maximum_version_col": ""
-        }
-    ], 
-    "_content_type_technical_location": "text/plain", 
-    "alternate_text": "", 
-    "credit": "", 
-    "subject": [], 
-    "_content_type_rights": "text/html", 
-    "course_identifier": "https://ocw.mit.edu/courses/earth-atmospheric-and-planetary-sciences/12-001-introduction-to-geology-fall-2013", 
-    "_directly_provided": [], 
-    "other_platform_requirements": "", 
-    "_id": "12-001_stat-students.png", 
-    "_classname": "OCWImage", 
-    "metadata_contributor_list": [], 
-    "tcATmit_instructional_tags": [], 
-    "caption": "", 
-    "parent_uid": "1c2cb2ad1c70fd66f19e20103dc94595", 
-    "modification_date": "2016/09/24 03:50:14.723 GMT-4", 
-    "course_linking": [], 
-    "publisher": "MIT OpenCourseWare", 
-    "excludeFromNav": false, 
-    "feature_requirements": [], 
-    "language": "en-US", 
-    "license": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/", 
-    "rights": "This site (c) Massachusetts Institute of Technology 2014.  Content within individual courses is (c) by the individual authors unless otherwise noted. The Massachusetts Institute of Technology is providing this Work (as defined below) under the terms of this Creative Commons public license (\"CCPL\" or \"license\") unless otherwise noted. The Work is protected by copyright and/or other applicable law. Any use of the work other than as authorized under this license is prohibited. By exercising any of the rights to the Work provided here, You (as defined below) accept and agree to be bound by the terms of this license. The Licensor, the Massachusetts Institute of Technology, grants You the rights contained here in consideration of Your acceptance of such terms and conditions.", 
-    "always_publish": false, 
-    "popup_image_id": "", 
-    "materialtype": "Other", 
-    "_content_type_unique_identifier": "text/plain", 
-    "category_features": [], 
-    "is_pop_up_image": false, 
-    "_owner": null, 
-    "_defaultpage": "index_html", 
-    "firstTimeEdit": true, 
-    "_permissions": {
-        "Modify portal content": {
-            "acquire": false, 
-            "roles": [
-                "Editor", 
-                "Manager", 
-                "Owner"
-            ]
-        }, 
-        "Access contents information": {
-            "acquire": false, 
-            "roles": [
-                "Anonymous"
-            ]
-        }, 
-        "View": {
-            "acquire": false, 
-            "roles": [
-                "Anonymous"
-            ]
-        }
-    }, 
-    "_properties": [
-        [
-            "title", 
-            "12-001_stat-students.png", 
-            "string"
-        ]
-    ], 
-    "allowDiscussion": false, 
-    "_content_type_materialtype": "text/plain", 
-    "creators": [
-        "Kcanavan"
-    ], 
-    "courselist_features": [], 
     "_ac_local_roles": {
         "Kcanavan": [
             "Owner"
         ]
-    }, 
-    "_path": "/Plone/courses/earth-atmospheric-and-planetary-sciences/12-001-introduction-to-geology-fall-2013/instructor-insights/12-001_stat-students.png"
+    },
+    "_atbrefs": {
+        "isReferencing": [
+            "1c2cb2ad1c70fd66f19e20103dc94595"
+        ]
+    },
+    "_atrefs": {
+        "BelongsTo": [
+            "d9aad1541f1a9d3c0f7b0dcf9531a9a1"
+        ]
+    },
+    "_classname": "OCWImage",
+    "_content_type": "image/png",
+    "_content_type_course_identifier": "text/plain",
+    "_content_type_id": "text/plain",
+    "_content_type_language": "text/plain",
+    "_content_type_license": "text/plain",
+    "_content_type_materialtype": "text/plain",
+    "_content_type_publisher": "text/plain",
+    "_content_type_rights": "text/html",
+    "_content_type_section_identifier": "text/plain",
+    "_content_type_technical_location": "text/plain",
+    "_content_type_title": "text/plain",
+    "_content_type_unique_identifier": "text/plain",
+    "_datafield_image": {
+        "content_type": "image/png",
+        "data": "ZW1wdHk=",
+        "encoding": "base64",
+        "filename": "12-001_stat-students.png"
+    },
+    "_defaultpage": "index_html",
+    "_directly_provided": [],
+    "_gopip": 0,
+    "_id": "12-001_stat-students.png",
+    "_layout": "view",
+    "_owner": null,
+    "_path": "/Plone/courses/earth-atmospheric-and-planetary-sciences/12-001-introduction-to-geology-fall-2013/instructor-insights/12-001_stat-students.png",
+    "_permissions": {
+        "Access contents information": {
+            "acquire": false,
+            "roles": [
+                "Anonymous"
+            ]
+        },
+        "Modify portal content": {
+            "acquire": false,
+            "roles": [
+                "Editor",
+                "Manager",
+                "Owner"
+            ]
+        },
+        "View": {
+            "acquire": false,
+            "roles": [
+                "Anonymous"
+            ]
+        }
+    },
+    "_properties": [
+        [
+            "title",
+            "12-001_stat-students.png",
+            "string"
+        ]
+    ],
+    "_type": "OCWImage",
+    "_uid": "5f25559e94913a6a8708d0bff5661b1c",
+    "_userdefined_roles": [],
+    "_workflow_history": {
+        "one_state_workflow": [
+            {
+                "action": null,
+                "actor": "Kcanavan",
+                "comments": "",
+                "review_state": "published",
+                "time": "2014/12/03 16:35:53.829 US/Eastern"
+            }
+        ]
+    },
+    "aggregationlevel": 2,
+    "allowDiscussion": false,
+    "alternate_text": "",
+    "always_publish": false,
+    "caption": "",
+    "category_features": [],
+    "contributor_list": [],
+    "contributors": [],
+    "course_identifier": "https://ocw.mit.edu/courses/earth-atmospheric-and-planetary-sciences/12-001-introduction-to-geology-fall-2013",
+    "course_linking": [],
+    "courselist_features": [],
+    "creation_date": "2014/12/03 16:35:53.820 US/Eastern",
+    "creators": [
+        "Kcanavan"
+    ],
+    "credit": "",
+    "description": "",
+    "duration": "",
+    "effectiveDate": "None",
+    "excludeFromNav": false,
+    "expanded_alternate_text": "",
+    "expirationDate": "None",
+    "feature_requirements": [],
+    "features_tracking": [],
+    "firstTimeEdit": true,
+    "id": "12-001_stat-students.png",
+    "is_pop_up_image": false,
+    "language": "en-US",
+    "license": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/",
+    "location": "",
+    "materialtype": "Other",
+    "metadata_contributor_list": [],
+    "modification_date": "2016/09/24 03:50:14.723 GMT-4",
+    "other_platform_requirements": "",
+    "parent_module": "d9aad1541f1a9d3c0f7b0dcf9531a9a1",
+    "parent_uid": "1c2cb2ad1c70fd66f19e20103dc94595",
+    "popup_image_id": "",
+    "publisher": "MIT OpenCourseWare",
+    "related_mit_links": "",
+    "rights": "This site (c) Massachusetts Institute of Technology 2014.  Content within individual courses is (c) by the individual authors unless otherwise noted. The Massachusetts Institute of Technology is providing this Work (as defined below) under the terms of this Creative Commons public license (\"CCPL\" or \"license\") unless otherwise noted. The Work is protected by copyright and/or other applicable law. Any use of the work other than as authorized under this license is prohibited. By exercising any of the rights to the Work provided here, You (as defined below) accept and agree to be bound by the terms of this license. The Licensor, the Massachusetts Institute of Technology, grants You the rights contained here in consideration of Your acceptance of such terms and conditions.",
+    "section_identifier": "https://ocw.mit.edu/courses/earth-atmospheric-and-planetary-sciences/12-001-introduction-to-geology-fall-2013/instructor-insights",
+    "software_requirements": [
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "40.0",
+            "software_name_col": "Chrome",
+            "software_type_col": "Browser"
+        },
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "8.0",
+            "software_name_col": "Safari",
+            "software_type_col": "Browser"
+        },
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "38.0",
+            "software_name_col": "Mozilla Firefox",
+            "software_type_col": "Browser"
+        },
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "9.0",
+            "software_name_col": "Internet Explorer",
+            "software_type_col": "Browser"
+        },
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "13.1",
+            "software_name_col": "Edge",
+            "software_type_col": "Browser"
+        }
+    ],
+    "subject": [],
+    "tcATmit_instructional_tags": [],
+    "tcATmit_subject_tags": [],
+    "technical_location": "https://ocw.mit.edu/courses/earth-atmospheric-and-planetary-sciences/12-001-introduction-to-geology-fall-2013/instructor-insights/12-001_stat-students.png",
+    "thumb_height": "",
+    "thumb_width": "",
+    "title": "12-001_stat-students.png",
+    "unique_identifier": "https://ocw.mit.edu/courses/earth-atmospheric-and-planetary-sciences/12-001-introduction-to-geology-fall-2013/instructor-insights/12-001_stat-students.png",
+    "widgets_features": []
 }

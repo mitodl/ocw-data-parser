@@ -1,348 +1,348 @@
 {
-    "text": "", 
-    "_content_type_license": "text/plain", 
-    "_uid": "1c2cb2ad1c70fd66f19e20103dc94595", 
-    "studentinformationtext": "<div class=\"onehalf alpha\"><a name=\"assessment\"></a> <h2 class=\"title\">Assessment</h2> <p>The students' grades were based on the following activities:</p> <div style=\"clear: both; position: relative;\" class=\"edu_grading\"><div><canvas id=\"canvas5\" height=\"175\" width=\"175\"></canvas>                                         <script>\r\n                                            var pieData = [\r\n                                                    {\r\n                                                        value: 60,\r\n                                                        color: \"#DD1E2F\"\r\n                                                    },\r\n                                                    {\r\n                                                        value: 35,\r\n                                                        color: \"#EBB035\"\r\n                                                    },\r\n{\r\n                                                        value: 5,\r\n                                                        color: \"#9ACCEF\"\r\n                                                    }\r\n                                               \r\n                                                ];\r\n                                        var myPie = new Chart(document.getElementById(\"canvas5\").getContext(\"2d\")).Pie(pieData);\r\n                                        </script></div> <div style=\"float: right; width: 185px; margin-top: -180px;\" class=\"edu_breakdown_key\"><div><img alt=\"The color used on the preceding chart which represents the percentage of the total grade contributed by a field trip report, lab reports, and exercises.\" src=\"/images/educator/edu_b-lab-key.png\" /> 60% Field trip report, lab reports, and exercises</div> <div><img alt=\"The color used on the preceding chart which represents the percentage of the total grade contributed by quizzes.\" src=\"/images/educator/edu_b-lecture-key.png\" /> 35% Quizzes</div> <div><img alt=\"The color used on the preceding chart which represents the percentage of the total grade contributed by class participation.\" src=\"/images/educator/edu_b-present-key.png\" /> 5% Class participation</div></div> <div class=\"clear\">&nbsp;</div> <h3 class=\"subsubhead\">Assessment Note</h3> <p>Reports were evaluated on clarity of presentation as well as soundness of analysis.</p></div></div> <div class=\"onehalf omega\"><h2 class=\"title\">Student Information</h2> <div style=\"width: 105px; text-align: left; float:right; margin: 0px 0px 20px 20px;\"><img width=\"105\" height=\"105\" alt=\"20 students took this course in Fall 2013.\" src=\"./resolveuid/5f25559e94913a6a8708d0bff5661b1c\" /></div> <h3 class=\"subsubhead\">Enrollment</h3> <p>Enrollment varies between 15 and 30 students each year.</p> <h3 class=\"subsubhead\">Breakdown by Year</h3> <p>This course is taken by a combination of sophomores, juniors, and seniors.</p> <h3 class=\"subsubhead\">Breakdown by Major</h3> <p>&frac12; majors in Earth, Atmospheric, and Planetary Sciences and &frac12; majors in other departments</p></div> <div class=\"clear\">&nbsp;</div>", 
-    "title": "Instructor Insights", 
     "_ac_local_roles": {
         "pgandhi3": [
             "Owner"
         ]
-    }, 
-    "location": "", 
-    "_content_type_course_identifier": "text/plain", 
+    },
     "_atbrefs": {
         "isReferencing": [
             "1c2cb2ad1c70fd66f19e20103dc94595"
         ]
-    }, 
-    "constrainTypesMode": 0, 
-    "technical_location": "https://ocw.mit.edu/courses/earth-atmospheric-and-planetary-sciences/12-001-introduction-to-geology-fall-2013/instructor-insights", 
-    "software_requirements": [
-        {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "40.0", 
-            "software_name_col": "Chrome", 
-            "maximum_version_col": ""
-        }, 
-        {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "8.0", 
-            "software_name_col": "Safari", 
-            "maximum_version_col": ""
-        }, 
-        {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "38.0", 
-            "software_name_col": "Mozilla Firefox", 
-            "maximum_version_col": ""
-        }, 
-        {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "9.0", 
-            "software_name_col": "Internet Explorer", 
-            "maximum_version_col": ""
-        }, 
-        {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "13.1", 
-            "software_name_col": "Edge", 
-            "maximum_version_col": ""
-        }
-    ], 
-    "_content_type_technical_location": "text/plain", 
-    "_content_type_rights": "text/html", 
-    "_directly_provided": [
-        "Products.CMFEditions.interfaces.IVersioned"
-    ], 
-    "_content_type_theclassroomtext": "text/html", 
-    "parent_uid": "d9aad1541f1a9d3c0f7b0dcf9531a9a1", 
-    "excludeFromNav": false, 
-    "curriculuminformationtext": "<div class=\"onethird alpha\"><h2 class=\"title\">Curriculum Information</h2> <h3 class=\"subsubhead\">Prerequisites</h3> <p>The course is designed to be accessible to students from all disciplines. No geology background is assumed.</p> <h3 class=\"subsubhead\">Requirements Satisfied</h3> <ul>     <li>REST <img src=\"/images/educator/icon-question-rest.png\" class=\"question\" alt=\"\" /></li>     <li>Required course for undergraduates <a href=\"https://eapsweb.mit.edu/prospective-students/choosing-eaps-your-major\">majoring in Earth, Atmospheric, and Planetary Science</a></li>     <li>Core subject for students <a href=\"https://eapsweb.mit.edu/\">minoring in Earth, Atmospheric, and Planetary Science</a></li>     <li>Required course for undergraduates in the <a href=\"http://dmse.mit.edu/academics/undergraduate/degree-requirements/3c-program\">Program in Archaeology and Materials</a> in the Department of Materials Science and Engineering</li> </ul> <h3 class=\"subsubhead\">Offered</h3> <p>Every fall semester. (Prior to Fall 2012, this course was offered every spring semester.)</p></div>", 
-    "_content_type_unique_identifier": "text/plain", 
-    "allowDiscussion": false, 
-    "_content_type_materialtype": "text/plain", 
-    "locallyAllowedTypes": [
-        "OCWImage", 
-        "CourseSection", 
-        "OCWExtFile", 
-        "OCWFile", 
-        "MediaResource"
-    ], 
-    "ad_type": "HOUSE", 
-    "creation_date": "2014/09/25 03:11:27.973 GMT-4", 
-    "aggregationlevel": 3, 
-    "duration": "", 
-    "immediatelyAddableTypes": [
-        "OCWImage", 
-        "CourseSection", 
-        "OCWExtFile", 
-        "OCWFile", 
-        "MediaResource"
-    ], 
-    "subject": [], 
-    "_content_type_short_page_title": "text/plain", 
-    "effectiveDate": "2014/09/25 07:52:58.435 GMT-4", 
-    "parent_module": "d9aad1541f1a9d3c0f7b0dcf9531a9a1", 
-    "is_mathml_document": false, 
-    "bottomtext": "", 
-    "short_page_title": "Instructor Insights", 
-    "section_identifier": null, 
-    "related_mit_links": "", 
-    "_content_type_ad_type": "text/plain", 
-    "_layout": "custom_view", 
-    "_workflow_history": {
-        "page_workflow": [
-            {
-                "action": null, 
-                "review_state": "waiting_for_authoring", 
-                "comments": "", 
-                "actor": "pgandhi3", 
-                "time": "2014/09/25 03:11:27.986 GMT-4"
-            }, 
-            {
-                "action": "approve_to_staging", 
-                "review_state": "ready_for_staging", 
-                "actor": "rverma83", 
-                "comments": "", 
-                "time": "2014/09/25 07:52:58.485 GMT-4"
-            }, 
-            {
-                "action": "decline_to_qa", 
-                "review_state": "waiting_for_qa", 
-                "comments": "", 
-                "actor": "Kcanavan", 
-                "time": "2014/12/03 16:34:38.356 US/Eastern"
-            }, 
-            {
-                "action": "approve_to_staging", 
-                "review_state": "ready_for_staging", 
-                "comments": "", 
-                "actor": "Kcanavan", 
-                "time": "2014/12/03 17:14:52.609 US/Eastern"
-            }, 
-            {
-                "action": "decline", 
-                "review_state": "waiting_for_authoring", 
-                "actor": "sehansen", 
-                "comments": "", 
-                "time": "2014/12/04 15:21:56.648 US/Eastern"
-            }, 
-            {
-                "action": "approve_to_staging", 
-                "review_state": "ready_for_staging", 
-                "comments": "", 
-                "actor": "sehansen", 
-                "time": "2014/12/04 15:46:30.895 US/Eastern"
-            }, 
-            {
-                "action": "decline_to_qa", 
-                "review_state": "waiting_for_qa", 
-                "comments": "", 
-                "actor": "sehansen", 
-                "time": "2014/12/04 15:46:42.471 US/Eastern"
-            }, 
-            {
-                "action": "approve_to_staging", 
-                "review_state": "ready_for_staging", 
-                "comments": "", 
-                "actor": "sehansen", 
-                "time": "2014/12/04 15:46:48.353 US/Eastern"
-            }, 
-            {
-                "action": "decline_to_qa", 
-                "review_state": "waiting_for_qa", 
-                "actor": "Kcanavan", 
-                "comments": "", 
-                "time": "2014/12/11 13:09:34.812 US/Eastern"
-            }, 
-            {
-                "action": "approve_to_staging", 
-                "review_state": "ready_for_staging", 
-                "comments": "", 
-                "actor": "Kcanavan", 
-                "time": "2014/12/11 13:11:47.257 US/Eastern"
-            }, 
-            {
-                "action": "decline_to_qa", 
-                "review_state": "waiting_for_qa", 
-                "actor": "Kcanavan", 
-                "comments": "", 
-                "time": "2014/12/11 13:18:46.152 US/Eastern"
-            }, 
-            {
-                "action": "approve_to_staging", 
-                "review_state": "ready_for_staging", 
-                "actor": "Kcanavan", 
-                "comments": "", 
-                "time": "2014/12/11 13:18:50.740 US/Eastern"
-            }, 
-            {
-                "action": "decline_to_qa", 
-                "review_state": "waiting_for_qa", 
-                "comments": "", 
-                "actor": "sehansen", 
-                "time": "2014/12/11 14:48:15.045 US/Eastern"
-            }, 
-            {
-                "action": "approve_to_staging", 
-                "review_state": "ready_for_staging", 
-                "actor": "sehansen", 
-                "comments": "", 
-                "time": "2014/12/11 15:29:33.012 US/Eastern"
-            }, 
-            {
-                "action": "decline_to_qa", 
-                "review_state": "waiting_for_qa", 
-                "comments": "", 
-                "actor": "aimeeg", 
-                "time": "2014/12/13 16:30:23.883 US/Eastern"
-            }, 
-            {
-                "action": "approve_to_staging", 
-                "review_state": "ready_for_staging", 
-                "actor": "aimeeg", 
-                "comments": "", 
-                "time": "2014/12/13 16:45:19.175 US/Eastern"
-            }, 
-            {
-                "action": "decline_to_qa", 
-                "review_state": "waiting_for_qa", 
-                "comments": "", 
-                "actor": "Kcanavan", 
-                "time": "2015/09/10 16:50:04.772 GMT-4"
-            }, 
-            {
-                "action": "approve_to_staging", 
-                "review_state": "ready_for_staging", 
-                "actor": "Kcanavan", 
-                "comments": "", 
-                "time": "2015/09/10 17:08:07.606 GMT-4"
-            }
-        ]
-    }, 
-    "_classname": "ThisCourseAtMITSection", 
-    "metadata_contributor_list": [], 
-    "courseteamrolestext": "<div class=\"full alpha omega\"><a name=\"roles\"></a> <h2 class=\"title\">Course Team Roles</h2></div> <h3 class=\"subsubhead\">Lead Co-instructors (Prof. Taylor Perron &amp; Prof. Oliver Jagoutz)</h3> <p>Develop the course lectures, labs, exercises, and weekend field trip.</p> <h3 class=\"subsubhead\">Teaching Assistant&mdash;Graduate Student in EAPS department</h3> <ul> \t<li>Lead the labs and exercise sessions</li> \t<li>Grade the lab reports and exercises</li> \t<li>Handle the logistical preparations of the field trip</li> \t<li>Support the faculty and students on the weekend field trip</li> </ul> <h3 class=\"subsubhead\">Teaching Assistant&mdash;Undergraduate Student in EAPS department</h3> <ul> \t<li>Assist students during the labs and exercise sessions</li> \t<li>Grade the lab reports and exercises</li> \t<li>Support the faculty and students on the weekend field trip</li> </ul>", 
-    "_userdefined_roles": [], 
-    "publisher": "MIT OpenCourseWare", 
-    "theclassroomtext": "<div class=\"twothirds omega anythingSlider anythingSlider-default activeSlider\"><a name=\"classroom\"></a> <h2 class=\"title\">The Classroom</h2> <div class=\"classroom anythingWindow\"><ul style=\"width: 980px; left: -514px;\" class=\"anythingBase horizontal\" id=\"slider\">     <li class=\"panel\"><div class=\"textSlide\" id=\"externalNav\"><img width=\"290\" height=\"180\" class=\"photo\" alt=\"A medium-sized classroom with rows of tables and chairs.\" src=\"./resolveuid/97a3d81d523a4c02b9b9029d302f783b\" />     <p class=\"nav\"><img style=\"width: 15px; height: 15px; margin-right: 10px;\" src=\"/images/educator/classroom_prev.png\" alt=\"\" /> Room 1 of 3 <span><a class=\"panel2\" href=\"#\"><img alt=\"Click for next classroom.\" style=\"width: 15px; height: 15px; margin-left: 10px;\" src=\"/images/educator/classroom_next.png\" /></a></span></p>     <h3 class=\"subsubhead\">Lecture and Lab</h3>     <p>Lecture and lab took place in this geology classroom with a projector and blackboards for instruction, and tables and countertops for student work.</p></div></li>          <li class=\"panel\"><div class=\"textSlide\" id=\"externalNav\"><img width=\"290\" height=\"180\" class=\"photo\" alt=\"Several rocks and minerals on a countertop.\" src=\"./resolveuid/9369d137371ad6bb413bd9f1d03a0fad\" />     <p class=\"nav\"><span><a class=\"panel1\" href=\"#\"><img alt=\"Click for previous classroom.\" style=\"width: 15px; height: 15px; margin-right: 10px;\" src=\"/images/educator/classroom_prev.png\" /></a></span> Room 2 of 3 <img style=\"width: 15px; height: 15px; margin-left: 10px;\" src=\"/images/educator/classroom_next.png\" alt=\"\" /></p>     <h3 class=\"subsubhead\">Lecture and Lab</h3>     <p>Hand samples of rocks and minerals were used in the lectures and labs.</p></div></li>      <li class=\"panel\"><div class=\"textSlide\" id=\"externalNav\"><img width=\"290\" height=\"180\" class=\"photo\" alt=\"Stick and ball models of mineral atomic structure.\" src=\"./resolveuid/bb55765b76e3cf50294d41ef55d3d091\" />     <p class=\"nav\"><img style=\"width: 15px; height: 15px; margin-right: 10px;\" src=\"/images/educator/classroom_prev.png\" alt=\"\" /> Room 3 of 3 <span><a class=\"panel2\" href=\"#\"><img alt=\"Click for next classroom.\" style=\"width: 15px; height: 15px; margin-left: 10px;\" src=\"/images/educator/classroom_next.png\" /></a></span></p>     <h3 class=\"subsubhead\">Lecture and Lab</h3>     <p>Models of mineral structure are displayed at the back of the classroom.</p></div></li> </ul></div></div> <div class=\"clear\">&nbsp;</div>", 
-    "nextPreviousEnabled": false, 
-    "language": "", 
-    "url_rewrite_patterns": [], 
-    "widgets_features": [], 
-    "category_features": [], 
-    "firstTimeEdit": true, 
-    "feature_requirements": [], 
-    "list_in_left_nav": false, 
-    "short_name_tlp": "", 
-    "_content_type_curriculuminformationtext": "text/html", 
-    "expirationDate": "None", 
-    "_content_type_id": "text/plain", 
-    "contributor_list": [], 
-    "is_media_gallery": false, 
-    "_content_type_courseteamrolestext": "text/html", 
-    "contributors": [], 
-    "_gopip": 3, 
-    "_content_type_title": "text/plain", 
-    "_content_type": "text/html", 
+    },
     "_atrefs": {
         "BelongsTo": [
             "d9aad1541f1a9d3c0f7b0dcf9531a9a1"
-        ], 
+        ],
         "isReferencing": [
-            "bb55765b76e3cf50294d41ef55d3d091", 
-            "97a3d81d523a4c02b9b9029d302f783b", 
-            "5f25559e94913a6a8708d0bff5661b1c", 
-            "9369d137371ad6bb413bd9f1d03a0fad", 
-            "1c2cb2ad1c70fd66f19e20103dc94595", 
-            "abd48cefe43d11ae8b573e0d4a6872b9", 
-            "a9c623ed5ba59002d8a7cabe1d13ee9e", 
-            "ef6931d2c8e6bc0b8e9a5572a78fe125", 
+            "bb55765b76e3cf50294d41ef55d3d091",
+            "97a3d81d523a4c02b9b9029d302f783b",
+            "5f25559e94913a6a8708d0bff5661b1c",
+            "9369d137371ad6bb413bd9f1d03a0fad",
+            "1c2cb2ad1c70fd66f19e20103dc94595",
+            "abd48cefe43d11ae8b573e0d4a6872b9",
+            "a9c623ed5ba59002d8a7cabe1d13ee9e",
+            "ef6931d2c8e6bc0b8e9a5572a78fe125",
             "e843f795081ac616d0cebdff6e956e33"
         ]
-    }, 
-    "other_platform_requirements": "", 
-    "howstudenttimewasspenttext": "<div class=\"full alpha omega\"><a name=\"studenttime\"></a> <h2 class=\"title\">How Student Time Was Spent</h2></div> <div class=\"onehalf alpha\"><p>During an average week, students were expected to spend 12 hours on the course, roughly divided as follows:</p> <h2 class=\"subhead\">Lecture</h2> <div style=\"clear: both; position: relative;\"><div class=\"edu_hours_left\"><canvas id=\"canvas1\" height=\"100\" width=\"100\"></canvas>                                         <script>\r\n                                            var pieData = [\r\n                                                    {\r\n                                                        value: 25,\r\n                                                        color: \"#931101\"\r\n                                                    },\r\n                                                    {\r\n                                                        value: 25,\r\n                                                        color: \"#eee\"\r\n                                                    },\r\n                                                    {\r\n                                                        value: 50,\r\n                                                        color: \"#eee\"\r\n                                                    }\r\n                                                \r\n                                                ];\r\n                                        var myPie = new Chart(document.getElementById(\"canvas1\").getContext(\"2d\")).Pie(pieData);\r\n                                        </script>                                         3 hours per week</div> <div class=\"edu_hours_right\"><ul>     <li>Typically met three times a week for one hour per session; 31 sessions total.</li>     <li>Lecture by one of the two faculty instructors supplemented with slides and blackboard demonstrations.</li>     <li>Student participation was encouraged and included in the students&rsquo; final grades.</li> </ul></div> <div class=\"clear\">&nbsp;</div></div> <h2 class=\"subhead\">Recitation</h2> <div style=\"clear: both; position: relative;\"><div class=\"edu_hours_left\"><canvas id=\"canvas2\" height=\"100\" width=\"100\"></canvas>                                         <script>\r\n                                            var pieData = [\r\n                                                    {\r\n                                                        value: 25,\r\n                                                        color: \"#eee\"\r\n                                                    },\r\n                                                    {\r\n                                                        value: 25,\r\n                                                        color: \"#931101\"\r\n                                                    },\r\n                                                    {\r\n                                                        value: 50,\r\n                                                        color: \"#eee\"\r\n                                                    }\r\n                                                \r\n                                                ];\r\n                                        var myPie = new Chart(document.getElementById(\"canvas2\").getContext(\"2d\")).Pie(pieData);\r\n                                        </script>                                         3 hours per week</div> <div class=\"edu_hours_right\"><ul>     <li>Typically met three times a week for one hour per session immediately after lecture; 26 sessions total.</li>     <li>A short introduction by the faculty or teaching assistant, followed by a hands-on activity and/or group work related to the lecture.</li> </ul></div> <div class=\"clear\">&nbsp;</div></div> <h2 class=\"subhead\">Out of Class</h2> <div style=\"clear: both; position: relative;\"><div class=\"edu_hours_left\"><canvas id=\"canvas3\" height=\"100\" width=\"100\"></canvas>                                         <script>\r\n                                            var pieData = [\r\n                                                    {\r\n                                                        value: 25,\r\n                                                        color: \"#eee\"\r\n                                                    },\r\n                                                    {\r\n                                                        value: 25,\r\n                                                        color: \"#eee\"\r\n                                                    },\r\n                                                    {\r\n                                                        value: 50,\r\n                                                        color: \"#931101\"\r\n                                                    }\r\n                                                \r\n                                                ];\r\n                                        var myPie = new Chart(document.getElementById(\"canvas3\").getContext(\"2d\")).Pie(pieData);\r\n                                        </script>                                         6 hours per week</div> <div class=\"edu_hours_right\"><ul>     <li>Finish lab reports and exercises that were begun during the lab.</li>     <li>Study for quizzes.</li>     <li>Participate in the weekend field trip and complete the field trip report.</li> </ul></div> <div class=\"clear\">&nbsp;</div></div></div> <div class=\"onehalf no_title omega\"><h2 class=\"subhead\" style=\"margin-top: -10px;\">Semester Breakdown</h2> <table class=\"edu_breakdown\">     <thead>         <tr>             <th scope=\"col\" class=\"week_col\" style=\"padding-bottom: 8px;\">WEEK</th>             <th scope=\"col\" class=\"day_col\" style=\"padding-bottom: 8px;\">M</th>             <th scope=\"col\" class=\"day_col\" style=\"padding-bottom: 8px;\">T</th>             <th scope=\"col\" class=\"day_col\" style=\"padding-bottom: 8px;\">W</th>             <th scope=\"col\" class=\"day_col\" style=\"padding-bottom: 8px;\">Th</th>             <th scope=\"col\" class=\"day_col\" style=\"padding-bottom: 8px;\">F</th>         </tr>     </thead>     <tbody>         <tr>             <th scope=\"row\">1</th>             <td><img src=\"/images/educator/edu_b-noclass.png\" alt=\"No classes throughout MIT.\" /></td>             <td><img src=\"/images/educator/edu_b-noclass.png\" alt=\"No classes throughout MIT.\" /></td>             <td><img src=\"/images/educator/edu_b-leclab.png\" alt=\"Lecture and lab session.\" /></td>             <td><img src=\"/images/educator/edu_b-blank.png\" alt=\"No session scheduled.\" /></td>             <td><img src=\"/images/educator/edu_b-leclab.png\" alt=\"Lecture and lab session.\" /></td>         </tr>         <tr>             <th scope=\"row\">2</th>             <td><img src=\"/images/educator/edu_b-leclab.png\" alt=\"Lecture and lab session.\" /></td>             <td><img src=\"/images/educator/edu_b-blank.png\" alt=\"No session scheduled.\" /></td>             <td><img src=\"/images/educator/edu_b-leclab.png\" alt=\"Lecture and lab session.\" /></td>             <td><img src=\"/images/educator/edu_b-blank.png\" alt=\"No session scheduled.\" /></td>             <td><img src=\"/images/educator/edu_b-leclab.png\" alt=\"Lecture and lab session.\" /></td>         </tr>         <tr>             <th scope=\"row\">3</th>             <td><img src=\"/images/educator/edu_b-leclab.png\" alt=\"Lecture and lab session.\" /></td>             <td><img src=\"/images/educator/edu_b-blank.png\" alt=\"No session scheduled.\" /></td>             <td><img src=\"/images/educator/edu_b-lab.png\" alt=\"Lab session.\" /></td>             <td><img src=\"/images/educator/edu_b-blank.png\" alt=\"No session scheduled.\" /></td>             <td><img src=\"/images/educator/edu_b-noclass.png\" alt=\"No classes throughout MIT.\" /></td>         </tr>         <tr>             <th scope=\"row\">4</th>             <td><img src=\"/images/educator/edu_b-leclab.png\" alt=\"Lecture and lab session.\" /></td>             <td><img src=\"/images/educator/edu_b-blank.png\" alt=\"No session scheduled.\" /></td>             <td><img src=\"/images/educator/edu_b-lecture-quiz.png\" alt=\"Lecture session; quiz held.\" /></td>             <td><img src=\"/images/educator/edu_b-blank.png\" alt=\"No session scheduled.\" /></td>             <td><img src=\"/images/educator/edu_b-lab.png\" alt=\"Lab session.\" /></td>         </tr>         <tr>             <th scope=\"row\">5</th>             <td><img src=\"/images/educator/edu_b-leclab.png\" alt=\"Lecture and lab session.\" /></td>             <td><img src=\"/images/educator/edu_b-blank.png\" alt=\"No session scheduled.\" /></td>             <td><img src=\"/images/educator/edu_b-leclab.png\" alt=\"Lecture and lab session.\" /></td>             <td><img src=\"/images/educator/edu_b-blank.png\" alt=\"No session scheduled.\" /></td>             <td><img src=\"/images/educator/edu_b-leclab.png\" alt=\"Lecture and lab session.\" /></td>         </tr>         <tr>             <th scope=\"row\">6</th>             <td><img src=\"/images/educator/edu_b-leclab.png\" alt=\"Lecture and lab session.\" /></td>             <td><img src=\"/images/educator/edu_b-blank.png\" alt=\"No session scheduled.\" /></td>             <td><img src=\"/images/educator/edu_b-leclab.png\" alt=\"Lecture and lab session.\" /></td>             <td><img src=\"/images/educator/edu_b-blank.png\" alt=\"No session scheduled.\" /></td>             <td><img src=\"/images/educator/edu_b-recitation.png\" alt=\"Weekend field trip.\" /></td>         </tr>         <tr>             <th scope=\"row\">7</th>             <td><img src=\"/images/educator/edu_b-noclass.png\" alt=\"No classes throughout MIT.\" /></td>             <td><img src=\"/images/educator/edu_b-noclass.png\" alt=\"No classes throughout MIT.\" /></td>             <td><img src=\"/images/educator/edu_b-leclab.png\" alt=\"Lecture and lab session.\" /></td>             <td><img src=\"/images/educator/edu_b-blank.png\" alt=\"No session scheduled.\" /></td>             <td><img src=\"/images/educator/edu_b-leclab.png\" alt=\"Lecture and lab session.\" /></td>         </tr>         <tr>             <th scope=\"row\">8</th>             <td><img src=\"/images/educator/edu_b-leclab.png\" alt=\"Lecture and lab session.\" /></td>             <td><img src=\"/images/educator/edu_b-blank.png\" alt=\"No session scheduled.\" /></td>             <td><img src=\"/images/educator/edu_b-lecture-quiz.png\" alt=\"Lecture session; quiz held.\" /></td>             <td><img src=\"/images/educator/edu_b-blank.png\" alt=\"No session scheduled.\" /></td>             <td><img src=\"/images/educator/edu_b-leclab.png\" alt=\"Lecture and lab session.\" /></td>         </tr>         <tr>             <th scope=\"row\">9</th>             <td><img src=\"/images/educator/edu_b-leclab.png\" alt=\"Lecture and lab session.\" /></td>             <td><img src=\"/images/educator/edu_b-blank.png\" alt=\"No session scheduled.\" /></td>             <td><img src=\"/images/educator/edu_b-lecture-lunch.png\" alt=\"Lecture session; lab tour.\" /></td>             <td><img src=\"/images/educator/edu_b-blank.png\" alt=\"No session scheduled.\" /></td>             <td><img src=\"/images/educator/edu_b-leclab.png\" alt=\"Lecture and lab session.\" /></td>         </tr>         <tr>             <th scope=\"row\">10</th>             <td><img src=\"/images/educator/edu_b-lab.png\" alt=\"Lab session.\" /></td>             <td><img src=\"/images/educator/edu_b-blank.png\" alt=\"No session scheduled.\" /></td>             <td><img src=\"/images/educator/edu_b-lab.png\" alt=\"Lab session.\" /></td>             <td><img src=\"/images/educator/edu_b-blank.png\" alt=\"No session scheduled.\" /></td>             <td><img src=\"/images/educator/edu_b-lab.png\" alt=\"Lab session.\" /></td>         </tr>         <tr>             <th scope=\"row\">11</th>             <td><img src=\"/images/educator/edu_b-noclass.png\" alt=\"No classes throughout MIT.\" /></td>             <td><img src=\"/images/educator/edu_b-blank.png\" alt=\"No session scheduled.\" /></td>             <td><img src=\"/images/educator/edu_b-leclab.png\" alt=\"Lecture and lab session.\" /></td>             <td><img src=\"/images/educator/edu_b-blank.png\" alt=\"No session scheduled.\" /></td>             <td><img src=\"/images/educator/edu_b-lab.png\" alt=\"Lab session.\" /></td>         </tr>         <tr>             <th scope=\"row\">12</th>             <td><img src=\"/images/educator/edu_b-lecture-quiz.png\" alt=\"Lecture session; quiz held.\" /></td>             <td><img src=\"/images/educator/edu_b-blank.png\" alt=\"No session scheduled.\" /></td>             <td><img src=\"/images/educator/edu_b-lecture.png\" alt=\"Lecture session.\" /></td>             <td><img src=\"/images/educator/edu_b-blank.png\" alt=\"No session scheduled.\" /></td>             <td><img src=\"/images/educator/edu_b-lecture.png\" alt=\"Lecture session.\" /></td>         </tr>         <tr>             <th scope=\"row\">13</th>             <td><img src=\"/images/educator/edu_b-lecture.png\" alt=\"Lecture session.\" /></td>             <td><img src=\"/images/educator/edu_b-blank.png\" alt=\"No session scheduled.\" /></td>             <td><img src=\"/images/educator/edu_b-lecture.png\" alt=\"Lecture session.\" /></td>             <td><img src=\"/images/educator/edu_b-noclass.png\" alt=\"No classes throughout MIT.\" /></td>             <td><img src=\"/images/educator/edu_b-noclass.png\" alt=\"No classes throughout MIT.\" /></td>         </tr>         <tr>             <th scope=\"row\">14</th>             <td><img src=\"/images/educator/edu_b-lecture.png\" alt=\"Lecture session.\" /></td>             <td><img src=\"/images/educator/edu_b-blank.png\" alt=\"No session scheduled.\" /></td>             <td><img src=\"/images/educator/edu_b-leclab.png\" alt=\"Lecture and lab session.\" /></td>             <td><img src=\"/images/educator/edu_b-blank.png\" alt=\"No session scheduled.\" /></td>             <td><img src=\"/images/educator/edu_b-lecture-quiz.png\" alt=\"Lecture session; quiz held.\" /></td>         </tr>         <tr>             <th scope=\"row\">15</th>             <td><img src=\"/images/educator/edu_b-lecture.png\" alt=\"Lecture session.\" /></td>             <td><img src=\"/images/educator/edu_b-blank.png\" alt=\"No session scheduled.\" /></td>             <td><img src=\"/images/educator/edu_b-blank.png\" alt=\"No session scheduled.\" /></td>             <td><img src=\"/images/educator/edu_b-noclass.png\" alt=\"No classes throughout MIT.\" /></td>             <td><img src=\"/images/educator/edu_b-noclass.png\" alt=\"No classes throughout MIT.\" /></td>         </tr>         <tr>             <th scope=\"row\">16</th>             <td><img src=\"/images/educator/edu_b-noclass.png\" alt=\"No classes throughout MIT.\" /></td>             <td><img src=\"/images/educator/edu_b-noclass.png\" alt=\"No classes throughout MIT.\" /></td>             <td><img src=\"/images/educator/edu_b-noclass.png\" alt=\"No classes throughout MIT.\" /></td>             <td><img src=\"/images/educator/edu_b-noclass.png\" alt=\"No classes throughout MIT.\" /></td>             <td><img src=\"/images/educator/edu_b-noclass.png\" alt=\"No classes throughout MIT.\" /></td>         </tr>     </tbody> </table> <div class=\"edu_breakdown_key\"><div style=\"float: left;\"><div><img src=\"/images/educator/edu_b-noclass-key.png\" alt=\"Displays the color and pattern used on the preceding table to indicate dates when classes are not held at MIT.\" /> No classes throughout MIT</div> <div><img src=\"/images/educator/edu_b-lecture-key.png\" alt=\"Displays the color used on the preceding table to indicate dates when lecture sessions are held.\" /> Lecture session</div> <div><img src=\"/images/educator/edu_b-recitation-key.png\" alt=\"Displays the color used on the preceding table to indicate dates when a weekend fields are held.\" /> Weekend field trip</div> <div><img src=\"/images/educator/edu_b-lunch-key.png\" alt=\"Displays the symbol used on the preceding table to indicate dates when lab tours are held.\" /> Lab tour in EAPS department</div></div> <div style=\"float: right;\"><div><img src=\"/images/educator/edu_b-blank-key.png\" alt=\"Displays the color used on the preceding table to indicate dates when no class session is scheduled.\" /> No class session scheduled</div> <div><img src=\"/images/educator/edu_b-lab-key.png\" alt=\"Displays the color used on the preceding table to indicate dates when lab sessions are held.\" /> Lab session</div> <div><img src=\"/images/educator/edu_b-quiz-key.png\" alt=\"Displays the symbol used on the preceding table to indicate dates when quizzes are held.\" /> Quiz</div></div></div></div> <div class=\"clear\">&nbsp;</div>", 
-    "_content_type_courseoutcomestext": "text/html", 
-    "license": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/", 
-    "rights": "This site (c) Massachusetts Institute of Technology 2014.  Content within individual courses is (c) by the individual authors unless otherwise noted. The Massachusetts Institute of Technology is providing this Work (as defined below) under the terms of this Creative Commons public license (\"CCPL\" or \"license\") unless otherwise noted. The Work is protected by copyright and/or other applicable law. Any use of the work other than as authorized under this license is prohibited. By exercising any of the rights to the Work provided here, You (as defined below) accept and agree to be bound by the terms of this license. The Licensor, the Massachusetts Institute of Technology, grants You the rights contained here in consideration of Your acceptance of such terms and conditions.", 
-    "hide_Page_title": false, 
-    "_defaultpage": "", 
-    "courseoverviewtext": "<div class=\"onehalf alpha\"><h2 class=\"title\">Course Overview</h2> <p>This page focuses on the course <em>12.001 Introduction to Geology</em> as it was taught by Profs. Taylor Perron and Oliver Jagoutz in Fall 2013.</p> <p>This course introduces students to the basics of geology through lectures, laboratory exercises, and one weekend field trip. Topics ranging from mineral and rock identification to the origin of the continents, from geologic mapping to plate tectonics, and from erosion by rivers and glaciers to the history of life are explored.</p></div>", 
-    "_content_type_howstudenttimewasspenttext": "text/html", 
-    "tcATmit_subject_tags": [], 
-    "features_tracking": [], 
-    "ad_champion_text": "", 
-    "has_inline_embed": false, 
-    "unique_identifier": "https://ocw.mit.edu/courses/earth-atmospheric-and-planetary-sciences/12-001-introduction-to-geology-fall-2013/instructor-insights", 
-    "is_image_gallery": false, 
-    "_path": "/Plone/courses/earth-atmospheric-and-planetary-sciences/12-001-introduction-to-geology-fall-2013/instructor-insights", 
-    "id": "instructor-insights", 
-    "_content_type_courseoverviewtext": "text/html", 
-    "materialtype": "Other", 
-    "_content_type_studentinformationtext": "text/html", 
-    "instructorinsightstext": "", 
-    "_type": "ThisCourseAtMITSection", 
-    "description": "This section provides insights and information about the course from the instructors.", 
-    "course_identifier": "https://ocw.mit.edu/courses/earth-atmospheric-and-planetary-sciences/12-001-introduction-to-geology-fall-2013", 
-    "_content_type_publisher": "text/plain", 
-    "tcATmit_instructional_tags": [], 
-    "course_linking": [], 
-    "_id": "instructor-insights", 
-    "modification_date": "2019/11/20 15:43:05.746 Universal", 
-    "always_publish": false, 
-    "_content_type_description": "text/plain", 
-    "_owner": null, 
+    },
+    "_classname": "ThisCourseAtMITSection",
+    "_content_type": "text/html",
+    "_content_type_ad_type": "text/plain",
+    "_content_type_course_identifier": "text/plain",
+    "_content_type_courseoutcomestext": "text/html",
+    "_content_type_courseoverviewtext": "text/html",
+    "_content_type_courseteamrolestext": "text/html",
+    "_content_type_curriculuminformationtext": "text/html",
+    "_content_type_description": "text/plain",
+    "_content_type_howstudenttimewasspenttext": "text/html",
+    "_content_type_id": "text/plain",
+    "_content_type_license": "text/plain",
+    "_content_type_materialtype": "text/plain",
+    "_content_type_publisher": "text/plain",
+    "_content_type_rights": "text/html",
+    "_content_type_short_page_title": "text/plain",
+    "_content_type_studentinformationtext": "text/html",
+    "_content_type_technical_location": "text/plain",
+    "_content_type_theclassroomtext": "text/html",
+    "_content_type_title": "text/plain",
+    "_content_type_unique_identifier": "text/plain",
+    "_defaultpage": "",
+    "_directly_provided": [
+        "Products.CMFEditions.interfaces.IVersioned"
+    ],
+    "_gopip": 3,
+    "_id": "instructor-insights",
+    "_layout": "custom_view",
+    "_owner": null,
+    "_path": "/Plone/courses/earth-atmospheric-and-planetary-sciences/12-001-introduction-to-geology-fall-2013/instructor-insights",
     "_permissions": {
-        "Change portal events": {
-            "acquire": false, 
-            "roles": [
-                "Editor", 
-                "Manager", 
-                "MetadataEditor", 
-                "Owner"
-            ]
-        }, 
-        "Modify portal content": {
-            "acquire": false, 
-            "roles": [
-                "Manager", 
-                "MetadataEditor"
-            ]
-        }, 
         "Access contents information": {
-            "acquire": false, 
+            "acquire": false,
             "roles": [
                 "Authenticated"
             ]
-        }, 
-        "List folder contents": {
-            "acquire": false, 
+        },
+        "Change portal events": {
+            "acquire": false,
             "roles": [
-                "Editor", 
-                "Manager", 
-                "MetadataEditor", 
+                "Editor",
+                "Manager",
+                "MetadataEditor",
                 "Owner"
             ]
-        }, 
+        },
+        "List folder contents": {
+            "acquire": false,
+            "roles": [
+                "Editor",
+                "Manager",
+                "MetadataEditor",
+                "Owner"
+            ]
+        },
+        "Modify portal content": {
+            "acquire": false,
+            "roles": [
+                "Manager",
+                "MetadataEditor"
+            ]
+        },
         "View": {
-            "acquire": false, 
+            "acquire": false,
             "roles": [
                 "Authenticated"
             ]
         }
-    }, 
+    },
     "_properties": [
         [
-            "title", 
-            "Instructor Insights", 
+            "title",
+            "Instructor Insights",
             "string"
         ]
-    ], 
+    ],
+    "_type": "ThisCourseAtMITSection",
+    "_uid": "1c2cb2ad1c70fd66f19e20103dc94595",
+    "_userdefined_roles": [],
+    "_workflow_history": {
+        "page_workflow": [
+            {
+                "action": null,
+                "actor": "pgandhi3",
+                "comments": "",
+                "review_state": "waiting_for_authoring",
+                "time": "2014/09/25 03:11:27.986 GMT-4"
+            },
+            {
+                "action": "approve_to_staging",
+                "actor": "rverma83",
+                "comments": "",
+                "review_state": "ready_for_staging",
+                "time": "2014/09/25 07:52:58.485 GMT-4"
+            },
+            {
+                "action": "decline_to_qa",
+                "actor": "Kcanavan",
+                "comments": "",
+                "review_state": "waiting_for_qa",
+                "time": "2014/12/03 16:34:38.356 US/Eastern"
+            },
+            {
+                "action": "approve_to_staging",
+                "actor": "Kcanavan",
+                "comments": "",
+                "review_state": "ready_for_staging",
+                "time": "2014/12/03 17:14:52.609 US/Eastern"
+            },
+            {
+                "action": "decline",
+                "actor": "sehansen",
+                "comments": "",
+                "review_state": "waiting_for_authoring",
+                "time": "2014/12/04 15:21:56.648 US/Eastern"
+            },
+            {
+                "action": "approve_to_staging",
+                "actor": "sehansen",
+                "comments": "",
+                "review_state": "ready_for_staging",
+                "time": "2014/12/04 15:46:30.895 US/Eastern"
+            },
+            {
+                "action": "decline_to_qa",
+                "actor": "sehansen",
+                "comments": "",
+                "review_state": "waiting_for_qa",
+                "time": "2014/12/04 15:46:42.471 US/Eastern"
+            },
+            {
+                "action": "approve_to_staging",
+                "actor": "sehansen",
+                "comments": "",
+                "review_state": "ready_for_staging",
+                "time": "2014/12/04 15:46:48.353 US/Eastern"
+            },
+            {
+                "action": "decline_to_qa",
+                "actor": "Kcanavan",
+                "comments": "",
+                "review_state": "waiting_for_qa",
+                "time": "2014/12/11 13:09:34.812 US/Eastern"
+            },
+            {
+                "action": "approve_to_staging",
+                "actor": "Kcanavan",
+                "comments": "",
+                "review_state": "ready_for_staging",
+                "time": "2014/12/11 13:11:47.257 US/Eastern"
+            },
+            {
+                "action": "decline_to_qa",
+                "actor": "Kcanavan",
+                "comments": "",
+                "review_state": "waiting_for_qa",
+                "time": "2014/12/11 13:18:46.152 US/Eastern"
+            },
+            {
+                "action": "approve_to_staging",
+                "actor": "Kcanavan",
+                "comments": "",
+                "review_state": "ready_for_staging",
+                "time": "2014/12/11 13:18:50.740 US/Eastern"
+            },
+            {
+                "action": "decline_to_qa",
+                "actor": "sehansen",
+                "comments": "",
+                "review_state": "waiting_for_qa",
+                "time": "2014/12/11 14:48:15.045 US/Eastern"
+            },
+            {
+                "action": "approve_to_staging",
+                "actor": "sehansen",
+                "comments": "",
+                "review_state": "ready_for_staging",
+                "time": "2014/12/11 15:29:33.012 US/Eastern"
+            },
+            {
+                "action": "decline_to_qa",
+                "actor": "aimeeg",
+                "comments": "",
+                "review_state": "waiting_for_qa",
+                "time": "2014/12/13 16:30:23.883 US/Eastern"
+            },
+            {
+                "action": "approve_to_staging",
+                "actor": "aimeeg",
+                "comments": "",
+                "review_state": "ready_for_staging",
+                "time": "2014/12/13 16:45:19.175 US/Eastern"
+            },
+            {
+                "action": "decline_to_qa",
+                "actor": "Kcanavan",
+                "comments": "",
+                "review_state": "waiting_for_qa",
+                "time": "2015/09/10 16:50:04.772 GMT-4"
+            },
+            {
+                "action": "approve_to_staging",
+                "actor": "Kcanavan",
+                "comments": "",
+                "review_state": "ready_for_staging",
+                "time": "2015/09/10 17:08:07.606 GMT-4"
+            }
+        ]
+    },
+    "ad_champion_text": "",
+    "ad_type": "HOUSE",
+    "aggregationlevel": 3,
+    "allowDiscussion": false,
+    "always_publish": false,
+    "bottomtext": "",
+    "category_features": [],
+    "constrainTypesMode": 0,
+    "contributor_list": [],
+    "contributors": [],
+    "course_identifier": "https://ocw.mit.edu/courses/earth-atmospheric-and-planetary-sciences/12-001-introduction-to-geology-fall-2013",
+    "course_linking": [],
+    "courselist_features": [],
+    "courseoutcomestext": "<div class=\"onehalf omega\"><h2 class=\"title\">Course Outcomes</h2> <h3 class=\"subsubhead\">Course Goals for Students&nbsp;&nbsp;</h3> <ul>     <li>Understand and apply basic principles of geology</li>     <li>Gain hands-on experience with rocks, minerals, and field observations</li>     <li>Develop an awareness of the societal relevance of Earth Science</li> </ul> <h3 class=\"subsubhead\">Possibilities for Further Study</h3> <p>After this course, students may be interested in an undergraduate major or minor in <a href=\"http://eapsweb.mit.edu\">Earth, Atmospheric and Planetry Sciences</a>.</p> <p>This course is complementary to <a href=\"http://ocw.mit.edu/courses/earth-atmospheric-and-planetary-sciences/12-002-physics-and-chemistry-of-the-terrestrial-planets-fall-2008/\">12.002 <em>Physics and Chemistry of the Terrestrial Planets</em> </a>and <a href=\"http://ocw.mit.edu/courses/earth-atmospheric-and-planetary-sciences/12-003-atmosphere-ocean-and-climate-dynamics-fall-2008/\">12.003 <em>Atmosphere, Ocean, and Climate Dynamics</em>.</a></p></div> <div class=\"clear\">&nbsp;</div> <div class=\"full alpha omega\"><a name=\"insights\"></a> <h2 class=\"title\">Instructor Insights</h2></div> <p>In the following pages, Prof. Taylor Perron describes various aspects of how he teaches <em>12.001 Introduction to Geology</em>.</p> <ul>     <li><a href=\"./resolveuid/e843f795081ac616d0cebdff6e956e33\">Co-Teaching</a></li>     <li><a href=\"./resolveuid/ef6931d2c8e6bc0b8e9a5572a78fe125\">Planning a Good Field Trip</a></li>     <li><a href=\"./resolveuid/a9c623ed5ba59002d8a7cabe1d13ee9e\">Conveying the Social Relevance of Geology</a></li>     <li><a href=\"./resolveuid/abd48cefe43d11ae8b573e0d4a6872b9\">Making Sense of Messiness</a></li> </ul> <div class=\"clear\">&nbsp;</div>",
+    "courseoverviewtext": "<div class=\"onehalf alpha\"><h2 class=\"title\">Course Overview</h2> <p>This page focuses on the course <em>12.001 Introduction to Geology</em> as it was taught by Profs. Taylor Perron and Oliver Jagoutz in Fall 2013.</p> <p>This course introduces students to the basics of geology through lectures, laboratory exercises, and one weekend field trip. Topics ranging from mineral and rock identification to the origin of the continents, from geologic mapping to plate tectonics, and from erosion by rivers and glaciers to the history of life are explored.</p></div>",
+    "courseteamrolestext": "<div class=\"full alpha omega\"><a name=\"roles\"></a> <h2 class=\"title\">Course Team Roles</h2></div> <h3 class=\"subsubhead\">Lead Co-instructors (Prof. Taylor Perron &amp; Prof. Oliver Jagoutz)</h3> <p>Develop the course lectures, labs, exercises, and weekend field trip.</p> <h3 class=\"subsubhead\">Teaching Assistant&mdash;Graduate Student in EAPS department</h3> <ul> \t<li>Lead the labs and exercise sessions</li> \t<li>Grade the lab reports and exercises</li> \t<li>Handle the logistical preparations of the field trip</li> \t<li>Support the faculty and students on the weekend field trip</li> </ul> <h3 class=\"subsubhead\">Teaching Assistant&mdash;Undergraduate Student in EAPS department</h3> <ul> \t<li>Assist students during the labs and exercise sessions</li> \t<li>Grade the lab reports and exercises</li> \t<li>Support the faculty and students on the weekend field trip</li> </ul>",
+    "creation_date": "2014/09/25 03:11:27.973 GMT-4",
     "creators": [
         "pgandhi3"
-    ], 
-    "courselist_features": [], 
-    "courseoutcomestext": "<div class=\"onehalf omega\"><h2 class=\"title\">Course Outcomes</h2> <h3 class=\"subsubhead\">Course Goals for Students&nbsp;&nbsp;</h3> <ul>     <li>Understand and apply basic principles of geology</li>     <li>Gain hands-on experience with rocks, minerals, and field observations</li>     <li>Develop an awareness of the societal relevance of Earth Science</li> </ul> <h3 class=\"subsubhead\">Possibilities for Further Study</h3> <p>After this course, students may be interested in an undergraduate major or minor in <a href=\"http://eapsweb.mit.edu\">Earth, Atmospheric and Planetry Sciences</a>.</p> <p>This course is complementary to <a href=\"http://ocw.mit.edu/courses/earth-atmospheric-and-planetary-sciences/12-002-physics-and-chemistry-of-the-terrestrial-planets-fall-2008/\">12.002 <em>Physics and Chemistry of the Terrestrial Planets</em> </a>and <a href=\"http://ocw.mit.edu/courses/earth-atmospheric-and-planetary-sciences/12-003-atmosphere-ocean-and-climate-dynamics-fall-2008/\">12.003 <em>Atmosphere, Ocean, and Climate Dynamics</em>.</a></p></div> <div class=\"clear\">&nbsp;</div> <div class=\"full alpha omega\"><a name=\"insights\"></a> <h2 class=\"title\">Instructor Insights</h2></div> <p>In the following pages, Prof. Taylor Perron describes various aspects of how he teaches <em>12.001 Introduction to Geology</em>.</p> <ul>     <li><a href=\"./resolveuid/e843f795081ac616d0cebdff6e956e33\">Co-Teaching</a></li>     <li><a href=\"./resolveuid/ef6931d2c8e6bc0b8e9a5572a78fe125\">Planning a Good Field Trip</a></li>     <li><a href=\"./resolveuid/a9c623ed5ba59002d8a7cabe1d13ee9e\">Conveying the Social Relevance of Geology</a></li>     <li><a href=\"./resolveuid/abd48cefe43d11ae8b573e0d4a6872b9\">Making Sense of Messiness</a></li> </ul> <div class=\"clear\">&nbsp;</div>"
+    ],
+    "curriculuminformationtext": "<div class=\"onethird alpha\"><h2 class=\"title\">Curriculum Information</h2> <h3 class=\"subsubhead\">Prerequisites</h3> <p>The course is designed to be accessible to students from all disciplines. No geology background is assumed.</p> <h3 class=\"subsubhead\">Requirements Satisfied</h3> <ul>     <li>REST <img src=\"/images/educator/icon-question-rest.png\" class=\"question\" alt=\"\" /></li>     <li>Required course for undergraduates <a href=\"https://eapsweb.mit.edu/prospective-students/choosing-eaps-your-major\">majoring in Earth, Atmospheric, and Planetary Science</a></li>     <li>Core subject for students <a href=\"https://eapsweb.mit.edu/\">minoring in Earth, Atmospheric, and Planetary Science</a></li>     <li>Required course for undergraduates in the <a href=\"http://dmse.mit.edu/academics/undergraduate/degree-requirements/3c-program\">Program in Archaeology and Materials</a> in the Department of Materials Science and Engineering</li> </ul> <h3 class=\"subsubhead\">Offered</h3> <p>Every fall semester. (Prior to Fall 2012, this course was offered every spring semester.)</p></div>",
+    "description": "This section provides insights and information about the course from the instructors.",
+    "duration": "",
+    "effectiveDate": "2014/09/25 07:52:58.435 GMT-4",
+    "excludeFromNav": false,
+    "expirationDate": "None",
+    "feature_requirements": [],
+    "features_tracking": [],
+    "firstTimeEdit": true,
+    "has_inline_embed": false,
+    "hide_Page_title": false,
+    "howstudenttimewasspenttext": "<div class=\"full alpha omega\"><a name=\"studenttime\"></a> <h2 class=\"title\">How Student Time Was Spent</h2></div> <div class=\"onehalf alpha\"><p>During an average week, students were expected to spend 12 hours on the course, roughly divided as follows:</p> <h2 class=\"subhead\">Lecture</h2> <div style=\"clear: both; position: relative;\"><div class=\"edu_hours_left\"><canvas id=\"canvas1\" height=\"100\" width=\"100\"></canvas>                                         <script>\r\n                                            var pieData = [\r\n                                                    {\r\n                                                        value: 25,\r\n                                                        color: \"#931101\"\r\n                                                    },\r\n                                                    {\r\n                                                        value: 25,\r\n                                                        color: \"#eee\"\r\n                                                    },\r\n                                                    {\r\n                                                        value: 50,\r\n                                                        color: \"#eee\"\r\n                                                    }\r\n                                                \r\n                                                ];\r\n                                        var myPie = new Chart(document.getElementById(\"canvas1\").getContext(\"2d\")).Pie(pieData);\r\n                                        </script>                                         3 hours per week</div> <div class=\"edu_hours_right\"><ul>     <li>Typically met three times a week for one hour per session; 31 sessions total.</li>     <li>Lecture by one of the two faculty instructors supplemented with slides and blackboard demonstrations.</li>     <li>Student participation was encouraged and included in the students&rsquo; final grades.</li> </ul></div> <div class=\"clear\">&nbsp;</div></div> <h2 class=\"subhead\">Recitation</h2> <div style=\"clear: both; position: relative;\"><div class=\"edu_hours_left\"><canvas id=\"canvas2\" height=\"100\" width=\"100\"></canvas>                                         <script>\r\n                                            var pieData = [\r\n                                                    {\r\n                                                        value: 25,\r\n                                                        color: \"#eee\"\r\n                                                    },\r\n                                                    {\r\n                                                        value: 25,\r\n                                                        color: \"#931101\"\r\n                                                    },\r\n                                                    {\r\n                                                        value: 50,\r\n                                                        color: \"#eee\"\r\n                                                    }\r\n                                                \r\n                                                ];\r\n                                        var myPie = new Chart(document.getElementById(\"canvas2\").getContext(\"2d\")).Pie(pieData);\r\n                                        </script>                                         3 hours per week</div> <div class=\"edu_hours_right\"><ul>     <li>Typically met three times a week for one hour per session immediately after lecture; 26 sessions total.</li>     <li>A short introduction by the faculty or teaching assistant, followed by a hands-on activity and/or group work related to the lecture.</li> </ul></div> <div class=\"clear\">&nbsp;</div></div> <h2 class=\"subhead\">Out of Class</h2> <div style=\"clear: both; position: relative;\"><div class=\"edu_hours_left\"><canvas id=\"canvas3\" height=\"100\" width=\"100\"></canvas>                                         <script>\r\n                                            var pieData = [\r\n                                                    {\r\n                                                        value: 25,\r\n                                                        color: \"#eee\"\r\n                                                    },\r\n                                                    {\r\n                                                        value: 25,\r\n                                                        color: \"#eee\"\r\n                                                    },\r\n                                                    {\r\n                                                        value: 50,\r\n                                                        color: \"#931101\"\r\n                                                    }\r\n                                                \r\n                                                ];\r\n                                        var myPie = new Chart(document.getElementById(\"canvas3\").getContext(\"2d\")).Pie(pieData);\r\n                                        </script>                                         6 hours per week</div> <div class=\"edu_hours_right\"><ul>     <li>Finish lab reports and exercises that were begun during the lab.</li>     <li>Study for quizzes.</li>     <li>Participate in the weekend field trip and complete the field trip report.</li> </ul></div> <div class=\"clear\">&nbsp;</div></div></div> <div class=\"onehalf no_title omega\"><h2 class=\"subhead\" style=\"margin-top: -10px;\">Semester Breakdown</h2> <table class=\"edu_breakdown\">     <thead>         <tr>             <th scope=\"col\" class=\"week_col\" style=\"padding-bottom: 8px;\">WEEK</th>             <th scope=\"col\" class=\"day_col\" style=\"padding-bottom: 8px;\">M</th>             <th scope=\"col\" class=\"day_col\" style=\"padding-bottom: 8px;\">T</th>             <th scope=\"col\" class=\"day_col\" style=\"padding-bottom: 8px;\">W</th>             <th scope=\"col\" class=\"day_col\" style=\"padding-bottom: 8px;\">Th</th>             <th scope=\"col\" class=\"day_col\" style=\"padding-bottom: 8px;\">F</th>         </tr>     </thead>     <tbody>         <tr>             <th scope=\"row\">1</th>             <td><img src=\"/images/educator/edu_b-noclass.png\" alt=\"No classes throughout MIT.\" /></td>             <td><img src=\"/images/educator/edu_b-noclass.png\" alt=\"No classes throughout MIT.\" /></td>             <td><img src=\"/images/educator/edu_b-leclab.png\" alt=\"Lecture and lab session.\" /></td>             <td><img src=\"/images/educator/edu_b-blank.png\" alt=\"No session scheduled.\" /></td>             <td><img src=\"/images/educator/edu_b-leclab.png\" alt=\"Lecture and lab session.\" /></td>         </tr>         <tr>             <th scope=\"row\">2</th>             <td><img src=\"/images/educator/edu_b-leclab.png\" alt=\"Lecture and lab session.\" /></td>             <td><img src=\"/images/educator/edu_b-blank.png\" alt=\"No session scheduled.\" /></td>             <td><img src=\"/images/educator/edu_b-leclab.png\" alt=\"Lecture and lab session.\" /></td>             <td><img src=\"/images/educator/edu_b-blank.png\" alt=\"No session scheduled.\" /></td>             <td><img src=\"/images/educator/edu_b-leclab.png\" alt=\"Lecture and lab session.\" /></td>         </tr>         <tr>             <th scope=\"row\">3</th>             <td><img src=\"/images/educator/edu_b-leclab.png\" alt=\"Lecture and lab session.\" /></td>             <td><img src=\"/images/educator/edu_b-blank.png\" alt=\"No session scheduled.\" /></td>             <td><img src=\"/images/educator/edu_b-lab.png\" alt=\"Lab session.\" /></td>             <td><img src=\"/images/educator/edu_b-blank.png\" alt=\"No session scheduled.\" /></td>             <td><img src=\"/images/educator/edu_b-noclass.png\" alt=\"No classes throughout MIT.\" /></td>         </tr>         <tr>             <th scope=\"row\">4</th>             <td><img src=\"/images/educator/edu_b-leclab.png\" alt=\"Lecture and lab session.\" /></td>             <td><img src=\"/images/educator/edu_b-blank.png\" alt=\"No session scheduled.\" /></td>             <td><img src=\"/images/educator/edu_b-lecture-quiz.png\" alt=\"Lecture session; quiz held.\" /></td>             <td><img src=\"/images/educator/edu_b-blank.png\" alt=\"No session scheduled.\" /></td>             <td><img src=\"/images/educator/edu_b-lab.png\" alt=\"Lab session.\" /></td>         </tr>         <tr>             <th scope=\"row\">5</th>             <td><img src=\"/images/educator/edu_b-leclab.png\" alt=\"Lecture and lab session.\" /></td>             <td><img src=\"/images/educator/edu_b-blank.png\" alt=\"No session scheduled.\" /></td>             <td><img src=\"/images/educator/edu_b-leclab.png\" alt=\"Lecture and lab session.\" /></td>             <td><img src=\"/images/educator/edu_b-blank.png\" alt=\"No session scheduled.\" /></td>             <td><img src=\"/images/educator/edu_b-leclab.png\" alt=\"Lecture and lab session.\" /></td>         </tr>         <tr>             <th scope=\"row\">6</th>             <td><img src=\"/images/educator/edu_b-leclab.png\" alt=\"Lecture and lab session.\" /></td>             <td><img src=\"/images/educator/edu_b-blank.png\" alt=\"No session scheduled.\" /></td>             <td><img src=\"/images/educator/edu_b-leclab.png\" alt=\"Lecture and lab session.\" /></td>             <td><img src=\"/images/educator/edu_b-blank.png\" alt=\"No session scheduled.\" /></td>             <td><img src=\"/images/educator/edu_b-recitation.png\" alt=\"Weekend field trip.\" /></td>         </tr>         <tr>             <th scope=\"row\">7</th>             <td><img src=\"/images/educator/edu_b-noclass.png\" alt=\"No classes throughout MIT.\" /></td>             <td><img src=\"/images/educator/edu_b-noclass.png\" alt=\"No classes throughout MIT.\" /></td>             <td><img src=\"/images/educator/edu_b-leclab.png\" alt=\"Lecture and lab session.\" /></td>             <td><img src=\"/images/educator/edu_b-blank.png\" alt=\"No session scheduled.\" /></td>             <td><img src=\"/images/educator/edu_b-leclab.png\" alt=\"Lecture and lab session.\" /></td>         </tr>         <tr>             <th scope=\"row\">8</th>             <td><img src=\"/images/educator/edu_b-leclab.png\" alt=\"Lecture and lab session.\" /></td>             <td><img src=\"/images/educator/edu_b-blank.png\" alt=\"No session scheduled.\" /></td>             <td><img src=\"/images/educator/edu_b-lecture-quiz.png\" alt=\"Lecture session; quiz held.\" /></td>             <td><img src=\"/images/educator/edu_b-blank.png\" alt=\"No session scheduled.\" /></td>             <td><img src=\"/images/educator/edu_b-leclab.png\" alt=\"Lecture and lab session.\" /></td>         </tr>         <tr>             <th scope=\"row\">9</th>             <td><img src=\"/images/educator/edu_b-leclab.png\" alt=\"Lecture and lab session.\" /></td>             <td><img src=\"/images/educator/edu_b-blank.png\" alt=\"No session scheduled.\" /></td>             <td><img src=\"/images/educator/edu_b-lecture-lunch.png\" alt=\"Lecture session; lab tour.\" /></td>             <td><img src=\"/images/educator/edu_b-blank.png\" alt=\"No session scheduled.\" /></td>             <td><img src=\"/images/educator/edu_b-leclab.png\" alt=\"Lecture and lab session.\" /></td>         </tr>         <tr>             <th scope=\"row\">10</th>             <td><img src=\"/images/educator/edu_b-lab.png\" alt=\"Lab session.\" /></td>             <td><img src=\"/images/educator/edu_b-blank.png\" alt=\"No session scheduled.\" /></td>             <td><img src=\"/images/educator/edu_b-lab.png\" alt=\"Lab session.\" /></td>             <td><img src=\"/images/educator/edu_b-blank.png\" alt=\"No session scheduled.\" /></td>             <td><img src=\"/images/educator/edu_b-lab.png\" alt=\"Lab session.\" /></td>         </tr>         <tr>             <th scope=\"row\">11</th>             <td><img src=\"/images/educator/edu_b-noclass.png\" alt=\"No classes throughout MIT.\" /></td>             <td><img src=\"/images/educator/edu_b-blank.png\" alt=\"No session scheduled.\" /></td>             <td><img src=\"/images/educator/edu_b-leclab.png\" alt=\"Lecture and lab session.\" /></td>             <td><img src=\"/images/educator/edu_b-blank.png\" alt=\"No session scheduled.\" /></td>             <td><img src=\"/images/educator/edu_b-lab.png\" alt=\"Lab session.\" /></td>         </tr>         <tr>             <th scope=\"row\">12</th>             <td><img src=\"/images/educator/edu_b-lecture-quiz.png\" alt=\"Lecture session; quiz held.\" /></td>             <td><img src=\"/images/educator/edu_b-blank.png\" alt=\"No session scheduled.\" /></td>             <td><img src=\"/images/educator/edu_b-lecture.png\" alt=\"Lecture session.\" /></td>             <td><img src=\"/images/educator/edu_b-blank.png\" alt=\"No session scheduled.\" /></td>             <td><img src=\"/images/educator/edu_b-lecture.png\" alt=\"Lecture session.\" /></td>         </tr>         <tr>             <th scope=\"row\">13</th>             <td><img src=\"/images/educator/edu_b-lecture.png\" alt=\"Lecture session.\" /></td>             <td><img src=\"/images/educator/edu_b-blank.png\" alt=\"No session scheduled.\" /></td>             <td><img src=\"/images/educator/edu_b-lecture.png\" alt=\"Lecture session.\" /></td>             <td><img src=\"/images/educator/edu_b-noclass.png\" alt=\"No classes throughout MIT.\" /></td>             <td><img src=\"/images/educator/edu_b-noclass.png\" alt=\"No classes throughout MIT.\" /></td>         </tr>         <tr>             <th scope=\"row\">14</th>             <td><img src=\"/images/educator/edu_b-lecture.png\" alt=\"Lecture session.\" /></td>             <td><img src=\"/images/educator/edu_b-blank.png\" alt=\"No session scheduled.\" /></td>             <td><img src=\"/images/educator/edu_b-leclab.png\" alt=\"Lecture and lab session.\" /></td>             <td><img src=\"/images/educator/edu_b-blank.png\" alt=\"No session scheduled.\" /></td>             <td><img src=\"/images/educator/edu_b-lecture-quiz.png\" alt=\"Lecture session; quiz held.\" /></td>         </tr>         <tr>             <th scope=\"row\">15</th>             <td><img src=\"/images/educator/edu_b-lecture.png\" alt=\"Lecture session.\" /></td>             <td><img src=\"/images/educator/edu_b-blank.png\" alt=\"No session scheduled.\" /></td>             <td><img src=\"/images/educator/edu_b-blank.png\" alt=\"No session scheduled.\" /></td>             <td><img src=\"/images/educator/edu_b-noclass.png\" alt=\"No classes throughout MIT.\" /></td>             <td><img src=\"/images/educator/edu_b-noclass.png\" alt=\"No classes throughout MIT.\" /></td>         </tr>         <tr>             <th scope=\"row\">16</th>             <td><img src=\"/images/educator/edu_b-noclass.png\" alt=\"No classes throughout MIT.\" /></td>             <td><img src=\"/images/educator/edu_b-noclass.png\" alt=\"No classes throughout MIT.\" /></td>             <td><img src=\"/images/educator/edu_b-noclass.png\" alt=\"No classes throughout MIT.\" /></td>             <td><img src=\"/images/educator/edu_b-noclass.png\" alt=\"No classes throughout MIT.\" /></td>             <td><img src=\"/images/educator/edu_b-noclass.png\" alt=\"No classes throughout MIT.\" /></td>         </tr>     </tbody> </table> <div class=\"edu_breakdown_key\"><div style=\"float: left;\"><div><img src=\"/images/educator/edu_b-noclass-key.png\" alt=\"Displays the color and pattern used on the preceding table to indicate dates when classes are not held at MIT.\" /> No classes throughout MIT</div> <div><img src=\"/images/educator/edu_b-lecture-key.png\" alt=\"Displays the color used on the preceding table to indicate dates when lecture sessions are held.\" /> Lecture session</div> <div><img src=\"/images/educator/edu_b-recitation-key.png\" alt=\"Displays the color used on the preceding table to indicate dates when a weekend fields are held.\" /> Weekend field trip</div> <div><img src=\"/images/educator/edu_b-lunch-key.png\" alt=\"Displays the symbol used on the preceding table to indicate dates when lab tours are held.\" /> Lab tour in EAPS department</div></div> <div style=\"float: right;\"><div><img src=\"/images/educator/edu_b-blank-key.png\" alt=\"Displays the color used on the preceding table to indicate dates when no class session is scheduled.\" /> No class session scheduled</div> <div><img src=\"/images/educator/edu_b-lab-key.png\" alt=\"Displays the color used on the preceding table to indicate dates when lab sessions are held.\" /> Lab session</div> <div><img src=\"/images/educator/edu_b-quiz-key.png\" alt=\"Displays the symbol used on the preceding table to indicate dates when quizzes are held.\" /> Quiz</div></div></div></div> <div class=\"clear\">&nbsp;</div>",
+    "id": "instructor-insights",
+    "immediatelyAddableTypes": [
+        "OCWImage",
+        "CourseSection",
+        "OCWExtFile",
+        "OCWFile",
+        "MediaResource"
+    ],
+    "instructorinsightstext": "",
+    "is_image_gallery": false,
+    "is_mathml_document": false,
+    "is_media_gallery": false,
+    "language": "",
+    "license": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/",
+    "list_in_left_nav": false,
+    "locallyAllowedTypes": [
+        "OCWImage",
+        "CourseSection",
+        "OCWExtFile",
+        "OCWFile",
+        "MediaResource"
+    ],
+    "location": "",
+    "materialtype": "Other",
+    "metadata_contributor_list": [],
+    "modification_date": "2019/11/20 15:43:05.746 Universal",
+    "nextPreviousEnabled": false,
+    "other_platform_requirements": "",
+    "parent_module": "d9aad1541f1a9d3c0f7b0dcf9531a9a1",
+    "parent_uid": "d9aad1541f1a9d3c0f7b0dcf9531a9a1",
+    "publisher": "MIT OpenCourseWare",
+    "related_mit_links": "",
+    "rights": "This site (c) Massachusetts Institute of Technology 2014.  Content within individual courses is (c) by the individual authors unless otherwise noted. The Massachusetts Institute of Technology is providing this Work (as defined below) under the terms of this Creative Commons public license (\"CCPL\" or \"license\") unless otherwise noted. The Work is protected by copyright and/or other applicable law. Any use of the work other than as authorized under this license is prohibited. By exercising any of the rights to the Work provided here, You (as defined below) accept and agree to be bound by the terms of this license. The Licensor, the Massachusetts Institute of Technology, grants You the rights contained here in consideration of Your acceptance of such terms and conditions.",
+    "section_identifier": null,
+    "short_name_tlp": "",
+    "short_page_title": "Instructor Insights",
+    "software_requirements": [
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "40.0",
+            "software_name_col": "Chrome",
+            "software_type_col": "Browser"
+        },
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "8.0",
+            "software_name_col": "Safari",
+            "software_type_col": "Browser"
+        },
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "38.0",
+            "software_name_col": "Mozilla Firefox",
+            "software_type_col": "Browser"
+        },
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "9.0",
+            "software_name_col": "Internet Explorer",
+            "software_type_col": "Browser"
+        },
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "13.1",
+            "software_name_col": "Edge",
+            "software_type_col": "Browser"
+        }
+    ],
+    "studentinformationtext": "<div class=\"onehalf alpha\"><a name=\"assessment\"></a> <h2 class=\"title\">Assessment</h2> <p>The students' grades were based on the following activities:</p> <div style=\"clear: both; position: relative;\" class=\"edu_grading\"><div><canvas id=\"canvas5\" height=\"175\" width=\"175\"></canvas>                                         <script>\r\n                                            var pieData = [\r\n                                                    {\r\n                                                        value: 60,\r\n                                                        color: \"#DD1E2F\"\r\n                                                    },\r\n                                                    {\r\n                                                        value: 35,\r\n                                                        color: \"#EBB035\"\r\n                                                    },\r\n{\r\n                                                        value: 5,\r\n                                                        color: \"#9ACCEF\"\r\n                                                    }\r\n                                               \r\n                                                ];\r\n                                        var myPie = new Chart(document.getElementById(\"canvas5\").getContext(\"2d\")).Pie(pieData);\r\n                                        </script></div> <div style=\"float: right; width: 185px; margin-top: -180px;\" class=\"edu_breakdown_key\"><div><img alt=\"The color used on the preceding chart which represents the percentage of the total grade contributed by a field trip report, lab reports, and exercises.\" src=\"/images/educator/edu_b-lab-key.png\" /> 60% Field trip report, lab reports, and exercises</div> <div><img alt=\"The color used on the preceding chart which represents the percentage of the total grade contributed by quizzes.\" src=\"/images/educator/edu_b-lecture-key.png\" /> 35% Quizzes</div> <div><img alt=\"The color used on the preceding chart which represents the percentage of the total grade contributed by class participation.\" src=\"/images/educator/edu_b-present-key.png\" /> 5% Class participation</div></div> <div class=\"clear\">&nbsp;</div> <h3 class=\"subsubhead\">Assessment Note</h3> <p>Reports were evaluated on clarity of presentation as well as soundness of analysis.</p></div></div> <div class=\"onehalf omega\"><h2 class=\"title\">Student Information</h2> <div style=\"width: 105px; text-align: left; float:right; margin: 0px 0px 20px 20px;\"><img width=\"105\" height=\"105\" alt=\"20 students took this course in Fall 2013.\" src=\"./resolveuid/5f25559e94913a6a8708d0bff5661b1c\" /></div> <h3 class=\"subsubhead\">Enrollment</h3> <p>Enrollment varies between 15 and 30 students each year.</p> <h3 class=\"subsubhead\">Breakdown by Year</h3> <p>This course is taken by a combination of sophomores, juniors, and seniors.</p> <h3 class=\"subsubhead\">Breakdown by Major</h3> <p>&frac12; majors in Earth, Atmospheric, and Planetary Sciences and &frac12; majors in other departments</p></div> <div class=\"clear\">&nbsp;</div>",
+    "subject": [],
+    "tcATmit_instructional_tags": [],
+    "tcATmit_subject_tags": [],
+    "technical_location": "https://ocw.mit.edu/courses/earth-atmospheric-and-planetary-sciences/12-001-introduction-to-geology-fall-2013/instructor-insights",
+    "text": "",
+    "theclassroomtext": "<div class=\"twothirds omega anythingSlider anythingSlider-default activeSlider\"><a name=\"classroom\"></a> <h2 class=\"title\">The Classroom</h2> <div class=\"classroom anythingWindow\"><ul style=\"width: 980px; left: -514px;\" class=\"anythingBase horizontal\" id=\"slider\">     <li class=\"panel\"><div class=\"textSlide\" id=\"externalNav\"><img width=\"290\" height=\"180\" class=\"photo\" alt=\"A medium-sized classroom with rows of tables and chairs.\" src=\"./resolveuid/97a3d81d523a4c02b9b9029d302f783b\" />     <p class=\"nav\"><img style=\"width: 15px; height: 15px; margin-right: 10px;\" src=\"/images/educator/classroom_prev.png\" alt=\"\" /> Room 1 of 3 <span><a class=\"panel2\" href=\"#\"><img alt=\"Click for next classroom.\" style=\"width: 15px; height: 15px; margin-left: 10px;\" src=\"/images/educator/classroom_next.png\" /></a></span></p>     <h3 class=\"subsubhead\">Lecture and Lab</h3>     <p>Lecture and lab took place in this geology classroom with a projector and blackboards for instruction, and tables and countertops for student work.</p></div></li>          <li class=\"panel\"><div class=\"textSlide\" id=\"externalNav\"><img width=\"290\" height=\"180\" class=\"photo\" alt=\"Several rocks and minerals on a countertop.\" src=\"./resolveuid/9369d137371ad6bb413bd9f1d03a0fad\" />     <p class=\"nav\"><span><a class=\"panel1\" href=\"#\"><img alt=\"Click for previous classroom.\" style=\"width: 15px; height: 15px; margin-right: 10px;\" src=\"/images/educator/classroom_prev.png\" /></a></span> Room 2 of 3 <img style=\"width: 15px; height: 15px; margin-left: 10px;\" src=\"/images/educator/classroom_next.png\" alt=\"\" /></p>     <h3 class=\"subsubhead\">Lecture and Lab</h3>     <p>Hand samples of rocks and minerals were used in the lectures and labs.</p></div></li>      <li class=\"panel\"><div class=\"textSlide\" id=\"externalNav\"><img width=\"290\" height=\"180\" class=\"photo\" alt=\"Stick and ball models of mineral atomic structure.\" src=\"./resolveuid/bb55765b76e3cf50294d41ef55d3d091\" />     <p class=\"nav\"><img style=\"width: 15px; height: 15px; margin-right: 10px;\" src=\"/images/educator/classroom_prev.png\" alt=\"\" /> Room 3 of 3 <span><a class=\"panel2\" href=\"#\"><img alt=\"Click for next classroom.\" style=\"width: 15px; height: 15px; margin-left: 10px;\" src=\"/images/educator/classroom_next.png\" /></a></span></p>     <h3 class=\"subsubhead\">Lecture and Lab</h3>     <p>Models of mineral structure are displayed at the back of the classroom.</p></div></li> </ul></div></div> <div class=\"clear\">&nbsp;</div>",
+    "title": "Instructor Insights",
+    "unique_identifier": "https://ocw.mit.edu/courses/earth-atmospheric-and-planetary-sciences/12-001-introduction-to-geology-fall-2013/instructor-insights",
+    "url_rewrite_patterns": [],
+    "widgets_features": []
 }

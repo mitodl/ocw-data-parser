@@ -1,185 +1,185 @@
 {
-    "expanded_alternate_text": "", 
-    "features_tracking": [], 
-    "widgets_features": [], 
-    "contributors": [], 
-    "tcATmit_subject_tags": [], 
-    "unique_identifier": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-23-differential-equations-and-exp-at/18.06_L23.jpg", 
-    "_content_type_publisher": "text/plain", 
-    "_content_type_license": "text/plain", 
-    "_datafield_image": {
-        "encoding": "base64", 
-        "data": "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", 
-        "content_type": "image/jpeg", 
-        "filename": "18.06_L23.jpg"
-    }, 
-    "aggregationlevel": 2, 
-    "_uid": "df0b753c94f7498786f508d2de12bfa4", 
-    "_workflow_history": {
-        "one_state_workflow": [
-            {
-                "action": null, 
-                "review_state": "published", 
-                "actor": "Jcplayer", 
-                "comments": "", 
-                "time": "2010/10/08 11:38:12.978 GMT-4"
-            }
-        ]
-    }, 
-    "expirationDate": "None", 
-    "_content_type_id": "text/plain", 
-    "duration": "", 
-    "contributor_list": [], 
-    "id": "18.06_L23.jpg", 
-    "related_mit_links": "", 
-    "thumb_height": "", 
-    "effectiveDate": "None", 
-    "title": "18.06_L23.jpg", 
-    "_layout": "view", 
-    "parent_module": "aabc44bdb2e45374d62f30f2a6d4c63e", 
-    "_content_type": "image/jpeg", 
-    "_userdefined_roles": [], 
-    "_gopip": 0, 
-    "location": "", 
-    "_atrefs": {
-        "BelongsTo": [
-            "aabc44bdb2e45374d62f30f2a6d4c63e"
-        ]
-    }, 
-    "_content_type_course_identifier": "text/plain", 
-    "_content_type_title": "text/plain", 
-    "section_identifier": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures", 
-    "_atbrefs": {
-        "thumbnail_image": [
-            "1568af1ffb9ec83bdfedb41742aab02b"
-        ], 
-        "file_reference": [
-            "b022341473b1cafdd484a21bc71272a8"
-        ]
-    }, 
-    "creation_date": "2010/10/08 11:38:12.971 GMT-4", 
-    "_content_type_section_identifier": "text/plain", 
-    "_type": "OCWImage", 
-    "technical_location": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-23-differential-equations-and-exp-at/18.06_L23.jpg", 
-    "description": "", 
-    "thumb_width": "", 
-    "software_requirements": [
-        {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "40.0", 
-            "software_name_col": "Chrome", 
-            "maximum_version_col": ""
-        }, 
-        {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "8.0", 
-            "software_name_col": "Safari", 
-            "maximum_version_col": ""
-        }, 
-        {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "38.0", 
-            "software_name_col": "Mozilla Firefox", 
-            "maximum_version_col": ""
-        }, 
-        {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "9.0", 
-            "software_name_col": "Internet Explorer", 
-            "maximum_version_col": ""
-        }, 
-        {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "13.1", 
-            "software_name_col": "Edge", 
-            "maximum_version_col": ""
-        }
-    ], 
-    "_content_type_technical_location": "text/plain", 
-    "alternate_text": "", 
-    "credit": "", 
-    "subject": [], 
-    "_content_type_rights": "text/html", 
-    "course_identifier": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010", 
-    "_directly_provided": [], 
-    "other_platform_requirements": "", 
-    "_id": "18.06_L23.jpg", 
-    "_classname": "OCWImage", 
-    "metadata_contributor_list": [
-        {
-            "md_contributor_uid": "", 
-            "md_contributor_entity": "Todd Rautenberg", 
-            "md_contributor_hide": "", 
-            "md_contributor_special_title": "", 
-            "md_contributor_role": "Validator"
-        }, 
-        {
-            "md_contributor_uid": "", 
-            "md_contributor_entity": "Todd Rautenberg", 
-            "md_contributor_hide": "", 
-            "md_contributor_special_title": "", 
-            "md_contributor_role": "Creator"
-        }
-    ], 
-    "tcATmit_instructional_tags": [], 
-    "caption": "", 
-    "parent_uid": "1568af1ffb9ec83bdfedb41742aab02b", 
-    "modification_date": "2016/09/24 04:34:08.165 GMT-4", 
-    "course_linking": [], 
-    "publisher": "MIT OpenCourseWare", 
-    "excludeFromNav": false, 
-    "feature_requirements": [], 
-    "language": "", 
-    "license": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/", 
-    "rights": "This site (c) Massachusetts Institute of Technology 2010.  Content within individual courses is (c) by the individual authors unless otherwise noted. The Massachusetts Institute of Technology is providing this Work (as defined below) under the terms of this Creative Commons public license (\"CCPL\" or \"license\") unless otherwise noted. The Work is protected by copyright and/or other applicable law. Any use of the work other than as authorized under this license is prohibited. By exercising any of the rights to the Work provided here, You (as defined below) accept and agree to be bound by the terms of this license. The Licensor, the Massachusetts Institute of Technology, grants You the rights contained here in consideration of Your acceptance of such terms and conditions.", 
-    "always_publish": false, 
-    "popup_image_id": "", 
-    "materialtype": "Other", 
-    "_content_type_unique_identifier": "text/plain", 
-    "category_features": [], 
-    "is_pop_up_image": false, 
-    "_owner": null, 
-    "_defaultpage": "index_html", 
-    "firstTimeEdit": true, 
-    "_permissions": {
-        "Modify portal content": {
-            "acquire": false, 
-            "roles": [
-                "Editor", 
-                "Manager", 
-                "Owner"
-            ]
-        }, 
-        "Access contents information": {
-            "acquire": false, 
-            "roles": [
-                "Anonymous"
-            ]
-        }, 
-        "View": {
-            "acquire": false, 
-            "roles": [
-                "Anonymous"
-            ]
-        }
-    }, 
-    "_properties": [
-        [
-            "title", 
-            "18.06_L23.jpg", 
-            "string"
-        ]
-    ], 
-    "allowDiscussion": false, 
-    "_content_type_materialtype": "text/plain", 
-    "creators": [
-        "Jcplayer"
-    ], 
-    "courselist_features": [], 
     "_ac_local_roles": {
         "Jcplayer": [
             "Owner"
         ]
-    }, 
-    "_path": "/Plone/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-23-differential-equations-and-exp-at/18.06_L23.jpg"
+    },
+    "_atbrefs": {
+        "file_reference": [
+            "b022341473b1cafdd484a21bc71272a8"
+        ],
+        "thumbnail_image": [
+            "1568af1ffb9ec83bdfedb41742aab02b"
+        ]
+    },
+    "_atrefs": {
+        "BelongsTo": [
+            "aabc44bdb2e45374d62f30f2a6d4c63e"
+        ]
+    },
+    "_classname": "OCWImage",
+    "_content_type": "image/jpeg",
+    "_content_type_course_identifier": "text/plain",
+    "_content_type_id": "text/plain",
+    "_content_type_license": "text/plain",
+    "_content_type_materialtype": "text/plain",
+    "_content_type_publisher": "text/plain",
+    "_content_type_rights": "text/html",
+    "_content_type_section_identifier": "text/plain",
+    "_content_type_technical_location": "text/plain",
+    "_content_type_title": "text/plain",
+    "_content_type_unique_identifier": "text/plain",
+    "_datafield_image": {
+        "content_type": "image/jpeg",
+        "data": "ZW1wdHk=",
+        "encoding": "base64",
+        "filename": "18.06_L23.jpg"
+    },
+    "_defaultpage": "index_html",
+    "_directly_provided": [],
+    "_gopip": 0,
+    "_id": "18.06_L23.jpg",
+    "_layout": "view",
+    "_owner": null,
+    "_path": "/Plone/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-23-differential-equations-and-exp-at/18.06_L23.jpg",
+    "_permissions": {
+        "Access contents information": {
+            "acquire": false,
+            "roles": [
+                "Anonymous"
+            ]
+        },
+        "Modify portal content": {
+            "acquire": false,
+            "roles": [
+                "Editor",
+                "Manager",
+                "Owner"
+            ]
+        },
+        "View": {
+            "acquire": false,
+            "roles": [
+                "Anonymous"
+            ]
+        }
+    },
+    "_properties": [
+        [
+            "title",
+            "18.06_L23.jpg",
+            "string"
+        ]
+    ],
+    "_type": "OCWImage",
+    "_uid": "df0b753c94f7498786f508d2de12bfa4",
+    "_userdefined_roles": [],
+    "_workflow_history": {
+        "one_state_workflow": [
+            {
+                "action": null,
+                "actor": "Jcplayer",
+                "comments": "",
+                "review_state": "published",
+                "time": "2010/10/08 11:38:12.978 GMT-4"
+            }
+        ]
+    },
+    "aggregationlevel": 2,
+    "allowDiscussion": false,
+    "alternate_text": "",
+    "always_publish": false,
+    "caption": "",
+    "category_features": [],
+    "contributor_list": [],
+    "contributors": [],
+    "course_identifier": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010",
+    "course_linking": [],
+    "courselist_features": [],
+    "creation_date": "2010/10/08 11:38:12.971 GMT-4",
+    "creators": [
+        "Jcplayer"
+    ],
+    "credit": "",
+    "description": "",
+    "duration": "",
+    "effectiveDate": "None",
+    "excludeFromNav": false,
+    "expanded_alternate_text": "",
+    "expirationDate": "None",
+    "feature_requirements": [],
+    "features_tracking": [],
+    "firstTimeEdit": true,
+    "id": "18.06_L23.jpg",
+    "is_pop_up_image": false,
+    "language": "",
+    "license": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/",
+    "location": "",
+    "materialtype": "Other",
+    "metadata_contributor_list": [
+        {
+            "md_contributor_entity": "Todd Rautenberg",
+            "md_contributor_hide": "",
+            "md_contributor_role": "Validator",
+            "md_contributor_special_title": "",
+            "md_contributor_uid": ""
+        },
+        {
+            "md_contributor_entity": "Todd Rautenberg",
+            "md_contributor_hide": "",
+            "md_contributor_role": "Creator",
+            "md_contributor_special_title": "",
+            "md_contributor_uid": ""
+        }
+    ],
+    "modification_date": "2016/09/24 04:34:08.165 GMT-4",
+    "other_platform_requirements": "",
+    "parent_module": "aabc44bdb2e45374d62f30f2a6d4c63e",
+    "parent_uid": "1568af1ffb9ec83bdfedb41742aab02b",
+    "popup_image_id": "",
+    "publisher": "MIT OpenCourseWare",
+    "related_mit_links": "",
+    "rights": "This site (c) Massachusetts Institute of Technology 2010.  Content within individual courses is (c) by the individual authors unless otherwise noted. The Massachusetts Institute of Technology is providing this Work (as defined below) under the terms of this Creative Commons public license (\"CCPL\" or \"license\") unless otherwise noted. The Work is protected by copyright and/or other applicable law. Any use of the work other than as authorized under this license is prohibited. By exercising any of the rights to the Work provided here, You (as defined below) accept and agree to be bound by the terms of this license. The Licensor, the Massachusetts Institute of Technology, grants You the rights contained here in consideration of Your acceptance of such terms and conditions.",
+    "section_identifier": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures",
+    "software_requirements": [
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "40.0",
+            "software_name_col": "Chrome",
+            "software_type_col": "Browser"
+        },
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "8.0",
+            "software_name_col": "Safari",
+            "software_type_col": "Browser"
+        },
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "38.0",
+            "software_name_col": "Mozilla Firefox",
+            "software_type_col": "Browser"
+        },
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "9.0",
+            "software_name_col": "Internet Explorer",
+            "software_type_col": "Browser"
+        },
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "13.1",
+            "software_name_col": "Edge",
+            "software_type_col": "Browser"
+        }
+    ],
+    "subject": [],
+    "tcATmit_instructional_tags": [],
+    "tcATmit_subject_tags": [],
+    "technical_location": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-23-differential-equations-and-exp-at/18.06_L23.jpg",
+    "thumb_height": "",
+    "thumb_width": "",
+    "title": "18.06_L23.jpg",
+    "unique_identifier": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-23-differential-equations-and-exp-at/18.06_L23.jpg",
+    "widgets_features": []
 }

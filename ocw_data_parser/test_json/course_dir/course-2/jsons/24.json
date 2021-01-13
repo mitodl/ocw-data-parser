@@ -1,629 +1,629 @@
 {
-    "text": "<h2 class=\"subhead\">Instructor Key</h2> <p>[TP] = Taylor Perron<br /> [OJ] = Oliver Jagoutz</p> <div class=\"maintabletemplate\"><table class=\"tablewidth100\" summary=\"See table caption for summary.\">     <caption class=\"invisible\">Lecture notes and slides.</caption>  <!-- BEGIN TABLE HEADER (for MIT OCW Table Template 2.51) -->     <thead>         <tr>             <th scope=\"col\">SES&nbsp;#</th>             <th scope=\"col\">INSTRUCTORS</th>             <th scope=\"col\">TOPICS</th>             <th scope=\"col\">NOTES</th>             <th scope=\"col\">SLIDES</th>         </tr>     </thead>     <!-- END TABLE HEADER -->     <tbody>         <tr class=\"row\">             <td>1</td>             <td>TP, OJ</td>             <td>Overview: Introduction to the Introduction of Geology</td>             <td><a href=\"./resolveuid/afe6a58db228c6f134a347dd2225e78a\">Lecture 1 Notes (PDF)</a></td>             <td><img alt=\"This resource may not render correctly in a screen reader.\" src=\"/images/inacessible.gif\" /><span class=\"nobr\"><a href=\"./resolveuid/d8c5746d11664a62a1ede4fecfca6e37\">Lecture 1 Slides (PDF - 1.6MB)</a></span></td>         </tr>         <tr class=\"alt-row\">             <td>2</td>             <td>TP</td>             <td>Origin and Age of the Earth</td>             <td><a href=\"./resolveuid/f9eded771045c0c682af8e7b0cea495d\">Lecture 2 Notes (PDF)</a></td>             <td><img src=\"/images/inacessible.gif\" alt=\"This resource may not render correctly in a screen reader.\" /><span class=\"nobr\"><a href=\"./resolveuid/b463875b69d4156b90faaeb0dd7ca66b\">Lecture 2 Slides (PDF - 2.6MB)</a></span></td>         </tr>         <tr class=\"row\">             <td>3</td>             <td>OJ</td>             <td>Introduction to Minerals</td>             <td><a href=\"./resolveuid/1b86cb3a4854134975175f73a85c2f23\">Lecture 3 Notes (PDF)</a></td>             <td><img alt=\"This resource may not render correctly in a screen reader.\" src=\"/images/inacessible.gif\" /><span class=\"nobr\"><a href=\"./resolveuid/bbb20ec6c4f529ce9dc34565ddd5c411\">Lecture 3 Slides (PDF - 2.3MB)</a></span></td>         </tr>         <tr class=\"alt-row\">             <td>4</td>             <td>OJ</td>             <td>Igneous Rocks</td>             <td><img src=\"/images/inacessible.gif\" alt=\"This resource may not render correctly in a screen reader.\" /><a href=\"./resolveuid/0c6afef275a07fa8888f7ebb3730f0c8\">Lecture 4 Notes (PDF)</a></td>             <td>Slides are not available for this lecture.</td>         </tr>         <tr class=\"row\">             <td>5</td>             <td>OJ</td>             <td>Metamorphic Rocks</td>             <td><a href=\"./resolveuid/93e58d46191f9fc3c54ec80752ad3b80\">Lecture 5 Notes (PDF)</a></td>             <td>Slides are not available for this lecture.</td>         </tr>         <tr class=\"alt-row\">             <td>6</td>             <td>TP</td>             <td>Sedimentary Rocks</td>             <td><a href=\"./resolveuid/7938449f4f2e757a7d63cc05860c954a\">Lecture 6 Notes (PDF)</a></td>             <td><img src=\"/images/inacessible.gif\" alt=\"This resource may not render correctly in a screen reader.\" /><span class=\"nobr\"><a href=\"./resolveuid/feefeb51ec6d693e201a36c00b7729a3\">Lecture 6 Slides (PDF - 3.6MB)</a></span></td>         </tr>         <tr class=\"row\">             <td>8</td>             <td>OJ</td>             <td>Rock Structure and Deformation</td>             <td><img alt=\"This resource may not render correctly in a screen reader.\" src=\"/images/inacessible.gif\" /><a href=\"./resolveuid/64987778c6eaea423d4ee8b8beaa9fcb\">Lecture 8 Notes (PDF)</a></td>             <td><img alt=\"This resource may not render correctly in a screen reader.\" src=\"/images/inacessible.gif\" /><span class=\"nobr\"><a href=\"./resolveuid/a6cf39f281f0c7eb117836d77d0c9825\">Lecture 8 Slides (PDF - 4.2MB)</a></span></td>         </tr>         <tr class=\"alt-row\">             <td>11</td>             <td>OJ</td>             <td>Geologic Time: Relative versus Absolute Dating</td>             <td><a href=\"./resolveuid/725e81b27b8fbec38927b1e07c2f4f83\">Lecture 11 Notes (PDF)</a></td>             <td><img alt=\"This resource may not render correctly in a screen reader.\" src=\"/images/inacessible.gif\" /><span class=\"nobr\"><a href=\"./resolveuid/95c4779902dd7abe4d0ec6ce00e384d6\">Lecture 11 Slides (PDF)</a></span></td>         </tr>         <tr class=\"row\">             <td>12</td>             <td>OJ</td>             <td>Volcanoes</td>             <td><img src=\"/images/inacessible.gif\" alt=\"This resource may not render correctly in a screen reader.\" /><a href=\"./resolveuid/40968288047d50c309013dc03719e117\">Lecture 12 Notes (PDF)</a></td>             <td><img alt=\"This resource may not render correctly in a screen reader.\" src=\"/images/inacessible.gif\" /><span class=\"nobr\"><a href=\"./resolveuid/5642a0c11593cfae7b86e1b019f95dd9\">Lecture 12 Slides (PDF)</a></span></td>         </tr>         <tr class=\"alt-row\">             <td>13&ndash;15</td>             <td>TP</td>             <td>Plate Tectonics</td>             <td><a href=\"./resolveuid/7883fdc65f0f4ffe3ef319beedc4bdc8\">Lecture 13-15 Notes (PDF - 1.1MB)</a></td>             <td><img src=\"/images/inacessible.gif\" alt=\"This resource may not render correctly in a screen reader.\" /><span class=\"nobr\"><a href=\"./resolveuid/b71391731640eec130d5377e17a58f9f\">Lecture 13-15 Slides (PDF - 9.7MB)</a></span></td>         </tr>         <tr class=\"row\">             <td>17</td>             <td>OJ</td>             <td>Continental Crust Formation</td>             <td>Notes are not available for this lecture.</td>             <td>Slides are not available for this lecture.</td>         </tr>         <tr class=\"alt-row\">             <td>18</td>             <td>OJ</td>             <td>Oceanic Crust Formation</td>             <td>Notes are not available for this lecture.</td>             <td><img alt=\"This resource may not render correctly in a screen reader.\" src=\"/images/inacessible.gif\" /><span class=\"nobr\"><a href=\"./resolveuid/7ae34483a731c75347e2e65e2862c52c\">Lecture 18 Slides (PDF - 4.1MB)</a></span></td>         </tr>         <tr class=\"row\">             <td>19</td>             <td>TP</td>             <td>Earthquakes</td>             <td><a href=\"./resolveuid/8271452e03553099040a97e005b199ac\">Lecture 19 Notes (PDF)</a></td>             <td><img alt=\"This resource may not render correctly in a screen reader.\" src=\"/images/inacessible.gif\" /><span class=\"nobr\"><a href=\"./resolveuid/c1f05935417d91f6887916de7b316f46\">Lecture 19 Slides (PDF - 1.4MB)</a></span></td>         </tr>         <tr class=\"alt-row\">             <td>21</td>             <td>TP</td>             <td>Topography</td>             <td><img alt=\"This resource may not render correctly in a screen reader.\" src=\"/images/inacessible.gif\" /><a href=\"./resolveuid/66687cb68ded354da25bd27ca3d81a26\">Lecture 21 Notes (PDF)</a></td>             <td><img alt=\"This resource may not render correctly in a screen reader.\" src=\"/images/inacessible.gif\" /><span class=\"nobr\"><a href=\"./resolveuid/3fe343fa2d8db5fef59ce836fae16ae1\">Lecture 21 Slides (PDF - 3.8MB)</a></span></td>         </tr>         <tr class=\"row\">             <td>22</td>             <td>OJ</td>             <td>Field Techniques</td>             <td><a href=\"./resolveuid/7de2acad99d8c66fa0712cf95d7acc2d\">Lecture 22 Notes (PDF)</a></td>             <td>Slides are not available for this lecture.</td>         </tr>         <tr class=\"alt-row\">             <td>24</td>             <td>OJ</td>             <td>Introduction to Geologic Mapping</td>             <td>Notes are not available for this lecture.</td>             <td>Slides are not available for this lecture.</td>         </tr>         <tr class=\"row\">             <td>28</td>             <td>TP</td>             <td>Rivers</td>             <td><a href=\"./resolveuid/526a37955368dfee90091327394fa6fe\">Lecture 28 Notes (PDF)</a></td>             <td><a href=\"./resolveuid/cf74a58b49c9caf991986d0ab832b3a6\"><img alt=\"This resource may not render correctly in a screen reader.\" src=\"/images/inacessible.gif\" /><span class=\"nobr\">Lecture 28 Slides (PDF - 6.0MB)</span></a></td>         </tr>         <tr class=\"alt-row\">             <td>31</td>             <td>TP</td>             <td>Landslides and Debris Flows</td>             <td><img src=\"/images/inacessible.gif\" alt=\"This resource may not render correctly in a screen reader.\" /><a href=\"./resolveuid/d3e109e28ea40d8e72855012d81221bb\">Lecture 31 Notes (PDF)</a></td>             <td><img alt=\"This resource may not render correctly in a screen reader.\" src=\"/images/inacessible.gif\" /><span class=\"nobr\"><a href=\"./resolveuid/581e54a948481676142eca96a0129878\"> Lecture 31 Slides (PDF - 1.8MB)</a></span></td>         </tr>         <tr class=\"row\">             <td>32</td>             <td>TP</td>             <td>Glaciers</td>             <td><a href=\"./resolveuid/bcca3aeb2b6a50bcc665b2b7f93d4ff4\">Lecture 32 Notes (PDF)</a></td>             <td><img alt=\"This resource may not render correctly in a screen reader.\" src=\"/images/inacessible.gif\" /><span class=\"nobr\"><a href=\"./resolveuid/35d573e58b6526babbd1a5c3e6cc689d\">Lecture 32 Slides (PDF - 5.9MB)</a></span></td>         </tr>         <tr class=\"alt-row\">             <td>33</td>             <td>TP</td>             <td>Climate through Geologic History</td>             <td><a href=\"./resolveuid/69fad51ff2c968b50a4385ed46b5ef1e\">Lecture 33 Notes (PDF)</a></td>             <td><img alt=\"This resource may not render correctly in a screen reader.\" src=\"/images/inacessible.gif\" /><span class=\"nobr\"><a href=\"./resolveuid/fbd6bee4c6c78fcbe1946359395b1069\">Lecture 33 Slides (PDF - 2.2MB)</a></span></td>         </tr>         <tr class=\"row\">             <td>34</td>             <td>TP</td>             <td>Earth History and Geobiology</td>             <td><a href=\"./resolveuid/730a8be9baea5c1090f794490c792f6d\">Lecture 34 Notes (PDF)</a></td>             <td><img alt=\"This resource may not render correctly in a screen reader.\" src=\"/images/inacessible.gif\" /><span class=\"nobr\"><a href=\"./resolveuid/9f758adca4a5b224cfcb308fc8e4c55c\">Lecture 34 Slides (PDF - 3.5MB)</a></span></td>         </tr>         <tr class=\"alt-row\">             <td>35</td>             <td>TP</td>             <td>Earth Science and Society</td>             <td><a href=\"./resolveuid/aa123b818503ad107b864c3c21571f95\">Lecture 35 Notes (PDF)</a></td>             <td>Slides are not available for this lecture.</td>         </tr>         <tr class=\"row\">             <td>36</td>             <td>TP</td>             <td>Comparative Planetology</td>             <td><a href=\"./resolveuid/46af56797a1dfd6bdd111a36a87ccc0b\">Lecture 36 Notes (PDF)</a></td>             <td><img alt=\"This resource may not render correctly in a screen reader.\" src=\"/images/inacessible.gif\" /><span class=\"nobr\"><a href=\"./resolveuid/89cf411fce39330a1b3aaf426c9bcb1c\">Lecture 36 Slides (PDF - 4.9MB)</a></span></td>         </tr>         <!-- TEN ROWS -->     </tbody> </table></div>", 
-    "_content_type_license": "text/plain", 
-    "_uid": "7a74d241d2fe5d877f747158998d8ed3", 
-    "title": "Lecture Notes and Slides", 
     "_ac_local_roles": {
         "pgandhi3": [
             "Owner"
         ]
-    }, 
-    "location": "", 
-    "_content_type_course_identifier": "text/plain", 
+    },
     "_atbrefs": {
         "isReferencing": [
             "7a74d241d2fe5d877f747158998d8ed3"
         ]
-    }, 
-    "constrainTypesMode": 0, 
-    "technical_location": "https://ocw.mit.edu/courses/earth-atmospheric-and-planetary-sciences/12-001-introduction-to-geology-fall-2013/lecture-notes-and-slides", 
-    "software_requirements": [
-        {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "40.0", 
-            "software_name_col": "Chrome", 
-            "maximum_version_col": ""
-        }, 
-        {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "8.0", 
-            "software_name_col": "Safari", 
-            "maximum_version_col": ""
-        }, 
-        {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "38.0", 
-            "software_name_col": "Mozilla Firefox", 
-            "maximum_version_col": ""
-        }, 
-        {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "9.0", 
-            "software_name_col": "Internet Explorer", 
-            "maximum_version_col": ""
-        }, 
-        {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "13.1", 
-            "software_name_col": "Edge", 
-            "maximum_version_col": ""
-        }
-    ], 
-    "_content_type_technical_location": "text/plain", 
-    "_content_type_rights": "text/html", 
-    "_directly_provided": [
-        "Products.CMFEditions.interfaces.IVersioned"
-    ], 
-    "parent_uid": "d9aad1541f1a9d3c0f7b0dcf9531a9a1", 
-    "excludeFromNav": false, 
-    "_content_type_unique_identifier": "text/plain", 
-    "allowDiscussion": false, 
-    "metadata_contributor_list": [], 
-    "locallyAllowedTypes": [
-        "OCWImage", 
-        "CourseSection", 
-        "OCWExtFile", 
-        "OCWFile", 
-        "MediaResource"
-    ], 
-    "_content_type_text": "text/html", 
-    "ad_type": "HOUSE", 
-    "creation_date": "2014/09/25 03:44:36.315 GMT-4", 
-    "aggregationlevel": 3, 
-    "duration": "", 
-    "immediatelyAddableTypes": [
-        "OCWImage", 
-        "CourseSection", 
-        "OCWExtFile", 
-        "OCWFile", 
-        "MediaResource"
-    ], 
-    "subject": [], 
-    "_content_type_short_page_title": "text/plain", 
-    "effectiveDate": "2014/09/25 07:52:59.875 GMT-4", 
-    "parent_module": "d9aad1541f1a9d3c0f7b0dcf9531a9a1", 
-    "is_mathml_document": false, 
-    "bottomtext": "", 
-    "short_page_title": "Lecture Notes and Slides", 
-    "section_identifier": null, 
-    "related_mit_links": "", 
-    "_content_type_ad_type": "text/plain", 
-    "_layout": "custom_view", 
-    "_workflow_history": {
-        "page_workflow": [
-            {
-                "action": null, 
-                "review_state": "waiting_for_authoring", 
-                "comments": "", 
-                "actor": "pgandhi3", 
-                "time": "2014/09/25 03:44:36.325 GMT-4"
-            }, 
-            {
-                "action": "approve_to_staging", 
-                "review_state": "ready_for_staging", 
-                "actor": "rverma83", 
-                "comments": "", 
-                "time": "2014/09/25 07:53:01.392 GMT-4"
-            }, 
-            {
-                "action": "decline", 
-                "review_state": "waiting_for_authoring", 
-                "actor": "pgandhi3", 
-                "comments": "", 
-                "time": "2014/09/25 11:50:09.681 GMT-4"
-            }, 
-            {
-                "action": "approve_to_staging", 
-                "review_state": "ready_for_staging", 
-                "actor": "pgandhi3", 
-                "comments": "", 
-                "time": "2014/09/25 11:51:45.091 GMT-4"
-            }, 
-            {
-                "action": "decline", 
-                "review_state": "waiting_for_authoring", 
-                "comments": "", 
-                "actor": "pgandhi3", 
-                "time": "2014/09/30 23:38:44.911 GMT-4"
-            }, 
-            {
-                "action": "approve_to_staging", 
-                "review_state": "ready_for_staging", 
-                "actor": "pgandhi3", 
-                "comments": "", 
-                "time": "2014/10/01 07:44:52.167 GMT-4"
-            }, 
-            {
-                "action": "decline", 
-                "review_state": "waiting_for_authoring", 
-                "comments": "", 
-                "actor": "ndhamija", 
-                "time": "2014/10/07 02:02:27.807 GMT-4"
-            }, 
-            {
-                "action": "approve_to_staging", 
-                "review_state": "ready_for_staging", 
-                "actor": "pgandhi3", 
-                "comments": "", 
-                "time": "2014/10/08 09:54:20.114 GMT-4"
-            }, 
-            {
-                "action": "decline", 
-                "review_state": "waiting_for_authoring", 
-                "comments": "", 
-                "actor": "pgandhi3", 
-                "time": "2014/10/10 06:07:09.466 GMT-4"
-            }, 
-            {
-                "action": "approve_to_staging", 
-                "review_state": "ready_for_staging", 
-                "actor": "pgandhi3", 
-                "comments": "", 
-                "time": "2014/10/10 07:21:45.068 GMT-4"
-            }, 
-            {
-                "action": "decline", 
-                "review_state": "waiting_for_authoring", 
-                "comments": "", 
-                "actor": "pgandhi3", 
-                "time": "2014/10/10 08:08:47.754 GMT-4"
-            }, 
-            {
-                "action": "approve_to_staging", 
-                "review_state": "ready_for_staging", 
-                "comments": "", 
-                "actor": "pgandhi3", 
-                "time": "2014/10/10 08:10:27.987 GMT-4"
-            }, 
-            {
-                "action": "decline", 
-                "review_state": "waiting_for_authoring", 
-                "actor": "rverma83", 
-                "comments": "", 
-                "time": "2014/10/20 04:43:30.724 GMT-4"
-            }, 
-            {
-                "action": "approve_to_staging", 
-                "review_state": "ready_for_staging", 
-                "comments": "", 
-                "actor": "rverma83", 
-                "time": "2014/10/20 05:03:26.721 GMT-4"
-            }, 
-            {
-                "action": "decline", 
-                "review_state": "waiting_for_authoring", 
-                "actor": "rverma83", 
-                "comments": "", 
-                "time": "2014/10/20 05:24:12.278 GMT-4"
-            }, 
-            {
-                "action": "approve_to_staging", 
-                "review_state": "ready_for_staging", 
-                "actor": "rverma83", 
-                "comments": "", 
-                "time": "2014/10/20 05:24:16.524 GMT-4"
-            }, 
-            {
-                "action": "decline", 
-                "review_state": "waiting_for_authoring", 
-                "comments": "", 
-                "actor": "rverma83", 
-                "time": "2014/10/20 06:24:31.991 GMT-4"
-            }, 
-            {
-                "action": "approve_to_staging", 
-                "review_state": "ready_for_staging", 
-                "comments": "", 
-                "actor": "rverma83", 
-                "time": "2014/10/20 06:26:42.751 GMT-4"
-            }, 
-            {
-                "action": "decline_to_qa", 
-                "review_state": "waiting_for_qa", 
-                "comments": "", 
-                "actor": "aimeeg", 
-                "time": "2014/10/21 11:34:51.985 GMT-4"
-            }, 
-            {
-                "action": "approve_to_staging", 
-                "review_state": "ready_for_staging", 
-                "actor": "aimeeg", 
-                "comments": "", 
-                "time": "2014/10/21 11:35:35.401 GMT-4"
-            }, 
-            {
-                "action": "decline", 
-                "review_state": "waiting_for_authoring", 
-                "comments": "", 
-                "actor": "rverma83", 
-                "time": "2014/10/24 06:16:50.795 GMT-4"
-            }, 
-            {
-                "action": "approve_to_staging", 
-                "review_state": "ready_for_staging", 
-                "actor": "rverma83", 
-                "comments": "", 
-                "time": "2014/10/24 06:56:48.310 GMT-4"
-            }, 
-            {
-                "action": "decline", 
-                "review_state": "waiting_for_authoring", 
-                "comments": "", 
-                "actor": "rverma83", 
-                "time": "2014/10/28 01:59:56.723 GMT-4"
-            }, 
-            {
-                "action": "approve_to_staging", 
-                "review_state": "ready_for_staging", 
-                "comments": "", 
-                "actor": "rverma83", 
-                "time": "2014/10/28 02:00:19.457 GMT-4"
-            }, 
-            {
-                "action": "decline_to_qa", 
-                "review_state": "waiting_for_qa", 
-                "actor": "aimeeg", 
-                "comments": "", 
-                "time": "2014/11/03 14:23:25.181 US/Eastern"
-            }, 
-            {
-                "action": "approve_to_staging", 
-                "review_state": "ready_for_staging", 
-                "comments": "", 
-                "actor": "aimeeg", 
-                "time": "2014/11/03 14:26:46.001 US/Eastern"
-            }, 
-            {
-                "action": "decline", 
-                "review_state": "waiting_for_authoring", 
-                "actor": "asingh124", 
-                "comments": "", 
-                "time": "2014/11/18 05:02:01.645 US/Eastern"
-            }, 
-            {
-                "action": "approve_to_staging", 
-                "review_state": "ready_for_staging", 
-                "comments": "", 
-                "actor": "asingh124", 
-                "time": "2014/11/18 05:02:56.395 US/Eastern"
-            }, 
-            {
-                "action": "decline", 
-                "review_state": "waiting_for_authoring", 
-                "comments": "", 
-                "actor": "asingh124", 
-                "time": "2014/11/18 05:03:32.394 US/Eastern"
-            }, 
-            {
-                "action": "approve_to_staging", 
-                "review_state": "ready_for_staging", 
-                "actor": "asingh124", 
-                "comments": "", 
-                "time": "2014/11/18 05:04:09.131 US/Eastern"
-            }, 
-            {
-                "action": "decline", 
-                "review_state": "waiting_for_authoring", 
-                "comments": "", 
-                "actor": "pgandhi3", 
-                "time": "2014/12/03 05:50:27.959 US/Eastern"
-            }, 
-            {
-                "action": "approve_to_staging", 
-                "review_state": "ready_for_staging", 
-                "actor": "asingh124", 
-                "comments": "", 
-                "time": "2014/12/03 06:18:36.236 US/Eastern"
-            }, 
-            {
-                "action": "decline", 
-                "review_state": "waiting_for_authoring", 
-                "actor": "pgandhi3", 
-                "comments": "", 
-                "time": "2014/12/03 06:19:59.457 US/Eastern"
-            }, 
-            {
-                "action": "approve_to_staging", 
-                "review_state": "ready_for_staging", 
-                "comments": "", 
-                "actor": "pgandhi3", 
-                "time": "2014/12/03 06:31:09.156 US/Eastern"
-            }, 
-            {
-                "action": "decline", 
-                "review_state": "waiting_for_authoring", 
-                "actor": "asingh33", 
-                "comments": "", 
-                "time": "2014/12/17 23:38:14.382 US/Eastern"
-            }, 
-            {
-                "action": "approve_to_staging", 
-                "review_state": "ready_for_staging", 
-                "comments": "", 
-                "actor": "asingh33", 
-                "time": "2014/12/17 23:40:28.047 US/Eastern"
-            }, 
-            {
-                "action": "decline", 
-                "review_state": "waiting_for_authoring", 
-                "actor": "rverma83", 
-                "comments": "", 
-                "time": "2014/12/22 02:18:27.971 US/Eastern"
-            }, 
-            {
-                "action": "approve_to_staging", 
-                "review_state": "ready_for_staging", 
-                "comments": "", 
-                "actor": "rverma83", 
-                "time": "2014/12/22 02:48:15.258 US/Eastern"
-            }, 
-            {
-                "action": "decline", 
-                "review_state": "waiting_for_authoring", 
-                "actor": "rverma83", 
-                "comments": "", 
-                "time": "2014/12/22 02:57:42.413 US/Eastern"
-            }, 
-            {
-                "action": "approve_to_staging", 
-                "review_state": "ready_for_staging", 
-                "comments": "", 
-                "actor": "rverma83", 
-                "time": "2014/12/22 03:00:48.511 US/Eastern"
-            }, 
-            {
-                "action": "decline", 
-                "review_state": "waiting_for_authoring", 
-                "actor": "rverma83", 
-                "comments": "", 
-                "time": "2014/12/22 06:02:12.818 US/Eastern"
-            }, 
-            {
-                "action": "approve_to_staging", 
-                "review_state": "ready_for_staging", 
-                "actor": "rverma83", 
-                "comments": "", 
-                "time": "2014/12/22 06:30:59.943 US/Eastern"
-            }, 
-            {
-                "action": "decline", 
-                "review_state": "waiting_for_authoring", 
-                "comments": "", 
-                "actor": "rverma83", 
-                "time": "2014/12/22 06:46:47.367 US/Eastern"
-            }, 
-            {
-                "action": "approve_to_staging", 
-                "review_state": "ready_for_staging", 
-                "actor": "rverma83", 
-                "comments": "", 
-                "time": "2014/12/22 06:48:56.549 US/Eastern"
-            }, 
-            {
-                "action": "decline", 
-                "review_state": "waiting_for_authoring", 
-                "comments": "", 
-                "actor": "rverma83", 
-                "time": "2015/01/07 01:42:03.852 US/Eastern"
-            }, 
-            {
-                "action": "approve_to_staging", 
-                "review_state": "ready_for_staging", 
-                "comments": "", 
-                "actor": "rverma83", 
-                "time": "2015/01/07 01:44:50.418 US/Eastern"
-            }, 
-            {
-                "action": "decline", 
-                "review_state": "waiting_for_authoring", 
-                "comments": "", 
-                "actor": "rverma83", 
-                "time": "2015/01/07 23:42:02.341 US/Eastern"
-            }, 
-            {
-                "action": "approve_to_staging", 
-                "review_state": "ready_for_staging", 
-                "actor": "rverma83", 
-                "comments": "", 
-                "time": "2015/01/07 23:59:33.240 US/Eastern"
-            }, 
-            {
-                "action": "decline", 
-                "review_state": "waiting_for_authoring", 
-                "actor": "rverma83", 
-                "comments": "", 
-                "time": "2015/01/07 23:59:38.233 US/Eastern"
-            }, 
-            {
-                "action": "approve_to_staging", 
-                "review_state": "ready_for_staging", 
-                "actor": "asingh33", 
-                "comments": "", 
-                "time": "2015/01/08 05:57:17.725 US/Eastern"
-            }, 
-            {
-                "action": "decline", 
-                "review_state": "waiting_for_authoring", 
-                "comments": "", 
-                "actor": "asingh33", 
-                "time": "2015/01/08 06:15:45.036 US/Eastern"
-            }, 
-            {
-                "action": "approve_to_staging", 
-                "review_state": "ready_for_staging", 
-                "actor": "asingh33", 
-                "comments": "", 
-                "time": "2015/01/08 06:17:10.139 US/Eastern"
-            }, 
-            {
-                "action": "decline", 
-                "review_state": "waiting_for_authoring", 
-                "comments": "", 
-                "actor": "rverma83", 
-                "time": "2015/02/06 00:51:44.735 US/Eastern"
-            }, 
-            {
-                "action": "approve_to_staging", 
-                "review_state": "ready_for_staging", 
-                "actor": "rverma83", 
-                "comments": "", 
-                "time": "2015/02/06 00:54:31.485 US/Eastern"
-            }, 
-            {
-                "action": "decline", 
-                "review_state": "waiting_for_authoring", 
-                "comments": "", 
-                "actor": "rverma83", 
-                "time": "2015/02/06 04:17:12.423 US/Eastern"
-            }, 
-            {
-                "action": "approve_to_staging", 
-                "review_state": "ready_for_staging", 
-                "actor": "asingh33", 
-                "comments": "", 
-                "time": "2015/02/06 04:25:08.261 US/Eastern"
-            }
-        ]
-    }, 
-    "_classname": "CourseSection", 
-    "_content_type_materialtype": "text/plain", 
-    "_userdefined_roles": [], 
-    "publisher": "MIT OpenCourseWare", 
-    "nextPreviousEnabled": false, 
-    "language": "", 
-    "url_rewrite_patterns": [], 
-    "widgets_features": [], 
-    "category_features": [], 
-    "firstTimeEdit": true, 
-    "feature_requirements": [], 
-    "list_in_left_nav": false, 
-    "short_name_tlp": "", 
-    "expirationDate": "None", 
-    "_content_type_id": "text/plain", 
-    "contributor_list": [], 
-    "is_media_gallery": false, 
-    "contributors": [], 
-    "_gopip": 5, 
-    "_content_type_title": "text/plain", 
-    "course_linking": [], 
+    },
     "_atrefs": {
         "BelongsTo": [
             "d9aad1541f1a9d3c0f7b0dcf9531a9a1"
-        ], 
+        ],
         "isReferencing": [
-            "b71391731640eec130d5377e17a58f9f", 
-            "bbb20ec6c4f529ce9dc34565ddd5c411", 
-            "7ae34483a731c75347e2e65e2862c52c", 
-            "d3e109e28ea40d8e72855012d81221bb", 
-            "a6cf39f281f0c7eb117836d77d0c9825", 
-            "581e54a948481676142eca96a0129878", 
-            "cf74a58b49c9caf991986d0ab832b3a6", 
-            "3fe343fa2d8db5fef59ce836fae16ae1", 
-            "fbd6bee4c6c78fcbe1946359395b1069", 
-            "35d573e58b6526babbd1a5c3e6cc689d", 
-            "c1f05935417d91f6887916de7b316f46", 
-            "9f758adca4a5b224cfcb308fc8e4c55c", 
-            "89cf411fce39330a1b3aaf426c9bcb1c", 
-            "95c4779902dd7abe4d0ec6ce00e384d6", 
-            "5642a0c11593cfae7b86e1b019f95dd9", 
-            "b463875b69d4156b90faaeb0dd7ca66b", 
-            "d8c5746d11664a62a1ede4fecfca6e37", 
-            "feefeb51ec6d693e201a36c00b7729a3", 
-            "7a74d241d2fe5d877f747158998d8ed3", 
-            "69fad51ff2c968b50a4385ed46b5ef1e", 
-            "93e58d46191f9fc3c54ec80752ad3b80", 
-            "7938449f4f2e757a7d63cc05860c954a", 
-            "0c6afef275a07fa8888f7ebb3730f0c8", 
-            "aa123b818503ad107b864c3c21571f95", 
-            "f9eded771045c0c682af8e7b0cea495d", 
-            "7883fdc65f0f4ffe3ef319beedc4bdc8", 
-            "bcca3aeb2b6a50bcc665b2b7f93d4ff4", 
-            "730a8be9baea5c1090f794490c792f6d", 
-            "46af56797a1dfd6bdd111a36a87ccc0b", 
-            "526a37955368dfee90091327394fa6fe", 
-            "afe6a58db228c6f134a347dd2225e78a", 
-            "8271452e03553099040a97e005b199ac", 
-            "66687cb68ded354da25bd27ca3d81a26", 
-            "1b86cb3a4854134975175f73a85c2f23", 
-            "40968288047d50c309013dc03719e117", 
-            "725e81b27b8fbec38927b1e07c2f4f83", 
-            "64987778c6eaea423d4ee8b8beaa9fcb", 
+            "b71391731640eec130d5377e17a58f9f",
+            "bbb20ec6c4f529ce9dc34565ddd5c411",
+            "7ae34483a731c75347e2e65e2862c52c",
+            "d3e109e28ea40d8e72855012d81221bb",
+            "a6cf39f281f0c7eb117836d77d0c9825",
+            "581e54a948481676142eca96a0129878",
+            "cf74a58b49c9caf991986d0ab832b3a6",
+            "3fe343fa2d8db5fef59ce836fae16ae1",
+            "fbd6bee4c6c78fcbe1946359395b1069",
+            "35d573e58b6526babbd1a5c3e6cc689d",
+            "c1f05935417d91f6887916de7b316f46",
+            "9f758adca4a5b224cfcb308fc8e4c55c",
+            "89cf411fce39330a1b3aaf426c9bcb1c",
+            "95c4779902dd7abe4d0ec6ce00e384d6",
+            "5642a0c11593cfae7b86e1b019f95dd9",
+            "b463875b69d4156b90faaeb0dd7ca66b",
+            "d8c5746d11664a62a1ede4fecfca6e37",
+            "feefeb51ec6d693e201a36c00b7729a3",
+            "7a74d241d2fe5d877f747158998d8ed3",
+            "69fad51ff2c968b50a4385ed46b5ef1e",
+            "93e58d46191f9fc3c54ec80752ad3b80",
+            "7938449f4f2e757a7d63cc05860c954a",
+            "0c6afef275a07fa8888f7ebb3730f0c8",
+            "aa123b818503ad107b864c3c21571f95",
+            "f9eded771045c0c682af8e7b0cea495d",
+            "7883fdc65f0f4ffe3ef319beedc4bdc8",
+            "bcca3aeb2b6a50bcc665b2b7f93d4ff4",
+            "730a8be9baea5c1090f794490c792f6d",
+            "46af56797a1dfd6bdd111a36a87ccc0b",
+            "526a37955368dfee90091327394fa6fe",
+            "afe6a58db228c6f134a347dd2225e78a",
+            "8271452e03553099040a97e005b199ac",
+            "66687cb68ded354da25bd27ca3d81a26",
+            "1b86cb3a4854134975175f73a85c2f23",
+            "40968288047d50c309013dc03719e117",
+            "725e81b27b8fbec38927b1e07c2f4f83",
+            "64987778c6eaea423d4ee8b8beaa9fcb",
             "7de2acad99d8c66fa0712cf95d7acc2d"
         ]
-    }, 
-    "other_platform_requirements": "", 
-    "license": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/", 
-    "rights": "This site (c) Massachusetts Institute of Technology 2014.  Content within individual courses is (c) by the individual authors unless otherwise noted. The Massachusetts Institute of Technology is providing this Work (as defined below) under the terms of this Creative Commons public license (\"CCPL\" or \"license\") unless otherwise noted. The Work is protected by copyright and/or other applicable law. Any use of the work other than as authorized under this license is prohibited. By exercising any of the rights to the Work provided here, You (as defined below) accept and agree to be bound by the terms of this license. The Licensor, the Massachusetts Institute of Technology, grants You the rights contained here in consideration of Your acceptance of such terms and conditions.", 
-    "hide_Page_title": false, 
-    "_defaultpage": "", 
-    "tcATmit_subject_tags": [], 
-    "features_tracking": [], 
-    "ad_champion_text": "", 
-    "has_inline_embed": false, 
-    "unique_identifier": "https://ocw.mit.edu/courses/earth-atmospheric-and-planetary-sciences/12-001-introduction-to-geology-fall-2013/lecture-notes-and-slides", 
-    "is_image_gallery": false, 
-    "id": "lecture-notes-and-slides", 
-    "materialtype": "Other", 
-    "_type": "CourseSection", 
-    "description": "This section provides the schedule of course topics along with the lecture notes and slides that were used in the course.", 
-    "course_identifier": "https://ocw.mit.edu/courses/earth-atmospheric-and-planetary-sciences/12-001-introduction-to-geology-fall-2013", 
-    "_content_type_publisher": "text/plain", 
-    "tcATmit_instructional_tags": [], 
-    "_content_type": "text/html", 
-    "creators": [
-        "pgandhi3"
-    ], 
-    "modification_date": "2016/09/24 06:42:04.619 GMT-4", 
-    "always_publish": false, 
-    "_content_type_description": "text/plain", 
-    "_owner": null, 
+    },
+    "_classname": "CourseSection",
+    "_content_type": "text/html",
+    "_content_type_ad_type": "text/plain",
+    "_content_type_course_identifier": "text/plain",
+    "_content_type_description": "text/plain",
+    "_content_type_id": "text/plain",
+    "_content_type_license": "text/plain",
+    "_content_type_materialtype": "text/plain",
+    "_content_type_publisher": "text/plain",
+    "_content_type_rights": "text/html",
+    "_content_type_short_page_title": "text/plain",
+    "_content_type_technical_location": "text/plain",
+    "_content_type_text": "text/html",
+    "_content_type_title": "text/plain",
+    "_content_type_unique_identifier": "text/plain",
+    "_defaultpage": "",
+    "_directly_provided": [
+        "Products.CMFEditions.interfaces.IVersioned"
+    ],
+    "_gopip": 5,
+    "_id": "lecture-notes-and-slides",
+    "_layout": "custom_view",
+    "_owner": null,
+    "_path": "/Plone/courses/earth-atmospheric-and-planetary-sciences/12-001-introduction-to-geology-fall-2013/lecture-notes-and-slides",
     "_permissions": {
-        "Change portal events": {
-            "acquire": false, 
-            "roles": [
-                "Editor", 
-                "Manager", 
-                "MetadataEditor", 
-                "Owner"
-            ]
-        }, 
-        "Modify portal content": {
-            "acquire": false, 
-            "roles": [
-                "Manager", 
-                "MetadataEditor"
-            ]
-        }, 
         "Access contents information": {
-            "acquire": false, 
+            "acquire": false,
             "roles": [
                 "Authenticated"
             ]
-        }, 
-        "List folder contents": {
-            "acquire": false, 
+        },
+        "Change portal events": {
+            "acquire": false,
             "roles": [
-                "Editor", 
-                "Manager", 
-                "MetadataEditor", 
+                "Editor",
+                "Manager",
+                "MetadataEditor",
                 "Owner"
             ]
-        }, 
+        },
+        "List folder contents": {
+            "acquire": false,
+            "roles": [
+                "Editor",
+                "Manager",
+                "MetadataEditor",
+                "Owner"
+            ]
+        },
+        "Modify portal content": {
+            "acquire": false,
+            "roles": [
+                "Manager",
+                "MetadataEditor"
+            ]
+        },
         "View": {
-            "acquire": false, 
+            "acquire": false,
             "roles": [
                 "Authenticated"
             ]
         }
-    }, 
+    },
     "_properties": [
         [
-            "title", 
-            "Lecture Notes and Slides", 
+            "title",
+            "Lecture Notes and Slides",
             "string"
         ]
-    ], 
-    "_id": "lecture-notes-and-slides", 
-    "courselist_features": [], 
-    "_path": "/Plone/courses/earth-atmospheric-and-planetary-sciences/12-001-introduction-to-geology-fall-2013/lecture-notes-and-slides"
+    ],
+    "_type": "CourseSection",
+    "_uid": "7a74d241d2fe5d877f747158998d8ed3",
+    "_userdefined_roles": [],
+    "_workflow_history": {
+        "page_workflow": [
+            {
+                "action": null,
+                "actor": "pgandhi3",
+                "comments": "",
+                "review_state": "waiting_for_authoring",
+                "time": "2014/09/25 03:44:36.325 GMT-4"
+            },
+            {
+                "action": "approve_to_staging",
+                "actor": "rverma83",
+                "comments": "",
+                "review_state": "ready_for_staging",
+                "time": "2014/09/25 07:53:01.392 GMT-4"
+            },
+            {
+                "action": "decline",
+                "actor": "pgandhi3",
+                "comments": "",
+                "review_state": "waiting_for_authoring",
+                "time": "2014/09/25 11:50:09.681 GMT-4"
+            },
+            {
+                "action": "approve_to_staging",
+                "actor": "pgandhi3",
+                "comments": "",
+                "review_state": "ready_for_staging",
+                "time": "2014/09/25 11:51:45.091 GMT-4"
+            },
+            {
+                "action": "decline",
+                "actor": "pgandhi3",
+                "comments": "",
+                "review_state": "waiting_for_authoring",
+                "time": "2014/09/30 23:38:44.911 GMT-4"
+            },
+            {
+                "action": "approve_to_staging",
+                "actor": "pgandhi3",
+                "comments": "",
+                "review_state": "ready_for_staging",
+                "time": "2014/10/01 07:44:52.167 GMT-4"
+            },
+            {
+                "action": "decline",
+                "actor": "ndhamija",
+                "comments": "",
+                "review_state": "waiting_for_authoring",
+                "time": "2014/10/07 02:02:27.807 GMT-4"
+            },
+            {
+                "action": "approve_to_staging",
+                "actor": "pgandhi3",
+                "comments": "",
+                "review_state": "ready_for_staging",
+                "time": "2014/10/08 09:54:20.114 GMT-4"
+            },
+            {
+                "action": "decline",
+                "actor": "pgandhi3",
+                "comments": "",
+                "review_state": "waiting_for_authoring",
+                "time": "2014/10/10 06:07:09.466 GMT-4"
+            },
+            {
+                "action": "approve_to_staging",
+                "actor": "pgandhi3",
+                "comments": "",
+                "review_state": "ready_for_staging",
+                "time": "2014/10/10 07:21:45.068 GMT-4"
+            },
+            {
+                "action": "decline",
+                "actor": "pgandhi3",
+                "comments": "",
+                "review_state": "waiting_for_authoring",
+                "time": "2014/10/10 08:08:47.754 GMT-4"
+            },
+            {
+                "action": "approve_to_staging",
+                "actor": "pgandhi3",
+                "comments": "",
+                "review_state": "ready_for_staging",
+                "time": "2014/10/10 08:10:27.987 GMT-4"
+            },
+            {
+                "action": "decline",
+                "actor": "rverma83",
+                "comments": "",
+                "review_state": "waiting_for_authoring",
+                "time": "2014/10/20 04:43:30.724 GMT-4"
+            },
+            {
+                "action": "approve_to_staging",
+                "actor": "rverma83",
+                "comments": "",
+                "review_state": "ready_for_staging",
+                "time": "2014/10/20 05:03:26.721 GMT-4"
+            },
+            {
+                "action": "decline",
+                "actor": "rverma83",
+                "comments": "",
+                "review_state": "waiting_for_authoring",
+                "time": "2014/10/20 05:24:12.278 GMT-4"
+            },
+            {
+                "action": "approve_to_staging",
+                "actor": "rverma83",
+                "comments": "",
+                "review_state": "ready_for_staging",
+                "time": "2014/10/20 05:24:16.524 GMT-4"
+            },
+            {
+                "action": "decline",
+                "actor": "rverma83",
+                "comments": "",
+                "review_state": "waiting_for_authoring",
+                "time": "2014/10/20 06:24:31.991 GMT-4"
+            },
+            {
+                "action": "approve_to_staging",
+                "actor": "rverma83",
+                "comments": "",
+                "review_state": "ready_for_staging",
+                "time": "2014/10/20 06:26:42.751 GMT-4"
+            },
+            {
+                "action": "decline_to_qa",
+                "actor": "aimeeg",
+                "comments": "",
+                "review_state": "waiting_for_qa",
+                "time": "2014/10/21 11:34:51.985 GMT-4"
+            },
+            {
+                "action": "approve_to_staging",
+                "actor": "aimeeg",
+                "comments": "",
+                "review_state": "ready_for_staging",
+                "time": "2014/10/21 11:35:35.401 GMT-4"
+            },
+            {
+                "action": "decline",
+                "actor": "rverma83",
+                "comments": "",
+                "review_state": "waiting_for_authoring",
+                "time": "2014/10/24 06:16:50.795 GMT-4"
+            },
+            {
+                "action": "approve_to_staging",
+                "actor": "rverma83",
+                "comments": "",
+                "review_state": "ready_for_staging",
+                "time": "2014/10/24 06:56:48.310 GMT-4"
+            },
+            {
+                "action": "decline",
+                "actor": "rverma83",
+                "comments": "",
+                "review_state": "waiting_for_authoring",
+                "time": "2014/10/28 01:59:56.723 GMT-4"
+            },
+            {
+                "action": "approve_to_staging",
+                "actor": "rverma83",
+                "comments": "",
+                "review_state": "ready_for_staging",
+                "time": "2014/10/28 02:00:19.457 GMT-4"
+            },
+            {
+                "action": "decline_to_qa",
+                "actor": "aimeeg",
+                "comments": "",
+                "review_state": "waiting_for_qa",
+                "time": "2014/11/03 14:23:25.181 US/Eastern"
+            },
+            {
+                "action": "approve_to_staging",
+                "actor": "aimeeg",
+                "comments": "",
+                "review_state": "ready_for_staging",
+                "time": "2014/11/03 14:26:46.001 US/Eastern"
+            },
+            {
+                "action": "decline",
+                "actor": "asingh124",
+                "comments": "",
+                "review_state": "waiting_for_authoring",
+                "time": "2014/11/18 05:02:01.645 US/Eastern"
+            },
+            {
+                "action": "approve_to_staging",
+                "actor": "asingh124",
+                "comments": "",
+                "review_state": "ready_for_staging",
+                "time": "2014/11/18 05:02:56.395 US/Eastern"
+            },
+            {
+                "action": "decline",
+                "actor": "asingh124",
+                "comments": "",
+                "review_state": "waiting_for_authoring",
+                "time": "2014/11/18 05:03:32.394 US/Eastern"
+            },
+            {
+                "action": "approve_to_staging",
+                "actor": "asingh124",
+                "comments": "",
+                "review_state": "ready_for_staging",
+                "time": "2014/11/18 05:04:09.131 US/Eastern"
+            },
+            {
+                "action": "decline",
+                "actor": "pgandhi3",
+                "comments": "",
+                "review_state": "waiting_for_authoring",
+                "time": "2014/12/03 05:50:27.959 US/Eastern"
+            },
+            {
+                "action": "approve_to_staging",
+                "actor": "asingh124",
+                "comments": "",
+                "review_state": "ready_for_staging",
+                "time": "2014/12/03 06:18:36.236 US/Eastern"
+            },
+            {
+                "action": "decline",
+                "actor": "pgandhi3",
+                "comments": "",
+                "review_state": "waiting_for_authoring",
+                "time": "2014/12/03 06:19:59.457 US/Eastern"
+            },
+            {
+                "action": "approve_to_staging",
+                "actor": "pgandhi3",
+                "comments": "",
+                "review_state": "ready_for_staging",
+                "time": "2014/12/03 06:31:09.156 US/Eastern"
+            },
+            {
+                "action": "decline",
+                "actor": "asingh33",
+                "comments": "",
+                "review_state": "waiting_for_authoring",
+                "time": "2014/12/17 23:38:14.382 US/Eastern"
+            },
+            {
+                "action": "approve_to_staging",
+                "actor": "asingh33",
+                "comments": "",
+                "review_state": "ready_for_staging",
+                "time": "2014/12/17 23:40:28.047 US/Eastern"
+            },
+            {
+                "action": "decline",
+                "actor": "rverma83",
+                "comments": "",
+                "review_state": "waiting_for_authoring",
+                "time": "2014/12/22 02:18:27.971 US/Eastern"
+            },
+            {
+                "action": "approve_to_staging",
+                "actor": "rverma83",
+                "comments": "",
+                "review_state": "ready_for_staging",
+                "time": "2014/12/22 02:48:15.258 US/Eastern"
+            },
+            {
+                "action": "decline",
+                "actor": "rverma83",
+                "comments": "",
+                "review_state": "waiting_for_authoring",
+                "time": "2014/12/22 02:57:42.413 US/Eastern"
+            },
+            {
+                "action": "approve_to_staging",
+                "actor": "rverma83",
+                "comments": "",
+                "review_state": "ready_for_staging",
+                "time": "2014/12/22 03:00:48.511 US/Eastern"
+            },
+            {
+                "action": "decline",
+                "actor": "rverma83",
+                "comments": "",
+                "review_state": "waiting_for_authoring",
+                "time": "2014/12/22 06:02:12.818 US/Eastern"
+            },
+            {
+                "action": "approve_to_staging",
+                "actor": "rverma83",
+                "comments": "",
+                "review_state": "ready_for_staging",
+                "time": "2014/12/22 06:30:59.943 US/Eastern"
+            },
+            {
+                "action": "decline",
+                "actor": "rverma83",
+                "comments": "",
+                "review_state": "waiting_for_authoring",
+                "time": "2014/12/22 06:46:47.367 US/Eastern"
+            },
+            {
+                "action": "approve_to_staging",
+                "actor": "rverma83",
+                "comments": "",
+                "review_state": "ready_for_staging",
+                "time": "2014/12/22 06:48:56.549 US/Eastern"
+            },
+            {
+                "action": "decline",
+                "actor": "rverma83",
+                "comments": "",
+                "review_state": "waiting_for_authoring",
+                "time": "2015/01/07 01:42:03.852 US/Eastern"
+            },
+            {
+                "action": "approve_to_staging",
+                "actor": "rverma83",
+                "comments": "",
+                "review_state": "ready_for_staging",
+                "time": "2015/01/07 01:44:50.418 US/Eastern"
+            },
+            {
+                "action": "decline",
+                "actor": "rverma83",
+                "comments": "",
+                "review_state": "waiting_for_authoring",
+                "time": "2015/01/07 23:42:02.341 US/Eastern"
+            },
+            {
+                "action": "approve_to_staging",
+                "actor": "rverma83",
+                "comments": "",
+                "review_state": "ready_for_staging",
+                "time": "2015/01/07 23:59:33.240 US/Eastern"
+            },
+            {
+                "action": "decline",
+                "actor": "rverma83",
+                "comments": "",
+                "review_state": "waiting_for_authoring",
+                "time": "2015/01/07 23:59:38.233 US/Eastern"
+            },
+            {
+                "action": "approve_to_staging",
+                "actor": "asingh33",
+                "comments": "",
+                "review_state": "ready_for_staging",
+                "time": "2015/01/08 05:57:17.725 US/Eastern"
+            },
+            {
+                "action": "decline",
+                "actor": "asingh33",
+                "comments": "",
+                "review_state": "waiting_for_authoring",
+                "time": "2015/01/08 06:15:45.036 US/Eastern"
+            },
+            {
+                "action": "approve_to_staging",
+                "actor": "asingh33",
+                "comments": "",
+                "review_state": "ready_for_staging",
+                "time": "2015/01/08 06:17:10.139 US/Eastern"
+            },
+            {
+                "action": "decline",
+                "actor": "rverma83",
+                "comments": "",
+                "review_state": "waiting_for_authoring",
+                "time": "2015/02/06 00:51:44.735 US/Eastern"
+            },
+            {
+                "action": "approve_to_staging",
+                "actor": "rverma83",
+                "comments": "",
+                "review_state": "ready_for_staging",
+                "time": "2015/02/06 00:54:31.485 US/Eastern"
+            },
+            {
+                "action": "decline",
+                "actor": "rverma83",
+                "comments": "",
+                "review_state": "waiting_for_authoring",
+                "time": "2015/02/06 04:17:12.423 US/Eastern"
+            },
+            {
+                "action": "approve_to_staging",
+                "actor": "asingh33",
+                "comments": "",
+                "review_state": "ready_for_staging",
+                "time": "2015/02/06 04:25:08.261 US/Eastern"
+            }
+        ]
+    },
+    "ad_champion_text": "",
+    "ad_type": "HOUSE",
+    "aggregationlevel": 3,
+    "allowDiscussion": false,
+    "always_publish": false,
+    "bottomtext": "",
+    "category_features": [],
+    "constrainTypesMode": 0,
+    "contributor_list": [],
+    "contributors": [],
+    "course_identifier": "https://ocw.mit.edu/courses/earth-atmospheric-and-planetary-sciences/12-001-introduction-to-geology-fall-2013",
+    "course_linking": [],
+    "courselist_features": [],
+    "creation_date": "2014/09/25 03:44:36.315 GMT-4",
+    "creators": [
+        "pgandhi3"
+    ],
+    "description": "This section provides the schedule of course topics along with the lecture notes and slides that were used in the course.",
+    "duration": "",
+    "effectiveDate": "2014/09/25 07:52:59.875 GMT-4",
+    "excludeFromNav": false,
+    "expirationDate": "None",
+    "feature_requirements": [],
+    "features_tracking": [],
+    "firstTimeEdit": true,
+    "has_inline_embed": false,
+    "hide_Page_title": false,
+    "id": "lecture-notes-and-slides",
+    "immediatelyAddableTypes": [
+        "OCWImage",
+        "CourseSection",
+        "OCWExtFile",
+        "OCWFile",
+        "MediaResource"
+    ],
+    "is_image_gallery": false,
+    "is_mathml_document": false,
+    "is_media_gallery": false,
+    "language": "",
+    "license": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/",
+    "list_in_left_nav": false,
+    "locallyAllowedTypes": [
+        "OCWImage",
+        "CourseSection",
+        "OCWExtFile",
+        "OCWFile",
+        "MediaResource"
+    ],
+    "location": "",
+    "materialtype": "Other",
+    "metadata_contributor_list": [],
+    "modification_date": "2016/09/24 06:42:04.619 GMT-4",
+    "nextPreviousEnabled": false,
+    "other_platform_requirements": "",
+    "parent_module": "d9aad1541f1a9d3c0f7b0dcf9531a9a1",
+    "parent_uid": "d9aad1541f1a9d3c0f7b0dcf9531a9a1",
+    "publisher": "MIT OpenCourseWare",
+    "related_mit_links": "",
+    "rights": "This site (c) Massachusetts Institute of Technology 2014.  Content within individual courses is (c) by the individual authors unless otherwise noted. The Massachusetts Institute of Technology is providing this Work (as defined below) under the terms of this Creative Commons public license (\"CCPL\" or \"license\") unless otherwise noted. The Work is protected by copyright and/or other applicable law. Any use of the work other than as authorized under this license is prohibited. By exercising any of the rights to the Work provided here, You (as defined below) accept and agree to be bound by the terms of this license. The Licensor, the Massachusetts Institute of Technology, grants You the rights contained here in consideration of Your acceptance of such terms and conditions.",
+    "section_identifier": null,
+    "short_name_tlp": "",
+    "short_page_title": "Lecture Notes and Slides",
+    "software_requirements": [
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "40.0",
+            "software_name_col": "Chrome",
+            "software_type_col": "Browser"
+        },
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "8.0",
+            "software_name_col": "Safari",
+            "software_type_col": "Browser"
+        },
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "38.0",
+            "software_name_col": "Mozilla Firefox",
+            "software_type_col": "Browser"
+        },
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "9.0",
+            "software_name_col": "Internet Explorer",
+            "software_type_col": "Browser"
+        },
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "13.1",
+            "software_name_col": "Edge",
+            "software_type_col": "Browser"
+        }
+    ],
+    "subject": [],
+    "tcATmit_instructional_tags": [],
+    "tcATmit_subject_tags": [],
+    "technical_location": "https://ocw.mit.edu/courses/earth-atmospheric-and-planetary-sciences/12-001-introduction-to-geology-fall-2013/lecture-notes-and-slides",
+    "text": "<h2 class=\"subhead\">Instructor Key</h2> <p>[TP] = Taylor Perron<br /> [OJ] = Oliver Jagoutz</p> <div class=\"maintabletemplate\"><table class=\"tablewidth100\" summary=\"See table caption for summary.\">     <caption class=\"invisible\">Lecture notes and slides.</caption>  <!-- BEGIN TABLE HEADER (for MIT OCW Table Template 2.51) -->     <thead>         <tr>             <th scope=\"col\">SES&nbsp;#</th>             <th scope=\"col\">INSTRUCTORS</th>             <th scope=\"col\">TOPICS</th>             <th scope=\"col\">NOTES</th>             <th scope=\"col\">SLIDES</th>         </tr>     </thead>     <!-- END TABLE HEADER -->     <tbody>         <tr class=\"row\">             <td>1</td>             <td>TP, OJ</td>             <td>Overview: Introduction to the Introduction of Geology</td>             <td><a href=\"./resolveuid/afe6a58db228c6f134a347dd2225e78a\">Lecture 1 Notes (PDF)</a></td>             <td><img alt=\"This resource may not render correctly in a screen reader.\" src=\"/images/inacessible.gif\" /><span class=\"nobr\"><a href=\"./resolveuid/d8c5746d11664a62a1ede4fecfca6e37\">Lecture 1 Slides (PDF - 1.6MB)</a></span></td>         </tr>         <tr class=\"alt-row\">             <td>2</td>             <td>TP</td>             <td>Origin and Age of the Earth</td>             <td><a href=\"./resolveuid/f9eded771045c0c682af8e7b0cea495d\">Lecture 2 Notes (PDF)</a></td>             <td><img src=\"/images/inacessible.gif\" alt=\"This resource may not render correctly in a screen reader.\" /><span class=\"nobr\"><a href=\"./resolveuid/b463875b69d4156b90faaeb0dd7ca66b\">Lecture 2 Slides (PDF - 2.6MB)</a></span></td>         </tr>         <tr class=\"row\">             <td>3</td>             <td>OJ</td>             <td>Introduction to Minerals</td>             <td><a href=\"./resolveuid/1b86cb3a4854134975175f73a85c2f23\">Lecture 3 Notes (PDF)</a></td>             <td><img alt=\"This resource may not render correctly in a screen reader.\" src=\"/images/inacessible.gif\" /><span class=\"nobr\"><a href=\"./resolveuid/bbb20ec6c4f529ce9dc34565ddd5c411\">Lecture 3 Slides (PDF - 2.3MB)</a></span></td>         </tr>         <tr class=\"alt-row\">             <td>4</td>             <td>OJ</td>             <td>Igneous Rocks</td>             <td><img src=\"/images/inacessible.gif\" alt=\"This resource may not render correctly in a screen reader.\" /><a href=\"./resolveuid/0c6afef275a07fa8888f7ebb3730f0c8\">Lecture 4 Notes (PDF)</a></td>             <td>Slides are not available for this lecture.</td>         </tr>         <tr class=\"row\">             <td>5</td>             <td>OJ</td>             <td>Metamorphic Rocks</td>             <td><a href=\"./resolveuid/93e58d46191f9fc3c54ec80752ad3b80\">Lecture 5 Notes (PDF)</a></td>             <td>Slides are not available for this lecture.</td>         </tr>         <tr class=\"alt-row\">             <td>6</td>             <td>TP</td>             <td>Sedimentary Rocks</td>             <td><a href=\"./resolveuid/7938449f4f2e757a7d63cc05860c954a\">Lecture 6 Notes (PDF)</a></td>             <td><img src=\"/images/inacessible.gif\" alt=\"This resource may not render correctly in a screen reader.\" /><span class=\"nobr\"><a href=\"./resolveuid/feefeb51ec6d693e201a36c00b7729a3\">Lecture 6 Slides (PDF - 3.6MB)</a></span></td>         </tr>         <tr class=\"row\">             <td>8</td>             <td>OJ</td>             <td>Rock Structure and Deformation</td>             <td><img alt=\"This resource may not render correctly in a screen reader.\" src=\"/images/inacessible.gif\" /><a href=\"./resolveuid/64987778c6eaea423d4ee8b8beaa9fcb\">Lecture 8 Notes (PDF)</a></td>             <td><img alt=\"This resource may not render correctly in a screen reader.\" src=\"/images/inacessible.gif\" /><span class=\"nobr\"><a href=\"./resolveuid/a6cf39f281f0c7eb117836d77d0c9825\">Lecture 8 Slides (PDF - 4.2MB)</a></span></td>         </tr>         <tr class=\"alt-row\">             <td>11</td>             <td>OJ</td>             <td>Geologic Time: Relative versus Absolute Dating</td>             <td><a href=\"./resolveuid/725e81b27b8fbec38927b1e07c2f4f83\">Lecture 11 Notes (PDF)</a></td>             <td><img alt=\"This resource may not render correctly in a screen reader.\" src=\"/images/inacessible.gif\" /><span class=\"nobr\"><a href=\"./resolveuid/95c4779902dd7abe4d0ec6ce00e384d6\">Lecture 11 Slides (PDF)</a></span></td>         </tr>         <tr class=\"row\">             <td>12</td>             <td>OJ</td>             <td>Volcanoes</td>             <td><img src=\"/images/inacessible.gif\" alt=\"This resource may not render correctly in a screen reader.\" /><a href=\"./resolveuid/40968288047d50c309013dc03719e117\">Lecture 12 Notes (PDF)</a></td>             <td><img alt=\"This resource may not render correctly in a screen reader.\" src=\"/images/inacessible.gif\" /><span class=\"nobr\"><a href=\"./resolveuid/5642a0c11593cfae7b86e1b019f95dd9\">Lecture 12 Slides (PDF)</a></span></td>         </tr>         <tr class=\"alt-row\">             <td>13&ndash;15</td>             <td>TP</td>             <td>Plate Tectonics</td>             <td><a href=\"./resolveuid/7883fdc65f0f4ffe3ef319beedc4bdc8\">Lecture 13-15 Notes (PDF - 1.1MB)</a></td>             <td><img src=\"/images/inacessible.gif\" alt=\"This resource may not render correctly in a screen reader.\" /><span class=\"nobr\"><a href=\"./resolveuid/b71391731640eec130d5377e17a58f9f\">Lecture 13-15 Slides (PDF - 9.7MB)</a></span></td>         </tr>         <tr class=\"row\">             <td>17</td>             <td>OJ</td>             <td>Continental Crust Formation</td>             <td>Notes are not available for this lecture.</td>             <td>Slides are not available for this lecture.</td>         </tr>         <tr class=\"alt-row\">             <td>18</td>             <td>OJ</td>             <td>Oceanic Crust Formation</td>             <td>Notes are not available for this lecture.</td>             <td><img alt=\"This resource may not render correctly in a screen reader.\" src=\"/images/inacessible.gif\" /><span class=\"nobr\"><a href=\"./resolveuid/7ae34483a731c75347e2e65e2862c52c\">Lecture 18 Slides (PDF - 4.1MB)</a></span></td>         </tr>         <tr class=\"row\">             <td>19</td>             <td>TP</td>             <td>Earthquakes</td>             <td><a href=\"./resolveuid/8271452e03553099040a97e005b199ac\">Lecture 19 Notes (PDF)</a></td>             <td><img alt=\"This resource may not render correctly in a screen reader.\" src=\"/images/inacessible.gif\" /><span class=\"nobr\"><a href=\"./resolveuid/c1f05935417d91f6887916de7b316f46\">Lecture 19 Slides (PDF - 1.4MB)</a></span></td>         </tr>         <tr class=\"alt-row\">             <td>21</td>             <td>TP</td>             <td>Topography</td>             <td><img alt=\"This resource may not render correctly in a screen reader.\" src=\"/images/inacessible.gif\" /><a href=\"./resolveuid/66687cb68ded354da25bd27ca3d81a26\">Lecture 21 Notes (PDF)</a></td>             <td><img alt=\"This resource may not render correctly in a screen reader.\" src=\"/images/inacessible.gif\" /><span class=\"nobr\"><a href=\"./resolveuid/3fe343fa2d8db5fef59ce836fae16ae1\">Lecture 21 Slides (PDF - 3.8MB)</a></span></td>         </tr>         <tr class=\"row\">             <td>22</td>             <td>OJ</td>             <td>Field Techniques</td>             <td><a href=\"./resolveuid/7de2acad99d8c66fa0712cf95d7acc2d\">Lecture 22 Notes (PDF)</a></td>             <td>Slides are not available for this lecture.</td>         </tr>         <tr class=\"alt-row\">             <td>24</td>             <td>OJ</td>             <td>Introduction to Geologic Mapping</td>             <td>Notes are not available for this lecture.</td>             <td>Slides are not available for this lecture.</td>         </tr>         <tr class=\"row\">             <td>28</td>             <td>TP</td>             <td>Rivers</td>             <td><a href=\"./resolveuid/526a37955368dfee90091327394fa6fe\">Lecture 28 Notes (PDF)</a></td>             <td><a href=\"./resolveuid/cf74a58b49c9caf991986d0ab832b3a6\"><img alt=\"This resource may not render correctly in a screen reader.\" src=\"/images/inacessible.gif\" /><span class=\"nobr\">Lecture 28 Slides (PDF - 6.0MB)</span></a></td>         </tr>         <tr class=\"alt-row\">             <td>31</td>             <td>TP</td>             <td>Landslides and Debris Flows</td>             <td><img src=\"/images/inacessible.gif\" alt=\"This resource may not render correctly in a screen reader.\" /><a href=\"./resolveuid/d3e109e28ea40d8e72855012d81221bb\">Lecture 31 Notes (PDF)</a></td>             <td><img alt=\"This resource may not render correctly in a screen reader.\" src=\"/images/inacessible.gif\" /><span class=\"nobr\"><a href=\"./resolveuid/581e54a948481676142eca96a0129878\"> Lecture 31 Slides (PDF - 1.8MB)</a></span></td>         </tr>         <tr class=\"row\">             <td>32</td>             <td>TP</td>             <td>Glaciers</td>             <td><a href=\"./resolveuid/bcca3aeb2b6a50bcc665b2b7f93d4ff4\">Lecture 32 Notes (PDF)</a></td>             <td><img alt=\"This resource may not render correctly in a screen reader.\" src=\"/images/inacessible.gif\" /><span class=\"nobr\"><a href=\"./resolveuid/35d573e58b6526babbd1a5c3e6cc689d\">Lecture 32 Slides (PDF - 5.9MB)</a></span></td>         </tr>         <tr class=\"alt-row\">             <td>33</td>             <td>TP</td>             <td>Climate through Geologic History</td>             <td><a href=\"./resolveuid/69fad51ff2c968b50a4385ed46b5ef1e\">Lecture 33 Notes (PDF)</a></td>             <td><img alt=\"This resource may not render correctly in a screen reader.\" src=\"/images/inacessible.gif\" /><span class=\"nobr\"><a href=\"./resolveuid/fbd6bee4c6c78fcbe1946359395b1069\">Lecture 33 Slides (PDF - 2.2MB)</a></span></td>         </tr>         <tr class=\"row\">             <td>34</td>             <td>TP</td>             <td>Earth History and Geobiology</td>             <td><a href=\"./resolveuid/730a8be9baea5c1090f794490c792f6d\">Lecture 34 Notes (PDF)</a></td>             <td><img alt=\"This resource may not render correctly in a screen reader.\" src=\"/images/inacessible.gif\" /><span class=\"nobr\"><a href=\"./resolveuid/9f758adca4a5b224cfcb308fc8e4c55c\">Lecture 34 Slides (PDF - 3.5MB)</a></span></td>         </tr>         <tr class=\"alt-row\">             <td>35</td>             <td>TP</td>             <td>Earth Science and Society</td>             <td><a href=\"./resolveuid/aa123b818503ad107b864c3c21571f95\">Lecture 35 Notes (PDF)</a></td>             <td>Slides are not available for this lecture.</td>         </tr>         <tr class=\"row\">             <td>36</td>             <td>TP</td>             <td>Comparative Planetology</td>             <td><a href=\"./resolveuid/46af56797a1dfd6bdd111a36a87ccc0b\">Lecture 36 Notes (PDF)</a></td>             <td><img alt=\"This resource may not render correctly in a screen reader.\" src=\"/images/inacessible.gif\" /><span class=\"nobr\"><a href=\"./resolveuid/89cf411fce39330a1b3aaf426c9bcb1c\">Lecture 36 Slides (PDF - 4.9MB)</a></span></td>         </tr>         <!-- TEN ROWS -->     </tbody> </table></div>",
+    "title": "Lecture Notes and Slides",
+    "unique_identifier": "https://ocw.mit.edu/courses/earth-atmospheric-and-planetary-sciences/12-001-introduction-to-geology-fall-2013/lecture-notes-and-slides",
+    "url_rewrite_patterns": [],
+    "widgets_features": []
 }

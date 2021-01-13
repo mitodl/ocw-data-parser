@@ -1,285 +1,285 @@
 {
-    "text": "<p><i>In this section, Prof. Perron discusses how the instructors convey the social relevance of geology in 12.001.</i></p> <div class=\"pullquote\" style=\"float: right; margin: -4px 0 auto 20px; padding-left: 20px; width: 150px; border-right: none; border-left: 1px solid #D5C9BA;\"><p class=\"quote\">I take the debates about climate change that students see in the media and put them in context.</p> <p class=\"sig\">&mdash;Taylor Perron</p></div> <p>When you&rsquo;re teaching about processes that unfold over billions of years, it can be easy to gloss over geology&rsquo;s social relevance, because, as an instructor, you&rsquo;re struggling to cover so much content.  Nonetheless, we think it&rsquo;s very important to do so. One way we do this is by highlighting how humans impact and are impacted by the natural processes that we discuss in the course. We try to do this whenever we have a topic that&rsquo;s relevant in some way. For example, when discussing landslides, we note how land use influences soil cohesion. Even contemporary anthropogenic climate change becomes relevant in this conversation because we discuss the effects of changes in the precipitation regime on landslide patterns.</p> <div style=\"float: left; margin: 0 20px 5px 0; width: 320px;\"><img width=\"320\" height=\"213\" src=\"./resolveuid/3f18dbaab90b3de9115b20da487f29e8\" alt=\"A green crystalline rock hand sample.\" /><br /> <p class=\"instruction\">A rock from the rock identification lab. (Image by MIT OpenCourseWare.)</p></div> <p>The socially relevant topics we discuss aren&rsquo;t always related to surface processes. When Prof. Oliver Jagoutz talks about metamorphic reactions in rocks, he discusses a process called serpentinization, which, as it turns out, consumes CO<sub>2</sub>. There have been proposals to sequester CO<sub>2</sub> by encouraging serpentinization reactions in rocks, which would then lock the CO<sub>2</sub> in the minerals and take it out of the atmosphere. When he discusses metamorphic rocks, he spotlights this socially relevant application.</p> <p>One topic that always surfaces in politicized discussion of climate change is the geologic record of climate variability and the role of humans in this change. I address this directly in my lectures. I take the debates about climate change that students see in the media and put them in context. I also facilitate a class activity that directly engages students in the debate. I divide the students into teams of climate scientists and &ldquo;deniers.&rdquo; I coach both teams as they develop arguments. We have a series of debates and then we talk though the underlying issues.</p>", 
-    "_content_type_license": "text/plain", 
-    "_uid": "a9c623ed5ba59002d8a7cabe1d13ee9e", 
-    "title": "Conveying the Social Relevance of Geology", 
     "_ac_local_roles": {
         "Kcanavan": [
             "Owner"
         ]
-    }, 
-    "location": "", 
-    "_content_type_course_identifier": "text/plain", 
+    },
     "_atbrefs": {
         "isReferencing": [
             "1c2cb2ad1c70fd66f19e20103dc94595"
         ]
-    }, 
-    "constrainTypesMode": 0, 
-    "_content_type_section_identifier": "text/plain", 
-    "technical_location": "https://ocw.mit.edu/courses/earth-atmospheric-and-planetary-sciences/12-001-introduction-to-geology-fall-2013/instructor-insights/conveying-the-social-relevance-of-geology", 
-    "software_requirements": [
-        {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "40.0", 
-            "software_name_col": "Chrome", 
-            "maximum_version_col": ""
-        }, 
-        {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "8.0", 
-            "software_name_col": "Safari", 
-            "maximum_version_col": ""
-        }, 
-        {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "38.0", 
-            "software_name_col": "Mozilla Firefox", 
-            "maximum_version_col": ""
-        }, 
-        {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "9.0", 
-            "software_name_col": "Internet Explorer", 
-            "maximum_version_col": ""
-        }, 
-        {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "13.1", 
-            "software_name_col": "Edge", 
-            "maximum_version_col": ""
-        }
-    ], 
-    "_content_type_technical_location": "text/plain", 
-    "_content_type_rights": "text/html", 
-    "_directly_provided": [
-        "Products.CMFEditions.interfaces.IVersioned"
-    ], 
-    "parent_uid": "1c2cb2ad1c70fd66f19e20103dc94595", 
-    "excludeFromNav": false, 
-    "_content_type_unique_identifier": "text/plain", 
-    "allowDiscussion": false, 
-    "metadata_contributor_list": [], 
-    "locallyAllowedTypes": [
-        "OCWImage", 
-        "CourseSection", 
-        "OCWExtFile", 
-        "OCWFile", 
-        "MediaResource"
-    ], 
-    "_content_type_text": "text/html", 
-    "ad_type": "HOUSE", 
-    "creation_date": "2014/12/03 16:46:24.935 US/Eastern", 
-    "aggregationlevel": 3, 
-    "duration": "", 
-    "immediatelyAddableTypes": [
-        "OCWImage", 
-        "CourseSection", 
-        "OCWExtFile", 
-        "OCWFile", 
-        "MediaResource"
-    ], 
-    "subject": [], 
-    "_content_type_short_page_title": "text/plain", 
-    "effectiveDate": "2014/12/03 17:09:07.987 US/Eastern", 
-    "parent_module": "d9aad1541f1a9d3c0f7b0dcf9531a9a1", 
-    "is_mathml_document": false, 
-    "bottomtext": "", 
-    "short_page_title": "Conveying the Social Relevance of Geology", 
-    "section_identifier": "https://ocw.mit.edu/courses/earth-atmospheric-and-planetary-sciences/12-001-introduction-to-geology-fall-2013/instructor-insights", 
-    "related_mit_links": "", 
-    "_content_type_ad_type": "text/plain", 
-    "_layout": "custom_view", 
-    "_workflow_history": {
-        "page_workflow": [
-            {
-                "action": null, 
-                "review_state": "waiting_for_authoring", 
-                "actor": "Kcanavan", 
-                "comments": "", 
-                "time": "2014/12/03 16:46:24.945 US/Eastern"
-            }, 
-            {
-                "action": "approve_to_staging", 
-                "review_state": "ready_for_staging", 
-                "comments": "", 
-                "actor": "Kcanavan", 
-                "time": "2014/12/03 17:09:08.012 US/Eastern"
-            }, 
-            {
-                "action": "decline_to_qa", 
-                "review_state": "waiting_for_qa", 
-                "comments": "", 
-                "actor": "Kcanavan", 
-                "time": "2014/12/04 15:51:21.559 US/Eastern"
-            }, 
-            {
-                "action": "approve_to_staging", 
-                "review_state": "ready_for_staging", 
-                "comments": "", 
-                "actor": "Kcanavan", 
-                "time": "2014/12/04 15:51:47.844 US/Eastern"
-            }, 
-            {
-                "action": "decline_to_qa", 
-                "review_state": "waiting_for_qa", 
-                "actor": "Kcanavan", 
-                "comments": "", 
-                "time": "2014/12/09 16:37:02.385 US/Eastern"
-            }, 
-            {
-                "action": "approve_to_staging", 
-                "review_state": "ready_for_staging", 
-                "comments": "", 
-                "actor": "Kcanavan", 
-                "time": "2014/12/09 16:39:16.763 US/Eastern"
-            }, 
-            {
-                "action": "decline_to_qa", 
-                "review_state": "waiting_for_qa", 
-                "comments": "", 
-                "actor": "Kcanavan", 
-                "time": "2014/12/11 13:17:44.419 US/Eastern"
-            }, 
-            {
-                "action": "approve_to_staging", 
-                "review_state": "ready_for_staging", 
-                "actor": "Kcanavan", 
-                "comments": "", 
-                "time": "2014/12/11 13:18:39.056 US/Eastern"
-            }, 
-            {
-                "action": "decline_to_qa", 
-                "review_state": "waiting_for_qa", 
-                "actor": "sehansen", 
-                "comments": "", 
-                "time": "2014/12/11 15:23:54.199 US/Eastern"
-            }, 
-            {
-                "action": "approve_to_staging", 
-                "review_state": "ready_for_staging", 
-                "actor": "sehansen", 
-                "comments": "", 
-                "time": "2014/12/11 15:25:59.601 US/Eastern"
-            }, 
-            {
-                "action": "decline_to_qa", 
-                "review_state": "waiting_for_qa", 
-                "comments": "", 
-                "actor": "aimeeg", 
-                "time": "2014/12/13 16:40:03.910 US/Eastern"
-            }, 
-            {
-                "action": "approve_to_staging", 
-                "review_state": "ready_for_staging", 
-                "actor": "aimeeg", 
-                "comments": "", 
-                "time": "2014/12/13 16:42:36.792 US/Eastern"
-            }
-        ]
-    }, 
-    "_classname": "CourseSection", 
-    "_content_type_materialtype": "text/plain", 
-    "_userdefined_roles": [], 
-    "publisher": "MIT OpenCourseWare", 
-    "nextPreviousEnabled": false, 
-    "language": "", 
-    "url_rewrite_patterns": [], 
-    "widgets_features": [], 
-    "category_features": [], 
-    "firstTimeEdit": true, 
-    "feature_requirements": [], 
-    "list_in_left_nav": true, 
-    "short_name_tlp": "", 
-    "expirationDate": "None", 
-    "_content_type_id": "text/plain", 
-    "contributor_list": [], 
-    "is_media_gallery": false, 
-    "contributors": [], 
-    "_gopip": 6, 
-    "_content_type_title": "text/plain", 
-    "course_linking": [], 
+    },
     "_atrefs": {
         "BelongsTo": [
             "d9aad1541f1a9d3c0f7b0dcf9531a9a1"
-        ], 
+        ],
         "isReferencing": [
             "3f18dbaab90b3de9115b20da487f29e8"
         ]
-    }, 
-    "other_platform_requirements": "", 
-    "license": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/", 
-    "rights": "This site (c) Massachusetts Institute of Technology 2014.  Content within individual courses is (c) by the individual authors unless otherwise noted. The Massachusetts Institute of Technology is providing this Work (as defined below) under the terms of this Creative Commons public license (\"CCPL\" or \"license\") unless otherwise noted. The Work is protected by copyright and/or other applicable law. Any use of the work other than as authorized under this license is prohibited. By exercising any of the rights to the Work provided here, You (as defined below) accept and agree to be bound by the terms of this license. The Licensor, the Massachusetts Institute of Technology, grants You the rights contained here in consideration of Your acceptance of such terms and conditions.", 
-    "hide_Page_title": false, 
-    "_defaultpage": "", 
-    "tcATmit_subject_tags": [], 
-    "features_tracking": [], 
-    "ad_champion_text": "", 
-    "has_inline_embed": false, 
-    "unique_identifier": "https://ocw.mit.edu/courses/earth-atmospheric-and-planetary-sciences/12-001-introduction-to-geology-fall-2013/instructor-insights/conveying-the-social-relevance-of-geology", 
-    "is_image_gallery": false, 
-    "id": "conveying-the-social-relevance-of-geology", 
-    "materialtype": "Other", 
-    "_type": "CourseSection", 
-    "description": "In this section, Prof. Perron discusses how the instructors convey the social relevance of geology in 12.001.", 
-    "course_identifier": "https://ocw.mit.edu/courses/earth-atmospheric-and-planetary-sciences/12-001-introduction-to-geology-fall-2013", 
-    "_content_type_publisher": "text/plain", 
-    "tcATmit_instructional_tags": [], 
-    "_content_type": "text/html", 
-    "creators": [
-        "Kcanavan"
-    ], 
-    "modification_date": "2016/09/24 06:41:58.558 GMT-4", 
-    "always_publish": false, 
-    "_content_type_description": "text/plain", 
-    "_owner": null, 
+    },
+    "_classname": "CourseSection",
+    "_content_type": "text/html",
+    "_content_type_ad_type": "text/plain",
+    "_content_type_course_identifier": "text/plain",
+    "_content_type_description": "text/plain",
+    "_content_type_id": "text/plain",
+    "_content_type_license": "text/plain",
+    "_content_type_materialtype": "text/plain",
+    "_content_type_publisher": "text/plain",
+    "_content_type_rights": "text/html",
+    "_content_type_section_identifier": "text/plain",
+    "_content_type_short_page_title": "text/plain",
+    "_content_type_technical_location": "text/plain",
+    "_content_type_text": "text/html",
+    "_content_type_title": "text/plain",
+    "_content_type_unique_identifier": "text/plain",
+    "_defaultpage": "",
+    "_directly_provided": [
+        "Products.CMFEditions.interfaces.IVersioned"
+    ],
+    "_gopip": 6,
+    "_id": "conveying-the-social-relevance-of-geology",
+    "_layout": "custom_view",
+    "_owner": null,
+    "_path": "/Plone/courses/earth-atmospheric-and-planetary-sciences/12-001-introduction-to-geology-fall-2013/instructor-insights/conveying-the-social-relevance-of-geology",
     "_permissions": {
-        "Change portal events": {
-            "acquire": false, 
-            "roles": [
-                "Editor", 
-                "Manager", 
-                "MetadataEditor", 
-                "Owner"
-            ]
-        }, 
-        "Modify portal content": {
-            "acquire": false, 
-            "roles": [
-                "Manager", 
-                "MetadataEditor"
-            ]
-        }, 
         "Access contents information": {
-            "acquire": false, 
+            "acquire": false,
             "roles": [
                 "Authenticated"
             ]
-        }, 
-        "List folder contents": {
-            "acquire": false, 
+        },
+        "Change portal events": {
+            "acquire": false,
             "roles": [
-                "Editor", 
-                "Manager", 
-                "MetadataEditor", 
+                "Editor",
+                "Manager",
+                "MetadataEditor",
                 "Owner"
             ]
-        }, 
+        },
+        "List folder contents": {
+            "acquire": false,
+            "roles": [
+                "Editor",
+                "Manager",
+                "MetadataEditor",
+                "Owner"
+            ]
+        },
+        "Modify portal content": {
+            "acquire": false,
+            "roles": [
+                "Manager",
+                "MetadataEditor"
+            ]
+        },
         "View": {
-            "acquire": false, 
+            "acquire": false,
             "roles": [
                 "Authenticated"
             ]
         }
-    }, 
+    },
     "_properties": [
         [
-            "title", 
-            "Conveying the Social Relevance of Geology", 
+            "title",
+            "Conveying the Social Relevance of Geology",
             "string"
         ]
-    ], 
-    "_id": "conveying-the-social-relevance-of-geology", 
-    "courselist_features": [], 
-    "_path": "/Plone/courses/earth-atmospheric-and-planetary-sciences/12-001-introduction-to-geology-fall-2013/instructor-insights/conveying-the-social-relevance-of-geology"
+    ],
+    "_type": "CourseSection",
+    "_uid": "a9c623ed5ba59002d8a7cabe1d13ee9e",
+    "_userdefined_roles": [],
+    "_workflow_history": {
+        "page_workflow": [
+            {
+                "action": null,
+                "actor": "Kcanavan",
+                "comments": "",
+                "review_state": "waiting_for_authoring",
+                "time": "2014/12/03 16:46:24.945 US/Eastern"
+            },
+            {
+                "action": "approve_to_staging",
+                "actor": "Kcanavan",
+                "comments": "",
+                "review_state": "ready_for_staging",
+                "time": "2014/12/03 17:09:08.012 US/Eastern"
+            },
+            {
+                "action": "decline_to_qa",
+                "actor": "Kcanavan",
+                "comments": "",
+                "review_state": "waiting_for_qa",
+                "time": "2014/12/04 15:51:21.559 US/Eastern"
+            },
+            {
+                "action": "approve_to_staging",
+                "actor": "Kcanavan",
+                "comments": "",
+                "review_state": "ready_for_staging",
+                "time": "2014/12/04 15:51:47.844 US/Eastern"
+            },
+            {
+                "action": "decline_to_qa",
+                "actor": "Kcanavan",
+                "comments": "",
+                "review_state": "waiting_for_qa",
+                "time": "2014/12/09 16:37:02.385 US/Eastern"
+            },
+            {
+                "action": "approve_to_staging",
+                "actor": "Kcanavan",
+                "comments": "",
+                "review_state": "ready_for_staging",
+                "time": "2014/12/09 16:39:16.763 US/Eastern"
+            },
+            {
+                "action": "decline_to_qa",
+                "actor": "Kcanavan",
+                "comments": "",
+                "review_state": "waiting_for_qa",
+                "time": "2014/12/11 13:17:44.419 US/Eastern"
+            },
+            {
+                "action": "approve_to_staging",
+                "actor": "Kcanavan",
+                "comments": "",
+                "review_state": "ready_for_staging",
+                "time": "2014/12/11 13:18:39.056 US/Eastern"
+            },
+            {
+                "action": "decline_to_qa",
+                "actor": "sehansen",
+                "comments": "",
+                "review_state": "waiting_for_qa",
+                "time": "2014/12/11 15:23:54.199 US/Eastern"
+            },
+            {
+                "action": "approve_to_staging",
+                "actor": "sehansen",
+                "comments": "",
+                "review_state": "ready_for_staging",
+                "time": "2014/12/11 15:25:59.601 US/Eastern"
+            },
+            {
+                "action": "decline_to_qa",
+                "actor": "aimeeg",
+                "comments": "",
+                "review_state": "waiting_for_qa",
+                "time": "2014/12/13 16:40:03.910 US/Eastern"
+            },
+            {
+                "action": "approve_to_staging",
+                "actor": "aimeeg",
+                "comments": "",
+                "review_state": "ready_for_staging",
+                "time": "2014/12/13 16:42:36.792 US/Eastern"
+            }
+        ]
+    },
+    "ad_champion_text": "",
+    "ad_type": "HOUSE",
+    "aggregationlevel": 3,
+    "allowDiscussion": false,
+    "always_publish": false,
+    "bottomtext": "",
+    "category_features": [],
+    "constrainTypesMode": 0,
+    "contributor_list": [],
+    "contributors": [],
+    "course_identifier": "https://ocw.mit.edu/courses/earth-atmospheric-and-planetary-sciences/12-001-introduction-to-geology-fall-2013",
+    "course_linking": [],
+    "courselist_features": [],
+    "creation_date": "2014/12/03 16:46:24.935 US/Eastern",
+    "creators": [
+        "Kcanavan"
+    ],
+    "description": "In this section, Prof. Perron discusses how the instructors convey the social relevance of geology in 12.001.",
+    "duration": "",
+    "effectiveDate": "2014/12/03 17:09:07.987 US/Eastern",
+    "excludeFromNav": false,
+    "expirationDate": "None",
+    "feature_requirements": [],
+    "features_tracking": [],
+    "firstTimeEdit": true,
+    "has_inline_embed": false,
+    "hide_Page_title": false,
+    "id": "conveying-the-social-relevance-of-geology",
+    "immediatelyAddableTypes": [
+        "OCWImage",
+        "CourseSection",
+        "OCWExtFile",
+        "OCWFile",
+        "MediaResource"
+    ],
+    "is_image_gallery": false,
+    "is_mathml_document": false,
+    "is_media_gallery": false,
+    "language": "",
+    "license": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/",
+    "list_in_left_nav": true,
+    "locallyAllowedTypes": [
+        "OCWImage",
+        "CourseSection",
+        "OCWExtFile",
+        "OCWFile",
+        "MediaResource"
+    ],
+    "location": "",
+    "materialtype": "Other",
+    "metadata_contributor_list": [],
+    "modification_date": "2016/09/24 06:41:58.558 GMT-4",
+    "nextPreviousEnabled": false,
+    "other_platform_requirements": "",
+    "parent_module": "d9aad1541f1a9d3c0f7b0dcf9531a9a1",
+    "parent_uid": "1c2cb2ad1c70fd66f19e20103dc94595",
+    "publisher": "MIT OpenCourseWare",
+    "related_mit_links": "",
+    "rights": "This site (c) Massachusetts Institute of Technology 2014.  Content within individual courses is (c) by the individual authors unless otherwise noted. The Massachusetts Institute of Technology is providing this Work (as defined below) under the terms of this Creative Commons public license (\"CCPL\" or \"license\") unless otherwise noted. The Work is protected by copyright and/or other applicable law. Any use of the work other than as authorized under this license is prohibited. By exercising any of the rights to the Work provided here, You (as defined below) accept and agree to be bound by the terms of this license. The Licensor, the Massachusetts Institute of Technology, grants You the rights contained here in consideration of Your acceptance of such terms and conditions.",
+    "section_identifier": "https://ocw.mit.edu/courses/earth-atmospheric-and-planetary-sciences/12-001-introduction-to-geology-fall-2013/instructor-insights",
+    "short_name_tlp": "",
+    "short_page_title": "Conveying the Social Relevance of Geology",
+    "software_requirements": [
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "40.0",
+            "software_name_col": "Chrome",
+            "software_type_col": "Browser"
+        },
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "8.0",
+            "software_name_col": "Safari",
+            "software_type_col": "Browser"
+        },
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "38.0",
+            "software_name_col": "Mozilla Firefox",
+            "software_type_col": "Browser"
+        },
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "9.0",
+            "software_name_col": "Internet Explorer",
+            "software_type_col": "Browser"
+        },
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "13.1",
+            "software_name_col": "Edge",
+            "software_type_col": "Browser"
+        }
+    ],
+    "subject": [],
+    "tcATmit_instructional_tags": [],
+    "tcATmit_subject_tags": [],
+    "technical_location": "https://ocw.mit.edu/courses/earth-atmospheric-and-planetary-sciences/12-001-introduction-to-geology-fall-2013/instructor-insights/conveying-the-social-relevance-of-geology",
+    "text": "<p><i>In this section, Prof. Perron discusses how the instructors convey the social relevance of geology in 12.001.</i></p> <div class=\"pullquote\" style=\"float: right; margin: -4px 0 auto 20px; padding-left: 20px; width: 150px; border-right: none; border-left: 1px solid #D5C9BA;\"><p class=\"quote\">I take the debates about climate change that students see in the media and put them in context.</p> <p class=\"sig\">&mdash;Taylor Perron</p></div> <p>When you&rsquo;re teaching about processes that unfold over billions of years, it can be easy to gloss over geology&rsquo;s social relevance, because, as an instructor, you&rsquo;re struggling to cover so much content.  Nonetheless, we think it&rsquo;s very important to do so. One way we do this is by highlighting how humans impact and are impacted by the natural processes that we discuss in the course. We try to do this whenever we have a topic that&rsquo;s relevant in some way. For example, when discussing landslides, we note how land use influences soil cohesion. Even contemporary anthropogenic climate change becomes relevant in this conversation because we discuss the effects of changes in the precipitation regime on landslide patterns.</p> <div style=\"float: left; margin: 0 20px 5px 0; width: 320px;\"><img width=\"320\" height=\"213\" src=\"./resolveuid/3f18dbaab90b3de9115b20da487f29e8\" alt=\"A green crystalline rock hand sample.\" /><br /> <p class=\"instruction\">A rock from the rock identification lab. (Image by MIT OpenCourseWare.)</p></div> <p>The socially relevant topics we discuss aren&rsquo;t always related to surface processes. When Prof. Oliver Jagoutz talks about metamorphic reactions in rocks, he discusses a process called serpentinization, which, as it turns out, consumes CO<sub>2</sub>. There have been proposals to sequester CO<sub>2</sub> by encouraging serpentinization reactions in rocks, which would then lock the CO<sub>2</sub> in the minerals and take it out of the atmosphere. When he discusses metamorphic rocks, he spotlights this socially relevant application.</p> <p>One topic that always surfaces in politicized discussion of climate change is the geologic record of climate variability and the role of humans in this change. I address this directly in my lectures. I take the debates about climate change that students see in the media and put them in context. I also facilitate a class activity that directly engages students in the debate. I divide the students into teams of climate scientists and &ldquo;deniers.&rdquo; I coach both teams as they develop arguments. We have a series of debates and then we talk though the underlying issues.</p>",
+    "title": "Conveying the Social Relevance of Geology",
+    "unique_identifier": "https://ocw.mit.edu/courses/earth-atmospheric-and-planetary-sciences/12-001-introduction-to-geology-fall-2013/instructor-insights/conveying-the-social-relevance-of-geology",
+    "url_rewrite_patterns": [],
+    "widgets_features": []
 }

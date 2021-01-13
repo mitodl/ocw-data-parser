@@ -1,162 +1,162 @@
 {
-    "tcATmit_subject_tags": [], 
-    "features_tracking": [], 
-    "widgets_features": [], 
-    "contributors": [], 
-    "unique_identifier": "https://ocw.mit.edu/courses/earth-atmospheric-and-planetary-sciences/12-001-introduction-to-geology-fall-2013/field-trip/12.001_Field_TripStops2014.kml", 
-    "_content_type_publisher": "text/plain", 
-    "_content_type_license": "text/plain", 
-    "creation_date": "2015/02/03 00:53:53.195 US/Eastern", 
-    "aggregationlevel": 2, 
-    "_uid": "97f28b51c2d76bbffa1213260d56c281", 
-    "_workflow_history": {
-        "one_state_workflow": [
-            {
-                "action": null, 
-                "review_state": "published", 
-                "actor": "rverma83", 
-                "comments": "", 
-                "time": "2015/02/03 00:53:53.206 US/Eastern"
-            }
-        ]
-    }, 
-    "expirationDate": "None", 
-    "_content_type_id": "text/plain", 
-    "duration": "", 
-    "contributor_list": [], 
-    "category_features": [], 
-    "id": "12.001_Field_TripStops2014.kml", 
-    "related_mit_links": "", 
-    "effectiveDate": "None", 
-    "title": "12.001_Field_TripStops2014.kml", 
-    "parent_module": "d9aad1541f1a9d3c0f7b0dcf9531a9a1", 
-    "_content_type": "text/xml", 
-    "_userdefined_roles": [], 
-    "_content_type_language": "text/plain", 
-    "_gopip": 12, 
-    "location": "", 
-    "_atrefs": {
-        "BelongsTo": [
-            "d9aad1541f1a9d3c0f7b0dcf9531a9a1"
-        ]
-    }, 
-    "_content_type_course_identifier": "text/plain", 
-    "_content_type_title": "text/plain", 
-    "section_identifier": "https://ocw.mit.edu/courses/earth-atmospheric-and-planetary-sciences/12-001-introduction-to-geology-fall-2013/field-trip", 
-    "_atbrefs": {
-        "isReferencing": [
-            "de36fe69cf33ddf238bc3896d0ce9eff"
-        ]
-    }, 
-    "course_linking": [], 
-    "_content_type_section_identifier": "text/plain", 
-    "_type": "OCWFile", 
-    "technical_location": "https://ocw.mit.edu/courses/earth-atmospheric-and-planetary-sciences/12-001-introduction-to-geology-fall-2013/field-trip/12.001_Field_TripStops2014.kml", 
-    "description": "This is the special resource regarding field trip stops.", 
-    "software_requirements": [
-        {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "40.0", 
-            "software_name_col": "Chrome", 
-            "maximum_version_col": ""
-        }, 
-        {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "8.0", 
-            "software_name_col": "Safari", 
-            "maximum_version_col": ""
-        }, 
-        {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "38.0", 
-            "software_name_col": "Mozilla Firefox", 
-            "maximum_version_col": ""
-        }, 
-        {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "9.0", 
-            "software_name_col": "Internet Explorer", 
-            "maximum_version_col": ""
-        }, 
-        {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "13.1", 
-            "software_name_col": "Edge", 
-            "maximum_version_col": ""
-        }
-    ], 
-    "_content_type_technical_location": "text/plain", 
-    "_layout": "file_view", 
-    "subject": [], 
-    "_datafield_file": {
-        "encoding": "base64", 
-        "data": "PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjxrbWwgeG1sbnM9Imh0dHA6Ly93d3cub3Blbmdpcy5uZXQva21sLzIuMiIgeG1sbnM6Z3g9Imh0dHA6Ly93d3cuZ29vZ2xlLmNvbS9rbWwvZXh0LzIuMiIgeG1sbnM6a21sPSJodHRwOi8vd3d3Lm9wZW5naXMubmV0L2ttbC8yLjIiIHhtbG5zOmF0b209Imh0dHA6Ly93d3cudzMub3JnLzIwMDUvQXRvbSI+DQo8RG9jdW1lbnQ+DQoJPG5hbWU+RmllbGRUcmlwU3RvcHMua21sPC9uYW1lPg0KCTxTdHlsZSBpZD0iaW5saW5lMSI+DQoJCTxMaW5lU3R5bGU+DQoJCQk8Y29sb3I+ZmYwMDAwZmY8L2NvbG9yPg0KCQkJPHdpZHRoPjI8L3dpZHRoPg0KCQk8L0xpbmVTdHlsZT4NCgk8L1N0eWxlPg0KCTxTdHlsZU1hcCBpZD0ibV95bHctcHVzaHBpbiI+DQoJCTxQYWlyPg0KCQkJPGtleT5ub3JtYWw8L2tleT4NCgkJCTxzdHlsZVVybD4jc195bHctcHVzaHBpbjwvc3R5bGVVcmw+DQoJCTwvUGFpcj4NCgkJPFBhaXI+DQoJCQk8a2V5PmhpZ2hsaWdodDwva2V5Pg0KCQkJPHN0eWxlVXJsPiNzX3lsdy1wdXNocGluX2hsPC9zdHlsZVVybD4NCgkJPC9QYWlyPg0KCTwvU3R5bGVNYXA+DQoJPFN0eWxlIGlkPSJzX3lsdy1wdXNocGluIj4NCgkJPEljb25TdHlsZT4NCgkJCTxzY2FsZT4xLjE8L3NjYWxlPg0KCQkJPEljb24+DQoJCQkJPGhyZWY+aHR0cDovL21hcHMuZ29vZ2xlLmNvbS9tYXBmaWxlcy9rbWwvcHVzaHBpbi95bHctcHVzaHBpbi5wbmc8L2hyZWY+DQoJCQk8L0ljb24+DQoJCQk8aG90U3BvdCB4PSIyMCIgeT0iMiIgeHVuaXRzPSJwaXhlbHMiIHl1bml0cz0icGl4ZWxzIi8+DQoJCTwvSWNvblN0eWxlPg0KCTwvU3R5bGU+DQoJPFN0eWxlTWFwIGlkPSJpbmxpbmUiPg0KCQk8UGFpcj4NCgkJCTxrZXk+bm9ybWFsPC9rZXk+DQoJCQk8c3R5bGVVcmw+I2lubGluZTA8L3N0eWxlVXJsPg0KCQk8L1BhaXI+DQoJCTxQYWlyPg0KCQkJPGtleT5oaWdobGlnaHQ8L2tleT4NCgkJCTxzdHlsZVVybD4jaW5saW5lMTwvc3R5bGVVcmw+DQoJCTwvUGFpcj4NCgk8L1N0eWxlTWFwPg0KCTxTdHlsZSBpZD0iaW5saW5lMCI+DQoJCTxMaW5lU3R5bGU+DQoJCQk8Y29sb3I+ZmYwMDAwZmY8L2NvbG9yPg0KCQkJPHdpZHRoPjI8L3dpZHRoPg0KCQk8L0xpbmVTdHlsZT4NCgk8L1N0eWxlPg0KCTxTdHlsZSBpZD0ic195bHctcHVzaHBpbl9obCI+DQoJCTxJY29uU3R5bGU+DQoJCQk8c2NhbGU+MS4zPC9zY2FsZT4NCgkJCTxJY29uPg0KCQkJCTxocmVmPmh0dHA6Ly9tYXBzLmdvb2dsZS5jb20vbWFwZmlsZXMva21sL3B1c2hwaW4veWx3LXB1c2hwaW4ucG5nPC9ocmVmPg0KCQkJPC9JY29uPg0KCQkJPGhvdFNwb3QgeD0iMjAiIHk9IjIiIHh1bml0cz0icGl4ZWxzIiB5dW5pdHM9InBpeGVscyIvPg0KCQk8L0ljb25TdHlsZT4NCgk8L1N0eWxlPg0KCTxGb2xkZXI+DQoJCTxuYW1lPjEyLjAwMSBGaWVsZCBUcmlwIHN0b3BzPC9uYW1lPg0KCQk8dmlzaWJpbGl0eT4wPC92aXNpYmlsaXR5Pg0KCQk8b3Blbj4xPC9vcGVuPg0KCQk8UGxhY2VtYXJrPg0KCQkJPG5hbWU+R3JlZW4gQnVpbGRpbmc8L25hbWU+DQoJCQk8dmlzaWJpbGl0eT4wPC92aXNpYmlsaXR5Pg0KCQkJPGRlc2NyaXB0aW9uPkRlcGFydHVyZSBGcm9tIEdyZWVuIEJ1aWxkaW5nPC9kZXNjcmlwdGlvbj4NCgkJCTxMb29rQXQ+DQoJCQkJPGxvbmdpdHVkZT4tOTUuNDUxNzQyOTcxMzgwMzQ8L2xvbmdpdHVkZT4NCgkJCQk8bGF0aXR1ZGU+MzcuNjgxOTM2NjczNzU2MDE8L2xhdGl0dWRlPg0KCQkJCTxhbHRpdHVkZT4wPC9hbHRpdHVkZT4NCgkJCQk8aGVhZGluZz40LjI5NjQzNzUxNzc3ODUwMWUtMDY8L2hlYWRpbmc+DQoJCQkJPHRpbHQ+MDwvdGlsdD4NCgkJCQk8cmFuZ2U+MTEwMDgwNTAuMTk5MjI0MTQ8L3JhbmdlPg0KCQkJCTxneDphbHRpdHVkZU1vZGU+cmVsYXRpdmVUb1NlYUZsb29yPC9neDphbHRpdHVkZU1vZGU+DQoJCQk8L0xvb2tBdD4NCgkJCTxzdHlsZVVybD4jbV95bHctcHVzaHBpbjwvc3R5bGVVcmw+DQoJCQk8UG9pbnQ+DQoJCQkJPGd4OmRyYXdPcmRlcj4xPC9neDpkcmF3T3JkZXI+DQoJCQkJPGNvb3JkaW5hdGVzPi03MS4wODk0MTIsNDIuMzYwMjcxLDA8L2Nvb3JkaW5hdGVzPg0KCQkJPC9Qb2ludD4NCgkJPC9QbGFjZW1hcms+DQoJCTxQbGFjZW1hcms+DQoJCQk8bmFtZT5TdG9wIDE6IE5vc2VzIEZhdWx0PC9uYW1lPg0KCQkJPHZpc2liaWxpdHk+MDwvdmlzaWJpbGl0eT4NCgkJCTxMb29rQXQ+DQoJCQkJPGxvbmdpdHVkZT4tNzMuODkxNjIwNDQzNTQ2NzwvbG9uZ2l0dWRlPg0KCQkJCTxsYXRpdHVkZT40My4wODI4NzgzNDUyMzA4MjwvbGF0aXR1ZGU+DQoJCQkJPGFsdGl0dWRlPjA8L2FsdGl0dWRlPg0KCQkJCTxoZWFkaW5nPjIuNzkzMzgzNzY1ODgxMTc4ZS0wNjwvaGVhZGluZz4NCgkJCQk8dGlsdD4wPC90aWx0Pg0KCQkJCTxyYW5nZT4yODYxODM2Ljc4MTc4NDE4OTwvcmFuZ2U+DQoJCQkJPGd4OmFsdGl0dWRlTW9kZT5yZWxhdGl2ZVRvU2VhRmxvb3I8L2d4OmFsdGl0dWRlTW9kZT4NCgkJCTwvTG9va0F0Pg0KCQkJPHN0eWxlVXJsPiNtX3lsdy1wdXNocGluPC9zdHlsZVVybD4NCgkJCTxQb2ludD4NCgkJCQk8Z3g6ZHJhd09yZGVyPjE8L2d4OmRyYXdPcmRlcj4NCgkJCQk8Y29vcmRpbmF0ZXM+LTc0LjQ1ODQ0OCw0Mi45MDIzNTksMDwvY29vcmRpbmF0ZXM+DQoJCQk8L1BvaW50Pg0KCQk8L1BsYWNlbWFyaz4NCgkJPFBsYWNlbWFyaz4NCgkJCTxuYW1lPlN0b3AgMjogQ2FuYWpvaGFyaWUgQ3JlZWs8L25hbWU+DQoJCQk8dmlzaWJpbGl0eT4wPC92aXNpYmlsaXR5Pg0KCQkJPExvb2tBdD4NCgkJCQk8bG9uZ2l0dWRlPi03Mi40MTA3MDAxMjYyMDQ0OTwvbG9uZ2l0dWRlPg0KCQkJCTxsYXRpdHVkZT40Mi45NTI0MTEyMjgzMDY0MjwvbGF0aXR1ZGU+DQoJCQkJPGFsdGl0dWRlPjA8L2FsdGl0dWRlPg0KCQkJCTxoZWFkaW5nPjEuMDExMDIzNDUwNTMxMTMxPC9oZWFkaW5nPg0KCQkJCTx0aWx0PjA8L3RpbHQ+DQoJCQkJPHJhbmdlPjU3OTY4OS4xNzcwODAyMzAyPC9yYW5nZT4NCgkJCQk8Z3g6YWx0aXR1ZGVNb2RlPnJlbGF0aXZlVG9TZWFGbG9vcjwvZ3g6YWx0aXR1ZGVNb2RlPg0KCQkJPC9Mb29rQXQ+DQoJCQk8c3R5bGVVcmw+I21feWx3LXB1c2hwaW48L3N0eWxlVXJsPg0KCQkJPFBvaW50Pg0KCQkJCTxneDpkcmF3T3JkZXI+MTwvZ3g6ZHJhd09yZGVyPg0KCQkJCTxjb29yZGluYXRlcz4tNzQuNTcxMjY0LDQyLjg5ODA3MywwPC9jb29yZGluYXRlcz4NCgkJCTwvUG9pbnQ+DQoJCTwvUGxhY2VtYXJrPg0KCQk8UGxhY2VtYXJrPg0KCQkJPG5hbWU+U3RvcCAzOiBDYW5ham9oYXJpZSBHb3JnZTwvbmFtZT4NCgkJCTx2aXNpYmlsaXR5PjA8L3Zpc2liaWxpdHk+DQoJCQk8TG9va0F0Pg0KCQkJCTxsb25naXR1ZGU+LTcyLjQxMDcwMDEyNjIwNDQ5PC9sb25naXR1ZGU+DQoJCQkJPGxhdGl0dWRlPjQyLjk1MjQxMTIyODMwNjQyPC9sYXRpdHVkZT4NCgkJCQk8YWx0aXR1ZGU+MDwvYWx0aXR1ZGU+DQoJCQkJPGhlYWRpbmc+MS4wMTEwMjM0NTA1MzExMzE8L2hlYWRpbmc+DQoJCQkJPHRpbHQ+MDwvdGlsdD4NCgkJCQk8cmFuZ2U+NTc5Njg5LjE3NzA4MDIzMDI8L3JhbmdlPg0KCQkJCTxneDphbHRpdHVkZU1vZGU+cmVsYXRpdmVUb1NlYUZsb29yPC9neDphbHRpdHVkZU1vZGU+DQoJCQk8L0xvb2tBdD4NCgkJCTxzdHlsZVVybD4jbV95bHctcHVzaHBpbjwvc3R5bGVVcmw+DQoJCQk8UG9pbnQ+DQoJCQkJPGd4OmRyYXdPcmRlcj4xPC9neDpkcmF3T3JkZXI+DQoJCQkJPGNvb3JkaW5hdGVzPi03NC41NjI5MzUsNDIuODg1MzU0LDA8L2Nvb3JkaW5hdGVzPg0KCQkJPC9Qb2ludD4NCgkJPC9QbGFjZW1hcms+DQoJCTxQbGFjZW1hcms+DQoJCQk8bmFtZT5TdG9wIDQ6IFBvZXN0ZW5raWxsIEdvcmdlPC9uYW1lPg0KCQkJPHZpc2liaWxpdHk+MDwvdmlzaWJpbGl0eT4NCgkJCTxMb29rQXQ+DQoJCQkJPGxvbmdpdHVkZT4tNzIuNDEwNzAwMTI2MjA0NDk8L2xvbmdpdHVkZT4NCgkJCQk8bGF0aXR1ZGU+NDIuOTUyNDExMjI4MzA2NDI8L2xhdGl0dWRlPg0KCQkJCTxhbHRpdHVkZT4wPC9hbHRpdHVkZT4NCgkJCQk8aGVhZGluZz4xLjAxMTAyMzQ1MDUzMTEzMTwvaGVhZGluZz4NCgkJCQk8dGlsdD4wPC90aWx0Pg0KCQkJCTxyYW5nZT41Nzk2ODkuMTc3MDgwMjMwMjwvcmFuZ2U+DQoJCQkJPGd4OmFsdGl0dWRlTW9kZT5yZWxhdGl2ZVRvU2VhRmxvb3I8L2d4OmFsdGl0dWRlTW9kZT4NCgkJCTwvTG9va0F0Pg0KCQkJPHN0eWxlVXJsPiNtX3lsdy1wdXNocGluPC9zdHlsZVVybD4NCgkJCTxQb2ludD4NCgkJCQk8Z3g6ZHJhd09yZGVyPjE8L2d4OmRyYXdPcmRlcj4NCgkJCQk8Y29vcmRpbmF0ZXM+LTczLjY4MDM4Nyw0Mi43MjAxMSwwPC9jb29yZGluYXRlcz4NCgkJCTwvUG9pbnQ+DQoJCTwvUGxhY2VtYXJrPg0KCQk8UGxhY2VtYXJrPg0KCQkJPG5hbWU+U3RvcCA1OiBPdmVybG9vazwvbmFtZT4NCgkJCTx2aXNpYmlsaXR5PjA8L3Zpc2liaWxpdHk+DQoJCQk8TG9va0F0Pg0KCQkJCTxsb25naXR1ZGU+LTcyLjQxMDcwMDEyNjIwNDQ5PC9sb25naXR1ZGU+DQoJCQkJPGxhdGl0dWRlPjQyLjk1MjQxMTIyODMwNjQyPC9sYXRpdHVkZT4NCgkJCQk8YWx0aXR1ZGU+MDwvYWx0aXR1ZGU+DQoJCQkJPGhlYWRpbmc+MS4wMTEwMjM0NTA1MzExMzE8L2hlYWRpbmc+DQoJCQkJPHRpbHQ+MDwvdGlsdD4NCgkJCQk8cmFuZ2U+NTc5Njg5LjE3NzA4MDIzMDI8L3JhbmdlPg0KCQkJCTxneDphbHRpdHVkZU1vZGU+cmVsYXRpdmVUb1NlYUZsb29yPC9neDphbHRpdHVkZU1vZGU+DQoJCQk8L0xvb2tBdD4NCgkJCTxzdHlsZVVybD4jbV95bHctcHVzaHBpbjwvc3R5bGVVcmw+DQoJCQk8UG9pbnQ+DQoJCQkJPGd4OmRyYXdPcmRlcj4xPC9neDpkcmF3T3JkZXI+DQoJCQkJPGNvb3JkaW5hdGVzPi03My41Njc2MjcsNDIuNzQ5MjE2LDA8L2Nvb3JkaW5hdGVzPg0KCQkJPC9Qb2ludD4NCgkJPC9QbGFjZW1hcms+DQoJCTxQbGFjZW1hcms+DQoJCQk8bmFtZT5TdG9wIDY6IEhvb3NhYyBTY2hpc3Q8L25hbWU+DQoJCQk8dmlzaWJpbGl0eT4wPC92aXNpYmlsaXR5Pg0KCQkJPExvb2tBdD4NCgkJCQk8bG9uZ2l0dWRlPi03Mi40MTA3MDAxMjYyMDQ0OTwvbG9uZ2l0dWRlPg0KCQkJCTxsYXRpdHVkZT40Mi45NTI0MTEyMjgzMDY0MjwvbGF0aXR1ZGU+DQoJCQkJPGFsdGl0dWRlPjA8L2FsdGl0dWRlPg0KCQkJCTxoZWFkaW5nPjEuMDExMDIzNDUwNTMxMTMxPC9oZWFkaW5nPg0KCQkJCTx0aWx0PjA8L3RpbHQ+DQoJCQkJPHJhbmdlPjU3OTY4OS4xNzcwODAyMzAyPC9yYW5nZT4NCgkJCQk8Z3g6YWx0aXR1ZGVNb2RlPnJlbGF0aXZlVG9TZWFGbG9vcjwvZ3g6YWx0aXR1ZGVNb2RlPg0KCQkJPC9Mb29rQXQ+DQoJCQk8c3R5bGVVcmw+I21feWx3LXB1c2hwaW48L3N0eWxlVXJsPg0KCQkJPFBvaW50Pg0KCQkJCTxneDpkcmF3T3JkZXI+MTwvZ3g6ZHJhd09yZGVyPg0KCQkJCTxjb29yZGluYXRlcz4tNzMuMDYyODk0LDQyLjcwODk4OSwwPC9jb29yZGluYXRlcz4NCgkJCTwvUG9pbnQ+DQoJCTwvUGxhY2VtYXJrPg0KCQk8UGxhY2VtYXJrPg0KCQkJPG5hbWU+U3RvcCA3OiBSb3dlIFNjaGlzdDwvbmFtZT4NCgkJCTx2aXNpYmlsaXR5PjA8L3Zpc2liaWxpdHk+DQoJCQk8TG9va0F0Pg0KCQkJCTxsb25naXR1ZGU+LTcyLjQxMDcwMDEyNjIwNDQ5PC9sb25naXR1ZGU+DQoJCQkJPGxhdGl0dWRlPjQyLjk1MjQxMTIyODMwNjQyPC9sYXRpdHVkZT4NCgkJCQk8YWx0aXR1ZGU+MDwvYWx0aXR1ZGU+DQoJCQkJPGhlYWRpbmc+MS4wMTEwMjM0NTA1MzExMzE8L2hlYWRpbmc+DQoJCQkJPHRpbHQ+MDwvdGlsdD4NCgkJCQk8cmFuZ2U+NTc5Njg5LjE3NzA4MDIzMDI8L3JhbmdlPg0KCQkJCTxneDphbHRpdHVkZU1vZGU+cmVsYXRpdmVUb1NlYUZsb29yPC9neDphbHRpdHVkZU1vZGU+DQoJCQk8L0xvb2tBdD4NCgkJCTxzdHlsZVVybD4jbV95bHctcHVzaHBpbjwvc3R5bGVVcmw+DQoJCQk8UG9pbnQ+DQoJCQkJPGd4OmRyYXdPcmRlcj4xPC9neDpkcmF3T3JkZXI+DQoJCQkJPGNvb3JkaW5hdGVzPi03My4wMDY2OTksNDIuNjcwNzgyLDA8L2Nvb3JkaW5hdGVzPg0KCQkJPC9Qb2ludD4NCgkJPC9QbGFjZW1hcms+DQoJCTxQbGFjZW1hcms+DQoJCQk8bmFtZT5TdG9wIDg6IFNlcnBlbnRpbml0ZSBCb3VsZGVyczwvbmFtZT4NCgkJCTx2aXNpYmlsaXR5PjA8L3Zpc2liaWxpdHk+DQoJCQk8TG9va0F0Pg0KCQkJCTxsb25naXR1ZGU+LTcyLjQxMDcwMDEyNjIwNDQ5PC9sb25naXR1ZGU+DQoJCQkJPGxhdGl0dWRlPjQyLjk1MjQxMTIyODMwNjQyPC9sYXRpdHVkZT4NCgkJCQk8YWx0aXR1ZGU+MDwvYWx0aXR1ZGU+DQoJCQkJPGhlYWRpbmc+MS4wMTEwMjM0NTA1MzExMzE8L2hlYWRpbmc+DQoJCQkJPHRpbHQ+MDwvdGlsdD4NCgkJCQk8cmFuZ2U+NTc5Njg5LjE3NzA4MDIzMDI8L3JhbmdlPg0KCQkJCTxneDphbHRpdHVkZU1vZGU+cmVsYXRpdmVUb1NlYUZsb29yPC9neDphbHRpdHVkZU1vZGU+DQoJCQk8L0xvb2tBdD4NCgkJCTxzdHlsZVVybD4jbV95bHctcHVzaHBpbjwvc3R5bGVVcmw+DQoJCQk8UG9pbnQ+DQoJCQkJPGd4OmRyYXdPcmRlcj4xPC9neDpkcmF3T3JkZXI+DQoJCQkJPGNvb3JkaW5hdGVzPi03Mi45ODk2NzUwMDAwMDAwMSw0Mi42NjUzNzIsMDwvY29vcmRpbmF0ZXM+DQoJCQk8L1BvaW50Pg0KCQk8L1BsYWNlbWFyaz4NCgkJPFBsYWNlbWFyaz4NCgkJCTxuYW1lPlN0b3AgOTogUGlsbG93IEJhc2FsdHMgaW4gdGhlIEhhd2xleS1Db2xsaW5zdmlsbGUgRm9ybWF0aW9uPC9uYW1lPg0KCQkJPHZpc2liaWxpdHk+MDwvdmlzaWJpbGl0eT4NCgkJCTxMb29rQXQ+DQoJCQkJPGxvbmdpdHVkZT4tNzIuNDEwNzAwMTI2MjA0NDk8L2xvbmdpdHVkZT4NCgkJCQk8bGF0aXR1ZGU+NDIuOTUyNDExMjI4MzA2NDI8L2xhdGl0dWRlPg0KCQkJCTxhbHRpdHVkZT4wPC9hbHRpdHVkZT4NCgkJCQk8aGVhZGluZz4xLjAxMTAyMzQ1MDUzMTEzMTwvaGVhZGluZz4NCgkJCQk8dGlsdD4wPC90aWx0Pg0KCQkJCTxyYW5nZT41Nzk2ODkuMTc3MDgwMjMwMjwvcmFuZ2U+DQoJCQkJPGd4OmFsdGl0dWRlTW9kZT5yZWxhdGl2ZVRvU2VhRmxvb3I8L2d4OmFsdGl0dWRlTW9kZT4NCgkJCTwvTG9va0F0Pg0KCQkJPHN0eWxlVXJsPiNtX3lsdy1wdXNocGluPC9zdHlsZVVybD4NCgkJCTxQb2ludD4NCgkJCQk8Z3g6ZHJhd09yZGVyPjE8L2d4OmRyYXdPcmRlcj4NCgkJCQk8Y29vcmRpbmF0ZXM+LTcyLjkxMjEyNDAwMDAwMDAxLDQyLjYwNDk2NCwwPC9jb29yZGluYXRlcz4NCgkJCTwvUG9pbnQ+DQoJCTwvUGxhY2VtYXJrPg0KCQk8UGxhY2VtYXJrPg0KCQkJPG5hbWU+U3RvcCAxMDogU2hlbGJ1cm5lIEZhbGxzIERvbWU8L25hbWU+DQoJCQk8dmlzaWJpbGl0eT4wPC92aXNpYmlsaXR5Pg0KCQkJPExvb2tBdD4NCgkJCQk8bG9uZ2l0dWRlPi03Mi40MTA3MDAxMjYyMDQ0OTwvbG9uZ2l0dWRlPg0KCQkJCTxsYXRpdHVkZT40Mi45NTI0MTEyMjgzMDY0MjwvbGF0aXR1ZGU+DQoJCQkJPGFsdGl0dWRlPjA8L2FsdGl0dWRlPg0KCQkJCTxoZWFkaW5nPjEuMDExMDIzNDUwNTMxMTMxPC9oZWFkaW5nPg0KCQkJCTx0aWx0PjA8L3RpbHQ+DQoJCQkJPHJhbmdlPjU3OTY4OS4xNzcwODAyMzAyPC9yYW5nZT4NCgkJCQk8Z3g6YWx0aXR1ZGVNb2RlPnJlbGF0aXZlVG9TZWFGbG9vcjwvZ3g6YWx0aXR1ZGVNb2RlPg0KCQkJPC9Mb29rQXQ+DQoJCQk8c3R5bGVVcmw+I21feWx3LXB1c2hwaW48L3N0eWxlVXJsPg0KCQkJPFBvaW50Pg0KCQkJCTxneDpkcmF3T3JkZXI+MTwvZ3g6ZHJhd09yZGVyPg0KCQkJCTxjb29yZGluYXRlcz4tNzIuNzMwMzE3LDQyLjU5MDkxNywwPC9jb29yZGluYXRlcz4NCgkJCTwvUG9pbnQ+DQoJCTwvUGxhY2VtYXJrPg0KCQk8UGxhY2VtYXJrPg0KCQkJPG5hbWU+U3RvcCAxMTogRGlub3NhdXIgVHJhY2tzPC9uYW1lPg0KCQkJPHZpc2liaWxpdHk+MDwvdmlzaWJpbGl0eT4NCgkJCTxMb29rQXQ+DQoJCQkJPGxvbmdpdHVkZT4tNzIuNTgxNzIwNzg0NDQ0NjwvbG9uZ2l0dWRlPg0KCQkJCTxsYXRpdHVkZT40Mi42ODk2OTI2Nzc0NjY3OTwvbGF0aXR1ZGU+DQoJCQkJPGFsdGl0dWRlPjA8L2FsdGl0dWRlPg0KCQkJCTxoZWFkaW5nPjAuODk0NzMzOTYyNzg4NTU4OTwvaGVhZGluZz4NCgkJCQk8dGlsdD4wPC90aWx0Pg0KCQkJCTxyYW5nZT40MDI2NjUuOTI4NzY5MjQ3MTwvcmFuZ2U+DQoJCQkJPGd4OmFsdGl0dWRlTW9kZT5yZWxhdGl2ZVRvU2VhRmxvb3I8L2d4OmFsdGl0dWRlTW9kZT4NCgkJCTwvTG9va0F0Pg0KCQkJPHN0eWxlVXJsPiNtX3lsdy1wdXNocGluPC9zdHlsZVVybD4NCgkJCTxQb2ludD4NCgkJCQk8Z3g6ZHJhd09yZGVyPjE8L2d4OmRyYXdPcmRlcj4NCgkJCQk8Y29vcmRpbmF0ZXM+LTcyLjYyMzU4Mzk5OTk5OTk5LDQyLjI0MTYwOSwwPC9jb29yZGluYXRlcz4NCgkJCTwvUG9pbnQ+DQoJCTwvUGxhY2VtYXJrPg0KCQk8UGxhY2VtYXJrPg0KCQkJPG5hbWU+U3RvcCAxMjogQW1oZXJzdCBDb2xsZWdlIE11c2V1bTwvbmFtZT4NCgkJCTx2aXNpYmlsaXR5PjA8L3Zpc2liaWxpdHk+DQoJCQk8TG9va0F0Pg0KCQkJCTxsb25naXR1ZGU+LTcyLjU4MTcyMDc4NDQ0NDY8L2xvbmdpdHVkZT4NCgkJCQk8bGF0aXR1ZGU+NDIuNjg5NjkyNjc3NDY2Nzk8L2xhdGl0dWRlPg0KCQkJCTxhbHRpdHVkZT4wPC9hbHRpdHVkZT4NCgkJCQk8aGVhZGluZz4wLjg5NDczMzk2Mjc4ODU1ODk8L2hlYWRpbmc+DQoJCQkJPHRpbHQ+MDwvdGlsdD4NCgkJCQk8cmFuZ2U+NDAyNjY1LjkyODc2OTI0NzE8L3JhbmdlPg0KCQkJCTxneDphbHRpdHVkZU1vZGU+cmVsYXRpdmVUb1NlYUZsb29yPC9neDphbHRpdHVkZU1vZGU+DQoJCQk8L0xvb2tBdD4NCgkJCTxzdHlsZVVybD4jbV95bHctcHVzaHBpbjwvc3R5bGVVcmw+DQoJCQk8UG9pbnQ+DQoJCQkJPGd4OmRyYXdPcmRlcj4xPC9neDpkcmF3T3JkZXI+DQoJCQkJPGNvb3JkaW5hdGVzPi03Mi41MTQyOTg5OTk5OTk5OSw0Mi4zNzE5NzgsMDwvY29vcmRpbmF0ZXM+DQoJCQk8L1BvaW50Pg0KCQk8L1BsYWNlbWFyaz4NCgkJPFBsYWNlbWFyaz4NCgkJCTxuYW1lPkNyb3NzIFNlY3Rpb24gTGluZTwvbmFtZT4NCgkJCTx2aXNpYmlsaXR5PjA8L3Zpc2liaWxpdHk+DQoJCQk8c3R5bGVVcmw+I2lubGluZTwvc3R5bGVVcmw+DQoJCQk8TGluZVN0cmluZz4NCgkJCQk8dGVzc2VsbGF0ZT4xPC90ZXNzZWxsYXRlPg0KCQkJCTxjb29yZGluYXRlcz4NCgkJCQkJLTc0Ljk5MTQ2NDM0MTY5NDk0LDQzLjAwOTEzNjcxNzg5MjcyLDM0MS4zODU1NDU2NzI5MzY4IC03Mi40OTA3NDg0NTczNzExMSw0Mi4zNjE2MTM2MTQxNDQ4NSwyMzUuOTE1NzUyNjMxNTUyIA0KCQkJCTwvY29vcmRpbmF0ZXM+DQoJCQk8L0xpbmVTdHJpbmc+DQoJCTwvUGxhY2VtYXJrPg0KCTwvRm9sZGVyPg0KPC9Eb2N1bWVudD4NCjwva21sPg0K", 
-        "content_type": "text/xml", 
-        "filename": "12.001_Field_TripStops2014.kml"
-    }, 
-    "course_identifier": "https://ocw.mit.edu/courses/earth-atmospheric-and-planetary-sciences/12-001-introduction-to-geology-fall-2013", 
-    "_content_type_rights": "text/html", 
-    "other_platform_requirements": "Keyhole Markup Language (KML) is an XML-based language schema for expressing geographic annotation and visualization on existing or future Web-based, two-dimensional maps and three-dimensional Earth browsers.", 
-    "_classname": "OCWFile", 
-    "_content_type_materialtype": "text/plain", 
-    "_content_type_other_platform_requirements": "text/html", 
-    "_directly_provided": [], 
-    "parent_uid": "de36fe69cf33ddf238bc3896d0ce9eff", 
-    "modification_date": "2016/09/24 12:33:57.301 GMT-4", 
-    "tcATmit_instructional_tags": [], 
-    "publisher": "MIT OpenCourseWare", 
-    "excludeFromNav": false, 
-    "feature_requirements": [], 
-    "language": "en-US", 
-    "license": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/", 
-    "rights": "This site (c) Massachusetts Institute of Technology 2015.  Content within individual courses is (c) by the individual authors unless otherwise noted. The Massachusetts Institute of Technology is providing this Work (as defined below) under the terms of this Creative Commons public license (\"CCPL\" or \"license\") unless otherwise noted. The Work is protected by copyright and/or other applicable law. Any use of the work other than as authorized under this license is prohibited. By exercising any of the rights to the Work provided here, You (as defined below) accept and agree to be bound by the terms of this license. The Licensor, the Massachusetts Institute of Technology, grants You the rights contained here in consideration of Your acceptance of such terms and conditions.", 
-    "always_publish": false, 
-    "_id": "12.001_Field_TripStops2014.kml", 
-    "materialtype": "Tool | Code", 
-    "_content_type_unique_identifier": "text/plain", 
-    "_content_type_description": "text/plain", 
-    "_owner": null, 
-    "_defaultpage": "index_html", 
-    "firstTimeEdit": true, 
-    "_permissions": {
-        "Modify portal content": {
-            "acquire": false, 
-            "roles": [
-                "Editor", 
-                "Manager", 
-                "Owner"
-            ]
-        }, 
-        "Access contents information": {
-            "acquire": false, 
-            "roles": [
-                "Anonymous"
-            ]
-        }, 
-        "View": {
-            "acquire": false, 
-            "roles": [
-                "Anonymous"
-            ]
-        }
-    }, 
-    "_properties": [
-        [
-            "title", 
-            "12.001_Field_TripStops2014.kml", 
-            "string"
-        ]
-    ], 
-    "allowDiscussion": false, 
-    "metadata_contributor_list": [], 
-    "creators": [
-        "rverma83"
-    ], 
-    "courselist_features": [], 
     "_ac_local_roles": {
         "rverma83": [
             "Owner"
         ]
-    }, 
-    "_path": "/Plone/courses/earth-atmospheric-and-planetary-sciences/12-001-introduction-to-geology-fall-2013/field-trip/12.001_Field_TripStops2014.kml"
+    },
+    "_atbrefs": {
+        "isReferencing": [
+            "de36fe69cf33ddf238bc3896d0ce9eff"
+        ]
+    },
+    "_atrefs": {
+        "BelongsTo": [
+            "d9aad1541f1a9d3c0f7b0dcf9531a9a1"
+        ]
+    },
+    "_classname": "OCWFile",
+    "_content_type": "text/xml",
+    "_content_type_course_identifier": "text/plain",
+    "_content_type_description": "text/plain",
+    "_content_type_id": "text/plain",
+    "_content_type_language": "text/plain",
+    "_content_type_license": "text/plain",
+    "_content_type_materialtype": "text/plain",
+    "_content_type_other_platform_requirements": "text/html",
+    "_content_type_publisher": "text/plain",
+    "_content_type_rights": "text/html",
+    "_content_type_section_identifier": "text/plain",
+    "_content_type_technical_location": "text/plain",
+    "_content_type_title": "text/plain",
+    "_content_type_unique_identifier": "text/plain",
+    "_datafield_file": {
+        "content_type": "text/xml",
+        "data": "ZW1wdHk=",
+        "encoding": "base64",
+        "filename": "12.001_Field_TripStops2014.kml"
+    },
+    "_defaultpage": "index_html",
+    "_directly_provided": [],
+    "_gopip": 12,
+    "_id": "12.001_Field_TripStops2014.kml",
+    "_layout": "file_view",
+    "_owner": null,
+    "_path": "/Plone/courses/earth-atmospheric-and-planetary-sciences/12-001-introduction-to-geology-fall-2013/field-trip/12.001_Field_TripStops2014.kml",
+    "_permissions": {
+        "Access contents information": {
+            "acquire": false,
+            "roles": [
+                "Anonymous"
+            ]
+        },
+        "Modify portal content": {
+            "acquire": false,
+            "roles": [
+                "Editor",
+                "Manager",
+                "Owner"
+            ]
+        },
+        "View": {
+            "acquire": false,
+            "roles": [
+                "Anonymous"
+            ]
+        }
+    },
+    "_properties": [
+        [
+            "title",
+            "12.001_Field_TripStops2014.kml",
+            "string"
+        ]
+    ],
+    "_type": "OCWFile",
+    "_uid": "97f28b51c2d76bbffa1213260d56c281",
+    "_userdefined_roles": [],
+    "_workflow_history": {
+        "one_state_workflow": [
+            {
+                "action": null,
+                "actor": "rverma83",
+                "comments": "",
+                "review_state": "published",
+                "time": "2015/02/03 00:53:53.206 US/Eastern"
+            }
+        ]
+    },
+    "aggregationlevel": 2,
+    "allowDiscussion": false,
+    "always_publish": false,
+    "category_features": [],
+    "contributor_list": [],
+    "contributors": [],
+    "course_identifier": "https://ocw.mit.edu/courses/earth-atmospheric-and-planetary-sciences/12-001-introduction-to-geology-fall-2013",
+    "course_linking": [],
+    "courselist_features": [],
+    "creation_date": "2015/02/03 00:53:53.195 US/Eastern",
+    "creators": [
+        "rverma83"
+    ],
+    "description": "This is the special resource regarding field trip stops.",
+    "duration": "",
+    "effectiveDate": "None",
+    "excludeFromNav": false,
+    "expirationDate": "None",
+    "feature_requirements": [],
+    "features_tracking": [],
+    "firstTimeEdit": true,
+    "id": "12.001_Field_TripStops2014.kml",
+    "language": "en-US",
+    "license": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/",
+    "location": "",
+    "materialtype": "Tool | Code",
+    "metadata_contributor_list": [],
+    "modification_date": "2016/09/24 12:33:57.301 GMT-4",
+    "other_platform_requirements": "Keyhole Markup Language (KML) is an XML-based language schema for expressing geographic annotation and visualization on existing or future Web-based, two-dimensional maps and three-dimensional Earth browsers.",
+    "parent_module": "d9aad1541f1a9d3c0f7b0dcf9531a9a1",
+    "parent_uid": "de36fe69cf33ddf238bc3896d0ce9eff",
+    "publisher": "MIT OpenCourseWare",
+    "related_mit_links": "",
+    "rights": "This site (c) Massachusetts Institute of Technology 2015.  Content within individual courses is (c) by the individual authors unless otherwise noted. The Massachusetts Institute of Technology is providing this Work (as defined below) under the terms of this Creative Commons public license (\"CCPL\" or \"license\") unless otherwise noted. The Work is protected by copyright and/or other applicable law. Any use of the work other than as authorized under this license is prohibited. By exercising any of the rights to the Work provided here, You (as defined below) accept and agree to be bound by the terms of this license. The Licensor, the Massachusetts Institute of Technology, grants You the rights contained here in consideration of Your acceptance of such terms and conditions.",
+    "section_identifier": "https://ocw.mit.edu/courses/earth-atmospheric-and-planetary-sciences/12-001-introduction-to-geology-fall-2013/field-trip",
+    "software_requirements": [
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "40.0",
+            "software_name_col": "Chrome",
+            "software_type_col": "Browser"
+        },
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "8.0",
+            "software_name_col": "Safari",
+            "software_type_col": "Browser"
+        },
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "38.0",
+            "software_name_col": "Mozilla Firefox",
+            "software_type_col": "Browser"
+        },
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "9.0",
+            "software_name_col": "Internet Explorer",
+            "software_type_col": "Browser"
+        },
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "13.1",
+            "software_name_col": "Edge",
+            "software_type_col": "Browser"
+        }
+    ],
+    "subject": [],
+    "tcATmit_instructional_tags": [],
+    "tcATmit_subject_tags": [],
+    "technical_location": "https://ocw.mit.edu/courses/earth-atmospheric-and-planetary-sciences/12-001-introduction-to-geology-fall-2013/field-trip/12.001_Field_TripStops2014.kml",
+    "title": "12.001_Field_TripStops2014.kml",
+    "unique_identifier": "https://ocw.mit.edu/courses/earth-atmospheric-and-planetary-sciences/12-001-introduction-to-geology-fall-2013/field-trip/12.001_Field_TripStops2014.kml",
+    "widgets_features": []
 }

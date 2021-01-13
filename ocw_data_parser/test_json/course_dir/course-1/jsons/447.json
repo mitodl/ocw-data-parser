@@ -1,105 +1,105 @@
 {
-    "contributors": [], 
-    "text": "", 
-    "threeplay_api_json": "", 
-    "_content_type_license": "text/plain", 
-    "asset_language": "en-us", 
-    "media_location": "", 
-    "_uid": "6a5d21ca27bb552bb6e96ad89aad9941", 
-    "_workflow_history": {
-        "one_state_workflow": [
-            {
-                "action": null, 
-                "review_state": "published", 
-                "actor": "jasonplayer", 
-                "comments": "", 
-                "time": "2019/09/25 15:44:39.801 Universal"
-            }
-        ]
-    }, 
-    "expirationDate": "None", 
-    "_content_type_id": "text/plain", 
-    "id": "Transcript-3Play YouTube id-PDF", 
-    "tableContents": false, 
-    "_path": "/Plone/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-29-singular-value-decomposition/Transcript-3Play YouTube id-PDF", 
-    "media_asset_source": "3Play YouTube id", 
-    "effectiveDate": "None", 
-    "title": "Transcript-3Play YouTube id-PDF-English - US", 
-    "media_asset_type": "Transcript", 
     "_ac_local_roles": {
         "jasonplayer": [
             "Owner"
         ]
-    }, 
-    "_userdefined_roles": [], 
-    "_content_type_file_uid": "text/plain", 
-    "location": "", 
-    "_content_type_title": "text/plain", 
-    "excludeFromNav": false, 
-    "presentation": false, 
-    "_type": "OCWMediaAsset", 
-    "description": "", 
+    },
+    "_atbrefs": {},
     "_atrefs": {
         "file_reference": [
             "0f4d618b79d74403afcbaef310117f03"
         ]
-    }, 
-    "_layout": "custom_view", 
-    "subject": [], 
-    "_content_type_rights": "text/html", 
-    "_directly_provided": [], 
-    "language": "", 
-    "_content_type_asset_language": "text/plain", 
-    "_classname": "OCWMediaAsset", 
-    "_content_type_media_format": "text/plain", 
-    "creation_date": "2019/09/25 15:44:39.781 Universal", 
-    "parent_uid": "96b25d78b0d8cfe4046c78eb978b65b8", 
-    "_content_type_media_asset_type": "text/plain", 
-    "modification_date": "2019/09/25 15:44:39.855 Universal", 
-    "_content_type": "text/html", 
-    "_id": "Transcript-3Play YouTube id-PDF", 
-    "file_uid": "0f4d618b79d74403afcbaef310117f03", 
-    "license": "https://ocw.mit.edu/terms", 
-    "rights": "This site (c) Massachusetts Institute of Technology 2019.  Content within individual courses is (c) by the individual authors unless otherwise noted. The Massachusetts Institute of Technology is providing this Work (as defined below) under the terms of this Creative Commons public license (\"CCPL\" or \"license\") unless otherwise noted. The Work is protected by copyright and/or other applicable law. Any use of the work other than as authorized under this license is prohibited. By exercising any of the rights to the Work provided here, You (as defined below) accept and agree to be bound by the terms of this license. The Licensor, the Massachusetts Institute of Technology, grants You the rights contained here in consideration of Your acceptance of such terms and conditions.", 
-    "_atbrefs": {}, 
-    "media_size": "", 
-    "file_reference": "0f4d618b79d74403afcbaef310117f03", 
-    "_owner": "jasonplayer", 
-    "_defaultpage": "", 
+    },
+    "_classname": "OCWMediaAsset",
+    "_content_type": "text/html",
+    "_content_type_asset_language": "text/plain",
+    "_content_type_file_uid": "text/plain",
+    "_content_type_id": "text/plain",
+    "_content_type_license": "text/plain",
+    "_content_type_media_asset_source": "text/plain",
+    "_content_type_media_asset_type": "text/plain",
+    "_content_type_media_format": "text/plain",
+    "_content_type_rights": "text/html",
+    "_content_type_title": "text/plain",
+    "_defaultpage": "",
+    "_directly_provided": [],
+    "_gopip": 11,
+    "_id": "Transcript-3Play YouTube id-PDF",
+    "_layout": "custom_view",
+    "_owner": "jasonplayer",
+    "_path": "/Plone/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-29-singular-value-decomposition/Transcript-3Play YouTube id-PDF",
     "_permissions": {
-        "Modify portal content": {
-            "acquire": false, 
-            "roles": [
-                "Editor", 
-                "Manager", 
-                "Owner"
-            ]
-        }, 
         "Access contents information": {
-            "acquire": false, 
+            "acquire": false,
             "roles": [
                 "Anonymous"
             ]
-        }, 
+        },
+        "Modify portal content": {
+            "acquire": false,
+            "roles": [
+                "Editor",
+                "Manager",
+                "Owner"
+            ]
+        },
         "View": {
-            "acquire": false, 
+            "acquire": false,
             "roles": [
                 "Anonymous"
             ]
         }
-    }, 
-    "media_format": "PDF", 
+    },
     "_properties": [
         [
-            "title", 
-            "Transcript-3Play YouTube id-PDF-English - US", 
+            "title",
+            "Transcript-3Play YouTube id-PDF-English - US",
             "string"
         ]
-    ], 
-    "allowDiscussion": false, 
-    "_gopip": 11, 
+    ],
+    "_type": "OCWMediaAsset",
+    "_uid": "6a5d21ca27bb552bb6e96ad89aad9941",
+    "_userdefined_roles": [],
+    "_workflow_history": {
+        "one_state_workflow": [
+            {
+                "action": null,
+                "actor": "jasonplayer",
+                "comments": "",
+                "review_state": "published",
+                "time": "2019/09/25 15:44:39.801 Universal"
+            }
+        ]
+    },
+    "allowDiscussion": false,
+    "asset_language": "en-us",
+    "contributors": [],
+    "creation_date": "2019/09/25 15:44:39.781 Universal",
     "creators": [
         "jasonplayer"
-    ], 
-    "_content_type_media_asset_source": "text/plain"
+    ],
+    "description": "",
+    "effectiveDate": "None",
+    "excludeFromNav": false,
+    "expirationDate": "None",
+    "file_reference": "0f4d618b79d74403afcbaef310117f03",
+    "file_uid": "0f4d618b79d74403afcbaef310117f03",
+    "id": "Transcript-3Play YouTube id-PDF",
+    "language": "",
+    "license": "https://ocw.mit.edu/terms",
+    "location": "",
+    "media_asset_source": "3Play YouTube id",
+    "media_asset_type": "Transcript",
+    "media_format": "PDF",
+    "media_location": "",
+    "media_size": "",
+    "modification_date": "2019/09/25 15:44:39.855 Universal",
+    "parent_uid": "96b25d78b0d8cfe4046c78eb978b65b8",
+    "presentation": false,
+    "rights": "This site (c) Massachusetts Institute of Technology 2019.  Content within individual courses is (c) by the individual authors unless otherwise noted. The Massachusetts Institute of Technology is providing this Work (as defined below) under the terms of this Creative Commons public license (\"CCPL\" or \"license\") unless otherwise noted. The Work is protected by copyright and/or other applicable law. Any use of the work other than as authorized under this license is prohibited. By exercising any of the rights to the Work provided here, You (as defined below) accept and agree to be bound by the terms of this license. The Licensor, the Massachusetts Institute of Technology, grants You the rights contained here in consideration of Your acceptance of such terms and conditions.",
+    "subject": [],
+    "tableContents": false,
+    "text": "",
+    "threeplay_api_json": "",
+    "title": "Transcript-3Play YouTube id-PDF-English - US"
 }

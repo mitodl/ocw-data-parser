@@ -1,101 +1,101 @@
 {
-    "contributors": [], 
-    "text": "", 
-    "threeplay_api_json": "", 
-    "_content_type_license": "text/plain", 
-    "asset_language": "en-us", 
-    "media_location": "http://www.archive.org/download/MIT18.06S05_MP4/05.mp4", 
-    "_uid": "f82575a24580cb008cccb95c3244b720", 
-    "_workflow_history": {
-        "one_state_workflow": [
-            {
-                "action": null, 
-                "review_state": "published", 
-                "actor": "samehn", 
-                "comments": "", 
-                "time": "2011/05/07 01:21:39.599 GMT-4"
-            }
-        ]
-    }, 
-    "expirationDate": "None", 
-    "_content_type_id": "text/plain", 
-    "id": "Video-InternetArchive-MP4", 
-    "tableContents": false, 
-    "_path": "/Plone/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-5-transposes-permutations-spaces-r-n/Video-InternetArchive-MP4", 
-    "media_asset_source": "Internet Archive", 
-    "effectiveDate": "None", 
-    "title": "Video-Internet Archive-MP4", 
-    "media_asset_type": "Video", 
     "_ac_local_roles": {
         "samehn": [
             "Owner"
         ]
-    }, 
-    "_userdefined_roles": [], 
-    "_content_type_media_size": "text/plain", 
-    "_gopip": 4, 
-    "location": "", 
-    "_content_type_title": "text/plain", 
-    "excludeFromNav": false, 
-    "presentation": false, 
-    "_content_type_media_location": "text/plain", 
-    "_type": "OCWMediaAsset", 
-    "description": "", 
-    "_atrefs": {}, 
-    "_layout": "custom_view", 
-    "subject": [], 
-    "_content_type_rights": "text/html", 
-    "_directly_provided": [], 
-    "language": "", 
-    "_content_type_asset_language": "text/plain", 
-    "_classname": "OCWMediaAsset", 
-    "_content_type_media_format": "text/plain", 
-    "creation_date": "2011/05/07 01:21:39.581 GMT-4", 
-    "parent_uid": "acdf48e0f7efb66b9eef7e5408c39569", 
-    "_content_type_media_asset_type": "text/plain", 
-    "modification_date": "2015/05/26 02:46:27.945 GMT-4", 
-    "_content_type": "text/html", 
-    "_id": "Video-InternetArchive-MP4", 
-    "file_uid": "", 
-    "license": "http://ocw.mit.edu/terms", 
-    "rights": "This site (c) Massachusetts Institute of Technology 2010.  Content within individual courses is (c) by the individual authors unless otherwise noted. The Massachusetts Institute of Technology is providing this Work (as defined below) under the terms of this Creative Commons public license (\"CCPL\" or \"license\") unless otherwise noted. The Work is protected by copyright and/or other applicable law. Any use of the work other than as authorized under this license is prohibited. By exercising any of the rights to the Work provided here, You (as defined below) accept and agree to be bound by the terms of this license. The Licensor, the Massachusetts Institute of Technology, grants You the rights contained here in consideration of Your acceptance of such terms and conditions.", 
-    "_atbrefs": {}, 
-    "media_size": "191MB", 
-    "_owner": null, 
-    "_defaultpage": "", 
+    },
+    "_atbrefs": {},
+    "_atrefs": {},
+    "_classname": "OCWMediaAsset",
+    "_content_type": "text/html",
+    "_content_type_asset_language": "text/plain",
+    "_content_type_id": "text/plain",
+    "_content_type_license": "text/plain",
+    "_content_type_media_asset_source": "text/plain",
+    "_content_type_media_asset_type": "text/plain",
+    "_content_type_media_format": "text/plain",
+    "_content_type_media_location": "text/plain",
+    "_content_type_media_size": "text/plain",
+    "_content_type_rights": "text/html",
+    "_content_type_title": "text/plain",
+    "_defaultpage": "",
+    "_directly_provided": [],
+    "_gopip": 4,
+    "_id": "Video-InternetArchive-MP4",
+    "_layout": "custom_view",
+    "_owner": null,
+    "_path": "/Plone/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-5-transposes-permutations-spaces-r-n/Video-InternetArchive-MP4",
     "_permissions": {
-        "Modify portal content": {
-            "acquire": false, 
-            "roles": [
-                "Editor", 
-                "Manager", 
-                "Owner"
-            ]
-        }, 
         "Access contents information": {
-            "acquire": false, 
+            "acquire": false,
             "roles": [
                 "Anonymous"
             ]
-        }, 
+        },
+        "Modify portal content": {
+            "acquire": false,
+            "roles": [
+                "Editor",
+                "Manager",
+                "Owner"
+            ]
+        },
         "View": {
-            "acquire": false, 
+            "acquire": false,
             "roles": [
                 "Anonymous"
             ]
         }
-    }, 
-    "media_format": "MP4", 
+    },
     "_properties": [
         [
-            "title", 
-            "Video-Internet Archive-MP4", 
+            "title",
+            "Video-Internet Archive-MP4",
             "string"
         ]
-    ], 
-    "allowDiscussion": false, 
+    ],
+    "_type": "OCWMediaAsset",
+    "_uid": "f82575a24580cb008cccb95c3244b720",
+    "_userdefined_roles": [],
+    "_workflow_history": {
+        "one_state_workflow": [
+            {
+                "action": null,
+                "actor": "samehn",
+                "comments": "",
+                "review_state": "published",
+                "time": "2011/05/07 01:21:39.599 GMT-4"
+            }
+        ]
+    },
+    "allowDiscussion": false,
+    "asset_language": "en-us",
+    "contributors": [],
+    "creation_date": "2011/05/07 01:21:39.581 GMT-4",
     "creators": [
         "samehn"
-    ], 
-    "_content_type_media_asset_source": "text/plain"
+    ],
+    "description": "",
+    "effectiveDate": "None",
+    "excludeFromNav": false,
+    "expirationDate": "None",
+    "file_uid": "",
+    "id": "Video-InternetArchive-MP4",
+    "language": "",
+    "license": "http://ocw.mit.edu/terms",
+    "location": "",
+    "media_asset_source": "Internet Archive",
+    "media_asset_type": "Video",
+    "media_format": "MP4",
+    "media_location": "http://www.archive.org/download/MIT18.06S05_MP4/05.mp4",
+    "media_size": "191MB",
+    "modification_date": "2015/05/26 02:46:27.945 GMT-4",
+    "parent_uid": "acdf48e0f7efb66b9eef7e5408c39569",
+    "presentation": false,
+    "rights": "This site (c) Massachusetts Institute of Technology 2010.  Content within individual courses is (c) by the individual authors unless otherwise noted. The Massachusetts Institute of Technology is providing this Work (as defined below) under the terms of this Creative Commons public license (\"CCPL\" or \"license\") unless otherwise noted. The Work is protected by copyright and/or other applicable law. Any use of the work other than as authorized under this license is prohibited. By exercising any of the rights to the Work provided here, You (as defined below) accept and agree to be bound by the terms of this license. The Licensor, the Massachusetts Institute of Technology, grants You the rights contained here in consideration of Your acceptance of such terms and conditions.",
+    "subject": [],
+    "tableContents": false,
+    "text": "",
+    "threeplay_api_json": "",
+    "title": "Video-Internet Archive-MP4"
 }

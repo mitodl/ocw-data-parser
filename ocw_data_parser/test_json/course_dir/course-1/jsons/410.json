@@ -1,185 +1,185 @@
 {
-    "expanded_alternate_text": "", 
-    "features_tracking": [], 
-    "widgets_features": [], 
-    "contributors": [], 
-    "tcATmit_subject_tags": [], 
-    "unique_identifier": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-27-positive-definite-matrices-and-minima/18.06_L27.jpg", 
-    "_content_type_publisher": "text/plain", 
-    "_content_type_license": "text/plain", 
-    "_datafield_image": {
-        "encoding": "base64", 
-        "data": "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", 
-        "content_type": "image/jpeg", 
-        "filename": "18.06_L27.jpg"
-    }, 
-    "aggregationlevel": 2, 
-    "_uid": "52f3371f40eeb8bf2037922d36fac351", 
-    "_workflow_history": {
-        "one_state_workflow": [
-            {
-                "action": null, 
-                "review_state": "published", 
-                "actor": "Jcplayer", 
-                "comments": "", 
-                "time": "2010/10/08 13:33:38.088 GMT-4"
-            }
-        ]
-    }, 
-    "expirationDate": "None", 
-    "_content_type_id": "text/plain", 
-    "duration": "", 
-    "contributor_list": [], 
-    "id": "18.06_L27.jpg", 
-    "related_mit_links": "", 
-    "thumb_height": "", 
-    "effectiveDate": "None", 
-    "title": "18.06_L27.jpg", 
-    "_layout": "view", 
-    "parent_module": "aabc44bdb2e45374d62f30f2a6d4c63e", 
-    "_content_type": "image/jpeg", 
-    "_userdefined_roles": [], 
-    "_gopip": 0, 
-    "location": "", 
-    "_atrefs": {
-        "BelongsTo": [
-            "aabc44bdb2e45374d62f30f2a6d4c63e"
-        ]
-    }, 
-    "_content_type_course_identifier": "text/plain", 
-    "_content_type_title": "text/plain", 
-    "section_identifier": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures", 
-    "_atbrefs": {
-        "thumbnail_image": [
-            "8afb3c53a168a8428bf83a2ddb72a3f1"
-        ], 
-        "file_reference": [
-            "144f338a49ae3882de99020d52230d20"
-        ]
-    }, 
-    "creation_date": "2010/10/08 13:33:38.079 GMT-4", 
-    "_content_type_section_identifier": "text/plain", 
-    "_type": "OCWImage", 
-    "technical_location": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-27-positive-definite-matrices-and-minima/18.06_L27.jpg", 
-    "description": "", 
-    "thumb_width": "", 
-    "software_requirements": [
-        {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "40.0", 
-            "software_name_col": "Chrome", 
-            "maximum_version_col": ""
-        }, 
-        {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "8.0", 
-            "software_name_col": "Safari", 
-            "maximum_version_col": ""
-        }, 
-        {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "38.0", 
-            "software_name_col": "Mozilla Firefox", 
-            "maximum_version_col": ""
-        }, 
-        {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "9.0", 
-            "software_name_col": "Internet Explorer", 
-            "maximum_version_col": ""
-        }, 
-        {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "13.1", 
-            "software_name_col": "Edge", 
-            "maximum_version_col": ""
-        }
-    ], 
-    "_content_type_technical_location": "text/plain", 
-    "alternate_text": "", 
-    "credit": "", 
-    "subject": [], 
-    "_content_type_rights": "text/html", 
-    "course_identifier": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010", 
-    "_directly_provided": [], 
-    "other_platform_requirements": "", 
-    "_id": "18.06_L27.jpg", 
-    "_classname": "OCWImage", 
-    "metadata_contributor_list": [
-        {
-            "md_contributor_uid": "", 
-            "md_contributor_entity": "Todd Rautenberg", 
-            "md_contributor_hide": "", 
-            "md_contributor_special_title": "", 
-            "md_contributor_role": "Validator"
-        }, 
-        {
-            "md_contributor_uid": "", 
-            "md_contributor_entity": "Todd Rautenberg", 
-            "md_contributor_hide": "", 
-            "md_contributor_special_title": "", 
-            "md_contributor_role": "Creator"
-        }
-    ], 
-    "tcATmit_instructional_tags": [], 
-    "caption": "", 
-    "parent_uid": "8afb3c53a168a8428bf83a2ddb72a3f1", 
-    "modification_date": "2016/09/24 04:34:09.860 GMT-4", 
-    "course_linking": [], 
-    "publisher": "MIT OpenCourseWare", 
-    "excludeFromNav": false, 
-    "feature_requirements": [], 
-    "language": "", 
-    "license": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/", 
-    "rights": "This site (c) Massachusetts Institute of Technology 2010.  Content within individual courses is (c) by the individual authors unless otherwise noted. The Massachusetts Institute of Technology is providing this Work (as defined below) under the terms of this Creative Commons public license (\"CCPL\" or \"license\") unless otherwise noted. The Work is protected by copyright and/or other applicable law. Any use of the work other than as authorized under this license is prohibited. By exercising any of the rights to the Work provided here, You (as defined below) accept and agree to be bound by the terms of this license. The Licensor, the Massachusetts Institute of Technology, grants You the rights contained here in consideration of Your acceptance of such terms and conditions.", 
-    "always_publish": false, 
-    "popup_image_id": "", 
-    "materialtype": "Other", 
-    "_content_type_unique_identifier": "text/plain", 
-    "category_features": [], 
-    "is_pop_up_image": false, 
-    "_owner": null, 
-    "_defaultpage": "index_html", 
-    "firstTimeEdit": true, 
-    "_permissions": {
-        "Modify portal content": {
-            "acquire": false, 
-            "roles": [
-                "Editor", 
-                "Manager", 
-                "Owner"
-            ]
-        }, 
-        "Access contents information": {
-            "acquire": false, 
-            "roles": [
-                "Anonymous"
-            ]
-        }, 
-        "View": {
-            "acquire": false, 
-            "roles": [
-                "Anonymous"
-            ]
-        }
-    }, 
-    "_properties": [
-        [
-            "title", 
-            "18.06_L27.jpg", 
-            "string"
-        ]
-    ], 
-    "allowDiscussion": false, 
-    "_content_type_materialtype": "text/plain", 
-    "creators": [
-        "Jcplayer"
-    ], 
-    "courselist_features": [], 
     "_ac_local_roles": {
         "Jcplayer": [
             "Owner"
         ]
-    }, 
-    "_path": "/Plone/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-27-positive-definite-matrices-and-minima/18.06_L27.jpg"
+    },
+    "_atbrefs": {
+        "file_reference": [
+            "144f338a49ae3882de99020d52230d20"
+        ],
+        "thumbnail_image": [
+            "8afb3c53a168a8428bf83a2ddb72a3f1"
+        ]
+    },
+    "_atrefs": {
+        "BelongsTo": [
+            "aabc44bdb2e45374d62f30f2a6d4c63e"
+        ]
+    },
+    "_classname": "OCWImage",
+    "_content_type": "image/jpeg",
+    "_content_type_course_identifier": "text/plain",
+    "_content_type_id": "text/plain",
+    "_content_type_license": "text/plain",
+    "_content_type_materialtype": "text/plain",
+    "_content_type_publisher": "text/plain",
+    "_content_type_rights": "text/html",
+    "_content_type_section_identifier": "text/plain",
+    "_content_type_technical_location": "text/plain",
+    "_content_type_title": "text/plain",
+    "_content_type_unique_identifier": "text/plain",
+    "_datafield_image": {
+        "content_type": "image/jpeg",
+        "data": "ZW1wdHk=",
+        "encoding": "base64",
+        "filename": "18.06_L27.jpg"
+    },
+    "_defaultpage": "index_html",
+    "_directly_provided": [],
+    "_gopip": 0,
+    "_id": "18.06_L27.jpg",
+    "_layout": "view",
+    "_owner": null,
+    "_path": "/Plone/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-27-positive-definite-matrices-and-minima/18.06_L27.jpg",
+    "_permissions": {
+        "Access contents information": {
+            "acquire": false,
+            "roles": [
+                "Anonymous"
+            ]
+        },
+        "Modify portal content": {
+            "acquire": false,
+            "roles": [
+                "Editor",
+                "Manager",
+                "Owner"
+            ]
+        },
+        "View": {
+            "acquire": false,
+            "roles": [
+                "Anonymous"
+            ]
+        }
+    },
+    "_properties": [
+        [
+            "title",
+            "18.06_L27.jpg",
+            "string"
+        ]
+    ],
+    "_type": "OCWImage",
+    "_uid": "52f3371f40eeb8bf2037922d36fac351",
+    "_userdefined_roles": [],
+    "_workflow_history": {
+        "one_state_workflow": [
+            {
+                "action": null,
+                "actor": "Jcplayer",
+                "comments": "",
+                "review_state": "published",
+                "time": "2010/10/08 13:33:38.088 GMT-4"
+            }
+        ]
+    },
+    "aggregationlevel": 2,
+    "allowDiscussion": false,
+    "alternate_text": "",
+    "always_publish": false,
+    "caption": "",
+    "category_features": [],
+    "contributor_list": [],
+    "contributors": [],
+    "course_identifier": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010",
+    "course_linking": [],
+    "courselist_features": [],
+    "creation_date": "2010/10/08 13:33:38.079 GMT-4",
+    "creators": [
+        "Jcplayer"
+    ],
+    "credit": "",
+    "description": "",
+    "duration": "",
+    "effectiveDate": "None",
+    "excludeFromNav": false,
+    "expanded_alternate_text": "",
+    "expirationDate": "None",
+    "feature_requirements": [],
+    "features_tracking": [],
+    "firstTimeEdit": true,
+    "id": "18.06_L27.jpg",
+    "is_pop_up_image": false,
+    "language": "",
+    "license": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/",
+    "location": "",
+    "materialtype": "Other",
+    "metadata_contributor_list": [
+        {
+            "md_contributor_entity": "Todd Rautenberg",
+            "md_contributor_hide": "",
+            "md_contributor_role": "Validator",
+            "md_contributor_special_title": "",
+            "md_contributor_uid": ""
+        },
+        {
+            "md_contributor_entity": "Todd Rautenberg",
+            "md_contributor_hide": "",
+            "md_contributor_role": "Creator",
+            "md_contributor_special_title": "",
+            "md_contributor_uid": ""
+        }
+    ],
+    "modification_date": "2016/09/24 04:34:09.860 GMT-4",
+    "other_platform_requirements": "",
+    "parent_module": "aabc44bdb2e45374d62f30f2a6d4c63e",
+    "parent_uid": "8afb3c53a168a8428bf83a2ddb72a3f1",
+    "popup_image_id": "",
+    "publisher": "MIT OpenCourseWare",
+    "related_mit_links": "",
+    "rights": "This site (c) Massachusetts Institute of Technology 2010.  Content within individual courses is (c) by the individual authors unless otherwise noted. The Massachusetts Institute of Technology is providing this Work (as defined below) under the terms of this Creative Commons public license (\"CCPL\" or \"license\") unless otherwise noted. The Work is protected by copyright and/or other applicable law. Any use of the work other than as authorized under this license is prohibited. By exercising any of the rights to the Work provided here, You (as defined below) accept and agree to be bound by the terms of this license. The Licensor, the Massachusetts Institute of Technology, grants You the rights contained here in consideration of Your acceptance of such terms and conditions.",
+    "section_identifier": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures",
+    "software_requirements": [
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "40.0",
+            "software_name_col": "Chrome",
+            "software_type_col": "Browser"
+        },
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "8.0",
+            "software_name_col": "Safari",
+            "software_type_col": "Browser"
+        },
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "38.0",
+            "software_name_col": "Mozilla Firefox",
+            "software_type_col": "Browser"
+        },
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "9.0",
+            "software_name_col": "Internet Explorer",
+            "software_type_col": "Browser"
+        },
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "13.1",
+            "software_name_col": "Edge",
+            "software_type_col": "Browser"
+        }
+    ],
+    "subject": [],
+    "tcATmit_instructional_tags": [],
+    "tcATmit_subject_tags": [],
+    "technical_location": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-27-positive-definite-matrices-and-minima/18.06_L27.jpg",
+    "thumb_height": "",
+    "thumb_width": "",
+    "title": "18.06_L27.jpg",
+    "unique_identifier": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-27-positive-definite-matrices-and-minima/18.06_L27.jpg",
+    "widgets_features": []
 }

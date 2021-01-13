@@ -1,185 +1,185 @@
 {
-    "expanded_alternate_text": "", 
-    "features_tracking": [], 
-    "widgets_features": [], 
-    "contributors": [], 
-    "tcATmit_subject_tags": [], 
-    "unique_identifier": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-25-symmetric-matrices-and-positive-definiteness/18.06_L25.jpg", 
-    "_content_type_publisher": "text/plain", 
-    "_content_type_license": "text/plain", 
-    "_datafield_image": {
-        "encoding": "base64", 
-        "data": "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", 
-        "content_type": "image/jpeg", 
-        "filename": "18.06_L25.jpg"
-    }, 
-    "aggregationlevel": 2, 
-    "_uid": "3b9c52240a328ca1453d75c3b310635e", 
-    "_workflow_history": {
-        "one_state_workflow": [
-            {
-                "action": null, 
-                "review_state": "published", 
-                "actor": "Jcplayer", 
-                "comments": "", 
-                "time": "2010/10/08 11:51:37.935 GMT-4"
-            }
-        ]
-    }, 
-    "expirationDate": "None", 
-    "_content_type_id": "text/plain", 
-    "duration": "", 
-    "contributor_list": [], 
-    "id": "18.06_L25.jpg", 
-    "related_mit_links": "", 
-    "thumb_height": "", 
-    "effectiveDate": "None", 
-    "title": "18.06_L25.jpg", 
-    "_layout": "view", 
-    "parent_module": "aabc44bdb2e45374d62f30f2a6d4c63e", 
-    "_content_type": "image/jpeg", 
-    "_userdefined_roles": [], 
-    "_gopip": 0, 
-    "location": "", 
-    "_atrefs": {
-        "BelongsTo": [
-            "aabc44bdb2e45374d62f30f2a6d4c63e"
-        ]
-    }, 
-    "_content_type_course_identifier": "text/plain", 
-    "_content_type_title": "text/plain", 
-    "section_identifier": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures", 
-    "_atbrefs": {
-        "thumbnail_image": [
-            "c1a00d74b214d09a59cef50cd2cec554"
-        ], 
-        "file_reference": [
-            "6bc88f10ac682127812c1375f1066584"
-        ]
-    }, 
-    "creation_date": "2010/10/08 11:51:37.927 GMT-4", 
-    "_content_type_section_identifier": "text/plain", 
-    "_type": "OCWImage", 
-    "technical_location": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-25-symmetric-matrices-and-positive-definiteness/18.06_L25.jpg", 
-    "description": "", 
-    "thumb_width": "", 
-    "software_requirements": [
-        {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "40.0", 
-            "software_name_col": "Chrome", 
-            "maximum_version_col": ""
-        }, 
-        {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "8.0", 
-            "software_name_col": "Safari", 
-            "maximum_version_col": ""
-        }, 
-        {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "38.0", 
-            "software_name_col": "Mozilla Firefox", 
-            "maximum_version_col": ""
-        }, 
-        {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "9.0", 
-            "software_name_col": "Internet Explorer", 
-            "maximum_version_col": ""
-        }, 
-        {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "13.1", 
-            "software_name_col": "Edge", 
-            "maximum_version_col": ""
-        }
-    ], 
-    "_content_type_technical_location": "text/plain", 
-    "alternate_text": "", 
-    "credit": "", 
-    "subject": [], 
-    "_content_type_rights": "text/html", 
-    "course_identifier": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010", 
-    "_directly_provided": [], 
-    "other_platform_requirements": "", 
-    "_id": "18.06_L25.jpg", 
-    "_classname": "OCWImage", 
-    "metadata_contributor_list": [
-        {
-            "md_contributor_uid": "", 
-            "md_contributor_entity": "Todd Rautenberg", 
-            "md_contributor_hide": "", 
-            "md_contributor_special_title": "", 
-            "md_contributor_role": "Validator"
-        }, 
-        {
-            "md_contributor_uid": "", 
-            "md_contributor_entity": "Todd Rautenberg", 
-            "md_contributor_hide": "", 
-            "md_contributor_special_title": "", 
-            "md_contributor_role": "Creator"
-        }
-    ], 
-    "tcATmit_instructional_tags": [], 
-    "caption": "", 
-    "parent_uid": "c1a00d74b214d09a59cef50cd2cec554", 
-    "modification_date": "2016/09/24 04:34:09.349 GMT-4", 
-    "course_linking": [], 
-    "publisher": "MIT OpenCourseWare", 
-    "excludeFromNav": false, 
-    "feature_requirements": [], 
-    "language": "", 
-    "license": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/", 
-    "rights": "This site (c) Massachusetts Institute of Technology 2010.  Content within individual courses is (c) by the individual authors unless otherwise noted. The Massachusetts Institute of Technology is providing this Work (as defined below) under the terms of this Creative Commons public license (\"CCPL\" or \"license\") unless otherwise noted. The Work is protected by copyright and/or other applicable law. Any use of the work other than as authorized under this license is prohibited. By exercising any of the rights to the Work provided here, You (as defined below) accept and agree to be bound by the terms of this license. The Licensor, the Massachusetts Institute of Technology, grants You the rights contained here in consideration of Your acceptance of such terms and conditions.", 
-    "always_publish": false, 
-    "popup_image_id": "", 
-    "materialtype": "Other", 
-    "_content_type_unique_identifier": "text/plain", 
-    "category_features": [], 
-    "is_pop_up_image": false, 
-    "_owner": null, 
-    "_defaultpage": "index_html", 
-    "firstTimeEdit": true, 
-    "_permissions": {
-        "Modify portal content": {
-            "acquire": false, 
-            "roles": [
-                "Editor", 
-                "Manager", 
-                "Owner"
-            ]
-        }, 
-        "Access contents information": {
-            "acquire": false, 
-            "roles": [
-                "Anonymous"
-            ]
-        }, 
-        "View": {
-            "acquire": false, 
-            "roles": [
-                "Anonymous"
-            ]
-        }
-    }, 
-    "_properties": [
-        [
-            "title", 
-            "18.06_L25.jpg", 
-            "string"
-        ]
-    ], 
-    "allowDiscussion": false, 
-    "_content_type_materialtype": "text/plain", 
-    "creators": [
-        "Jcplayer"
-    ], 
-    "courselist_features": [], 
     "_ac_local_roles": {
         "Jcplayer": [
             "Owner"
         ]
-    }, 
-    "_path": "/Plone/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-25-symmetric-matrices-and-positive-definiteness/18.06_L25.jpg"
+    },
+    "_atbrefs": {
+        "file_reference": [
+            "6bc88f10ac682127812c1375f1066584"
+        ],
+        "thumbnail_image": [
+            "c1a00d74b214d09a59cef50cd2cec554"
+        ]
+    },
+    "_atrefs": {
+        "BelongsTo": [
+            "aabc44bdb2e45374d62f30f2a6d4c63e"
+        ]
+    },
+    "_classname": "OCWImage",
+    "_content_type": "image/jpeg",
+    "_content_type_course_identifier": "text/plain",
+    "_content_type_id": "text/plain",
+    "_content_type_license": "text/plain",
+    "_content_type_materialtype": "text/plain",
+    "_content_type_publisher": "text/plain",
+    "_content_type_rights": "text/html",
+    "_content_type_section_identifier": "text/plain",
+    "_content_type_technical_location": "text/plain",
+    "_content_type_title": "text/plain",
+    "_content_type_unique_identifier": "text/plain",
+    "_datafield_image": {
+        "content_type": "image/jpeg",
+        "data": "ZW1wdHk=",
+        "encoding": "base64",
+        "filename": "18.06_L25.jpg"
+    },
+    "_defaultpage": "index_html",
+    "_directly_provided": [],
+    "_gopip": 0,
+    "_id": "18.06_L25.jpg",
+    "_layout": "view",
+    "_owner": null,
+    "_path": "/Plone/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-25-symmetric-matrices-and-positive-definiteness/18.06_L25.jpg",
+    "_permissions": {
+        "Access contents information": {
+            "acquire": false,
+            "roles": [
+                "Anonymous"
+            ]
+        },
+        "Modify portal content": {
+            "acquire": false,
+            "roles": [
+                "Editor",
+                "Manager",
+                "Owner"
+            ]
+        },
+        "View": {
+            "acquire": false,
+            "roles": [
+                "Anonymous"
+            ]
+        }
+    },
+    "_properties": [
+        [
+            "title",
+            "18.06_L25.jpg",
+            "string"
+        ]
+    ],
+    "_type": "OCWImage",
+    "_uid": "3b9c52240a328ca1453d75c3b310635e",
+    "_userdefined_roles": [],
+    "_workflow_history": {
+        "one_state_workflow": [
+            {
+                "action": null,
+                "actor": "Jcplayer",
+                "comments": "",
+                "review_state": "published",
+                "time": "2010/10/08 11:51:37.935 GMT-4"
+            }
+        ]
+    },
+    "aggregationlevel": 2,
+    "allowDiscussion": false,
+    "alternate_text": "",
+    "always_publish": false,
+    "caption": "",
+    "category_features": [],
+    "contributor_list": [],
+    "contributors": [],
+    "course_identifier": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010",
+    "course_linking": [],
+    "courselist_features": [],
+    "creation_date": "2010/10/08 11:51:37.927 GMT-4",
+    "creators": [
+        "Jcplayer"
+    ],
+    "credit": "",
+    "description": "",
+    "duration": "",
+    "effectiveDate": "None",
+    "excludeFromNav": false,
+    "expanded_alternate_text": "",
+    "expirationDate": "None",
+    "feature_requirements": [],
+    "features_tracking": [],
+    "firstTimeEdit": true,
+    "id": "18.06_L25.jpg",
+    "is_pop_up_image": false,
+    "language": "",
+    "license": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/",
+    "location": "",
+    "materialtype": "Other",
+    "metadata_contributor_list": [
+        {
+            "md_contributor_entity": "Todd Rautenberg",
+            "md_contributor_hide": "",
+            "md_contributor_role": "Validator",
+            "md_contributor_special_title": "",
+            "md_contributor_uid": ""
+        },
+        {
+            "md_contributor_entity": "Todd Rautenberg",
+            "md_contributor_hide": "",
+            "md_contributor_role": "Creator",
+            "md_contributor_special_title": "",
+            "md_contributor_uid": ""
+        }
+    ],
+    "modification_date": "2016/09/24 04:34:09.349 GMT-4",
+    "other_platform_requirements": "",
+    "parent_module": "aabc44bdb2e45374d62f30f2a6d4c63e",
+    "parent_uid": "c1a00d74b214d09a59cef50cd2cec554",
+    "popup_image_id": "",
+    "publisher": "MIT OpenCourseWare",
+    "related_mit_links": "",
+    "rights": "This site (c) Massachusetts Institute of Technology 2010.  Content within individual courses is (c) by the individual authors unless otherwise noted. The Massachusetts Institute of Technology is providing this Work (as defined below) under the terms of this Creative Commons public license (\"CCPL\" or \"license\") unless otherwise noted. The Work is protected by copyright and/or other applicable law. Any use of the work other than as authorized under this license is prohibited. By exercising any of the rights to the Work provided here, You (as defined below) accept and agree to be bound by the terms of this license. The Licensor, the Massachusetts Institute of Technology, grants You the rights contained here in consideration of Your acceptance of such terms and conditions.",
+    "section_identifier": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures",
+    "software_requirements": [
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "40.0",
+            "software_name_col": "Chrome",
+            "software_type_col": "Browser"
+        },
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "8.0",
+            "software_name_col": "Safari",
+            "software_type_col": "Browser"
+        },
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "38.0",
+            "software_name_col": "Mozilla Firefox",
+            "software_type_col": "Browser"
+        },
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "9.0",
+            "software_name_col": "Internet Explorer",
+            "software_type_col": "Browser"
+        },
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "13.1",
+            "software_name_col": "Edge",
+            "software_type_col": "Browser"
+        }
+    ],
+    "subject": [],
+    "tcATmit_instructional_tags": [],
+    "tcATmit_subject_tags": [],
+    "technical_location": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-25-symmetric-matrices-and-positive-definiteness/18.06_L25.jpg",
+    "thumb_height": "",
+    "thumb_width": "",
+    "title": "18.06_L25.jpg",
+    "unique_identifier": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-25-symmetric-matrices-and-positive-definiteness/18.06_L25.jpg",
+    "widgets_features": []
 }

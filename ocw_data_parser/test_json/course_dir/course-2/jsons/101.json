@@ -1,172 +1,172 @@
 {
-    "expanded_alternate_text": "", 
-    "features_tracking": [], 
-    "widgets_features": [], 
-    "contributors": [], 
-    "tcATmit_subject_tags": [], 
-    "unique_identifier": "https://ocw.mit.edu/courses/earth-atmospheric-and-planetary-sciences/12-001-introduction-to-geology-fall-2013/12-001f13-th.jpg", 
-    "_content_type_publisher": "text/plain", 
-    "_content_type_license": "text/plain", 
-    "_datafield_image": {
-        "encoding": "base64", 
-        "data": "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", 
-        "content_type": "image/jpeg", 
-        "filename": "12-001f13-th.jpg"
-    }, 
-    "aggregationlevel": 2, 
-    "creators": [
-        "pgandhi3"
-    ], 
-    "_workflow_history": {
-        "one_state_workflow": [
-            {
-                "action": null, 
-                "review_state": "published", 
-                "actor": "pgandhi3", 
-                "comments": "", 
-                "time": "2014/09/25 05:23:39.043 GMT-4"
-            }
-        ]
-    }, 
-    "expirationDate": "None", 
-    "_content_type_id": "text/plain", 
-    "duration": "", 
-    "contributor_list": [], 
-    "category_features": [], 
-    "id": "12-001f13-th.jpg", 
-    "related_mit_links": "", 
-    "thumb_height": "", 
-    "effectiveDate": "None", 
-    "title": "12-001f13-th.jpg", 
-    "_layout": "view", 
-    "parent_module": "d9aad1541f1a9d3c0f7b0dcf9531a9a1", 
-    "_content_type_credit": "text/plain", 
-    "_content_type": "image/jpeg", 
-    "_userdefined_roles": [], 
-    "_content_type_language": "text/plain", 
-    "tcATmit_instructional_tags": [], 
-    "_gopip": 10, 
-    "location": "", 
-    "_atrefs": {
-        "BelongsTo": [
-            "d9aad1541f1a9d3c0f7b0dcf9531a9a1"
-        ]
-    }, 
-    "_content_type_course_identifier": "text/plain", 
-    "_content_type_title": "text/plain", 
-    "section_identifier": null, 
-    "_atbrefs": {
-        "chp_image_thumb": [
-            "4ba4f6f4059e9bd271b612edaf4e2157"
-        ]
-    }, 
-    "creation_date": "2014/09/25 05:23:39.030 GMT-4", 
-    "course_linking": [], 
-    "_type": "OCWImage", 
-    "technical_location": "https://ocw.mit.edu/courses/earth-atmospheric-and-planetary-sciences/12-001-introduction-to-geology-fall-2013/12-001f13-th.jpg", 
-    "description": "The North America Tapestry of Time and Terrain. This map is a portrait of the land surface of North America and the ages of its underlying rock formations. This digital tapestry outlines the geologic story of continental collision and break-up, mountain-building, river erosion and deposition, ice-cap glaciation, volcanism, and other events and processes that have shaped the region over the last 2.6 billion years. (Image and text courtesy of the U.S. Geological Survey.)", 
-    "thumb_width": "", 
-    "software_requirements": [
-        {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "40.0", 
-            "software_name_col": "Chrome", 
-            "maximum_version_col": ""
-        }, 
-        {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "8.0", 
-            "software_name_col": "Safari", 
-            "maximum_version_col": ""
-        }, 
-        {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "38.0", 
-            "software_name_col": "Mozilla Firefox", 
-            "maximum_version_col": ""
-        }, 
-        {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "9.0", 
-            "software_name_col": "Internet Explorer", 
-            "maximum_version_col": ""
-        }, 
-        {
-            "software_type_col": "Browser", 
-            "minimum_version_col": "13.1", 
-            "software_name_col": "Edge", 
-            "maximum_version_col": ""
-        }
-    ], 
-    "_content_type_technical_location": "text/plain", 
-    "alternate_text": "Introduction to Geology.", 
-    "credit": "Image and text courtesy of the U.S. Geological Survey.", 
-    "subject": [], 
-    "_content_type_rights": "text/html", 
-    "course_identifier": "https://ocw.mit.edu/courses/earth-atmospheric-and-planetary-sciences/12-001-introduction-to-geology-fall-2013", 
-    "_directly_provided": [], 
-    "other_platform_requirements": "Any number of image viewers/editors can be used to display these .jpg image files, including most html browsers.", 
-    "_id": "12-001f13-th.jpg", 
-    "_classname": "OCWImage", 
-    "_content_type_materialtype": "text/plain", 
-    "_content_type_other_platform_requirements": "text/html", 
-    "caption": "The North America Tapestry of Time and Terrain. This map is a portrait of the land surface of North America and the ages of its underlying rock formations. This digital tapestry outlines the geologic story of continental collision and break-up, mountain-building, river erosion and deposition, ice-cap glaciation, volcanism, and other events and processes that have shaped the region over the last 2.6 billion years.", 
-    "parent_uid": "d9aad1541f1a9d3c0f7b0dcf9531a9a1", 
-    "modification_date": "2016/09/24 03:52:00.651 GMT-4", 
-    "_content_type_alternate_text": "text/plain", 
-    "publisher": "MIT OpenCourseWare", 
-    "excludeFromNav": false, 
-    "feature_requirements": [], 
-    "language": "en-US", 
-    "license": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/", 
-    "rights": "This site (c) Massachusetts Institute of Technology 2014.  Content within individual courses is (c) by the individual authors unless otherwise noted. The Massachusetts Institute of Technology is providing this Work (as defined below) under the terms of this Creative Commons public license (\"CCPL\" or \"license\") unless otherwise noted. The Work is protected by copyright and/or other applicable law. Any use of the work other than as authorized under this license is prohibited. By exercising any of the rights to the Work provided here, You (as defined below) accept and agree to be bound by the terms of this license. The Licensor, the Massachusetts Institute of Technology, grants You the rights contained here in consideration of Your acceptance of such terms and conditions.", 
-    "always_publish": false, 
-    "popup_image_id": "", 
-    "materialtype": "Audio/Visual | Image/Image Set", 
-    "_content_type_unique_identifier": "text/plain", 
-    "_content_type_description": "text/plain", 
-    "_uid": "9c7d2d37144d9f570f3f70668e2bd681", 
-    "is_pop_up_image": false, 
-    "_owner": null, 
-    "_defaultpage": "index_html", 
-    "firstTimeEdit": true, 
-    "_permissions": {
-        "Modify portal content": {
-            "acquire": false, 
-            "roles": [
-                "Editor", 
-                "Manager", 
-                "Owner"
-            ]
-        }, 
-        "Access contents information": {
-            "acquire": false, 
-            "roles": [
-                "Anonymous"
-            ]
-        }, 
-        "View": {
-            "acquire": false, 
-            "roles": [
-                "Anonymous"
-            ]
-        }
-    }, 
-    "_properties": [
-        [
-            "title", 
-            "12-001f13-th.jpg", 
-            "string"
-        ]
-    ], 
-    "allowDiscussion": false, 
-    "metadata_contributor_list": [], 
-    "_content_type_caption": "text/plain", 
-    "courselist_features": [], 
     "_ac_local_roles": {
         "pgandhi3": [
             "Owner"
         ]
-    }, 
-    "_path": "/Plone/courses/earth-atmospheric-and-planetary-sciences/12-001-introduction-to-geology-fall-2013/12-001f13-th.jpg"
+    },
+    "_atbrefs": {
+        "chp_image_thumb": [
+            "4ba4f6f4059e9bd271b612edaf4e2157"
+        ]
+    },
+    "_atrefs": {
+        "BelongsTo": [
+            "d9aad1541f1a9d3c0f7b0dcf9531a9a1"
+        ]
+    },
+    "_classname": "OCWImage",
+    "_content_type": "image/jpeg",
+    "_content_type_alternate_text": "text/plain",
+    "_content_type_caption": "text/plain",
+    "_content_type_course_identifier": "text/plain",
+    "_content_type_credit": "text/plain",
+    "_content_type_description": "text/plain",
+    "_content_type_id": "text/plain",
+    "_content_type_language": "text/plain",
+    "_content_type_license": "text/plain",
+    "_content_type_materialtype": "text/plain",
+    "_content_type_other_platform_requirements": "text/html",
+    "_content_type_publisher": "text/plain",
+    "_content_type_rights": "text/html",
+    "_content_type_technical_location": "text/plain",
+    "_content_type_title": "text/plain",
+    "_content_type_unique_identifier": "text/plain",
+    "_datafield_image": {
+        "content_type": "image/jpeg",
+        "data": "ZW1wdHk=",
+        "encoding": "base64",
+        "filename": "12-001f13-th.jpg"
+    },
+    "_defaultpage": "index_html",
+    "_directly_provided": [],
+    "_gopip": 10,
+    "_id": "12-001f13-th.jpg",
+    "_layout": "view",
+    "_owner": null,
+    "_path": "/Plone/courses/earth-atmospheric-and-planetary-sciences/12-001-introduction-to-geology-fall-2013/12-001f13-th.jpg",
+    "_permissions": {
+        "Access contents information": {
+            "acquire": false,
+            "roles": [
+                "Anonymous"
+            ]
+        },
+        "Modify portal content": {
+            "acquire": false,
+            "roles": [
+                "Editor",
+                "Manager",
+                "Owner"
+            ]
+        },
+        "View": {
+            "acquire": false,
+            "roles": [
+                "Anonymous"
+            ]
+        }
+    },
+    "_properties": [
+        [
+            "title",
+            "12-001f13-th.jpg",
+            "string"
+        ]
+    ],
+    "_type": "OCWImage",
+    "_uid": "9c7d2d37144d9f570f3f70668e2bd681",
+    "_userdefined_roles": [],
+    "_workflow_history": {
+        "one_state_workflow": [
+            {
+                "action": null,
+                "actor": "pgandhi3",
+                "comments": "",
+                "review_state": "published",
+                "time": "2014/09/25 05:23:39.043 GMT-4"
+            }
+        ]
+    },
+    "aggregationlevel": 2,
+    "allowDiscussion": false,
+    "alternate_text": "Introduction to Geology.",
+    "always_publish": false,
+    "caption": "The North America Tapestry of Time and Terrain. This map is a portrait of the land surface of North America and the ages of its underlying rock formations. This digital tapestry outlines the geologic story of continental collision and break-up, mountain-building, river erosion and deposition, ice-cap glaciation, volcanism, and other events and processes that have shaped the region over the last 2.6 billion years.",
+    "category_features": [],
+    "contributor_list": [],
+    "contributors": [],
+    "course_identifier": "https://ocw.mit.edu/courses/earth-atmospheric-and-planetary-sciences/12-001-introduction-to-geology-fall-2013",
+    "course_linking": [],
+    "courselist_features": [],
+    "creation_date": "2014/09/25 05:23:39.030 GMT-4",
+    "creators": [
+        "pgandhi3"
+    ],
+    "credit": "Image and text courtesy of the U.S. Geological Survey.",
+    "description": "The North America Tapestry of Time and Terrain. This map is a portrait of the land surface of North America and the ages of its underlying rock formations. This digital tapestry outlines the geologic story of continental collision and break-up, mountain-building, river erosion and deposition, ice-cap glaciation, volcanism, and other events and processes that have shaped the region over the last 2.6 billion years. (Image and text courtesy of the U.S. Geological Survey.)",
+    "duration": "",
+    "effectiveDate": "None",
+    "excludeFromNav": false,
+    "expanded_alternate_text": "",
+    "expirationDate": "None",
+    "feature_requirements": [],
+    "features_tracking": [],
+    "firstTimeEdit": true,
+    "id": "12-001f13-th.jpg",
+    "is_pop_up_image": false,
+    "language": "en-US",
+    "license": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/",
+    "location": "",
+    "materialtype": "Audio/Visual | Image/Image Set",
+    "metadata_contributor_list": [],
+    "modification_date": "2016/09/24 03:52:00.651 GMT-4",
+    "other_platform_requirements": "Any number of image viewers/editors can be used to display these .jpg image files, including most html browsers.",
+    "parent_module": "d9aad1541f1a9d3c0f7b0dcf9531a9a1",
+    "parent_uid": "d9aad1541f1a9d3c0f7b0dcf9531a9a1",
+    "popup_image_id": "",
+    "publisher": "MIT OpenCourseWare",
+    "related_mit_links": "",
+    "rights": "This site (c) Massachusetts Institute of Technology 2014.  Content within individual courses is (c) by the individual authors unless otherwise noted. The Massachusetts Institute of Technology is providing this Work (as defined below) under the terms of this Creative Commons public license (\"CCPL\" or \"license\") unless otherwise noted. The Work is protected by copyright and/or other applicable law. Any use of the work other than as authorized under this license is prohibited. By exercising any of the rights to the Work provided here, You (as defined below) accept and agree to be bound by the terms of this license. The Licensor, the Massachusetts Institute of Technology, grants You the rights contained here in consideration of Your acceptance of such terms and conditions.",
+    "section_identifier": null,
+    "software_requirements": [
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "40.0",
+            "software_name_col": "Chrome",
+            "software_type_col": "Browser"
+        },
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "8.0",
+            "software_name_col": "Safari",
+            "software_type_col": "Browser"
+        },
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "38.0",
+            "software_name_col": "Mozilla Firefox",
+            "software_type_col": "Browser"
+        },
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "9.0",
+            "software_name_col": "Internet Explorer",
+            "software_type_col": "Browser"
+        },
+        {
+            "maximum_version_col": "",
+            "minimum_version_col": "13.1",
+            "software_name_col": "Edge",
+            "software_type_col": "Browser"
+        }
+    ],
+    "subject": [],
+    "tcATmit_instructional_tags": [],
+    "tcATmit_subject_tags": [],
+    "technical_location": "https://ocw.mit.edu/courses/earth-atmospheric-and-planetary-sciences/12-001-introduction-to-geology-fall-2013/12-001f13-th.jpg",
+    "thumb_height": "",
+    "thumb_width": "",
+    "title": "12-001f13-th.jpg",
+    "unique_identifier": "https://ocw.mit.edu/courses/earth-atmospheric-and-planetary-sciences/12-001-introduction-to-geology-fall-2013/12-001f13-th.jpg",
+    "widgets_features": []
 }
