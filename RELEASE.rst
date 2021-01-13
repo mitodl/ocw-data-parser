@@ -1,6 +1,12 @@
 Release Notes
 =============
 
+Version 0.21.1
+--------------
+
+- handle divided instructor insights sections (#119)
+- Fetch missing media files (#113)
+
 Version 0.21.0 (Released January 12, 2021)
 --------------
 
