@@ -5,6 +5,7 @@ import logging
 import os
 from copy import deepcopy
 from pathlib import Path
+import shutil
 from tempfile import TemporaryDirectory
 from unittest.mock import patch
 
@@ -670,3 +671,33 @@ def test_publish_date(ocw_parser):
         ocw_parser.parsed_json["last_published_to_production"]
         == "2019/09/25 17:47:34.670 Universal"
     )
+
+
+@pytest.mark.parametrize(
+    "field",
+    [
+        "first_published_to_production",
+        "last_published_to_production",
+        "last_unpublishing_date",
+        "retirement_date",
+    ],
+)
+def test_none(field):
+    """Assert that "None" gets converted to a null value for certain fields"""
+    with TemporaryDirectory() as destination_dir, TemporaryDirectory() as source_dir:
+        course_dir = Path(source_dir) / "course-1"
+        jsons_dir = course_dir / "0"
+        shutil.copytree(
+            "ocw_data_parser/test_json/course_dir/course-1/jsons", jsons_dir
+        )
+        with open(jsons_dir / "1.json") as file:
+            json_1 = json.load(file)
+        json_1[field] = "None"
+        with open(jsons_dir / "1.json", "w") as file:
+            json.dump(json_1, file)
+        parser = OCWParser(
+            course_dir=course_dir,
+            destination_dir=destination_dir,
+            static_prefix="static_files/",
+        )
+        assert parser.parsed_json[field] is None

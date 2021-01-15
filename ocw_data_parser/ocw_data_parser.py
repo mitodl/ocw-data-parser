@@ -22,6 +22,23 @@ from ocw_data_parser.utils import (
 log = logging.getLogger(__name__)
 
 
+def _get(obj, key):
+    """
+    Retrieve an item from a dictionary, converting "None" to None if necessary
+
+    Args:
+        obj (dict): A dict
+        key (str): A key in the dictionary
+
+    Returns:
+        any: The value at that key
+    """
+    value = obj.get(key)
+    if value == "None":
+        return None
+    return value
+
+
 class CustomHTMLParser(HTMLParser):
     """Capture links from an HTML file"""
 
@@ -490,14 +507,14 @@ class OCWParser:  # pylint: disable=too-many-instance-attributes
             "title": self.jsons[0].get("title"),
             "description": self.jsons[1].get("description"),
             "other_information_text": self.jsons[1].get("other_information_text"),
-            "first_published_to_production": self.jsons[0].get(
-                "first_published_to_production"
+            "first_published_to_production": _get(
+                self.jsons[0], "first_published_to_production"
             ),
-            "last_published_to_production": self.jsons[0].get(
-                "last_published_to_production"
+            "last_published_to_production": _get(
+                self.jsons[0], "last_published_to_production"
             ),
-            "last_unpublishing_date": self.jsons[0].get("last_unpublishing_date"),
-            "retirement_date": self.jsons[0].get("retirement_date"),
+            "last_unpublishing_date": _get(self.jsons[0], "last_unpublishing_date"),
+            "retirement_date": _get(self.jsons[0], "retirement_date"),
             "sort_as": self.jsons[0].get("sort_as"),
             "department_number": master_course.split(".")[0] if master_course else "",
             "master_course_number": master_course.split(".")[1]
