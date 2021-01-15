@@ -514,7 +514,7 @@ class OCWParser:  # pylint: disable=too-many-instance-attributes
                 self.jsons[0], "last_published_to_production"
             ),
             "last_unpublishing_date": _get(self.jsons[0], "last_unpublishing_date"),
-            "retirement_date": self.jsons[0].get("retirement_date"),
+            "retirement_date": _get(self.jsons[0], "retirement_date"),
             "sort_as": self.jsons[0].get("sort_as"),
             "department_number": master_course.split(".")[0] if master_course else "",
             "master_course_number": master_course.split(".")[1]

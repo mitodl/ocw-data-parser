@@ -679,6 +679,7 @@ def test_publish_date(ocw_parser):
         "first_published_to_production",
         "last_published_to_production",
         "last_unpublishing_date",
+        "retirement_date",
     ],
 )
 def test_none(field):
