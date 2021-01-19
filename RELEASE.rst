@@ -1,6 +1,11 @@
 Release Notes
 =============
 
+Version 0.22.0
+--------------
+
+- Handle "None" values for certain fields (#121)
+
 Version 0.21.1 (Released January 13, 2021)
 --------------
 
