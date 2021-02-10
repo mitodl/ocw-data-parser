@@ -20,8 +20,8 @@ from ocw_data_parser.utils import (
 )
 
 log = logging.getLogger(__name__)
-with open("course_feature_tags.json") as file:
-    course_feature_tags = json.load(file)
+with open("course_feature_tags.json") as course_feature_tags_file:
+    course_feature_tags = json.load(course_feature_tags_file)
 
 
 def _get(obj, key):
