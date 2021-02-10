@@ -20,6 +20,8 @@ from ocw_data_parser.utils import (
 )
 
 log = logging.getLogger(__name__)
+with open("course_feature_tags.json") as file:
+    course_feature_tags = json.load(file)
 
 
 def _get(obj, key):
@@ -314,6 +316,16 @@ def compose_course_features(jsons, course_pages):
                         course_feature = copy.copy(feature_requirement)
                         course_feature["ocw_feature_url"] = (
                             "./resolveuid/" + page["uid"]
+                        )
+                        course_feature["course_feature_tag"] = next(
+                            (
+                                x["course_feature_tag"]
+                                for x in course_feature_tags
+                                if x["ocw_feature"] == course_feature["ocw_feature"]
+                                and x["ocw_subfeature"]
+                                == course_feature["ocw_subfeature"]
+                            ),
+                            None,
                         )
                         course_features[page["uid"]] = course_feature
     return list(course_features.values())
