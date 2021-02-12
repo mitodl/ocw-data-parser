@@ -491,38 +491,60 @@ def test_course_features(ocw_parser):
     assert ocw_parser.parsed_json["course_features"] == [
         {
             "ocw_feature": "AV special element video",
-            "ocw_subfeature": "Tutorial",
+            "ocw_feature_notes": "",
             "ocw_feature_url": "./resolveuid/b5785e071ddb991cf3dfd7cc469e6397",
             "ocw_speciality": "",
-            "ocw_feature_notes": "",
+            "ocw_subfeature": "Tutorial",
         },
         {
             "ocw_feature": "AV lectures",
-            "ocw_subfeature": "Video",
+            "ocw_feature_notes": "",
             "ocw_feature_url": "./resolveuid/6b1f662457366951bfe85945521b0299",
             "ocw_speciality": "",
-            "ocw_feature_notes": "",
+            "ocw_subfeature": "Video",
         },
         {
             "ocw_feature": "Assignments",
-            "ocw_subfeature": "problem sets with solutions",
+            "ocw_feature_notes": "",
             "ocw_feature_url": "./resolveuid/87609dbba9d13a6b234d62de21a20433",
             "ocw_speciality": "",
-            "ocw_feature_notes": "",
+            "ocw_subfeature": "problem sets with solutions",
         },
         {
             "ocw_feature": "Exams",
-            "ocw_subfeature": "Solutions",
+            "ocw_feature_notes": "",
             "ocw_feature_url": "./resolveuid/c13c4766c0cf1486f0cf6435c531eaad",
             "ocw_speciality": "",
-            "ocw_feature_notes": "",
+            "ocw_subfeature": "Solutions",
         },
         {
             "ocw_feature": "Instructor Insights",
-            "ocw_subfeature": "",
+            "ocw_feature_notes": "",
             "ocw_feature_url": "./resolveuid/3f3b7835cf477d3ba10b05fbe03cbffa",
             "ocw_speciality": "",
-            "ocw_feature_notes": "",
+            "ocw_subfeature": "",
+        },
+    ]
+
+
+def test_course_feature_tags(ocw_parser):
+    """assert the output of course_feature_tags"""
+    assert ocw_parser.parsed_json["course_feature_tags"] == [
+        {
+            "course_feature_tag": "Tutorial Videos",
+            "ocw_feature_url": "./resolveuid/b5785e071ddb991cf3dfd7cc469e6397",
+        },
+        {
+            "course_feature_tag": "Lecture Videos",
+            "ocw_feature_url": "./resolveuid/6b1f662457366951bfe85945521b0299",
+        },
+        {
+            "course_feature_tag": "Problem Sets with Solutions",
+            "ocw_feature_url": "./resolveuid/87609dbba9d13a6b234d62de21a20433",
+        },
+        {
+            "course_feature_tag": "Exams with Solution",
+            "ocw_feature_url": "./resolveuid/c13c4766c0cf1486f0cf6435c531eaad",
         },
     ]
 

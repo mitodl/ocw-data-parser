@@ -13,11 +13,13 @@ import requests
 from smart_open import smart_open
 
 from ocw_data_parser.utils import (
+    course_page_from_relative_url,
     update_file_location,
     get_binary_data,
     find_all_values_for_key,
     htmlify,
 )
+from ocw_data_parser.course_feature_tags import match_course_feature_tag
 
 log = logging.getLogger(__name__)
 
@@ -298,25 +300,46 @@ def compose_course_features(jsons, course_pages):
     feature_requirements = jsons[0].get("feature_requirements")
     if feature_requirements:
         for feature_requirement in feature_requirements:
-            for page in course_pages:
-                ocw_feature_url = feature_requirement.get("ocw_feature_url")
-                if ocw_feature_url:
-                    ocw_feature_url_parts = ocw_feature_url.split("/")
-                    ocw_feature_short_url = ocw_feature_url
-                    if len(ocw_feature_url_parts) > 1:
-                        ocw_feature_short_url = (
-                            ocw_feature_url_parts[-2] + "/" + ocw_feature_url_parts[-1]
-                        )
-                    if (
-                        page["short_url"] in ocw_feature_short_url
-                        and "index.htm" not in page["short_url"]
-                    ):
-                        course_feature = copy.copy(feature_requirement)
-                        course_feature["ocw_feature_url"] = (
-                            "./resolveuid/" + page["uid"]
-                        )
-                        course_features[page["uid"]] = course_feature
+            page = course_page_from_relative_url(
+                feature_requirement["ocw_feature_url"], course_pages
+            )
+            if page:
+                course_feature = copy.copy(feature_requirement)
+                course_feature["ocw_feature_url"] = "./resolveuid/" + page["uid"]
+                course_features[page["uid"]] = course_feature
     return list(course_features.values())
+
+
+def compose_course_feature_tags(jsons, course_pages):
+    """
+    Create course feature tag dicts from input JSONs
+
+    Args:
+        jsons (list of dict): Course info
+        course_pages (list of dict): Course page info generated from compose_pages
+
+    Returns:
+        list of dict:
+            Course feature info
+    """
+    course_feature_tags = {}
+    feature_requirements = jsons[0].get("feature_requirements")
+    if feature_requirements:
+        for feature_requirement in feature_requirements:
+            page = course_page_from_relative_url(
+                feature_requirement["ocw_feature_url"], course_pages
+            )
+            if page:
+                matching_tag = match_course_feature_tag(
+                    feature_requirement["ocw_feature"],
+                    feature_requirement["ocw_subfeature"],
+                )
+                if matching_tag:
+                    course_feature_tags[page["uid"]] = {
+                        "course_feature_tag": matching_tag,
+                        "ocw_feature_url": "./resolveuid/" + page["uid"],
+                    }
+    return list(course_feature_tags.values())
 
 
 def gather_foreign_media(jsons):
@@ -548,6 +571,9 @@ class OCWParser:  # pylint: disable=too-many-instance-attributes
             "course_collections": self.jsons[0].get("category_features"),
             "course_pages": course_pages,
             "course_features": compose_course_features(self.jsons, course_pages),
+            "course_feature_tags": compose_course_feature_tags(
+                self.jsons, course_pages
+            ),
             "course_files": course_files,
             "course_embedded_media": compose_embedded_media(self.jsons),
             "course_foreign_files": foreign_media,
