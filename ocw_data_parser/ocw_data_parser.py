@@ -334,10 +334,11 @@ def compose_course_feature_tags(jsons, course_pages):
                     feature_requirement["ocw_feature"],
                     feature_requirement["ocw_subfeature"],
                 )
-                course_feature_tags[matching_tag] = {
-                    "course_feature_tag": matching_tag,
-                    "ocw_feature_url": "./resolveuid/" + page["uid"],
-                }
+                if matching_tag != "":
+                    course_feature_tags[page["uid"]] = {
+                        "course_feature_tag": matching_tag,
+                        "ocw_feature_url": "./resolveuid/" + page["uid"],
+                    }
     return list(course_feature_tags.values())
 
 
