@@ -14,6 +14,30 @@ import pytz
 log = logging.getLogger(__name__)
 
 
+def course_page_from_relative_url(url, course_pages):
+    """
+    Return a course_page object that matches a course page based on a relative url
+
+    Args:
+        url (string): A relative URL to match against a course_page
+        course_pages: An array of parsed course pages from a course
+    """
+    if url:
+        for page in course_pages:
+            ocw_feature_url_parts = url.split("/")
+            ocw_feature_short_url = url
+            if len(ocw_feature_url_parts) > 1:
+                ocw_feature_short_url = (
+                    ocw_feature_url_parts[-2] + "/" + ocw_feature_url_parts[-1]
+                )
+            if (
+                page["short_url"] in ocw_feature_short_url
+                and "index.htm" not in page["short_url"]
+            ):
+                return page
+    return None
+
+
 def update_file_location(parsed_json, new_file_location, obj_uid=""):
     """
     Update file_location for an object.
