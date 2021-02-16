@@ -1,6 +1,11 @@
 Release Notes
 =============
 
+Version 0.23.0
+--------------
+
+- course feature tags (#126)
+
 Version 0.22.0 (Released January 19, 2021)
 --------------
 
