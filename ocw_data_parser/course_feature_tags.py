@@ -90,7 +90,7 @@ TAG_WRITTEN_ASSIGNMENTS = "Written Assignments"
 TAG_WRITTEN_ASSIGNMENTS_WITH_EXAMPLES = "Written Assignments with Examples"
 TAG_EXAM_MATERIALS = "Exam Materials"
 TAG_EXAMS = "Exams"
-TAG_EXAMS_WITH_SOLUTION = "Exams with Solution"
+TAG_EXAMS_WITH_SOLUTIONS = "Exams with Solutions"
 TAG_IMAGE_GALLERY = "Image Gallery"
 TAG_NONE = ""
 TAG_SIMULATIONS = "Simulations"
@@ -289,7 +289,7 @@ TAG_MAPPING = [
     {
         "ocw_feature": FEATURE_EXAMS,
         "ocw_subfeature": SUBFEATURE_SOLUTIONS,
-        "course_feature_tag": TAG_EXAMS_WITH_SOLUTION,
+        "course_feature_tag": TAG_EXAMS_WITH_SOLUTIONS,
     },
     {
         "ocw_feature": FEATURE_IMAGE_GALLERY,

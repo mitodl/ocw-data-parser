@@ -543,7 +543,7 @@ def test_course_feature_tags(ocw_parser):
             "ocw_feature_url": "./resolveuid/87609dbba9d13a6b234d62de21a20433",
         },
         {
-            "course_feature_tag": "Exams with Solution",
+            "course_feature_tag": "Exams with Solutions",
             "ocw_feature_url": "./resolveuid/c13c4766c0cf1486f0cf6435c531eaad",
         },
     ]
