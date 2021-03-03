@@ -1,7 +1,7 @@
 Release Notes
 =============
 
-Version 0.24.0
+Version 0.24.0 (Released March 03, 2021)
 --------------
 
 - fix a typo with 'exams with solutions' (#128)
