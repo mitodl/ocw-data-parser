@@ -253,6 +253,7 @@ def compose_embedded_media(jsons):
             temp = {
                 "order_index": json_file.get("order_index"),
                 "title": json_file["title"],
+                "template_type": json_file["template_type"],
                 "uid": json_file["_uid"],
                 "parent_uid": json_file["parent_uid"],
                 "technical_location": json_file["technical_location"],
@@ -890,6 +891,7 @@ class OCWParser:  # pylint: disable=too-many-instance-attributes
         """
         short_url = self.parsed_json.get("short_url")
         if short_url:
+            print("uploading {}_parsed.json".format(short_url))
             s3_bucket.put_object(
                 Key=self.s3_target_folder + f"{short_url}_parsed.json",
                 Body=json.dumps(self.parsed_json),

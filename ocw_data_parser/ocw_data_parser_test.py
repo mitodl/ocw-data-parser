@@ -588,6 +588,7 @@ def test_course_embedded_media(ocw_parser):
         "technical_location": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/instructor-insights/an-interview-with-gilbert-strang-on-teaching-linear-algebra",
         "title": "An Interview with Gilbert Strang on Teaching Linear Algebra",
         "uid": "e21b71ff0fa975bfa9acb2a155aafc1d",
+        "template_type": "Embed",
     }
     assert transcript.startswith("<p><span m='6840'>SARAH HANSEN:")
     assert len(embedded_media) == 11
