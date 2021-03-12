@@ -253,6 +253,7 @@ def compose_embedded_media(jsons):
             temp = {
                 "order_index": json_file.get("order_index"),
                 "title": json_file["title"],
+                "template_type": json_file["template_type"],
                 "uid": json_file["_uid"],
                 "parent_uid": json_file["parent_uid"],
                 "technical_location": json_file["technical_location"],
