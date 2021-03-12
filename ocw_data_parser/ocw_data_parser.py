@@ -891,7 +891,6 @@ class OCWParser:  # pylint: disable=too-many-instance-attributes
         """
         short_url = self.parsed_json.get("short_url")
         if short_url:
-            print("uploading {}_parsed.json".format(short_url))
             s3_bucket.put_object(
                 Key=self.s3_target_folder + f"{short_url}_parsed.json",
                 Body=json.dumps(self.parsed_json),
