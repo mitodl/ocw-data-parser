@@ -1,6 +1,11 @@
 Release Notes
 =============
 
+Version 0.25.0
+--------------
+
+- add template_type to course_embedded_media (#132)
+
 Version 0.24.0 (Released March 03, 2021)
 --------------
 
