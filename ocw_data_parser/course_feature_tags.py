@@ -324,7 +324,7 @@ TAG_MAPPING = [
     {
         "ocw_feature": FEATURE_SIMULATIONS,
         "ocw_subfeature": SUBFEATURE_VIDEO,
-        "course_feature_tag": TAG_SIMULATION_VIDOES,
+        "course_feature_tag": TAG_SIMULATION_VIDEOS,
     },
     {
         "ocw_feature": FEATURE_LECTURE_NOTES,
