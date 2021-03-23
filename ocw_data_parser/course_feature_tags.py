@@ -94,7 +94,7 @@ TAG_EXAMS_WITH_SOLUTIONS = "Exams with Solutions"
 TAG_IMAGE_GALLERY = "Image Gallery"
 TAG_NONE = ""
 TAG_SIMULATIONS = "Simulations"
-TAG_SIMULATION_VIDOES = "Simulation Vidoes"
+TAG_SIMULATION_VIDEOS = "Simulation Videos"
 TAG_LECTURE_NOTES = "Lecture Notes"
 TAG_ONLINE_TEXTBOOK = "Online Textbook"
 TAG_PROJECTS = "Projects"
@@ -324,7 +324,7 @@ TAG_MAPPING = [
     {
         "ocw_feature": FEATURE_SIMULATIONS,
         "ocw_subfeature": SUBFEATURE_VIDEO,
-        "course_feature_tag": TAG_SIMULATION_VIDOES,
+        "course_feature_tag": TAG_SIMULATION_VIDEOS,
     },
     {
         "ocw_feature": FEATURE_LECTURE_NOTES,
