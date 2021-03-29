@@ -1,6 +1,11 @@
 Release Notes
 =============
 
+Version 0.26.0
+--------------
+
+- Fix: typo "Simulation Vidoes" (#134)
+
 Version 0.25.0 (Released March 15, 2021)
 --------------
 
