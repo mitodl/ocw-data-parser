@@ -504,6 +504,13 @@ def test_course_features(ocw_parser):
             "ocw_subfeature": "Video",
         },
         {
+            "ocw_feature": "AV recitations",
+            "ocw_feature_notes": "",
+            "ocw_feature_url": "./resolveuid/6b1f662457366951bfe85945521b0299",
+            "ocw_speciality": "",
+            "ocw_subfeature": "",
+        },
+        {
             "ocw_feature": "Assignments",
             "ocw_feature_notes": "",
             "ocw_feature_url": "./resolveuid/87609dbba9d13a6b234d62de21a20433",
@@ -536,6 +543,10 @@ def test_course_feature_tags(ocw_parser):
         },
         {
             "course_feature_tag": "Lecture Videos",
+            "ocw_feature_url": "./resolveuid/6b1f662457366951bfe85945521b0299",
+        },
+        {
+            "course_feature_tag": "Recitation Videos",
             "ocw_feature_url": "./resolveuid/6b1f662457366951bfe85945521b0299",
         },
         {
