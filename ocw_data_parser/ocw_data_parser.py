@@ -297,7 +297,7 @@ def compose_course_features(jsons, course_pages):
         list of dict:
             Course feature info
     """
-    course_features = {}
+    course_features = []
     feature_requirements = jsons[0].get("feature_requirements")
     if feature_requirements:
         for feature_requirement in feature_requirements:
@@ -307,8 +307,8 @@ def compose_course_features(jsons, course_pages):
             if page:
                 course_feature = copy.copy(feature_requirement)
                 course_feature["ocw_feature_url"] = "./resolveuid/" + page["uid"]
-                course_features[page["uid"]] = course_feature
-    return list(course_features.values())
+                course_features.append(course_feature)
+    return course_features
 
 
 def compose_course_feature_tags(jsons, course_pages):
@@ -323,7 +323,7 @@ def compose_course_feature_tags(jsons, course_pages):
         list of dict:
             Course feature info
     """
-    course_feature_tags = {}
+    course_feature_tags = []
     feature_requirements = jsons[0].get("feature_requirements")
     if feature_requirements:
         for feature_requirement in feature_requirements:
@@ -336,11 +336,13 @@ def compose_course_feature_tags(jsons, course_pages):
                     feature_requirement["ocw_subfeature"],
                 )
                 if matching_tag:
-                    course_feature_tags[page["uid"]] = {
-                        "course_feature_tag": matching_tag,
-                        "ocw_feature_url": "./resolveuid/" + page["uid"],
-                    }
-    return list(course_feature_tags.values())
+                    course_feature_tags.append(
+                        {
+                            "course_feature_tag": matching_tag,
+                            "ocw_feature_url": "./resolveuid/" + page["uid"],
+                        }
+                    )
+    return course_feature_tags
 
 
 def gather_foreign_media(jsons):

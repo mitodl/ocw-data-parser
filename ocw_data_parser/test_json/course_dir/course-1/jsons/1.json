@@ -4206,6 +4206,13 @@
             "ocw_subfeature": "Video"
         },
         {
+            "ocw_feature": "AV recitations",
+            "ocw_feature_notes": "",
+            "ocw_feature_url": "/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures",
+            "ocw_speciality": "",
+            "ocw_subfeature": ""
+        },
+        {
             "ocw_feature": "Assignments",
             "ocw_feature_notes": "",
             "ocw_feature_url": "/courses/mathematics/18-06-linear-algebra-spring-2010/assignments",

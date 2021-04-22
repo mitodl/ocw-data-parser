@@ -21,13 +21,18 @@ def s3_bucket():
     """Fake S3 bucket for testing"""
     with mock_s3():
         conn = boto3.client(
-            "s3", aws_access_key_id="testing", aws_secret_access_key="testing"
+            "s3",
+            aws_access_key_id="testing",
+            aws_secret_access_key="testing",
+            region_name="us-east-1",
         )
         conn.create_bucket(Bucket="testing")
         responses.add_passthru("https://")
         responses.add_passthru("http://")
         s3 = boto3.resource(  # pylint: disable=invalid-name
-            "s3", aws_access_key_id="testing", aws_secret_access_key="testing"
+            "s3",
+            aws_access_key_id="testing",
+            aws_secret_access_key="testing",
         )
         s3_bucket = s3.Bucket(name="testing")
         yield s3_bucket
