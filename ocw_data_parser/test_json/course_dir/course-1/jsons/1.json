@@ -4112,7 +4112,14 @@
         ]
     },
     "aggregationlevel": 4,
-    "aka_course_number": [],
+    "aka_course_number": [
+        {
+            "aka_new_course_number_col": "18.06TEST", 
+            "aka_old_course_number_col": "18.06", 
+            "aka_sort_as_col": "18.06TEST", 
+            "aka_course_type_col": "Undergraduate"
+        }
+    ],
     "allowDiscussion": false,
     "always_publish": false,
     "category_features": [

@@ -418,6 +418,16 @@ def test_other_version_parent_uids(ocw_parser):
     assert len(ocw_parser.parsed_json["other_version_parent_uids"]) == 1
 
 
+def test_aka_course_number(ocw_parser):
+    """Make sure the aka_course_number field is transformed property into new_course_numbers"""
+    assert ocw_parser.parsed_json["new_course_numbers"][0] == {
+        "new_course_number_col": "18.06TEST",
+        "old_course_number_col": "18.06",
+        "sort_as_col": "18.06TEST",
+        "course_type_col": "Undergraduate",
+    }
+
+
 def test_course_pages(ocw_parser):
     """assert the output of composing course_pages"""
     assert len(ocw_parser.parsed_json["course_pages"]) > 0
