@@ -549,7 +549,7 @@ class OCWParser:  # pylint: disable=too-many-instance-attributes
             else "",
             "new_course_numbers": [
                 {
-                    key.replace("aka_", ""): value
+                    key.replace("aka_", "") if key.startswith("aka_") else key: value
                     for key, value in aka_course_number.items()
                 }
                 for aka_course_number in aka_course_numbers
