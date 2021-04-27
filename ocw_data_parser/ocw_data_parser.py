@@ -518,6 +518,7 @@ class OCWParser:  # pylint: disable=too-many-instance-attributes
                 self.course_thumbnail_image_uid = j.get("chp_image_thumb")
 
         master_course = self.jsons[0].get("master_course_number")
+        aka_course_numbers = self.jsons[0].get("aka_course_number")
         technical_location = self.jsons[0].get("technical_location")
         instructors = self.jsons[0].get("instructors")
         course_pages = compose_pages(self.jsons)
@@ -546,6 +547,15 @@ class OCWParser:  # pylint: disable=too-many-instance-attributes
             "master_course_number": master_course.split(".")[1]
             if master_course
             else "",
+            "new_course_numbers": [
+                {
+                    key.replace("aka_", "") if key.startswith("aka_") else key: value
+                    for key, value in aka_course_number.items()
+                }
+                for aka_course_number in aka_course_numbers
+            ]
+            if aka_course_numbers
+            else [],
             "other_version_parent_uids": self.jsons[0].get("master_subject"),
             "from_semester": self.jsons[0].get("from_semester"),
             "from_year": self.jsons[0].get("from_year"),
