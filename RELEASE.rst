@@ -1,7 +1,7 @@
 Release Notes
 =============
 
-Version 0.28.0
+Version 0.28.0 (Released April 29, 2021)
 --------------
 
 - parse aka_course_number into new_course_numbers (#140)
