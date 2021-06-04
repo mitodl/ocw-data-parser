@@ -745,3 +745,39 @@ def test_none(field):
             static_prefix="static_files/",
         )
         assert parser.parsed_json[field] is None
+
+
+def test_archived_course_fields(ocw_parser):
+    """Assert that fields related to handling archived courses are passed through more or less"""
+    assert ocw_parser.parsed_json["dspace_handle"] == ""
+    assert ocw_parser.parsed_json["is_update_of"] == "389a811a12a85b2225f41dca56699e0c"
+    assert ocw_parser.parsed_json["features_tracking"] == [
+        {
+            "ocw_feature": "Translations",
+            "ocw_feature_notes": "",
+            "ocw_feature_url": "http://www.core.org.cn/OcwWeb/Mathematics/18-06Linear-AlgebraFall2002/CourseHome/index.htm",
+            "ocw_speciality": "",
+            "ocw_subfeature": "Chinese (Simplified)",
+        },
+        {
+            "ocw_feature": "Translations",
+            "ocw_feature_notes": "",
+            "ocw_feature_url": "http://www.acikders.org.tr/course/view.php?id=32",
+            "ocw_speciality": "",
+            "ocw_subfeature": "Turkish",
+        },
+        {
+            "ocw_feature": "Previous version",
+            "ocw_feature_notes": "",
+            "ocw_feature_url": "http://hdl.handle.net/1721.1/59010",
+            "ocw_speciality": "",
+            "ocw_subfeature": "",
+        },
+        {
+            "ocw_feature": "Captions/Transcript",
+            "ocw_feature_notes": "",
+            "ocw_feature_url": "/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures",
+            "ocw_speciality": "",
+            "ocw_subfeature": "",
+        },
+    ]
