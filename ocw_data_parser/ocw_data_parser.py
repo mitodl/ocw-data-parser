@@ -528,6 +528,8 @@ class OCWParser:  # pylint: disable=too-many-instance-attributes
         foreign_media = gather_foreign_media(self.jsons)
         self.large_media_links = foreign_media
 
+        is_update_of_list = self.jsons[0].get("is_update_of", [])
+        is_update_of = is_update_of_list[0] if is_update_of_list else None
         # Generate parsed JSON
         new_json = {
             "uid": self.jsons[0].get("_uid"),
@@ -593,6 +595,9 @@ class OCWParser:  # pylint: disable=too-many-instance-attributes
             "open_learning_library_related": compose_open_learning_library_related(
                 self.jsons
             ),
+            "dspace_handle": self.jsons[0].get("dspace_handle"),
+            "features_tracking": self.jsons[0].get("features_tracking"),
+            "is_update_of": is_update_of,
         }
 
         self.parsed_json = new_json
