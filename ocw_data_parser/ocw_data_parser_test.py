@@ -750,7 +750,9 @@ def test_none(field):
 def test_archived_course_fields(ocw_parser):
     """Assert that fields related to handling archived courses are passed through more or less"""
     assert ocw_parser.parsed_json["dspace_handle"] == ""
-    assert ocw_parser.parsed_json["is_update_of"] == "389a811a12a85b2225f41dca56699e0c"
+    assert ocw_parser.parsed_json["is_update_of"] == [
+        "389a811a12a85b2225f41dca56699e0c"
+    ]
     assert ocw_parser.parsed_json["features_tracking"] == [
         {
             "ocw_feature": "Translations",
