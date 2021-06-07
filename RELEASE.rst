@@ -1,6 +1,11 @@
 Release Notes
 =============
 
+Version 0.29.0
+--------------
+
+- Add fields related to handling archived courses (#143)
+
 Version 0.28.0 (Released April 29, 2021)
 --------------
 
