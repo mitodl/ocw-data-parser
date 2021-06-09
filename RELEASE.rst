@@ -1,7 +1,7 @@
 Release Notes
 =============
 
-Version 0.29.1
+Version 0.29.1 (Released June 09, 2021)
 --------------
 
 - Pass through is_update_of (#145)
