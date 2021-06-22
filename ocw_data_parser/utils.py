@@ -1,5 +1,5 @@
 """Utility functions for ocw-data-parser"""
-from base64 import b64decode
+from base64 import b64decode, b64encode
 from pathlib import Path
 from datetime import datetime
 
@@ -8,6 +8,7 @@ import shutil
 import json
 import logging
 import requests
+import webvtt
 
 import pytz
 
@@ -222,6 +223,7 @@ def parse_all(  # pylint: disable=too-many-arguments, too-many-locals
     overwrite=False,
     beautify_parsed_json=False,
     courses_json_path=None,
+    create_vtt_files=False,
 ):
     """
     Convert multiple courses in a directory to the parsed JSON format in destination_dir
@@ -235,6 +237,7 @@ def parse_all(  # pylint: disable=too-many-arguments, too-many-locals
         overwrite (bool): If true, erase the destination directory for each course first
         beautify_parsed_json (bool): Pretty print JSON files which are created
         courses_json_path (str or Path or None): If set, only convert courses listed in this file
+        create_vtt_files (bool): If true, convert all srt caption files to vtt
     """
     import ocw_data_parser.ocw_data_parser  # pylint: disable=import-outside-toplevel
 
@@ -264,6 +267,7 @@ def parse_all(  # pylint: disable=too-many-arguments, too-many-locals
                 s3_bucket_name=s3_bucket,
                 s3_target_folder=course_dir,
                 beautify_parsed_json=beautify_parsed_json,
+                create_vtt_files=create_vtt_files,
             )
             perform_upload = (
                 s3_links and upload_parsed_json and is_course_published(source_path)
@@ -280,3 +284,33 @@ def parse_all(  # pylint: disable=too-many-arguments, too-many-locals
             parser.export_parsed_json(
                 s3_links=s3_links, upload_parsed_json=perform_upload
             )
+
+
+def convert_to_vtt(loaded_json):
+    """
+    Convert a json file with srt captions data to vtt format
+
+    Args:
+        loaded_json (dict): The content of JSON file
+
+    Returns:
+        dict: copy of the json file with the _datafield_file converted to vtt format
+    """
+    if ".vtt" in loaded_json["id"]:
+        return None
+    new_json = dict(loaded_json)
+    new_json["id"] = loaded_json["id"].replace(".srt", ".vtt")
+    new_json["technical_location"] = loaded_json["technical_location"].replace(
+        ".srt", ".vtt"
+    )
+
+    binary_data = get_binary_data(loaded_json)
+    if binary_data is not None:
+        with open("./temp", "wb") as file:
+            file.write(binary_data)
+        webvtt.from_srt("./temp").save()
+        with open("temp.vtt", "rb") as file:
+            data = file.read()
+        new_json["_datafield_file"] = {"encoding": "base64", "data": b64encode(data)}
+        return new_json
+    return None

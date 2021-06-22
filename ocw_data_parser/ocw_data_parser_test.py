@@ -663,6 +663,22 @@ def test_extract_media_locally(ocw_parser):
     assert counts == expected_counts
 
 
+def test_populate_vtt_files(ocw_parser):
+    """populate_vtt_files should duplicate srt content files"""
+    subrip_count = 0
+    with open(
+        "ocw_data_parser/test_json/course_dir/captions_example.json", "rb"
+    ) as file:
+        datafield = json.load(file)
+        for loaded_json in ocw_parser.jsons:
+            if loaded_json["_content_type"] == "application/x-subrip":
+                loaded_json["_datafield_file"] = datafield
+                subrip_count += 1
+    files_count_before = len(ocw_parser.jsons)
+    ocw_parser.populate_vtt_files()
+    assert files_count_before + subrip_count == len(ocw_parser.jsons)
+
+
 def test_extract_foreign_media_locally(ocw_parser):
     """
     extract_foreign_media_locally should download and save foreign media files
