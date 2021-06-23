@@ -312,11 +312,11 @@ def convert_to_vtt(loaded_json):
             file_name = f"{file.name}.vtt"
             try:
                 webvtt.from_srt(file.name).save()
-            except webvtt.errors.MalformedFileError as e:
+            except webvtt.errors.MalformedFileError as msg:
                 log.error(
-                    "This file is malformed and cannot be converted to vtt %s, %s",
+                    "This file is malformed and cannot be converted to vtt %s. %s",
                     loaded_json["id"],
-                    e,
+                    msg,
                 )
                 return None
         with open(file_name, "rb") as file:
