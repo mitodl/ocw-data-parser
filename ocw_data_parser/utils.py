@@ -1,4 +1,5 @@
 """Utility functions for ocw-data-parser"""
+import tempfile
 from base64 import b64decode, b64encode
 from pathlib import Path
 from datetime import datetime
@@ -306,10 +307,19 @@ def convert_to_vtt(loaded_json):
 
     binary_data = get_binary_data(loaded_json)
     if binary_data is not None:
-        with open("./temp", "wb") as file:
+        with tempfile.NamedTemporaryFile() as file:
             file.write(binary_data)
-        webvtt.from_srt("./temp").save()
-        with open("temp.vtt", "rb") as file:
+            file_name = f"{file.name}.vtt"
+            try:
+                webvtt.from_srt(file.name).save()
+            except webvtt.errors.MalformedFileError as e:
+                log.error(
+                    "This file is malformed and cannot be converted to vtt %s, %s",
+                    loaded_json["id"],
+                    e,
+                )
+                return None
+        with open(file_name, "rb") as file:
             data = file.read()
         new_json["_datafield_file"] = {"encoding": "base64", "data": b64encode(data)}
         return new_json
