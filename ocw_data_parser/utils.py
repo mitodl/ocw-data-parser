@@ -1,4 +1,5 @@
 """Utility functions for ocw-data-parser"""
+import re
 import tempfile
 from base64 import b64decode, b64encode
 from pathlib import Path
@@ -297,10 +298,11 @@ def convert_to_vtt(loaded_json):
     Returns:
         dict: copy of the json file with the _datafield_file converted to vtt format
     """
-    if ".vtt" in loaded_json["id"]:
+    if loaded_json["id"].endswith(".vtt"):
         return None
     new_json = dict(loaded_json)
-    new_json["id"] = loaded_json["id"].replace(".srt", ".vtt")
+
+    new_json["id"] = re.sub(r".srt$", ".vtt", loaded_json["id"])
     new_json["technical_location"] = loaded_json["technical_location"].replace(
         ".srt", ".vtt"
     )
@@ -313,7 +315,7 @@ def convert_to_vtt(loaded_json):
             try:
                 webvtt.from_srt(file.name).save()
             except webvtt.errors.MalformedFileError as msg:
-                log.error(
+                log.exception(
                     "This file is malformed and cannot be converted to vtt %s. %s",
                     loaded_json["id"],
                     msg,

@@ -10,7 +10,12 @@ setup(
     name="ocw_data_parser",
     version="0.29.1",
     packages=find_packages(),
-    install_requires=["boto3>=1.9.62", "requests>=2.21.0", "smart-open>=1.8.0"],
+    install_requires=[
+        "boto3>=1.9.62",
+        "requests>=2.21.0",
+        "smart-open>=1.8.0",
+        "webvtt-py==0.4.6",
+    ],
     license="To be determined",
     author="Zagaran, Inc.",
     url="https://github.com/zagaran/ocw-data-parser",
