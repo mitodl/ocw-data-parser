@@ -3,7 +3,6 @@
 import json
 import logging
 import os
-import re
 import sys
 from copy import deepcopy
 from pathlib import Path
@@ -16,6 +15,7 @@ import responses
 import pytest
 
 from ocw_data_parser.ocw_data_parser import OCWParser, load_raw_jsons
+from ocw_data_parser.utils import update_srt_to_vtt
 import ocw_data_parser.test_constants as constants
 
 log = logging.getLogger(__name__)
@@ -683,7 +683,7 @@ def test_populate_vtt_files(ocw_parser):
     ocw_parser.populate_vtt_files()
     assert files_count_before + subrip_count == len(ocw_parser.jsons)
 
-    vtt_file_id = re.sub(r".srt$", ".vtt", srt_json["id"])
+    vtt_file_id = update_srt_to_vtt(srt_json["id"])
     vtt_json = next(
         (new_json for new_json in ocw_parser.jsons if new_json["id"] == vtt_file_id),
         None,

@@ -1,6 +1,7 @@
 """Utility functions for ocw-data-parser"""
 import re
 import tempfile
+import uuid
 from base64 import b64decode, b64encode
 from pathlib import Path
 from datetime import datetime
@@ -302,27 +303,31 @@ def convert_to_vtt(loaded_json):
         return None
     new_json = dict(loaded_json)
 
-    new_json["id"] = re.sub(r".srt$", ".vtt", loaded_json["id"])
-    new_json["technical_location"] = loaded_json["technical_location"].replace(
-        ".srt", ".vtt"
-    )
-
+    new_json["id"] = update_srt_to_vtt(loaded_json["id"])
+    new_json["technical_location"] = update_srt_to_vtt(loaded_json["technical_location"])
+    new_json["uid"] = uuid.uuid1().hex
     binary_data = get_binary_data(loaded_json)
     if binary_data is not None:
-        with tempfile.NamedTemporaryFile() as file:
-            file.write(binary_data)
-            file_name = f"{file.name}.vtt"
-            try:
-                webvtt.from_srt(file.name).save()
-            except webvtt.errors.MalformedFileError as msg:
-                log.exception(
-                    "This file is malformed and cannot be converted to vtt %s. %s",
-                    loaded_json["id"],
-                    msg,
-                )
-                return None
-        with open(file_name, "rb") as file:
-            data = file.read()
-        new_json["_datafield_file"] = {"encoding": "base64", "data": b64encode(data)}
-        return new_json
+        with tempfile.TemporaryDirectory() as temp_dir:
+            with open(Path(temp_dir) / "data", "wb") as file:
+                file.write(binary_data)
+                file.flush()
+                try:
+                    webvtt.from_srt(Path(temp_dir) / "data").save()
+                except webvtt.errors.MalformedFileError as msg:
+                    log.exception(
+                        "This file is malformed and cannot be converted to vtt %s. %s",
+                        loaded_json["id"],
+                        msg,
+                    )
+                    return None
+            with open(Path(temp_dir) / "data.vtt", "rb") as file:
+                data = file.read()
+            new_json["_datafield_file"] = {"encoding": "base64", "data": b64encode(data).decode()}
+            return new_json
     return None
+
+
+def update_srt_to_vtt(field):
+    """Find the extension in the field and updates it to .vtt"""
+    return re.sub(r".srt$", ".vtt", field)
