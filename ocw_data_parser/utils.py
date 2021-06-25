@@ -304,7 +304,9 @@ def convert_to_vtt(loaded_json):
     new_json = dict(loaded_json)
 
     new_json["id"] = update_srt_to_vtt(loaded_json["id"])
-    new_json["technical_location"] = update_srt_to_vtt(loaded_json["technical_location"])
+    new_json["technical_location"] = update_srt_to_vtt(
+        loaded_json["technical_location"]
+    )
     new_json["uid"] = uuid.uuid1().hex
     binary_data = get_binary_data(loaded_json)
     if binary_data is not None:
@@ -323,7 +325,10 @@ def convert_to_vtt(loaded_json):
                     return None
             with open(Path(temp_dir) / "data.vtt", "rb") as file:
                 data = file.read()
-            new_json["_datafield_file"] = {"encoding": "base64", "data": b64encode(data).decode()}
+            new_json["_datafield_file"] = {
+                "encoding": "base64",
+                "data": b64encode(data).decode(),
+            }
             return new_json
     return None
 
