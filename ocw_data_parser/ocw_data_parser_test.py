@@ -688,9 +688,7 @@ def test_populate_vtt_files(ocw_parser):
         (new_json for new_json in ocw_parser.jsons if new_json["id"] == vtt_file_id),
         None,
     )
-    assert sys.getsizeof(srt_json["_datafield_file"]) == sys.getsizeof(
-        vtt_json["_datafield_file"]
-    )
+    assert len(vtt_json["_datafield_file"]['data']) == 116136
 
 
 def test_extract_foreign_media_locally(ocw_parser):
