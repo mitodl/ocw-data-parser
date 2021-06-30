@@ -3,6 +3,7 @@
 import json
 import logging
 import os
+from base64 import b64decode
 from copy import deepcopy
 from pathlib import Path
 import shutil
@@ -687,7 +688,7 @@ def test_populate_vtt_files(ocw_parser):
         (new_json for new_json in ocw_parser.jsons if new_json["id"] == vtt_file_id),
         None,
     )
-    assert len(vtt_json["_datafield_file"]["data"]) == 116136
+    assert len(b64decode(vtt_json["_datafield_file"]["data"])) == 87102
 
 
 def test_extract_foreign_media_locally(ocw_parser):
