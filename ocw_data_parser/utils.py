@@ -1,7 +1,6 @@
 """Utility functions for ocw-data-parser"""
 import re
 import tempfile
-import uuid
 from base64 import b64decode, b64encode
 from pathlib import Path
 from datetime import datetime
