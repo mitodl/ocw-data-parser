@@ -18,6 +18,7 @@ from ocw_data_parser.utils import (
     get_binary_data,
     find_all_values_for_key,
     htmlify,
+    convert_to_vtt,
 )
 from ocw_data_parser.course_feature_tags import match_course_feature_tag
 
@@ -429,6 +430,7 @@ class OCWParser:  # pylint: disable=too-many-instance-attributes
         s3_bucket_secret_access_key="",
         s3_target_folder="",
         beautify_parsed_json=False,
+        create_vtt_files=False,
     ):
         if not (course_dir and destination_dir) and not loaded_jsons:
             raise Exception(
@@ -462,6 +464,8 @@ class OCWParser:  # pylint: disable=too-many-instance-attributes
             self.jsons = load_raw_jsons(self.course_dir)
         else:
             self.jsons = loaded_jsons
+        if create_vtt_files:
+            self.populate_vtt_files()
         if self.jsons:
             self.parsed_json = self.generate_parsed_json()
             if self.destination_dir:
@@ -929,3 +933,13 @@ class OCWParser:  # pylint: disable=too-many-instance-attributes
                     media_uid_filter=[uid],
                 )
         self.upload_parsed_json_to_s3(s3_bucket)
+
+    def populate_vtt_files(self):
+        """
+        for each srt caption file create a vtt file
+        """
+        for loaded_json in self.jsons:
+            if loaded_json["_content_type"] == "application/x-subrip":
+                new_json = convert_to_vtt(loaded_json)
+                if new_json:
+                    self.jsons.append(new_json)

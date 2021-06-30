@@ -3,6 +3,7 @@
 import json
 import logging
 import os
+from base64 import b64decode
 from copy import deepcopy
 from pathlib import Path
 import shutil
@@ -14,6 +15,7 @@ import responses
 import pytest
 
 from ocw_data_parser.ocw_data_parser import OCWParser, load_raw_jsons
+from ocw_data_parser.utils import update_srt_to_vtt
 import ocw_data_parser.test_constants as constants
 
 log = logging.getLogger(__name__)
@@ -661,6 +663,32 @@ def test_extract_media_locally(ocw_parser):
             counts[ext] = 0
         counts[ext] += 1
     assert counts == expected_counts
+
+
+def test_populate_vtt_files(ocw_parser):
+    """populate_vtt_files should duplicate srt content files"""
+    subrip_count = 0
+    srt_json = {}
+    with open(
+        "ocw_data_parser/test_json/course_dir/captions_example.json", "rb"
+    ) as file:
+        datafield = json.load(file)
+        for loaded_json in ocw_parser.jsons:
+            if loaded_json["_content_type"] == "application/x-subrip":
+                loaded_json["_datafield_file"] = datafield
+                subrip_count += 1
+                if subrip_count == 1:
+                    srt_json = loaded_json
+    files_count_before = len(ocw_parser.jsons)
+    ocw_parser.populate_vtt_files()
+    assert files_count_before + subrip_count == len(ocw_parser.jsons)
+
+    vtt_file_id = update_srt_to_vtt(srt_json["id"])
+    vtt_json = next(
+        (new_json for new_json in ocw_parser.jsons if new_json["id"] == vtt_file_id),
+        None,
+    )
+    assert len(b64decode(vtt_json["_datafield_file"]["data"])) == 87102
 
 
 def test_extract_foreign_media_locally(ocw_parser):
