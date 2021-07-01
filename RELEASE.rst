@@ -1,6 +1,11 @@
 Release Notes
 =============
 
+Version 0.29.2
+--------------
+
+- Create new VTT files for existing SRT caption files (#148)
+
 Version 0.29.1 (Released June 09, 2021)
 --------------
 
