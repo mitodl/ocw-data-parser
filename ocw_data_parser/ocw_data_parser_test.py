@@ -8,11 +8,12 @@ from copy import deepcopy
 from pathlib import Path
 import shutil
 from tempfile import TemporaryDirectory
-from unittest.mock import patch
+from unittest.mock import patch, ANY
 
 from requests.exceptions import HTTPError
 import responses
 import pytest
+from webvtt.errors import MalformedFileError
 
 from ocw_data_parser.ocw_data_parser import OCWParser, load_raw_jsons
 from ocw_data_parser.utils import update_srt_to_vtt
@@ -689,6 +690,24 @@ def test_populate_vtt_files(ocw_parser):
         None,
     )
     assert len(b64decode(vtt_json["_datafield_file"]["data"])) == 87102
+
+
+@pytest.mark.parametrize(
+    "exception, expected_args",
+    [
+        [KeyError(), ("Unknown error when converting vtt %s", ANY)],
+        [
+            MalformedFileError(),
+            ("This file is malformed and cannot be converted to vtt %s. %s", ANY, ANY),
+        ],
+    ],
+)
+def test_populate_vtt_files_error(ocw_parser, mocker, exception, expected_args):
+    """populate_vtt_files should log errors and continue"""
+    mock_exception = mocker.patch("ocw_data_parser.utils.log.exception")
+    mocker.patch("webvtt.from_srt", side_effect=exception)
+    ocw_parser.populate_vtt_files()
+    mock_exception.assert_any_call(*expected_args)
 
 
 def test_extract_foreign_media_locally(ocw_parser):
