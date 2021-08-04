@@ -322,6 +322,11 @@ def convert_to_vtt(loaded_json):
                         msg,
                     )
                     return None
+                except:  # pylint: disable=bare-except
+                    log.exception(
+                        "Unknown error when converting vtt %s", loaded_json["id"]
+                    )
+                    return None
             with open(Path(temp_dir) / "data.vtt", "rb") as file:
                 data = file.read()
             new_json["_datafield_file"] = {
