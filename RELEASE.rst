@@ -1,6 +1,11 @@
 Release Notes
 =============
 
+Version 0.29.3
+--------------
+
+- Handle unexpected errors when converting VTT files (#152)
+
 Version 0.29.2 (Released July 01, 2021)
 --------------
 

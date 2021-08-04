@@ -8,7 +8,7 @@ if sys.version < "3.6":
 
 setup(
     name="ocw_data_parser",
-    version="0.29.2",
+    version="0.29.3",
     packages=find_packages(),
     install_requires=[
         "boto3>=1.9.62",
