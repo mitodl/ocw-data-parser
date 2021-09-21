@@ -1,6 +1,11 @@
 Release Notes
 =============
 
+Version 0.31.0
+--------------
+
+- Generate a UUID for vtt files (#158)
+
 Version 0.30.0 (Released August 05, 2021)
 --------------
 
