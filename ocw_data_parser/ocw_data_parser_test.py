@@ -690,6 +690,7 @@ def test_populate_vtt_files(ocw_parser):
         None,
     )
     assert len(b64decode(vtt_json["_datafield_file"]["data"])) == 87102
+    assert vtt_json["_uid"] == "2f2b1bbc318b5fdcade8ac2ec1b5a911"
 
 
 @pytest.mark.parametrize(
@@ -830,3 +831,54 @@ def test_archived_course_fields(ocw_parser):
             "ocw_subfeature": "",
         },
     ]
+
+
+@pytest.mark.parametrize("broken", [True, False])
+def test_parse_ocw_feature_url(broken):
+    """
+    Test that ocw_feature_url links for Open Learning Library handles errors gracefully
+    """
+    with TemporaryDirectory() as destination_dir, TemporaryDirectory() as source_dir:
+        shutil.copytree(
+            "ocw_data_parser/test_json/course_dir/course-1",
+            source_dir,
+            dirs_exist_ok=True,
+        )
+        with open(Path(source_dir) / "jsons" / "1.json") as file:
+            course_json = json.load(file)
+        oll_feature = [
+            feature
+            for feature in course_json["courselist_features"]
+            if feature["ocw_feature"] == "Open Learning Library"
+        ][0]
+        if broken:
+            oll_feature["ocw_feature_url"] = "xyzzy"
+        with open(Path(source_dir) / "jsons" / "1.json", "w") as file:
+            json.dump(course_json, file)
+
+        ocw_parser = OCWParser(
+            course_dir=source_dir,
+            destination_dir=destination_dir,
+            static_prefix="static_files/",
+        )
+        parsed_json = ocw_parser.get_parsed_json()
+
+        expected = (
+            []
+            if broken
+            else [
+                {
+                    "course": "18.01.1x Calculus 1A Differentiation",
+                    "url": "https://openlearninglibrary.mit.edu/courses/course-v1:MITx+18.01.1x+2T2019/about",
+                },
+                {
+                    "course": "18.01.2x Calculus 1B Integration",
+                    "url": "https://openlearninglibrary.mit.edu/courses/course-v1:MITx+18.01.2x+3T2019/about",
+                },
+                {
+                    "course": "18.01.3x Calculus 1C Coordinate Systems & Infinite Series",
+                    "url": "https://openlearninglibrary.mit.edu/courses/course-v1:MITx+18.01.3x+1T2020/about",
+                },
+            ]
+        )
+        assert parsed_json["open_learning_library_related"] == expected
