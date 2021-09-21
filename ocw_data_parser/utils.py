@@ -4,6 +4,7 @@ import tempfile
 from base64 import b64decode, b64encode
 from pathlib import Path
 from datetime import datetime
+import uuid
 
 import os
 import shutil
@@ -306,7 +307,7 @@ def convert_to_vtt(loaded_json):
     new_json["technical_location"] = update_srt_to_vtt(
         loaded_json["technical_location"]
     )
-    new_json["_uid"] = f"vtt{loaded_json['_uid']}"
+    new_json["_uid"] = uuid.uuid5(uuid.UUID(loaded_json["_uid"]), "vtt").hex
     binary_data = get_binary_data(loaded_json)
     if binary_data is not None:
         with tempfile.TemporaryDirectory() as temp_dir:

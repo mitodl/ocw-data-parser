@@ -405,10 +405,17 @@ def compose_open_learning_library_related(jsons):
                 courses_and_links = raw_url.split(",")
                 for course_and_link in courses_and_links:
                     related_course = {}
-                    course, url = course_and_link.strip().split("::")
-                    related_course["course"] = course
-                    related_course["url"] = url
-                    open_learning_library_related.append(related_course)
+                    try:
+                        course, url = course_and_link.strip().split("::")
+                        related_course["course"] = course
+                        related_course["url"] = url
+                        open_learning_library_related.append(related_course)
+                    except:  # pylint: disable=bare-except
+                        log.exception(
+                            "Unable to parse ocw_feature_url %s for course %s",
+                            raw_url,
+                            jsons[0].get("short_url"),
+                        )
     return open_learning_library_related
 
 
