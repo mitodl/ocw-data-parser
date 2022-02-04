@@ -607,6 +607,8 @@ class OCWParser:  # pylint: disable=too-many-instance-attributes
             "dspace_handle": self.jsons[0].get("dspace_handle"),
             "features_tracking": self.jsons[0].get("features_tracking"),
             "is_update_of": self.jsons[0].get("is_update_of"),
+            "highlights_text": self.jsons[1].get("highlights_text"),
+            "related_content": self.jsons[1].get("related_content"),
         }
 
         self.parsed_json = new_json

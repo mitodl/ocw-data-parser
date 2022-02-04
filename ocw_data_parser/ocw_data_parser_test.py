@@ -358,6 +358,20 @@ def test_uid(ocw_parser, course_id):
             assert first_json_data["_uid"] == parsed_json_data["uid"]
 
 
+def test_highlight_text(ocw_parser, ocw_parser_course_2):
+    """ Test that highlight_text makes it into parsed json with correct values"""
+    assert ocw_parser.parsed_json["highlights_text"].startswith(
+        "<p>This course parallels"
+    )
+    assert ocw_parser_course_2.parsed_json["highlights_text"] == ""
+
+
+def test_related_content(ocw_parser, ocw_parser_course_2):
+    """ Test that related_content makes it into parsed json with correct values"""
+    assert ocw_parser.parsed_json["related_content"] == "some related content"
+    assert ocw_parser_course_2.parsed_json["related_content"] == ""
+
+
 def test_course_files(ocw_parser):
     """Make sure course_files include the right fields with the correct default values"""
     assert len(ocw_parser.parsed_json["course_files"]) == 172
