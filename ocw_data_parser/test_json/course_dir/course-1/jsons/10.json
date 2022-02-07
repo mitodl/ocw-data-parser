@@ -166,8 +166,8 @@
     "metadata_contributor_list": [],
     "modification_date": "2019/07/31 18:37:56.655 Universal",
     "nextPreviousEnabled": false,
-    "optional_tab_title": "",
-    "optional_text": "",
+    "optional_tab_title": "optional tab title",
+    "optional_text": "optional text",
     "other_platform_requirements": "",
     "parent_module": "aabc44bdb2e45374d62f30f2a6d4c63e",
     "parent_uid": "3f3b7835cf477d3ba10b05fbe03cbffa",
@@ -181,7 +181,7 @@
             "res_contributor_uid": "84b06ab4b3e763ccf5375507e60fa961"
         }
     ],
-    "resource_index_text": "",
+    "resource_index_text": "resource index text",
     "rights": "This site (c) Massachusetts Institute of Technology 2019.  Content within individual courses is (c) by the individual authors unless otherwise noted. The Massachusetts Institute of Technology is providing this Work (as defined below) under the terms of this Creative Commons public license (\"CCPL\" or \"license\") unless otherwise noted. The Work is protected by copyright and/or other applicable law. Any use of the work other than as authorized under this license is prohibited. By exercising any of the rights to the Work provided here, You (as defined below) accept and agree to be bound by the terms of this license. The Licensor, the Massachusetts Institute of Technology, grants You the rights contained here in consideration of Your acceptance of such terms and conditions.",
     "rsi_top_html_area": "",
     "section_identifier": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/instructor-insights",
