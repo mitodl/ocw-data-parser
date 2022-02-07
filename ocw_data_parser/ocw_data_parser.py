@@ -13,12 +13,13 @@ import requests
 from smart_open import smart_open
 
 from ocw_data_parser.utils import (
-    course_page_from_relative_url,
-    update_file_location,
-    get_binary_data,
-    find_all_values_for_key,
-    htmlify,
     convert_to_vtt,
+    course_page_from_relative_url,
+    find_all_values_for_key,
+    get_binary_data,
+    htmlify,
+    ordered_instructors,
+    update_file_location,
 )
 from ocw_data_parser.course_feature_tags import match_course_feature_tag
 
@@ -534,7 +535,10 @@ class OCWParser:  # pylint: disable=too-many-instance-attributes
         master_course = self.jsons[0].get("master_course_number")
         aka_course_numbers = self.jsons[0].get("aka_course_number")
         technical_location = self.jsons[0].get("technical_location")
-        instructors = self.jsons[0].get("instructors")
+        contributor_list = self.jsons[0].get("metadata_contributor_list")
+        instructors = ordered_instructors(
+            self.jsons[0].get("instructors"), contributor_list
+        )
         course_pages = compose_pages(self.jsons)
         course_files, self.media_jsons = compose_media(
             self.jsons, self.get_s3_base_url()
@@ -593,6 +597,7 @@ class OCWParser:  # pylint: disable=too-many-instance-attributes
             ]
             if instructors
             else [],
+            "metadata_contributor_list": contributor_list if contributor_list else [],
             "language": self.jsons[0].get("language"),
             "extra_course_number": self.jsons[0].get("linked_course_number"),
             "course_collections": self.jsons[0].get("category_features"),

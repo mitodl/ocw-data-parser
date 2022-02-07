@@ -341,3 +341,25 @@ def convert_to_vtt(loaded_json):
 def update_srt_to_vtt(field):
     """Find the extension in the field and updates it to .vtt"""
     return re.sub(r".srt$", ".vtt", field)
+
+
+def ordered_instructors(original_list, contributor_list):
+    """Reorder an instructor list based on position in contributor list"""
+    if not original_list:
+        return None
+    if not contributor_list:
+        return original_list
+    idx_list = []
+    for instructor in original_list:
+        instructor_idx = None
+        for idx, contributor in enumerate(contributor_list):
+            if contributor.get("md_contributor_uid") == instructor["uid"]:
+                instructor_idx = idx
+                break
+        # Assign the idx of the matching contributor as the order value, or 9999 if no match found
+        idx_list.append(instructor_idx if instructor_idx is not None else 9999)
+    zipped_list = zip(idx_list, original_list)
+    ordered = [
+        instructor for (_, instructor) in sorted(zipped_list, key=lambda x: x[0])
+    ]
+    return ordered

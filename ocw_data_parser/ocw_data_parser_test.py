@@ -501,15 +501,28 @@ def test_instructor_insights_divided_sections(ocw_parser_course_2):
 
 
 @pytest.mark.parametrize("has_instructors", [True, False])
-def test_instructors(ocw_parser, has_instructors):
-    """instructors list should be present as a list in the output"""
-    expected_instructor = {**ocw_parser.jsons[0]["instructors"][0]}
+@pytest.mark.parametrize("has_contributors", [True, False])
+def test_instructors(ocw_parser_course_2, has_instructors, has_contributors):
+    """
+    instructors list should be present as a list in the output, but in the same order as in the
+    metadata_contributor_list if present.
+    """
+    expected_instructors = ocw_parser_course_2.jsons[0]["instructors"]
+    contributors_list = ocw_parser_course_2.jsons[0]["metadata_contributor_list"]
+    if has_contributors:
+        expected_instructors.reverse()
+    else:
+        ocw_parser_course_2.jsons[0]["metadata_contributor_list"] = None
     if not has_instructors:
-        ocw_parser.jsons[0]["instructors"] = None
-    ocw_parser.generate_parsed_json()
-    del expected_instructor["mit_id"]
-    assert ocw_parser.parsed_json["instructors"] == (
-        [expected_instructor] if has_instructors else []
+        ocw_parser_course_2.jsons[0]["instructors"] = None
+    ocw_parser_course_2.generate_parsed_json()
+    for instructor in expected_instructors:
+        del instructor["mit_id"]
+    assert ocw_parser_course_2.parsed_json["instructors"] == (
+        expected_instructors if has_instructors else []
+    )
+    assert ocw_parser_course_2.parsed_json["metadata_contributor_list"] == (
+        contributors_list if has_contributors else []
     )
 
 
