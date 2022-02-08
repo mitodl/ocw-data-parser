@@ -1,7 +1,7 @@
 Release Notes
 =============
 
-Version 0.32.0
+Version 0.32.0 (Released February 08, 2022)
 --------------
 
 - Add several more fields to parsed JSON (#165)
