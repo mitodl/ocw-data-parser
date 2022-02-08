@@ -13,12 +13,13 @@ import requests
 from smart_open import smart_open
 
 from ocw_data_parser.utils import (
-    course_page_from_relative_url,
-    update_file_location,
-    get_binary_data,
-    find_all_values_for_key,
-    htmlify,
     convert_to_vtt,
+    course_page_from_relative_url,
+    find_all_values_for_key,
+    get_binary_data,
+    htmlify,
+    ordered_instructors,
+    update_file_location,
 )
 from ocw_data_parser.course_feature_tags import match_course_feature_tag
 
@@ -261,6 +262,9 @@ def compose_embedded_media(jsons):
                 "short_url": json_file["id"],
                 "inline_embed_id": json_file["inline_embed_id"],
                 "about_this_resource_text": json_file["about_this_resource_text"],
+                "optional_text": json_file.get("optional_text"),
+                "optional_tab_title": json_file.get("optional_tab_title"),
+                "resource_index_text": json_file.get("resource_index_text"),
                 "related_resources_text": json_file["related_resources_text"],
                 "transcript": json_file["transcript"],
                 "embedded_media": [],
@@ -531,7 +535,10 @@ class OCWParser:  # pylint: disable=too-many-instance-attributes
         master_course = self.jsons[0].get("master_course_number")
         aka_course_numbers = self.jsons[0].get("aka_course_number")
         technical_location = self.jsons[0].get("technical_location")
-        instructors = self.jsons[0].get("instructors")
+        contributor_list = self.jsons[0].get("metadata_contributor_list")
+        instructors = ordered_instructors(
+            self.jsons[0].get("instructors"), contributor_list
+        )
         course_pages = compose_pages(self.jsons)
         course_files, self.media_jsons = compose_media(
             self.jsons, self.get_s3_base_url()
@@ -590,6 +597,7 @@ class OCWParser:  # pylint: disable=too-many-instance-attributes
             ]
             if instructors
             else [],
+            "metadata_contributor_list": contributor_list if contributor_list else [],
             "language": self.jsons[0].get("language"),
             "extra_course_number": self.jsons[0].get("linked_course_number"),
             "course_collections": self.jsons[0].get("category_features"),
@@ -607,6 +615,8 @@ class OCWParser:  # pylint: disable=too-many-instance-attributes
             "dspace_handle": self.jsons[0].get("dspace_handle"),
             "features_tracking": self.jsons[0].get("features_tracking"),
             "is_update_of": self.jsons[0].get("is_update_of"),
+            "highlights_text": self.jsons[1].get("highlights_text"),
+            "related_content": self.jsons[1].get("related_content"),
         }
 
         self.parsed_json = new_json

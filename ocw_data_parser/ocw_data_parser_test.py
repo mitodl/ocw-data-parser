@@ -358,6 +358,20 @@ def test_uid(ocw_parser, course_id):
             assert first_json_data["_uid"] == parsed_json_data["uid"]
 
 
+def test_highlight_text(ocw_parser, ocw_parser_course_2):
+    """ Test that highlight_text makes it into parsed json with correct values"""
+    assert ocw_parser.parsed_json["highlights_text"].startswith(
+        "<p>This course parallels"
+    )
+    assert ocw_parser_course_2.parsed_json["highlights_text"] == ""
+
+
+def test_related_content(ocw_parser, ocw_parser_course_2):
+    """ Test that related_content makes it into parsed json with correct values"""
+    assert ocw_parser.parsed_json["related_content"] == "some related content"
+    assert ocw_parser_course_2.parsed_json["related_content"] == ""
+
+
 def test_course_files(ocw_parser):
     """Make sure course_files include the right fields with the correct default values"""
     assert len(ocw_parser.parsed_json["course_files"]) == 172
@@ -487,15 +501,28 @@ def test_instructor_insights_divided_sections(ocw_parser_course_2):
 
 
 @pytest.mark.parametrize("has_instructors", [True, False])
-def test_instructors(ocw_parser, has_instructors):
-    """instructors list should be present as a list in the output"""
-    expected_instructor = {**ocw_parser.jsons[0]["instructors"][0]}
+@pytest.mark.parametrize("has_contributors", [True, False])
+def test_instructors(ocw_parser_course_2, has_instructors, has_contributors):
+    """
+    instructors list should be present as a list in the output, but in the same order as in the
+    metadata_contributor_list if present.
+    """
+    expected_instructors = ocw_parser_course_2.jsons[0]["instructors"]
+    contributors_list = ocw_parser_course_2.jsons[0]["metadata_contributor_list"]
+    if has_contributors:
+        expected_instructors.reverse()
+    else:
+        ocw_parser_course_2.jsons[0]["metadata_contributor_list"] = None
     if not has_instructors:
-        ocw_parser.jsons[0]["instructors"] = None
-    ocw_parser.generate_parsed_json()
-    del expected_instructor["mit_id"]
-    assert ocw_parser.parsed_json["instructors"] == (
-        [expected_instructor] if has_instructors else []
+        ocw_parser_course_2.jsons[0]["instructors"] = None
+    ocw_parser_course_2.generate_parsed_json()
+    for instructor in expected_instructors:
+        del instructor["mit_id"]
+    assert ocw_parser_course_2.parsed_json["instructors"] == (
+        expected_instructors if has_instructors else []
+    )
+    assert ocw_parser_course_2.parsed_json["metadata_contributor_list"] == (
+        contributors_list if has_contributors else []
     )
 
 
@@ -608,6 +635,9 @@ def test_course_embedded_media(ocw_parser):
         "order_index": 10,
         "parent_uid": "3f3b7835cf477d3ba10b05fbe03cbffa",
         "related_resources_text": "",
+        "optional_text": "optional text",
+        "optional_tab_title": "optional tab title",
+        "resource_index_text": "resource index text",
         "short_url": "an-interview-with-gilbert-strang-on-teaching-linear-algebra",
         "technical_location": "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/instructor-insights/an-interview-with-gilbert-strang-on-teaching-linear-algebra",
         "title": "An Interview with Gilbert Strang on Teaching Linear Algebra",
