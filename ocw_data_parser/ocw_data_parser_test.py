@@ -393,7 +393,7 @@ def test_course_files(ocw_parser):
 
 
 def test_course_files_kml_included(ocw_parser_course_2):
-    """Make sure course_files include the right fields with the correct default values"""
+    """Make sure a text/plain KML file is included in course_files"""
     assert len(ocw_parser_course_2.parsed_json["course_files"]) == 87
     assert ocw_parser_course_2.parsed_json["course_files"][84] == {
         "order_index": 98,
