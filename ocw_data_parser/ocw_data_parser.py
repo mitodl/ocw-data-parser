@@ -226,7 +226,9 @@ def compose_media(jsons, bucket_base_url):
     media_jsons = []
     all_media_types = find_all_values_for_key(jsons, "_content_type")
     for json_file in jsons:
-        if json_file["_content_type"] in all_media_types:
+        if json_file["_content_type"] in all_media_types and json_file.get(
+            "_type", ""
+        ).startswith("OCW"):
             # Keep track of the jsons that contain media in case we want to extract
             media_jsons.append(json_file)
 

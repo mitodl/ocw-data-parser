@@ -392,6 +392,26 @@ def test_course_files(ocw_parser):
     }
 
 
+def test_course_files_kml_included(ocw_parser_course_2):
+    """Make sure course_files include the right fields with the correct default values"""
+    assert len(ocw_parser_course_2.parsed_json["course_files"]) == 87
+    assert ocw_parser_course_2.parsed_json["course_files"][84] == {
+        "order_index": 98,
+        "uid": "97f28b51c2d76bbffa1213260d56c281",
+        "id": "12.001_Field_TripStops2014.kml",
+        "parent_uid": "de36fe69cf33ddf238bc3896d0ce9eff",
+        "title": "12.001_Field_TripStops2014.kml",
+        "caption": None,
+        "file_type": "text/xml",
+        "alt_text": None,
+        "credit": None,
+        "platform_requirements": "Keyhole Markup Language (KML) is an XML-based language schema for expressing geographic annotation and visualization on existing or future Web-based, two-dimensional maps and three-dimensional Earth browsers.",
+        "description": "This is the special resource regarding field trip stops.",
+        "type": "OCWFile",
+        "file_location": "97f28b51c2d76bbffa1213260d56c281_12.001_Field_TripStops2014.kml",
+    }
+
+
 def test_course_files_s3(ocw_parser_s3):
     """Make sure course_files include the right fields with the correct default values"""
     ocw_parser_s3.generate_parsed_json()
