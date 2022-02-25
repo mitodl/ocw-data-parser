@@ -402,7 +402,7 @@ def test_course_files_kml_included(ocw_parser_course_2):
         "parent_uid": "de36fe69cf33ddf238bc3896d0ce9eff",
         "title": "12.001_Field_TripStops2014.kml",
         "caption": None,
-        "file_type": "text/xml",
+        "file_type": "text/plain",
         "alt_text": None,
         "credit": None,
         "platform_requirements": "Keyhole Markup Language (KML) is an XML-based language schema for expressing geographic annotation and visualization on existing or future Web-based, two-dimensional maps and three-dimensional Earth browsers.",
