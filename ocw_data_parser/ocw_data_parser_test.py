@@ -716,6 +716,29 @@ def test_extract_media_locally(ocw_parser):
     assert counts == expected_counts
 
 
+def test_extract_text_media_locally(ocw_parser_course_2):
+    """extract_media_locally should write plain/text media files to a local directory"""
+    ocw_parser_course_2.extract_media_locally()
+    static_files = Path(ocw_parser_course_2.destination_dir) / "output" / "static_files"
+    for path in static_files.iterdir():
+        assert path.stat().st_size > 0  # make sure files are non-trivial
+
+    expected_counts = {
+        ".pdf": 60,
+        ".html": 12,
+        ".jpg": 25,
+        ".png": 1,
+        ".kml": 1,
+    }
+    counts = {}
+    for path in static_files.iterdir():
+        ext = os.path.splitext(path)[1]
+        if ext not in counts:
+            counts[ext] = 0
+        counts[ext] += 1
+    assert counts == expected_counts
+
+
 def test_populate_vtt_files(ocw_parser):
     """populate_vtt_files should duplicate srt content files"""
     subrip_count = 0
