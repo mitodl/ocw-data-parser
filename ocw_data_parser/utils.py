@@ -123,7 +123,7 @@ def find_all_values_for_key(jsons, key="_content_type"):
     Returns:
         list of str: A list of content types
     """
-    excluded_values = ["text/plain", "text/html"]
+    excluded_values = ["text/html"]
     result = set()
     for j in jsons:
         if key in j and j[key]:

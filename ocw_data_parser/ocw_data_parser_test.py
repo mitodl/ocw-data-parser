@@ -392,6 +392,26 @@ def test_course_files(ocw_parser):
     }
 
 
+def test_course_files_kml_included(ocw_parser_course_2):
+    """Make sure a text/plain KML file is included in course_files"""
+    assert len(ocw_parser_course_2.parsed_json["course_files"]) == 87
+    assert ocw_parser_course_2.parsed_json["course_files"][84] == {
+        "order_index": 98,
+        "uid": "97f28b51c2d76bbffa1213260d56c281",
+        "id": "12.001_Field_TripStops2014.kml",
+        "parent_uid": "de36fe69cf33ddf238bc3896d0ce9eff",
+        "title": "12.001_Field_TripStops2014.kml",
+        "caption": None,
+        "file_type": "text/plain",
+        "alt_text": None,
+        "credit": None,
+        "platform_requirements": "Keyhole Markup Language (KML) is an XML-based language schema for expressing geographic annotation and visualization on existing or future Web-based, two-dimensional maps and three-dimensional Earth browsers.",
+        "description": "This is the special resource regarding field trip stops.",
+        "type": "OCWFile",
+        "file_location": "97f28b51c2d76bbffa1213260d56c281_12.001_Field_TripStops2014.kml",
+    }
+
+
 def test_course_files_s3(ocw_parser_s3):
     """Make sure course_files include the right fields with the correct default values"""
     ocw_parser_s3.generate_parsed_json()
@@ -686,6 +706,29 @@ def test_extract_media_locally(ocw_parser):
         ".html": 12,
         ".jpg": 42,
         ".png": 1,
+    }
+    counts = {}
+    for path in static_files.iterdir():
+        ext = os.path.splitext(path)[1]
+        if ext not in counts:
+            counts[ext] = 0
+        counts[ext] += 1
+    assert counts == expected_counts
+
+
+def test_extract_text_media_locally(ocw_parser_course_2):
+    """extract_media_locally should write plain/text media files to a local directory"""
+    ocw_parser_course_2.extract_media_locally()
+    static_files = Path(ocw_parser_course_2.destination_dir) / "output" / "static_files"
+    for path in static_files.iterdir():
+        assert path.stat().st_size > 0  # make sure files are non-trivial
+
+    expected_counts = {
+        ".pdf": 60,
+        ".html": 12,
+        ".jpg": 25,
+        ".png": 1,
+        ".kml": 1,
     }
     counts = {}
     for path in static_files.iterdir():
