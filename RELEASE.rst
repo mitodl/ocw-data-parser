@@ -1,6 +1,11 @@
 Release Notes
 =============
 
+Version 0.32.1
+--------------
+
+- Add 'text/plain' resources (#176)
+
 Version 0.32.0 (Released February 08, 2022)
 --------------
 
