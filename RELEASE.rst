@@ -1,6 +1,11 @@
 Release Notes
 =============
 
+Version 0.32.2
+--------------
+
+- presisted chp value
+
 Version 0.32.1 (Released March 02, 2022)
 --------------
 
