@@ -554,6 +554,7 @@ class OCWParser:  # pylint: disable=too-many-instance-attributes
             "title": self.jsons[0].get("title"),
             "description": self.jsons[1].get("description"),
             "other_information_text": self.jsons[1].get("other_information_text"),
+            "chp_display_level": self.jsons[0].get("chp_display_level"),
             "first_published_to_production": _get(
                 self.jsons[0], "first_published_to_production"
             ),
