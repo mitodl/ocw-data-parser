@@ -270,6 +270,8 @@ def compose_embedded_media(jsons):
                 "related_resources_text": json_file["related_resources_text"],
                 "transcript": json_file["transcript"],
                 "embedded_media": [],
+                "start_time": json_file["start_time"],
+                "end_time": json_file["end_time"],
             }
             # Find all children of linked embedded media
             for child in jsons:

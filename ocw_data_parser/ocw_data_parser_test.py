@@ -663,6 +663,8 @@ def test_course_embedded_media(ocw_parser):
         "title": "An Interview with Gilbert Strang on Teaching Linear Algebra",
         "uid": "e21b71ff0fa975bfa9acb2a155aafc1d",
         "template_type": "Embed",
+        "start_time": "",
+        "end_time": "",
     }
     assert transcript.startswith("<p><span m='6840'>SARAH HANSEN:")
     assert len(embedded_media) == 11
