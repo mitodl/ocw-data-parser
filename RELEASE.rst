@@ -1,6 +1,11 @@
 Release Notes
 =============
 
+Version 0.33.0
+--------------
+
+- fix: start, end time persisted
+
 Version 0.32.2 (Released March 21, 2022)
 --------------
 
