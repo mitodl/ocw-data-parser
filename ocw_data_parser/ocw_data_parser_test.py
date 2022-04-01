@@ -93,7 +93,7 @@ def test_load_raw_jsons_invalid_file(ocw_parser):
 
 
 def test_load_raw_jsons():
-    """Test that load_raw_jsons """
+    """Test that load_raw_jsons"""
     with TemporaryDirectory() as project_dir:
         for num in range(1, 4000):
             group = int(num / 1000)
@@ -359,7 +359,7 @@ def test_uid(ocw_parser, course_id):
 
 
 def test_highlight_text(ocw_parser, ocw_parser_course_2):
-    """ Test that highlight_text makes it into parsed json with correct values"""
+    """Test that highlight_text makes it into parsed json with correct values"""
     assert ocw_parser.parsed_json["highlights_text"].startswith(
         "<p>This course parallels"
     )
@@ -367,7 +367,7 @@ def test_highlight_text(ocw_parser, ocw_parser_course_2):
 
 
 def test_related_content(ocw_parser, ocw_parser_course_2):
-    """ Test that related_content makes it into parsed json with correct values"""
+    """Test that related_content makes it into parsed json with correct values"""
     assert ocw_parser.parsed_json["related_content"] == "some related content"
     assert ocw_parser_course_2.parsed_json["related_content"] == ""
 
