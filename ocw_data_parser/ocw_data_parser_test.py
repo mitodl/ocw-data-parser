@@ -665,6 +665,7 @@ def test_course_embedded_media(ocw_parser):
         "template_type": "Embed",
         "start_time": "",
         "end_time": "",
+        "media_index": [],
     }
     assert transcript.startswith("<p><span m='6840'>SARAH HANSEN:")
     assert len(embedded_media) == 11
