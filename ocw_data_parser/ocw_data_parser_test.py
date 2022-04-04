@@ -374,8 +374,8 @@ def test_related_content(ocw_parser, ocw_parser_course_2):
 
 def test_exclude_from_nav(ocw_parser, ocw_parser_course_2):
     """Test that excludeFromNav makes it into parsed json with correct values"""
-    assert ocw_parser.parsed_json["excludeFromNav"] == False
-    assert ocw_parser_course_2.parsed_json["excludeFromNav"] == False
+    assert ocw_parser.parsed_json["excludeFromNav"] is False
+    assert ocw_parser_course_2.parsed_json["excludeFromNav"] is False
 
 
 def test_course_files(ocw_parser):
