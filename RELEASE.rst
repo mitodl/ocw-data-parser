@@ -1,7 +1,7 @@
 Release Notes
 =============
 
-Version 0.34.0
+Version 0.34.0 (Released April 04, 2022)
 --------------
 
 - fix: black version updated
