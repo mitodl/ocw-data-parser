@@ -1,6 +1,13 @@
 Release Notes
 =============
 
+Version 0.34.0
+--------------
+
+- fix: black version updated
+- fix: linting issues
+- feat: persist media_index data on video resources
+
 Version 0.33.0 (Released March 23, 2022)
 --------------
 
