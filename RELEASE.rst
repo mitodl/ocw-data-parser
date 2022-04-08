@@ -1,6 +1,12 @@
 Release Notes
 =============
 
+Version 0.34.1
+--------------
+
+- fix: pylint stuff
+- feat: persist excludeFromNav
+
 Version 0.34.0 (Released April 04, 2022)
 --------------
 
