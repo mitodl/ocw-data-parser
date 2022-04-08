@@ -623,6 +623,7 @@ class OCWParser:  # pylint: disable=too-many-instance-attributes
             "is_update_of": self.jsons[0].get("is_update_of"),
             "highlights_text": self.jsons[1].get("highlights_text"),
             "related_content": self.jsons[1].get("related_content"),
+            "excludeFromNav": self.jsons[1].get("excludeFromNav"),
         }
 
         self.parsed_json = new_json
