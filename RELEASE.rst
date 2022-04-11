@@ -1,7 +1,7 @@
 Release Notes
 =============
 
-Version 0.34.1
+Version 0.34.1 (Released April 11, 2022)
 --------------
 
 - fix: pylint stuff
