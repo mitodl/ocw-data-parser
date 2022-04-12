@@ -1,6 +1,11 @@
 Release Notes
 =============
 
+Version 0.35.0
+--------------
+
+- add text field to embedded media (#191)
+
 Version 0.34.1 (Released April 11, 2022)
 --------------
 
