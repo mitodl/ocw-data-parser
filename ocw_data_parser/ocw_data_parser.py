@@ -268,6 +268,7 @@ def compose_embedded_media(jsons):
                 "optional_tab_title": json_file.get("optional_tab_title"),
                 "resource_index_text": json_file.get("resource_index_text"),
                 "related_resources_text": json_file["related_resources_text"],
+                "text": json_file["text"],
                 "transcript": json_file["transcript"],
                 "embedded_media": [],
                 "start_time": json_file["start_time"],
