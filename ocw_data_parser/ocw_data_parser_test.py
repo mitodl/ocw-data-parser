@@ -669,6 +669,7 @@ def test_course_embedded_media(ocw_parser):
         "title": "An Interview with Gilbert Strang on Teaching Linear Algebra",
         "uid": "e21b71ff0fa975bfa9acb2a155aafc1d",
         "template_type": "Embed",
+        "text": "",
         "start_time": "",
         "end_time": "",
         "media_index": [],
