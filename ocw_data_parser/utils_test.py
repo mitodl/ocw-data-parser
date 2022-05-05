@@ -62,11 +62,16 @@ def test_update_foreign_file_location(ocw_parser):
 @pytest.mark.parametrize("base64_key", ["_datafield_image", "_datafield_file", None])
 @pytest.mark.parametrize("url_key", ["unique_identifier", "technical_location", None])
 @pytest.mark.parametrize("is_valid_request", [True, False])
-@pytest.mark.parametrize("url, expected_url", [
-    ["http://ocw.mit.edu/a/url", "http://old.ocw.mit.edu/a/url"],
-    ["http://other.mit.edu/a/url", "http://other.mit.edu/a/url"],
-])
-def test_get_binary_data(mocker, ocw_parser, base64_key, url_key, is_valid_request, url, expected_url):
+@pytest.mark.parametrize(
+    "url, expected_url",
+    [
+        ["http://ocw.mit.edu/a/url", "http://old.ocw.mit.edu/a/url"],
+        ["http://other.mit.edu/a/url", "http://other.mit.edu/a/url"],
+    ],
+)
+def test_get_binary_data(
+    mocker, ocw_parser, base64_key, url_key, is_valid_request, url, expected_url
+):  # pylint:disable=too-many-arguments
     """
     get_binary_data should look up base64 encoded values from certain addresses
     """
