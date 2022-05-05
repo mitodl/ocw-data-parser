@@ -62,12 +62,15 @@ def test_update_foreign_file_location(ocw_parser):
 @pytest.mark.parametrize("base64_key", ["_datafield_image", "_datafield_file", None])
 @pytest.mark.parametrize("url_key", ["unique_identifier", "technical_location", None])
 @pytest.mark.parametrize("is_valid_request", [True, False])
-def test_get_binary_data(mocker, ocw_parser, base64_key, url_key, is_valid_request):
+@pytest.mark.parametrize("url, expected_url", [
+    ["http://ocw.mit.edu/a/url", "http://old.ocw.mit.edu/a/url"],
+    ["http://other.mit.edu/a/url", "http://other.mit.edu/a/url"],
+])
+def test_get_binary_data(mocker, ocw_parser, base64_key, url_key, is_valid_request, url, expected_url):
     """
     get_binary_data should look up base64 encoded values from certain addresses
     """
     data = b"abcde"
-    url = "http://example.mit.edu/a/url"
     get_mock = mocker.patch("requests.get")
     get_mock.return_value.ok = is_valid_request
     get_mock.return_value.content = data
@@ -91,7 +94,7 @@ def test_get_binary_data(mocker, ocw_parser, base64_key, url_key, is_valid_reque
     assert expected == out_data
 
     if url_key is not None and base64_key is None:
-        get_mock.assert_called_once_with(url)
+        get_mock.assert_called_once_with(expected_url)
 
 
 def test_get_binary_data_url(ocw_parser):
