@@ -66,6 +66,11 @@ def test_update_foreign_file_location(ocw_parser):
     "url, expected_url",
     [
         ["http://ocw.mit.edu/a/url", "http://old.ocw.mit.edu/a/url"],
+        ["https://ocw.mit.edu/a/url", "https://old.ocw.mit.edu/a/url"],
+        [
+            "https://ocw.mit.edu/ocw.mit.edu/url",
+            "https://old.ocw.mit.edu/ocw.mit.edu/url",
+        ],
         ["http://other.mit.edu/a/url", "http://other.mit.edu/a/url"],
     ],
 )
