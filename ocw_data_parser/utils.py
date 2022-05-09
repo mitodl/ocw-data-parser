@@ -96,6 +96,7 @@ def get_binary_data(json_obj):
         url = json_obj["technical_location"]
 
     if url:
+        url = url.replace("://ocw.mit.edu/", "://old.ocw.mit.edu/")
         resp = requests.get(url)
         if resp.ok:
             return resp.content
