@@ -1,7 +1,7 @@
 Release Notes
 =============
 
-Version 0.35.1
+Version 0.35.1 (Released May 11, 2022)
 --------------
 
 - When downloading resource links, replace ocw.mit.edu with old.ocw.mit.edu (#195)
