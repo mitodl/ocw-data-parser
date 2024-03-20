@@ -1,4 +1,4 @@
-black==22.3.0
+black==24.3.0
 moto
 pytest-cov
 pylint==2.6.0
