@@ -1,7 +1,7 @@
 Release Notes
 =============
 
-Version 0.35.2
+Version 0.35.2 (Released January 22, 2025)
 --------------
 
 - Delete PR Template
